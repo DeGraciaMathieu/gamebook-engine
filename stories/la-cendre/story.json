@@ -85,6 +85,18 @@
       "name": "Photographie"
     }
   },
+  "triggers": [
+    {
+      "label": "Le petit ne se réveille pas",
+      "if": {
+        "type": "stat",
+        "stat": "souffle",
+        "op": "=",
+        "value": 0
+      },
+      "to": "134"
+    }
+  ],
   "modifiers": [
     {
       "label": "Hachette",
@@ -1280,27 +1292,11 @@
       ]
     },
     "69": {
-      "text": "Le matin ne vient pas, il s'installe. Gris sur gris. Vous écoutez avant d'ouvrir les yeux : la respiration du petit, ou pas.",
+      "text": "Le matin ne vient pas, il s'installe. Gris sur gris. Vous écoutez avant d'ouvrir les yeux : la respiration du petit.",
       "choices": [
         {
           "text": "Le réveiller",
-          "to": "24",
-          "if": {
-            "type": "stat",
-            "stat": "souffle",
-            "op": ">=",
-            "value": 1
-          }
-        },
-        {
-          "text": "Il ne se réveille pas",
-          "to": "134",
-          "if": {
-            "type": "stat",
-            "stat": "souffle",
-            "op": "=",
-            "value": 0
-          }
+          "to": "24"
         }
       ]
     },
@@ -1595,27 +1591,11 @@
       }
     },
     "80": {
-      "text": "Le matin ne vient pas, il s'installe. Gris sur gris. Vous écoutez avant d'ouvrir les yeux : la respiration du petit, ou pas.",
+      "text": "Le matin ne vient pas, il s'installe. Gris sur gris. Vous écoutez avant d'ouvrir les yeux : la respiration du petit.",
       "choices": [
         {
           "text": "Le réveiller",
-          "to": "10",
-          "if": {
-            "type": "stat",
-            "stat": "souffle",
-            "op": ">=",
-            "value": 1
-          }
-        },
-        {
-          "text": "Il ne se réveille pas",
-          "to": "134",
-          "if": {
-            "type": "stat",
-            "stat": "souffle",
-            "op": "=",
-            "value": 0
-          }
+          "to": "10"
         }
       ]
     },
@@ -1703,23 +1683,7 @@
       "choices": [
         {
           "text": "Lui parler",
-          "to": "114",
-          "if": {
-            "type": "stat",
-            "stat": "souffle",
-            "op": ">=",
-            "value": 1
-          }
-        },
-        {
-          "text": "Rester assis",
-          "to": "54",
-          "if": {
-            "type": "stat",
-            "stat": "souffle",
-            "op": "=",
-            "value": 0
-          }
+          "to": "114"
         }
       ]
     },
@@ -1843,27 +1807,11 @@
       }
     },
     "97": {
-      "text": "Le matin ne vient pas, il s'installe. Gris sur gris. Vous écoutez avant d'ouvrir les yeux : la respiration du petit, ou pas.",
+      "text": "Le matin ne vient pas, il s'installe. Gris sur gris. Vous écoutez avant d'ouvrir les yeux : la respiration du petit.",
       "choices": [
         {
           "text": "Le réveiller",
-          "to": "99",
-          "if": {
-            "type": "stat",
-            "stat": "souffle",
-            "op": ">=",
-            "value": 1
-          }
-        },
-        {
-          "text": "Il ne se réveille pas",
-          "to": "134",
-          "if": {
-            "type": "stat",
-            "stat": "souffle",
-            "op": "=",
-            "value": 0
-          }
+          "to": "99"
         }
       ]
     },
@@ -1987,27 +1935,11 @@
       ]
     },
     "105": {
-      "text": "Le matin ne vient pas, il s'installe. Gris sur gris. Vous écoutez avant d'ouvrir les yeux : la respiration du petit, ou pas.",
+      "text": "Le matin ne vient pas, il s'installe. Gris sur gris. Vous écoutez avant d'ouvrir les yeux : la respiration du petit.",
       "choices": [
         {
           "text": "Le réveiller",
-          "to": "30",
-          "if": {
-            "type": "stat",
-            "stat": "souffle",
-            "op": ">=",
-            "value": 1
-          }
-        },
-        {
-          "text": "Il ne se réveille pas",
-          "to": "134",
-          "if": {
-            "type": "stat",
-            "stat": "souffle",
-            "op": "=",
-            "value": 0
-          }
+          "to": "30"
         }
       ]
     },
