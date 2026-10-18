@@ -138,6 +138,17 @@ Quand un objet est obtenu ou perdu en arrivant sur une page, son nom est surlign
 { "type": "item", "action": "add", "item": "potion" }       // ou "remove"
 ```
 
+### Déclencheurs
+
+```json
+"triggers": [
+  { "label": "Le petit ne se réveille pas", "if": { "type": "stat", "stat": "souffle", "op": "=", "value": 0 }, "to": "134" },
+  { "label": "Faim", "if": { "type": "stat", "stat": "vivres", "op": "=", "value": 0 }, "to": "60", "once": false }
+]
+```
+
+À chaque déplacement (choix, issue d'un test, victoire ou fuite), le moteur évalue les déclencheurs sur l'état du héros au moment où il agit. Le premier dont la condition est vraie détourne vers son paragraphe `to` à la place de la destination prévue. Par défaut un déclencheur ne tire qu'une fois (`once: true`) ; répétable, il ne tire jamais vers le paragraphe où l'on se trouve déjà. C'est le moyen d'écrire une règle globale (mort d'un compagnon, seuil de faim, dette qui déborde) sans la répéter à chaque carrefour.
+
 ### Modificateurs
 
 ```json

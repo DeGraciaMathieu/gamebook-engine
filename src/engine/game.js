@@ -24,6 +24,7 @@ export function createGame(story, rng = Math.random, allocation = {}) {
     itemChanges: [],
     statChanges: [],
     chosen: [],
+    fired: [],
   };
   return trackChanges(state, enterParagraph(story, state, story.start));
 }
@@ -109,7 +110,7 @@ export function choose(story, state, choice) {
   if (isDead(next)) {
     return trackChanges(state, die(story, next));
   }
-  return trackChanges(state, enterParagraph(story, next, choice.to));
+  return trackChanges(state, travel(story, state, next, choice.to));
 }
 
 // Les choix déjà pris dans la partie, identifiés par page et position.
@@ -208,7 +209,7 @@ export function resolveTest(story, state, rng = Math.random) {
   }
   const { success: successTarget, failure: failureTarget } = currentParagraph(story, state).test;
   return {
-    state: trackChanges(state, enterParagraph(story, next, success ? successTarget : failureTarget)),
+    state: trackChanges(state, travel(story, state, next, success ? successTarget : failureTarget)),
     roll: roll.total,
     dice: roll.dice,
     success,
@@ -229,7 +230,7 @@ export function fightRound(story, state, rng = Math.random) {
   }
   if (isEnemyDefeated(combat)) {
     const win = currentParagraph(story, state).combat.win;
-    return { state: trackChanges(state, enterParagraph(story, next, win)), round };
+    return { state: trackChanges(state, travel(story, state, next, win)), round };
   }
   return { state: next, round };
 }
@@ -244,7 +245,26 @@ export function fleeCombat(story, state) {
   if (isDead(next)) {
     return die(story, next);
   }
-  return trackChanges(state, enterParagraph(story, next, flee.to));
+  return trackChanges(state, travel(story, state, next, flee.to));
+}
+
+// Un déplacement : si un déclencheur est armé, il détourne vers son paragraphe à la place de la cible.
+// Évalué sur l'état au moment où le joueur agit (`before`), avant les effets de l'action :
+// le paragraphe où la condition a basculé a donc toujours été lu.
+function travel(story, before, next, paragraphId) {
+  const trigger = pendingTrigger(story, before);
+  if (!trigger) {
+    return enterParagraph(story, next, paragraphId);
+  }
+  const fired = trigger.once === false ? next.fired ?? [] : [...(next.fired ?? []), trigger.index];
+  return enterParagraph(story, { ...next, fired }, trigger.to);
+}
+
+export function pendingTrigger(story, state) {
+  const fired = state.fired ?? [];
+  return (story.triggers ?? [])
+    .map((trigger, index) => ({ ...trigger, index }))
+    .find((trigger) => !fired.includes(trigger.index) && trigger.to !== state.paragraphId && isConditionMet(trigger.if, state));
 }
 
 function enterParagraph(story, state, paragraphId) {

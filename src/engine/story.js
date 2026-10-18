@@ -63,6 +63,13 @@ export function validateStory(story) {
   if (story.hero?.points !== undefined) checkCreation(story, errors);
   (story.hero?.inventory ?? []).forEach((item) => checkItem(item, 'hero.inventory'));
 
+  for (const [index, trigger] of (story.triggers ?? []).entries()) {
+    const where = `déclencheur ${index + 1}`;
+    if (!trigger.if) errors.push(`${where} : condition "if" manquante`);
+    checkCondition(trigger.if, where);
+    checkTarget(trigger.to, where);
+  }
+
   for (const [index, modifier] of (story.modifiers ?? []).entries()) {
     const where = `modificateur ${index + 1}`;
     if (!modifier.label) errors.push(`${where} : "label" manquant`);

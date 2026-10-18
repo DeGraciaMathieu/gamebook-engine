@@ -36,7 +36,7 @@ const incoming = new Map(paragraphs.map(([id]) => [id, 0]));
 for (const targets of edges.values()) targets.forEach((target) => incoming.set(target, incoming.get(target) + 1));
 
 const reachable = new Set();
-const queue = [story.start];
+const queue = [story.start, ...(story.triggers ?? []).map((trigger) => trigger.to)];
 while (queue.length > 0) {
   const id = queue.pop();
   if (reachable.has(id)) continue;
@@ -58,7 +58,7 @@ const coverage = {
   'combat': 0, 'combat avec fuite': 0, 'test de chance': 0, 'test de caractéristique': 0,
   'condition objet': 0, 'condition drapeau': 0, 'condition caractéristique': 0, 'condition all': 0, 'condition any': 0, 'condition not': 0,
   'effet caractéristique': 0, 'effet objet (gain)': 0, 'effet objet (perte)': 0, 'effet drapeau': 0, 'effet sur un choix': 0,
-  'boutique (vente)': 0, 'boutique (rachat)': 0, 'modificateur de combat': 0, 'modificateur de test': 0,
+  'boutique (vente)': 0, 'boutique (rachat)': 0, 'modificateur de combat': 0, 'modificateur de test': 0, 'déclencheur': 0,
 };
 
 // Objets et drapeaux
@@ -94,6 +94,10 @@ for (const modifier of story.modifiers ?? []) {
   if (modifier.combat) coverage['modificateur de combat'] += 1;
   if (modifier.test) coverage['modificateur de test'] += 1;
   walkCondition(modifier.if);
+}
+for (const trigger of story.triggers ?? []) {
+  coverage['déclencheur'] += 1;
+  walkCondition(trigger.if);
 }
 items.filter((item) => !itemsAdded.has(item)).forEach((item) => warnings.push(`objet "${item}" déclaré mais jamais obtenu`));
 items.filter((item) => itemsAdded.has(item) && !itemsUsed.has(item)).forEach((item) => warnings.push(`objet "${item}" obtenu mais jamais utile (aucune condition, vente ni retrait)`));
