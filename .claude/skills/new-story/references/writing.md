@@ -18,6 +18,9 @@
 - Le label d'un modificateur est affiché tel quel dans le panneau de combat ou de test, avec son signe : « Hachette +1 », « Le petit à protéger −2 ». Un à trois mots, un nom ou un état, jamais une phrase.
 - Le texte qui donne l'objet ou pose l'état dit ce qu'il change, sans chiffre : « avec ça, on se bat mieux », « vos mains ne vous obéissent plus ». Le chiffre, c'est l'interface.
 
+## Combats
+- Le texte d'un combat dit ce qui se joue : « ce n'est plus un combat, c'est une course » pour un duel sur l'Endurance, « ses coups glissent sur la tôle » pour une armure, « il frappe à casser des os » pour des dégâts élevés. Le joueur doit sentir la règle avant de voir les chiffres.
+
 ## Déclencheurs
 - Le paragraphe cible d'un déclencheur s'ouvre sur le constat, en une phrase, parce que le joueur y arrive de n'importe quel endroit : « Le petit ne se réveille pas. » Pas de référence au lieu précédent.
 

@@ -51,10 +51,14 @@ La référence complète est dans `README.md` à la racine. Cette fiche donne un
 
 ```json
 "combat": { "name": "Squelette gardien", "habilete": 6, "endurance": 6, "win": "10", "flee": { "to": "6" } }
+"combat": { "name": "Ours", "habilete": 7, "endurance": 10, "damage": 4, "armor": 1, "win": "12" }
+"combat": { "name": "Les chiens", "stat": "endurance", "habilete": 8, "endurance": 6, "damage": 3, "win": "20", "flee": { "to": "21" } }
 ```
-Chaque assaut : 2d6 + Habileté par camp, le perdant perd 2 Endurance. `flee` optionnel, fuir coûte 2 Endurance. Mort du héros à 0 Endurance → paragraphe `death`.
+Chaque assaut : 2d6 + caractéristique de duel par camp (Habileté par défaut ; `stat` la remplace côté héros, `habilete` reste le score de l'adversaire). Le héros perdant encaisse `damage` (2 par défaut) ; l'adversaire perdant encaisse 2 moins `armor`. `flee` optionnel, fuir coûte `damage`. Mort du héros à 0 Endurance → paragraphe `death`.
 
-Repères d'équilibrage pour un héros à 9 ou 10 d'Habileté : adversaire 5 à 6 = anecdotique, 7 à 8 = sérieux, 9 à 10 = redoutable, 11+ = boss à ne pas affronter sans préparation. L'Endurance de l'adversaire règle la durée (2 points par touche).
+Un duel sur une autre caractéristique change le sens des assauts, pas les règles : une course se joue sur l'Endurance (toucher = gagner du terrain, être touché = une pierre reçue), une joute sur la Volonté, une partie truquée sur la Chance. Le texte du paragraphe doit dire sur quoi ça se joue. Un modificateur de combat peut se limiter à un type de duel avec `combat.stat`.
+
+Repères d'équilibrage pour un héros à 9 ou 10 d'Habileté : adversaire 5 à 6 = anecdotique, 7 à 8 = sérieux, 9 à 10 = redoutable, 11+ = boss à ne pas affronter sans préparation. L'Endurance de l'adversaire règle la durée (2 points par touche, moins l'armure). `damage` 3 ou 4 fait d'un adversaire moyen un danger mortel ; `armor` 1 double presque la durée du combat. Un duel sur l'Endurance oppose un score de 14 à 24 : donner à l'adversaire 12 à 18 d'`habilete`, pas 7.
 
 ## Tests
 

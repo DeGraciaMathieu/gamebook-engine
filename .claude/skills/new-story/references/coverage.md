@@ -21,6 +21,8 @@ Chaque ligne au moins une fois dans l'histoire, vérifiée par `node scripts/sto
 |---|---|
 | combat sans fuite | boss, gardien d'une fin |
 | combat avec fuite | gardien d'un trésor optionnel |
+| combat sur une autre caractéristique | course sur l'Endurance, joute sur la Volonté |
+| adversaire à dégâts ou armure | bête qui frappe fort, ennemi cuirassé |
 | test de chance | pont, piège, hasard |
 | test de caractéristique | forcer, escalader, convaincre |
 | condition objet | clef, laissez-passer |
