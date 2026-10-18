@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { createGame, listChoices, choose, resolveTest, fightRound, fleeCombat } from '../src/engine/game.js';
+import { createGame, listChoices, choose, resolveTest, fightRound, fleeCombat, hasChosen } from '../src/engine/game.js';
 import { makeStory, minRoll, maxRoll } from './helpers.js';
 
 const story = makeStory({
@@ -155,4 +155,15 @@ test('statChanges liste les caractéristiques modifiées lors de la transition',
   const luck = resolveTest(story, pick(state, 'Pont'), minRoll).state;
   assert.deepEqual(luck.statChanges, [{ stat: 'chance', delta: -1 }]);
   assert.deepEqual(pick(fled, 'Retour').statChanges, []);
+});
+
+test('hasChosen signale les choix déjà pris sur une page', () => {
+  const state = start();
+  const [advance, , trap] = listChoices(story, state);
+  assert.equal(hasChosen(story, state, advance), false);
+  const back = pick(pick(state, 'Avancer'), 'Retour');
+  assert.equal(hasChosen(story, back, advance), true);
+  assert.equal(hasChosen(story, back, trap), false);
+  assert.deepEqual(back.chosen, ['1:0', '2:0']);
+  assert.deepEqual(pick(pick(back, 'Avancer'), 'Retour').chosen, ['1:0', '2:0']);
 });

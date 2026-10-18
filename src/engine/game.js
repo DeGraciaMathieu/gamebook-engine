@@ -19,6 +19,7 @@ export function createGame(story, rng = Math.random) {
     status: 'playing',
     itemChanges: [],
     statChanges: [],
+    chosen: [],
   };
   return trackChanges(state, enterParagraph(story, state, story.start));
 }
@@ -47,11 +48,27 @@ export function choose(story, state, choice) {
   if (!listChoices(story, state).includes(choice)) {
     throw new Error('Choix indisponible');
   }
-  const next = applyEffects(choice.effects, state);
+  const next = applyEffects(choice.effects, rememberChoice(story, state, choice));
   if (isDead(next)) {
     return trackChanges(state, die(story, next));
   }
   return trackChanges(state, enterParagraph(story, next, choice.to));
+}
+
+// Les choix déjà pris dans la partie, identifiés par page et position.
+export function hasChosen(story, state, choice) {
+  return (state.chosen ?? []).includes(choiceKey(story, state, choice));
+}
+
+function rememberChoice(story, state, choice) {
+  if (hasChosen(story, state, choice)) {
+    return state;
+  }
+  return { ...state, chosen: [...(state.chosen ?? []), choiceKey(story, state, choice)] };
+}
+
+function choiceKey(story, state, choice) {
+  return `${state.paragraphId}:${currentParagraph(story, state).choices.indexOf(choice)}`;
 }
 
 // Test de Chance : réussite si 2d6 <= Chance ; la Chance baisse de 1 à chaque test.

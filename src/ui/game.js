@@ -1,5 +1,5 @@
 import { el } from './dom.js';
-import { currentParagraph, listChoices } from '../engine/game.js';
+import { currentParagraph, listChoices, hasChosen } from '../engine/game.js';
 
 export function renderGame({ story, state, lastRoll, inventoryOpen, handlers }) {
   const paragraph = currentParagraph(story, state);
@@ -60,7 +60,10 @@ function renderActions(story, state, paragraph, handlers) {
     ]);
   }
   return el('div', { class: 'choices' }, listChoices(story, state).map((choice) =>
-    el('button', { class: 'btn btn-choice', onClick: () => handlers.onChoose(choice) }, choice.text)));
+    el('button', {
+      class: `btn btn-choice${hasChosen(story, state, choice) ? ' is-chosen' : ''}`,
+      onClick: () => handlers.onChoose(choice),
+    }, choice.text)));
 }
 
 function renderCombat(state, paragraph, handlers) {

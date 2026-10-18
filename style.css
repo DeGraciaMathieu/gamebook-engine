@@ -66,6 +66,15 @@ body {
   content: "➤ ";
   color: var(--accent);
 }
+.btn-choice.is-chosen {
+  border-style: dashed;
+  border-color: var(--line);
+  color: var(--ink-soft);
+}
+.btn-choice.is-chosen::before {
+  content: "✓ ";
+  color: var(--ink-soft);
+}
 .btn-icon {
   width: 44px;
   height: 44px;
