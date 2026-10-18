@@ -22,7 +22,7 @@ node scripts/story-simulate.mjs stories/demo/story.json --runs 3000  # parties j
 node scripts/story-simulate.mjs stories/demo/story.json --strategy prudent
 ```
 
-Avec Claude Code, `/new-story <thème>` écrit une histoire complète en passant par ces contrôles, `/story-lint <id>` diagnostique une histoire existante, `/extend-story <id> <ajout>` greffe une branche. Les skills sont dans `.claude/skills/`.
+Avec Claude Code, `/new-story <thème>` écrit une histoire complète en passant par ces contrôles, dans le style demandé (Défis Fantastiques, sobre ou picaresque, voir `.claude/skills/new-story/references/styles.md`), `/story-lint <id>` diagnostique une histoire existante, `/extend-story <id> <ajout>` greffe une branche. Les skills sont dans `.claude/skills/`.
 
 ## Structure
 

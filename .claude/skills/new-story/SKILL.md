@@ -8,14 +8,15 @@ description: Écrire une histoire complète pour le moteur de livre-jeu (stories
 Tu écris une histoire pour le moteur de ce dépôt. Le moteur est pur et validé : tu peux donc contrôler et simuler ce que tu écris. Lis d'abord les trois références de ce dossier :
 
 - `references/format.md` : le JSON, un exemple par mécanique, repères d'équilibrage.
-- `references/writing.md` : voix, longueur, ce que le texte doit nommer pour que l'interface le surligne.
+- `references/writing.md` : ce que le texte doit nommer pour que l'interface le surligne, règles valables pour tous les styles.
+- `references/styles.md` : les styles d'écriture au choix (Défis Fantastiques, sobre, picaresque), avec leurs règles propres.
 - `references/coverage.md` : contraintes de graphe, grille de couverture, cibles de létalité.
 
 Le déroulé a cinq phases. Chaque phase se termine par un livrable montré à l'utilisateur. Les phases 1 et 2 attendent sa validation (AskUserQuestion) ; les suivantes s'enchaînent sans question sauf blocage.
 
 ## Phase 1 : cadrage
 
-Si l'argument ne le dit pas, pose au plus trois questions en un seul appel : ton (sombre, héroïque, humoristique, étrange), taille (court 25, moyen 50, long 90 paragraphes), difficulté (douce, standard, rude). Puis livre :
+Si l'argument ne le dit pas, pose au plus quatre questions en un seul appel : style d'écriture (Défis Fantastiques, sobre, picaresque, voir `references/styles.md`), ton (sombre, héroïque, humoristique, étrange), taille (court 25, moyen 50, long 90 paragraphes), difficulté (douce, standard, rude). Si l'utilisateur nomme un livre ou un auteur, propose le style le plus proche et dis pourquoi. Puis livre :
 
 1. **Pitch** en cinq lignes : lieu, objectif du héros, antagoniste, enjeu en cas d'échec, twist possible.
 2. **Fiche du héros** : les trois caractéristiques avec `description` (une phrase chacune), réserve de points, or de départ, inventaire initial (2 objets au plus, chacun utile plus tard).
@@ -46,7 +47,7 @@ Les identifiants sont mélangés (pas dans l'ordre de lecture). Demande validati
 
 ## Phase 3 : écriture
 
-Écris le JSON en une passe, paragraphe par paragraphe, dans `stories/<id>/story.json`, puis ajoute l'entrée dans `stories/index.json`. Respecte `references/writing.md` à la lettre, en particulier : nommer les objets avec le nom du catalogue, chiffrer les variations avec leur unité, annoncer les tests dans le texte, dire le résultat dès la première phrase des paragraphes cibles.
+Écris le JSON en une passe, paragraphe par paragraphe, dans `stories/<id>/story.json`, puis ajoute l'entrée dans `stories/index.json`. Applique le style choisi tel que `references/styles.md` le décrit (voix, longueur, formules, règles en capitales ou non, choix annoncés en prose ou non), et respecte `references/writing.md` à la lettre, en particulier : nommer les objets avec le nom du catalogue, chiffrer les variations avec leur unité, annoncer les tests dans le texte, dire le résultat dès la première phrase des paragraphes cibles.
 
 Ne montre pas le JSON à l'utilisateur à ce stade : la phase 4 le contrôle d'abord.
 
@@ -69,7 +70,7 @@ node scripts/story-simulate.mjs stories/<id>/story.json --runs 3000 --strategy p
 
 Un message court pour l'utilisateur :
 
-1. Pitch en deux lignes et chemin vers le fichier.
+1. Pitch en deux lignes, style retenu et chemin vers le fichier.
 2. Le graphe résumé : nombre de paragraphes, carrefours, fins et leurs conditions.
 3. Les chiffres de simulation (les deux stratégies) dans un petit tableau.
 4. Les choix de conception discutables et les avertissements du lint laissés volontairement.

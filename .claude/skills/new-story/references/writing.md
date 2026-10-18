@@ -1,15 +1,16 @@
 # Règles d'écriture
 
-## Voix et rythme
+Ces règles valent pour tous les styles. La voix, la longueur et les formules dépendent du style choisi dans `styles.md`.
+
+## Constantes
 - Deuxième personne, présent de l'indicatif. « Vous poussez la porte. »
-- 40 à 90 mots par paragraphe, 2 alinéas au plus. Un carrefour ou une scène clé peut monter à 120 mots.
-- Une image concrète par paragraphe (odeur, lumière, son, texture). Pas d'adjectifs en grappe.
+- Une image concrète par paragraphe (odeur, lumière, son, texture).
 - Le texte d'un choix est une action à l'infinitif, 3 à 9 mots, sans révéler l'issue : « Forcer la grille », pas « Forcer la grille (danger) ». Un coût chiffré s'indique entre parenthèses : « Payer le passeur (3 pièces d'or) ».
-- Pas de méta-texte (« rendez-vous au 12 », « si vous avez l'objet »). Le moteur s'en charge.
+- Jamais de « rendez-vous au 12 » : les boutons portent les renvois. Annoncer les options en prose (« si vous possédez une dague, vous pouvez… ») est une affaire de style, autorisé en Défis Fantastiques, proscrit en sobre.
 
 ## Ce que le texte doit dire pour que le moteur le montre
 - Un objet gagné ou perdu est nommé dans le texte avec le nom exact du catalogue, ou au moins son premier mot : « une clef rouillée », « votre potion de vigueur ». Sinon le surlignage tombe en résumé sous le texte.
-- Une variation chiffrée s'écrit en toutes lettres avec l'unité : « Vous perdez 3 points d'Endurance », « vous trouvez 5 pièces d'or ». Mettre une majuscule au label.
+- Une variation chiffrée s'écrit en toutes lettres avec l'unité : « Vous perdez 3 points d'Endurance », « vous trouvez 5 pièces d'or ». Majuscule au label ; les capitales du style Défis Fantastiques (« points d'ENDURANCE », « Pièces d'Or ») sont reconnues aussi.
 - Un paragraphe de test annonce le test dans son texte : « Tentez votre Chance. » ou « Testez votre Habileté. »
 - Les paragraphes cibles d'un test ou d'un combat disent le résultat dès la première phrase. Le joueur vient de voir les dés, pas besoin de suspense.
 - Le paragraphe `death` est court, définitif, et rappelle l'enjeu que le héros laisse derrière lui.

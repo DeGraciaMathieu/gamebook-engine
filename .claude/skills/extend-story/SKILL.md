@@ -5,7 +5,7 @@ description: Greffer une branche, un marchand, un combat ou une fin à une histo
 
 # Étendre une histoire : /extend-story <id> <ajout>
 
-Même méthode que `/new-story` (lis ses trois références dans `../new-story/references/`), en partant de l'existant.
+Même méthode que `/new-story` (lis ses références dans `../new-story/references/`), en partant de l'existant. Repère d'abord le style de l'histoire (voir `styles.md`) et écris la greffe dans ce style, pas dans un autre.
 
 1. **État des lieux** : lis `stories/<id>/story.json`, lance `node scripts/story-lint.mjs` et `node scripts/story-simulate.mjs` pour connaître le graphe, la couverture et la létalité actuels. Résume en dix lignes : carrefours, fins, objets et leur usage, mécaniques absentes.
 2. **Greffe** : propose le tableau des paragraphes ajoutés ou modifiés (même format que la phase 2 de `/new-story`), avec le point d'ancrage (quel carrefour, quel choix nouveau) et ce que la branche apporte : une mécanique absente de la grille, un objet orphelin qui devient utile, une fin manquante. Les identifiants nouveaux ne réutilisent jamais un identifiant existant. Demande validation.
