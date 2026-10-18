@@ -14,6 +14,16 @@ Les histoires sont chargées par `fetch`, il faut donc un serveur HTTP (pas d'ou
 
 Les lancers de dés sont animés, avec un son synthétisé (Web Audio, sans fichier) et une vibration sur les appareils qui le permettent. Le son se coupe depuis le panneau ☰ ; la préférence est mémorisée.
 
+## Contrôler et simuler une histoire
+
+```bash
+node scripts/story-lint.mjs stories/demo/story.json                 # validation, atteignabilité, orphelins, couverture des mécaniques
+node scripts/story-simulate.mjs stories/demo/story.json --runs 3000  # parties jouées au hasard : fins, létalité, combats
+node scripts/story-simulate.mjs stories/demo/story.json --strategy prudent
+```
+
+Avec Claude Code, `/new-story <thème>` écrit une histoire complète en passant par ces contrôles, `/story-lint <id>` diagnostique une histoire existante, `/extend-story <id> <ajout>` greffe une branche. Les skills sont dans `.claude/skills/`.
+
 ## Structure
 
 ```
@@ -30,7 +40,9 @@ src/storage.js             sauvegarde auto en localStorage, une par histoire
 src/ui/                    rendu DOM : accueil, page de jeu
 stories/index.json         liste des histoires disponibles
 stories/<id>/story.json    une histoire
+scripts/                   contrôle (story-lint) et simulation (story-simulate) d'une histoire
 tests/                     tests du moteur
+.claude/skills/            commandes Claude Code : new-story, story-lint, extend-story
 ```
 
 ## Ajouter une histoire

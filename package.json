@@ -6,6 +6,8 @@
   "private": true,
   "scripts": {
     "test": "node --test \"tests/**/*.test.js\"",
-    "start": "node serve.mjs"
+    "start": "node serve.mjs",
+    "lint:story": "node scripts/story-lint.mjs",
+    "simulate": "node scripts/story-simulate.mjs"
   }
 }
