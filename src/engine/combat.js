@@ -1,4 +1,4 @@
-import { rollDice } from './dice.js';
+import { rollDiceDetailed } from './dice.js';
 
 export const ASSAULT_DICE = '2d6';
 export const ASSAULT_DAMAGE = 2;
@@ -16,8 +16,10 @@ export function startCombat(definition) {
 // Un assaut à la Défis Fantastiques : 2d6 + Habileté de chaque camp,
 // le perdant encaisse les dégâts, égalité sans effet.
 export function resolveAssault(combat, heroHabilete, rng) {
-  const heroAttack = rollDice(ASSAULT_DICE, rng) + heroHabilete;
-  const enemyAttack = rollDice(ASSAULT_DICE, rng) + combat.enemy.habilete;
+  const heroRoll = rollDiceDetailed(ASSAULT_DICE, rng);
+  const enemyRoll = rollDiceDetailed(ASSAULT_DICE, rng);
+  const heroAttack = heroRoll.total + heroHabilete;
+  const enemyAttack = enemyRoll.total + combat.enemy.habilete;
   let outcome = 'tie';
   let heroDamage = 0;
   let enemyDamage = 0;
@@ -30,14 +32,24 @@ export function resolveAssault(combat, heroHabilete, rng) {
     heroDamage = ASSAULT_DAMAGE;
   }
 
+  const round = {
+    heroDice: heroRoll.dice,
+    enemyDice: enemyRoll.dice,
+    heroAttack,
+    enemyAttack,
+    outcome,
+    heroDamage,
+    enemyDamage,
+  };
+
   return {
     combat: {
       ...combat,
       enemyEndurance: Math.max(0, combat.enemyEndurance - enemyDamage),
       round: combat.round + 1,
-      lastRound: { heroAttack, enemyAttack, outcome },
+      lastRound: round,
     },
-    heroDamage,
+    round,
   };
 }
 

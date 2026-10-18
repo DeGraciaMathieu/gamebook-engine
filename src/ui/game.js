@@ -1,44 +1,51 @@
 import { el } from './dom.js';
-import { currentParagraph, listChoices, hasChosen } from '../engine/game.js';
+import { renderDice } from './dice.js';
+import { currentParagraph, listChoices, hasChosen, describeTest } from '../engine/game.js';
 
-export function renderGame({ story, state, lastRoll, inventoryOpen, handlers }) {
+// `roll` décrit un lancer de dés en cours d'animation ; `fx` les effets visuels à jouer une fois sur ce rendu.
+export function renderGame({ story, state, lastRoll, menuOpen, muted, roll, fx, handlers }) {
+  const view = roll?.view ?? state;
   const paragraph = currentParagraph(story, state);
   return el('main', { class: 'screen game' }, [
-    renderHeader(story, state, inventoryOpen, handlers),
-    inventoryOpen && renderInventory(story, state),
+    renderHeader(story, view, fx, menuOpen, handlers),
+    menuOpen && renderMenu(story, state, muted, handlers),
     el('article', { class: 'page' }, [
       el('p', { class: 'page-number' }, state.paragraphId),
       lastRoll && renderRoll(lastRoll),
       ...renderText(story, state, paragraph.text),
-      renderActions(story, state, paragraph, handlers),
+      renderActions(story, state, view, paragraph, { roll, fx, handlers }),
     ]),
   ]);
 }
 
-function renderHeader(story, state, inventoryOpen, handlers) {
+function renderHeader(story, view, fx, menuOpen, handlers) {
   return el('header', { class: 'game-header' }, [
     el('button', { class: 'btn-icon', 'aria-label': 'Retour à la bibliothèque', onClick: handlers.onQuit }, '‹'),
-    el('ul', { class: 'stats' }, Object.entries(story.hero.stats).map(([name, definition]) =>
-      el('li', { class: 'stat' }, [
+    el('ul', { class: 'stats' }, Object.entries(story.hero.stats).map(([name, definition]) => {
+      const delta = fx?.statDeltas?.[name];
+      return el('li', { class: 'stat' }, [
         el('span', { class: 'stat-label' }, definition.label),
-        el('span', { class: 'stat-value' }, `${state.stats[name]}/${state.initialStats[name]}`),
-      ]))),
+        el('span', { class: `stat-value${delta ? ' is-bumped' : ''}` }, `${view.stats[name]}/${view.initialStats[name]}`),
+        delta && el('span', { class: `stat-delta ${delta > 0 ? 'delta-gain' : 'delta-loss'}` }, formatDelta(delta)),
+      ]);
+    })),
     el('button', {
-      class: `btn-icon${inventoryOpen ? ' is-active' : ''}`,
-      'aria-label': 'Inventaire',
-      'aria-expanded': String(inventoryOpen),
-      onClick: handlers.onToggleInventory,
+      class: `btn-icon${menuOpen ? ' is-active' : ''}`,
+      'aria-label': 'Inventaire et options',
+      'aria-expanded': String(menuOpen),
+      onClick: handlers.onToggleMenu,
     }, '☰'),
   ]);
 }
 
-function renderInventory(story, state) {
+function renderMenu(story, state, muted, handlers) {
   const items = state.inventory.map((id) => story.items[id]?.name ?? id);
-  return el('section', { class: 'inventory' }, [
-    el('h2', { class: 'inventory-title' }, 'Inventaire'),
+  return el('section', { class: 'menu' }, [
+    el('h2', { class: 'menu-title' }, 'Inventaire'),
     items.length === 0
-      ? el('p', { class: 'inventory-empty' }, 'Votre sac est vide.')
+      ? el('p', { class: 'menu-empty' }, 'Votre sac est vide.')
       : el('ul', { class: 'inventory-list' }, items.map((name) => el('li', {}, name))),
+    el('button', { class: 'btn btn-ghost btn-small', onClick: handlers.onToggleSound }, muted ? '🔇 Son coupé' : '🔊 Son activé'),
   ]);
 }
 
@@ -47,17 +54,21 @@ function renderRoll(lastRoll) {
     `Jet de dés : ${lastRoll.roll}. ${lastRoll.success ? 'Réussite.' : 'Échec.'}`);
 }
 
-function renderActions(story, state, paragraph, handlers) {
+function renderActions(story, state, view, paragraph, { roll, fx, handlers }) {
+  if (roll?.kind === 'test') {
+    return renderTest(story, state, { roll, handlers });
+  }
+  if (roll?.kind === 'combat') {
+    return renderCombat(view, paragraph, { roll, fx, handlers });
+  }
   if (state.status !== 'playing') {
     return renderEnding(state, handlers);
   }
   if (state.combat) {
-    return renderCombat(state, paragraph, handlers);
+    return renderCombat(state, paragraph, { fx, handlers });
   }
   if (paragraph.test) {
-    return el('div', { class: 'choices' }, [
-      el('button', { class: 'btn btn-primary', onClick: handlers.onResolveTest }, 'Lancer les dés'),
-    ]);
+    return renderTest(story, state, { handlers });
   }
   return el('div', { class: 'choices' }, listChoices(story, state).map((choice) =>
     el('button', {
@@ -66,27 +77,90 @@ function renderActions(story, state, paragraph, handlers) {
     }, choice.text)));
 }
 
-function renderCombat(state, paragraph, handlers) {
-  const { combat } = state;
-  return el('section', { class: 'combat' }, [
-    el('div', { class: 'combat-enemy' }, [
-      el('h2', { class: 'combat-name' }, combat.enemy.name),
-      el('p', { class: 'combat-stats' },
-        `Habileté ${combat.enemy.habilete} · Endurance ${combat.enemyEndurance}/${combat.enemy.endurance}`),
-    ]),
-    combat.lastRound && el('p', { class: `combat-log combat-${combat.lastRound.outcome}` }, describeRound(combat.lastRound)),
+// Panneau de test : seuil annoncé avant le lancer, dés, puis verdict.
+function renderTest(story, state, { roll, handlers }) {
+  const test = describeTest(story, state);
+  const phase = roll?.phase ?? 'idle';
+  const settled = phase === 'settled' || phase === 'verdict';
+  const faces = roll && settled ? roll.dice : roll ? roll.dice.map(() => 0) : [0, 0];
+  return el('section', { class: 'test' }, [
+    el('p', { class: 'test-threshold' }, `Testez votre ${test.label} : il vous faut ${test.threshold} ou moins.`),
+    renderDice(faces, { rolling: phase === 'rolling', settled: phase === 'settled' }),
+    settled && el('p', { class: 'test-total' }, String(roll.roll)),
+    phase === 'verdict' && el('p', { class: `verdict ${roll.success ? 'verdict-success' : 'verdict-failure'}` },
+      roll.success ? `${roll.roll} ≤ ${roll.threshold} : réussite !` : `${roll.roll} > ${roll.threshold} : échec.`),
     el('div', { class: 'choices' }, [
-      el('button', { class: 'btn btn-primary', onClick: handlers.onFight }, `Assaut ${combat.round + 1}`),
-      paragraph.combat.flee && el('button', { class: 'btn btn-ghost', onClick: handlers.onFlee }, 'Fuir (−2 Endurance)'),
+      el('button', { class: 'btn btn-primary', disabled: Boolean(roll), onClick: handlers.onResolveTest }, 'Lancer les dés'),
     ]),
   ]);
 }
 
-function describeRound({ heroAttack, enemyAttack, outcome }) {
-  const scores = `Vous ${heroAttack} contre ${enemyAttack}.`;
-  if (outcome === 'hit') return `${scores} Vous blessez votre adversaire.`;
-  if (outcome === 'wounded') return `${scores} Vous êtes blessé.`;
-  return `${scores} Les coups se croisent sans toucher.`;
+// Panneau de combat : l'adversaire lance en premier, puis le héros, puis le verdict.
+function renderCombat(view, paragraph, { roll, fx, handlers }) {
+  const { combat } = view;
+  const phase = roll?.phase ?? 'idle';
+  const round = roll?.round ?? combat.lastRound;
+  const enemySettled = phase === 'enemy' || phase === 'hero' || phase === 'verdict' || (!roll && round);
+  const heroSettled = phase === 'hero' || phase === 'verdict' || (!roll && round);
+  const showVerdict = round && (phase === 'verdict' || !roll);
+  const outcomeClass = fx?.outcome ? ` is-${fx.outcome}` : '';
+
+  return el('section', { class: `combat${outcomeClass}` }, [
+    el('div', { class: 'combat-enemy' }, [
+      el('h2', { class: 'combat-name' }, combat.enemy.name),
+      el('p', { class: 'combat-stats' },
+        `Habileté ${combat.enemy.habilete} · Endurance ${combat.enemyEndurance}/${combat.enemy.endurance}`),
+      renderEnduranceBar(combat, fx?.enemyFrom),
+    ]),
+    el('div', { class: 'duel' }, [
+      renderDuelRow(combat.enemy.name, combat.enemy.habilete, round?.enemyDice, round?.enemyAttack, {
+        rolling: phase === 'rolling',
+        settled: enemySettled,
+        justSettled: phase === 'enemy',
+      }),
+      renderDuelRow('Vous', view.stats.habilete, round?.heroDice, round?.heroAttack, {
+        rolling: phase === 'rolling' || phase === 'enemy',
+        settled: heroSettled,
+        justSettled: phase === 'hero',
+      }),
+    ]),
+    showVerdict && el('p', { class: `verdict verdict-${round.outcome}` }, describeOutcome(round.outcome)),
+    el('div', { class: 'choices' }, [
+      el('button', { class: 'btn btn-primary', disabled: Boolean(roll), onClick: handlers.onFight }, `Assaut ${combat.round + 1}`),
+      paragraph.combat.flee && el('button', { class: 'btn btn-ghost', disabled: Boolean(roll), onClick: handlers.onFlee }, 'Fuir (−2 Endurance)'),
+    ]),
+  ]);
+}
+
+function renderDuelRow(name, habilete, dice, attack, { rolling, settled, justSettled }) {
+  const faces = settled ? dice : [0, 0];
+  return el('div', { class: 'duel-row' }, [
+    el('span', { class: 'duel-name' }, name),
+    el('span', { class: 'duel-total' }, settled ? [`+ ${habilete} = `, el('strong', {}, String(attack))] : null),
+    renderDice(faces, { rolling, settled: justSettled }),
+  ]);
+}
+
+// La barre part de l'ancienne valeur et glisse vers la nouvelle quand `from` est fourni.
+function renderEnduranceBar(combat, from) {
+  const percent = (value) => `${Math.max(0, (value / combat.enemy.endurance) * 100)}%`;
+  const fill = el('span', { class: 'bar-fill', style: `width: ${percent(from ?? combat.enemyEndurance)}` });
+  if (from !== undefined) {
+    requestAnimationFrame(() => requestAnimationFrame(() => {
+      fill.style.width = percent(combat.enemyEndurance);
+    }));
+  }
+  return el('span', { class: 'bar' }, fill);
+}
+
+function describeOutcome(outcome) {
+  if (outcome === 'hit') return 'Vous blessez votre adversaire !';
+  if (outcome === 'wounded') return 'Vous êtes blessé.';
+  return 'Les coups se croisent sans toucher.';
+}
+
+function formatDelta(delta) {
+  return delta > 0 ? `+${delta}` : `−${Math.abs(delta)}`;
 }
 
 function renderEnding(state, handlers) {

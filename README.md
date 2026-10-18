@@ -6,11 +6,13 @@ Le moteur (`src/engine/`) ne connaît aucune histoire : chaque histoire est un f
 ## Lancer
 
 ```bash
-npm start        # sert le dossier sur http://localhost:8080
+npm start        # sert le dossier sur http://localhost:8080, sans cache
 npm test         # tests du moteur (node:test)
 ```
 
 Les histoires sont chargées par `fetch`, il faut donc un serveur HTTP (pas d'ouverture en `file://`).
+
+Les lancers de dés sont animés, avec un son synthétisé (Web Audio, sans fichier) et une vibration sur les appareils qui le permettent. Le son se coupe depuis le panneau ☰ ; la préférence est mémorisée.
 
 ## Structure
 

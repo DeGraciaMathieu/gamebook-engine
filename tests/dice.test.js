@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { parseDice, rollDice, createSeededRng } from '../src/engine/dice.js';
+import { parseDice, rollDice, rollDiceDetailed, createSeededRng } from '../src/engine/dice.js';
 import { minRoll, maxRoll } from './helpers.js';
 
 test('parseDice lit nombre, faces et modificateur', () => {
@@ -17,6 +17,10 @@ test('parseDice rejette une formule invalide', () => {
 test('rollDice respecte les bornes', () => {
   assert.equal(rollDice('2d6+12', minRoll), 14);
   assert.equal(rollDice('2d6+12', maxRoll), 24);
+});
+
+test('rollDiceDetailed expose chaque dé et le modificateur', () => {
+  assert.deepEqual(rollDiceDetailed('2d6+12', maxRoll), { dice: [6, 6], modifier: 12, total: 24 });
 });
 
 test('createSeededRng est déterministe et borné', () => {

@@ -1,4 +1,4 @@
-import { rollDice } from './dice.js';
+import { rollDice, rollDiceDetailed } from './dice.js';
 import { isConditionMet } from './conditions.js';
 import { applyEffects } from './effects.js';
 import { startCombat, resolveAssault, isEnemyDefeated, FLEE_DAMAGE } from './combat.js';
@@ -71,24 +71,42 @@ function choiceKey(story, state, choice) {
   return `${state.paragraphId}:${currentParagraph(story, state).choices.indexOf(choice)}`;
 }
 
+// Décrit le test de la page courante : caractéristique visée, seuil à ne pas dépasser, dés à lancer.
+export function describeTest(story, state) {
+  const test = currentParagraph(story, state).test;
+  if (!test) {
+    return null;
+  }
+  const stat = test.type === 'luck' ? 'chance' : test.stat;
+  return {
+    stat,
+    label: story.hero.stats[stat].label,
+    threshold: state.stats[stat],
+    dice: test.type === 'luck' ? LUCK_DICE : test.dice,
+    consumesLuck: test.type === 'luck',
+  };
+}
+
 // Test de Chance : réussite si 2d6 <= Chance ; la Chance baisse de 1 à chaque test.
 // Test de caractéristique : réussite si le jet <= caractéristique.
 export function resolveTest(story, state, rng = Math.random) {
-  const test = currentParagraph(story, state).test;
+  const test = describeTest(story, state);
   if (!test) {
     throw new Error('Aucun test à résoudre ici');
   }
-  const stat = test.type === 'luck' ? 'chance' : test.stat;
-  const roll = rollDice(test.type === 'luck' ? LUCK_DICE : test.dice, rng);
-  const success = roll <= state.stats[stat];
+  const roll = rollDiceDetailed(test.dice, rng);
+  const success = roll.total <= test.threshold;
   let next = state;
-  if (test.type === 'luck') {
+  if (test.consumesLuck) {
     next = applyEffects([{ type: 'stat', stat: 'chance', delta: -1 }], state);
   }
+  const { success: successTarget, failure: failureTarget } = currentParagraph(story, state).test;
   return {
-    state: trackChanges(state, enterParagraph(story, next, success ? test.success : test.failure)),
-    roll,
+    state: trackChanges(state, enterParagraph(story, next, success ? successTarget : failureTarget)),
+    roll: roll.total,
+    dice: roll.dice,
     success,
+    threshold: test.threshold,
   };
 }
 
@@ -96,17 +114,18 @@ export function fightRound(story, state, rng = Math.random) {
   if (!state.combat) {
     throw new Error('Aucun combat en cours');
   }
-  const { combat, heroDamage } = resolveAssault(state.combat, state.stats.habilete, rng);
-  let next = applyEffects([{ type: 'stat', stat: 'endurance', delta: -heroDamage }], state);
+  const { combat, round } = resolveAssault(state.combat, state.stats.habilete, rng);
+  let next = applyEffects([{ type: 'stat', stat: 'endurance', delta: -round.heroDamage }], state);
   next = { ...next, combat };
 
   if (isDead(next)) {
-    return die(story, next);
+    return { state: die(story, next), round };
   }
   if (isEnemyDefeated(combat)) {
-    return trackChanges(state, enterParagraph(story, next, currentParagraph(story, state).combat.win));
+    const win = currentParagraph(story, state).combat.win;
+    return { state: trackChanges(state, enterParagraph(story, next, win)), round };
   }
-  return next;
+  return { state: next, round };
 }
 
 // Fuir laisse à l'adversaire un coup gratuit.

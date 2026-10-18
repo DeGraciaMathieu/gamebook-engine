@@ -12,13 +12,18 @@ export function parseDice(spec) {
   };
 }
 
-export function rollDice(spec, rng = Math.random) {
+export function rollDiceDetailed(spec, rng = Math.random) {
   const { count, sides, modifier } = parseDice(spec);
-  let total = modifier;
-  for (let i = 0; i < count; i++) {
-    total += Math.floor(rng() * sides) + 1;
-  }
-  return total;
+  const dice = Array.from({ length: count }, () => Math.floor(rng() * sides) + 1);
+  return {
+    dice,
+    modifier,
+    total: dice.reduce((sum, die) => sum + die, modifier),
+  };
+}
+
+export function rollDice(spec, rng = Math.random) {
+  return rollDiceDetailed(spec, rng).total;
 }
 
 // Générateur déterministe (mulberry32) pour les tests et le rejeu.

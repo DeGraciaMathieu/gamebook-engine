@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { createGame, listChoices, choose, resolveTest, fightRound, fleeCombat, hasChosen } from '../src/engine/game.js';
+import { createGame, listChoices, choose, resolveTest, describeTest, fightRound, fleeCombat, hasChosen } from '../src/engine/game.js';
 import { makeStory, minRoll, maxRoll } from './helpers.js';
 
 const story = makeStory({
@@ -76,8 +76,11 @@ test('endurance à zéro : mort et paragraphe de mort', () => {
 
 test('test de chance : réussite consomme 1 point de chance', () => {
   const state = pick(start(), 'Pont');
+  assert.deepEqual(describeTest(story, state), { stat: 'chance', label: 'Chance', threshold: 8, dice: '2d6', consumesLuck: true });
   const result = resolveTest(story, state, minRoll);
   assert.equal(result.roll, 2);
+  assert.deepEqual(result.dice, [1, 1]);
+  assert.equal(result.threshold, 8);
   assert.equal(result.success, true);
   assert.equal(result.state.paragraphId, '2');
   assert.equal(result.state.stats.chance, 7);
@@ -90,6 +93,7 @@ test('test de chance : échec mène au paragraphe d\'échec', () => {
 });
 
 test('test de caractéristique ne consomme rien', () => {
+  assert.equal(describeTest(story, start()), null);
   const result = resolveTest(story, pick(start(), 'Force'), minRoll);
   assert.equal(result.success, true);
   assert.equal(result.state.paragraphId, '2');
@@ -100,7 +104,9 @@ test('combat : la victoire mène au paragraphe win', () => {
   let state = pick(start(), 'Gobelin');
   assert.equal(state.combat.enemy.name, 'Gobelin');
   assert.deepEqual(listChoices(story, state), []);
-  state = fightRound(story, state, minRoll);
+  const result = fightRound(story, state, minRoll);
+  assert.equal(result.round.outcome, 'hit');
+  state = result.state;
   assert.equal(state.combat, null);
   assert.equal(state.paragraphId, '3');
   assert.equal(state.status, 'ended');
@@ -111,7 +117,8 @@ test('combat : le héros peut mourir', () => {
     death: 'mort',
     hero: { stats: { habilete: { label: 'H', value: 1 }, endurance: { label: 'E', value: 2 }, chance: { label: 'C', value: 8 } } },
   });
-  const state = fightRound(weak, pick(createGame(weak, minRoll), 'Gobelin'), minRoll);
+  const { state, round } = fightRound(weak, pick(createGame(weak, minRoll), 'Gobelin'), minRoll);
+  assert.equal(round.outcome, 'wounded');
   assert.equal(state.status, 'dead');
   assert.equal(state.paragraphId, 'mort');
 });
