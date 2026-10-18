@@ -3,7 +3,7 @@ import { renderDice } from './dice.js';
 import { currentParagraph, listChoices, hasChosen, describeTest } from '../engine/game.js';
 
 // `roll` décrit un lancer de dés en cours d'animation ; `fx` les effets visuels à jouer une fois sur ce rendu.
-export function renderGame({ story, state, lastRoll, menuOpen, muted, roll, fx, handlers }) {
+export function renderGame({ story, state, menuOpen, muted, roll, fx, handlers }) {
   const view = roll?.view ?? state;
   const paragraph = currentParagraph(story, state);
   return el('main', { class: 'screen game' }, [
@@ -11,7 +11,6 @@ export function renderGame({ story, state, lastRoll, menuOpen, muted, roll, fx, 
     menuOpen && renderMenu(story, state, muted, handlers),
     el('article', { class: 'page' }, [
       el('p', { class: 'page-number' }, state.paragraphId),
-      lastRoll && renderRoll(lastRoll),
       ...renderText(story, state, paragraph.text),
       renderActions(story, state, view, paragraph, { roll, fx, handlers }),
     ]),
@@ -47,11 +46,6 @@ function renderMenu(story, state, muted, handlers) {
       : el('ul', { class: 'inventory-list' }, items.map((name) => el('li', {}, name))),
     el('button', { class: 'btn btn-ghost btn-small', onClick: handlers.onToggleSound }, muted ? '🔇 Son coupé' : '🔊 Son activé'),
   ]);
-}
-
-function renderRoll(lastRoll) {
-  return el('p', { class: `roll ${lastRoll.success ? 'roll-success' : 'roll-failure'}` },
-    `Jet de dés : ${lastRoll.roll}. ${lastRoll.success ? 'Réussite.' : 'Échec.'}`);
 }
 
 function renderActions(story, state, view, paragraph, { roll, fx, handlers }) {

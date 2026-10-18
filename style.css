@@ -262,22 +262,13 @@ body {
   text-align: justify;
   hyphens: auto;
 }
-.page-number + .page-text::first-letter,
-.roll + .page-text::first-letter {
+.page-number + .page-text::first-letter {
   float: left;
   margin: 6px 8px 0 0;
   font-size: 3.2em;
   line-height: 0.8;
   color: var(--accent);
 }
-.roll {
-  margin: 0 0 20px;
-  padding: 10px 14px;
-  border-left: 3px solid currentColor;
-  font-style: italic;
-}
-.roll-success { color: var(--success); }
-.roll-failure { color: var(--failure); }
 
 /* Objets et caractéristiques modifiés */
 .mark {

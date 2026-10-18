@@ -13,7 +13,6 @@ const ui = {
   stories: [],
   story: null,
   state: null,
-  lastRoll: null,
   menuOpen: false,
   roll: null,
   rollId: 0,
@@ -43,7 +42,6 @@ function render() {
   replaceContent(app, renderGame({
     story: ui.story,
     state: ui.state,
-    lastRoll: ui.lastRoll,
     menuOpen: ui.menuOpen,
     muted: isMuted(),
     roll: ui.roll,
@@ -111,7 +109,7 @@ function animateTest() {
         setRollPhase('verdict', { ...previous, stats });
       },
     },
-    { after: 1100, run: () => update(result.state, { roll: result.roll, success: result.success }) },
+    { after: 1100, run: () => update(result.state) },
   ]);
 }
 
@@ -186,10 +184,9 @@ function openGame(story, state) {
   update(state);
 }
 
-function update(state, lastRoll = null) {
+function update(state) {
   ui.roll = null;
   ui.state = state;
-  ui.lastRoll = lastRoll;
   if (state.status === 'playing') {
     saveGame(ui.story.id, state);
   } else {
