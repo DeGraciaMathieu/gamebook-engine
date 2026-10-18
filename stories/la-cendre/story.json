@@ -1,0 +1,2955 @@
+{
+  "id": "la-cendre",
+  "title": "La Cendre",
+  "summary": "Il fait froid, il fera plus froid. Vous avez promis au petit la mer, au sud, avant l'hiver. Vous ne savez pas ce qu'il y a à la mer. Il faut marcher.",
+  "start": "1",
+  "death": "mort",
+  "hero": {
+    "stats": {
+      "habilete": {
+        "label": "Habileté",
+        "description": "Ce que vos mains savent encore faire : forcer, viser, porter.",
+        "base": 7,
+        "max": 12
+      },
+      "endurance": {
+        "label": "Endurance",
+        "description": "Ce qui vous reste de corps. À zéro, le petit continue seul, et ce n'est pas une fin.",
+        "base": 14,
+        "max": 24
+      },
+      "chance": {
+        "label": "Chance",
+        "description": "Ce que le monde consent encore à vous laisser. Il consent de moins en moins.",
+        "base": 6,
+        "max": 10
+      },
+      "souffle": {
+        "label": "Souffle",
+        "description": "Le souffle du petit. Il baisse avec le froid et la faim, remonte avec le feu et la nourriture. À zéro, il ne se réveille pas.",
+        "base": 5,
+        "max": 9
+      },
+      "vivres": {
+        "label": "Vivres",
+        "value": 4,
+        "capped": false,
+        "unit": "ration"
+      }
+    },
+    "points": 8,
+    "inventory": [
+      "revolver",
+      "bache"
+    ],
+    "flags": {}
+  },
+  "items": {
+    "revolver": {
+      "name": "Revolver"
+    },
+    "bache": {
+      "name": "Bâche"
+    },
+    "caddie": {
+      "name": "Chariot"
+    },
+    "briquet": {
+      "name": "Briquet"
+    },
+    "couverture": {
+      "name": "Couverture de survie"
+    },
+    "antibiotiques": {
+      "name": "Antibiotiques"
+    },
+    "carte_routiere": {
+      "name": "Carte routière"
+    },
+    "jumelles": {
+      "name": "Jumelles"
+    },
+    "bidon": {
+      "name": "Bidon d'eau"
+    },
+    "hachette": {
+      "name": "Hachette"
+    },
+    "peches": {
+      "name": "Boîte de pêches au sirop"
+    },
+    "cle_bunker": {
+      "name": "Clef du bunker"
+    },
+    "photo": {
+      "name": "Photographie"
+    }
+  },
+  "paragraphs": {
+    "1": {
+      "text": [
+        "Vous vous réveillez dans le noir et le froid, et vous tendez la main pour toucher le petit. Il respire. Vous restez comme ça un moment, la main sur sa poitrine, à compter.",
+        "Dehors la cendre tombe toujours, lente, comme quelque chose qui ne finira jamais. L'hiver arrive. Vous l'avez dit au petit : il faut aller au sud, vers la mer. Vous ne savez pas ce qu'il y a à la mer. Vous n'avez rien dit d'autre."
+      ],
+      "choices": [
+        {
+          "text": "Fouiller la maison avant de partir",
+          "to": "6"
+        },
+        {
+          "text": "Parler au petit",
+          "to": "72"
+        },
+        {
+          "text": "Charger le sac et partir",
+          "to": "15"
+        }
+      ]
+    },
+    "2": {
+      "text": "La porte s'ouvre sur un fil tendu au ras du sol. Vous l'avez vu trop tard, ou juste à temps. Tentez votre Chance.",
+      "test": {
+        "type": "luck",
+        "success": "142",
+        "failure": "153"
+      }
+    },
+    "3": {
+      "text": "Vous posez la nourriture dans ses mains et vous refermez ses doigts dessus. Il ne dit rien. Il n'y a rien à dire. Le petit le regarde jusqu'au tournant. Il regagne 1 point de Souffle. Vous ne savez pas pourquoi, et vous ne demandez pas.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "souffle",
+          "delta": 1
+        }
+      ],
+      "choices": [
+        {
+          "text": "Continuer jusqu'au soir",
+          "to": "145"
+        }
+      ]
+    },
+    "4": {
+      "text": "Le plafond vous tombe dessus, pas tout, assez. Vous perdez 2 points d'Endurance et vous ressortez blanc de plâtre, les mains vides, le petit qui vous tire par le bras en pleurant.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -2
+        }
+      ],
+      "choices": [
+        {
+          "text": "Ressortir sur la rue",
+          "to": "30"
+        }
+      ]
+    },
+    "5": {
+      "text": "Derrière le comptoir, dans un tiroir à clef que la clef a laissé ouvert, une boîte d'antibiotiques, la date passée, les comprimés intacts. Vous la mettez dans la poche intérieure, contre vous, là où vous gardez ce qui compte.",
+      "effects": [
+        {
+          "type": "item",
+          "action": "add",
+          "item": "antibiotiques"
+        }
+      ],
+      "choices": [
+        {
+          "text": "Ressortir sur la rue",
+          "to": "30"
+        }
+      ]
+    },
+    "6": {
+      "text": "La maison a déjà été fouillée, par vous et par d'autres avant vous. Il reste un grenier dont la trappe pend, et une commode dans la chambre du fond, les tiroirs à moitié ouverts.",
+      "choices": [
+        {
+          "text": "Monter au grenier",
+          "to": "43"
+        },
+        {
+          "text": "Ouvrir les tiroirs de la commode",
+          "to": "57"
+        },
+        {
+          "text": "Partir",
+          "to": "15"
+        }
+      ]
+    },
+    "7": {
+      "text": "Vous dites qu'il n'y avait personne. Il sait que vous mentez. Il perd 1 point de Souffle et il marche derrière vous, pas à côté.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "souffle",
+          "delta": -1
+        }
+      ],
+      "choices": [
+        {
+          "text": "Revenir sur la rue principale",
+          "to": "30"
+        }
+      ]
+    },
+    "8": {
+      "text": "Vous dormez trempés, l'un contre l'autre. Vous perdez 2 points d'Endurance et le petit tousse jusqu'au matin. Il perd 2 points de Souffle.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -2
+        },
+        {
+          "type": "stat",
+          "stat": "souffle",
+          "delta": -2
+        }
+      ],
+      "choices": [
+        {
+          "text": "Attendre le matin",
+          "to": "105"
+        }
+      ]
+    },
+    "9": {
+      "text": "Vous fermez les yeux. Quand vous les rouvrez, il fait plus sombre, et le petit est toujours là, et il y a quelqu'un sur la plage, ou personne.",
+      "choices": [
+        {
+          "text": "Quelqu'un vient",
+          "to": "127",
+          "if": {
+            "type": "all",
+            "conditions": [
+              {
+                "type": "flag",
+                "flag": "bonnes_gens"
+              },
+              {
+                "type": "not",
+                "condition": {
+                  "type": "flag",
+                  "flag": "voleur_depouille"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "text": "Personne ne vient",
+          "to": "133",
+          "if": {
+            "type": "any",
+            "conditions": [
+              {
+                "type": "not",
+                "condition": {
+                  "type": "flag",
+                  "flag": "bonnes_gens"
+                }
+              },
+              {
+                "type": "flag",
+                "flag": "voleur_depouille"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "10": {
+      "text": [
+        "Vous sentez la mer avant de la voir, dans le vent. Puis la route descend, et elle est là. Grise. Pas bleue. Grise comme tout le reste, jusqu'à l'horizon, et une écume sale sur le sable noir.",
+        "Le petit la regarde longtemps. Il ne dit rien. Puis il dit : c'est quand même la mer."
+      ],
+      "choices": [
+        {
+          "text": "Descendre sur la plage",
+          "to": "48"
+        }
+      ]
+    },
+    "11": {
+      "text": "Sous le filet, un seau en plastique fermé, et dedans du poisson séché, dur comme du bois, mais du poisson : 1 ration. Le petit en mâche un morceau pendant une heure, sans arriver à l'avaler, et il a l'air content.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "vivres",
+          "delta": 1
+        }
+      ],
+      "choices": [
+        {
+          "text": "Revenir sur la plage",
+          "to": "48"
+        }
+      ]
+    },
+    "12": {
+      "text": "Le petit dit qu'il y avait un enfant, de son âge, qui le regardait, et qu'il s'est enfui. Il veut qu'on le cherche. Il dit qu'on ne peut pas le laisser tout seul. Il le dit comme s'il parlait de lui.",
+      "choices": [
+        {
+          "text": "Chercher l'enfant dans les ruelles",
+          "to": "18"
+        },
+        {
+          "text": "Dire qu'il n'y avait personne",
+          "to": "7"
+        }
+      ]
+    },
+    "13": {
+      "text": "Dans le coffre, un sac de voyage : des vêtements d'enfant, trop petits, et une boîte de biscuits pour bébé, deux paquets de chips : 2 rations. Vous refermez le coffre doucement, comme une porte de chambre.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "vivres",
+          "delta": 2
+        }
+      ],
+      "choices": [
+        {
+          "text": "Continuer vers la rivière",
+          "to": "39"
+        }
+      ]
+    },
+    "14": {
+      "text": "Vous rampez sous le métal, le dos raclé, le petit qui pousse le sac derrière vous. Il ne faut rien faire tomber. Testez votre Habileté.",
+      "test": {
+        "type": "stat",
+        "stat": "habilete",
+        "dice": "2d6",
+        "success": "5",
+        "failure": "83"
+      }
+    },
+    "15": {
+      "text": [
+        "La route est une bande grise entre deux rangées d'arbres morts. Vous poussez devant vous ce qui vous reste. Le petit marche à côté, dans vos traces quand il y en a.",
+        "Sur la droite, une colline avec une tour de guet. Sur la gauche, la voie ferrée, et un wagon renversé. Plus loin dans les bois, une cabane de chasse. Devant, la route."
+      ],
+      "choices": [
+        {
+          "text": "Monter vers la tour de guet",
+          "to": "107"
+        },
+        {
+          "text": "Suivre la voie ferrée jusqu'au wagon",
+          "to": "131"
+        },
+        {
+          "text": "Aller voir la cabane de chasse",
+          "to": "138"
+        },
+        {
+          "text": "Rester sur la route",
+          "to": "75"
+        }
+      ]
+    },
+    "16": {
+      "text": "De l'autre côté, vous vous asseyez tous les deux au bord du vide et vous regardez la poutre, longtemps. Puis le petit rit. Vous ne savez plus quand il a ri pour la dernière fois.",
+      "choices": [
+        {
+          "text": "Reprendre la route",
+          "to": "40"
+        }
+      ]
+    },
+    "17": {
+      "text": "La flèche passe dans votre manteau sans vous toucher. Vous reculez en tenant le petit devant vous comme un bouclier, et vous avez honte de ça tout l'après-midi. L'homme ne tire pas une seconde fois. Il n'a peut-être qu'une flèche.",
+      "choices": [
+        {
+          "text": "Revenir sur la plage",
+          "to": "48"
+        }
+      ]
+    },
+    "18": {
+      "text": "Vous cherchez une heure, dans les cours, les garages. Rien. Peut-être un chien, peut-être rien. Vous perdez 1 point d'Endurance en pure perte. Mais le petit a vu que vous cherchiez. Il vous tient la main en revenant, et il n'a plus demandé.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -1
+        },
+        {
+          "type": "flag",
+          "flag": "bonnes_gens"
+        }
+      ],
+      "choices": [
+        {
+          "text": "Revenir sur la rue principale",
+          "to": "30"
+        }
+      ]
+    },
+    "19": {
+      "text": "Sans eau, la cendre vous entre dans la bouche et n'en sort plus. Le deuxième jour, le petit ne parle plus. Le troisième, vous le portez. Vous perdez 3 points d'Endurance et il perd 3 points de Souffle. La route apparaît quand vous aviez cessé d'y croire.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -3
+        },
+        {
+          "type": "stat",
+          "stat": "souffle",
+          "delta": -3
+        }
+      ],
+      "choices": [
+        {
+          "text": "Suivre la route",
+          "to": "40"
+        }
+      ]
+    },
+    "20": {
+      "text": "Le froid entre dans vous par les os et n'en ressort plus. Vous perdez 3 points d'Endurance. Le petit ne tousse plus vers quatre heures, et vous le secouez pour qu'il tousse encore. Il perd 3 points de Souffle.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -3
+        },
+        {
+          "type": "stat",
+          "stat": "souffle",
+          "delta": -3
+        }
+      ],
+      "choices": [
+        {
+          "text": "Attendre le matin",
+          "to": "80"
+        }
+      ]
+    },
+    "21": {
+      "text": "Un lit, un réchaud, une boîte de thon : 1 ration. Et sur la table, une lampe à pétrole avec encore du pétrole. Vous l'allumez pour le petit, juste pour voir sa figure dans la lumière jaune. Il regagne 1 point de Souffle.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "vivres",
+          "delta": 1
+        },
+        {
+          "type": "stat",
+          "stat": "souffle",
+          "delta": 1
+        }
+      ],
+      "choices": [
+        {
+          "text": "Redescendre sur la plage",
+          "to": "48"
+        }
+      ]
+    },
+    "22": {
+      "text": "Le feu prend mal sur le bois mort et humide, mais il prend. Le petit regagne 1 point de Souffle à regarder les flammes. Vous regagnez 1 point d'Endurance.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "souffle",
+          "delta": 1
+        },
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": 1
+        }
+      ],
+      "choices": [
+        {
+          "text": "Dormir",
+          "to": "132"
+        }
+      ]
+    },
+    "23": {
+      "text": "La caisse pèse dans le chariot comme un enfant de plus. Vous la recouvrez de la bâche de plastique du rayon, pour que personne ne voie. Le petit pousse avec vous jusqu'à la rue.",
+      "choices": [
+        {
+          "text": "Ressortir sur la rue",
+          "to": "30"
+        }
+      ]
+    },
+    "24": {
+      "text": "Derrière une maison brûlée, dans le jardin, une trappe de métal au ras du sol, fermée par un cadenas, et une adresse peinte sur le battant. La même que sur la clef, si vous l'avez. Sinon, le cadenas est gros, mais le fer est vieux.",
+      "choices": [
+        {
+          "text": "Ouvrir avec la clef du bunker",
+          "to": "70",
+          "if": {
+            "type": "item",
+            "item": "cle_bunker"
+          }
+        },
+        {
+          "text": "Forcer le cadenas à la hachette",
+          "to": "70",
+          "if": {
+            "type": "item",
+            "item": "hachette"
+          }
+        },
+        {
+          "text": "Chercher ailleurs",
+          "to": "25"
+        }
+      ]
+    },
+    "25": {
+      "text": "Sur le bord de la route, une voiture, portes fermées, vitres opaques de cendre. Dedans, des formes. Une famille, assise, qui a attendu quelque chose qui n'est pas venu. Un peu plus loin, une cabine téléphonique, la porte ouverte.",
+      "choices": [
+        {
+          "text": "Ouvrir la portière et fouiller",
+          "to": "86"
+        },
+        {
+          "text": "Entrer dans la cabine",
+          "to": "155"
+        },
+        {
+          "text": "Continuer vers la rivière",
+          "to": "39"
+        }
+      ]
+    },
+    "26": {
+      "text": "La flèche vous entre dans la cuisse. Vous l'arrachez vous-même derrière la haie, en mordant votre manche. Vous perdez 3 points d'Endurance. Le petit tient la jambe. Vous lui dites de ne pas regarder. Il regarde.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -3
+        }
+      ],
+      "choices": [
+        {
+          "text": "Revenir sur la plage en boitant",
+          "to": "48"
+        }
+      ]
+    },
+    "27": {
+      "text": "Le voleur disparaît dans les dunes avec le sac. Vous retrouvez une partie de ce qu'il a laissé tomber en courant. Il manque 2 rations. Vous tenez le petit contre vous un long moment, et vous laissez le reste.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "vivres",
+          "delta": -2
+        }
+      ],
+      "choices": [
+        {
+          "text": "Revenir sur la plage",
+          "to": "48"
+        }
+      ]
+    },
+    "28": {
+      "text": "Sous le drap, des cartons d'hiver, des décorations de fête, et une couverture de survie encore pliée dans son emballage, argentée comme une chose venue d'un autre monde. Vous la glissez dans le sac. Le petit vous regarde d'en bas, la tête levée dans l'ouverture de la trappe.",
+      "effects": [
+        {
+          "type": "item",
+          "action": "add",
+          "item": "couverture"
+        }
+      ],
+      "choices": [
+        {
+          "text": "Redescendre",
+          "to": "6"
+        }
+      ]
+    },
+    "29": {
+      "text": "La bibliothèque a servi de bois de chauffage, mais au dernier rayon, trop haut pour les flammes, il reste des livres. Le petit en prend un, avec des images d'animaux qu'il n'a jamais vus. Il regagne 1 point de Souffle. Le livre pèse, et vous perdez 1 point d'Endurance à le porter en plus. Vous ne le lui dites pas.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "souffle",
+          "delta": 1
+        },
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -1
+        }
+      ],
+      "choices": [
+        {
+          "text": "Ressortir sur la rue",
+          "to": "30"
+        }
+      ]
+    },
+    "30": {
+      "text": [
+        "La ville est une rue principale et des rues qui tombent dedans. Les vitrines sont cassées depuis longtemps. Un supermarché avec son parking. Une pharmacie à grille. Une station-service. Une église.",
+        "Au bout de la rue, une maison aux volets fermés, la seule dont les volets sont fermés. Le petit dit qu'il a vu un enfant, entre deux maisons. Vous n'avez rien vu."
+      ],
+      "choices": [
+        {
+          "text": "Le supermarché",
+          "to": "49"
+        },
+        {
+          "text": "La pharmacie",
+          "to": "130"
+        },
+        {
+          "text": "La station-service",
+          "to": "156"
+        },
+        {
+          "text": "La maison aux volets",
+          "to": "58"
+        },
+        {
+          "text": "L'église",
+          "to": "41"
+        },
+        {
+          "text": "La bibliothèque",
+          "to": "29"
+        },
+        {
+          "text": "Chercher l'enfant que le petit a vu",
+          "to": "12"
+        },
+        {
+          "text": "Quitter la ville",
+          "to": "128"
+        }
+      ]
+    },
+    "31": {
+      "text": "Dans le verger, un homme pendu à une branche, depuis longtemps. Il porte encore ses vêtements et une clef au cou, sur un lacet. Une clef de cadenas, grosse, du genre qui ferme quelque chose qui vaut la peine.",
+      "choices": [
+        {
+          "text": "Grimper le décrocher",
+          "to": "79"
+        },
+        {
+          "text": "Ne pas le toucher",
+          "to": "62"
+        }
+      ]
+    },
+    "32": {
+      "text": "L'autre rive. Vous vous déshabillez, vous tordez les vêtements, vous les remettez mouillés. Le petit vous regarde faire et il fait pareil, sérieux comme un petit soldat.",
+      "choices": [
+        {
+          "text": "Continuer",
+          "to": "46"
+        }
+      ]
+    },
+    "33": {
+      "text": "Une botte à dix centimètres de votre visage. Puis une main qui vous attrape par le col. Ils sont deux à descendre, et le camion attend, moteur tournant.",
+      "combat": {
+        "name": "Hommes du camion",
+        "habilete": 8,
+        "endurance": 8,
+        "win": "106"
+      }
+    },
+    "34": {
+      "text": "L'homme pisse dans le fossé à deux mètres de vous, remonte, et le camion repart. Vous restez couchés jusqu'à ne plus rien entendre. Le petit a les yeux fermés, très fort. Vous lui dites que c'est fini.",
+      "choices": [
+        {
+          "text": "Continuer",
+          "to": "115"
+        }
+      ]
+    },
+    "35": {
+      "text": "Le chariot flotte à moitié et le courant le tire. Le petit sur votre dos, les mains sur le chariot, les pieds sur les galets qui roulent. Testez votre Habileté.",
+      "test": {
+        "type": "stat",
+        "stat": "habilete",
+        "dice": "2d6",
+        "success": "32",
+        "failure": "143"
+      }
+    },
+    "36": {
+      "text": "Un chien aboie, loin, derrière les arbres. Un vrai chien. Le petit s'arrête net. Il veut y aller. Il dit qu'un chien, c'est quelqu'un.",
+      "choices": [
+        {
+          "text": "Suivre l'aboiement",
+          "to": "93"
+        },
+        {
+          "text": "Dire qu'il n'y a pas de chien",
+          "to": "103"
+        }
+      ]
+    },
+    "37": {
+      "text": [
+        "Vous restez. Le petit dort dans un vrai lit et vous comptez les boîtes : cent dix jours, en mangeant peu. Vous ne sortez plus. Vous n'entendez pas le camion passer, la deuxième semaine. Vous ne saurez jamais s'il est passé.",
+        "Le cent onzième jour, vous rouvrez la trappe. Le petit a grandi. L'hiver est là, et la mer est toujours au sud, et vous n'avez plus de raison de croire qu'elle vous attend."
+      ]
+    },
+    "38": {
+      "text": [
+        "Un homme a monté son étal sur une remorque, au carrefour : un colporteur, avec un fusil posé en travers. Il ne vend pas, il troque. La monnaie, c'est la nourriture. Il a un briquet, une couverture de survie, des antibiotiques, un bidon.",
+        "Il regarde votre sac, vos poches, et il dit qu'il reprend aussi. Les jumelles. Une hachette. Un revolver, s'il a encore une balle."
+      ],
+      "shop": {
+        "currency": "vivres",
+        "sell": [
+          {
+            "item": "briquet",
+            "price": 2
+          },
+          {
+            "item": "couverture",
+            "price": 3
+          },
+          {
+            "item": "antibiotiques",
+            "price": 4
+          },
+          {
+            "item": "bidon",
+            "price": 2
+          }
+        ],
+        "buy": [
+          {
+            "item": "jumelles",
+            "price": 2
+          },
+          {
+            "item": "hachette",
+            "price": 2
+          },
+          {
+            "item": "revolver",
+            "price": 5
+          }
+        ]
+      },
+      "choices": [
+        {
+          "text": "Reprendre la route",
+          "to": "110"
+        }
+      ]
+    },
+    "39": {
+      "text": "La rivière coupe la route là où le pont a été dynamité, depuis longtemps. Elle est large et basse, grise, rapide au milieu. On la passe à gué, peut-être. Ou on remonte le long de la berge, un jour de marche, vers un autre pont qui existe sur la carte.",
+      "choices": [
+        {
+          "text": "Traverser à gué en poussant le chariot",
+          "to": "35",
+          "if": {
+            "type": "item",
+            "item": "caddie"
+          }
+        },
+        {
+          "text": "Traverser à gué",
+          "to": "139",
+          "if": {
+            "type": "not",
+            "condition": {
+              "type": "item",
+              "item": "caddie"
+            }
+          }
+        },
+        {
+          "text": "Remonter la berge vers l'amont",
+          "to": "144"
+        }
+      ]
+    },
+    "40": {
+      "text": [
+        "Un vieil homme marche devant vous, si lentement que vous le rattrapez sans le vouloir. Il a quatre-vingt-dix ans ou cent. Il dit qu'il s'appelle Ely, et que ce n'est pas son nom. Il dit qu'il savait que ça arriverait.",
+        "Le petit veut qu'on partage le repas avec lui. Vous dites que ce n'est pas raisonnable. Le petit dit : je sais."
+      ],
+      "choices": [
+        {
+          "text": "Partager un repas avec le vieux (1 ration)",
+          "to": "92",
+          "if": {
+            "type": "stat",
+            "stat": "vivres",
+            "op": ">=",
+            "value": 1
+          },
+          "effects": [
+            {
+              "type": "stat",
+              "stat": "vivres",
+              "delta": -1
+            },
+            {
+              "type": "flag",
+              "flag": "bonnes_gens"
+            },
+            {
+              "type": "stat",
+              "stat": "souffle",
+              "delta": 1
+            }
+          ]
+        },
+        {
+          "text": "Continuer sans s'arrêter",
+          "to": "38"
+        }
+      ]
+    },
+    "41": {
+      "text": "L'église est ouverte et vide, les bancs brûlés pour le bois. Le petit s'assoit quand même. Il ferme les yeux. Vous ne savez pas ce qu'il dit, ni à qui. Quand il rouvre les yeux, il regagne 1 point de Souffle. Vous ne vous moquez pas.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "souffle",
+          "delta": 1
+        }
+      ],
+      "choices": [
+        {
+          "text": "Ressortir sur la rue",
+          "to": "30"
+        }
+      ]
+    },
+    "42": {
+      "text": "À l'intérieur, les rayons sont vides jusqu'à l'os. Même les étiquettes ont été prises. Au fond, derrière une porte battante, la réserve. Le plafond y pend par plaques.",
+      "choices": [
+        {
+          "text": "Fouiller la réserve",
+          "to": "60"
+        },
+        {
+          "text": "Ressortir",
+          "to": "30"
+        }
+      ]
+    },
+    "43": {
+      "text": "Le plancher du grenier est noir d'humidité et sonne creux. Au fond, sous la lucarne, un tas de choses sous un drap. Il faut traverser. Testez votre Habileté.",
+      "test": {
+        "type": "stat",
+        "stat": "habilete",
+        "dice": "2d6",
+        "success": "28",
+        "failure": "56"
+      }
+    },
+    "44": {
+      "text": "Un hameçon vous entre dans la paume jusqu'à l'os. Vous perdez 1 point d'Endurance à l'arracher. Sous le filet, un casier vide. Le petit vous bande la main avec un bout de sa chemise.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -1
+        }
+      ],
+      "choices": [
+        {
+          "text": "Revenir sur la plage",
+          "to": "48"
+        }
+      ]
+    },
+    "45": {
+      "text": "L'épave est à deux cents mètres, un bateau de pêche couché, la coque ouverte. Il y a peut-être quelque chose dedans. L'eau est grise et elle est froide à voir. Le petit restera sur le sable avec le sac et le reste.",
+      "choices": [
+        {
+          "text": "Nager",
+          "to": "112"
+        },
+        {
+          "text": "Rester sur le sable",
+          "to": "48"
+        }
+      ]
+    },
+    "46": {
+      "text": "La route s'enfonce dans une forêt de troncs noirs. Il y a des traces de pas dans la cendre, fraîches. Beaucoup.",
+      "choices": [
+        {
+          "text": "Continuer",
+          "to": "51",
+          "if": {
+            "type": "flag",
+            "flag": "bande_alertee"
+          }
+        },
+        {
+          "text": "Continuer",
+          "to": "89",
+          "if": {
+            "type": "not",
+            "condition": {
+              "type": "flag",
+              "flag": "bande_alertee"
+            }
+          }
+        }
+      ]
+    },
+    "47": {
+      "text": "Des pas dehors, des voix. Ils reviennent. Vous poussez le petit devant vous dans l'escalier et vous courez vers le bois derrière la maison. Tentez votre Chance.",
+      "test": {
+        "type": "luck",
+        "success": "113",
+        "failure": "96"
+      }
+    },
+    "48": {
+      "text": "La plage s'étend des deux côtés, à perte de vue. Au large, une épave couchée sur un banc de sable. Sur la dune, un phare éteint. Plus loin, une cabane de pêcheur, et une maison avec une fenêtre qui n'est pas cassée. Et le sable, où l'on peut s'asseoir.",
+      "choices": [
+        {
+          "text": "Nager jusqu'à l'épave",
+          "to": "45"
+        },
+        {
+          "text": "La cabane du pêcheur",
+          "to": "61"
+        },
+        {
+          "text": "Le phare",
+          "to": "78"
+        },
+        {
+          "text": "La maison à la fenêtre intacte",
+          "to": "81"
+        },
+        {
+          "text": "S'asseoir sur le sable",
+          "to": "88"
+        }
+      ]
+    },
+    "49": {
+      "text": "Sur le parking, des voitures aux vitres blanches de cendre, et entre elles un chariot à roulettes couché sur le côté, les roues en l'air. Il roule encore. Avec un chariot on porte plus qu'avec un sac.",
+      "choices": [
+        {
+          "text": "Prendre le chariot",
+          "to": "42",
+          "effects": [
+            {
+              "type": "item",
+              "action": "add",
+              "item": "caddie"
+            }
+          ]
+        },
+        {
+          "text": "Entrer sans",
+          "to": "42"
+        }
+      ]
+    },
+    "50": {
+      "text": "Le pont s'est effondré au milieu. Il reste les poutres, deux, qui pendent au-dessus de la rivière à sec, vingt mètres plus bas. Le petit d'abord, en rampant, puis le chariot, puis vous. Testez votre Habileté.",
+      "test": {
+        "type": "stat",
+        "stat": "habilete",
+        "dice": "2d6",
+        "success": "16",
+        "failure": "120"
+      }
+    },
+    "51": {
+      "text": "Ils sortent des arbres, devant et derrière. Les hommes du camion, ou d'autres qui leur ressemblent. Ils ne courent pas. L'un d'eux a un masque à gaz, l'autre un tuyau de plomb. Vous mettez le petit derrière un tronc.",
+      "combat": {
+        "name": "Les marcheurs",
+        "habilete": 8,
+        "endurance": 9,
+        "win": "89",
+        "flee": {
+          "to": "89"
+        }
+      }
+    },
+    "52": {
+      "text": "Les vapeurs vous couchent au fond de la fosse. Vous remontez en rampant, sans rien, la tête fendue. Vous perdez 2 points d'Endurance. Vous vomissez sur le béton. Le petit vous tient la tête.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -2
+        }
+      ],
+      "choices": [
+        {
+          "text": "Ressortir sur la rue",
+          "to": "30"
+        }
+      ]
+    },
+    "53": {
+      "text": "Dans la coque, au sec, un coffre de bord : des biscuits de mer, des conserves de l'armée : 3 rations. Vous les mettez dans un sac étanche et vous revenez à la nage, le sac sur le dos, en regardant le sable où le petit vous attend. Il n'est plus seul sur le sable.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "vivres",
+          "delta": 3
+        }
+      ],
+      "choices": [
+        {
+          "text": "Revenir sur la plage",
+          "to": "84"
+        }
+      ]
+    },
+    "54": {
+      "text": "La mer est grise. Vous vous asseyez sur le sable noir avec le sac vide à côté de vous. Vous aviez promis de l'amener ici. Vous vous dites qu'il la voit, d'où il est. Vous ne le croyez pas. Vous restez."
+    },
+    "55": {
+      "text": "Au matin le vent est tombé. Tout est là, sous la cendre que la nuit a déposée. Le petit dort encore, la bouche ouverte.",
+      "choices": [
+        {
+          "text": "Attendre le réveil",
+          "to": "69"
+        }
+      ]
+    },
+    "56": {
+      "text": "Le plancher cède sous votre pied droit et vous tombez jusqu'à la hanche, la jambe dans le vide, les côtes sur les lattes. Vous perdez 2 points d'Endurance. Le petit crie. Vous dites que ce n'est rien. Vous redescendez en boitant.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -2
+        }
+      ],
+      "choices": [
+        {
+          "text": "Redescendre",
+          "to": "6"
+        }
+      ]
+    },
+    "57": {
+      "text": "Dans le tiroir du bas, sous des chemises que personne ne portera plus, une photographie. Une femme sur une plage, qui rit, la main levée contre le soleil. Ce n'est pas elle. Ça pourrait être n'importe qui. Le petit ne l'a pas vue.",
+      "choices": [
+        {
+          "text": "Prendre la photographie",
+          "to": "15",
+          "effects": [
+            {
+              "type": "item",
+              "action": "add",
+              "item": "photo"
+            }
+          ]
+        },
+        {
+          "text": "La laisser dans le tiroir",
+          "to": "15"
+        }
+      ]
+    },
+    "58": {
+      "text": "La maison aux volets fermés est la seule de la rue à avoir l'air habitée. Pas de fumée, mais l'herbe du jardin est piétinée et la porte de la cave, sur le côté, a un cadenas neuf.",
+      "choices": [
+        {
+          "text": "Observer avec les jumelles depuis le bout de la rue",
+          "to": "85",
+          "if": {
+            "type": "item",
+            "item": "jumelles"
+          }
+        },
+        {
+          "text": "Forcer la porte de la cave",
+          "to": "68"
+        },
+        {
+          "text": "Passer au large",
+          "to": "30"
+        }
+      ]
+    },
+    "59": {
+      "text": "La branche tient, et le lacet casse dans votre main. La clef du bunker, dites-vous au petit, sans savoir ce que vous dites. Il y a une adresse gravée dessus, un numéro, et le nom d'une route que vous allez croiser.",
+      "effects": [
+        {
+          "type": "item",
+          "action": "add",
+          "item": "cle_bunker"
+        }
+      ],
+      "choices": [
+        {
+          "text": "Revenir dans la cour",
+          "to": "62"
+        }
+      ]
+    },
+    "60": {
+      "text": "La réserve est un chaos de palettes effondrées et de plâtre. Il y a quelque chose sous la dernière, tout au fond, sous la partie du plafond qui tient le moins. Tentez votre Chance.",
+      "test": {
+        "type": "luck",
+        "success": "137",
+        "failure": "4"
+      }
+    },
+    "61": {
+      "text": "La cabane du pêcheur est à moitié ensablée. Des filets pendent à l'intérieur, et des casiers vides. Au fond, sous un filet, quelque chose qui a une forme.",
+      "choices": [
+        {
+          "text": "Soulever le filet",
+          "to": "65"
+        },
+        {
+          "text": "Revenir sur la plage",
+          "to": "48"
+        }
+      ]
+    },
+    "62": {
+      "text": "La ferme est un corps de bâtiments autour d'une cour. Une citerne sur pieds, une grange aux portes béantes, un verger de pommiers morts, et la maison elle-même, dont la cuisine donne sur la cour.",
+      "choices": [
+        {
+          "text": "La citerne",
+          "to": "141"
+        },
+        {
+          "text": "La grange",
+          "to": "74"
+        },
+        {
+          "text": "Le verger",
+          "to": "31"
+        },
+        {
+          "text": "La cuisine",
+          "to": "102"
+        },
+        {
+          "text": "Reprendre la route",
+          "to": "108"
+        }
+      ]
+    },
+    "63": {
+      "text": "Vous buvez la tasse et le petit avec vous. Vous sortez sur l'autre rive en rampant. Vous perdez 2 points d'Endurance. Le petit grelotte si fort que ses dents claquent. Il perd 1 point de Souffle.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -2
+        },
+        {
+          "type": "stat",
+          "stat": "souffle",
+          "delta": -1
+        }
+      ],
+      "choices": [
+        {
+          "text": "Continuer",
+          "to": "46"
+        }
+      ]
+    },
+    "64": {
+      "text": "Le feu tient toute la nuit, vous le nourrissez sans dormir. Le petit regagne 1 point de Souffle, il respire mieux vers l'aube. Vous regagnez 1 point d'Endurance, ou vous l'avez rêvé.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "souffle",
+          "delta": 1
+        },
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": 1
+        }
+      ],
+      "choices": [
+        {
+          "text": "Attendre le matin",
+          "to": "80"
+        }
+      ]
+    },
+    "65": {
+      "text": "Le filet est pris dans quelque chose, un hameçon, dix hameçons. Tentez votre Chance.",
+      "test": {
+        "type": "luck",
+        "success": "11",
+        "failure": "44"
+      }
+    },
+    "66": {
+      "text": "Au matin la bâche est partie, emportée quelque part dans les champs, et vous avez passé la fin de nuit à courir après dans le noir. Vous perdez 1 point d'Endurance. Vous ne la retrouvez pas.",
+      "effects": [
+        {
+          "type": "item",
+          "action": "remove",
+          "item": "bache"
+        },
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -1
+        }
+      ],
+      "choices": [
+        {
+          "text": "Revenir au bus",
+          "to": "69"
+        }
+      ]
+    },
+    "67": {
+      "text": "Votre pied trouve un trou là où le béton s'est effondré, et vous tombez dans l'eau jusqu'à la taille. Vous perdez 2 points d'Endurance. Vous ressortez du tunnel à quatre pattes, le petit qui vous tire par la manche.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -2
+        }
+      ],
+      "choices": [
+        {
+          "text": "Sortir à la lumière",
+          "to": "50"
+        }
+      ]
+    },
+    "68": {
+      "text": "Le cadenas cède au deuxième coup. L'escalier descend dans le noir et l'odeur monte à votre rencontre. En bas, sur des matelas, des gens. Vivants. Ils vous regardent sans parler. L'un d'eux n'a plus de jambes. Vous comprenez à quoi sert cette cave.",
+      "choices": [
+        {
+          "text": "Remonter",
+          "to": "47"
+        }
+      ]
+    },
+    "69": {
+      "text": "Le matin ne vient pas, il s'installe. Gris sur gris. Vous écoutez avant d'ouvrir les yeux : la respiration du petit, ou pas.",
+      "choices": [
+        {
+          "text": "Le réveiller",
+          "to": "24",
+          "if": {
+            "type": "stat",
+            "stat": "souffle",
+            "op": ">=",
+            "value": 1
+          }
+        },
+        {
+          "text": "Il ne se réveille pas",
+          "to": "134",
+          "if": {
+            "type": "stat",
+            "stat": "souffle",
+            "op": "=",
+            "value": 0
+          }
+        }
+      ]
+    },
+    "70": {
+      "text": [
+        "En bas, de la lumière. Un abri, bien fait, par quelqu'un qui avait le temps et l'argent. Des étagères pleines de conserves jusqu'au plafond. Des lits. Un réchaud. Une baignoire. Vous lavez le petit, et il rit sous l'eau chaude.",
+        "Vous mangez jusqu'à ne plus pouvoir. Le petit regagne 3 points de Souffle. Vous regagnez 3 points d'Endurance. Vous emportez ce que le chariot et le sac peuvent prendre : 6 rations. Il en reste. Il en reste pour des mois."
+      ],
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "vivres",
+          "delta": 6
+        },
+        {
+          "type": "stat",
+          "stat": "souffle",
+          "delta": 3
+        },
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": 3
+        }
+      ],
+      "choices": [
+        {
+          "text": "Rester ici",
+          "to": "37"
+        },
+        {
+          "text": "Repartir au bout de trois jours",
+          "to": "25"
+        }
+      ]
+    },
+    "71": {
+      "text": [
+        "La nuit la plus froide. Vous le savez dès le crépuscule, à la façon dont l'air devient cassant. Vous campez dans un fossé sous un talus. Le petit tousse, une toux sèche qui ne s'arrête pas.",
+        "Il vous regarde et il demande ce qu'on ferait, si on ne pouvait plus continuer. Vous dites qu'on continue toujours. Il dit : mais si."
+      ],
+      "choices": [
+        {
+          "text": "Manger (1 ration)",
+          "to": "71",
+          "if": {
+            "type": "stat",
+            "stat": "vivres",
+            "op": ">=",
+            "value": 1
+          },
+          "effects": [
+            {
+              "type": "stat",
+              "stat": "vivres",
+              "delta": -1
+            },
+            {
+              "type": "stat",
+              "stat": "souffle",
+              "delta": 1
+            },
+            {
+              "type": "stat",
+              "stat": "endurance",
+              "delta": 1
+            }
+          ]
+        },
+        {
+          "text": "Ouvrir la boîte de pêches au sirop",
+          "to": "71",
+          "if": {
+            "type": "item",
+            "item": "peches"
+          },
+          "effects": [
+            {
+              "type": "item",
+              "action": "remove",
+              "item": "peches"
+            },
+            {
+              "type": "stat",
+              "stat": "souffle",
+              "delta": 2
+            },
+            {
+              "type": "stat",
+              "stat": "endurance",
+              "delta": 2
+            }
+          ]
+        },
+        {
+          "text": "Lui donner les antibiotiques",
+          "to": "71",
+          "if": {
+            "type": "item",
+            "item": "antibiotiques"
+          },
+          "effects": [
+            {
+              "type": "item",
+              "action": "remove",
+              "item": "antibiotiques"
+            },
+            {
+              "type": "stat",
+              "stat": "souffle",
+              "delta": 4
+            }
+          ]
+        },
+        {
+          "text": "Faire un feu avec le briquet",
+          "to": "64",
+          "if": {
+            "type": "item",
+            "item": "briquet"
+          }
+        },
+        {
+          "text": "Vous enrouler tous les deux dans la couverture de survie",
+          "to": "80",
+          "if": {
+            "type": "item",
+            "item": "couverture"
+          }
+        },
+        {
+          "text": "Prendre le revolver",
+          "to": "116",
+          "if": {
+            "type": "all",
+            "conditions": [
+              {
+                "type": "item",
+                "item": "revolver"
+              },
+              {
+                "type": "stat",
+                "stat": "souffle",
+                "op": "<=",
+                "value": 2
+              }
+            ]
+          }
+        },
+        {
+          "text": "Le serrer contre vous et attendre",
+          "to": "20"
+        }
+      ]
+    },
+    "72": {
+      "text": "Le petit demande si on est toujours les gentils. Vous dites oui. Il demande si on porte toujours le feu. Vous dites oui, on porte le feu. Il hoche la tête et remonte son écharpe sur son nez. Le petit regagne 1 point de Souffle, ou c'est vous qui l'imaginez.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "souffle",
+          "delta": 1
+        }
+      ],
+      "choices": [
+        {
+          "text": "Charger le sac et partir",
+          "to": "15"
+        }
+      ]
+    },
+    "73": {
+      "text": "Un bruit de moteur. Le premier depuis des mois. Un camion monte la côte derrière vous, lentement, un camion bâché avec des hommes sur le toit. Vous avez dix secondes. Le fossé est à droite, plein de ronces mortes.",
+      "choices": [
+        {
+          "text": "Tirer avec le revolver sur le premier qui descend",
+          "to": "106",
+          "if": {
+            "type": "item",
+            "item": "revolver"
+          },
+          "effects": [
+            {
+              "type": "item",
+              "action": "remove",
+              "item": "revolver"
+            }
+          ]
+        },
+        {
+          "text": "Vous jeter dans le fossé avec le petit",
+          "to": "82"
+        }
+      ]
+    },
+    "74": {
+      "text": "Dans la grange, un homme vous attend avec une fourche. Il ne dit rien. Il a les yeux de quelqu'un qui a déjà fait ce qu'il va faire. Vous poussez le petit derrière une botte.",
+      "combat": {
+        "name": "L'homme à la fourche",
+        "habilete": 7,
+        "endurance": 7,
+        "win": "104",
+        "flee": {
+          "to": "62"
+        }
+      }
+    },
+    "75": {
+      "text": [
+        "Au milieu de la route, un homme. Il marche vers vous, lentement, et quand il est assez près vous voyez qu'il a été brûlé, par la foudre ou autre chose, et que ses yeux ne voient plus. Il s'assoit sur le bord. Il ne demande rien.",
+        "Le petit vous tire la manche. Il dit qu'on devrait l'aider."
+      ],
+      "choices": [
+        {
+          "text": "Lui laisser à manger (1 ration)",
+          "to": "3",
+          "if": {
+            "type": "stat",
+            "stat": "vivres",
+            "op": ">=",
+            "value": 1
+          },
+          "effects": [
+            {
+              "type": "stat",
+              "stat": "vivres",
+              "delta": -1
+            },
+            {
+              "type": "flag",
+              "flag": "bonnes_gens"
+            }
+          ]
+        },
+        {
+          "text": "Passer sans s'arrêter",
+          "to": "77"
+        }
+      ]
+    },
+    "76": {
+      "text": "Au milieu du tunnel, une voiture abandonnée, les portes ouvertes. Sur le siège arrière, un sac d'enfant, et dedans un paquet de gâteaux : 1 ration. Le petit demande à qui c'était. Vous dites que vous ne savez pas. C'est vrai.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "vivres",
+          "delta": 1
+        }
+      ],
+      "choices": [
+        {
+          "text": "Sortir à la lumière",
+          "to": "50"
+        }
+      ]
+    },
+    "77": {
+      "text": "Vous passez. Le petit se retourne trois fois. Il ne pleure pas. Il perd 1 point de Souffle, et il ne dit plus rien jusqu'au soir. Vous savez que vous aviez raison. Ça ne change rien.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "souffle",
+          "delta": -1
+        }
+      ],
+      "choices": [
+        {
+          "text": "Continuer jusqu'au soir",
+          "to": "145"
+        }
+      ]
+    },
+    "78": {
+      "text": "Le phare est ouvert. L'escalier tourne jusqu'en haut, et en haut la lampe est morte, mais la vue tient encore : la mer, le sable, et au sud, très loin, quelque chose qui pourrait être de la fumée.",
+      "choices": [
+        {
+          "text": "Fouiller la chambre du gardien",
+          "to": "117"
+        },
+        {
+          "text": "Redescendre sur la plage",
+          "to": "48"
+        }
+      ]
+    },
+    "79": {
+      "text": "La branche est morte comme tout le reste. Vous montez, vous tendez le bras. Tentez votre Chance.",
+      "test": {
+        "type": "luck",
+        "success": "59",
+        "failure": "87"
+      }
+    },
+    "80": {
+      "text": "Le matin ne vient pas, il s'installe. Gris sur gris. Vous écoutez avant d'ouvrir les yeux : la respiration du petit, ou pas.",
+      "choices": [
+        {
+          "text": "Le réveiller",
+          "to": "10",
+          "if": {
+            "type": "stat",
+            "stat": "souffle",
+            "op": ">=",
+            "value": 1
+          }
+        },
+        {
+          "text": "Il ne se réveille pas",
+          "to": "134",
+          "if": {
+            "type": "stat",
+            "stat": "souffle",
+            "op": "=",
+            "value": 0
+          }
+        }
+      ]
+    },
+    "81": {
+      "text": "La maison avec la fenêtre intacte est en retrait de la plage, derrière une haie morte. Il y a quelqu'un dedans. Vous le savez à la façon dont la fenêtre est propre. Vous pourriez passer au large.",
+      "choices": [
+        {
+          "text": "Approcher de la maison",
+          "to": "101"
+        },
+        {
+          "text": "Passer au large",
+          "to": "48"
+        }
+      ]
+    },
+    "82": {
+      "text": "Vous êtes couchés dans les ronces, le petit sous vous, votre main sur sa bouche. Le camion ralentit. Il s'arrête. Quelqu'un descend. Tentez votre Chance.",
+      "test": {
+        "type": "luck",
+        "success": "34",
+        "failure": "33"
+      }
+    },
+    "83": {
+      "text": "Un flacon roule, et de l'arrière-boutique sortent des chiens, trois, maigres à voir les os, qui ne jappent pas. Ils ont faim depuis plus longtemps que vous.",
+      "combat": {
+        "name": "Chiens errants",
+        "habilete": 6,
+        "endurance": 6,
+        "win": "5",
+        "flee": {
+          "to": "30"
+        }
+      }
+    },
+    "84": {
+      "text": "Un homme, maigre, avec un couteau, tient le petit par le bras et le sac dans l'autre main. Quand il vous voit arriver il lâche le petit et il part en courant avec le sac vers les dunes. Le petit n'a rien. Le sac a tout.",
+      "choices": [
+        {
+          "text": "Le poursuivre",
+          "to": "94"
+        },
+        {
+          "text": "Rester avec le petit et le laisser partir",
+          "to": "27"
+        }
+      ]
+    },
+    "85": {
+      "text": "Dans les jumelles, derrière la maison, un camion bâché, et des hommes autour, quatre ou cinq, qui chargent quelque chose. Un d'eux lève la tête, comme s'il sentait le regard. Vous rangez les jumelles et vous prenez le petit par la main. Vous ne saurez jamais ce qu'il y avait dans la cave. C'est mieux.",
+      "choices": [
+        {
+          "text": "S'éloigner sans bruit",
+          "to": "30"
+        }
+      ]
+    },
+    "86": {
+      "text": "La portière est bloquée par la rouille. Vous tirez, et ce qu'il y a derrière va vous tomber dessus. Tentez votre Chance.",
+      "test": {
+        "type": "luck",
+        "success": "13",
+        "failure": "121"
+      }
+    },
+    "87": {
+      "text": "La branche casse et vous tombez avec le pendu. Vous perdez 2 points d'Endurance et vous restez un moment sous lui, le souffle coupé, avant de pouvoir le repousser. La clef a disparu dans la cendre. Vous ne la cherchez pas.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -2
+        }
+      ],
+      "choices": [
+        {
+          "text": "Revenir dans la cour",
+          "to": "62"
+        }
+      ]
+    },
+    "88": {
+      "text": "Vous vous asseyez sur le sable, là où la route finit, parce qu'il n'y a plus de route. Vous ne pouvez plus marcher. Vous le savez depuis la rivière, peut-être depuis avant. Le petit s'assoit contre vous.",
+      "choices": [
+        {
+          "text": "Lui parler",
+          "to": "114",
+          "if": {
+            "type": "stat",
+            "stat": "souffle",
+            "op": ">=",
+            "value": 1
+          }
+        },
+        {
+          "text": "Rester assis",
+          "to": "54",
+          "if": {
+            "type": "stat",
+            "stat": "souffle",
+            "op": "=",
+            "value": 0
+          }
+        }
+      ]
+    },
+    "89": {
+      "text": "La forêt morte craque sous le vent. Il y a du bois, du bois sec, des arbres entiers tombés que personne n'a brûlés parce que personne n'est resté.",
+      "choices": [
+        {
+          "text": "Fendre du bois avec la hachette",
+          "to": "98",
+          "if": {
+            "type": "item",
+            "item": "hachette"
+          }
+        },
+        {
+          "text": "Continuer",
+          "to": "36"
+        }
+      ]
+    },
+    "90": {
+      "text": "Un barreau cède et vous glissez de trois mètres, les mains en feu sur les montants. Vous perdez 2 points d'Endurance. Le petit a couru vers vous. Vous lui dites que ça va. Vous ne remonterez pas.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -2
+        }
+      ],
+      "choices": [
+        {
+          "text": "Rejoindre la route",
+          "to": "75"
+        }
+      ]
+    },
+    "91": {
+      "text": "Le feu dans un enjoliveur, à l'abri du bus. Le petit regagne 1 point de Souffle. Vous regagnez 1 point d'Endurance. Il demande si les gens qu'on a vus étaient les méchants. Vous dites oui. Il demande si vous les tueriez. Vous dites oui.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "souffle",
+          "delta": 1
+        },
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": 1
+        }
+      ],
+      "choices": [
+        {
+          "text": "Dormir",
+          "to": "150"
+        }
+      ]
+    },
+    "92": {
+      "text": "Vous mangez tous les trois, au bord de la route. Le vieux mange lentement, par petites bouchées. Il dit qu'il n'y a plus de Dieu et que le petit en est un. Il dit ça en mâchant, sans vous regarder. Le petit regagne 1 point de Souffle. Le lendemain, le vieux a disparu.",
+      "choices": [
+        {
+          "text": "Continuer vers le sud",
+          "to": "38"
+        }
+      ]
+    },
+    "93": {
+      "text": "Vous marchez une heure vers le bruit, et le bruit recule. Vous ne voyez pas le chien. Vous perdez 1 point d'Endurance pour rien. Mais le petit a entendu un chien, et il regagne 1 point de Souffle, et il parle du chien jusqu'au soir.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -1
+        },
+        {
+          "type": "stat",
+          "stat": "souffle",
+          "delta": 1
+        }
+      ],
+      "choices": [
+        {
+          "text": "Chercher un endroit pour la nuit",
+          "to": "71"
+        }
+      ]
+    },
+    "94": {
+      "text": "Vous courez dans le sable mou, les jambes mortes, le voleur devant qui trébuche sous le poids. Testez votre Habileté.",
+      "test": {
+        "type": "stat",
+        "stat": "habilete",
+        "dice": "2d6",
+        "success": "135",
+        "failure": "27"
+      }
+    },
+    "95": {
+      "text": "Vous marchez. Vous ne mangez plus, vous ne vous arrêtez plus, vous ne comptez plus. Vous perdez 5 points d'Endurance que vous ne regretterez pas. La route descend, et au bout de la route il y a la mer, parce qu'il faut bien que quelque chose soit là.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -5
+        }
+      ],
+      "choices": [
+        {
+          "text": "Continuer jusqu'au sable",
+          "to": "54"
+        }
+      ]
+    },
+    "96": {
+      "text": "Ils vous ont vus. Deux hommes vous coupent la route, et ils ne courent pas, ils n'ont pas besoin. Vous mettez le petit derrière vous. Il n'y a nulle part où fuir.",
+      "combat": {
+        "name": "Hommes de la maison",
+        "habilete": 8,
+        "endurance": 8,
+        "win": "113"
+      }
+    },
+    "97": {
+      "text": "Le matin ne vient pas, il s'installe. Gris sur gris. Vous écoutez avant d'ouvrir les yeux : la respiration du petit, ou pas.",
+      "choices": [
+        {
+          "text": "Le réveiller",
+          "to": "99",
+          "if": {
+            "type": "stat",
+            "stat": "souffle",
+            "op": ">=",
+            "value": 1
+          }
+        },
+        {
+          "text": "Il ne se réveille pas",
+          "to": "134",
+          "if": {
+            "type": "stat",
+            "stat": "souffle",
+            "op": "=",
+            "value": 0
+          }
+        }
+      ]
+    },
+    "98": {
+      "text": "Vous fendez du bois une heure, jusqu'à ne plus sentir vos bras, et vous en chargez le chariot ou le sac. Ce soir il y aura du feu, un vrai. Le petit regagne 1 point de Souffle à l'idée. Vous regagnez 1 point d'Endurance à faire quelque chose d'utile.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "souffle",
+          "delta": 1
+        },
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": 1
+        }
+      ],
+      "choices": [
+        {
+          "text": "Continuer",
+          "to": "36"
+        }
+      ]
+    },
+    "99": {
+      "text": [
+        "La route se sépare devant un panneau que la rouille a rendu illisible. Tout droit, la route des ponts, la plus courte, celle que tout le monde prend, et c'est le problème. À gauche, la plaine de cendres, sans un repère, où l'on se perd sans carte.",
+        "À droite, un chemin de terre vers une ferme dont on voit le toit. Un détour. Peut-être de l'eau."
+      ],
+      "choices": [
+        {
+          "text": "La route des ponts",
+          "to": "73"
+        },
+        {
+          "text": "La plaine de cendres, en suivant la carte",
+          "to": "124",
+          "if": {
+            "type": "item",
+            "item": "carte_routiere"
+          }
+        },
+        {
+          "text": "Le détour par la ferme",
+          "to": "62"
+        }
+      ]
+    },
+    "100": {
+      "text": "Le sac contient un briquet à essence, plein, et une boîte de sardines : 1 ration. Vous remontez vite. Le petit demande si l'homme dormait. Vous dites oui.",
+      "effects": [
+        {
+          "type": "item",
+          "action": "add",
+          "item": "briquet"
+        },
+        {
+          "type": "stat",
+          "stat": "vivres",
+          "delta": 1
+        }
+      ],
+      "choices": [
+        {
+          "text": "Ressortir sur la rue",
+          "to": "30"
+        }
+      ]
+    },
+    "101": {
+      "text": "Vous êtes à vingt mètres quand la fenêtre s'ouvre et qu'un homme vous vise avec un arc. Il ne dit rien. Il tire. Tentez votre Chance.",
+      "test": {
+        "type": "luck",
+        "success": "17",
+        "failure": "26"
+      }
+    },
+    "102": {
+      "text": "La cuisine est propre, ce qui vous arrête. Une table, deux chaises, des assiettes dans l'évier. Quelqu'un a vécu ici jusqu'à récemment. Un garde-manger au fond, la porte fermée.",
+      "choices": [
+        {
+          "text": "Ouvrir le garde-manger",
+          "to": "126"
+        },
+        {
+          "text": "Revenir dans la cour",
+          "to": "62"
+        }
+      ]
+    },
+    "103": {
+      "text": "Vous dites qu'il n'y a pas de chien. Il a entendu le chien. Il perd 1 point de Souffle et il ne dit plus rien jusqu'au soir.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "souffle",
+          "delta": -1
+        }
+      ],
+      "choices": [
+        {
+          "text": "Chercher un endroit pour la nuit",
+          "to": "71"
+        }
+      ]
+    },
+    "104": {
+      "text": "L'homme ne bouge plus. Vous ne regardez pas son visage. Au mur, sur des clous, des outils : une hachette avec un manche neuf, qu'il avait dû refaire lui-même. Vous la prenez. Le petit ne pose pas de question.",
+      "effects": [
+        {
+          "type": "item",
+          "action": "add",
+          "item": "hachette"
+        }
+      ],
+      "choices": [
+        {
+          "text": "Revenir dans la cour",
+          "to": "62"
+        }
+      ]
+    },
+    "105": {
+      "text": "Le matin ne vient pas, il s'installe. Gris sur gris. Vous écoutez avant d'ouvrir les yeux : la respiration du petit, ou pas.",
+      "choices": [
+        {
+          "text": "Le réveiller",
+          "to": "30",
+          "if": {
+            "type": "stat",
+            "stat": "souffle",
+            "op": ">=",
+            "value": 1
+          }
+        },
+        {
+          "text": "Il ne se réveille pas",
+          "to": "134",
+          "if": {
+            "type": "stat",
+            "stat": "souffle",
+            "op": "=",
+            "value": 0
+          }
+        }
+      ]
+    },
+    "106": {
+      "text": "Vous courez dans les bois, le petit contre vous, jusqu'à ce que le bruit du moteur se perde. Le petit n'a pas crié. Il perd 2 points de Souffle, et il ne vous regarde pas quand vous le posez. Ils ont vu votre visage. Ils savent que vous allez au sud.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "souffle",
+          "delta": -2
+        },
+        {
+          "type": "flag",
+          "flag": "bande_alertee"
+        }
+      ],
+      "choices": [
+        {
+          "text": "Continuer, loin de la route",
+          "to": "115"
+        }
+      ]
+    },
+    "107": {
+      "text": "De la colline on voit la route jusqu'au tournant, et au-delà la ville, un amas gris plus foncé que le reste. La tour de guet est en bois, à demi pourrie, mais elle tient encore. Là-haut il y aurait de quoi voir loin.",
+      "choices": [
+        {
+          "text": "Grimper à la tour",
+          "to": "109"
+        },
+        {
+          "text": "Redescendre vers la route",
+          "to": "75"
+        }
+      ]
+    },
+    "108": {
+      "text": "Le chemin de terre continue derrière la ferme et rejoint la grande route plus loin, après les ponts, à travers champs. Il revient aussi vers la bifurcation, si vous avez oublié quelque chose, ou si la plaine vous tente maintenant.",
+      "choices": [
+        {
+          "text": "Couper à travers champs vers le sud",
+          "to": "40"
+        },
+        {
+          "text": "Revenir à la bifurcation",
+          "to": "99"
+        }
+      ]
+    },
+    "109": {
+      "text": "Les barreaux de l'échelle sont glissants et deux manquent. Le petit attend en bas, la tête renversée. Testez votre Habileté.",
+      "test": {
+        "type": "stat",
+        "stat": "habilete",
+        "dice": "2d6",
+        "success": "146",
+        "failure": "90"
+      }
+    },
+    "110": {
+      "text": "Vous campez dans une carcasse de bus, les vitres cassées, mais les sièges sont secs. Le vent se lève vers le soir et il ne fait que monter.",
+      "choices": [
+        {
+          "text": "Manger (1 ration)",
+          "to": "110",
+          "if": {
+            "type": "stat",
+            "stat": "vivres",
+            "op": ">=",
+            "value": 1
+          },
+          "effects": [
+            {
+              "type": "stat",
+              "stat": "vivres",
+              "delta": -1
+            },
+            {
+              "type": "stat",
+              "stat": "souffle",
+              "delta": 1
+            },
+            {
+              "type": "stat",
+              "stat": "endurance",
+              "delta": 1
+            }
+          ]
+        },
+        {
+          "text": "Ouvrir la boîte de pêches au sirop",
+          "to": "110",
+          "if": {
+            "type": "item",
+            "item": "peches"
+          },
+          "effects": [
+            {
+              "type": "item",
+              "action": "remove",
+              "item": "peches"
+            },
+            {
+              "type": "stat",
+              "stat": "souffle",
+              "delta": 2
+            },
+            {
+              "type": "stat",
+              "stat": "endurance",
+              "delta": 2
+            }
+          ]
+        },
+        {
+          "text": "Lui donner les antibiotiques",
+          "to": "110",
+          "if": {
+            "type": "item",
+            "item": "antibiotiques"
+          },
+          "effects": [
+            {
+              "type": "item",
+              "action": "remove",
+              "item": "antibiotiques"
+            },
+            {
+              "type": "stat",
+              "stat": "souffle",
+              "delta": 4
+            }
+          ]
+        },
+        {
+          "text": "Faire un feu avec le briquet",
+          "to": "91",
+          "if": {
+            "type": "item",
+            "item": "briquet"
+          }
+        },
+        {
+          "text": "Dormir",
+          "to": "150"
+        }
+      ]
+    },
+    "111": {
+      "text": "Des bocaux, alignés, étiquetés d'une écriture appliquée. Haricots, poires. La moitié a tourné. L'autre moitié fait 2 rations. Vous prenez tout. Vous laissez une assiette propre sur la table, vous ne savez pas pourquoi.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "vivres",
+          "delta": 2
+        }
+      ],
+      "choices": [
+        {
+          "text": "Revenir dans la cour",
+          "to": "62"
+        }
+      ]
+    },
+    "112": {
+      "text": "L'eau vous serre la poitrine comme une main. Vous nagez, mal, vers la coque. Le courant tire vers le large. Tentez votre Chance.",
+      "test": {
+        "type": "luck",
+        "success": "53",
+        "failure": "125"
+      }
+    },
+    "113": {
+      "text": "Vous courez jusqu'à ne plus pouvoir, dans les arbres morts, le petit dans vos bras. Quand vous vous arrêtez il a les yeux ouverts et il ne cligne pas. Il perd 1 point de Souffle. Vous dites qu'ils ne vous suivront pas. Vous ne le savez pas.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "souffle",
+          "delta": -1
+        },
+        {
+          "type": "flag",
+          "flag": "bande_alertee"
+        }
+      ],
+      "choices": [
+        {
+          "text": "Revenir vers la rue principale par les jardins",
+          "to": "30"
+        }
+      ]
+    },
+    "114": {
+      "text": "Vous lui dites qu'il va devoir continuer sans vous. Qu'il faut aller au sud, le long de la côte. Que les gentils sont là, quelque part. Qu'il porte le feu. Il dit qu'il ne sait pas comment. Vous dites : si, tu sais. Il pleure comme on respire.",
+      "choices": [
+        {
+          "text": "Lui donner la photographie",
+          "to": "9",
+          "if": {
+            "type": "item",
+            "item": "photo"
+          },
+          "effects": [
+            {
+              "type": "item",
+              "action": "remove",
+              "item": "photo"
+            },
+            {
+              "type": "stat",
+              "stat": "souffle",
+              "delta": 2
+            }
+          ]
+        },
+        {
+          "text": "Lui dire de garder le feu",
+          "to": "9"
+        }
+      ]
+    },
+    "115": {
+      "text": "La route entre dans un tunnel. Dedans, le noir complet et le bruit de l'eau qui goutte. Dehors, la montagne à contourner par les éboulis, une journée de plus.",
+      "choices": [
+        {
+          "text": "Traverser le tunnel",
+          "to": "157"
+        },
+        {
+          "text": "Contourner par les éboulis",
+          "to": "50"
+        }
+      ]
+    },
+    "116": {
+      "text": [
+        "Vous prenez le revolver. Il y a une balle. Vous l'avez gardée pour ça depuis le premier jour, et vous le savez, et il le sait. Il ne demande pas ce que vous faites. Il vous regarde et il dit : ça va.",
+        "Vous ne saurez jamais si vous auriez dû attendre un jour de plus. Il n'y a personne pour vous le dire. Vous restez assis dans le fossé jusqu'à ce que la cendre vous recouvre tous les deux."
+      ],
+      "effects": [
+        {
+          "type": "item",
+          "action": "remove",
+          "item": "revolver"
+        }
+      ]
+    },
+    "117": {
+      "text": "La chambre du gardien est fermée de l'intérieur. Vous forcez la porte. Quelque chose grince derrière. Tentez votre Chance.",
+      "test": {
+        "type": "luck",
+        "success": "21",
+        "failure": "148"
+      }
+    },
+    "118": {
+      "text": "La cantine s'ouvre sur des boîtes gonflées, inutilisables, et dessous deux paquets de biscuits secs encore scellés : 2 rations. Le petit en tient un contre lui comme un animal. Vous remettez tout dans le sac.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "vivres",
+          "delta": 2
+        }
+      ],
+      "choices": [
+        {
+          "text": "Reprendre la route",
+          "to": "75"
+        }
+      ]
+    },
+    "119": {
+      "text": "Vous reprenez le sac. Vous laissez l'homme avec son couteau et ses chaussures. Le petit vous regarde, puis il regarde l'homme, puis il vous reprend la main. Il regagne 1 point de Souffle. Vous ne savez pas si vous avez bien fait. Il le sait pour vous.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "souffle",
+          "delta": 1
+        }
+      ],
+      "choices": [
+        {
+          "text": "Revenir sur la plage",
+          "to": "48"
+        }
+      ]
+    },
+    "120": {
+      "text": "La poutre roule sous vous et vous tombez sur les rochers de la berge, cinq mètres plus bas. Vous perdez 3 points d'Endurance. Le petit descend vous rejoindre en glissant. Il perd 1 point de Souffle rien qu'à vous voir. Il faut une heure pour remonter.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -3
+        },
+        {
+          "type": "stat",
+          "stat": "souffle",
+          "delta": -1
+        }
+      ],
+      "choices": [
+        {
+          "text": "Remonter sur la route",
+          "to": "40"
+        }
+      ]
+    },
+    "121": {
+      "text": "La portière cède d'un coup et ce qui était assis à l'avant glisse dehors, sur la route, aux pieds du petit. Il a vu. Il perd 1 point de Souffle. Vous le prenez par les épaules et vous le tournez vers la route, et vous n'ouvrez pas le coffre.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "souffle",
+          "delta": -1
+        }
+      ],
+      "choices": [
+        {
+          "text": "Continuer vers la rivière",
+          "to": "39"
+        }
+      ]
+    },
+    "122": {
+      "text": "Les rats sortent du garde-manger en vague et vous passent sur les pieds. L'un d'eux mord. Vous perdez 1 point d'Endurance. Le petit s'est enfui dans la cour et il tremble. Il perd 1 point de Souffle. Les bocaux sont tous cassés.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -1
+        },
+        {
+          "type": "stat",
+          "stat": "souffle",
+          "delta": -1
+        }
+      ],
+      "choices": [
+        {
+          "text": "Le rejoindre dans la cour",
+          "to": "62"
+        }
+      ]
+    },
+    "123": {
+      "text": "Quelqu'un s'est caché dans la fosse, et quelqu'un y est resté. Il y a un sac à côté de lui. Les vapeurs d'essence vous prennent à la gorge. Tentez votre Chance.",
+      "test": {
+        "type": "luck",
+        "success": "100",
+        "failure": "52"
+      }
+    },
+    "124": {
+      "text": "La plaine de cendres n'a pas de bord. La carte dit sud-sud-ouest, trente kilomètres, et le vent efface vos traces derrière vous. Il n'y a pas d'eau. Il n'y a rien.",
+      "choices": [
+        {
+          "text": "Boire au bidon et marcher",
+          "to": "129",
+          "if": {
+            "type": "item",
+            "item": "bidon"
+          }
+        },
+        {
+          "text": "Marcher sans eau",
+          "to": "19"
+        }
+      ]
+    },
+    "125": {
+      "text": "Le courant vous emporte et vous revenez à la plage trois cents mètres plus loin, à moitié noyé, sans rien. Vous perdez 3 points d'Endurance et 1 point de Chance, le peu qui restait. Vous courez vers l'endroit où vous avez laissé le petit. Il n'est plus seul.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -3
+        },
+        {
+          "type": "stat",
+          "stat": "chance",
+          "delta": -1
+        }
+      ],
+      "choices": [
+        {
+          "text": "Courir vers le petit",
+          "to": "84"
+        }
+      ]
+    },
+    "126": {
+      "text": "La porte du garde-manger colle. Derrière, ça bouge. Tentez votre Chance.",
+      "test": {
+        "type": "luck",
+        "success": "111",
+        "failure": "122"
+      }
+    },
+    "127": {
+      "text": [
+        "Un homme descend la dune, avec un fusil, et derrière lui une femme, deux enfants, et un chien. Le chien d'abord, qui vient renifler le petit. L'homme dit qu'il vous suivait depuis la rivière. Il dit qu'ils sont les gentils. Il dit que le petit peut venir, s'il veut.",
+        "Le petit vous regarde. Vous dites : vas-y. Il part avec eux, en se retournant, et le chien court autour de lui. Vous restez sur le sable. La mer est grise, et pour la première fois ça ne vous fait rien."
+      ]
+    },
+    "128": {
+      "text": "La route reprend derrière la dernière maison, et la ville se referme derrière vous sans un bruit. Le petit se retourne une fois. Vous ne lui demandez pas ce qu'il regarde.",
+      "choices": [
+        {
+          "text": "Marcher jusqu'au soir",
+          "to": "147"
+        }
+      ]
+    },
+    "129": {
+      "text": "Le bidon se vide en deux jours et la plaine finit le troisième matin, d'un coup, sur une route. Vous vous asseyez sur le goudron. Le petit s'endort la tête sur vos genoux. Vous n'avez vu personne, et personne ne vous a vus.",
+      "choices": [
+        {
+          "text": "Suivre la route",
+          "to": "40"
+        }
+      ]
+    },
+    "130": {
+      "text": "La grille de la pharmacie est baissée, mais tordue en bas, à hauteur d'enfant. Derrière, les rayons ont été renversés, pas vidés. Il y a peut-être encore quelque chose derrière le comptoir.",
+      "choices": [
+        {
+          "text": "Passer sous la grille",
+          "to": "14"
+        },
+        {
+          "text": "Laisser tomber",
+          "to": "30"
+        }
+      ]
+    },
+    "131": {
+      "text": "Le wagon est couché sur le flanc, les portes ouvertes sur le ciel. À l'intérieur, des sièges, des valises éventrées, et au fond quelque chose qui a été une cantine. On entend bouger. Des rats, probablement.",
+      "choices": [
+        {
+          "text": "Entrer dans le wagon",
+          "to": "154"
+        },
+        {
+          "text": "Continuer vers la route",
+          "to": "75"
+        }
+      ]
+    },
+    "132": {
+      "text": "Le gel tombe vers trois heures et la cendre devient dure sous vous. Vos doigts ne sentent plus rien. Le petit ne tremble plus, ce qui est pire.",
+      "choices": [
+        {
+          "text": "Se rouler dans la couverture de survie",
+          "to": "97",
+          "if": {
+            "type": "item",
+            "item": "couverture"
+          }
+        },
+        {
+          "text": "Le serrer contre vous et attendre",
+          "to": "136"
+        }
+      ]
+    },
+    "133": {
+      "text": [
+        "Personne ne vient. Vous restez assis jusqu'au matin, et au matin le petit se lève, seul, et il remet son sac, et il regarde la plage vers le sud. Il ne pleure plus. Il vous embrasse sur le front comme vous le faisiez, et il part.",
+        "Vous le regardez devenir un point, puis rien. Vous ne saurez jamais s'il a trouvé quelqu'un. Vous aviez tout fait pour qu'il vive, et rien pour qu'il mérite qu'on le trouve. La mer est grise."
+      ]
+    },
+    "134": {
+      "text": "Le petit ne se réveille pas. Vous le savez avant de le toucher. Vous restez à côté de lui jusqu'à ce qu'il fasse jour, puis vous creusez dans la cendre avec les mains, et vous ne mettez rien dessus que de la cendre, parce qu'il n'y a rien d'autre.",
+      "choices": [
+        {
+          "text": "Marcher",
+          "to": "95"
+        }
+      ]
+    },
+    "135": {
+      "text": "Vous le rattrapez dans la dune. Il tombe et il lâche le couteau. Il n'a rien d'autre que ce qu'il porte, et ce qu'il vous a pris. Il vous regarde comme vous regardiez l'homme foudroyé. Le petit arrive derrière vous, à bout de souffle.",
+      "choices": [
+        {
+          "text": "Lui prendre tout, le manteau, les chaussures, tout",
+          "to": "152",
+          "effects": [
+            {
+              "type": "flag",
+              "flag": "voleur_depouille"
+            },
+            {
+              "type": "stat",
+              "stat": "vivres",
+              "delta": 2
+            }
+          ]
+        },
+        {
+          "text": "Reprendre le sac et le laisser partir",
+          "to": "119",
+          "effects": [
+            {
+              "type": "flag",
+              "flag": "bonnes_gens"
+            }
+          ]
+        }
+      ]
+    },
+    "136": {
+      "text": "La nuit est longue comme une maladie. Au matin vous perdez 2 points d'Endurance et vous ne pouvez pas plier les mains. Le petit a les lèvres bleues. Il perd 3 points de Souffle.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -2
+        },
+        {
+          "type": "stat",
+          "stat": "souffle",
+          "delta": -3
+        }
+      ],
+      "choices": [
+        {
+          "text": "Attendre que ça passe",
+          "to": "97"
+        }
+      ]
+    },
+    "137": {
+      "text": "Sous la palette, une boîte de pêches au sirop, intacte, l'étiquette presque lisible, et deux sachets de riz : 2 rations. Le petit prend la boîte de pêches dans ses deux mains et il ne la lâche plus. Il y a aussi une caisse de conserves, trop lourde pour un sac.",
+      "effects": [
+        {
+          "type": "item",
+          "action": "add",
+          "item": "peches"
+        },
+        {
+          "type": "stat",
+          "stat": "vivres",
+          "delta": 2
+        }
+      ],
+      "choices": [
+        {
+          "text": "Charger la caisse de conserves dans le chariot",
+          "to": "23",
+          "if": {
+            "type": "item",
+            "item": "caddie"
+          },
+          "effects": [
+            {
+              "type": "stat",
+              "stat": "vivres",
+              "delta": 3
+            }
+          ]
+        },
+        {
+          "text": "Ressortir avec ce qu'on peut porter",
+          "to": "30"
+        }
+      ]
+    },
+    "138": {
+      "text": "La cabane de chasse est à cent mètres de la route, entre des troncs noirs. La porte est fermée par un fil de fer. Il y a des traces devant, mais vieilles, remplies de cendre.",
+      "choices": [
+        {
+          "text": "Entrer dans la cabane",
+          "to": "2"
+        },
+        {
+          "text": "Revenir sur la route",
+          "to": "75"
+        }
+      ]
+    },
+    "139": {
+      "text": "L'eau monte à la taille, puis à la poitrine. Vous tenez le petit au-dessus de l'eau à bout de bras. Le fond se dérobe. Tentez votre Chance.",
+      "test": {
+        "type": "luck",
+        "success": "32",
+        "failure": "63"
+      }
+    },
+    "140": {
+      "text": "Le feu prend sur des morceaux de palette, bleu puis orange. Le petit tend les mains. Il regagne 1 point de Souffle. Vous regagnez 1 point d'Endurance, ou vous arrêtez de les compter pendant une heure.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "souffle",
+          "delta": 1
+        },
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": 1
+        }
+      ],
+      "choices": [
+        {
+          "text": "Dormir",
+          "to": "151"
+        }
+      ]
+    },
+    "141": {
+      "text": "La citerne sonne à moitié pleine. L'eau est brune mais elle est de l'eau. Vous remplissez un bidon trouvé sous le robinet, cinq litres, lourds comme une faute. Le petit boit à même vos mains.",
+      "effects": [
+        {
+          "type": "item",
+          "action": "add",
+          "item": "bidon"
+        }
+      ],
+      "choices": [
+        {
+          "text": "Revenir dans la cour",
+          "to": "62"
+        }
+      ]
+    },
+    "142": {
+      "text": "Vous enjambez le fil. La planche à clous reste en place. Sur l'étagère, une boîte de conserve sans étiquette, lourde, intacte : 1 ration. Et dans un bocal, au sec, un briquet à essence qui fait encore une flamme. Vous ne restez pas pour savoir qui a posé le piège.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "vivres",
+          "delta": 1
+        },
+        {
+          "type": "item",
+          "action": "add",
+          "item": "briquet"
+        }
+      ],
+      "choices": [
+        {
+          "text": "Revenir sur la route",
+          "to": "75"
+        }
+      ]
+    },
+    "143": {
+      "text": "Le chariot bascule et le courant l'emporte, avec tout ce qu'il portait de lourd. Vous perdez 2 points d'Endurance à vous rattraper à une branche, le petit accroché à votre cou. Sur l'autre rive, vous restez couchés sur les galets. Il reste le sac.",
+      "effects": [
+        {
+          "type": "item",
+          "action": "remove",
+          "item": "caddie"
+        },
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -2
+        }
+      ],
+      "choices": [
+        {
+          "text": "Continuer",
+          "to": "46"
+        }
+      ]
+    },
+    "144": {
+      "text": "Vous remontez la berge toute la journée. Le pont existe. Il est gardé par personne. Vous perdez 1 point d'Endurance pour la journée en plus, et le petit, qui n'a pas mangé, perd 1 point de Souffle. Mais vous êtes secs.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -1
+        },
+        {
+          "type": "stat",
+          "stat": "souffle",
+          "delta": -1
+        }
+      ],
+      "choices": [
+        {
+          "text": "Continuer",
+          "to": "46"
+        }
+      ]
+    },
+    "145": {
+      "text": "Vous campez sous un pont de béton, à l'abri du vent. Le petit s'assoit contre le pilier, les genoux remontés. Il fait trop sombre pour voir la cendre tomber, mais on l'entend, comme une pluie très fine.",
+      "choices": [
+        {
+          "text": "Manger (1 ration)",
+          "to": "145",
+          "if": {
+            "type": "stat",
+            "stat": "vivres",
+            "op": ">=",
+            "value": 1
+          },
+          "effects": [
+            {
+              "type": "stat",
+              "stat": "vivres",
+              "delta": -1
+            },
+            {
+              "type": "stat",
+              "stat": "souffle",
+              "delta": 1
+            },
+            {
+              "type": "stat",
+              "stat": "endurance",
+              "delta": 1
+            }
+          ]
+        },
+        {
+          "text": "Faire un feu avec le briquet",
+          "to": "140",
+          "if": {
+            "type": "item",
+            "item": "briquet"
+          }
+        },
+        {
+          "text": "Dormir",
+          "to": "151"
+        }
+      ]
+    },
+    "146": {
+      "text": "Sur la plate-forme, un garde-forestier est resté, ou ce qu'il en reste, et à côté de lui des jumelles dans leur étui. Vous les prenez. Dans les jumelles la ville est encore plus morte, et la route est vide jusqu'à l'horizon. C'est une bonne nouvelle, en ce moment.",
+      "effects": [
+        {
+          "type": "item",
+          "action": "add",
+          "item": "jumelles"
+        }
+      ],
+      "choices": [
+        {
+          "text": "Redescendre et rejoindre la route",
+          "to": "75"
+        }
+      ]
+    },
+    "147": {
+      "text": "Vous campez dans un fossé profond, sous un pin mort dont les branches font un toit. Le ciel est clair pour une fois, ce qui veut dire qu'il va geler.",
+      "choices": [
+        {
+          "text": "Manger (1 ration)",
+          "to": "147",
+          "if": {
+            "type": "stat",
+            "stat": "vivres",
+            "op": ">=",
+            "value": 1
+          },
+          "effects": [
+            {
+              "type": "stat",
+              "stat": "vivres",
+              "delta": -1
+            },
+            {
+              "type": "stat",
+              "stat": "souffle",
+              "delta": 1
+            },
+            {
+              "type": "stat",
+              "stat": "endurance",
+              "delta": 1
+            }
+          ]
+        },
+        {
+          "text": "Ouvrir la boîte de pêches au sirop",
+          "to": "147",
+          "if": {
+            "type": "item",
+            "item": "peches"
+          },
+          "effects": [
+            {
+              "type": "item",
+              "action": "remove",
+              "item": "peches"
+            },
+            {
+              "type": "stat",
+              "stat": "souffle",
+              "delta": 2
+            },
+            {
+              "type": "stat",
+              "stat": "endurance",
+              "delta": 2
+            }
+          ]
+        },
+        {
+          "text": "Lui donner les antibiotiques",
+          "to": "147",
+          "if": {
+            "type": "item",
+            "item": "antibiotiques"
+          },
+          "effects": [
+            {
+              "type": "item",
+              "action": "remove",
+              "item": "antibiotiques"
+            },
+            {
+              "type": "stat",
+              "stat": "souffle",
+              "delta": 4
+            }
+          ]
+        },
+        {
+          "text": "Faire un feu avec le briquet",
+          "to": "22",
+          "if": {
+            "type": "item",
+            "item": "briquet"
+          }
+        },
+        {
+          "text": "Dormir",
+          "to": "132"
+        }
+      ]
+    },
+    "148": {
+      "text": "La porte vous tombe dessus avec le chambranle. Vous perdez 1 point d'Endurance. La chambre a été vidée avant vous, jusqu'au matelas. Vous redescendez les cent marches sans rien.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -1
+        }
+      ],
+      "choices": [
+        {
+          "text": "Redescendre sur la plage",
+          "to": "48"
+        }
+      ]
+    },
+    "149": {
+      "text": "Les sièges basculent et les rats sortent de partout, une marée grise qui vous passe sur les jambes. L'un d'eux vous mord à la cheville. Vous perdez 2 points d'Endurance. Le petit a hurlé et il ne s'arrête pas de trembler. Il perd 1 point de Souffle.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -2
+        },
+        {
+          "type": "stat",
+          "stat": "souffle",
+          "delta": -1
+        }
+      ],
+      "choices": [
+        {
+          "text": "Sortir et reprendre la route",
+          "to": "75"
+        }
+      ]
+    },
+    "150": {
+      "text": "Le vent hurle dans la carcasse toute la nuit et vers l'aube il arrache tout ce qui n'est pas attaché. Tentez votre Chance.",
+      "test": {
+        "type": "luck",
+        "success": "55",
+        "failure": "66"
+      }
+    },
+    "151": {
+      "text": "La pluie vient vers minuit, noire, et le vent la pousse sous le pont. Elle ne s'arrêtera pas avant l'aube.",
+      "choices": [
+        {
+          "text": "Tendre la bâche",
+          "to": "105",
+          "if": {
+            "type": "item",
+            "item": "bache"
+          }
+        },
+        {
+          "text": "Dormir sous les arbres",
+          "to": "8"
+        }
+      ]
+    },
+    "152": {
+      "text": "Vous lui prenez tout. Il reste nu dans la dune, les bras autour de lui. Dans ses poches il y avait de quoi manger : 2 rations. Le petit pleure. Il dit : il va mourir. Vous dites : oui. Il perd 2 points de Souffle, et il ne vous reprend pas la main.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "souffle",
+          "delta": -2
+        }
+      ],
+      "choices": [
+        {
+          "text": "Revenir sur la plage",
+          "to": "48"
+        }
+      ]
+    },
+    "153": {
+      "text": "Le fil déclenche une planche à clous qui vous frappe le tibia. Vous perdez 2 points d'Endurance. Quelqu'un gardait cette cabane comme on garde une tombe. Il n'y a rien dedans que des os de lapin.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -2
+        }
+      ],
+      "choices": [
+        {
+          "text": "Revenir sur la route",
+          "to": "75"
+        }
+      ]
+    },
+    "154": {
+      "text": "Vous vous glissez à l'intérieur, le petit derrière vous. La cantine est sous un amas de sièges. Il faut tirer dessus sans que tout dégringole. Tentez votre Chance.",
+      "test": {
+        "type": "luck",
+        "success": "118",
+        "failure": "149"
+      }
+    },
+    "155": {
+      "text": "Vous décrochez le combiné. Vous composez un numéro que vos doigts connaissent encore. Il n'y a rien, pas même le silence d'une ligne. Vous restez l'écouteur contre l'oreille jusqu'à ce que le petit frappe à la vitre.",
+      "choices": [
+        {
+          "text": "Raccrocher et continuer",
+          "to": "39"
+        }
+      ]
+    },
+    "156": {
+      "text": "La station-service a brûlé, mais la boutique tient. Au mur, une carte routière sous plastique, la région entière, les routes en jaune et en rouge. Vous la décrochez. Dans l'atelier, la fosse de vidange est noire et il en monte une odeur.",
+      "effects": [
+        {
+          "type": "item",
+          "action": "add",
+          "item": "carte_routiere"
+        }
+      ],
+      "choices": [
+        {
+          "text": "Descendre dans la fosse",
+          "to": "123"
+        },
+        {
+          "text": "Ressortir sur la rue",
+          "to": "30"
+        }
+      ]
+    },
+    "157": {
+      "text": "Vous avancez la main sur le mur, le petit accroché à votre ceinture. Il y a des choses par terre. Tentez votre Chance.",
+      "test": {
+        "type": "luck",
+        "success": "76",
+        "failure": "67"
+      }
+    },
+    "mort": {
+      "text": "Le froid, ou la faim, ou les autres. Ça n'a pas d'importance. Le petit est à côté de vous, et il attend que vous vous releviez, et vous ne vous relevez pas. Vous ne saurez jamais ce qu'il devient. C'est la seule chose qui compte, et c'est la seule chose que vous ne saurez pas. Votre aventure s'achève ici."
+    }
+  }
+}

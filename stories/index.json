@@ -6,5 +6,9 @@
   {
     "id": "mille-portes",
     "path": "stories/mille-portes/story.json"
+  },
+  {
+    "id": "la-cendre",
+    "path": "stories/la-cendre/story.json"
   }
 ]
