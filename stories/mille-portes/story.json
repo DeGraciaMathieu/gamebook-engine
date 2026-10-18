@@ -1,0 +1,1812 @@
+{
+  "id": "mille-portes",
+  "title": "Les Mille Portes de Saint-Larron",
+  "summary": "Vous devez douze pièces d'or à la Mère Aiguille, et elle ne prend qu'une monnaie : le Dé Faussé de Saint-Larron, qui dort au cœur de Mille-Portes, cité de voleurs où chaque ruelle en cache deux.",
+  "start": "1",
+  "death": "mort",
+  "hero": {
+    "stats": {
+      "habilete": {
+        "label": "Habileté",
+        "description": "Crocheter, grimper, mentir, se battre : tout ce qui demande des doigts agiles.",
+        "base": 7,
+        "max": 12
+      },
+      "endurance": {
+        "label": "Endurance",
+        "description": "Ce que vous encaissez avant que le canal ne vous récupère.",
+        "base": 14,
+        "max": 24
+      },
+      "chance": {
+        "label": "Chance",
+        "description": "Saint-Larron vous sourit, et se lasse un peu à chaque fois que vous l'invoquez.",
+        "base": 7,
+        "max": 12
+      },
+      "or": {
+        "label": "Or",
+        "value": 5,
+        "capped": false,
+        "unit": "pièce d'or"
+      }
+    },
+    "points": 8,
+    "inventory": [
+      "dague",
+      "rossignols"
+    ],
+    "flags": {}
+  },
+  "items": {
+    "dague": {
+      "name": "Dague"
+    },
+    "rossignols": {
+      "name": "Rossignols"
+    },
+    "lanterne_sourde": {
+      "name": "Lanterne sourde"
+    },
+    "fiole_sommeil": {
+      "name": "Fiole de sommeil"
+    },
+    "eau_de_vie": {
+      "name": "Eau-de-vie du Chirurgien"
+    },
+    "grappin": {
+      "name": "Grappin"
+    },
+    "carte_egouts": {
+      "name": "Carte des égouts"
+    },
+    "masque_guilde": {
+      "name": "Masque de la Guilde"
+    },
+    "chevaliere": {
+      "name": "Chevalière du Prévôt"
+    },
+    "oeil_verre": {
+      "name": "Œil de verre du Borgne"
+    },
+    "lettre_cachetee": {
+      "name": "Lettre cachetée"
+    },
+    "de_fausse": {
+      "name": "Dé Faussé de Saint-Larron"
+    }
+  },
+  "paragraphs": {
+    "1": {
+      "text": [
+        "La Mère Aiguille ne lève pas les yeux de sa balance. « Douze pièces, mon canard. Tu me les dois depuis la Saint-Jean, et la Saint-Jean, c'était il y a trois saints. » Elle pousse vers vous un jeton de plomb frappé d'un dé.",
+        "« Rapporte-moi le Dé Faussé de Saint-Larron, et on efface l'ardoise. Il dort dans la Chambre des Serrures, de l'autre côté de la Cour des Miracles. » Derrière elle, deux dogues bâillent en montrant leurs dents."
+      ],
+      "choices": [
+        {
+          "text": "Demander ce que fait ce Dé",
+          "to": "60"
+        },
+        {
+          "text": "Sortir par la porte de l'échoppe",
+          "to": "85"
+        },
+        {
+          "text": "Filer par l'arrière-boutique",
+          "to": "28"
+        }
+      ]
+    },
+    "2": {
+      "text": "La lanterne sourde révèle les caves pour ce qu'elles sont : un ossuaire de la Guilde, bien rangé. Dans une niche, une coupelle d'offrandes aux anciens que les anciens ne réclament plus : 3 pièces d'or. L'escalier est au fond, sec et droit.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "or",
+          "delta": 3
+        }
+      ],
+      "choices": [
+        {
+          "text": "Monter l'escalier",
+          "to": "70"
+        }
+      ]
+    },
+    "3": {
+      "text": "« Le mot ? Le mot, c'est que la Mère Aiguille m'attend et qu'elle n'aime pas attendre. » Vous soutenez leur regard. Testez votre Habileté.",
+      "test": {
+        "type": "stat",
+        "stat": "habilete",
+        "dice": "2d6",
+        "success": "58",
+        "failure": "13"
+      }
+    },
+    "4": {
+      "text": "Vous passez le bras par-dessus l'apothicaire, entre le registre et sa joue. La fiole est à trois doigts. Testez votre Habileté.",
+      "test": {
+        "type": "stat",
+        "stat": "habilete",
+        "dice": "2d6",
+        "success": "30",
+        "failure": "29"
+      }
+    },
+    "5": {
+      "text": "La carte des égouts de Fifrelin est juste : trois embranchements, le quatrième marqué d'une tête de mort rayée. Il fait noir comme dans une bourse fermée. Vous avez peut-être de quoi y voir.",
+      "choices": [
+        {
+          "text": "Allumer la lanterne sourde",
+          "to": "83",
+          "if": {
+            "type": "item",
+            "item": "lanterne_sourde"
+          }
+        },
+        {
+          "text": "Avancer à tâtons le long du mur",
+          "to": "32"
+        }
+      ]
+    },
+    "6": {
+      "text": "Le cabinet du Prévôt : une table d'écriture, des cartes de la cité couvertes de croix rouges, et une cassette de fer dans un coffre ouvert. La serrure est petite, la cassette est lourde.",
+      "choices": [
+        {
+          "text": "Crocheter la cassette avec vos rossignols",
+          "to": "49",
+          "if": {
+            "type": "item",
+            "item": "rossignols"
+          }
+        },
+        {
+          "text": "Forcer le couvercle avec votre dague",
+          "to": "25",
+          "if": {
+            "type": "item",
+            "item": "dague"
+          }
+        },
+        {
+          "text": "Repartir sans rien",
+          "to": "35"
+        }
+      ]
+    },
+    "7": {
+      "text": [
+        "La Chambre des Serrures est petite, ronde, et chaque pouce de mur porte une serrure fermée. Au centre, sur un coussin de velours râpé, le Dé Faussé de Saint-Larron : un cube d'os jauni, à peine plus gros qu'une noisette.",
+        "Vous le prenez. Il est chaud, et aussitôt quelque chose en vous se vide, comme une bourse percée. Vous perdez 2 points de Chance. Derrière vous, toutes les serrures claquent en même temps."
+      ],
+      "effects": [
+        {
+          "type": "item",
+          "action": "add",
+          "item": "de_fausse"
+        },
+        {
+          "type": "stat",
+          "stat": "chance",
+          "delta": -2
+        }
+      ],
+      "choices": [
+        {
+          "text": "Chercher une issue",
+          "to": "22"
+        }
+      ]
+    },
+    "8": {
+      "text": "La campagne, enfin. Mille-Portes rapetisse derrière vous, et le Dé Faussé est dans votre poche. Vous gagnez à tout, les premiers temps : les auberges, les dés, les cœurs. Puis les auberges brûlent, les compagnons tombent de cheval, et vous comprenez ce que la Prophétesse aurait pu vous dire. Vous êtes libre, riche, et seul comme un roi. Le Dé, lui, attend patiemment que vous n'ayez plus rien à lui donner."
+    },
+    "9": {
+      "text": "Une planche cède et vous plongez jusqu'à la taille dans le tanin. Ça brûle, ça colle, ça sent la bête morte. Vous vous hissez sur le bord en toussant. Vous perdez 2 points d'Endurance, et vous sentirez la peau de vache pendant une semaine.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -2
+        }
+      ],
+      "choices": [
+        {
+          "text": "Revenir aux trois boyaux",
+          "to": "81"
+        }
+      ]
+    },
+    "10": {
+      "text": "Vous trouvez la bonne serrure à genoux, le plafond sur les épaules. La porte s'ouvre, vous roulez dehors, et le plafond écrase votre ombre. Vous perdez 3 points d'Endurance et un peu de la fierté qui vous restait.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -3
+        }
+      ],
+      "choices": [
+        {
+          "text": "Vous relever dans le couloir",
+          "to": "79"
+        }
+      ]
+    },
+    "11": {
+      "text": "La porte basse débouche sur la Cour des Miracles. Derrière vous, le dédale se referme sans un bruit, comme s'il n'avait jamais existé.",
+      "choices": [
+        {
+          "text": "Entrer dans la Cour des Miracles",
+          "to": "15"
+        }
+      ]
+    },
+    "12": {
+      "text": "La Mère Aiguille vous attend, la balance de côté, les dogues couchés. « Tu l'as. Je le sens d'ici, mon canard : la chance s'en va de la pièce. » Elle tend la main, paume ouverte, sans sourire pour une fois.",
+      "choices": [
+        {
+          "text": "Lui remettre le Dé",
+          "to": "77"
+        },
+        {
+          "text": "Refuser et tourner les talons",
+          "to": "36"
+        }
+      ]
+    },
+    "13": {
+      "text": "« Elle n'attend personne », dit le premier. Le second lève son gourdin. Ils se battent comme des portiers : sans élégance, et à deux.",
+      "combat": {
+        "name": "Portiers de la Guilde",
+        "habilete": 7,
+        "endurance": 8,
+        "win": "58",
+        "flee": {
+          "to": "15"
+        }
+      }
+    },
+    "14": {
+      "text": "Les rires venaient de deux frères aux tabliers de cuir, assis sur un tonneau avec des couteaux à dépecer. « Perdu, l'ami ? Ici, on fait payer les visites. » Ils se lèvent ensemble. Ce sont les Frères Écorcheurs : un cerveau pour deux, mais quatre bras.",
+      "combat": {
+        "name": "Frères Écorcheurs",
+        "habilete": 7,
+        "endurance": 7,
+        "win": "54",
+        "flee": {
+          "to": "81"
+        }
+      }
+    },
+    "15": {
+      "text": "La Cour des Miracles est le domaine de la Guilde des Doigts Longs. Au fond, une porte de bronze gardée par deux portiers masqués : le contrôle. Sur le côté, un soupirail descend vers les caves, qui passent, dit-on, sous la Chambre des Serrures. Une ruelle ramène à la Place des Gueux pour qui aurait oublié quelque chose.",
+      "choices": [
+        {
+          "text": "Se présenter au contrôle de la Guilde",
+          "to": "65"
+        },
+        {
+          "text": "Descendre dans les caves par le soupirail",
+          "to": "53"
+        },
+        {
+          "text": "Boire l'eau-de-vie du Chirurgien",
+          "to": "15",
+          "if": {
+            "type": "item",
+            "item": "eau_de_vie"
+          },
+          "effects": [
+            {
+              "type": "stat",
+              "stat": "endurance",
+              "delta": 6
+            },
+            {
+              "type": "item",
+              "action": "remove",
+              "item": "eau_de_vie"
+            }
+          ]
+        },
+        {
+          "text": "Retourner sur la Place des Gueux",
+          "to": "85"
+        }
+      ]
+    },
+    "16": {
+      "text": "La dague suffit. Fifrelin lâche la carte des égouts comme si elle brûlait, recule, et vous crache aux pieds. « Les gens comme vous, on les vend au Prévôt. Pas cher. » Il file. Vous avez la carte. Vous avez aussi, quelque part dans la cité, un gamin qui vous veut du mal.",
+      "effects": [
+        {
+          "type": "item",
+          "action": "add",
+          "item": "carte_egouts"
+        },
+        {
+          "type": "flag",
+          "flag": "fifrelin_trahi"
+        }
+      ],
+      "choices": [
+        {
+          "text": "Retourner au milieu de la Place",
+          "to": "85"
+        }
+      ]
+    },
+    "17": {
+      "text": "Les Bains de la Prophétesse ont fermé au public depuis que le public ne paie plus. Une grille en fer forgé garde l'entrée ; derrière, une gardienne tricote sans vous regarder. « Trois pièces, ou passe ton chemin. »",
+      "choices": [
+        {
+          "text": "Crocheter la grille avec vos rossignols",
+          "to": "38",
+          "if": {
+            "type": "item",
+            "item": "rossignols"
+          }
+        },
+        {
+          "text": "Payer la gardienne (3 pièces d'or)",
+          "to": "38",
+          "if": {
+            "type": "stat",
+            "stat": "or",
+            "op": ">=",
+            "value": 3
+          },
+          "effects": [
+            {
+              "type": "stat",
+              "stat": "or",
+              "delta": -3
+            }
+          ]
+        },
+        {
+          "text": "Renoncer et remonter sur la Place",
+          "to": "85"
+        }
+      ]
+    },
+    "18": {
+      "text": "Fifrelin surgit d'une poubelle. « Pas par là, m'sieur. Les sbires du Prévôt tiennent la grande porte, ils cherchent quelqu'un qui a votre tête. » Il vous fait passer par une lucarne de boulangerie, et vous sortez sur le Carrefour des Lanternes avec de la farine sur les épaules.",
+      "choices": [
+        {
+          "text": "Remercier Fifrelin et regarder autour de vous",
+          "to": "69"
+        }
+      ]
+    },
+    "19": {
+      "text": "« Toi. » Le garde de la Porte a la main sur votre épaule, et vous n'avez nulle part où reculer : la herse descend derrière lui.",
+      "combat": {
+        "name": "Garde de la Porte",
+        "habilete": 6,
+        "endurance": 7,
+        "win": "8"
+      }
+    },
+    "20": {
+      "text": "Le masque de la Guilde glisse dans votre manche, la bourse suit : 3 pièces d'or. L'ivrogne ne bronche pas. Un cuir noir à trous d'yeux, frappé de trois doigts : avec ça sur le nez, on vous prendra pour l'un des leurs.",
+      "effects": [
+        {
+          "type": "item",
+          "action": "add",
+          "item": "masque_guilde"
+        },
+        {
+          "type": "stat",
+          "stat": "or",
+          "delta": 3
+        }
+      ],
+      "choices": [
+        {
+          "text": "Miser 3 pièces d'or à la table de dés",
+          "to": "57",
+          "if": {
+            "type": "stat",
+            "stat": "or",
+            "op": ">=",
+            "value": 3
+          },
+          "effects": [
+            {
+              "type": "stat",
+              "stat": "or",
+              "delta": -3
+            }
+          ]
+        },
+        {
+          "text": "Ressortir sur la Place",
+          "to": "85"
+        }
+      ]
+    },
+    "21": {
+      "text": "Deux et un. « Trois », dit la naine, et vos pièces disparaissent sous ses doigts. Vous protestez, pour la forme ; deux costauds vous attrapent sous les bras et vous jettent dans la rue, où vous atterrissez sur l'épaule. Vous perdez 2 points d'Endurance.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -2
+        }
+      ],
+      "choices": [
+        {
+          "text": "Vous relever et traverser la Place",
+          "to": "85"
+        }
+      ]
+    },
+    "22": {
+      "text": "Le plafond descend. Lentement, mais il descend. Une des serrures du mur est plus neuve que les autres : c'est la bonne, il faut la trouver, vite. Testez votre Habileté.",
+      "test": {
+        "type": "stat",
+        "stat": "habilete",
+        "dice": "2d6",
+        "success": "79",
+        "failure": "10"
+      }
+    },
+    "23": {
+      "text": "Vous lui racontez la dette, les dogues, la Saint-Jean. Elle écoute la vapeur plus que vous. Tentez votre Chance.",
+      "test": {
+        "type": "luck",
+        "success": "64",
+        "failure": "38"
+      }
+    },
+    "24": {
+      "text": "Le Serrurier Muet se lève sans hâte. Il n'a pas d'arme ; il a ses mains, et chacune pourrait tenir votre tête comme une pomme. Il n'y a pas de fuite : la porte derrière vous s'est fermée toute seule.",
+      "combat": {
+        "name": "Serrurier Muet",
+        "habilete": 8,
+        "endurance": 9,
+        "win": "7"
+      }
+    },
+    "25": {
+      "text": "La lame glisse sous le couvercle. Le fer grince, quelque chose va céder, et ça fera du bruit. Tentez votre Chance.",
+      "test": {
+        "type": "luck",
+        "success": "49",
+        "failure": "62"
+      }
+    },
+    "26": {
+      "text": "Vous empochez 15 pièces d'or et le Prévôt empoche le Dé. En trois mois, il gagne tout : les procès, les élections, les paris. La Guilde se vide, la Mère Aiguille ferme boutique, Fifrelin disparaît. Mille-Portes devient honnête, propre et morte. Vous êtes riche, loin, et vous n'avez plus de chance du tout. Vous ne jouez plus aux dés. Vous n'y arriveriez pas.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "or",
+          "delta": 15
+        },
+        {
+          "type": "item",
+          "action": "remove",
+          "item": "de_fausse"
+        }
+      ]
+    },
+    "27": {
+      "text": "Les cuisines sentent le chou et l'ambition. Un marmiton tourne le dos, un sergent de garde somnole près du feu. L'escalier de service mène à l'étage. Testez votre Habileté.",
+      "test": {
+        "type": "stat",
+        "stat": "habilete",
+        "dice": "2d6",
+        "success": "6",
+        "failure": "59"
+      }
+    },
+    "28": {
+      "text": "L'arrière-boutique donne sur la ruelle des Chiffonniers, un boyau où l'on marche sur des étoffes pourries. Un tas de chiffons remue et une main en sort, paume ouverte. « Une pièce, et je te dis une chose que la Mère Aiguille ne t'a pas dite. » L'œil qui vous fixe sous les loques a l'air de savoir compter.",
+      "choices": [
+        {
+          "text": "Donner 1 pièce d'or au tas de chiffons",
+          "to": "40",
+          "if": {
+            "type": "stat",
+            "stat": "or",
+            "op": ">=",
+            "value": 1
+          },
+          "effects": [
+            {
+              "type": "stat",
+              "stat": "or",
+              "delta": -1
+            }
+          ]
+        },
+        {
+          "text": "Passer votre chemin",
+          "to": "85"
+        }
+      ]
+    },
+    "29": {
+      "text": "Vos doigts touchent la fiole, et ce qui respirait sous la table se lève : un chien jaune, à l'œil mauvais, qui n'aboie pas. Il mord d'abord.",
+      "combat": {
+        "name": "Chien de l'apothicaire",
+        "habilete": 5,
+        "endurance": 4,
+        "win": "30",
+        "flee": {
+          "to": "38"
+        }
+      }
+    },
+    "30": {
+      "text": "La fiole de sommeil est dans votre poche, le bouchon de cire intact. L'apothicaire se retourne dans son sommeil et murmure un prix. Vous quittez le comptoir sans faire de bruit.",
+      "effects": [
+        {
+          "type": "item",
+          "action": "add",
+          "item": "fiole_sommeil"
+        }
+      ],
+      "choices": [
+        {
+          "text": "Revenir dans la salle des Bains",
+          "to": "38"
+        }
+      ]
+    },
+    "31": {
+      "text": "Le coursier tombe comme un sac. Dans sa sacoche, une lettre cachetée aux armes du Prévôt, intacte, adressée à la Mère Aiguille. Le péagier regarde ailleurs : ce n'est pas son pendu.",
+      "effects": [
+        {
+          "type": "item",
+          "action": "add",
+          "item": "lettre_cachetee"
+        }
+      ],
+      "choices": [
+        {
+          "text": "Briser le cachet et lire la lettre",
+          "to": "56"
+        },
+        {
+          "text": "Garder la lettre fermée",
+          "to": "43"
+        }
+      ]
+    },
+    "32": {
+      "text": "Dans le noir, les rats vous prennent pour un mort qui bouge encore. Vous en écrasez trois, les autres mordent. Vous perdez 2 points d'Endurance et un bout d'oreille. La carte vous sort quand même sous la Cour des Miracles.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -2
+        }
+      ],
+      "choices": [
+        {
+          "text": "Remonter dans la Cour des Miracles",
+          "to": "15"
+        }
+      ]
+    },
+    "33": {
+      "text": "Dans la cour, un vieil homme à l'œil unique tient un molosse à distance avec un parapluie cassé. « Il veut ma jambe, dit-il sans se retourner. Il en a déjà eu une. » Il saigne de la main. Le molosse hésite entre vous deux.",
+      "choices": [
+        {
+          "text": "Chasser le molosse",
+          "to": "46"
+        },
+        {
+          "text": "Lui lancer votre eau-de-vie pour le remettre d'aplomb",
+          "to": "68",
+          "if": {
+            "type": "item",
+            "item": "eau_de_vie"
+          },
+          "effects": [
+            {
+              "type": "item",
+              "action": "remove",
+              "item": "eau_de_vie"
+            }
+          ]
+        },
+        {
+          "text": "Passer votre chemin vers la porte basse",
+          "to": "11"
+        }
+      ]
+    },
+    "34": {
+      "text": "L'impasse s'achève sur les cuves des tanneurs, des bassins de tanin noir couverts de planches pourries. La lueur vient de l'autre côté : une fenêtre, et une échelle. Il faut traverser sur les planches. Tentez votre Chance.",
+      "test": {
+        "type": "luck",
+        "success": "33",
+        "failure": "9"
+      }
+    },
+    "35": {
+      "text": "Le quartier du Prévôt est propre, ce qui le rend suspect. L'hôtel du Prévôt Carcasse a une porte à heurtoir et une entrée de cuisines mal fermée. Le canal longe le quartier jusqu'à la Cour des Miracles ; un passeur y attend des clients ou des cadavres.",
+      "choices": [
+        {
+          "text": "Entrer par les cuisines",
+          "to": "27"
+        },
+        {
+          "text": "Se présenter à la porte avec la lettre cachetée",
+          "to": "45",
+          "if": {
+            "type": "all",
+            "conditions": [
+              {
+                "type": "item",
+                "item": "lettre_cachetee"
+              },
+              {
+                "type": "not",
+                "condition": {
+                  "type": "flag",
+                  "flag": "lettre_lue"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "text": "Longer le canal",
+          "to": "67"
+        },
+        {
+          "text": "Repasser le pont vers la Place",
+          "to": "85"
+        }
+      ]
+    },
+    "36": {
+      "text": "« Alors c'est comme ça. » Elle claque la langue. Les dogues se lèvent, et vous comprenez qu'elle ne les nourrit pas beaucoup.",
+      "combat": {
+        "name": "Dogues de la Guilde",
+        "habilete": 7,
+        "endurance": 8,
+        "win": "69",
+        "flee": {
+          "to": "69"
+        }
+      }
+    },
+    "37": {
+      "text": "Vous vous glissez contre lui comme pour commander. Vos doigts cherchent la ceinture, le cordon du masque, la bourse. Testez votre Habileté.",
+      "test": {
+        "type": "stat",
+        "stat": "habilete",
+        "dice": "2d6",
+        "success": "20",
+        "failure": "52"
+      }
+    },
+    "38": {
+      "text": "À l'intérieur, la vapeur sent le soufre et l'encens. Une porte tendue de rouge mène à la Prophétesse. Un comptoir chargé de fioles signale l'apothicaire, qui dort sur sa chaise.",
+      "choices": [
+        {
+          "text": "Consulter la Prophétesse",
+          "to": "84"
+        },
+        {
+          "text": "S'approcher du comptoir de l'apothicaire",
+          "to": "42"
+        },
+        {
+          "text": "Ressortir sur la Place",
+          "to": "85"
+        }
+      ]
+    },
+    "39": {
+      "text": "Le gardien se lève, et sa main unique tient un bâton ferré avec une habitude ancienne. « Mauvaise idée, petit. Mais c'est la chapelle des mauvaises idées. »",
+      "combat": {
+        "name": "Gardien de la crypte",
+        "habilete": 7,
+        "endurance": 8,
+        "win": "51",
+        "flee": {
+          "to": "69"
+        }
+      }
+    },
+    "40": {
+      "text": [
+        "La pièce disparaît dans les chiffons. « Ce Dé, mon garçon, il donne la face qu'on veut. Mais la chance ne se fabrique pas, elle se vole : il la prend à tout le monde autour, et à toi pour finir. La Mère ne t'envoie pas le voler, elle t'envoie le lui ôter. »",
+        "« Si tu veux t'en défaire, seul l'autel de Saint-Larron, dans la crypte de sa chapelle, le reprend. Pose-le et dis : Rends-moi ce que tu as pris. » Le tas se rendort. Au bout de la ruelle, la rumeur de la Place des Gueux monte comme une marée."
+      ],
+      "effects": [
+        {
+          "type": "flag",
+          "flag": "malediction_connue"
+        }
+      ],
+      "choices": [
+        {
+          "text": "Rejoindre la Place des Gueux",
+          "to": "85"
+        }
+      ]
+    },
+    "41": {
+      "text": "Le dédale des Tanneurs commence là où le pavé finit. Les ruelles se croisent sans raison, les escaliers montent vers des portes murées, et ça pue le cuir trempé. Une bouche d'égout bâille à vos pieds ; au-dessus, les toits se touchent presque.",
+      "choices": [
+        {
+          "text": "Lancer le grappin vers les toits",
+          "to": "72",
+          "if": {
+            "type": "item",
+            "item": "grappin"
+          }
+        },
+        {
+          "text": "Descendre dans les égouts avec la carte",
+          "to": "5",
+          "if": {
+            "type": "item",
+            "item": "carte_egouts"
+          }
+        },
+        {
+          "text": "S'enfoncer dans les ruelles",
+          "to": "81"
+        }
+      ]
+    },
+    "42": {
+      "text": "L'apothicaire ronfle, la tête sur son registre. Derrière lui, sur l'étagère, une fiole de sommeil au bouchon de cire bleue, entre les sangsues et le vinaigre. Sous la table, quelque chose respire aussi.",
+      "choices": [
+        {
+          "text": "Voler la fiole de sommeil",
+          "to": "4"
+        },
+        {
+          "text": "Ne pas tenter le diable",
+          "to": "38"
+        }
+      ]
+    },
+    "43": {
+      "text": "Le Pont des Pendus porte bien son nom : un homme s'y balance, un coursier à en juger par la sacoche. Un péagier à hallebarde barre l'autre bout. « Deux pièces pour passer. Les gens du Prévôt, c'est gratuit, mais tu n'as pas la tête. »",
+      "choices": [
+        {
+          "text": "Payer le péage (2 pièces d'or)",
+          "to": "35",
+          "if": {
+            "type": "stat",
+            "stat": "or",
+            "op": ">=",
+            "value": 2
+          },
+          "effects": [
+            {
+              "type": "stat",
+              "stat": "or",
+              "delta": -2
+            }
+          ]
+        },
+        {
+          "text": "Montrer la chevalière du Prévôt",
+          "to": "35",
+          "if": {
+            "type": "item",
+            "item": "chevaliere"
+          }
+        },
+        {
+          "text": "Couper la corde du pendu avec votre dague",
+          "to": "31",
+          "if": {
+            "type": "item",
+            "item": "dague"
+          }
+        },
+        {
+          "text": "Rebrousser chemin vers la Place",
+          "to": "85"
+        }
+      ]
+    },
+    "44": {
+      "text": "La coursive longe les toits des tanneries. Un bruit de lutte monte d'une cour en contrebas : un homme et un chien. Plus loin, une porte basse ouvre sur la lumière grise de la Cour des Miracles. L'escalier redescend aussi vers les ruelles, si vous aimez tourner en rond.",
+      "choices": [
+        {
+          "text": "Descendre dans la cour voir qui se bat",
+          "to": "33"
+        },
+        {
+          "text": "Suivre la coursive jusqu'à la porte basse",
+          "to": "11"
+        },
+        {
+          "text": "Redescendre dans les ruelles",
+          "to": "81"
+        }
+      ]
+    },
+    "45": {
+      "text": "Le majordome tourne la lettre cachetée dans tous les sens, vérifie le cachet et vous compte 6 pièces d'or. Puis le Prévôt lui-même apparaît en haut de l'escalier. « Vous travaillez pour la vieille. Quand vous aurez le Dé, venez me voir. Je paie mieux qu'elle. » Il sait, maintenant, que le Dé va bouger.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "or",
+          "delta": 6
+        },
+        {
+          "type": "item",
+          "action": "remove",
+          "item": "lettre_cachetee"
+        },
+        {
+          "type": "flag",
+          "flag": "prevot_averti"
+        }
+      ],
+      "choices": [
+        {
+          "text": "Prendre congé",
+          "to": "35"
+        }
+      ]
+    },
+    "46": {
+      "text": "Le molosse choisit : c'est vous. Soixante livres de muscle et de bave, dressées pour mordre les mollets des voleurs.",
+      "combat": {
+        "name": "Molosse des Tanneurs",
+        "habilete": 6,
+        "endurance": 5,
+        "win": "68",
+        "flee": {
+          "to": "44"
+        }
+      }
+    },
+    "47": {
+      "text": "Au Chat Pendu, on boit debout parce que les chaises ont été vendues. Un guildien de la Mère Aiguille cuve au comptoir, le masque de la Guilde pendu à sa ceinture, la bourse ouverte sur la hanche. Au fond, une table de dés où l'on crie plus qu'on ne joue.",
+      "choices": [
+        {
+          "text": "Lui payer une tournée (2 pièces d'or)",
+          "to": "48",
+          "if": {
+            "type": "stat",
+            "stat": "or",
+            "op": ">=",
+            "value": 2
+          },
+          "effects": [
+            {
+              "type": "stat",
+              "stat": "or",
+              "delta": -2
+            }
+          ]
+        },
+        {
+          "text": "Lui faire les poches",
+          "to": "37"
+        },
+        {
+          "text": "Miser 3 pièces d'or à la table de dés",
+          "to": "57",
+          "if": {
+            "type": "stat",
+            "stat": "or",
+            "op": ">=",
+            "value": 3
+          },
+          "effects": [
+            {
+              "type": "stat",
+              "stat": "or",
+              "delta": -3
+            }
+          ]
+        },
+        {
+          "text": "Ressortir sur la Place",
+          "to": "85"
+        }
+      ]
+    },
+    "48": {
+      "text": "La tournée lui délie la langue plus vite que les jambes. « Le mot, à la Cour des Miracles, c'est Trois-Doigts-Et-Demi. Ne le répète pas, ils me couperaient le reste. » Il rit, rote, et son front retrouve le comptoir. Son masque pend toujours à sa ceinture.",
+      "effects": [
+        {
+          "type": "flag",
+          "flag": "mot_de_passe"
+        }
+      ],
+      "choices": [
+        {
+          "text": "Lui faire les poches",
+          "to": "37"
+        },
+        {
+          "text": "Miser 3 pièces d'or à la table de dés",
+          "to": "57",
+          "if": {
+            "type": "stat",
+            "stat": "or",
+            "op": ">=",
+            "value": 3
+          },
+          "effects": [
+            {
+              "type": "stat",
+              "stat": "or",
+              "delta": -3
+            }
+          ]
+        },
+        {
+          "text": "Ressortir sur la Place",
+          "to": "85"
+        }
+      ]
+    },
+    "49": {
+      "text": "La cassette contient 4 pièces d'or, un paquet de lettres d'amour que vous ne lisez pas, et la chevalière du Prévôt, lourde, au sceau de la cité. Avec ça au doigt, bien des portes s'ouvrent, et le brocanteur Nez-Percé en donnerait un bon prix.",
+      "effects": [
+        {
+          "type": "item",
+          "action": "add",
+          "item": "chevaliere"
+        },
+        {
+          "type": "stat",
+          "stat": "or",
+          "delta": 4
+        }
+      ],
+      "choices": [
+        {
+          "text": "Redescendre et quitter l'hôtel",
+          "to": "35"
+        }
+      ]
+    },
+    "50": {
+      "text": "Dans le noir, les caves sont un piège lent : une marche manquante, un puits, un mur qui n'est pas là. Vous trouvez l'escalier avec les genoux et le front. Vous perdez 3 points d'Endurance.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -3
+        }
+      ],
+      "choices": [
+        {
+          "text": "Monter l'escalier",
+          "to": "70"
+        }
+      ]
+    },
+    "51": {
+      "text": "La crypte est une salle basse où brûlent des centaines de bougies volées. L'autel de Saint-Larron est un simple bloc de pierre creusé d'une empreinte en forme de dé. Autour, des coupelles d'offrandes : des pièces, beaucoup, laissées par des voleurs reconnaissants ou inquiets. Le Dé, dans votre poche, est brûlant.",
+      "choices": [
+        {
+          "text": "Poser le Dé dans l'empreinte et dire : Rends-moi ce que tu as pris",
+          "to": "66",
+          "if": {
+            "type": "all",
+            "conditions": [
+              {
+                "type": "item",
+                "item": "de_fausse"
+              },
+              {
+                "type": "flag",
+                "flag": "malediction_connue"
+              }
+            ]
+          }
+        },
+        {
+          "text": "Prier Saint-Larron, garder le Dé et quitter la cité",
+          "to": "74"
+        },
+        {
+          "text": "Rafler les offrandes",
+          "to": "63",
+          "if": {
+            "type": "not",
+            "condition": {
+              "type": "flag",
+              "flag": "malediction_connue"
+            }
+          }
+        }
+      ]
+    },
+    "52": {
+      "text": "Sa main se referme sur votre poignet. « Voleur ! » hurle-t-il, ce qui, dans cette taverne, fait rire tout le monde sauf lui. Il vous attrape par le col, chancelant mais lourd.",
+      "combat": {
+        "name": "Guildien ivre",
+        "habilete": 6,
+        "endurance": 6,
+        "win": "20",
+        "flee": {
+          "to": "85"
+        }
+      }
+    },
+    "53": {
+      "text": "Le soupirail donne sur des caves voûtées, noires, où l'eau goutte sans rythme. Quelque part, un escalier remonte vers l'antichambre de la Chambre des Serrures. Encore faudrait-il le voir.",
+      "choices": [
+        {
+          "text": "Allumer la lanterne sourde",
+          "to": "2",
+          "if": {
+            "type": "item",
+            "item": "lanterne_sourde"
+          }
+        },
+        {
+          "text": "Avancer dans le noir",
+          "to": "50"
+        }
+      ]
+    },
+    "54": {
+      "text": "Les frères gisent sur leurs tabliers. Sous le tonneau, une boîte à clous contient leur caisse : 4 pièces d'or et une dent en argent que vous laissez par superstition. L'escalier de pierre monte juste derrière.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "or",
+          "delta": 4
+        }
+      ],
+      "choices": [
+        {
+          "text": "Monter l'escalier",
+          "to": "44"
+        },
+        {
+          "text": "Repartir dans les ruelles",
+          "to": "81"
+        }
+      ]
+    },
+    "55": {
+      "text": "Les sbires du Prévôt vous attendaient. Fifrelin est avec eux, et il vous montre du doigt : « C'est lui. Il a une dague et pas de manières. » Les sbires n'ont pas de manières non plus.",
+      "combat": {
+        "name": "Sbires du Prévôt",
+        "habilete": 7,
+        "endurance": 7,
+        "win": "69",
+        "flee": {
+          "to": "69"
+        }
+      }
+    },
+    "56": {
+      "text": "Le Prévôt écrit à la Mère Aiguille, et c'est presque courtois : « Votre Dé vole la chance de qui l'approche, et vous ne voulez plus de lui. Vendez-le-moi. Sinon, portez-le à l'autel de Saint-Larron et dites-lui de rendre ce qu'il a pris, on dit qu'il se laisse reprendre ainsi. » Le cachet est brisé : personne ne prendra plus cette lettre pour neuve.",
+      "effects": [
+        {
+          "type": "flag",
+          "flag": "malediction_connue"
+        },
+        {
+          "type": "flag",
+          "flag": "lettre_lue"
+        }
+      ],
+      "choices": [
+        {
+          "text": "Revenir sur le pont",
+          "to": "43"
+        }
+      ]
+    },
+    "57": {
+      "text": "La table de dés est tenue par une naine qui compte plus vite que vous. Trois pièces sur le tapis, deux dés dans le cornet. Tentez votre Chance.",
+      "test": {
+        "type": "luck",
+        "success": "78",
+        "failure": "21"
+      }
+    },
+    "58": {
+      "text": "La galerie de la Guilde est tapissée de serrures clouées au mur, des milliers, trophées de portes vaincues. Au bout, une antichambre, et un homme assis devant une porte sans poignée.",
+      "choices": [
+        {
+          "text": "Avancer vers l'antichambre",
+          "to": "70"
+        }
+      ]
+    },
+    "59": {
+      "text": "Une casserole tombe. Le sergent se lève d'un bond, plus réveillé que vous ne l'espériez, et tire une épée courte qu'il semble savoir tenir.",
+      "combat": {
+        "name": "Sergent des cuisines",
+        "habilete": 7,
+        "endurance": 6,
+        "win": "6",
+        "flee": {
+          "to": "35"
+        }
+      }
+    },
+    "60": {
+      "text": "« Ce qu'il fait ? Il tombe toujours sur la face qu'il faut. Toujours. » Elle sourit avec ses trois dents en or. « Le Prévôt Carcasse le veut aussi, pour nettoyer la cité de la vermine, c'est-à-dire nous. Alors fais vite. » Elle jette 2 pièces d'or sur le comptoir. « Une avance. Ne la bois pas d'un coup. »",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "or",
+          "delta": 2
+        }
+      ],
+      "choices": [
+        {
+          "text": "Sortir par la porte de l'échoppe",
+          "to": "85"
+        },
+        {
+          "text": "Filer par l'arrière-boutique",
+          "to": "28"
+        }
+      ]
+    },
+    "61": {
+      "text": "Le courant vous emporte contre une grille, vous roule sous une arche et vous recrache sur les marches de la Cour des Miracles, à moitié noyé. Vous perdez 2 points d'Endurance.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -2
+        }
+      ],
+      "choices": [
+        {
+          "text": "Vous hisser sur les marches",
+          "to": "15"
+        }
+      ]
+    },
+    "62": {
+      "text": "Le couvercle saute avec un bruit de cloche. Des pas dans l'escalier : deux gardes du Prévôt, en cuirasse, qui ne posent pas de questions.",
+      "combat": {
+        "name": "Gardes du Prévôt",
+        "habilete": 8,
+        "endurance": 8,
+        "win": "49",
+        "flee": {
+          "to": "35"
+        }
+      }
+    },
+    "63": {
+      "text": "Vous raflez 5 pièces d'or dans les coupelles. Les bougies vacillent toutes en même temps, ce qui ne veut rien dire, et vous remontez vers le Carrefour avec le sentiment d'avoir volé quelqu'un qui compte.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "or",
+          "delta": 5
+        }
+      ],
+      "choices": [
+        {
+          "text": "Remonter sur le Carrefour des Lanternes",
+          "to": "69"
+        }
+      ]
+    },
+    "64": {
+      "text": [
+        "« Le Dé Faussé donne toujours la face qu'on veut. Mais la chance ne se crée pas, elle se vole. Il la prend à tous ceux qui t'entourent, puis à toi. La Mère Aiguille le sait : elle ne t'envoie pas le voler, elle t'envoie le lui ôter. »",
+        "« Seul l'autel de Saint-Larron, dans la crypte de sa chapelle, accepte de le reprendre. Pose-le, et dis : Rends-moi ce que tu as pris. » La vapeur retombe."
+      ],
+      "effects": [
+        {
+          "type": "flag",
+          "flag": "malediction_connue"
+        }
+      ],
+      "choices": [
+        {
+          "text": "Quitter la Prophétesse",
+          "to": "38"
+        }
+      ]
+    },
+    "65": {
+      "text": "Les portiers ne bougent que les yeux. « Le mot. » Ils ont des gourdins, et l'air de gens que les mots ennuient.",
+      "choices": [
+        {
+          "text": "Dire : Trois-Doigts-Et-Demi",
+          "to": "58",
+          "if": {
+            "type": "flag",
+            "flag": "mot_de_passe"
+          }
+        },
+        {
+          "text": "Mettre le masque de la Guilde",
+          "to": "58",
+          "if": {
+            "type": "item",
+            "item": "masque_guilde"
+          }
+        },
+        {
+          "text": "Montrer l'œil de verre du Borgne",
+          "to": "58",
+          "if": {
+            "type": "item",
+            "item": "oeil_verre"
+          }
+        },
+        {
+          "text": "Bluffer",
+          "to": "3"
+        },
+        {
+          "text": "Faire demi-tour",
+          "to": "15"
+        }
+      ]
+    },
+    "66": {
+      "text": [
+        "Le Dé s'emboîte dans la pierre comme s'il en venait. « Rends-moi ce que tu as pris. » Les bougies se couchent, se redressent, et une chaleur remonte dans vos doigts, dans vos jambes, dans votre poitrine : la chance revient, la vôtre, et celle de tous ceux qui ont tenu ce Dé avant vous. La pierre se referme sur lui.",
+        "Vous ressortez dans une cité qui ne le sait pas encore, mais qui va se mettre à gagner aux dés. La Mère Aiguille effacera la dette, ou pas ; peu importe. Saint-Larron, pour une fois, a eu ce qu'il voulait."
+      ],
+      "effects": [
+        {
+          "type": "item",
+          "action": "remove",
+          "item": "de_fausse"
+        }
+      ]
+    },
+    "67": {
+      "text": "Le passeur a une barque et un seul œil ouvert. « Deux pièces jusqu'à la Cour des Miracles. Sinon, tu nages, et l'eau n'est pas de l'eau. »",
+      "choices": [
+        {
+          "text": "Payer le passeur (2 pièces d'or)",
+          "to": "15",
+          "if": {
+            "type": "stat",
+            "stat": "or",
+            "op": ">=",
+            "value": 2
+          },
+          "effects": [
+            {
+              "type": "stat",
+              "stat": "or",
+              "delta": -2
+            }
+          ]
+        },
+        {
+          "text": "Nager",
+          "to": "76"
+        }
+      ]
+    },
+    "68": {
+      "text": [
+        "Le vieil homme essuie son parapluie. « On m'appelle le Borgne, par manque d'imagination. » Il retire son œil de verre et vous le met dans la main. « Montre ça à ceux qui me connaissent, ils te croiront des miens. »",
+        "« Et puisque tu vas où je pense : le Serrurier Muet aime qu'on siffle Le Pendu Amoureux. Il s'endort dessus. » L'œil de verre est tiède."
+      ],
+      "effects": [
+        {
+          "type": "flag",
+          "flag": "borgne_aide"
+        },
+        {
+          "type": "item",
+          "action": "add",
+          "item": "oeil_verre"
+        }
+      ],
+      "choices": [
+        {
+          "text": "Gagner la porte basse",
+          "to": "11"
+        }
+      ]
+    },
+    "69": {
+      "text": [
+        "Le Carrefour des Lanternes, où toutes les rues de Mille-Portes finissent par se croiser. D'un côté, l'échoppe de la Mère Aiguille. De l'autre, la chapelle de Saint-Larron, patron des voleurs, et sa crypte.",
+        "Vers le nord, l'hôtel du Prévôt, qui reçoit ceux qu'il connaît. Vers le sud, la Porte des Suppliciés et la campagne, pour qui veut sortir de la cité avec ce qu'il a volé."
+      ],
+      "choices": [
+        {
+          "text": "Retourner chez la Mère Aiguille",
+          "to": "12"
+        },
+        {
+          "text": "Gagner la chapelle de Saint-Larron",
+          "to": "73"
+        },
+        {
+          "text": "Aller trouver le Prévôt",
+          "to": "87",
+          "if": {
+            "type": "any",
+            "conditions": [
+              {
+                "type": "flag",
+                "flag": "prevot_averti"
+              },
+              {
+                "type": "item",
+                "item": "chevaliere"
+              },
+              {
+                "type": "flag",
+                "flag": "fifrelin_trahi"
+              }
+            ]
+          }
+        },
+        {
+          "text": "Fuir par la Porte des Suppliciés",
+          "to": "74"
+        },
+        {
+          "text": "Boire l'eau-de-vie du Chirurgien",
+          "to": "69",
+          "if": {
+            "type": "item",
+            "item": "eau_de_vie"
+          },
+          "effects": [
+            {
+              "type": "stat",
+              "stat": "endurance",
+              "delta": 6
+            },
+            {
+              "type": "item",
+              "action": "remove",
+              "item": "eau_de_vie"
+            }
+          ]
+        }
+      ]
+    },
+    "70": {
+      "text": "Le Serrurier Muet garde la Chambre des Serrures depuis que personne ne se souvient. Il est énorme, calme, et boit à une cruche posée à côté de lui. Il ne parle pas. Il regarde la porte, et maintenant il vous regarde.",
+      "choices": [
+        {
+          "text": "Verser la fiole de sommeil dans sa cruche",
+          "to": "7",
+          "if": {
+            "type": "item",
+            "item": "fiole_sommeil"
+          },
+          "effects": [
+            {
+              "type": "item",
+              "action": "remove",
+              "item": "fiole_sommeil"
+            }
+          ]
+        },
+        {
+          "text": "Siffler Le Pendu Amoureux",
+          "to": "7",
+          "if": {
+            "type": "flag",
+            "flag": "borgne_aide"
+          }
+        },
+        {
+          "text": "L'attaquer",
+          "to": "24"
+        },
+        {
+          "text": "Reculer vers la Cour",
+          "to": "15"
+        }
+      ]
+    },
+    "71": {
+      "text": "La corde glisse, le grappin lâche, et vous traversez un auvent de toile avant de rencontrer les pavés. Vous perdez 3 points d'Endurance. Le grappin pend à votre ceinture comme s'il n'y était pour rien. Vous êtes au milieu des ruelles.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -3
+        }
+      ],
+      "choices": [
+        {
+          "text": "Vous relever et chercher votre chemin",
+          "to": "81"
+        }
+      ]
+    },
+    "72": {
+      "text": "Le grappin mord le rebord d'un toit au troisième lancer. La corde pend le long d'un mur suintant, à portée de fenêtres où des gens n'ont pas envie de vous voir. Testez votre Habileté.",
+      "test": {
+        "type": "stat",
+        "stat": "habilete",
+        "dice": "2d6",
+        "success": "82",
+        "failure": "71"
+      }
+    },
+    "73": {
+      "text": "La chapelle de Saint-Larron n'a pas de porte : les voleurs n'en ont jamais eu besoin. La crypte, elle, en a une, et un gardien assis devant, un ancien de la Guilde à la main manquante. « On ne descend pas sans le mot, ou sans quelqu'un qui réponde de toi. »",
+      "choices": [
+        {
+          "text": "Dire : Trois-Doigts-Et-Demi",
+          "to": "51",
+          "if": {
+            "type": "flag",
+            "flag": "mot_de_passe"
+          }
+        },
+        {
+          "text": "Montrer l'œil de verre du Borgne",
+          "to": "51",
+          "if": {
+            "type": "item",
+            "item": "oeil_verre"
+          }
+        },
+        {
+          "text": "Forcer le passage",
+          "to": "39"
+        },
+        {
+          "text": "Ressortir sur le Carrefour",
+          "to": "69"
+        }
+      ]
+    },
+    "74": {
+      "text": "La Porte des Suppliciés est gardée par des hommes du Prévôt qui regardent les visages. Vous rabattez votre capuchon. Tentez votre Chance.",
+      "test": {
+        "type": "luck",
+        "success": "8",
+        "failure": "19"
+      }
+    },
+    "75": {
+      "text": "Nez-Percé vend de tout, pourvu que ça ait déjà appartenu à quelqu'un. Sur ses étagères : une lanterne sourde à volet, une fiole de sommeil « pour les insomnies des autres », une eau-de-vie du Chirurgien qui remet un homme debout, et un grappin à trois dents. « Je rachète aussi, précise-t-il. Les dagues, les bijoux. Surtout les bijoux. »",
+      "shop": {
+        "currency": "or",
+        "sell": [
+          {
+            "item": "lanterne_sourde",
+            "price": 3
+          },
+          {
+            "item": "fiole_sommeil",
+            "price": 4
+          },
+          {
+            "item": "eau_de_vie",
+            "price": 4
+          },
+          {
+            "item": "grappin",
+            "price": 5
+          }
+        ],
+        "buy": [
+          {
+            "item": "dague",
+            "price": 2
+          },
+          {
+            "item": "chevaliere",
+            "price": 8
+          }
+        ]
+      },
+      "choices": [
+        {
+          "text": "Retourner sur la Place",
+          "to": "85"
+        }
+      ]
+    },
+    "76": {
+      "text": "Le canal est tiède et épais, et il a un courant qu'on ne devine pas. Tentez votre Chance.",
+      "test": {
+        "type": "luck",
+        "success": "15",
+        "failure": "61"
+      }
+    },
+    "77": {
+      "text": [
+        "Elle prend le Dé, le fait rouler sur le comptoir : six. Encore six. Elle rit, et ce n'est pas un rire de victoire. « Tu sais ce que c'est ? C'est ma retraite. Il va prendre ma chance, et la vôtre, et celle de la Guilde, et quand il n'y aura plus rien à prendre, il reviendra te chercher. »",
+        "Elle vous tend le jeton de plomb. « Dette effacée. Et comme je n'ai personne d'autre, tu hérites de la boutique. » Vous êtes riche, vous êtes de la Guilde, et vous commencez à perdre aux dés."
+      ],
+      "effects": [
+        {
+          "type": "item",
+          "action": "remove",
+          "item": "de_fausse"
+        }
+      ]
+    },
+    "78": {
+      "text": "Double six. La naine vous regarde comme si vous l'aviez insultée et pousse vers vous 9 pièces d'or. « Remets ça ou file, mais ne reste pas là à sourire. »",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "or",
+          "delta": 9
+        }
+      ],
+      "choices": [
+        {
+          "text": "Remiser 3 pièces d'or",
+          "to": "57",
+          "if": {
+            "type": "stat",
+            "stat": "or",
+            "op": ">=",
+            "value": 3
+          },
+          "effects": [
+            {
+              "type": "stat",
+              "stat": "or",
+              "delta": -3
+            }
+          ]
+        },
+        {
+          "text": "Empocher et sortir",
+          "to": "85"
+        }
+      ]
+    },
+    "79": {
+      "text": "Un couloir de sortie, une porte, et derrière la rumeur du Carrefour des Lanternes. Le Dé pèse dans votre poche comme un œil qui regarde.",
+      "choices": [
+        {
+          "text": "Pousser la porte",
+          "to": "55",
+          "if": {
+            "type": "flag",
+            "flag": "fifrelin_trahi"
+          }
+        },
+        {
+          "text": "Pousser la porte",
+          "to": "18",
+          "if": {
+            "type": "flag",
+            "flag": "fifrelin_ami"
+          }
+        },
+        {
+          "text": "Pousser la porte",
+          "to": "69",
+          "if": {
+            "type": "all",
+            "conditions": [
+              {
+                "type": "not",
+                "condition": {
+                  "type": "flag",
+                  "flag": "fifrelin_trahi"
+                }
+              },
+              {
+                "type": "not",
+                "condition": {
+                  "type": "flag",
+                  "flag": "fifrelin_ami"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "80": {
+      "text": "Fifrelin a dix ans, trois dents de moins et une sacoche pleine de cartes dessinées au charbon. « Les égouts, m'sieur. La vraie carte, pas celle des touristes. Deux pièces. » Il vous jauge, prêt à détaler.",
+      "choices": [
+        {
+          "text": "Acheter la carte des égouts (2 pièces d'or)",
+          "to": "86",
+          "if": {
+            "type": "stat",
+            "stat": "or",
+            "op": ">=",
+            "value": 2
+          },
+          "effects": [
+            {
+              "type": "stat",
+              "stat": "or",
+              "delta": -2
+            },
+            {
+              "type": "item",
+              "action": "add",
+              "item": "carte_egouts"
+            },
+            {
+              "type": "flag",
+              "flag": "fifrelin_ami"
+            }
+          ]
+        },
+        {
+          "text": "Sortir votre dague et tendre la main",
+          "to": "16",
+          "if": {
+            "type": "item",
+            "item": "dague"
+          }
+        },
+        {
+          "text": "Le laisser à son commerce",
+          "to": "85"
+        }
+      ]
+    },
+    "81": {
+      "text": "Trois boyaux. À gauche, une impasse où brille quelque chose. À droite, des rires qui s'arrêtent quand vous approchez. Devant, un escalier de pierre qui grimpe vers une coursive. Vous avez déjà vu ce mur, ou son jumeau.",
+      "choices": [
+        {
+          "text": "Prendre à gauche vers la lueur",
+          "to": "34"
+        },
+        {
+          "text": "Prendre à droite vers les rires",
+          "to": "14"
+        },
+        {
+          "text": "Monter l'escalier",
+          "to": "44"
+        }
+      ]
+    },
+    "82": {
+      "text": "Les toits de Mille-Portes forment une seconde cité, plate et silencieuse. Vous enjambez un pigeonnier dont le propriétaire cache ses économies sous la paille : 2 pièces d'or et un œuf. Vous laissez l'œuf. La Cour des Miracles s'ouvre en contrebas.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "or",
+          "delta": 2
+        }
+      ],
+      "choices": [
+        {
+          "text": "Descendre dans la Cour des Miracles",
+          "to": "15"
+        }
+      ]
+    },
+    "83": {
+      "text": "La lanterne sourde tire du noir un boyau de briques et, dans un renfoncement, un coursier noyé depuis peu. Sa bourse contient 3 pièces d'or qu'il ne réclamera pas. La carte vous mène sous la Cour des Miracles en moins d'une heure.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "or",
+          "delta": 3
+        }
+      ],
+      "choices": [
+        {
+          "text": "Remonter dans la Cour des Miracles",
+          "to": "15"
+        }
+      ]
+    },
+    "84": {
+      "text": "La Prophétesse est une femme sans âge qui lit dans la vapeur. « Tu cherches le Dé. Je sais ce qu'il fait à ceux qui le portent. Ça vaut trois pièces, ou une lettre que tu n'as pas lue, ou un sourire si Saint-Larron t'aime. »",
+      "choices": [
+        {
+          "text": "Payer la consultation (3 pièces d'or)",
+          "to": "64",
+          "if": {
+            "type": "stat",
+            "stat": "or",
+            "op": ">=",
+            "value": 3
+          },
+          "effects": [
+            {
+              "type": "stat",
+              "stat": "or",
+              "delta": -3
+            }
+          ]
+        },
+        {
+          "text": "Lui remettre la lettre cachetée",
+          "to": "64",
+          "if": {
+            "type": "item",
+            "item": "lettre_cachetee"
+          },
+          "effects": [
+            {
+              "type": "item",
+              "action": "remove",
+              "item": "lettre_cachetee"
+            }
+          ]
+        },
+        {
+          "text": "Tenter votre chance pour l'attendrir",
+          "to": "23"
+        },
+        {
+          "text": "Partir",
+          "to": "38"
+        }
+      ]
+    },
+    "85": {
+      "text": [
+        "La Place des Gueux est le cœur battant de Mille-Portes : on y vend ce qu'on a volé la veille à ceux à qui on le revolera demain. L'échoppe du brocanteur Nez-Percé, la Taverne du Chat Pendu, le gamin Fifrelin qui vend des cartes qu'il dessine lui-même.",
+        "Trois rues partent d'ici : le dédale des Tanneurs, les Bains de la Prophétesse, et le Pont des Pendus qui mène au quartier du Prévôt."
+      ],
+      "choices": [
+        {
+          "text": "Entrer chez le brocanteur",
+          "to": "75"
+        },
+        {
+          "text": "Pousser la porte de la Taverne du Chat Pendu",
+          "to": "47"
+        },
+        {
+          "text": "Aborder Fifrelin",
+          "to": "80"
+        },
+        {
+          "text": "S'enfoncer dans le dédale des Tanneurs",
+          "to": "41"
+        },
+        {
+          "text": "Descendre vers les Bains",
+          "to": "17"
+        },
+        {
+          "text": "Prendre le Pont des Pendus",
+          "to": "43"
+        }
+      ]
+    },
+    "86": {
+      "text": "Fifrelin mord la pièce, l'approuve, et vous tend la carte des égouts. « Vous êtes réglo. Les réglos, j'les surveille. Si des sbires vous cherchent, vous le saurez avant eux. » Il siffle et disparaît entre deux jupes.",
+      "choices": [
+        {
+          "text": "Retourner au milieu de la Place",
+          "to": "85"
+        }
+      ]
+    },
+    "87": {
+      "text": "Le Prévôt Carcasse vous reçoit dans son cabinet, et il connaît la valeur d'un silence. « Quinze pièces d'or. Ni la Guilde ni l'autel ne vous donneront ça. Avec ce Dé, je gagne toutes les parties, et Mille-Portes redevient une ville honnête. » Il pousse la bourse sur la table. Elle est lourde.",
+      "choices": [
+        {
+          "text": "Vendre le Dé",
+          "to": "26"
+        },
+        {
+          "text": "Reprendre le Dé et repartir",
+          "to": "69"
+        }
+      ]
+    },
+    "mort": {
+      "text": "Mille-Portes ne pleure pas ses morts : elle les fouille. Vos poches finissent chez Nez-Percé, votre dague chez les Écorcheurs, et la Mère Aiguille inscrit votre nom sur l'ardoise des dettes impayées, où il tient bonne compagnie. Le Dé Faussé, lui, reste à sa place. Votre aventure s'achève ici."
+    }
+  }
+}

@@ -1,3 +1,10 @@
 [
-  { "id": "demo", "path": "stories/demo/story.json" }
+  {
+    "id": "demo",
+    "path": "stories/demo/story.json"
+  },
+  {
+    "id": "mille-portes",
+    "path": "stories/mille-portes/story.json"
+  }
 ]
