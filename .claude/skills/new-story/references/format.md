@@ -83,6 +83,20 @@ Un choix dont la condition échoue est masqué, pas grisé.
 ```
 Les objets sont uniques : ajouter un objet déjà possédé ne fait rien. Une quantité se modélise en ressource, pas en objet.
 
+## Modificateurs
+
+```json
+"modifiers": [
+  { "label": "Hachette", "if": { "type": "item", "item": "hachette" }, "combat": { "attack": 1 } },
+  { "label": "Le petit à protéger", "if": { "type": "stat", "stat": "souffle", "op": "<=", "value": 3 }, "combat": { "attack": -2 } },
+  { "label": "Manteau de cuir", "if": { "type": "item", "item": "manteau" }, "combat": { "damageTaken": -1 } },
+  { "label": "Mains gelées", "if": { "type": "flag", "flag": "mains_gelees" }, "test": { "stat": "habilete", "bonus": -2 } }
+]
+```
+Bloc à la racine de l'histoire. Une règle est active tant que sa condition est vraie ; elle modifie l'attaque du héros (`attack`), les dégâts qu'il inflige (`damageDealt`) ou subit (`damageTaken`, négatif = armure), ou le seuil d'un test (`test.stat`, `test.bonus` ; `chance` pour le test de chance). Le `label` est affiché au joueur avec le signe : court, concret, 1 à 3 mots. C'est le mécanisme pour qu'un objet, un état ou un compagnon pèse sur les règles sans toucher au moteur.
+
+Repères : +1 d'attaque vaut environ 7 % de victoires en plus sur un assaut équilibré ; −2 fait d'un adversaire sérieux un adversaire redoutable. Un bonus de test de +2 équivaut à deux points de caractéristique.
+
 ## Marchand
 
 ```json

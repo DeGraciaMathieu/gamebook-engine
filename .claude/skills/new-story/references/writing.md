@@ -14,6 +14,10 @@
 - Les paragraphes cibles d'un test ou d'un combat disent le résultat dès la première phrase. Le joueur vient de voir les dés, pas besoin de suspense.
 - Le paragraphe `death` est court, définitif, et rappelle l'enjeu que le héros laisse derrière lui.
 
+## Modificateurs
+- Le label d'un modificateur est affiché tel quel dans le panneau de combat ou de test, avec son signe : « Hachette +1 », « Le petit à protéger −2 ». Un à trois mots, un nom ou un état, jamais une phrase.
+- Le texte qui donne l'objet ou pose l'état dit ce qu'il change, sans chiffre : « avec ça, on se bat mieux », « vos mains ne vous obéissent plus ». Le chiffre, c'est l'interface.
+
 ## Cohérence de l'inventaire
 - Un objet initial sert au moins une fois (condition, revente, retrait), sinon ne pas le déclarer. Une « épée » qu'on ne teste jamais n'est qu'un mot.
 - Un objet consommable est retiré par un effet `remove` et le texte le dit : « Vous videz la potion. »

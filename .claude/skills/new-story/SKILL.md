@@ -19,7 +19,8 @@ Si l'argument ne le dit pas, pose au plus trois questions en un seul appel : ton
 
 1. **Pitch** en cinq lignes : lieu, objectif du héros, antagoniste, enjeu en cas d'échec, twist possible.
 2. **Fiche du héros** : les trois caractéristiques avec `description` (une phrase chacune), réserve de points, or de départ, inventaire initial (2 objets au plus, chacun utile plus tard).
-3. **Catalogue des objets** : identifiant, nom affiché, où on l'obtient, à quoi il sert. 6 à 12 objets selon la taille. Chaque objet a au moins un usage (condition, revente, consommation).
+3. **Catalogue des objets** : identifiant, nom affiché, où on l'obtient, à quoi il sert. 6 à 12 objets selon la taille. Chaque objet a au moins un usage (condition, revente, consommation, modificateur).
+4. **Modificateurs** : les règles qui pèsent sur les combats et les tests (arme, armure, blessure, faim, compagnon), avec leur condition et leur valeur. Au moins un bonus et un malus.
 
 Demande validation avant la phase 2.
 
@@ -36,6 +37,7 @@ Rôles possibles : départ, carrefour, scène, combat, test, marchand, verrou, f
 - les trois fins hors mort et ce que chacune exige,
 - où chaque objet s'obtient et où il sert,
 - où la ressource se gagne et se dépense,
+- où chaque modificateur devient actif ou cesse de l'être,
 - la grille de couverture cochée mécanique par mécanique.
 
 Les identifiants sont mélangés (pas dans l'ordre de lecture). Demande validation avant la phase 3 ; si l'utilisateur ajuste, reprends le tableau complet.
@@ -59,7 +61,7 @@ node scripts/story-simulate.mjs stories/<id>/story.json --runs 3000 --strategy p
 
 - Le lint doit sortir sans erreur. Chaque avertissement est soit corrigé, soit justifié dans le rapport final (un objet purement narratif se justifie, un paragraphe inatteignable jamais).
 - Aucune mécanique absente dans la grille de couverture.
-- La létalité et la distribution des fins doivent entrer dans les cibles de `references/coverage.md` pour la difficulté demandée. Pour ajuster : Habileté et Endurance des adversaires, dégâts des pièges, prix du marchand, placement des potions, ajout d'une fuite. Relance la simulation après chaque ajustement. Trois itérations au plus ; au-delà, expose le compromis à l'utilisateur.
+- La létalité et la distribution des fins doivent entrer dans les cibles de `references/coverage.md` pour la difficulté demandée. Pour ajuster : Habileté et Endurance des adversaires, dégâts des pièges, prix du marchand, placement des potions, ajout d'une fuite, valeur ou condition d'un modificateur. Relance la simulation après chaque ajustement. Trois itérations au plus ; au-delà, expose le compromis à l'utilisateur.
 
 ## Phase 5 : rapport
 

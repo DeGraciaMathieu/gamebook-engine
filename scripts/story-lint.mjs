@@ -53,6 +53,14 @@ if (!story.death) warnings.push('pas de paragraphe "death" : la mort affichera l
 const hubs = paragraphs.filter(([id, paragraph]) => incoming.get(id) >= 2 && (paragraph.choices?.length ?? 0) >= 2).map(([id]) => id);
 if (hubs.length === 0) warnings.push('aucun carrefour (paragraphe rejoint par 2 chemins avec 2 choix ou plus)');
 
+// Couverture des mécaniques
+const coverage = {
+  'combat': 0, 'combat avec fuite': 0, 'test de chance': 0, 'test de caractéristique': 0,
+  'condition objet': 0, 'condition drapeau': 0, 'condition caractéristique': 0, 'condition all': 0, 'condition any': 0, 'condition not': 0,
+  'effet caractéristique': 0, 'effet objet (gain)': 0, 'effet objet (perte)': 0, 'effet drapeau': 0, 'effet sur un choix': 0,
+  'boutique (vente)': 0, 'boutique (rachat)': 0, 'modificateur de combat': 0, 'modificateur de test': 0,
+};
+
 // Objets et drapeaux
 const items = Object.keys(story.items ?? {});
 const itemsAdded = new Set(story.hero.inventory ?? []);
@@ -82,6 +90,11 @@ for (const [, paragraph] of paragraphs) {
   (paragraph.shop?.sell ?? []).forEach((offer) => itemsAdded.add(offer.item));
   (paragraph.shop?.buy ?? []).forEach((offer) => itemsUsed.add(offer.item));
 }
+for (const modifier of story.modifiers ?? []) {
+  if (modifier.combat) coverage['modificateur de combat'] += 1;
+  if (modifier.test) coverage['modificateur de test'] += 1;
+  walkCondition(modifier.if);
+}
 items.filter((item) => !itemsAdded.has(item)).forEach((item) => warnings.push(`objet "${item}" déclaré mais jamais obtenu`));
 items.filter((item) => itemsAdded.has(item) && !itemsUsed.has(item)).forEach((item) => warnings.push(`objet "${item}" obtenu mais jamais utile (aucune condition, vente ni retrait)`));
 [...flagsSet].filter((flag) => !flagsTested.has(flag)).forEach((flag) => warnings.push(`drapeau "${flag}" posé mais jamais testé`));
@@ -109,13 +122,6 @@ for (const [id, paragraph] of paragraphs) {
   }
 }
 
-// Couverture des mécaniques
-const coverage = {
-  'combat': 0, 'combat avec fuite': 0, 'test de chance': 0, 'test de caractéristique': 0,
-  'condition objet': 0, 'condition drapeau': 0, 'condition caractéristique': 0, 'condition all': 0, 'condition any': 0, 'condition not': 0,
-  'effet caractéristique': 0, 'effet objet (gain)': 0, 'effet objet (perte)': 0, 'effet drapeau': 0, 'effet sur un choix': 0,
-  'boutique (vente)': 0, 'boutique (rachat)': 0,
-};
 const countCondition = (condition) => {
   if (!condition) return;
   const key = { item: 'condition objet', flag: 'condition drapeau', stat: 'condition caractéristique', all: 'condition all', any: 'condition any', not: 'condition not' }[condition.type];
