@@ -105,7 +105,8 @@
         "item": "hachette"
       },
       "combat": {
-        "attack": 1
+        "attack": 1,
+        "stat": "habilete"
       }
     },
     {
@@ -1021,12 +1022,17 @@
       }
     },
     "51": {
-      "text": "Ils sortent des arbres, devant et derrière. Les hommes du camion, ou d'autres qui leur ressemblent. Ils ne courent pas. L'un d'eux a un masque à gaz, l'autre un tuyau de plomb. Vous mettez le petit derrière un tronc.",
+      "text": [
+        "Ils sortent des arbres, derrière vous. Les hommes du camion, ou d'autres qui leur ressemblent, et ils vous ont vus. Vous prenez le petit sur votre dos et vous courez. Ce n'est plus un combat, c'est une course, et elle se joue sur ce qui vous reste de souffle.",
+        "Chaque fois qu'ils gagnent du terrain, une pierre, un bâton lancé, vous atteint. Chaque fois que vous en gagnez, ils s'essoufflent un peu plus."
+      ],
       "combat": {
         "name": "Les marcheurs",
-        "habilete": 8,
-        "endurance": 9,
+        "habilete": 6,
+        "endurance": 6,
         "win": "89",
+        "stat": "endurance",
+        "damage": 2,
         "flee": {
           "to": "89"
         }
@@ -1627,6 +1633,7 @@
         "habilete": 6,
         "endurance": 6,
         "win": "5",
+        "damage": 1,
         "flee": {
           "to": "30"
         }
@@ -1798,12 +1805,13 @@
       ]
     },
     "96": {
-      "text": "Ils vous ont vus. Deux hommes vous coupent la route, et ils ne courent pas, ils n'ont pas besoin. Vous mettez le petit derrière vous. Il n'y a nulle part où fuir.",
+      "text": "Ils vous ont vus. Deux hommes vous coupent la route, et ils ne courent pas, ils n'ont pas besoin. Ils portent des plaques de tôle cousues dans leurs manteaux, et vos coups glissent dessus. Vous mettez le petit derrière vous. Il n'y a nulle part où fuir.",
       "combat": {
         "name": "Hommes de la maison",
         "habilete": 8,
         "endurance": 8,
-        "win": "113"
+        "win": "113",
+        "armor": 1
       }
     },
     "97": {
