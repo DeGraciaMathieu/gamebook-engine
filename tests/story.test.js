@@ -88,3 +88,14 @@ test('une boutique exige une monnaie connue, des objets connus, des prix valides
   assert.ok(errors.filter((error) => error.includes('prix invalide')).length === 2);
   assert.ok(errors.some((error) => error.includes('quitter la boutique')));
 });
+
+test('un combat valide sa caractéristique, ses dégâts et son armure', () => {
+  const story = makeStory({
+    '1': { text: 'x', combat: { name: 'X', stat: 'force', habilete: 1, endurance: 1, damage: -1, armor: 'x', win: '2' } },
+    '2': { text: 'Fin' },
+  });
+  const errors = validateStory(story);
+  assert.ok(errors.some((error) => error.includes('"force"')));
+  assert.ok(errors.some((error) => error.includes('damage doit être')));
+  assert.ok(errors.some((error) => error.includes('armor doit être')));
+});

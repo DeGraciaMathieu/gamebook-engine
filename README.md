@@ -99,7 +99,7 @@ Une histoire invalide (cible manquante, objet inconnu…) est refusée au charge
 Un paragraphe contient `text`, des `effects` optionnels appliqués à l'arrivée, puis **un seul** parmi :
 
 - `choices` : liste de choix. Un choix dont la condition `if` échoue est masqué.
-- `combat` : `{ "name", "habilete", "endurance", "win": "<id>", "flee": { "to": "<id>" } }`. `flee` est optionnel ; fuir coûte 2 points d'endurance.
+- `combat` : `{ "name", "habilete", "endurance", "win": "<id>", "flee": { "to": "<id>" } }`. `flee` est optionnel ; fuir coûte les dégâts de l'adversaire. Options : `stat` pour jouer le duel sur une autre caractéristique du héros (`"endurance"` pour une course, `"volonte"` pour une joute), `damage` (2 par défaut) et `armor` (0 par défaut) pour l'adversaire.
 - `test` : `{ "type": "luck", "success": "<id>", "failure": "<id>" }` (réussite si 2d6 ≤ chance, puis chance −1) ou `{ "type": "stat", "stat": "habilete", "dice": "2d6", "success", "failure" }` (réussite si jet ≤ caractéristique).
 
 Un paragraphe sans `choices`, `combat` ni `test` est une fin.
@@ -163,4 +163,4 @@ Une règle s'applique tant que sa condition (même syntaxe que les choix) est vr
 
 ## Règles de combat
 
-À chaque assaut, chaque camp lance 2d6 + Habileté. Le camp au score le plus bas perd 2 points d'Endurance ; égalité sans effet. Le combat se termine quand l'adversaire tombe à 0 (le jeu va au paragraphe `win`) ou quand le héros tombe à 0 (mort).
+À chaque assaut, chaque camp lance 2d6 + sa caractéristique de duel (Habileté par défaut, ou celle que `stat` désigne ; `habilete` reste le nom du score de l'adversaire). Le héros perdant encaisse `damage` points d'Endurance (2 par défaut) ; l'adversaire perdant en perd 2 moins son `armor`, jamais sous zéro. Égalité sans effet. Le combat se termine quand l'adversaire tombe à 0 (le jeu va au paragraphe `win`) ou quand le héros tombe à 0 (mort). Les modificateurs de combat peuvent se limiter à une caractéristique de duel avec `combat.stat`.

@@ -130,7 +130,9 @@ function renderTest(story, state, { roll, handlers }) {
 // Panneau de combat : l'adversaire lance en premier, puis le héros, puis le verdict.
 function renderCombat(story, view, paragraph, { roll, fx, handlers }) {
   const { combat } = view;
-  const bonus = combatBonus(story, view);
+  const stat = combat.enemy.stat ?? 'habilete';
+  const statLabel = story.hero.stats[stat].label;
+  const bonus = combatBonus(story, view, stat);
   const phase = roll?.phase ?? 'idle';
   const round = roll?.round ?? combat.lastRound;
   const enemySettled = phase === 'enemy' || phase === 'hero' || phase === 'verdict' || (!roll && round);
@@ -141,8 +143,13 @@ function renderCombat(story, view, paragraph, { roll, fx, handlers }) {
   return el('section', { class: `combat${outcomeClass}` }, [
     el('div', { class: 'combat-enemy' }, [
       el('h2', { class: 'combat-name' }, combat.enemy.name),
-      el('p', { class: 'combat-stats' },
-        `Habileté ${combat.enemy.habilete} · Endurance ${combat.enemyEndurance}/${combat.enemy.endurance}`),
+      el('p', { class: 'combat-stats' }, [
+        stat === 'habilete'
+          ? `${statLabel} ${combat.enemy.habilete} · Endurance ${combat.enemyEndurance}/${combat.enemy.endurance}`
+          : `Duel sur ${statLabel} : ${combat.enemy.habilete} · Endurance ${combat.enemyEndurance}/${combat.enemy.endurance}`,
+        (combat.enemy.damage ?? 2) !== 2 && ` · Dégâts ${combat.enemy.damage}`,
+        combat.enemy.armor > 0 && ` · Armure ${combat.enemy.armor}`,
+      ]),
       renderEnduranceBar(combat, fx?.enemyFrom),
     ]),
     renderModifiers(bonus.active.map((modifier) => ({ label: modifier.label, value: modifier.combat.attack ?? 0, detail: describeCombatModifier(modifier.combat) }))),
@@ -152,7 +159,7 @@ function renderCombat(story, view, paragraph, { roll, fx, handlers }) {
         settled: enemySettled,
         justSettled: phase === 'enemy',
       }),
-      renderDuelRow('Vous', view.stats.habilete, round?.heroDice, round?.heroAttack, {
+      renderDuelRow('Vous', view.stats[stat], round?.heroDice, round?.heroAttack, {
         bonus: round?.heroBonus ?? bonus.attack,
         rolling: phase === 'rolling' || phase === 'enemy',
         settled: heroSettled,
@@ -162,7 +169,7 @@ function renderCombat(story, view, paragraph, { roll, fx, handlers }) {
     showVerdict && el('p', { class: `verdict verdict-${round.outcome}` }, describeOutcome(round.outcome)),
     el('div', { class: 'choices' }, [
       el('button', { class: 'btn btn-primary', disabled: Boolean(roll), onClick: handlers.onFight }, `Assaut ${combat.round + 1}`),
-      paragraph.combat.flee && el('button', { class: 'btn btn-ghost', disabled: Boolean(roll), onClick: handlers.onFlee }, 'Fuir (−2 Endurance)'),
+      paragraph.combat.flee && el('button', { class: 'btn btn-ghost', disabled: Boolean(roll), onClick: handlers.onFlee }, `Fuir (−${combat.enemy.damage ?? 2} Endurance)`),
     ]),
   ]);
 }

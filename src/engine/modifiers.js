@@ -5,8 +5,10 @@ export function activeModifiers(story, state) {
   return (story.modifiers ?? []).filter((modifier) => isConditionMet(modifier.if, state));
 }
 
-export function combatBonus(story, state) {
-  const active = activeModifiers(story, state).filter((modifier) => modifier.combat);
+// Un modificateur de combat peut se limiter à une caractéristique de duel (`combat.stat`).
+export function combatBonus(story, state, stat = 'habilete') {
+  const active = activeModifiers(story, state)
+    .filter((modifier) => modifier.combat && (modifier.combat.stat ?? stat) === stat);
   const sum = (key) => active.reduce((total, modifier) => total + (modifier.combat[key] ?? 0), 0);
   return {
     attack: sum('attack'),

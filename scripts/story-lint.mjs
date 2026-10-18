@@ -58,7 +58,7 @@ const coverage = {
   'combat': 0, 'combat avec fuite': 0, 'test de chance': 0, 'test de caractéristique': 0,
   'condition objet': 0, 'condition drapeau': 0, 'condition caractéristique': 0, 'condition all': 0, 'condition any': 0, 'condition not': 0,
   'effet caractéristique': 0, 'effet objet (gain)': 0, 'effet objet (perte)': 0, 'effet drapeau': 0, 'effet sur un choix': 0,
-  'boutique (vente)': 0, 'boutique (rachat)': 0, 'modificateur de combat': 0, 'modificateur de test': 0, 'déclencheur': 0,
+  'boutique (vente)': 0, 'boutique (rachat)': 0, 'modificateur de combat': 0, 'modificateur de test': 0, 'déclencheur': 0, 'combat sur une autre caractéristique': 0, 'adversaire à dégâts ou armure': 0,
 };
 
 // Objets et drapeaux
@@ -143,6 +143,8 @@ const countEffects = (effects) => {
 for (const [, paragraph] of paragraphs) {
   if (paragraph.combat) coverage.combat += 1;
   if (paragraph.combat?.flee) coverage['combat avec fuite'] += 1;
+  if (paragraph.combat?.stat && paragraph.combat.stat !== 'habilete') coverage['combat sur une autre caractéristique'] += 1;
+  if (paragraph.combat && (paragraph.combat.damage !== undefined || paragraph.combat.armor !== undefined)) coverage['adversaire à dégâts ou armure'] += 1;
   if (paragraph.test?.type === 'luck') coverage['test de chance'] += 1;
   if (paragraph.test?.type === 'stat') coverage['test de caractéristique'] += 1;
   countEffects(paragraph.effects);

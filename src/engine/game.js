@@ -1,7 +1,7 @@
 import { rollDice, rollDiceDetailed } from './dice.js';
 import { isConditionMet } from './conditions.js';
 import { applyEffects } from './effects.js';
-import { startCombat, resolveAssault, isEnemyDefeated, FLEE_DAMAGE } from './combat.js';
+import { startCombat, resolveAssault, isEnemyDefeated, fleeDamage } from './combat.js';
 import { getParagraph, isEnding } from './story.js';
 import { combatBonus, testBonus } from './modifiers.js';
 
@@ -221,7 +221,8 @@ export function fightRound(story, state, rng = Math.random) {
   if (!state.combat) {
     throw new Error('Aucun combat en cours');
   }
-  const { combat, round } = resolveAssault(state.combat, state.stats.habilete, rng, combatBonus(story, state));
+  const stat = state.combat.enemy.stat ?? 'habilete';
+  const { combat, round } = resolveAssault(state.combat, state.stats[stat], rng, combatBonus(story, state, stat));
   let next = applyEffects([{ type: 'stat', stat: 'endurance', delta: -round.heroDamage }], state);
   next = { ...next, combat };
 
@@ -241,7 +242,7 @@ export function fleeCombat(story, state) {
   if (!state.combat || !flee) {
     throw new Error('Impossible de fuir ce combat');
   }
-  const next = applyEffects([{ type: 'stat', stat: 'endurance', delta: -FLEE_DAMAGE }], state);
+  const next = applyEffects([{ type: 'stat', stat: 'endurance', delta: -fleeDamage(state.combat) }], state);
   if (isDead(next)) {
     return die(story, next);
   }

@@ -283,3 +283,20 @@ test('createGame fige les caractéristiques à valeur fixe hors de la répartiti
   assert.equal(state.stats.or, 6);
   assert.deepEqual(state.caps, { habilete: 10, endurance: 18, chance: 8 });
 });
+
+test('un combat peut se jouer sur une autre caractéristique, et fuir coûte les dégâts de l\'adversaire', () => {
+  const chase = makeStory({
+    '1': { text: 'Départ', choices: [{ text: 'Courir', to: '2' }] },
+    '2': { text: 'Poursuite', combat: { name: 'Chiens', stat: 'endurance', habilete: 5, endurance: 2, damage: 3, win: '3', flee: { to: '3' } } },
+    '3': { text: 'Fin' },
+  }, { modifiers: [
+    { label: 'Hache', if: { type: 'stat', stat: 'habilete', op: '>=', value: 1 }, combat: { attack: 5, stat: 'habilete' } },
+    { label: 'Bottes', if: { type: 'stat', stat: 'habilete', op: '>=', value: 1 }, combat: { attack: 1, stat: 'endurance' } },
+  ] });
+  const state = choose(chase, createGame(chase, minRoll), listChoices(chase, createGame(chase, minRoll))[0]);
+  assert.equal(state.combat.enemy.stat, 'endurance');
+  const { round } = fightRound(chase, state, minRoll);
+  assert.equal(round.heroBonus, 1);
+  assert.equal(round.heroAttack, 2 + 20 + 1);
+  assert.equal(fleeCombat(chase, state).stats.endurance, 17);
+});

@@ -77,7 +77,8 @@ export function validateStory(story) {
     checkCondition(modifier.if, where);
     if (!modifier.combat && !modifier.test) errors.push(`${where} : ni "combat" ni "test"`);
     for (const key of Object.keys(modifier.combat ?? {})) {
-      if (!['attack', 'damageDealt', 'damageTaken'].includes(key)) errors.push(`${where} : champ combat.${key} inconnu`);
+      if (key === 'stat') checkStat(modifier.combat.stat, `${where} (combat.stat)`);
+      else if (!['attack', 'damageDealt', 'damageTaken'].includes(key)) errors.push(`${where} : champ combat.${key} inconnu`);
       else if (typeof modifier.combat[key] !== 'number') errors.push(`${where} : combat.${key} doit être un nombre`);
     }
     if (modifier.test) {
@@ -102,6 +103,11 @@ export function validateStory(story) {
     if (paragraph.combat) {
       const combatWhere = `${where}, combat`;
       if (!paragraph.combat.name) errors.push(`${combatWhere} : nom de l'adversaire manquant`);
+      if (paragraph.combat.stat !== undefined) checkStat(paragraph.combat.stat, `${combatWhere} (stat)`);
+      for (const key of ['damage', 'armor']) {
+        const value = paragraph.combat[key];
+        if (value !== undefined && (typeof value !== 'number' || value < 0)) errors.push(`${combatWhere} : ${key} doit être un nombre positif`);
+      }
       checkTarget(paragraph.combat.win, `${combatWhere} (win)`);
       if (paragraph.combat.flee) checkTarget(paragraph.combat.flee.to, `${combatWhere} (flee)`);
     }
