@@ -6,9 +6,10 @@
   "death": "mort",
   "hero": {
     "stats": {
-      "habilete": { "label": "Habileté", "base": 7, "max": 12 },
-      "endurance": { "label": "Endurance", "base": 14, "max": 24 },
-      "chance": { "label": "Chance", "base": 7, "max": 12 }
+      "habilete": { "label": "Habileté", "description": "Votre adresse au combat et à forcer les passages.", "base": 7, "max": 12 },
+      "endurance": { "label": "Endurance", "description": "Vos points de vie. À zéro, l'aventure s'arrête.", "base": 14, "max": 24 },
+      "chance": { "label": "Chance", "description": "Tirer votre épingle du jeu quand le sort décide. Chaque tentative l'use.", "base": 7, "max": 12 },
+      "or": { "label": "Or", "value": 6, "capped": false, "unit": "pièce d'or" }
     },
     "points": 8,
     "inventory": ["epee", "lanterne"],
@@ -20,7 +21,8 @@
     "clef_rouillee": { "name": "Clef rouillée" },
     "potion": { "name": "Potion de vigueur" },
     "amulette": { "name": "Amulette d'os" },
-    "rouleau": { "name": "Rouleau du serment" }
+    "rouleau": { "name": "Rouleau du serment" },
+    "corde": { "name": "Corde de chanvre" }
   },
   "paragraphs": {
     "1": {
@@ -30,13 +32,37 @@
       ],
       "choices": [
         { "text": "Marcher droit vers la porte de la crypte", "to": "2" },
-        { "text": "Fouiller les ruines alentour avant d'entrer", "to": "3" }
+        { "text": "Fouiller les ruines alentour avant d'entrer", "to": "3" },
+        { "text": "S'approcher du colporteur installé contre les ruines", "to": "22" }
+      ]
+    },
+    "22": {
+      "text": [
+        "Un colporteur a dressé son étal de fortune contre un mur à demi effondré. « Tout ce qu'il faut pour descendre là-dessous, et je rachète ce qui en remonte », lance-t-il en lorgnant votre sac.",
+        "Sur la toile, une potion de vigueur et un rouleau de corde de chanvre."
+      ],
+      "shop": {
+        "currency": "or",
+        "sell": [
+          { "item": "potion", "price": 5 },
+          { "item": "corde", "price": 3 }
+        ],
+        "buy": [
+          { "item": "clef_rouillee", "price": 4 }
+        ]
+      },
+      "choices": [
+        { "text": "Marcher vers la porte de la crypte", "to": "2" },
+        { "text": "Fouiller les ruines alentour", "to": "3" }
       ]
     },
     "3": {
       "text": "Parmi les pierres effondrées, vous dégagez le squelette d'un ancien pèlerin. Sa main serre encore une clef rouillée que vous glissez dans votre sac.",
       "effects": [{ "type": "item", "action": "add", "item": "clef_rouillee" }],
-      "choices": [{ "text": "Rejoindre la porte de la crypte", "to": "2" }]
+      "choices": [
+        { "text": "Rejoindre la porte de la crypte", "to": "2" },
+        { "text": "Retourner voir le colporteur", "to": "22" }
+      ]
     },
     "2": {
       "text": "Une lourde porte de pierre barre le passage, gravée d'un roi couronné dont le visage a été martelé. Une serrure de bronze vert-de-gris en marque le centre.",
@@ -77,8 +103,11 @@
       }
     },
     "10": {
-      "text": "Le squelette s'effondre en un tas d'os inertes. Derrière lui, une niche abrite une fiole d'un liquide ambré : une potion de vigueur.",
-      "effects": [{ "type": "item", "action": "add", "item": "potion" }],
+      "text": "Le squelette s'effondre en un tas d'os inertes. Derrière lui, une niche abrite une fiole d'un liquide ambré, une potion de vigueur, et une bourse de cuir qui contient encore 4 pièces d'or.",
+      "effects": [
+        { "type": "item", "action": "add", "item": "potion" },
+        { "type": "stat", "stat": "or", "delta": 4 }
+      ],
       "choices": [
         { "text": "Fouiller le reste de la salle", "to": "11" },
         { "text": "Retourner au carrefour", "to": "6" }
@@ -101,7 +130,10 @@
     "13": {
       "text": "Une corde se rompt. Vous chutez sur une corniche quelques mètres plus bas et vous écrasez les côtes sur la roche. Vous perdez 4 points d'Endurance. Il vous faut une bonne heure pour remonter.",
       "effects": [{ "type": "stat", "stat": "endurance", "delta": -4 }],
-      "choices": [{ "text": "Rejoindre le carrefour", "to": "6" }]
+      "choices": [
+        { "text": "Rejoindre le carrefour", "to": "6" },
+        { "text": "Lancer votre corde de chanvre et retraverser vers la chapelle", "to": "12", "if": { "type": "item", "item": "corde" } }
+      ]
     },
     "9": {
       "text": "Le portail de bronze est scellé. En son centre, une empreinte creuse a la forme d'un petit os sculpté. Les battants sont épais, mais le métal est ancien et travaillé par les siècles.",

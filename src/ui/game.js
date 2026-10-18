@@ -1,6 +1,6 @@
 import { el } from './dom.js';
 import { renderDice } from './dice.js';
-import { currentParagraph, listChoices, hasChosen, describeTest } from '../engine/game.js';
+import { currentParagraph, listChoices, hasChosen, describeTest, listOffers, isCapped } from '../engine/game.js';
 
 // `roll` décrit un lancer de dés en cours d'animation ; `fx` les effets visuels à jouer une fois sur ce rendu.
 export function renderGame({ story, state, menuOpen, muted, roll, fx, handlers }) {
@@ -12,6 +12,7 @@ export function renderGame({ story, state, menuOpen, muted, roll, fx, handlers }
     el('article', { class: 'page' }, [
       el('p', { class: 'page-number' }, state.paragraphId),
       ...renderText(story, state, paragraph.text),
+      !roll && renderShop(story, state, handlers),
       renderActions(story, state, view, paragraph, { roll, fx, handlers }),
     ]),
   ]);
@@ -24,7 +25,8 @@ function renderHeader(story, view, fx, menuOpen, handlers) {
       const delta = fx?.statDeltas?.[name];
       return el('li', { class: 'stat' }, [
         el('span', { class: 'stat-label' }, definition.label),
-        el('span', { class: `stat-value${delta ? ' is-bumped' : ''}` }, `${view.stats[name]}/${view.initialStats[name]}`),
+        el('span', { class: `stat-value${delta ? ' is-bumped' : ''}` },
+          isCapped(story, name) ? `${view.stats[name]}/${view.initialStats[name]}` : String(view.stats[name])),
         delta && el('span', { class: `stat-delta ${delta > 0 ? 'delta-gain' : 'delta-loss'}` }, formatDelta(delta)),
       ]);
     })),
@@ -69,6 +71,40 @@ function renderActions(story, state, view, paragraph, { roll, fx, handlers }) {
       class: `btn btn-choice${hasChosen(story, state, choice) ? ' is-chosen' : ''}`,
       onClick: () => handlers.onChoose(choice),
     }, choice.text)));
+}
+
+// Étal du marchand : articles à acheter, objets repris, bourse du héros.
+function renderShop(story, state, handlers) {
+  const offers = listOffers(story, state);
+  if (!offers) {
+    return null;
+  }
+  const unit = story.hero.stats[offers.currency].unit ?? story.hero.stats[offers.currency].label;
+  const price = (value) => formatQuantity(value, unit);
+  return el('section', { class: 'shop' }, [
+    el('p', { class: 'shop-purse' }, [`Votre bourse : `, el('strong', {}, price(offers.purse))]),
+    offers.sell.length > 0 && el('ul', { class: 'shop-list' }, offers.sell.map((offer) =>
+      el('li', { class: `shop-offer${offer.owned ? ' is-owned' : ''}` }, [
+        el('span', { class: 'shop-item' }, offer.name),
+        el('span', { class: 'shop-price' }, price(offer.price)),
+        el('button', {
+          class: 'btn btn-small btn-shop',
+          disabled: offer.owned || !offer.affordable,
+          onClick: () => handlers.onBuy(offer.item),
+        }, offer.owned ? 'Possédé' : 'Acheter'),
+      ]))),
+    offers.buy.length > 0 && el('p', { class: 'shop-subtitle' }, 'Le marchand reprend'),
+    offers.buy.length > 0 && el('ul', { class: 'shop-list' }, offers.buy.map((offer) =>
+      el('li', { class: 'shop-offer' }, [
+        el('span', { class: 'shop-item' }, offer.name),
+        el('span', { class: 'shop-price' }, price(offer.price)),
+        el('button', {
+          class: 'btn btn-small btn-shop',
+          disabled: !offer.owned,
+          onClick: () => handlers.onSell(offer.item),
+        }, 'Vendre'),
+      ]))),
+  ]);
 }
 
 // Panneau de test : seuil annoncé avant le lancer, dés, puis verdict.
@@ -196,13 +232,27 @@ function describeItemChange(story, change) {
 }
 
 function describeStatChange(story, change) {
-  const label = story.hero.stats[change.stat]?.label ?? change.stat;
+  const definition = story.hero.stats[change.stat];
+  const label = definition?.label ?? change.stat;
   const gained = change.delta > 0;
+  const quantity = definition?.unit ? `\\d+ ${unitPattern(definition.unit)}` : `\\d+ points? d['’]${escapeRegExp(label)}`;
   return {
     className: gained ? 'stat-gain' : 'stat-loss',
-    patterns: [`\\d+ points? d['’]${escapeRegExp(label)}`, escapeRegExp(label)],
+    patterns: [quantity, escapeRegExp(definition?.unit ?? label)],
     summary: `${label} ${gained ? '+' : '−'}${Math.abs(change.delta)}`,
   };
+}
+
+// « pièce d'or » devient « pièces d'or » au-delà de un ; l'unité est donnée au singulier.
+function formatQuantity(value, unit) {
+  const [first, ...rest] = unit.split(' ');
+  const word = value > 1 && !/[sxz]$/.test(first) ? `${first}s` : first;
+  return [value, word, ...rest].join(' ');
+}
+
+function unitPattern(unit) {
+  const [first, ...rest] = unit.split(' ');
+  return [`${escapeRegExp(first)}s?`, ...rest.map(escapeRegExp)].join(' ');
 }
 
 // Premier mot d'un nom, s'il est assez long pour être significatif (« amulette » pour « Amulette d'os »).

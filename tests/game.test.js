@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { createGame, describeCreation, listChoices, choose, resolveTest, describeTest, fightRound, fleeCombat, hasChosen } from '../src/engine/game.js';
+import { createGame, describeCreation, listChoices, choose, resolveTest, describeTest, fightRound, fleeCombat, hasChosen, listOffers, buyItem, sellItem } from '../src/engine/game.js';
 import { makeStory, minRoll, maxRoll } from './helpers.js';
 
 const story = makeStory({
@@ -178,7 +178,7 @@ test('hasChosen signale les choix déjà pris sur une page', () => {
 const pointBuy = makeStory(story.paragraphs, {
   hero: {
     stats: {
-      habilete: { label: 'H', base: 7, max: 12 },
+      habilete: { label: 'H', description: 'Adresse au combat.', base: 7, max: 12 },
       endurance: { label: 'E', base: 14, max: 24 },
       chance: { label: 'C', base: 7, max: 12 },
     },
@@ -186,14 +186,14 @@ const pointBuy = makeStory(story.paragraphs, {
   },
 });
 
-test('describeCreation décrit la réserve et les bornes, ou null sans réserve', () => {
+test('describeCreation décrit la réserve, les bornes et les descriptions, ou null sans réserve', () => {
   assert.equal(describeCreation(story), null);
   assert.deepEqual(describeCreation(pointBuy), {
     points: 8,
     stats: [
-      { name: 'habilete', label: 'H', base: 7, max: 12 },
-      { name: 'endurance', label: 'E', base: 14, max: 24 },
-      { name: 'chance', label: 'C', base: 7, max: 12 },
+      { name: 'habilete', label: 'H', description: 'Adresse au combat.', base: 7, max: 12 },
+      { name: 'endurance', label: 'E', description: undefined, base: 14, max: 24 },
+      { name: 'chance', label: 'C', description: undefined, base: 7, max: 12 },
     ],
   });
 });
@@ -209,4 +209,77 @@ test('createGame refuse une répartition incomplète, excessive ou hors bornes',
   assert.throws(() => createGame(pointBuy, minRoll, { habilete: 5, endurance: 4 }), /8 points à répartir, 9 placés/);
   assert.throws(() => createGame(pointBuy, minRoll, { habilete: 6, endurance: 2 }), /invalide pour H/);
   assert.throws(() => createGame(pointBuy, minRoll, { habilete: -1, endurance: 9 }), /invalide pour H/);
+});
+
+const market = makeStory({
+  '1': {
+    text: 'Étal',
+    shop: {
+      currency: 'or',
+      sell: [{ item: 'potion', price: 5 }, { item: 'corde', price: 3 }],
+      buy: [{ item: 'clef', price: 4 }],
+    },
+    choices: [{ text: 'Partir', to: '2' }],
+  },
+  '2': { text: 'Fin' },
+}, {
+  hero: {
+    stats: {
+      habilete: { label: 'H', value: 10 },
+      endurance: { label: 'E', value: 20 },
+      chance: { label: 'C', value: 8 },
+      or: { label: 'Or', value: 6, capped: false, unit: "pièce d'or" },
+    },
+    inventory: ['clef'],
+  },
+  items: { clef: { name: 'Clef' }, potion: { name: 'Potion' }, corde: { name: 'Corde' } },
+});
+
+test('listOffers décrit la boutique selon la bourse et l\'inventaire', () => {
+  const state = createGame(market, minRoll);
+  assert.equal(listOffers(story, start()), null);
+  assert.deepEqual(listOffers(market, state), {
+    currency: 'or',
+    purse: 6,
+    sell: [
+      { item: 'potion', price: 5, name: 'Potion', owned: false, affordable: true },
+      { item: 'corde', price: 3, name: 'Corde', owned: false, affordable: true },
+    ],
+    buy: [{ item: 'clef', price: 4, name: 'Clef', owned: true }],
+  });
+});
+
+test('buyItem débite la bourse, ajoute l\'objet et refuse ensuite', () => {
+  const state = buyItem(market, createGame(market, minRoll), 'potion');
+  assert.equal(state.stats.or, 1);
+  assert.deepEqual(state.inventory, ['clef', 'potion']);
+  assert.deepEqual(state.itemChanges, [{ item: 'potion', action: 'add' }]);
+  assert.deepEqual(state.statChanges, [{ stat: 'or', delta: -5 }]);
+  assert.throws(() => buyItem(market, state, 'potion'), /Achat impossible/);
+  assert.throws(() => buyItem(market, state, 'corde'), /Achat impossible/);
+});
+
+test('sellItem crédite la bourse sans plafond et retire l\'objet', () => {
+  const state = sellItem(market, createGame(market, minRoll), 'clef');
+  assert.equal(state.stats.or, 10);
+  assert.deepEqual(state.inventory, []);
+  assert.throws(() => sellItem(market, state, 'clef'), /Vente impossible/);
+});
+
+test('createGame fige les caractéristiques à valeur fixe hors de la répartition', () => {
+  const withGold = makeStory(story.paragraphs, {
+    hero: {
+      stats: {
+        habilete: { label: 'H', base: 7, max: 12 },
+        endurance: { label: 'E', base: 14, max: 24 },
+        chance: { label: 'C', base: 7, max: 12 },
+        or: { label: 'Or', value: 6, capped: false },
+      },
+      points: 8,
+    },
+  });
+  assert.deepEqual(describeCreation(withGold).stats.map((stat) => stat.name), ['habilete', 'endurance', 'chance']);
+  const state = createGame(withGold, minRoll, { habilete: 3, endurance: 4, chance: 1 });
+  assert.equal(state.stats.or, 6);
+  assert.deepEqual(state.caps, { habilete: 10, endurance: 18, chance: 8 });
 });

@@ -15,6 +15,7 @@ export function createGame(story, rng = Math.random, allocation = {}) {
     paragraphId: null,
     stats,
     initialStats: { ...stats },
+    caps: statCaps(story, stats),
     flags: { ...(story.hero.flags ?? {}) },
     inventory: [...(story.hero.inventory ?? [])],
     combat: null,
@@ -26,19 +27,35 @@ export function createGame(story, rng = Math.random, allocation = {}) {
   return trackChanges(state, enterParagraph(story, state, story.start));
 }
 
+export function isCapped(story, stat) {
+  return story.hero.stats[stat].capped !== false;
+}
+
+function statCaps(story, stats) {
+  const caps = {};
+  for (const stat of Object.keys(stats)) {
+    if (isCapped(story, stat)) caps[stat] = stats[stat];
+  }
+  return caps;
+}
+
 // Décrit la création du héros par répartition de points, ou null si l'histoire tire les caractéristiques aux dés.
+// Seules les caractéristiques avec une base et un maximum sont à répartir ; les autres ont une valeur fixe.
 export function describeCreation(story) {
   if (story.hero.points === undefined) {
     return null;
   }
   return {
     points: story.hero.points,
-    stats: Object.entries(story.hero.stats).map(([name, definition]) => ({
-      name,
-      label: definition.label,
-      base: definition.base,
-      max: definition.max,
-    })),
+    stats: Object.entries(story.hero.stats)
+      .filter(([, definition]) => definition.base !== undefined)
+      .map(([name, definition]) => ({
+        name,
+        label: definition.label,
+        description: definition.description,
+        base: definition.base,
+        max: definition.max,
+      })),
   };
 }
 
@@ -46,6 +63,9 @@ function allocateStats(story, allocation) {
   const creation = describeCreation(story);
   let spent = 0;
   const stats = {};
+  for (const [name, definition] of Object.entries(story.hero.stats)) {
+    if (definition.base === undefined) stats[name] = definition.value;
+  }
   for (const stat of creation.stats) {
     const bonus = allocation[stat.name] ?? 0;
     if (bonus < 0 || stat.base + bonus > stat.max) {
@@ -105,6 +125,52 @@ function rememberChoice(story, state, choice) {
 
 function choiceKey(story, state, choice) {
   return `${state.paragraphId}:${currentParagraph(story, state).choices.indexOf(choice)}`;
+}
+
+// Boutique de la page courante : articles à acheter et objets rachetés, avec ce qui est possible pour le héros.
+export function listOffers(story, state) {
+  const shop = currentParagraph(story, state).shop;
+  if (!shop || state.status !== 'playing') {
+    return null;
+  }
+  const purse = state.stats[shop.currency];
+  return {
+    currency: shop.currency,
+    purse,
+    sell: (shop.sell ?? []).map((offer) => ({
+      ...offer,
+      name: story.items[offer.item]?.name ?? offer.item,
+      owned: state.inventory.includes(offer.item),
+      affordable: purse >= offer.price,
+    })),
+    buy: (shop.buy ?? []).map((offer) => ({
+      ...offer,
+      name: story.items[offer.item]?.name ?? offer.item,
+      owned: state.inventory.includes(offer.item),
+    })),
+  };
+}
+
+export function buyItem(story, state, item) {
+  const offer = listOffers(story, state)?.sell.find((candidate) => candidate.item === item);
+  if (!offer || offer.owned || !offer.affordable) {
+    throw new Error('Achat impossible');
+  }
+  return trackChanges(state, applyEffects([
+    { type: 'stat', stat: currentParagraph(story, state).shop.currency, delta: -offer.price },
+    { type: 'item', action: 'add', item },
+  ], state));
+}
+
+export function sellItem(story, state, item) {
+  const offer = listOffers(story, state)?.buy.find((candidate) => candidate.item === item);
+  if (!offer || !offer.owned) {
+    throw new Error('Vente impossible');
+  }
+  return trackChanges(state, applyEffects([
+    { type: 'stat', stat: currentParagraph(story, state).shop.currency, delta: offer.price },
+    { type: 'item', action: 'remove', item },
+  ], state));
 }
 
 // Décrit le test de la page courante : caractéristique visée, seuil à ne pas dépasser, dés à lancer.

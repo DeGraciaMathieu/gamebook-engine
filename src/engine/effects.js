@@ -17,9 +17,11 @@ function applyEffect(state, effect) {
   }
 }
 
-// Règle classique : une caractéristique ne dépasse jamais sa valeur de départ.
+// Règle classique : une caractéristique plafonnée ne dépasse jamais sa valeur de départ.
+// Une ressource comme l'or n'a pas de plafond.
 function withStat(state, stat, value) {
-  const clamped = Math.max(0, Math.min(state.initialStats[stat], value));
+  const cap = (state.caps ?? state.initialStats)[stat] ?? Infinity;
+  const clamped = Math.max(0, Math.min(cap, value));
   return { ...state, stats: { ...state.stats, [stat]: clamped } };
 }
 

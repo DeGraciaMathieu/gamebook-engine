@@ -83,6 +83,16 @@ export function validateStory(story) {
       if (paragraph.combat.flee) checkTarget(paragraph.combat.flee.to, `${combatWhere} (flee)`);
     }
 
+    if (paragraph.shop) {
+      const shopWhere = `${where}, boutique`;
+      checkStat(paragraph.shop.currency, `${shopWhere} (currency)`);
+      if (!(paragraph.choices?.length > 0)) errors.push(`${shopWhere} : aucun choix pour quitter la boutique`);
+      for (const offer of [...(paragraph.shop.sell ?? []), ...(paragraph.shop.buy ?? [])]) {
+        checkItem(offer.item, shopWhere);
+        if (typeof offer.price !== 'number' || offer.price < 0) errors.push(`${shopWhere} : prix invalide pour "${offer.item}"`);
+      }
+    }
+
     if (paragraph.test) {
       const testWhere = `${where}, test`;
       if (!['luck', 'stat'].includes(paragraph.test.type)) {
@@ -97,11 +107,16 @@ export function validateStory(story) {
   return errors;
 }
 
-// Avec une réserve de points, chaque caractéristique a une base et un maximum, et la réserve doit pouvoir être placée.
+// Avec une réserve de points, chaque caractéristique a soit une valeur fixe, soit une base et un maximum,
+// et la réserve doit pouvoir être placée.
 function checkCreation(story, errors) {
   let capacity = 0;
   for (const [name, definition] of Object.entries(story.hero.stats)) {
     const where = `hero.stats.${name}`;
+    if (definition.base === undefined && definition.max === undefined) {
+      if (typeof definition.value !== 'number') errors.push(`${where} : "value" ou "base" et "max" manquants`);
+      continue;
+    }
     if (typeof definition.base !== 'number') errors.push(`${where} : "base" manquante`);
     if (typeof definition.max !== 'number') errors.push(`${where} : "max" manquant`);
     if (definition.max < definition.base) errors.push(`${where} : "max" inférieur à "base"`);

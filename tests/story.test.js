@@ -74,3 +74,17 @@ test('une réserve de points exige base, max et une capacité suffisante', () =>
   assert.ok(errors.some((error) => error.includes('hero.stats.chance') && error.includes('inférieur')));
   assert.ok(errors.some((error) => error.includes('hero.points')));
 });
+
+test('une boutique exige une monnaie connue, des objets connus, des prix valides et une sortie', () => {
+  const story = makeStory({
+    '1': {
+      text: 'Étal',
+      shop: { currency: 'argent', sell: [{ item: 'fantome', price: -1 }], buy: [{ item: 'clef', price: 'x' }] },
+    },
+  });
+  const errors = validateStory(story);
+  assert.ok(errors.some((error) => error.includes('"argent"')));
+  assert.ok(errors.some((error) => error.includes('"fantome"')));
+  assert.ok(errors.filter((error) => error.includes('prix invalide')).length === 2);
+  assert.ok(errors.some((error) => error.includes('quitter la boutique')));
+});

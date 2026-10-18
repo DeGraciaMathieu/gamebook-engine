@@ -53,7 +53,8 @@ Une histoire invalide (cible manquante, objet inconnu…) est refusée au charge
     "stats": {
       "habilete":  { "label": "Habileté",  "base": 7,  "max": 12 },
       "endurance": { "label": "Endurance", "base": 14, "max": 24 },
-      "chance":    { "label": "Chance",    "base": 7,  "max": 12 }
+      "chance":    { "label": "Chance",    "base": 7,  "max": 12 },
+      "or":        { "label": "Or", "value": 6, "capped": false, "unit": "pièce d'or" }
     },
     "points": 8,
     "inventory": ["epee"],
@@ -65,9 +66,10 @@ Une histoire invalide (cible manquante, objet inconnu…) est refusée au charge
 ```
 
 - `start` : paragraphe de départ. `death` (optionnel) : paragraphe affiché quand l'endurance tombe à 0.
-- `hero.stats` : chaque caractéristique a un `label` et sa valeur de départ, selon l'un des deux modèles ci-dessous. Les règles de combat utilisent `habilete` et `endurance`, le test de chance utilise `chance`. Une caractéristique ne dépasse jamais sa valeur de départ.
+- `hero.stats` : chaque caractéristique a un `label`, une `description` optionnelle en quelques mots (affichée sur l'écran de création), et sa valeur de départ selon l'un des deux modèles ci-dessous. Les règles de combat utilisent `habilete` et `endurance`, le test de chance utilise `chance`. Une caractéristique ne dépasse jamais sa valeur de départ.
   - **Tirage aux dés** : `roll` (formule de dés) ou `value` (fixe). La partie commence directement.
-  - **Répartition de points** : `hero.points` donne une réserve, chaque caractéristique a une `base` et un `max`. Un écran de création demande au joueur de placer toute la réserve avant de commencer.
+  - **Répartition de points** : `hero.points` donne une réserve, chaque caractéristique a une `base` et un `max`. Un écran de création demande au joueur de placer toute la réserve avant de commencer. Une caractéristique avec `value` reste fixe et hors de la répartition.
+- **Ressources** comme l'or : une caractéristique avec `"capped": false` n'a pas de plafond et s'affiche sans maximum. `unit`, au singulier (ex : `"pièce d'or"`), sert au surlignage de « 5 pièces d'or » dans le texte et à l'affichage du marchand.
 - `items` : catalogue des objets, référencés par leur clé.
 
 ### Paragraphe
@@ -89,6 +91,18 @@ Un paragraphe contient `text`, des `effects` optionnels appliqués à l'arrivée
 - `test` : `{ "type": "luck", "success": "<id>", "failure": "<id>" }` (réussite si 2d6 ≤ chance, puis chance −1) ou `{ "type": "stat", "stat": "habilete", "dice": "2d6", "success", "failure" }` (réussite si jet ≤ caractéristique).
 
 Un paragraphe sans `choices`, `combat` ni `test` est une fin.
+
+### Marchand
+
+```json
+"shop": {
+  "currency": "or",
+  "sell": [ { "item": "potion", "price": 5 } ],
+  "buy":  [ { "item": "clef_rouillee", "price": 4 } ]
+}
+```
+
+`sell` liste ce que le marchand vend, `buy` ce qu'il reprend. Un article déjà possédé ou trop cher reste visible mais grisé. Un paragraphe avec `shop` garde des `choices` pour quitter la boutique. Péages, récompenses ou paris s'écrivent sans bloc dédié, avec une condition `stat` et un effet `delta` sur la ressource.
 
 Quand un objet est obtenu ou perdu en arrivant sur une page, son nom est surligné dans le texte (nom complet, sinon son premier mot). Quand une caractéristique change, la mention « N points d'Endurance » (sinon le mot « Endurance ») est surlignée. Ce qui n'est pas mentionné dans le texte est récapitulé en italique sous le dernier paragraphe (« Vous obtenez : Clef rouillée · Endurance −2 »).
 

@@ -1,5 +1,5 @@
 import { loadStory } from './engine/story.js';
-import { createGame, describeCreation, choose, resolveTest, describeTest, fightRound, fleeCombat } from './engine/game.js';
+import { createGame, describeCreation, choose, resolveTest, describeTest, fightRound, fleeCombat, buyItem, sellItem } from './engine/game.js';
 import { saveGame, loadGame, clearGame } from './storage.js';
 import { isMuted, toggleMuted, vibrate, playDiceRattle, playHit, playWounded, playSuccess, playFailure } from './feedback.js';
 import { replaceContent } from './ui/dom.js';
@@ -69,6 +69,8 @@ function render() {
       onResolveTest: () => whenIdle(animateTest),
       onFight: () => whenIdle(animateAssault),
       onFlee: () => whenIdle(() => update(fleeCombat(ui.story, ui.state))),
+      onBuy: (item) => update(buyItem(ui.story, ui.state, item)),
+      onSell: (item) => update(sellItem(ui.story, ui.state, item)),
       onToggleMenu: () => {
         ui.menuOpen = !ui.menuOpen;
         render();

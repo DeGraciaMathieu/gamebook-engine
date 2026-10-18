@@ -190,6 +190,12 @@ body {
   flex-direction: column;
 }
 .creation-stat-label { font-size: 1.1rem; }
+.creation-stat-description {
+  margin: 2px 0;
+  font-size: 0.9rem;
+  line-height: 1.3;
+  color: var(--ink-soft);
+}
 .creation-stat-range {
   font-size: 0.8rem;
   color: var(--ink-soft);
@@ -375,6 +381,51 @@ body {
 .page-changes {
   font-style: italic;
   color: var(--ink-soft);
+}
+
+/* Marchand */
+.shop {
+  margin-top: 20px;
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.35);
+}
+.shop-purse {
+  margin: 0 0 10px;
+  color: var(--ink-soft);
+}
+.shop-purse strong { color: var(--ink); }
+.shop-subtitle {
+  margin: 14px 0 6px;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+.shop-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+}
+.shop-offer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.shop-offer.is-owned .shop-item { color: var(--ink-soft); }
+.shop-item { flex: 1; }
+.shop-price {
+  color: var(--ink-soft);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.btn-shop {
+  margin-top: 0;
+  min-width: 96px;
+  text-align: center;
 }
 
 /* Dés */

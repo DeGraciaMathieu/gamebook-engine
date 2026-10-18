@@ -37,3 +37,10 @@ test("l'état d'origine n'est pas modifié", () => {
   assert.equal(state.stats.endurance, 20);
   assert.deepEqual(state.flags, {});
 });
+
+test('une caractéristique sans plafond peut dépasser sa valeur de départ', () => {
+  const state = { ...makeState({ stats: { or: 6 } }), caps: { habilete: 10, endurance: 20, chance: 8 } };
+  assert.equal(applyEffects([{ type: 'stat', stat: 'or', delta: 10 }], state).stats.or, 16);
+  assert.equal(applyEffects([{ type: 'stat', stat: 'or', delta: -10 }], state).stats.or, 0);
+  assert.equal(applyEffects([{ type: 'stat', stat: 'endurance', delta: 5 }], state).stats.endurance, 20);
+});
