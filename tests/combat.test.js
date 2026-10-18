@@ -17,7 +17,7 @@ test('le héros plus habile blesse l\'adversaire', () => {
   assert.equal(combat.enemyEndurance, 2);
   assert.equal(combat.round, 1);
   assert.deepEqual(round, {
-    heroDice: [1, 1], enemyDice: [1, 1], heroAttack: 12, enemyAttack: 8, outcome: 'hit', heroDamage: 0, enemyDamage: 2,
+    heroDice: [1, 1], enemyDice: [1, 1], heroBonus: 0, heroAttack: 12, enemyAttack: 8, outcome: 'hit', heroDamage: 0, enemyDamage: 2,
   });
   assert.deepEqual(combat.lastRound, round);
 });
@@ -41,4 +41,18 @@ test('isEnemyDefeated à zéro d\'endurance', () => {
   assert.equal(isEnemyDefeated(combat), false);
   ({ combat } = resolveAssault(combat, 10, minRoll));
   assert.equal(isEnemyDefeated(combat), true);
+});
+
+test('les modificateurs s\'ajoutent à l\'attaque et aux dégâts', () => {
+  const bonus = { attack: 2, damageDealt: 1, damageTaken: -1 };
+  const { round } = resolveAssault(startCombat(definition), 6, minRoll, bonus);
+  assert.equal(round.heroBonus, 2);
+  assert.equal(round.heroAttack, 10);
+  assert.equal(round.outcome, 'hit');
+  assert.equal(round.enemyDamage, 3);
+  const wounded = resolveAssault(startCombat(definition), 2, minRoll, bonus).round;
+  assert.equal(wounded.outcome, 'wounded');
+  assert.equal(wounded.heroDamage, 1);
+  const armored = resolveAssault(startCombat(definition), 2, minRoll, { attack: 0, damageDealt: 0, damageTaken: -5 }).round;
+  assert.equal(armored.heroDamage, 0);
 });

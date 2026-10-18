@@ -1,6 +1,7 @@
 import { el } from './dom.js';
 import { renderDice } from './dice.js';
 import { currentParagraph, listChoices, hasChosen, describeTest, listOffers, isCapped } from '../engine/game.js';
+import { combatBonus } from '../engine/modifiers.js';
 
 // `roll` décrit un lancer de dés en cours d'animation ; `fx` les effets visuels à jouer une fois sur ce rendu.
 export function renderGame({ story, state, menuOpen, muted, roll, fx, handlers }) {
@@ -55,13 +56,13 @@ function renderActions(story, state, view, paragraph, { roll, fx, handlers }) {
     return renderTest(story, state, { roll, handlers });
   }
   if (roll?.kind === 'combat') {
-    return renderCombat(view, paragraph, { roll, fx, handlers });
+    return renderCombat(story, view, paragraph, { roll, fx, handlers });
   }
   if (state.status !== 'playing') {
     return renderEnding(state, handlers);
   }
   if (state.combat) {
-    return renderCombat(state, paragraph, { fx, handlers });
+    return renderCombat(story, state, paragraph, { fx, handlers });
   }
   if (paragraph.test) {
     return renderTest(story, state, { handlers });
@@ -115,6 +116,7 @@ function renderTest(story, state, { roll, handlers }) {
   const faces = roll && settled ? roll.dice : roll ? roll.dice.map(() => 0) : [0, 0];
   return el('section', { class: 'test' }, [
     el('p', { class: 'test-threshold' }, `Testez votre ${test.label} : il vous faut ${test.threshold} ou moins.`),
+    renderModifiers(test.modifiers.map((modifier) => ({ label: modifier.label, value: modifier.test.bonus }))),
     renderDice(faces, { rolling: phase === 'rolling', settled: phase === 'settled' }),
     settled && el('p', { class: 'test-total' }, String(roll.roll)),
     phase === 'verdict' && el('p', { class: `verdict ${roll.success ? 'verdict-success' : 'verdict-failure'}` },
@@ -126,8 +128,9 @@ function renderTest(story, state, { roll, handlers }) {
 }
 
 // Panneau de combat : l'adversaire lance en premier, puis le héros, puis le verdict.
-function renderCombat(view, paragraph, { roll, fx, handlers }) {
+function renderCombat(story, view, paragraph, { roll, fx, handlers }) {
   const { combat } = view;
+  const bonus = combatBonus(story, view);
   const phase = roll?.phase ?? 'idle';
   const round = roll?.round ?? combat.lastRound;
   const enemySettled = phase === 'enemy' || phase === 'hero' || phase === 'verdict' || (!roll && round);
@@ -142,6 +145,7 @@ function renderCombat(view, paragraph, { roll, fx, handlers }) {
         `Habileté ${combat.enemy.habilete} · Endurance ${combat.enemyEndurance}/${combat.enemy.endurance}`),
       renderEnduranceBar(combat, fx?.enemyFrom),
     ]),
+    renderModifiers(bonus.active.map((modifier) => ({ label: modifier.label, value: modifier.combat.attack ?? 0, detail: describeCombatModifier(modifier.combat) }))),
     el('div', { class: 'duel' }, [
       renderDuelRow(combat.enemy.name, combat.enemy.habilete, round?.enemyDice, round?.enemyAttack, {
         rolling: phase === 'rolling',
@@ -149,6 +153,7 @@ function renderCombat(view, paragraph, { roll, fx, handlers }) {
         justSettled: phase === 'enemy',
       }),
       renderDuelRow('Vous', view.stats.habilete, round?.heroDice, round?.heroAttack, {
+        bonus: round?.heroBonus ?? bonus.attack,
         rolling: phase === 'rolling' || phase === 'enemy',
         settled: heroSettled,
         justSettled: phase === 'hero',
@@ -162,11 +167,12 @@ function renderCombat(view, paragraph, { roll, fx, handlers }) {
   ]);
 }
 
-function renderDuelRow(name, habilete, dice, attack, { rolling, settled, justSettled }) {
+function renderDuelRow(name, habilete, dice, attack, { rolling, settled, justSettled, bonus = 0 }) {
   const faces = settled ? dice : [0, 0];
+  const terms = `+ ${habilete}${bonus ? ` ${formatDelta(bonus)}` : ''} = `;
   return el('div', { class: 'duel-row' }, [
     el('span', { class: 'duel-name' }, name),
-    el('span', { class: 'duel-total' }, settled ? [`+ ${habilete} = `, el('strong', {}, String(attack))] : null),
+    el('span', { class: 'duel-total' }, settled ? [terms, el('strong', {}, String(attack))] : null),
     renderDice(faces, { rolling, settled: justSettled }),
   ]);
 }
@@ -183,6 +189,26 @@ function renderEnduranceBar(combat, from) {
   return el('span', { class: 'bar' }, fill);
 }
 
+// Règles actives, avec leur signe : « Hachette +1 · Le petit à protéger −2 ».
+function renderModifiers(entries) {
+  if (entries.length === 0) {
+    return null;
+  }
+  return el('ul', { class: 'modifiers' }, entries.map((entry) =>
+    el('li', { class: `modifier ${entry.value >= 0 ? 'modifier-gain' : 'modifier-loss'}` }, [
+      el('span', { class: 'modifier-label' }, entry.label),
+      el('span', { class: 'modifier-value' }, entry.detail ?? formatDelta(entry.value)),
+    ])));
+}
+
+function describeCombatModifier(combat) {
+  const parts = [];
+  if (combat.attack) parts.push(`${formatDelta(combat.attack)} attaque`);
+  if (combat.damageDealt) parts.push(`${formatDelta(combat.damageDealt)} dégâts infligés`);
+  if (combat.damageTaken) parts.push(`${formatDelta(combat.damageTaken)} dégâts subis`);
+  return parts.join(', ');
+}
+
 function describeOutcome(outcome) {
   if (outcome === 'hit') return 'Vous blessez votre adversaire !';
   if (outcome === 'wounded') return 'Vous êtes blessé.';
@@ -190,7 +216,7 @@ function describeOutcome(outcome) {
 }
 
 function formatDelta(delta) {
-  return delta > 0 ? `+${delta}` : `−${Math.abs(delta)}`;
+  return delta >= 0 ? `+${delta}` : `−${Math.abs(delta)}`;
 }
 
 function renderEnding(state, handlers) {

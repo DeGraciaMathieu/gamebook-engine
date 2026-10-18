@@ -63,6 +63,22 @@ export function validateStory(story) {
   if (story.hero?.points !== undefined) checkCreation(story, errors);
   (story.hero?.inventory ?? []).forEach((item) => checkItem(item, 'hero.inventory'));
 
+  for (const [index, modifier] of (story.modifiers ?? []).entries()) {
+    const where = `modificateur ${index + 1}`;
+    if (!modifier.label) errors.push(`${where} : "label" manquant`);
+    if (!modifier.if) errors.push(`${where} : condition "if" manquante`);
+    checkCondition(modifier.if, where);
+    if (!modifier.combat && !modifier.test) errors.push(`${where} : ni "combat" ni "test"`);
+    for (const key of Object.keys(modifier.combat ?? {})) {
+      if (!['attack', 'damageDealt', 'damageTaken'].includes(key)) errors.push(`${where} : champ combat.${key} inconnu`);
+      else if (typeof modifier.combat[key] !== 'number') errors.push(`${where} : combat.${key} doit être un nombre`);
+    }
+    if (modifier.test) {
+      checkStat(modifier.test.stat, `${where} (test)`);
+      if (typeof modifier.test.bonus !== 'number') errors.push(`${where} : test.bonus doit être un nombre`);
+    }
+  }
+
   for (const [id, paragraph] of Object.entries(paragraphs)) {
     const where = `paragraphe "${id}"`;
     if (!paragraph.text) errors.push(`${where} : texte manquant`);

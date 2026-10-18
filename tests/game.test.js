@@ -76,7 +76,7 @@ test('endurance à zéro : mort et paragraphe de mort', () => {
 
 test('test de chance : réussite consomme 1 point de chance', () => {
   const state = pick(start(), 'Pont');
-  assert.deepEqual(describeTest(story, state), { stat: 'chance', label: 'Chance', threshold: 8, dice: '2d6', consumesLuck: true });
+  assert.deepEqual(describeTest(story, state), { stat: 'chance', label: 'Chance', threshold: 8, bonus: 0, modifiers: [], dice: '2d6', consumesLuck: true });
   const result = resolveTest(story, state, minRoll);
   assert.equal(result.roll, 2);
   assert.deepEqual(result.dice, [1, 1]);

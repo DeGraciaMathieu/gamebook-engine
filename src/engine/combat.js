@@ -13,12 +13,15 @@ export function startCombat(definition) {
   };
 }
 
+const NO_BONUS = { attack: 0, damageDealt: 0, damageTaken: 0 };
+
 // Un assaut à la Défis Fantastiques : 2d6 + Habileté de chaque camp,
 // le perdant encaisse les dégâts, égalité sans effet.
-export function resolveAssault(combat, heroHabilete, rng) {
+// `bonus` vient des modificateurs actifs : attaque du héros, dégâts infligés, dégâts subis.
+export function resolveAssault(combat, heroHabilete, rng, bonus = NO_BONUS) {
   const heroRoll = rollDiceDetailed(ASSAULT_DICE, rng);
   const enemyRoll = rollDiceDetailed(ASSAULT_DICE, rng);
-  const heroAttack = heroRoll.total + heroHabilete;
+  const heroAttack = heroRoll.total + heroHabilete + bonus.attack;
   const enemyAttack = enemyRoll.total + combat.enemy.habilete;
   let outcome = 'tie';
   let heroDamage = 0;
@@ -26,15 +29,16 @@ export function resolveAssault(combat, heroHabilete, rng) {
 
   if (heroAttack > enemyAttack) {
     outcome = 'hit';
-    enemyDamage = ASSAULT_DAMAGE;
+    enemyDamage = Math.max(0, ASSAULT_DAMAGE + bonus.damageDealt);
   } else if (enemyAttack > heroAttack) {
     outcome = 'wounded';
-    heroDamage = ASSAULT_DAMAGE;
+    heroDamage = Math.max(0, ASSAULT_DAMAGE + bonus.damageTaken);
   }
 
   const round = {
     heroDice: heroRoll.dice,
     enemyDice: enemyRoll.dice,
+    heroBonus: bonus.attack,
     heroAttack,
     enemyAttack,
     outcome,

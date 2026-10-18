@@ -138,6 +138,18 @@ Quand un objet est obtenu ou perdu en arrivant sur une page, son nom est surlign
 { "type": "item", "action": "add", "item": "potion" }       // ou "remove"
 ```
 
+### Modificateurs
+
+```json
+"modifiers": [
+  { "label": "Hachette", "if": { "type": "item", "item": "hachette" }, "combat": { "attack": 1 } },
+  { "label": "Blessé", "if": { "type": "stat", "stat": "endurance", "op": "<=", "value": 5 }, "combat": { "attack": -1, "damageTaken": 1 } },
+  { "label": "Amulette", "if": { "type": "flag", "flag": "beni" }, "test": { "stat": "chance", "bonus": 2 } }
+]
+```
+
+Une règle s'applique tant que sa condition (même syntaxe que les choix) est vraie. `combat.attack` s'ajoute au jet du héros, `combat.damageDealt` et `combat.damageTaken` aux 2 points de dégâts (jamais sous zéro). `test.bonus` s'ajoute au seuil du test de la caractéristique `test.stat` (`chance` pour le test de chance). Les règles actives sont affichées avec leur signe dans le panneau de combat ou de test.
+
 ## Règles de combat
 
 À chaque assaut, chaque camp lance 2d6 + Habileté. Le camp au score le plus bas perd 2 points d'Endurance ; égalité sans effet. Le combat se termine quand l'adversaire tombe à 0 (le jeu va au paragraphe `win`) ou quand le héros tombe à 0 (mort).

@@ -3,6 +3,7 @@ import { isConditionMet } from './conditions.js';
 import { applyEffects } from './effects.js';
 import { startCombat, resolveAssault, isEnemyDefeated, FLEE_DAMAGE } from './combat.js';
 import { getParagraph, isEnding } from './story.js';
+import { combatBonus, testBonus } from './modifiers.js';
 
 export const LUCK_DICE = '2d6';
 
@@ -180,10 +181,13 @@ export function describeTest(story, state) {
     return null;
   }
   const stat = test.type === 'luck' ? 'chance' : test.stat;
+  const { bonus, active } = testBonus(story, state, stat);
   return {
     stat,
     label: story.hero.stats[stat].label,
-    threshold: state.stats[stat],
+    threshold: state.stats[stat] + bonus,
+    bonus,
+    modifiers: active,
     dice: test.type === 'luck' ? LUCK_DICE : test.dice,
     consumesLuck: test.type === 'luck',
   };
@@ -216,7 +220,7 @@ export function fightRound(story, state, rng = Math.random) {
   if (!state.combat) {
     throw new Error('Aucun combat en cours');
   }
-  const { combat, round } = resolveAssault(state.combat, state.stats.habilete, rng);
+  const { combat, round } = resolveAssault(state.combat, state.stats.habilete, rng, combatBonus(story, state));
   let next = applyEffects([{ type: 'stat', stat: 'endurance', delta: -round.heroDamage }], state);
   next = { ...next, combat };
 
