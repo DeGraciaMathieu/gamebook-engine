@@ -1,0 +1,3127 @@
+{
+  "id": "nublar",
+  "title": "La Nuit d'Isla Nublar",
+  "summary": "Les clôtures de Jurassic Park viennent de s'éteindre, la tempête frappe l'île, et le cargo de ravitaillement largue les amarres dans 90 minutes au quai Est. Vous êtes technicien de maintenance, et il n'y aura pas d'autre bateau.",
+  "start": "1",
+  "death": "mort",
+  "hero": {
+    "stats": {
+      "habilete": {
+        "label": "Habileté",
+        "description": "Courir, grimper, bricoler, viser : votre métier, cette nuit, c'est survivre.",
+        "base": 7,
+        "max": 12
+      },
+      "endurance": {
+        "label": "Endurance",
+        "description": "Ce que votre corps encaisse. À zéro, l'île vous garde.",
+        "base": 14,
+        "max": 24
+      },
+      "chance": {
+        "label": "Chance",
+        "description": "Ce que la nuit vous laisse passer. Elle en laisse de moins en moins.",
+        "base": 6,
+        "max": 10
+      },
+      "sangfroid": {
+        "label": "Sang-froid",
+        "description": "Vos nerfs. Chaque horreur en prend un peu ; à zéro, vous paniquez et vous courez sans regarder.",
+        "base": 6,
+        "max": 10
+      },
+      "temps": {
+        "label": "Temps",
+        "value": 90,
+        "capped": false,
+        "unit": "minute"
+      }
+    },
+    "points": 8,
+    "inventory": [
+      "lampe_torche",
+      "radio"
+    ],
+    "flags": {}
+  },
+  "items": {
+    "lampe_torche": {
+      "name": "Lampe torche"
+    },
+    "radio": {
+      "name": "Radio de service"
+    },
+    "badge_securite": {
+      "name": "Badge de sécurité"
+    },
+    "carte_ile": {
+      "name": "Carte du parc"
+    },
+    "fusil": {
+      "name": "Fusil à pompe"
+    },
+    "trousse_secours": {
+      "name": "Trousse de secours"
+    },
+    "fusee_detresse": {
+      "name": "Fusée de détresse"
+    },
+    "seringue": {
+      "name": "Seringue de tranquillisant"
+    },
+    "lunettes_nocturnes": {
+      "name": "Lunettes de vision nocturne"
+    },
+    "cles_jeep": {
+      "name": "Clefs de la jeep"
+    },
+    "corde": {
+      "name": "Corde d'escalade"
+    },
+    "bombe_mousse": {
+      "name": "Bombe de mousse à raser"
+    }
+  },
+  "triggers": [
+    {
+      "label": "Panique",
+      "if": {
+        "type": "stat",
+        "stat": "sangfroid",
+        "op": "=",
+        "value": 0
+      },
+      "to": "48"
+    },
+    {
+      "label": "Le bateau est parti",
+      "if": {
+        "type": "stat",
+        "stat": "temps",
+        "op": "=",
+        "value": 0
+      },
+      "to": "38"
+    }
+  ],
+  "modifiers": [
+    {
+      "label": "Fusil à pompe",
+      "if": {
+        "type": "item",
+        "item": "fusil"
+      },
+      "combat": {
+        "attack": 2,
+        "stat": "habilete"
+      }
+    },
+    {
+      "label": "Blessé",
+      "if": {
+        "type": "stat",
+        "stat": "endurance",
+        "op": "<=",
+        "value": 5
+      },
+      "combat": {
+        "attack": -1
+      }
+    },
+    {
+      "label": "Mains tremblantes",
+      "if": {
+        "type": "stat",
+        "stat": "sangfroid",
+        "op": "<=",
+        "value": 3
+      },
+      "test": {
+        "stat": "habilete",
+        "bonus": -2
+      }
+    },
+    {
+      "label": "Vision nocturne",
+      "if": {
+        "type": "item",
+        "item": "lunettes_nocturnes"
+      },
+      "test": {
+        "stat": "chance",
+        "bonus": 1
+      }
+    },
+    {
+      "label": "Ramos sur l'épaule",
+      "if": {
+        "type": "flag",
+        "flag": "ramos_porte"
+      },
+      "combat": {
+        "attack": -1
+      }
+    },
+    {
+      "label": "Ramos sur l'épaule",
+      "if": {
+        "type": "flag",
+        "flag": "ramos_porte"
+      },
+      "test": {
+        "stat": "habilete",
+        "bonus": -1
+      }
+    }
+  ],
+  "paragraphs": {
+    "1": {
+      "text": [
+        "Vous êtes technicien de maintenance à Jurassic Park, sur l'île d'Isla Nublar, et vous étiez de garde ce soir dans le hangar des véhicules lorsque toutes les lumières se sont éteintes d'un seul coup. Dehors, la tempête tropicale annoncée depuis trois jours frappe l'île de plein fouet ; la pluie tombe en rideaux et le vent fait claquer les portes de tôle.",
+        "Sur votre radio de service, une voix affolée répète que les clôtures électriques de tous les enclos sont hors tension, et qu'il faut gagner le quai Est : le cargo de ravitaillement largue les amarres dans 90 minutes pour fuir l'ouragan, et il n'y aura pas d'autre bateau. Vous savez ce que signifient des clôtures sans courant sur cette île. Il vous reste 90 minutes de TEMPS, et chaque détour en coûtera."
+      ],
+      "choices": [
+        {
+          "text": "Regarder autour de vous dans le hangar",
+          "to": "90"
+        }
+      ]
+    },
+    "2": {
+      "text": "Votre pied heurte une caisse et vous tombez de tout votre long sur le béton, le menton le premier. Vous perdez 3 points d'ENDURANCE. Dans le noir, vous restez un moment sans oser bouger, persuadé d'entendre respirer. Vous perdez 1 point de SANG-FROID. Puis vous trouvez l'escalier.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -3
+        },
+        {
+          "type": "stat",
+          "stat": "sangfroid",
+          "delta": -1
+        }
+      ],
+      "choices": [
+        {
+          "text": "Monter vers le hall",
+          "to": "156"
+        }
+      ]
+    },
+    "3": {
+      "text": "Vous ouvrez le compartiment et vous reliez les bornes avec un bout de câble. Testez votre Habileté.",
+      "test": {
+        "type": "stat",
+        "stat": "habilete",
+        "dice": "2d6",
+        "success": "42",
+        "failure": "115"
+      }
+    },
+    "4": {
+      "text": [
+        "Le badge ouvre la porte blindée du bunker de maintenance, et vous la refermez derrière vous sur deux tonnes d'acier. À l'intérieur, de l'eau, des rations, une lampe, et le silence. Vous vous asseyez contre le mur, et vous ne bougez plus.",
+        "Vous entendrez les hélicoptères passer deux jours plus tard, et vous ne sortirez pas. Vous sortirez le quatrième jour, quand les rations seront finies, sur une île vide, et l'on vous retrouvera sur la plage, trois semaines après, vivant et incapable de dire comment. Votre aventure s'achève ici."
+      ]
+    },
+    "5": {
+      "text": [
+        "Au carrefour des pistes, trois chemins se séparent sous un panneau de bois. Vers l'est, la route du quai Est descend vers la côte. Vers le sud, un sentier s'enfonce dans la jungle. Un camion de maintenance est arrêté en travers de la piste, phares allumés, portières ouvertes. Plus loin, un arbre abattu par la tempête barre la route de l'est.",
+        "Vous pouvez aussi revenir vers la route des enclos. Le chemin jusqu'ici vous a coûté 3 minutes de TEMPS. Qu'allez-vous faire ?"
+      ],
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "temps",
+          "delta": -3
+        }
+      ],
+      "choices": [
+        {
+          "text": "Fouiller le camion de maintenance",
+          "to": "100"
+        },
+        {
+          "text": "Franchir l'arbre abattu vers l'est",
+          "to": "119"
+        },
+        {
+          "text": "Prendre la route du quai Est",
+          "to": "63"
+        },
+        {
+          "text": "Suivre le raccourci de la note vers la cascade",
+          "to": "158",
+          "if": {
+            "type": "flag",
+            "flag": "note_lue"
+          },
+          "effects": [
+            {
+              "type": "stat",
+              "stat": "temps",
+              "delta": 5
+            }
+          ]
+        },
+        {
+          "text": "Vous soigner avec la trousse de secours",
+          "to": "5",
+          "if": {
+            "type": "item",
+            "item": "trousse_secours"
+          },
+          "effects": [
+            {
+              "type": "item",
+              "action": "remove",
+              "item": "trousse_secours"
+            },
+            {
+              "type": "stat",
+              "stat": "endurance",
+              "delta": 6
+            }
+          ]
+        },
+        {
+          "text": "Prendre le sentier de la jungle",
+          "to": "88"
+        },
+        {
+          "text": "Revenir vers la route des enclos",
+          "to": "29"
+        }
+      ]
+    },
+    "6": {
+      "text": "Ce qui a renversé les étagères est encore là : un raptor, tapi dans le fond de la cabane, qui se détend comme un ressort. La porte est derrière vous. Vous devez le combattre, ou fuir vers la plage.",
+      "combat": {
+        "name": "Velociraptor",
+        "habilete": 9,
+        "endurance": 7,
+        "win": "56",
+        "damage": 3,
+        "armor": 1,
+        "flee": {
+          "to": "56"
+        }
+      }
+    },
+    "7": {
+      "text": "Vous vous jetez dans la fosse de drainage, et vous roulez sur trois mètres de béton jusque dans l'eau boueuse. Vous perdez 3 points d'ENDURANCE. Au-dessus de vous, le tyrannosaure renifle le bord de la fosse, puis s'éloigne. Il vous faut 5 minutes de TEMPS pour remonter.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -3
+        },
+        {
+          "type": "stat",
+          "stat": "temps",
+          "delta": -5
+        }
+      ],
+      "choices": [
+        {
+          "text": "Remonter et rejoindre le carrefour des pistes",
+          "to": "5"
+        }
+      ]
+    },
+    "8": {
+      "text": "Le premier raptor surgit des fougères à votre gauche, et vous lui plantez la seringue de tranquillisant dans le cou avant qu'il ne referme ses mâchoires. Il titube, siffle, et s'affaisse dans la boue. Le second recule, hésite, puis s'éloigne pour flairer son compagnon endormi. Vous ne demandez pas votre reste.",
+      "choices": [
+        {
+          "text": "Descendre vers la plage",
+          "to": "56"
+        }
+      ]
+    },
+    "9": {
+      "text": [
+        "À la lisière de la jungle, le sentier rejoint une piste de service. Une hutte de gardien se dresse au bord du chemin, sa lampe-tempête encore allumée. Plus loin, un grand bâtiment de béton gris, entouré d'une clôture haute de cinq mètres : le bâtiment des raptors. La piste le longe pour descendre vers la plage du quai Est.",
+        "Vous pouvez aussi remonter vers le carrefour des pistes. Le chemin jusqu'ici vous a coûté 3 minutes de TEMPS. Qu'allez-vous faire ?"
+      ],
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "temps",
+          "delta": -3
+        }
+      ],
+      "choices": [
+        {
+          "text": "Entrer dans la hutte du gardien",
+          "to": "80"
+        },
+        {
+          "text": "Entrer dans le bâtiment des raptors",
+          "to": "140"
+        },
+        {
+          "text": "Longer la clôture des raptors vers la plage",
+          "to": "120"
+        },
+        {
+          "text": "Vous soigner avec la trousse de secours",
+          "to": "9",
+          "if": {
+            "type": "item",
+            "item": "trousse_secours"
+          },
+          "effects": [
+            {
+              "type": "item",
+              "action": "remove",
+              "item": "trousse_secours"
+            },
+            {
+              "type": "stat",
+              "stat": "endurance",
+              "delta": 6
+            }
+          ]
+        },
+        {
+          "text": "Remonter vers le carrefour des pistes",
+          "to": "5"
+        }
+      ]
+    },
+    "10": {
+      "text": "Le raptor jaillit des fougères, deux mètres de muscles tachetés, la griffe en faucille levée, et il frappe avant même que vous ayez compris d'où il venait. Sa peau est épaisse comme du cuir bouilli. Vous devez le combattre, ou fuir vers la plage en lui abandonnant un morceau de vous.",
+      "combat": {
+        "name": "Velociraptor",
+        "habilete": 9,
+        "endurance": 7,
+        "win": "45",
+        "damage": 3,
+        "armor": 1,
+        "flee": {
+          "to": "56"
+        }
+      }
+    },
+    "11": {
+      "text": "Le groupe électrogène de secours est un vieux moteur diesel qui aurait dû démarrer tout seul. Vous ouvrez le capot, vous trouvez le relais grillé, et vous tentez un pontage à la main dans le noir. Testez votre Habileté.",
+      "test": {
+        "type": "stat",
+        "stat": "habilete",
+        "dice": "2d6",
+        "success": "84",
+        "failure": "149"
+      }
+    },
+    "12": {
+      "text": "Vous entrez en vous courbant sous le linteau, et vous tâtonnez parmi les étagères renversées. Tentez votre Chance.",
+      "test": {
+        "type": "luck",
+        "success": "113",
+        "failure": "6"
+      }
+    },
+    "13": {
+      "text": "Vous avancez planche après planche, en tâtant du pied avant chaque pas. Tentez votre Chance.",
+      "test": {
+        "type": "luck",
+        "success": "9",
+        "failure": "116"
+      }
+    },
+    "14": {
+      "text": "La chaîne cède. Vous prenez le fusil à pompe du râtelier et la boîte de cartouches qui va avec. Avec cette arme, vous vous battrez bien mieux. Elle pèse lourd, cependant.",
+      "effects": [
+        {
+          "type": "item",
+          "action": "add",
+          "item": "fusil"
+        }
+      ],
+      "choices": [
+        {
+          "text": "Ressortir sur le sentier",
+          "to": "88"
+        }
+      ]
+    },
+    "15": {
+      "text": "Le tunnel de service est un boyau de béton qui court sous le parc jusqu'au centre des visiteurs. Les lampes du plafond sont éteintes, et l'eau de pluie coule déjà sur le sol. Si vous possédez une lampe torche, vous pouvez l'allumer. Sinon, il vous faudra avancer dans le noir.",
+      "choices": [
+        {
+          "text": "Allumer la lampe torche",
+          "to": "62",
+          "if": {
+            "type": "item",
+            "item": "lampe_torche"
+          }
+        },
+        {
+          "text": "Avancer dans le noir",
+          "to": "131"
+        }
+      ]
+    },
+    "16": {
+      "text": "La salle de projection est un petit amphithéâtre où l'on montre aux visiteurs un dessin animé sur la création du parc. Vous vous y asseyez cinq minutes, dans le noir et le silence, pour reprendre votre souffle. Vous perdez 5 minutes de TEMPS. Ajoutez 1 point de SANG-FROID.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "temps",
+          "delta": -5
+        },
+        {
+          "type": "stat",
+          "stat": "sangfroid",
+          "delta": 1
+        }
+      ],
+      "choices": [
+        {
+          "text": "Ressortir dans le hall",
+          "to": "156"
+        }
+      ]
+    },
+    "17": {
+      "text": "Les isolateurs sont muets, et à trente mètres, le grillage est ouvert comme du papier. Dans la boue, des empreintes à trois doigts, longues comme votre main, descendent vers la plage. Et puis, dans les fougères, un sifflement bref, qui reçoit une réponse de l'autre côté de la piste. Ils chassent à deux. Si vous possédez une seringue de tranquillisant, vous pouvez l'utiliser sur le premier qui approche. Si vous possédez des lunettes de vision nocturne, vous pouvez tenter de les voir avant qu'ils ne vous voient et de vous cacher. Sinon, vous pouvez courir vers la plage en espérant les devancer, ou vous battre.",
+      "choices": [
+        {
+          "text": "Planter la seringue de tranquillisant",
+          "to": "8",
+          "if": {
+            "type": "item",
+            "item": "seringue"
+          },
+          "effects": [
+            {
+              "type": "item",
+              "action": "remove",
+              "item": "seringue"
+            }
+          ]
+        },
+        {
+          "text": "Chausser les lunettes et vous cacher",
+          "to": "132",
+          "if": {
+            "type": "item",
+            "item": "lunettes_nocturnes"
+          }
+        },
+        {
+          "text": "Courir vers la plage",
+          "to": "161"
+        },
+        {
+          "text": "Vous battre",
+          "to": "10"
+        }
+      ]
+    },
+    "18": {
+      "text": "La corde mord une branche solide et vous passez le tronc en moins d'une minute, pour vous retrouver de l'autre côté, sur la piste de l'est. Ajoutez 5 minutes à votre TEMPS.",
+      "choices": [
+        {
+          "text": "Revenir au carrefour par l'autre côté",
+          "to": "5"
+        }
+      ]
+    },
+    "19": {
+      "text": "L'infirmerie a déjà été fouillée : les tiroirs sont ouverts, les flacons renversés. Il reste un placard fermé, en hauteur, que personne ne semble avoir atteint.",
+      "choices": [
+        {
+          "text": "Fouiller le placard du haut",
+          "to": "150"
+        },
+        {
+          "text": "Ressortir dans le hall",
+          "to": "156"
+        }
+      ]
+    },
+    "20": {
+      "text": "La passerelle est une échelle d'acier inclinée, ruisselante, qui monte et descend avec la houle. Vous la gravissez avec Ramos sur l'épaule, une main pour vous, une main pour lui. Testez votre Habileté.",
+      "test": {
+        "type": "stat",
+        "stat": "habilete",
+        "dice": "2d6",
+        "success": "47",
+        "failure": "46"
+      }
+    },
+    "21": {
+      "text": "Le laboratoire est une longue salle blanche, aux paillasses couvertes d'instruments. À droite, une porte mène à la nurserie, où l'on fait éclore les œufs. À gauche, une armoire métallique verrouillée porte l'inscription MATÉRIEL DE TERRAIN. Qu'allez-vous faire ?",
+      "choices": [
+        {
+          "text": "Entrer dans la nurserie",
+          "to": "123"
+        },
+        {
+          "text": "Forcer l'armoire de matériel",
+          "to": "154"
+        },
+        {
+          "text": "Redescendre dans le hall",
+          "to": "156"
+        }
+      ]
+    },
+    "22": {
+      "text": "La chaîne de la chèvre est tendue dans la boue, et au bout, il ne reste que le piquet et un morceau de corde mâché. Les empreintes autour sont plus longues que votre bras. Vous perdez 1 point de SANG-FROID.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "sangfroid",
+          "delta": -1
+        }
+      ],
+      "choices": [
+        {
+          "text": "Reprendre la route",
+          "to": "29"
+        }
+      ]
+    },
+    "23": {
+      "text": [
+        "Le sol tremble. Derrière vous, les arbres s'écartent, et le tyrannosaure sort de la jungle dans un éclair, la gueule ouverte, plus grand que tout ce que vous aviez imaginé. Il vous a vu. Vous courez.",
+        "Ce n'est pas un combat, c'est une course, et elle se joue sur votre ENDURANCE : chaque assaut gagné vous éloigne de lui, chaque assaut perdu, c'est sa gueule qui se referme à un mètre de vous et un arbre qui vous frappe au passage. Si vous fuyez, vous vous jetez dans la fosse de drainage au bord de la piste."
+      ],
+      "combat": {
+        "name": "Course contre le tyrannosaure",
+        "habilete": 10,
+        "endurance": 5,
+        "win": "37",
+        "stat": "endurance",
+        "damage": 3,
+        "flee": {
+          "to": "7"
+        }
+      }
+    },
+    "24": {
+      "text": "Vous avancez entre les fougères, en écartant les feuilles devant vous. Tentez votre Chance.",
+      "test": {
+        "type": "luck",
+        "success": "54",
+        "failure": "68"
+      }
+    },
+    "25": {
+      "text": "Le placard contient une trousse de secours complète, avec des compresses, de la morphine et un garrot. Vous la glissez dans votre sac. Elle vous rendra des forces quand vous en aurez besoin.",
+      "effects": [
+        {
+          "type": "item",
+          "action": "add",
+          "item": "trousse_secours"
+        }
+      ],
+      "choices": [
+        {
+          "text": "Ressortir dans le hall",
+          "to": "156"
+        }
+      ]
+    },
+    "26": {
+      "text": "Le cadenas résiste et la lampe se brise dans vos mains. Vous avez perdu 5 minutes de TEMPS.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "temps",
+          "delta": -5
+        }
+      ],
+      "choices": [
+        {
+          "text": "Ressortir sur le sentier",
+          "to": "88"
+        }
+      ]
+    },
+    "27": {
+      "text": "Au parking, les voiturettes électriques des visiteurs sont alignées, inertes depuis la coupure. L'une d'elles a une batterie de secours sous le siège. Si vous parvenez à la brancher, elle vous conduira jusqu'à la route des enclos en quelques minutes.",
+      "choices": [
+        {
+          "text": "Brancher la batterie de secours",
+          "to": "3"
+        },
+        {
+          "text": "Remonter dans le hall",
+          "to": "156"
+        }
+      ]
+    },
+    "28": {
+      "text": "Le câble vous échappe et la rivière vous emporte sur deux cents mètres avant de vous jeter contre un rocher. Vous perdez 3 points d'ENDURANCE et 10 minutes de TEMPS pour remonter jusqu'au pont de lianes.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -3
+        },
+        {
+          "type": "stat",
+          "stat": "temps",
+          "delta": -10
+        }
+      ],
+      "choices": [
+        {
+          "text": "Rejoindre le pont de lianes",
+          "to": "118"
+        }
+      ]
+    },
+    "29": {
+      "text": [
+        "La route des enclos est une large piste de terre qui longe les grands enclos du parc. À votre gauche, la clôture de l'enclos du tyrannosaure est couchée dans la boue, ses câbles arrachés. Par la brèche, on pourrait couper à travers l'enclos et gagner un quart d'heure, mais seul un fou s'y risquerait sans savoir où se trouve son occupant, par la radio ou pour l'avoir vu de ses yeux.",
+        "Un peu plus loin, un piquet et une chaîne marquent l'endroit où l'on attachait la chèvre. Un mirador de bois domine la route, et un abri pour les visiteurs offre un toit contre la pluie. Le chemin jusqu'ici vous a coûté 3 minutes de TEMPS. Qu'allez-vous faire ?"
+      ],
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "temps",
+          "delta": -3
+        }
+      ],
+      "choices": [
+        {
+          "text": "Longer la clôture couchée",
+          "to": "142"
+        },
+        {
+          "text": "Couper à travers l'enclos par la brèche",
+          "to": "51",
+          "if": {
+            "type": "any",
+            "conditions": [
+              {
+                "type": "flag",
+                "flag": "rex_vu"
+              },
+              {
+                "type": "flag",
+                "flag": "radio_ecoutee"
+              }
+            ]
+          }
+        },
+        {
+          "text": "Examiner la chaîne de la chèvre",
+          "to": "22"
+        },
+        {
+          "text": "Monter au mirador",
+          "to": "108"
+        },
+        {
+          "text": "Vous mettre à l'abri un moment",
+          "to": "30"
+        },
+        {
+          "text": "Revenir au centre des visiteurs",
+          "to": "156"
+        }
+      ]
+    },
+    "30": {
+      "text": "L'abri pour visiteurs est une hutte de bois ouverte, avec un banc. Vous vous y asseyez cinq minutes, hors de la pluie, pour calmer les battements de votre cœur. Vous perdez 5 minutes de TEMPS. Ajoutez 1 point de SANG-FROID.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "temps",
+          "delta": -5
+        },
+        {
+          "type": "stat",
+          "stat": "sangfroid",
+          "delta": 1
+        }
+      ],
+      "choices": [
+        {
+          "text": "Reprendre la route",
+          "to": "29"
+        }
+      ]
+    },
+    "31": {
+      "text": "Vous vous jetez sur le côté au moment où l'animal projette la tête en avant. Tentez votre Chance.",
+      "test": {
+        "type": "luck",
+        "success": "158",
+        "failure": "105"
+      }
+    },
+    "32": {
+      "text": "Vous vous agenouillez au bord du ruisseau et vous buvez longuement, puis vous lavez la boue et le sang de vos mains. Vous perdez 5 minutes de TEMPS. Ajoutez 1 point d'ENDURANCE.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "temps",
+          "delta": -5
+        },
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": 1
+        }
+      ],
+      "choices": [
+        {
+          "text": "Reprendre le sentier",
+          "to": "88"
+        }
+      ]
+    },
+    "33": {
+      "text": "Vous attaquez le cadenas de la chaîne avec la crosse d'une lampe. Testez votre Habileté.",
+      "test": {
+        "type": "stat",
+        "stat": "habilete",
+        "dice": "2d6",
+        "success": "14",
+        "failure": "26"
+      }
+    },
+    "34": {
+      "text": "Un raptor a senti votre odeur. Il tourne autour de la cabane, puis bondit sur le toit d'un seul élan. Vous devez le combattre, ou sauter du toit dans le sable et courir vers les rochers en lui abandonnant un morceau de vous.",
+      "combat": {
+        "name": "Velociraptor",
+        "habilete": 8,
+        "endurance": 6,
+        "win": "98",
+        "damage": 3,
+        "armor": 1,
+        "flee": {
+          "to": "98"
+        }
+      }
+    },
+    "35": {
+      "text": "La serre tropicale est une grande verrière où les botanistes du parc cultivent les plantes du crétacé. Il y fait chaud et sec, et l'on n'entend plus la pluie. Quelque chose remue entre les fougères.",
+      "choices": [
+        {
+          "text": "Avancer entre les plantes",
+          "to": "24"
+        },
+        {
+          "text": "Ressortir sur le sentier",
+          "to": "88"
+        }
+      ]
+    },
+    "36": {
+      "text": "Vous suivez la flèche pendant un quart d'heure, jusqu'à ce que la piste se termine dans un ravin plein d'eau. Le panneau mentait. Vous perdez 15 minutes de TEMPS à revenir sur vos pas jusqu'à l'embranchement.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "temps",
+          "delta": -15
+        }
+      ],
+      "choices": [
+        {
+          "text": "Revenir à l'embranchement",
+          "to": "63"
+        }
+      ]
+    },
+    "37": {
+      "text": "Vous plongez sous un tronc abattu, et le tyrannosaure passe au-dessus de vous dans un déplacement d'air qui vous couche au sol. Il continue sa course vers le nord, vers les phares des véhicules, et le sol cesse de trembler. Vous restez sous le tronc jusqu'à pouvoir respirer de nouveau. Vous perdez 2 points de SANG-FROID.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "sangfroid",
+          "delta": -2
+        }
+      ],
+      "choices": [
+        {
+          "text": "Rejoindre le carrefour des pistes",
+          "to": "5"
+        }
+      ]
+    },
+    "38": {
+      "text": [
+        "Une sirène, longue, portée par le vent depuis la côte. Puis une seconde. Vous savez ce que cela signifie avant même d'y penser : le cargo a largué les amarres. Il n'y a plus de bateau, et il n'y en aura pas d'autre avant que la tempête ne passe, si quelqu'un vient jamais.",
+        "Il reste la nuit à traverser. Si vous possédez un badge de sécurité, vous pouvez vous enfermer dans le bunker de maintenance, en béton, sous le hangar. Sinon, il faudra tenir jusqu'à l'aube sur le toit d'un bâtiment, hors de portée de ce qui chasse en bas."
+      ],
+      "choices": [
+        {
+          "text": "Vous enfermer dans le bunker de maintenance",
+          "to": "4",
+          "if": {
+            "type": "item",
+            "item": "badge_securite"
+          }
+        },
+        {
+          "text": "Tenir jusqu'à l'aube sur un toit",
+          "to": "155"
+        }
+      ]
+    },
+    "39": {
+      "text": "La jeep du parc est encastrée dans un talus, le moteur encore chaud, le treuil déroulé dans le vide. La portière du conducteur est ouverte, et il n'y a personne au volant. Sur le siège passager, un sac de voyage. Dans l'herbe, autour du véhicule, des traces de pas qui ne vont nulle part. Qu'allez-vous faire ?",
+      "choices": [
+        {
+          "text": "Fouiller la jeep",
+          "to": "78"
+        },
+        {
+          "text": "Prendre le sac de voyage",
+          "to": "44"
+        },
+        {
+          "text": "Passer au large et continuer vers la cascade",
+          "to": "60"
+        }
+      ]
+    },
+    "40": {
+      "text": "La lampe torche éclaire une galerie droite, taillée par les ouvriers du parc pour passer les câbles, qui débouche dix minutes plus tard sur la plage, en contrebas du quai. Le raccourci de la note du chef d'atelier. Ajoutez 10 minutes à votre TEMPS.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "temps",
+          "delta": 10
+        }
+      ],
+      "choices": [
+        {
+          "text": "Sortir sur la plage",
+          "to": "56"
+        }
+      ]
+    },
+    "41": {
+      "text": "Vous entrez dans l'eau en vous accrochant au câble, et le courant vous arrache les jambes du fond. Testez votre Habileté.",
+      "test": {
+        "type": "stat",
+        "stat": "habilete",
+        "dice": "2d6",
+        "success": "118",
+        "failure": "28"
+      }
+    },
+    "42": {
+      "text": "La voiturette ronronne et ses phares s'allument. Vous roulez en silence jusqu'au bout de l'allée des visiteurs et vous l'abandonnez à l'entrée de la route des enclos. Ajoutez 10 minutes à votre TEMPS.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "temps",
+          "delta": 10
+        }
+      ],
+      "choices": [
+        {
+          "text": "Continuer à pied sur la route des enclos",
+          "to": "29"
+        }
+      ]
+    },
+    "43": {
+      "text": "Le sentier s'enfonce dans un marais aux eaux noires, où des planches disjointes forment un caillebotis. Sous la pluie, on ne distingue plus les planches de la vase.",
+      "choices": [
+        {
+          "text": "Traverser sur le caillebotis",
+          "to": "13"
+        },
+        {
+          "text": "Revenir sur le sentier",
+          "to": "88"
+        }
+      ]
+    },
+    "44": {
+      "text": "Le sac contient des vêtements, une liasse de dollars et un carnet où quelqu'un a noté, d'une écriture nerveuse, l'horaire exact du cargo et le chemin du quai Est par la cascade. Ajoutez 5 minutes à votre TEMPS. Au moment où vous refermez le sac, des cris aigus s'élèvent dans l'herbe autour de la jeep.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "temps",
+          "delta": 5
+        }
+      ],
+      "choices": [
+        {
+          "text": "Faire face",
+          "to": "101"
+        }
+      ]
+    },
+    "45": {
+      "text": "Le raptor s'effondre, et le second, qui attendait dans l'ombre, renifle le corps, vous fixe de son œil jaune, puis disparaît dans la jungle. Vous ne saurez jamais pourquoi il n'a pas attaqué. Vous perdez 2 points de SANG-FROID.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "sangfroid",
+          "delta": -2
+        }
+      ],
+      "choices": [
+        {
+          "text": "Descendre vers la plage",
+          "to": "56"
+        }
+      ]
+    },
+    "46": {
+      "text": "La passerelle bascule avec une vague et vous tombez tous les deux contre la coque, puis sur le quai. Vous perdez 3 points d'ENDURANCE. Deux marins descendent vous chercher, et vous hissent à bord l'un après l'autre.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -3
+        }
+      ],
+      "choices": [
+        {
+          "text": "Monter à bord",
+          "to": "47"
+        }
+      ]
+    },
+    "47": {
+      "text": [
+        "Les marins vous tirent sur le pont, vous et Ramos, et la passerelle se relève dans un grincement de treuil. Le cargo s'écarte du quai, et Isla Nublar s'éloigne dans la pluie, avec ses lumières mortes et ses cris. Ramos, allongé sur le pont, vous serre le poignet sans rien dire.",
+        "À l'aube, vous verrez les hélicoptères passer vers l'île pour chercher les survivants. Vous ne serez pas sur leur liste, et personne ne saura jamais ce que vous avez fait cette nuit, sauf un homme, et c'est assez. Votre aventure s'achève ici, et vous l'avez remportée."
+      ]
+    },
+    "48": {
+      "text": "Vos nerfs lâchent. Vous courez, sans savoir où, sans savoir depuis combien de temps, en hurlant peut-être, à travers des fougères qui vous fouettent le visage, et vous ne vous arrêtez que lorsque vos jambes refusent d'avancer. Tentez votre Chance.",
+      "choices": [
+        {
+          "text": "Reprendre vos esprits",
+          "to": "94"
+        }
+      ]
+    },
+    "49": {
+      "text": "Vous vous agenouillez près du corps et vous tendez la main vers le badge. Les bruits de pattes se rapprochent. Tentez votre Chance.",
+      "test": {
+        "type": "luck",
+        "success": "53",
+        "failure": "129"
+      }
+    },
+    "50": {
+      "text": "Une alarme se déclenche sur la console, et sur le plan, tous les tracés rouges se mettent à clignoter plus vite. Vous n'avez rien réparé, et vous avez peut-être aggravé les choses. Vous perdez 2 points de SANG-FROID.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "sangfroid",
+          "delta": -2
+        }
+      ],
+      "choices": [
+        {
+          "text": "Redescendre dans le hall",
+          "to": "156"
+        }
+      ]
+    },
+    "51": {
+      "text": "La brèche ouvre sur l'enclos du tyrannosaure : une plaine d'herbe haute, battue par la pluie, que traverse une piste de service. De l'autre côté, à cinq cents mètres, la porte de service donne directement sur le carrefour des pistes. C'est le chemin le plus court de toute l'île, et le plus fou.",
+      "choices": [
+        {
+          "text": "Traverser l'enclos",
+          "to": "141"
+        },
+        {
+          "text": "Renoncer et revenir sur la route",
+          "to": "29"
+        }
+      ]
+    },
+    "52": {
+      "text": "Le poste de garde est une guérite de bois, la porte ouverte, la lampe renversée. Au mur, un râtelier à fusils fermé par une chaîne. Il reste une arme dedans.",
+      "choices": [
+        {
+          "text": "Forcer le râtelier",
+          "to": "33"
+        },
+        {
+          "text": "Ressortir sur le sentier",
+          "to": "88"
+        }
+      ]
+    },
+    "53": {
+      "text": "Vous décrochez le badge de sécurité de la poitrine du gardien. Il a été mordu des dizaines de fois par de petites dents. Vous perdez 1 point de SANG-FROID. Avec ce badge, les portes de l'étage s'ouvriront.",
+      "effects": [
+        {
+          "type": "item",
+          "action": "add",
+          "item": "badge_securite"
+        },
+        {
+          "type": "stat",
+          "stat": "sangfroid",
+          "delta": -1
+        }
+      ],
+      "choices": [
+        {
+          "text": "Ressortir dans le hall",
+          "to": "156"
+        }
+      ]
+    },
+    "54": {
+      "text": "Ce qui remuait n'était qu'un oiseau. Vous trouvez la réserve des botanistes, avec des fruits et de l'eau, et vous prenez cinq minutes au sec. Ajoutez 2 points d'ENDURANCE et 1 point de SANG-FROID.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": 2
+        },
+        {
+          "type": "stat",
+          "stat": "sangfroid",
+          "delta": 1
+        }
+      ],
+      "choices": [
+        {
+          "text": "Ressortir sur le sentier",
+          "to": "88"
+        }
+      ]
+    },
+    "55": {
+      "text": "Un barreau cède et vous glissez de trois mètres, les paumes arrachées. Vous perdez 2 points d'ENDURANCE. Vous ne remonterez pas.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -2
+        }
+      ],
+      "choices": [
+        {
+          "text": "Reprendre la route",
+          "to": "29"
+        }
+      ]
+    },
+    "56": {
+      "text": [
+        "La plage du quai Est est une bande de sable noir battue par les vagues, au pied d'une falaise. À cinq cents mètres, les lumières du quai : le cargo est encore là, moteurs allumés, et des hommes s'affairent sur la passerelle. Entre vous et lui, une cabane de pompe à moitié ensablée.",
+        "Si vous avez repéré le quai depuis une hauteur ou lu le plan de l'île, vous savez par où passer dans les rochers ; sinon, il faudra chercher le passage, à moins qu'il ne reste si peu de temps qu'il faille foncer droit devant. Si vous avez une radio, vous pouvez appeler le cargo. La descente jusqu'ici vous a coûté 3 minutes de TEMPS. Qu'allez-vous faire ?"
+      ],
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "temps",
+          "delta": -3
+        }
+      ],
+      "choices": [
+        {
+          "text": "Rejoindre le quai en cherchant le passage dans les rochers",
+          "to": "148",
+          "if": {
+            "type": "all",
+            "conditions": [
+              {
+                "type": "not",
+                "condition": {
+                  "type": "flag",
+                  "flag": "plan_connu"
+                }
+              },
+              {
+                "type": "not",
+                "condition": {
+                  "type": "flag",
+                  "flag": "quai_vu"
+                }
+              }
+            ]
+          },
+          "effects": [
+            {
+              "type": "stat",
+              "stat": "temps",
+              "delta": -5
+            }
+          ]
+        },
+        {
+          "text": "Rejoindre le quai par le passage que vous avez repéré",
+          "to": "148",
+          "if": {
+            "type": "any",
+            "conditions": [
+              {
+                "type": "flag",
+                "flag": "plan_connu"
+              },
+              {
+                "type": "flag",
+                "flag": "quai_vu"
+              }
+            ]
+          }
+        },
+        {
+          "text": "Foncer droit vers le quai, il reste trop peu de temps",
+          "to": "148",
+          "if": {
+            "type": "stat",
+            "stat": "temps",
+            "op": "<=",
+            "value": 15
+          }
+        },
+        {
+          "text": "Vous soigner avec la trousse de secours",
+          "to": "56",
+          "if": {
+            "type": "item",
+            "item": "trousse_secours"
+          },
+          "effects": [
+            {
+              "type": "item",
+              "action": "remove",
+              "item": "trousse_secours"
+            },
+            {
+              "type": "stat",
+              "stat": "endurance",
+              "delta": 6
+            }
+          ]
+        },
+        {
+          "text": "Fouiller la cabane de la pompe",
+          "to": "72"
+        },
+        {
+          "text": "Appeler le capitaine à la radio",
+          "to": "77",
+          "if": {
+            "type": "all",
+            "conditions": [
+              {
+                "type": "item",
+                "item": "radio"
+              },
+              {
+                "type": "not",
+                "condition": {
+                  "type": "flag",
+                  "flag": "capitaine_prevenu"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "text": "Écouter la radio du cargo",
+          "to": "112",
+          "if": {
+            "type": "item",
+            "item": "radio"
+          }
+        }
+      ]
+    },
+    "57": {
+      "text": "Vous reconnaissez le panneau de bois du carrefour des pistes : la panique vous a ramené en terrain connu. Vous perdez 10 minutes de TEMPS, mais vous avez repris le contrôle de vous-même. Ajoutez 2 points de SANG-FROID.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "sangfroid",
+          "delta": 2
+        },
+        {
+          "type": "stat",
+          "stat": "temps",
+          "delta": -10
+        }
+      ],
+      "choices": [
+        {
+          "text": "Regarder autour de vous",
+          "to": "5"
+        }
+      ]
+    },
+    "58": {
+      "text": "Ils sortent des buissons à cinq ou six, de petits dinosaures hauts comme des poulets, aux mouvements saccadés, qui sautillent autour de vous en poussant des cris aigus. Ce sont des compsognathus, et ils mordent. Vous devez les combattre.",
+      "combat": {
+        "name": "Compsognathus",
+        "habilete": 5,
+        "endurance": 4,
+        "win": "156",
+        "damage": 1,
+        "flee": {
+          "to": "90"
+        }
+      }
+    },
+    "59": {
+      "text": "Vous trouvez le conducteur. Il était sous le camion, et il n'y est plus tout entier. Vous ressortez de la cabine à reculons. Vous perdez 2 points de SANG-FROID.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "sangfroid",
+          "delta": -2
+        }
+      ],
+      "choices": [
+        {
+          "text": "Revenir au carrefour",
+          "to": "5"
+        }
+      ]
+    },
+    "60": {
+      "text": "Au milieu de la piste se tient un dinosaure de la taille d'un grand chien, à la peau tachetée et à la double crête sur le crâne. Il penche la tête, et une collerette de peau se déploie autour de son cou avec un sifflement. C'est un dilophosaure, et il crache un venin qui aveugle. Si vous possédez une fusée de détresse, vous pouvez l'allumer pour l'effrayer. Vous pouvez aussi l'attaquer, ou tenter de l'esquiver.",
+      "choices": [
+        {
+          "text": "Allumer la fusée de détresse",
+          "to": "136",
+          "if": {
+            "type": "item",
+            "item": "fusee_detresse"
+          },
+          "effects": [
+            {
+              "type": "item",
+              "action": "remove",
+              "item": "fusee_detresse"
+            }
+          ]
+        },
+        {
+          "text": "L'attaquer",
+          "to": "75"
+        },
+        {
+          "text": "Tenter de l'esquiver",
+          "to": "31"
+        }
+      ]
+    },
+    "61": {
+      "text": "La passerelle bascule avec une vague et vous tombez contre la coque, puis sur le quai. Vous perdez 3 points d'ENDURANCE. Un marin descend vous chercher et vous hisse à bord par le col.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -3
+        }
+      ],
+      "choices": [
+        {
+          "text": "Monter à bord",
+          "to": "139"
+        }
+      ]
+    },
+    "62": {
+      "text": "Le faisceau de la lampe torche révèle un tunnel vide, propre, balisé de flèches jaunes. Vous le parcourez au pas de course en cinq minutes, bien plus vite que par la route. Ajoutez 5 minutes à votre TEMPS. Un escalier remonte vers le hall du centre des visiteurs.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "temps",
+          "delta": 5
+        }
+      ],
+      "choices": [
+        {
+          "text": "Monter vers le hall",
+          "to": "156"
+        }
+      ]
+    },
+    "63": {
+      "text": [
+        "La route du quai Est est une piste étroite qui serpente vers la côte à travers la jungle. À l'embranchement, un panneau de bois indique EAST DOCK avec une flèche, mais le poteau a été heurté et le panneau a tourné : la flèche pourrait aussi bien montrer n'importe quelle direction.",
+        "Dans la boue, des traces de pneus fraîches quittent la piste vers la gauche. Si vous possédez la carte du parc, vous pouvez vérifier le bon chemin. La descente jusqu'ici vous a coûté 3 minutes de TEMPS. Qu'allez-vous faire ?"
+      ],
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "temps",
+          "delta": -3
+        }
+      ],
+      "choices": [
+        {
+          "text": "Suivre la flèche du panneau",
+          "to": "36"
+        },
+        {
+          "text": "Vérifier le chemin sur la carte du parc",
+          "to": "93",
+          "if": {
+            "type": "item",
+            "item": "carte_ile"
+          }
+        },
+        {
+          "text": "Suivre les traces de pneus",
+          "to": "82"
+        }
+      ]
+    },
+    "64": {
+      "text": "Les isolateurs bourdonnent et les lampes rouges clignotent : la clôture est sous tension, et les raptors, s'ils sont encore dedans, y resteront. Vous longez le grillage d'un pas rapide, sans vous retourner, et vous atteignez la pente qui descend vers la plage. Ajoutez 5 minutes à votre TEMPS.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "temps",
+          "delta": 5
+        }
+      ],
+      "choices": [
+        {
+          "text": "Descendre vers la plage",
+          "to": "56"
+        }
+      ]
+    },
+    "65": {
+      "text": "Dans le vestiaire du personnel, vous troquez vos vêtements trempés contre une tenue sèche et un ciré du parc. Vous perdez 5 minutes de TEMPS, mais vous ne grelottez plus. Ajoutez 2 points d'ENDURANCE.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "temps",
+          "delta": -5
+        },
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": 2
+        }
+      ],
+      "choices": [
+        {
+          "text": "Retourner dans le hangar",
+          "to": "90"
+        }
+      ]
+    },
+    "66": {
+      "text": "Vous courez sous la pluie, et ce qui remue dans les buissons court aussi. Tentez votre Chance.",
+      "test": {
+        "type": "luck",
+        "success": "156",
+        "failure": "58"
+      }
+    },
+    "67": {
+      "text": "Il vous faut dix bonnes minutes pour soulever l'étagère avec un cric et dégager la jambe de Ramos. Il serre les dents sans crier. Vous le hissez sur votre épaule, et il vous dit, d'une voix faible : « Je ne l'oublierai pas. » Vous non plus. Ajoutez 1 point de SANG-FROID : on a moins peur à deux.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "sangfroid",
+          "delta": 1
+        }
+      ],
+      "choices": [
+        {
+          "text": "Retourner dans le hangar",
+          "to": "90"
+        }
+      ]
+    },
+    "68": {
+      "text": "Les fougères s'écartent sur une bande de compsognathus qui nichait au chaud dans la serre. Ils bondissent sur vous. Vous devez les combattre.",
+      "combat": {
+        "name": "Compsognathus",
+        "habilete": 6,
+        "endurance": 5,
+        "win": "88",
+        "damage": 1,
+        "flee": {
+          "to": "88"
+        }
+      }
+    },
+    "69": {
+      "text": "Vous décrochez les clefs de la jeep du tableau. Le réservoir est plein, et les phares fonctionnent. Avec un véhicule, vous pourriez gagner beaucoup de temps sur la route des enclos, si la route est encore praticable sous cette pluie.",
+      "choices": [
+        {
+          "text": "Retourner dans le hangar",
+          "to": "90"
+        }
+      ]
+    },
+    "70": {
+      "text": "La boutique de souvenirs est intacte, avec ses peluches de dinosaures et ses tee-shirts du parc. Derrière la caisse, une grande carte du parc est encadrée au mur ; vous la décrochez et vous la pliez dans votre poche. Elle montre les sentiers de service que les visiteurs ne connaissent pas. L'absurdité de ce lieu, cette nuit, vous arrache presque un sourire. Ajoutez 1 point de SANG-FROID.",
+      "effects": [
+        {
+          "type": "item",
+          "action": "add",
+          "item": "carte_ile"
+        },
+        {
+          "type": "stat",
+          "stat": "sangfroid",
+          "delta": 1
+        }
+      ],
+      "choices": [
+        {
+          "text": "Ressortir dans le hall",
+          "to": "156"
+        }
+      ]
+    },
+    "71": {
+      "text": "Le laboratoire de génétique est fermé par une porte vitrée à serrure magnétique. Si vous possédez un badge de sécurité, vous pouvez l'ouvrir. Sinon, elle ne cédera pas.",
+      "choices": [
+        {
+          "text": "Ouvrir avec le badge de sécurité",
+          "to": "21",
+          "if": {
+            "type": "item",
+            "item": "badge_securite"
+          }
+        },
+        {
+          "text": "Redescendre dans le hall",
+          "to": "156"
+        }
+      ]
+    },
+    "72": {
+      "text": "La cabane de la pompe est un abri de planches où l'on range le matériel du quai. La porte bat dans le vent. À l'intérieur, dans le noir, quelque chose a renversé les étagères.",
+      "choices": [
+        {
+          "text": "Entrer dans la cabane",
+          "to": "12"
+        },
+        {
+          "text": "Rester sur la plage",
+          "to": "56"
+        }
+      ]
+    },
+    "73": {
+      "text": "Vous montez dans la cabine, et vous fouillez sous les sièges, dans la boîte à gants, sous le tableau de bord. Tentez votre Chance.",
+      "test": {
+        "type": "luck",
+        "success": "103",
+        "failure": "59"
+      }
+    },
+    "74": {
+      "text": "Le cadenas cède. Dans l'armoire, parmi des combinaisons et des sacs de terrain, vous trouvez une paire de lunettes de vision nocturne, lourdes et chères, qui changent la nuit en jour vert. Avec elles, vous verrez venir ce qui vous guette.",
+      "effects": [
+        {
+          "type": "item",
+          "action": "add",
+          "item": "lunettes_nocturnes"
+        }
+      ],
+      "choices": [
+        {
+          "text": "Revenir dans le laboratoire",
+          "to": "21"
+        }
+      ]
+    },
+    "75": {
+      "text": "Le dilophosaure bondit, les griffes en avant, en crachant par saccades. La jungle est trop dense pour fuir. Vous devez le combattre.",
+      "combat": {
+        "name": "Dilophosaure",
+        "habilete": 7,
+        "endurance": 6,
+        "win": "158",
+        "damage": 2
+      }
+    },
+    "76": {
+      "text": "Vous tenez la route, virage après virage, et vous dépassez le centre des visiteurs sans vous arrêter. En un quart d'heure, vous êtes au bout de la route des enclos, là où une jeep ne peut plus passer. Ajoutez 25 minutes à votre TEMPS. Vous abandonnez le véhicule et vous continuez à pied.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "temps",
+          "delta": 25
+        }
+      ],
+      "choices": [
+        {
+          "text": "Continuer à pied",
+          "to": "29"
+        }
+      ]
+    },
+    "77": {
+      "text": "Vous appelez le cargo sur la fréquence du port et vous annoncez que vous êtes sur la plage, à cinq minutes du quai, avec un blessé peut-être. Le capitaine jure, puis répond qu'il vous attendra dix minutes de plus, pas une de plus. Ajoutez 10 minutes à votre TEMPS.",
+      "effects": [
+        {
+          "type": "flag",
+          "flag": "capitaine_prevenu"
+        },
+        {
+          "type": "stat",
+          "stat": "temps",
+          "delta": 10
+        }
+      ],
+      "choices": [
+        {
+          "text": "Reposer la radio et courir vers le quai",
+          "to": "56"
+        }
+      ]
+    },
+    "78": {
+      "text": "Vous vous penchez dans l'habitacle. Sous le siège du conducteur, quelque chose a roulé : une bombe de mousse à raser, étrangement lourde. Dans l'herbe, à deux pas, quelque chose a bougé. Tentez votre Chance.",
+      "test": {
+        "type": "luck",
+        "success": "99",
+        "failure": "75"
+      }
+    },
+    "79": {
+      "text": "Du haut de l'arbre, vous voyez les lumières du quai Est, et la masse sombre du cargo, encore amarré. Vous repérez le chemin le plus direct à travers la jungle. Ajoutez 5 minutes à votre TEMPS.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "temps",
+          "delta": 5
+        },
+        {
+          "type": "flag",
+          "flag": "quai_vu"
+        }
+      ],
+      "choices": [
+        {
+          "text": "Redescendre",
+          "to": "158"
+        }
+      ]
+    },
+    "80": {
+      "text": "La hutte du gardien est une pièce unique, avec un lit de camp, une table et une lampe-tempête. Quelqu'un est assis sur le lit, dans l'ombre, et il ne bouge pas.",
+      "choices": [
+        {
+          "text": "Vous approcher",
+          "to": "104"
+        },
+        {
+          "text": "Ressortir sans bruit",
+          "to": "9"
+        }
+      ]
+    },
+    "81": {
+      "text": "Vous atteignez la porte de service de l'autre côté de l'enclos, et vous la refermez derrière vous en tremblant. Vous avez traversé le domaine du tyrannosaure sans le rencontrer. Ajoutez 15 minutes à votre TEMPS.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "temps",
+          "delta": 15
+        }
+      ],
+      "choices": [
+        {
+          "text": "Continuer vers le carrefour des pistes",
+          "to": "5"
+        }
+      ]
+    },
+    "82": {
+      "text": "Les traces de pneus quittent la piste et plongent dans la pente, en zigzag, comme celles d'un conducteur qui ne voyait plus la route. En bas, les phares d'une jeep éclairent la jungle de biais.",
+      "choices": [
+        {
+          "text": "Descendre vers la jeep",
+          "to": "39"
+        }
+      ]
+    },
+    "83": {
+      "text": "Le dépôt de matériel est une cage grillagée pleine d'étagères, de caisses et de râteliers. Il y a ici de quoi survivre à une nuit pareille, mais chaque chose demande des minutes pour être trouvée dans le noir : un fusil à pompe du service de sécurité, une trousse de secours, des fusées de détresse, une corde d'escalade. Vous pouvez aussi abandonner ici ce qui vous alourdit, pour courir plus vite. Prenez ce que vous désirez, puis retournez dans le hangar.",
+      "shop": {
+        "currency": "temps",
+        "sell": [
+          {
+            "item": "fusil",
+            "price": 15
+          },
+          {
+            "item": "trousse_secours",
+            "price": 10
+          },
+          {
+            "item": "fusee_detresse",
+            "price": 5
+          },
+          {
+            "item": "corde",
+            "price": 5
+          }
+        ],
+        "buy": [
+          {
+            "item": "fusil",
+            "price": 10
+          },
+          {
+            "item": "corde",
+            "price": 3
+          }
+        ]
+      },
+      "choices": [
+        {
+          "text": "Retourner dans le hangar",
+          "to": "90"
+        }
+      ]
+    },
+    "84": {
+      "text": "Le moteur tousse, puis ronfle, et les néons du hangar s'allument en grésillant. Dans la lumière, tout paraît moins terrible. Ajoutez 1 point de SANG-FROID. Vous repérez aussitôt ce que vous cherchiez à tâtons depuis dix minutes. Ajoutez 5 minutes à votre TEMPS.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "sangfroid",
+          "delta": 1
+        },
+        {
+          "type": "stat",
+          "stat": "temps",
+          "delta": 5
+        }
+      ],
+      "choices": [
+        {
+          "text": "Retourner au milieu du hangar",
+          "to": "90"
+        }
+      ]
+    },
+    "85": {
+      "text": "Les barreaux sont glissants et le vent secoue la tour. Testez votre Habileté.",
+      "test": {
+        "type": "stat",
+        "stat": "habilete",
+        "dice": "2d6",
+        "success": "91",
+        "failure": "55"
+      }
+    },
+    "86": {
+      "text": "Vous avancez pas à pas le long de la clôture, et le rugissement se rapproche. Tentez votre Chance.",
+      "test": {
+        "type": "luck",
+        "success": "5",
+        "failure": "23"
+      }
+    },
+    "87": {
+      "text": [
+        "Dans le garage, une étagère métallique s'est renversée sur Ramos, un gardien de la sécurité que vous connaissez bien. Il est vivant, mais sa jambe est coincée et il ne pourra pas marcher cette nuit. À côté de lui, la jeep de service est intacte, et ses clefs pendent au tableau.",
+        "Si vous désirez dégager Ramos et le porter sur votre épaule jusqu'au bateau, cela vous coûtera 10 minutes, et vous ne pourrez plus vous battre ni grimper aussi bien. Vous pouvez aussi prendre les clefs de la jeep. Qu'allez-vous faire ?"
+      ],
+      "choices": [
+        {
+          "text": "Dégager Ramos et le prendre sur votre épaule",
+          "to": "67",
+          "if": {
+            "type": "not",
+            "condition": {
+              "type": "flag",
+              "flag": "ramos_porte"
+            }
+          },
+          "effects": [
+            {
+              "type": "stat",
+              "stat": "temps",
+              "delta": -10
+            },
+            {
+              "type": "flag",
+              "flag": "ramos_porte"
+            }
+          ]
+        },
+        {
+          "text": "Prendre les clefs de la jeep",
+          "to": "69",
+          "if": {
+            "type": "not",
+            "condition": {
+              "type": "item",
+              "item": "cles_jeep"
+            }
+          },
+          "effects": [
+            {
+              "type": "item",
+              "action": "add",
+              "item": "cles_jeep"
+            }
+          ]
+        },
+        {
+          "text": "Retourner dans le hangar",
+          "to": "90"
+        }
+      ]
+    },
+    "88": {
+      "text": [
+        "Le sentier de la jungle contourne les enclos par le sud. C'est une piste de service bordée de fougères géantes, où la pluie tombe moins dru sous les arbres. Devant vous, une plaine herbeuse s'ouvre entre deux lisières ; sur votre gauche, la serre tropicale du parc ; sur votre droite, un poste de garde et un ruisseau. Plus loin, le sentier traverse un marais, et, dans un creux, quelque chose qui ressemble à un nid.",
+        "Le chemin jusqu'ici vous a coûté 3 minutes de TEMPS. Qu'allez-vous faire ?"
+      ],
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "temps",
+          "delta": -3
+        }
+      ],
+      "choices": [
+        {
+          "text": "Traverser la plaine herbeuse",
+          "to": "145"
+        },
+        {
+          "text": "Entrer dans la serre",
+          "to": "35"
+        },
+        {
+          "text": "Fouiller le poste de garde",
+          "to": "52"
+        },
+        {
+          "text": "Boire au ruisseau",
+          "to": "32"
+        },
+        {
+          "text": "Examiner le nid",
+          "to": "125"
+        },
+        {
+          "text": "Traverser le marais",
+          "to": "43"
+        }
+      ]
+    },
+    "89": {
+      "text": "Le tournevis ripe, l'armoire bascule et s'écrase au sol dans un fracas qui résonne dans tout l'étage. Vous restez figé, à écouter. Vous perdez 1 point de SANG-FROID et 5 minutes de TEMPS, et l'armoire est toujours fermée.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "sangfroid",
+          "delta": -1
+        },
+        {
+          "type": "stat",
+          "stat": "temps",
+          "delta": -5
+        }
+      ],
+      "choices": [
+        {
+          "text": "Revenir dans le laboratoire",
+          "to": "21"
+        }
+      ]
+    },
+    "90": {
+      "text": [
+        "Le hangar de maintenance est une vaste halle de tôle où dorment les véhicules du parc. Dans le noir, vous distinguez le dépôt de matériel, derrière son grillage ; la porte du garage, où l'on entend quelqu'un gémir ; le groupe électrogène de secours, qui n'a pas démarré ; le vestiaire du personnel et le bureau du chef d'atelier. Au fond, une trappe descend vers le tunnel de service qui mène au centre des visiteurs. La grande porte, elle, ouvre sur la route sous la pluie.",
+        "Si vous avez une radio, vous pouvez écouter les annonces. Si vous possédez les clefs de la jeep, vous pouvez prendre la route au volant. Qu'allez-vous faire ?"
+      ],
+      "choices": [
+        {
+          "text": "Écouter la radio de service",
+          "to": "121",
+          "if": {
+            "type": "all",
+            "conditions": [
+              {
+                "type": "item",
+                "item": "radio"
+              },
+              {
+                "type": "not",
+                "condition": {
+                  "type": "flag",
+                  "flag": "radio_ecoutee"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "text": "Fouiller le dépôt de matériel",
+          "to": "83"
+        },
+        {
+          "text": "Entrer dans le garage",
+          "to": "87"
+        },
+        {
+          "text": "Tenter de relancer le groupe électrogène",
+          "to": "11"
+        },
+        {
+          "text": "Passer au vestiaire",
+          "to": "65"
+        },
+        {
+          "text": "Entrer dans le bureau du chef d'atelier",
+          "to": "127"
+        },
+        {
+          "text": "Descendre dans le tunnel de service",
+          "to": "15"
+        },
+        {
+          "text": "Prendre la jeep",
+          "to": "133",
+          "if": {
+            "type": "item",
+            "item": "cles_jeep"
+          }
+        },
+        {
+          "text": "Sortir sur la route à pied",
+          "to": "114"
+        }
+      ]
+    },
+    "91": {
+      "text": "Du haut du mirador, entre deux rafales, vous apercevez au loin les lumières du quai Est et la silhouette du cargo, encore à quai. Vous repérez la ligne de crête qui y mène. Ajoutez 5 minutes à votre TEMPS.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "temps",
+          "delta": 5
+        },
+        {
+          "type": "flag",
+          "flag": "quai_vu"
+        }
+      ],
+      "choices": [
+        {
+          "text": "Redescendre et reprendre la route",
+          "to": "29"
+        }
+      ]
+    },
+    "92": {
+      "text": "L'homme bascule sur le côté quand vous le touchez. Il est mort depuis une heure au moins, sans une blessure visible, les yeux grands ouverts. Vous perdez 1 point de SANG-FROID.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "sangfroid",
+          "delta": -1
+        }
+      ],
+      "choices": [
+        {
+          "text": "Ressortir sur la piste",
+          "to": "9"
+        }
+      ]
+    },
+    "93": {
+      "text": "La carte est formelle : le quai Est est à droite, par la piste qui descend vers la cascade. Vous prenez le bon chemin du premier coup. Ajoutez 5 minutes à votre TEMPS. Devant vous, dans la lumière des éclairs, quelque chose se tient au milieu de la piste.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "temps",
+          "delta": 5
+        }
+      ],
+      "choices": [
+        {
+          "text": "Continuer sur la piste",
+          "to": "60"
+        }
+      ]
+    },
+    "94": {
+      "text": "Vous reprenez lentement votre souffle, accroupi dans la boue, et vous essayez de comprendre où votre course vous a mené. Tentez votre Chance.",
+      "test": {
+        "type": "luck",
+        "success": "57",
+        "failure": "95"
+      }
+    },
+    "95": {
+      "text": "Vous êtes tombé dans un fossé plein de ronces, et il vous faut un long moment pour en sortir. Vous perdez 3 points d'ENDURANCE et 15 minutes de TEMPS. Mais quand vous reconnaissez enfin le panneau du carrefour des pistes, vous avez repris le contrôle de vous-même. Ajoutez 2 points de SANG-FROID.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "sangfroid",
+          "delta": 2
+        },
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -3
+        },
+        {
+          "type": "stat",
+          "stat": "temps",
+          "delta": -15
+        }
+      ],
+      "choices": [
+        {
+          "text": "Regarder autour de vous",
+          "to": "5"
+        }
+      ]
+    },
+    "96": {
+      "text": "Sur le plan, le tracé de la clôture des raptors passe du rouge au vert. Les raptors sont de nouveau enfermés, du moins si aucun d'eux n'est sorti avant. Vous respirez un peu mieux.",
+      "effects": [
+        {
+          "type": "flag",
+          "flag": "raptor_cloture"
+        }
+      ],
+      "choices": [
+        {
+          "text": "Redescendre dans le hall",
+          "to": "156"
+        }
+      ]
+    },
+    "97": {
+      "text": "La grotte derrière la cascade est une galerie de roche noire, basse et humide, où règne un noir absolu. Si vous possédez une lampe torche, vous pouvez l'allumer. Sinon, il vous faudra avancer dans l'obscurité.",
+      "choices": [
+        {
+          "text": "Allumer la lampe torche",
+          "to": "40",
+          "if": {
+            "type": "item",
+            "item": "lampe_torche"
+          }
+        },
+        {
+          "text": "Avancer dans le noir",
+          "to": "146"
+        }
+      ]
+    },
+    "98": {
+      "text": [
+        "L'aube vient, grise, et la pluie cesse. Depuis le toit, vous voyez la plage vide et la mer calme, et à l'horizon, le point noir d'un hélicoptère qui grossit. Vous agitez les bras. Ils vous voient.",
+        "Dans l'hélicoptère, personne ne vous pose de questions. Vous ne saurez jamais combien ont survécu à cette nuit sur l'île, ni ce que sont devenus ceux qui y restaient. Votre aventure s'achève ici."
+      ]
+    },
+    "99": {
+      "text": "Vous dévissez le fond de la bombe de mousse à raser : elle est creuse, et froide, et elle contient des fioles alignées dans un berceau de givre. Des embryons. Quelqu'un comptait sortir ce soir de l'île avec une fortune dans la poche, et c'est ce quelqu'un dont vous venez de voir les traces s'arrêter dans l'herbe. Vous perdez 2 points de SANG-FROID.",
+      "effects": [
+        {
+          "type": "item",
+          "action": "add",
+          "item": "bombe_mousse"
+        },
+        {
+          "type": "stat",
+          "stat": "sangfroid",
+          "delta": -2
+        }
+      ],
+      "choices": [
+        {
+          "text": "Quitter la jeep et continuer vers la cascade",
+          "to": "60"
+        }
+      ]
+    },
+    "100": {
+      "text": "Le camion de maintenance est celui de l'équipe de nuit. Le moteur tourne encore, mais la cabine est vide, et la portière du conducteur pend sur un seul gond. Il y a peut-être de quoi vous aider à l'intérieur.",
+      "choices": [
+        {
+          "text": "Monter dans la cabine",
+          "to": "73"
+        },
+        {
+          "text": "Revenir au carrefour",
+          "to": "5"
+        }
+      ]
+    },
+    "101": {
+      "text": "Les compsognathus arrivent en bande, attirés par la jeep et par ce qui s'est passé ici. Ils vous encerclent en sautillant. Vous devez les combattre.",
+      "combat": {
+        "name": "Compsognathus",
+        "habilete": 6,
+        "endurance": 5,
+        "win": "60",
+        "damage": 1,
+        "flee": {
+          "to": "60"
+        }
+      }
+    },
+    "102": {
+      "text": "L'homme en imperméable regarde la bombe de mousse à raser, puis vous. « Ce n'est pas vous que j'attendais, dit-il, mais la marchandise est la marchandise. Montez à bord avec moi, et à San José, vous serez plus riche que ce parc ne vous aurait jamais payé. » Il ne demande pas ce qu'est devenu celui qu'il attendait. Allez-vous accepter, ou reprendre la bombe et revenir à la passerelle ?",
+      "choices": [
+        {
+          "text": "Accepter et monter à bord avec lui",
+          "to": "144"
+        },
+        {
+          "text": "Refuser et revenir à la passerelle",
+          "to": "148"
+        }
+      ]
+    },
+    "103": {
+      "text": "Sous le siège, une thermos de café encore chaud et une barre de chocolat. Vous avalez le tout en deux minutes. Ajoutez 2 points d'ENDURANCE. Dans la boîte à gants, le carnet de route de l'équipe indique un raccourci vers la cascade. Ajoutez 5 minutes à votre TEMPS.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": 2
+        },
+        {
+          "type": "stat",
+          "stat": "temps",
+          "delta": 5
+        }
+      ],
+      "choices": [
+        {
+          "text": "Revenir au carrefour",
+          "to": "5"
+        }
+      ]
+    },
+    "104": {
+      "text": "Vous avancez, la main tendue vers l'épaule de l'homme assis. Tentez votre Chance.",
+      "test": {
+        "type": "luck",
+        "success": "134",
+        "failure": "92"
+      }
+    },
+    "105": {
+      "text": "Le venin vous atteint à l'épaule et au cou, et la brûlure vous arrache un cri. Vous perdez 3 points d'ENDURANCE et 1 point de SANG-FROID. L'animal avance sur vous, et il va falloir le combattre.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -3
+        },
+        {
+          "type": "stat",
+          "stat": "sangfroid",
+          "delta": -1
+        }
+      ],
+      "choices": [
+        {
+          "text": "Faire face",
+          "to": "75"
+        }
+      ]
+    },
+    "106": {
+      "text": "La salle de contrôle vous indique qu'un groupe de petits animaux rôde dans les buissons de la route, et vous fait passer par le fossé opposé. Vous atteignez le centre des visiteurs sans encombre, trempé jusqu'aux os.",
+      "choices": [
+        {
+          "text": "Entrer dans le centre des visiteurs",
+          "to": "156"
+        }
+      ]
+    },
+    "107": {
+      "text": "De la terrasse, vous dominez le parc jusqu'à la route des enclos. Un éclair illumine la plaine, et vous le voyez : le tyrannosaure, debout au milieu de la route, haut comme une maison, la gueule levée vers la pluie. Il est loin. Il n'est pas assez loin. Vous perdez 1 point de SANG-FROID.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "sangfroid",
+          "delta": -1
+        },
+        {
+          "type": "flag",
+          "flag": "rex_vu"
+        }
+      ],
+      "choices": [
+        {
+          "text": "Rentrer dans le hall",
+          "to": "156"
+        }
+      ]
+    },
+    "108": {
+      "text": "Le mirador est une tour de bois de dix mètres, dont l'échelle ruisselle de pluie. De là-haut, on doit voir jusqu'à la côte.",
+      "choices": [
+        {
+          "text": "Grimper à l'échelle",
+          "to": "85"
+        },
+        {
+          "text": "Reprendre la route",
+          "to": "29"
+        }
+      ]
+    },
+    "109": {
+      "text": "Du toit du hangar, sous la pluie battante, vous voyez l'île entière s'étendre dans le noir. Au loin, vers la route des enclos, les phares de deux véhicules sont immobiles, et au-dessus d'eux, une forme immense se déplace lentement, que les éclairs découpent une seconde avant de l'effacer. Vous perdez 1 point de SANG-FROID. Vous redescendez sans un mot.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "sangfroid",
+          "delta": -1
+        },
+        {
+          "type": "flag",
+          "flag": "rex_vu"
+        }
+      ],
+      "choices": [
+        {
+          "text": "Redescendre dans le hangar",
+          "to": "90"
+        }
+      ]
+    },
+    "110": {
+      "text": "La rivière est en crue, large et rapide, charriant des branches. Un câble de sécurité tendu entre deux arbres marque le gué. Si vous possédez une corde, vous pouvez vous assurer au câble. Sinon, il faudra traverser à la force des bras.",
+      "choices": [
+        {
+          "text": "Vous assurer avec la corde",
+          "to": "124",
+          "if": {
+            "type": "item",
+            "item": "corde"
+          }
+        },
+        {
+          "text": "Traverser à la force des bras",
+          "to": "41"
+        }
+      ]
+    },
+    "111": {
+      "text": "Un animal vous heurte à l'épaule et vous tombez ; deux autres vous passent dessus avant que le troupeau ne s'écarte. Vous perdez 3 points d'ENDURANCE et 1 point de SANG-FROID. Vous vous relevez en boitant quand la plaine est vide.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -3
+        },
+        {
+          "type": "stat",
+          "stat": "sangfroid",
+          "delta": -1
+        }
+      ],
+      "choices": [
+        {
+          "text": "Gagner la lisière",
+          "to": "9"
+        }
+      ]
+    },
+    "112": {
+      "text": "Sur la fréquence du port, vous entendez le capitaine du cargo annoncer qu'il largue les amarres dès que la houle le permettra, et pas avant : la mer est trop forte pour sortir du port tout de suite. Vous avez un peu plus de temps que vous ne le pensiez. Ajoutez 5 minutes à votre TEMPS.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "temps",
+          "delta": 5
+        }
+      ],
+      "choices": [
+        {
+          "text": "Reposer la radio",
+          "to": "56"
+        }
+      ]
+    },
+    "113": {
+      "text": "Sous une étagère, une trousse de secours du matériel de quai, intacte dans sa boîte étanche. Vous la prenez et vous ressortez sur la plage.",
+      "effects": [
+        {
+          "type": "item",
+          "action": "add",
+          "item": "trousse_secours"
+        }
+      ],
+      "choices": [
+        {
+          "text": "Revenir sur la plage",
+          "to": "56"
+        }
+      ]
+    },
+    "114": {
+      "text": "La route qui mène au centre des visiteurs est bordée de buissons épais, et la pluie y fait un bruit de torrent. Quelque chose remue dans les buissons, à votre hauteur, et vous suit. Si vous avez une radio, vous pouvez appeler la salle de contrôle pour savoir ce qu'ils voient sur leurs caméras, ce qui coûte 5 minutes. Sinon, vous pressez le pas.",
+      "choices": [
+        {
+          "text": "Presser le pas sans regarder",
+          "to": "66"
+        },
+        {
+          "text": "Appeler la salle de contrôle à la radio (5 minutes)",
+          "to": "106",
+          "if": {
+            "type": "item",
+            "item": "radio"
+          },
+          "effects": [
+            {
+              "type": "stat",
+              "stat": "temps",
+              "delta": -5
+            }
+          ]
+        }
+      ]
+    },
+    "115": {
+      "text": "Un éclair bleu, une odeur de plastique brûlé, et la voiturette reste morte. Vous avez perdu 5 minutes de TEMPS pour rien.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "temps",
+          "delta": -5
+        }
+      ],
+      "choices": [
+        {
+          "text": "Remonter dans le hall",
+          "to": "156"
+        }
+      ]
+    },
+    "116": {
+      "text": "Une planche manque et vous vous enfoncez jusqu'à la poitrine dans la vase. Il vous faut 10 minutes de TEMPS pour vous en arracher en vous agrippant aux racines. Vous perdez 2 points d'ENDURANCE.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "temps",
+          "delta": -10
+        },
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -2
+        }
+      ],
+      "choices": [
+        {
+          "text": "Gagner la lisière",
+          "to": "9"
+        }
+      ]
+    },
+    "117": {
+      "text": "Le restaurant est désert, les tables encore dressées pour un dîner qui n'a pas eu lieu. Près du comptoir, un gardien de la sécurité est étendu sur le sol, et il ne bouge plus. Son badge de sécurité est accroché à sa poitrine. Autour de lui, des bruits de pattes légères s'éloignent dans l'obscurité.",
+      "choices": [
+        {
+          "text": "Vous approcher du gardien",
+          "to": "49"
+        },
+        {
+          "text": "Ressortir dans le hall",
+          "to": "156"
+        }
+      ]
+    },
+    "118": {
+      "text": "Le pont de lianes enjambe le ravin qui sépare la jungle de la plage. Il se balance dans le vent, et il manque des planches. Testez votre Habileté.",
+      "test": {
+        "type": "stat",
+        "stat": "habilete",
+        "dice": "2d6",
+        "success": "56",
+        "failure": "152"
+      }
+    },
+    "119": {
+      "text": "L'arbre abattu barre la route de l'est de toute sa hauteur, un tronc énorme hérissé de branches brisées. Si vous possédez une corde, vous pouvez la lancer par-dessus et franchir l'obstacle rapidement. Sinon, il faudra escalader.",
+      "choices": [
+        {
+          "text": "Lancer la corde par-dessus le tronc",
+          "to": "18",
+          "if": {
+            "type": "item",
+            "item": "corde"
+          },
+          "effects": [
+            {
+              "type": "stat",
+              "stat": "temps",
+              "delta": 5
+            }
+          ]
+        },
+        {
+          "text": "Escalader le tronc",
+          "to": "137"
+        }
+      ]
+    },
+    "120": {
+      "text": "La piste longe la clôture du bâtiment des raptors, cinq mètres de grillage sous des isolateurs de céramique. Si la clôture est sous tension, les isolateurs bourdonnent et une lampe rouge clignote à chaque poteau. Vous tendez l'oreille.",
+      "choices": [
+        {
+          "text": "Continuer le long de la clôture",
+          "to": "64",
+          "if": {
+            "type": "flag",
+            "flag": "raptor_cloture"
+          }
+        },
+        {
+          "text": "Continuer le long de la clôture",
+          "to": "17",
+          "if": {
+            "type": "not",
+            "condition": {
+              "type": "flag",
+              "flag": "raptor_cloture"
+            }
+          }
+        }
+      ]
+    },
+    "121": {
+      "text": "Vous montez le volume de la radio de service. Entre deux grésillements, la salle de contrôle annonce que le tyrannosaure a franchi sa clôture près de la route des enclos, que les raptors sont toujours dans leur bâtiment, et que le cargo attendra au quai Est jusqu'à la dernière minute, pas une de plus. Vous savez maintenant quelles routes éviter. Ajoutez 5 minutes à votre TEMPS.",
+      "effects": [
+        {
+          "type": "flag",
+          "flag": "radio_ecoutee"
+        },
+        {
+          "type": "stat",
+          "stat": "temps",
+          "delta": 5
+        }
+      ],
+      "choices": [
+        {
+          "text": "Reposer la radio et regarder autour de vous",
+          "to": "90"
+        }
+      ]
+    },
+    "122": {
+      "text": "Le troupeau se divise autour de vous comme l'eau autour d'un rocher, et passe dans un vacarme de sabots. Quand il est loin, vous êtes encore debout, et la plaine est vide. Ajoutez 1 point de SANG-FROID.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "sangfroid",
+          "delta": 1
+        }
+      ],
+      "choices": [
+        {
+          "text": "Gagner la lisière",
+          "to": "9"
+        }
+      ]
+    },
+    "123": {
+      "text": "Dans la nurserie, les incubateurs sont éteints, et dans l'un d'eux, un œuf s'est ouvert tout seul. Ce qui en est sorti n'est plus là. Sur une paillasse, parmi les instruments vétérinaires, vous trouvez une seringue de tranquillisant chargée, du modèle qu'on utilise pour endormir les grands animaux. Vous perdez 1 point de SANG-FROID en pensant à ce qui court dans les couloirs.",
+      "effects": [
+        {
+          "type": "item",
+          "action": "add",
+          "item": "seringue"
+        },
+        {
+          "type": "stat",
+          "stat": "sangfroid",
+          "delta": -1
+        }
+      ],
+      "choices": [
+        {
+          "text": "Revenir dans le laboratoire",
+          "to": "21"
+        }
+      ]
+    },
+    "124": {
+      "text": "Assuré au câble par la corde, vous traversez sans que le courant puisse vous emporter, et vous atteignez l'autre rive au pied du pont de lianes.",
+      "choices": [
+        {
+          "text": "Gagner le pont de lianes",
+          "to": "118"
+        }
+      ]
+    },
+    "125": {
+      "text": "Dans le creux, sous les fougères, un nid de terre et de feuilles contient une douzaine d'œufs de la taille d'un melon, dont la moitié sont éclos. Les coquilles sont fraîches. Les raptors se reproduisent, et ils ne devraient pas. Vous perdez 2 points de SANG-FROID.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "sangfroid",
+          "delta": -2
+        }
+      ],
+      "choices": [
+        {
+          "text": "Reprendre le sentier",
+          "to": "88"
+        }
+      ]
+    },
+    "126": {
+      "text": "Le local vétérinaire est intact. Vous y prenez une seringue de tranquillisant chargée, et un plan de l'enclos qui montre une porte de service donnant directement sur la plage. Ajoutez 5 minutes à votre TEMPS.",
+      "effects": [
+        {
+          "type": "item",
+          "action": "add",
+          "item": "seringue"
+        },
+        {
+          "type": "stat",
+          "stat": "temps",
+          "delta": 5
+        }
+      ],
+      "choices": [
+        {
+          "text": "Ressortir sur la piste",
+          "to": "9"
+        }
+      ]
+    },
+    "127": {
+      "text": "Sur le bureau du chef d'atelier, sous une lampe de poche éteinte, une note griffonnée à la hâte : « Si ça tourne mal, le cargo est au quai Est. Par la cascade, c'est plus court que par la route. » Vous mémorisez le chemin. Ajoutez 5 minutes à votre TEMPS. Une échelle dans le coin monte vers une trappe du toit.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "temps",
+          "delta": 5
+        },
+        {
+          "type": "flag",
+          "flag": "note_lue"
+        }
+      ],
+      "choices": [
+        {
+          "text": "Monter sur le toit",
+          "to": "109"
+        },
+        {
+          "text": "Retourner dans le hangar",
+          "to": "90"
+        }
+      ]
+    },
+    "128": {
+      "text": "À l'intérieur, les cages sont vides et leurs portes sont ouvertes. Vous traversez la salle des cages vers le local vétérinaire. Tentez votre Chance.",
+      "test": {
+        "type": "luck",
+        "success": "126",
+        "failure": "160"
+      }
+    },
+    "129": {
+      "text": "Une dizaine de compsognathus surgissent de sous les tables, attirés par l'odeur du sang, et ils ne font aucune différence entre le gardien et vous. Vous devez les combattre.",
+      "combat": {
+        "name": "Compsognathus",
+        "habilete": 5,
+        "endurance": 5,
+        "win": "53",
+        "damage": 1,
+        "flee": {
+          "to": "156"
+        }
+      }
+    },
+    "130": {
+      "text": "La table roule, vous retombez sur vos pieds, et le placard est vide. Vous avez perdu 5 minutes de TEMPS.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "temps",
+          "delta": -5
+        }
+      ],
+      "choices": [
+        {
+          "text": "Ressortir dans le hall",
+          "to": "156"
+        }
+      ]
+    },
+    "131": {
+      "text": "Vous avancez une main sur le mur, l'autre devant vous. Le tunnel tourne, et quelque chose a laissé des caisses au milieu du passage. Tentez votre Chance.",
+      "test": {
+        "type": "luck",
+        "success": "156",
+        "failure": "2"
+      }
+    },
+    "132": {
+      "text": "Dans la lumière verte des lunettes, vous voyez les deux raptors se faufiler entre les fougères, et vous vous plaquez contre un tronc, immobile, en retenant votre respiration. Tentez votre Chance.",
+      "test": {
+        "type": "luck",
+        "success": "56",
+        "failure": "10"
+      }
+    },
+    "133": {
+      "text": "Vous lancez le moteur de la jeep et vous sortez du hangar sous une pluie si dense que les essuie-glaces ne servent à rien. La route des enclos est une rivière de boue, et les phares n'éclairent que des rideaux d'eau. Testez votre Habileté.",
+      "test": {
+        "type": "stat",
+        "stat": "habilete",
+        "dice": "2d6",
+        "success": "76",
+        "failure": "143"
+      }
+    },
+    "134": {
+      "text": "L'homme est vivant : c'est un gardien, hébété, qui a passé deux heures ici sans oser sortir. Il vous donne sa trousse de secours et vous indique que la plage est à dix minutes par la piste. Ajoutez 1 point de SANG-FROID : vous n'êtes pas seul sur cette île.",
+      "effects": [
+        {
+          "type": "item",
+          "action": "add",
+          "item": "trousse_secours"
+        },
+        {
+          "type": "stat",
+          "stat": "sangfroid",
+          "delta": 1
+        }
+      ],
+      "choices": [
+        {
+          "text": "Ressortir sur la piste",
+          "to": "9"
+        }
+      ]
+    },
+    "135": {
+      "text": "La salle de contrôle vous indique que le tyrannosaure est au nord de la route, près des véhicules des visiteurs, et vous fait passer par le fossé sud. Vous atteignez le carrefour des pistes sans l'avoir vu.",
+      "choices": [
+        {
+          "text": "Continuer vers le carrefour des pistes",
+          "to": "5"
+        }
+      ]
+    },
+    "136": {
+      "text": "La fusée de détresse s'embrase dans un jet de lumière rouge et de fumée. Le dilophosaure recule en sifflant, aveuglé, et disparaît dans les fourrés. Vous passez en tenant la fusée devant vous jusqu'à ce qu'elle s'éteigne.",
+      "choices": [
+        {
+          "text": "Continuer vers la cascade",
+          "to": "158"
+        }
+      ]
+    },
+    "137": {
+      "text": "Vous grimpez dans les branches brisées, qui ploient et craquent sous votre poids. Testez votre Habileté.",
+      "test": {
+        "type": "stat",
+        "stat": "habilete",
+        "dice": "2d6",
+        "success": "5",
+        "failure": "138"
+      }
+    },
+    "138": {
+      "text": "Une branche cède et vous tombez de l'autre côté du tronc, sur le dos, dans la boue. Vous perdez 2 points d'ENDURANCE et 5 minutes de TEMPS à retrouver votre souffle.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -2
+        },
+        {
+          "type": "stat",
+          "stat": "temps",
+          "delta": -5
+        }
+      ],
+      "choices": [
+        {
+          "text": "Revenir au carrefour",
+          "to": "5"
+        }
+      ]
+    },
+    "139": {
+      "text": [
+        "Un marin vous tire sur le pont et la passerelle se relève dans un grincement de treuil. Le cargo s'écarte du quai, et Isla Nublar s'éloigne dans la pluie, avec ses lumières mortes et ses cris. Vous êtes vivant.",
+        "Vous pensez à Ramos, resté sous son étagère dans le garage, ou à ceux que vous n'avez pas cherchés. À l'aube, vous verrez les hélicoptères passer vers l'île. Vous ne saurez jamais s'ils l'ont trouvé. Votre aventure s'achève ici."
+      ]
+    },
+    "140": {
+      "text": "Le bâtiment des raptors est une forteresse de béton aux portes blindées. La porte du personnel est entrouverte, et de l'intérieur monte une odeur de bête fauve. On y garde le matériel vétérinaire pour les animaux les plus dangereux du parc.",
+      "choices": [
+        {
+          "text": "Entrer dans le bâtiment",
+          "to": "128"
+        },
+        {
+          "text": "Rester dehors",
+          "to": "9"
+        }
+      ]
+    },
+    "141": {
+      "text": "Vous courez dans l'herbe haute, courbé en deux, sans rien voir à plus de dix pas. Au milieu de l'enclos, l'herbe est écrasée sur une large bande, comme par un rouleau. Tentez votre Chance.",
+      "test": {
+        "type": "luck",
+        "success": "81",
+        "failure": "23"
+      }
+    },
+    "142": {
+      "text": "Vous suivez la clôture couchée, en marchant sur les câbles morts. La piste tourne et descend vers un carrefour. Dans la jungle, à votre droite, un rugissement roule comme le tonnerre, et vous ne sauriez dire à quelle distance. Si vous avez une radio, vous pouvez demander à la salle de contrôle où se trouve l'animal, ce qui vous coûtera 5 minutes. Sinon, vous continuez en espérant qu'il soit loin.",
+      "choices": [
+        {
+          "text": "Continuer en silence",
+          "to": "86"
+        },
+        {
+          "text": "Appeler la salle de contrôle (5 minutes)",
+          "to": "135",
+          "if": {
+            "type": "item",
+            "item": "radio"
+          },
+          "effects": [
+            {
+              "type": "stat",
+              "stat": "temps",
+              "delta": -5
+            }
+          ]
+        }
+      ]
+    },
+    "143": {
+      "text": "Dans le deuxième virage, la jeep glisse sur la boue, quitte la route et s'écrase contre un tronc. Vous vous extrayez de l'habitacle par la vitre brisée. Vous perdez 4 points d'ENDURANCE et 2 points de SANG-FROID. Les clefs sont restées quelque part dans la boue, et vous n'avez pas le temps de les chercher. Vous continuez à pied, sous la pluie.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -4
+        },
+        {
+          "type": "stat",
+          "stat": "sangfroid",
+          "delta": -2
+        },
+        {
+          "type": "item",
+          "action": "remove",
+          "item": "cles_jeep"
+        }
+      ],
+      "choices": [
+        {
+          "text": "Continuer à pied",
+          "to": "114"
+        }
+      ]
+    },
+    "144": {
+      "text": [
+        "Vous montez à bord derrière l'homme en imperméable, la bombe de mousse à raser au fond de votre sac. Le cargo s'écarte du quai. À San José, on vous remet une valise, et une adresse où ne plus jamais vous montrer.",
+        "Vous ne saurez jamais ce que l'on fait des embryons, ni où. Mais dans les années qui suivent, chaque fois qu'un journal parle d'un animal impossible aperçu quelque part dans le monde, vous fermez la page. Votre aventure s'achève ici."
+      ]
+    },
+    "145": {
+      "text": "Au milieu de la plaine, le sol se met à vibrer, et un troupeau de gallimimus débouche de la lisière en courant, des dizaines d'animaux hauts comme des autruches, qui fuient quelque chose. Ils arrivent droit sur vous. Tentez votre Chance.",
+      "test": {
+        "type": "luck",
+        "success": "122",
+        "failure": "111"
+      }
+    },
+    "146": {
+      "text": "Vous avancez les bras tendus dans un noir total, en vous cognant aux parois et en entendant des choses remuer au-dessus de votre tête. Vous perdez 2 points de SANG-FROID et 2 points d'ENDURANCE avant de voir enfin la lueur grise de la sortie, sur la plage.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "sangfroid",
+          "delta": -2
+        },
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -2
+        }
+      ],
+      "choices": [
+        {
+          "text": "Sortir sur la plage",
+          "to": "56"
+        }
+      ]
+    },
+    "147": {
+      "text": "La salle de contrôle est vide, et ses écrans sont éteints, sauf un : le plan de l'île, où les clôtures hors tension clignotent en rouge, toutes. Vous y lisez le chemin le plus court vers le quai Est, et où ne surtout pas passer. Ajoutez 10 minutes à votre TEMPS. Sur la console, un interrupteur permet de réarmer manuellement la clôture du bâtiment des raptors.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "temps",
+          "delta": 10
+        },
+        {
+          "type": "flag",
+          "flag": "plan_connu"
+        }
+      ],
+      "choices": [
+        {
+          "text": "Tenter de réarmer la clôture des raptors",
+          "to": "151"
+        },
+        {
+          "text": "Redescendre dans le hall",
+          "to": "156"
+        }
+      ]
+    },
+    "148": {
+      "text": [
+        "Le quai Est est une jetée de béton où le cargo tangue contre ses défenses, sa passerelle levée à moitié, ses marins qui crient dans le vent. Au pied de la passerelle, un homme en imperméable, qui n'est pas un marin, scrute la plage avec une lampe. Il attend quelqu'un, et ce quelqu'un ne viendra pas.",
+        "Si vous portez Ramos, la passerelle sera plus dure à franchir. Si vous avez la bombe de mousse à raser, l'homme en imperméable l'a reconnue à votre ceinture et il vous barre la passerelle : il faudra lui parler, ou jeter la bombe à l'eau sous ses yeux. Qu'allez-vous faire ?"
+      ],
+      "choices": [
+        {
+          "text": "Monter à la passerelle avec Ramos sur l'épaule",
+          "to": "20",
+          "if": {
+            "type": "all",
+            "conditions": [
+              {
+                "type": "flag",
+                "flag": "ramos_porte"
+              },
+              {
+                "type": "not",
+                "condition": {
+                  "type": "item",
+                  "item": "bombe_mousse"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "text": "Monter à la passerelle",
+          "to": "159",
+          "if": {
+            "type": "all",
+            "conditions": [
+              {
+                "type": "not",
+                "condition": {
+                  "type": "flag",
+                  "flag": "ramos_porte"
+                }
+              },
+              {
+                "type": "not",
+                "condition": {
+                  "type": "item",
+                  "item": "bombe_mousse"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "text": "Montrer la bombe de mousse à l'homme en imperméable",
+          "to": "102",
+          "if": {
+            "type": "item",
+            "item": "bombe_mousse"
+          }
+        },
+        {
+          "text": "Jeter la bombe de mousse dans le port",
+          "to": "56",
+          "if": {
+            "type": "item",
+            "item": "bombe_mousse"
+          },
+          "effects": [
+            {
+              "type": "item",
+              "action": "remove",
+              "item": "bombe_mousse"
+            }
+          ]
+        }
+      ]
+    },
+    "149": {
+      "text": "Une étincelle jaillit du relais et la décharge vous jette en arrière contre une caisse. Vous perdez 2 points d'ENDURANCE. Le groupe électrogène reste muet, et vos doigts sentent le brûlé.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -2
+        }
+      ],
+      "choices": [
+        {
+          "text": "Retourner au milieu du hangar",
+          "to": "90"
+        }
+      ]
+    },
+    "150": {
+      "text": "Vous grimpez sur la table d'examen pour atteindre le placard, et la table roule sous vos pieds. Tentez votre Chance.",
+      "test": {
+        "type": "luck",
+        "success": "25",
+        "failure": "130"
+      }
+    },
+    "151": {
+      "text": "Il faut enclencher les disjoncteurs dans le bon ordre, de mémoire, sur un tableau que vous n'avez vu qu'une fois en formation. Testez votre Habileté.",
+      "test": {
+        "type": "stat",
+        "stat": "habilete",
+        "dice": "2d6",
+        "success": "96",
+        "failure": "50"
+      }
+    },
+    "152": {
+      "text": "Une planche cède sous votre pied et vous passez à travers, retenu par les bras, les jambes dans le vide au-dessus du ravin. Vous vous hissez à la force des poignets. Vous perdez 2 points d'ENDURANCE et 1 point de SANG-FROID.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -2
+        },
+        {
+          "type": "stat",
+          "stat": "sangfroid",
+          "delta": -1
+        }
+      ],
+      "choices": [
+        {
+          "text": "Atteindre l'autre côté",
+          "to": "56"
+        }
+      ]
+    },
+    "153": {
+      "text": "Dans les cuisines, vous trouvez du pain, du fromage et de l'eau dans un réfrigérateur encore froid. Vous mangez debout, en cinq minutes, en surveillant la porte. Vous perdez 5 minutes de TEMPS. Ajoutez 2 points d'ENDURANCE.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "temps",
+          "delta": -5
+        },
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": 2
+        }
+      ],
+      "choices": [
+        {
+          "text": "Ressortir dans le hall",
+          "to": "156"
+        }
+      ]
+    },
+    "154": {
+      "text": "L'armoire de matériel est fermée par un cadenas que vous attaquez avec un tournevis. Testez votre Habileté.",
+      "test": {
+        "type": "stat",
+        "stat": "habilete",
+        "dice": "2d6",
+        "success": "74",
+        "failure": "89"
+      }
+    },
+    "155": {
+      "text": "Vous grimpez sur le toit de la cabane de la pompe, le plus haut point de la plage, et vous vous attachez à la cheminée avec votre ceinture. La nuit est longue. En bas, sur le sable, des choses passent, s'arrêtent, flairent, et repartent. Tentez votre Chance.",
+      "test": {
+        "type": "luck",
+        "success": "98",
+        "failure": "34"
+      }
+    },
+    "156": {
+      "text": [
+        "Le centre des visiteurs est un vaste bâtiment de verre et de béton, plongé dans le noir. Dans le grand hall, sous les squelettes suspendus, vous distinguez l'entrée du restaurant, la boutique de souvenirs, les cuisines, la salle de projection et les portes du parking. À l'étage, la salle de contrôle et le laboratoire sont fermés par des serrures à badge. L'infirmerie est au fond du couloir, et une terrasse domine le parc.",
+        "Deux issues mènent vers l'est : la route des enclos, la plus directe, et le sentier de la jungle, qui contourne les enclos par le sud. La traversée du parc vous a coûté 3 minutes de TEMPS. Où désirez-vous aller ?"
+      ],
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "temps",
+          "delta": -3
+        }
+      ],
+      "choices": [
+        {
+          "text": "Entrer dans le restaurant",
+          "to": "117"
+        },
+        {
+          "text": "Entrer dans la boutique de souvenirs",
+          "to": "70"
+        },
+        {
+          "text": "Passer par les cuisines",
+          "to": "153"
+        },
+        {
+          "text": "Entrer dans la salle de projection",
+          "to": "16"
+        },
+        {
+          "text": "Descendre au parking",
+          "to": "27"
+        },
+        {
+          "text": "Monter à la salle de contrôle",
+          "to": "157"
+        },
+        {
+          "text": "Monter au laboratoire",
+          "to": "71"
+        },
+        {
+          "text": "Aller à l'infirmerie",
+          "to": "19"
+        },
+        {
+          "text": "Sortir sur la terrasse",
+          "to": "107"
+        },
+        {
+          "text": "Vous soigner avec la trousse de secours",
+          "to": "156",
+          "if": {
+            "type": "item",
+            "item": "trousse_secours"
+          },
+          "effects": [
+            {
+              "type": "item",
+              "action": "remove",
+              "item": "trousse_secours"
+            },
+            {
+              "type": "stat",
+              "stat": "endurance",
+              "delta": 6
+            }
+          ]
+        },
+        {
+          "text": "Prendre la route des enclos",
+          "to": "29"
+        },
+        {
+          "text": "Prendre le sentier de la jungle",
+          "to": "88"
+        }
+      ]
+    },
+    "157": {
+      "text": "La salle de contrôle est fermée par une porte à serrure magnétique. Si vous possédez un badge de sécurité, vous pouvez l'ouvrir. Sinon, elle ne cédera pas.",
+      "choices": [
+        {
+          "text": "Ouvrir avec le badge de sécurité",
+          "to": "147",
+          "if": {
+            "type": "item",
+            "item": "badge_securite"
+          }
+        },
+        {
+          "text": "Redescendre dans le hall",
+          "to": "156"
+        }
+      ]
+    },
+    "158": {
+      "text": "La piste débouche sur une cascade gonflée par la pluie, qui tombe dans un bassin d'écume. De là, trois chemins : la rivière, qu'il faut traverser à gué pour gagner le pont de lianes ; une grotte, derrière la chute d'eau, dont les ouvriers disent qu'elle ressort près de la plage ; et un grand arbre, au bord du bassin, d'où l'on doit voir la côte. Le chemin jusqu'ici vous a coûté 3 minutes de TEMPS. Qu'allez-vous faire ?",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "temps",
+          "delta": -3
+        }
+      ],
+      "choices": [
+        {
+          "text": "Traverser la rivière",
+          "to": "110"
+        },
+        {
+          "text": "Entrer dans la grotte derrière la cascade",
+          "to": "97"
+        },
+        {
+          "text": "Grimper au grand arbre",
+          "to": "79"
+        }
+      ]
+    },
+    "159": {
+      "text": "La passerelle est une échelle d'acier inclinée, ruisselante, qui monte et descend avec la houle. Vous vous y élancez. Testez votre Habileté.",
+      "test": {
+        "type": "stat",
+        "stat": "habilete",
+        "dice": "2d6",
+        "success": "139",
+        "failure": "61"
+      }
+    },
+    "160": {
+      "text": "Une porte de cage se referme derrière vous dans un claquement, et vous restez enfermé dans la salle des cages, à écouter des griffes sur le béton, jusqu'à ce que vous parveniez à forcer le verrou. Vous perdez 10 minutes de TEMPS et 1 point de SANG-FROID.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "temps",
+          "delta": -10
+        },
+        {
+          "type": "stat",
+          "stat": "sangfroid",
+          "delta": -1
+        }
+      ],
+      "choices": [
+        {
+          "text": "Ressortir sur la piste",
+          "to": "9"
+        }
+      ]
+    },
+    "161": {
+      "text": "Vous dévalez la pente vers la plage sans vous retourner, les sifflements derrière vous, de plus en plus proches. Tentez votre Chance.",
+      "test": {
+        "type": "luck",
+        "success": "56",
+        "failure": "10"
+      }
+    },
+    "mort": {
+      "text": "Vous ne vous relèverez pas. La pluie continue de tomber sur Isla Nublar, le cargo larguera ses amarres sans vous, et au matin, les hélicoptères ne trouveront que ce que l'île aura bien voulu leur laisser. Votre aventure s'achève ici."
+    }
+  }
+}

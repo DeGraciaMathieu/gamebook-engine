@@ -10,5 +10,9 @@
   {
     "id": "la-cendre",
     "path": "stories/la-cendre/story.json"
+  },
+  {
+    "id": "nublar",
+    "path": "stories/nublar/story.json"
   }
 ]
