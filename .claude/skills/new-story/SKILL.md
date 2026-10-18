@@ -21,6 +21,7 @@ Si l'argument ne le dit pas, pose au plus trois questions en un seul appel : ton
 2. **Fiche du héros** : les trois caractéristiques avec `description` (une phrase chacune), réserve de points, or de départ, inventaire initial (2 objets au plus, chacun utile plus tard).
 3. **Catalogue des objets** : identifiant, nom affiché, où on l'obtient, à quoi il sert. 6 à 12 objets selon la taille. Chaque objet a au moins un usage (condition, revente, consommation, modificateur).
 4. **Modificateurs** : les règles qui pèsent sur les combats et les tests (arme, armure, blessure, faim, compagnon), avec leur condition et leur valeur. Au moins un bonus et un malus.
+5. **Déclencheurs** : les règles globales qui détournent le récit quand un seuil est franchi (compagnon qui meurt, faim, dette), avec leur condition et leur paragraphe cible. Zéro si l'histoire n'en a pas besoin, mais toute seconde jauge en appelle un.
 
 Demande validation avant la phase 2.
 
@@ -38,6 +39,7 @@ Rôles possibles : départ, carrefour, scène, combat, test, marchand, verrou, f
 - où chaque objet s'obtient et où il sert,
 - où la ressource se gagne et se dépense,
 - où chaque modificateur devient actif ou cesse de l'être,
+- où chaque déclencheur peut se déclencher et où il mène,
 - la grille de couverture cochée mécanique par mécanique.
 
 Les identifiants sont mélangés (pas dans l'ordre de lecture). Demande validation avant la phase 3 ; si l'utilisateur ajuste, reprends le tableau complet.

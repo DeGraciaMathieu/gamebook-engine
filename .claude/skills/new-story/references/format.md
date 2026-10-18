@@ -83,6 +83,17 @@ Un choix dont la condition échoue est masqué, pas grisé.
 ```
 Les objets sont uniques : ajouter un objet déjà possédé ne fait rien. Une quantité se modélise en ressource, pas en objet.
 
+## Déclencheurs
+
+```json
+"triggers": [
+  { "label": "Le petit ne se réveille pas", "if": { "type": "stat", "stat": "souffle", "op": "=", "value": 0 }, "to": "134" }
+]
+```
+Bloc à la racine. Évalué à chaque déplacement sur l'état au moment où le joueur agit : le paragraphe où la condition a basculé a donc été lu, et c'est le déplacement suivant qui est détourné vers `to`. Une fois par défaut ; `"once": false` pour une règle récurrente (elle ne tire jamais vers le paragraphe courant). Sert aux règles globales : mort d'un compagnon, seuil de faim ou de peur, dette qui déborde, réputation qui tombe. Le paragraphe cible doit avoir ses propres sorties ; il peut aussi être une fin.
+
+Règle d'écriture : le paragraphe cible commence par constater ce qui s'est passé (« Le petit ne se réveille pas. »), car le joueur arrive de n'importe où.
+
 ## Modificateurs
 
 ```json
