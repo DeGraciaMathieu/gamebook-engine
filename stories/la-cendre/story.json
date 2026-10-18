@@ -85,6 +85,43 @@
       "name": "Photographie"
     }
   },
+  "modifiers": [
+    {
+      "label": "Hachette",
+      "if": {
+        "type": "item",
+        "item": "hachette"
+      },
+      "combat": {
+        "attack": 1
+      }
+    },
+    {
+      "label": "Le petit à protéger",
+      "if": {
+        "type": "stat",
+        "stat": "souffle",
+        "op": "<=",
+        "value": 3
+      },
+      "combat": {
+        "attack": -2
+      }
+    },
+    {
+      "label": "Affamé",
+      "if": {
+        "type": "stat",
+        "stat": "vivres",
+        "op": "=",
+        "value": 0
+      },
+      "test": {
+        "stat": "habilete",
+        "bonus": -1
+      }
+    }
+  ],
   "paragraphs": {
     "1": {
       "text": [

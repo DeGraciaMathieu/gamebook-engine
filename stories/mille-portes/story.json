@@ -76,6 +76,41 @@
       "name": "Dé Faussé de Saint-Larron"
     }
   },
+  "modifiers": [
+    {
+      "label": "Dague",
+      "if": {
+        "type": "item",
+        "item": "dague"
+      },
+      "combat": {
+        "attack": 1
+      }
+    },
+    {
+      "label": "Blessé",
+      "if": {
+        "type": "stat",
+        "stat": "endurance",
+        "op": "<=",
+        "value": 5
+      },
+      "combat": {
+        "attack": -1
+      }
+    },
+    {
+      "label": "Œil du Borgne",
+      "if": {
+        "type": "item",
+        "item": "oeil_verre"
+      },
+      "test": {
+        "stat": "chance",
+        "bonus": 1
+      }
+    }
+  ],
   "paragraphs": {
     "1": {
       "text": [

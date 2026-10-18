@@ -6,24 +6,73 @@
   "death": "mort",
   "hero": {
     "stats": {
-      "habilete": { "label": "Habileté", "description": "Votre adresse au combat et à forcer les passages.", "base": 7, "max": 12 },
-      "endurance": { "label": "Endurance", "description": "Vos points de vie. À zéro, l'aventure s'arrête.", "base": 14, "max": 24 },
-      "chance": { "label": "Chance", "description": "Tirer votre épingle du jeu quand le sort décide. Chaque tentative l'use.", "base": 7, "max": 12 },
-      "or": { "label": "Or", "value": 6, "capped": false, "unit": "pièce d'or" }
+      "habilete": {
+        "label": "Habileté",
+        "description": "Votre adresse au combat et à forcer les passages.",
+        "base": 7,
+        "max": 12
+      },
+      "endurance": {
+        "label": "Endurance",
+        "description": "Vos points de vie. À zéro, l'aventure s'arrête.",
+        "base": 14,
+        "max": 24
+      },
+      "chance": {
+        "label": "Chance",
+        "description": "Tirer votre épingle du jeu quand le sort décide. Chaque tentative l'use.",
+        "base": 7,
+        "max": 12
+      },
+      "or": {
+        "label": "Or",
+        "value": 6,
+        "capped": false,
+        "unit": "pièce d'or"
+      }
     },
     "points": 8,
-    "inventory": ["epee", "lanterne"],
+    "inventory": [
+      "epee",
+      "lanterne"
+    ],
     "flags": {}
   },
   "items": {
-    "epee": { "name": "Épée" },
-    "lanterne": { "name": "Lanterne" },
-    "clef_rouillee": { "name": "Clef rouillée" },
-    "potion": { "name": "Potion de vigueur" },
-    "amulette": { "name": "Amulette d'os" },
-    "rouleau": { "name": "Rouleau du serment" },
-    "corde": { "name": "Corde de chanvre" }
+    "epee": {
+      "name": "Épée"
+    },
+    "lanterne": {
+      "name": "Lanterne"
+    },
+    "clef_rouillee": {
+      "name": "Clef rouillée"
+    },
+    "potion": {
+      "name": "Potion de vigueur"
+    },
+    "amulette": {
+      "name": "Amulette d'os"
+    },
+    "rouleau": {
+      "name": "Rouleau du serment"
+    },
+    "corde": {
+      "name": "Corde de chanvre"
+    }
   },
+  "modifiers": [
+    {
+      "label": "Épée",
+      "if": {
+        "type": "item",
+        "item": "epee"
+      },
+      "combat": {
+        "attack": 1
+      }
+    }
+  ],
   "paragraphs": {
     "1": {
       "text": [
@@ -31,9 +80,18 @@
         "Les villageois vous ont payé d'avance : la malédiction qui ronge leurs récoltes vient d'ici, disent-ils. Vous allumez votre lanterne."
       ],
       "choices": [
-        { "text": "Marcher droit vers la porte de la crypte", "to": "2" },
-        { "text": "Fouiller les ruines alentour avant d'entrer", "to": "3" },
-        { "text": "S'approcher du colporteur installé contre les ruines", "to": "22" }
+        {
+          "text": "Marcher droit vers la porte de la crypte",
+          "to": "2"
+        },
+        {
+          "text": "Fouiller les ruines alentour avant d'entrer",
+          "to": "3"
+        },
+        {
+          "text": "S'approcher du colporteur installé contre les ruines",
+          "to": "22"
+        }
       ]
     },
     "22": {
@@ -44,42 +102,100 @@
       "shop": {
         "currency": "or",
         "sell": [
-          { "item": "potion", "price": 5 },
-          { "item": "corde", "price": 3 }
+          {
+            "item": "potion",
+            "price": 5
+          },
+          {
+            "item": "corde",
+            "price": 3
+          }
         ],
         "buy": [
-          { "item": "clef_rouillee", "price": 4 }
+          {
+            "item": "clef_rouillee",
+            "price": 4
+          }
         ]
       },
       "choices": [
-        { "text": "Marcher vers la porte de la crypte", "to": "2" },
-        { "text": "Fouiller les ruines alentour", "to": "3" }
+        {
+          "text": "Marcher vers la porte de la crypte",
+          "to": "2"
+        },
+        {
+          "text": "Fouiller les ruines alentour",
+          "to": "3"
+        }
       ]
     },
     "3": {
       "text": "Parmi les pierres effondrées, vous dégagez le squelette d'un ancien pèlerin. Sa main serre encore une clef rouillée que vous glissez dans votre sac.",
-      "effects": [{ "type": "item", "action": "add", "item": "clef_rouillee" }],
+      "effects": [
+        {
+          "type": "item",
+          "action": "add",
+          "item": "clef_rouillee"
+        }
+      ],
       "choices": [
-        { "text": "Rejoindre la porte de la crypte", "to": "2" },
-        { "text": "Retourner voir le colporteur", "to": "22" }
+        {
+          "text": "Rejoindre la porte de la crypte",
+          "to": "2"
+        },
+        {
+          "text": "Retourner voir le colporteur",
+          "to": "22"
+        }
       ]
     },
     "2": {
       "text": "Une lourde porte de pierre barre le passage, gravée d'un roi couronné dont le visage a été martelé. Une serrure de bronze vert-de-gris en marque le centre.",
       "choices": [
-        { "text": "Pousser la porte de toutes vos forces", "to": "4" },
-        { "text": "Utiliser la clef rouillée", "to": "5", "if": { "type": "item", "item": "clef_rouillee" } }
+        {
+          "text": "Pousser la porte de toutes vos forces",
+          "to": "4"
+        },
+        {
+          "text": "Utiliser la clef rouillée",
+          "to": "5",
+          "if": {
+            "type": "item",
+            "item": "clef_rouillee"
+          }
+        }
       ]
     },
     "4": {
       "text": "La porte cède dans un grondement, mais une dalle bascule sous vos pieds. Vous roulez le long d'un escalier et vous écrasez au bas des marches, la lanterne miraculeusement intacte. Vous perdez 2 points d'Endurance.",
-      "effects": [{ "type": "stat", "stat": "endurance", "delta": -2 }],
-      "choices": [{ "text": "Vous relever et avancer", "to": "6" }]
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -2
+        }
+      ],
+      "choices": [
+        {
+          "text": "Vous relever et avancer",
+          "to": "6"
+        }
+      ]
     },
     "5": {
       "text": "La clef tourne avec un claquement sec. La porte pivote sans bruit et révèle un escalier qui s'enfonce dans l'obscurité.",
-      "effects": [{ "type": "flag", "flag": "porte_ouverte" }],
-      "choices": [{ "text": "Descendre prudemment", "to": "6" }]
+      "effects": [
+        {
+          "type": "flag",
+          "flag": "porte_ouverte"
+        }
+      ],
+      "choices": [
+        {
+          "text": "Descendre prudemment",
+          "to": "6"
+        }
+      ]
     },
     "6": {
       "text": [
@@ -87,9 +203,18 @@
         "À gauche, un cliquetis d'os. À droite, un courant d'air glacé. En face, un portail de bronze orné."
       ],
       "choices": [
-        { "text": "Prendre le couloir de gauche", "to": "7" },
-        { "text": "Prendre le couloir de droite", "to": "8" },
-        { "text": "Avancer vers le portail de bronze", "to": "9" }
+        {
+          "text": "Prendre le couloir de gauche",
+          "to": "7"
+        },
+        {
+          "text": "Prendre le couloir de droite",
+          "to": "8"
+        },
+        {
+          "text": "Avancer vers le portail de bronze",
+          "to": "9"
+        }
       ]
     },
     "7": {
@@ -99,58 +224,146 @@
         "habilete": 6,
         "endurance": 6,
         "win": "10",
-        "flee": { "to": "6" }
+        "flee": {
+          "to": "6"
+        }
       }
     },
     "10": {
       "text": "Le squelette s'effondre en un tas d'os inertes. Derrière lui, une niche abrite une fiole d'un liquide ambré, une potion de vigueur, et une bourse de cuir qui contient encore 4 pièces d'or.",
       "effects": [
-        { "type": "item", "action": "add", "item": "potion" },
-        { "type": "stat", "stat": "or", "delta": 4 }
+        {
+          "type": "item",
+          "action": "add",
+          "item": "potion"
+        },
+        {
+          "type": "stat",
+          "stat": "or",
+          "delta": 4
+        }
       ],
       "choices": [
-        { "text": "Fouiller le reste de la salle", "to": "11" },
-        { "text": "Retourner au carrefour", "to": "6" }
+        {
+          "text": "Fouiller le reste de la salle",
+          "to": "11"
+        },
+        {
+          "text": "Retourner au carrefour",
+          "to": "6"
+        }
       ]
     },
     "11": {
       "text": "Dans un coffre éventré, sous des bandelettes pourries, vous trouvez une amulette taillée dans un os jauni. Elle porte le même sceau que le portail de bronze du carrefour.",
-      "effects": [{ "type": "item", "action": "add", "item": "amulette" }],
-      "choices": [{ "text": "Retourner au carrefour", "to": "6" }]
+      "effects": [
+        {
+          "type": "item",
+          "action": "add",
+          "item": "amulette"
+        }
+      ],
+      "choices": [
+        {
+          "text": "Retourner au carrefour",
+          "to": "6"
+        }
+      ]
     },
     "8": {
       "text": "Le couloir s'ouvre sur un gouffre que franchit un pont de cordes à moitié pourri. De l'autre côté, vous devinez une petite chapelle. Le pont craque sous votre premier pas. Tentez votre Chance.",
-      "test": { "type": "luck", "success": "12", "failure": "13" }
+      "test": {
+        "type": "luck",
+        "success": "12",
+        "failure": "13"
+      }
     },
     "12": {
       "text": "Les cordes tiennent. Dans la chapelle, sur un autel couvert de poussière, repose un rouleau scellé de cire noire. Vous le déroulez : c'est le serment du roi, et les mots qui peuvent le délier.",
-      "effects": [{ "type": "item", "action": "add", "item": "rouleau" }],
-      "choices": [{ "text": "Retraverser et retourner au carrefour", "to": "6" }]
+      "effects": [
+        {
+          "type": "item",
+          "action": "add",
+          "item": "rouleau"
+        }
+      ],
+      "choices": [
+        {
+          "text": "Retraverser et retourner au carrefour",
+          "to": "6"
+        }
+      ]
     },
     "13": {
       "text": "Une corde se rompt. Vous chutez sur une corniche quelques mètres plus bas et vous écrasez les côtes sur la roche. Vous perdez 4 points d'Endurance. Il vous faut une bonne heure pour remonter.",
-      "effects": [{ "type": "stat", "stat": "endurance", "delta": -4 }],
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -4
+        }
+      ],
       "choices": [
-        { "text": "Rejoindre le carrefour", "to": "6" },
-        { "text": "Lancer votre corde de chanvre et retraverser vers la chapelle", "to": "12", "if": { "type": "item", "item": "corde" } }
+        {
+          "text": "Rejoindre le carrefour",
+          "to": "6"
+        },
+        {
+          "text": "Lancer votre corde de chanvre et retraverser vers la chapelle",
+          "to": "12",
+          "if": {
+            "type": "item",
+            "item": "corde"
+          }
+        }
       ]
     },
     "9": {
       "text": "Le portail de bronze est scellé. En son centre, une empreinte creuse a la forme d'un petit os sculpté. Les battants sont épais, mais le métal est ancien et travaillé par les siècles.",
       "choices": [
-        { "text": "Poser l'amulette dans l'empreinte", "to": "15", "if": { "type": "item", "item": "amulette" } },
-        { "text": "Forcer le portail", "to": "16" },
-        { "text": "Retourner au carrefour", "to": "6" }
+        {
+          "text": "Poser l'amulette dans l'empreinte",
+          "to": "15",
+          "if": {
+            "type": "item",
+            "item": "amulette"
+          }
+        },
+        {
+          "text": "Forcer le portail",
+          "to": "16"
+        },
+        {
+          "text": "Retourner au carrefour",
+          "to": "6"
+        }
       ]
     },
     "16": {
       "text": "Vous calez votre épaule contre le battant et poussez de toutes vos forces. Testez votre Habileté.",
-      "test": { "type": "stat", "stat": "habilete", "dice": "2d6", "success": "15", "failure": "17" }
+      "test": {
+        "type": "stat",
+        "stat": "habilete",
+        "dice": "2d6",
+        "success": "15",
+        "failure": "17"
+      }
     },
     "17": {
       "text": "Le métal ne bouge pas d'un pouce et vous vous déboîtez presque l'épaule. Vous perdez 2 points d'Endurance.",
-      "effects": [{ "type": "stat", "stat": "endurance", "delta": -2 }],
-      "choices": [{ "text": "Reprendre votre souffle devant le portail", "to": "9" }]
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -2
+        }
+      ],
+      "choices": [
+        {
+          "text": "Reprendre votre souffle devant le portail",
+          "to": "9"
+        }
+      ]
     },
     "15": {
       "text": [
@@ -158,20 +371,55 @@
         "« Encore un », souffle-t-il."
       ],
       "choices": [
-        { "text": "Dégainer et charger", "to": "18" },
-        { "text": "Lire les mots du rouleau", "to": "19", "if": { "type": "item", "item": "rouleau" } },
-        { "text": "Boire la potion de vigueur avant d'agir", "to": "20", "if": { "type": "item", "item": "potion" } }
+        {
+          "text": "Dégainer et charger",
+          "to": "18"
+        },
+        {
+          "text": "Lire les mots du rouleau",
+          "to": "19",
+          "if": {
+            "type": "item",
+            "item": "rouleau"
+          }
+        },
+        {
+          "text": "Boire la potion de vigueur avant d'agir",
+          "to": "20",
+          "if": {
+            "type": "item",
+            "item": "potion"
+          }
+        }
       ]
     },
     "20": {
       "text": "Vous videz la potion de vigueur d'un trait. Une chaleur se répand dans vos membres et vos blessures se referment. Vous regagnez 4 points d'Endurance. Le roi vous observe, immobile.",
       "effects": [
-        { "type": "stat", "stat": "endurance", "delta": 4 },
-        { "type": "item", "action": "remove", "item": "potion" }
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": 4
+        },
+        {
+          "type": "item",
+          "action": "remove",
+          "item": "potion"
+        }
       ],
       "choices": [
-        { "text": "Dégainer et charger", "to": "18" },
-        { "text": "Lire les mots du rouleau", "to": "19", "if": { "type": "item", "item": "rouleau" } }
+        {
+          "text": "Dégainer et charger",
+          "to": "18"
+        },
+        {
+          "text": "Lire les mots du rouleau",
+          "to": "19",
+          "if": {
+            "type": "item",
+            "item": "rouleau"
+          }
+        }
       ]
     },
     "18": {
