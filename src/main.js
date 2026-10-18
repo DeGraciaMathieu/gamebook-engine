@@ -1,10 +1,11 @@
 import { loadStory } from './engine/story.js';
-import { createGame, choose, resolveTest, describeTest, fightRound, fleeCombat } from './engine/game.js';
+import { createGame, describeCreation, choose, resolveTest, describeTest, fightRound, fleeCombat } from './engine/game.js';
 import { saveGame, loadGame, clearGame } from './storage.js';
 import { isMuted, toggleMuted, vibrate, playDiceRattle, playHit, playWounded, playSuccess, playFailure } from './feedback.js';
 import { replaceContent } from './ui/dom.js';
 import { keepRollingDiceAlive } from './ui/dice.js';
 import { renderHome } from './ui/home.js';
+import { renderCreation } from './ui/creation.js';
 import { renderGame } from './ui/game.js';
 
 const app = document.getElementById('app');
@@ -13,6 +14,7 @@ const ui = {
   stories: [],
   story: null,
   state: null,
+  allocation: {},
   menuOpen: false,
   roll: null,
   rollId: 0,
@@ -34,6 +36,22 @@ function render() {
       onStart: startStory,
       onContinue: continueStory,
       onRestart: startStory,
+    }));
+    return;
+  }
+  if (ui.screen === 'creation') {
+    replaceContent(app, renderCreation({
+      story: ui.story,
+      creation: describeCreation(ui.story),
+      allocation: ui.allocation,
+      handlers: {
+        onAdjust: (stat, delta) => {
+          ui.allocation = { ...ui.allocation, [stat]: (ui.allocation[stat] ?? 0) + delta };
+          render();
+        },
+        onStart: () => openGame(ui.story, createGame(ui.story, Math.random, ui.allocation)),
+        onQuit: quitToHome,
+      },
     }));
     return;
   }
@@ -170,6 +188,13 @@ function setRollPhase(phase, view = ui.roll.view) {
 
 function startStory(story) {
   clearGame(story.id);
+  if (describeCreation(story)) {
+    ui.screen = 'creation';
+    ui.story = story;
+    ui.allocation = {};
+    render();
+    return;
+  }
   openGame(story, createGame(story));
 }
 

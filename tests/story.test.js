@@ -57,3 +57,20 @@ test("tous les paragraphes de la démo sont atteignables depuis le départ", () 
   const unreachable = Object.keys(demo.paragraphs).filter((id) => !reachable.has(id));
   assert.deepEqual(unreachable, []);
 });
+
+test('une réserve de points exige base, max et une capacité suffisante', () => {
+  const story = makeStory({ '1': { text: 'Fin' } }, {
+    hero: {
+      stats: {
+        habilete: { label: 'H', base: 7, max: 8 },
+        endurance: { label: 'E', base: 14 },
+        chance: { label: 'C', base: 7, max: 6 },
+      },
+      points: 10,
+    },
+  });
+  const errors = validateStory(story);
+  assert.ok(errors.some((error) => error.includes('hero.stats.endurance') && error.includes('"max"')));
+  assert.ok(errors.some((error) => error.includes('hero.stats.chance') && error.includes('inférieur')));
+  assert.ok(errors.some((error) => error.includes('hero.points')));
+});

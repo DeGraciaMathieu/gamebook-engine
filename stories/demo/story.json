@@ -6,10 +6,11 @@
   "death": "mort",
   "hero": {
     "stats": {
-      "habilete": { "label": "Habileté", "roll": "1d6+6" },
-      "endurance": { "label": "Endurance", "roll": "2d6+12" },
-      "chance": { "label": "Chance", "roll": "1d6+6" }
+      "habilete": { "label": "Habileté", "base": 7, "max": 12 },
+      "endurance": { "label": "Endurance", "base": 14, "max": 24 },
+      "chance": { "label": "Chance", "base": 7, "max": 12 }
     },
+    "points": 8,
     "inventory": ["epee", "lanterne"],
     "flags": {}
   },

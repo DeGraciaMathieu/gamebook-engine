@@ -60,6 +60,7 @@ export function validateStory(story) {
   else checkTarget(story.start, 'start');
   if (story.death) checkTarget(story.death, 'death');
   if (stats.length === 0) errors.push('Aucune caractéristique définie dans hero.stats');
+  if (story.hero?.points !== undefined) checkCreation(story, errors);
   (story.hero?.inventory ?? []).forEach((item) => checkItem(item, 'hero.inventory'));
 
   for (const [id, paragraph] of Object.entries(paragraphs)) {
@@ -94,4 +95,19 @@ export function validateStory(story) {
   }
 
   return errors;
+}
+
+// Avec une réserve de points, chaque caractéristique a une base et un maximum, et la réserve doit pouvoir être placée.
+function checkCreation(story, errors) {
+  let capacity = 0;
+  for (const [name, definition] of Object.entries(story.hero.stats)) {
+    const where = `hero.stats.${name}`;
+    if (typeof definition.base !== 'number') errors.push(`${where} : "base" manquante`);
+    if (typeof definition.max !== 'number') errors.push(`${where} : "max" manquant`);
+    if (definition.max < definition.base) errors.push(`${where} : "max" inférieur à "base"`);
+    capacity += Math.max(0, (definition.max ?? 0) - (definition.base ?? 0));
+  }
+  if (capacity < story.hero.points) {
+    errors.push(`hero.points : ${story.hero.points} points ne peuvent pas tous être placés (capacité ${capacity})`);
+  }
 }

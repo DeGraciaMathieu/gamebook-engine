@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { createGame, listChoices, choose, resolveTest, describeTest, fightRound, fleeCombat, hasChosen } from '../src/engine/game.js';
+import { createGame, describeCreation, listChoices, choose, resolveTest, describeTest, fightRound, fleeCombat, hasChosen } from '../src/engine/game.js';
 import { makeStory, minRoll, maxRoll } from './helpers.js';
 
 const story = makeStory({
@@ -173,4 +173,40 @@ test('hasChosen signale les choix déjà pris sur une page', () => {
   assert.equal(hasChosen(story, back, trap), false);
   assert.deepEqual(back.chosen, ['1:0', '2:0']);
   assert.deepEqual(pick(pick(back, 'Avancer'), 'Retour').chosen, ['1:0', '2:0']);
+});
+
+const pointBuy = makeStory(story.paragraphs, {
+  hero: {
+    stats: {
+      habilete: { label: 'H', base: 7, max: 12 },
+      endurance: { label: 'E', base: 14, max: 24 },
+      chance: { label: 'C', base: 7, max: 12 },
+    },
+    points: 8,
+  },
+});
+
+test('describeCreation décrit la réserve et les bornes, ou null sans réserve', () => {
+  assert.equal(describeCreation(story), null);
+  assert.deepEqual(describeCreation(pointBuy), {
+    points: 8,
+    stats: [
+      { name: 'habilete', label: 'H', base: 7, max: 12 },
+      { name: 'endurance', label: 'E', base: 14, max: 24 },
+      { name: 'chance', label: 'C', base: 7, max: 12 },
+    ],
+  });
+});
+
+test('createGame applique la répartition sur les bases', () => {
+  const state = createGame(pointBuy, minRoll, { habilete: 3, endurance: 4, chance: 1 });
+  assert.deepEqual(state.stats, { habilete: 10, endurance: 18, chance: 8 });
+  assert.deepEqual(state.initialStats, state.stats);
+});
+
+test('createGame refuse une répartition incomplète, excessive ou hors bornes', () => {
+  assert.throws(() => createGame(pointBuy, minRoll, { habilete: 3 }), /8 points à répartir, 3 placés/);
+  assert.throws(() => createGame(pointBuy, minRoll, { habilete: 5, endurance: 4 }), /8 points à répartir, 9 placés/);
+  assert.throws(() => createGame(pointBuy, minRoll, { habilete: 6, endurance: 2 }), /invalide pour H/);
+  assert.throws(() => createGame(pointBuy, minRoll, { habilete: -1, endurance: 9 }), /invalide pour H/);
 });

@@ -51,10 +51,11 @@ Une histoire invalide (cible manquante, objet inconnu…) est refusée au charge
   "death": "mort",
   "hero": {
     "stats": {
-      "habilete":  { "label": "Habileté",  "roll": "1d6+6" },
-      "endurance": { "label": "Endurance", "roll": "2d6+12" },
-      "chance":    { "label": "Chance",    "value": 9 }
+      "habilete":  { "label": "Habileté",  "base": 7,  "max": 12 },
+      "endurance": { "label": "Endurance", "base": 14, "max": 24 },
+      "chance":    { "label": "Chance",    "base": 7,  "max": 12 }
     },
+    "points": 8,
     "inventory": ["epee"],
     "flags": {}
   },
@@ -64,7 +65,9 @@ Une histoire invalide (cible manquante, objet inconnu…) est refusée au charge
 ```
 
 - `start` : paragraphe de départ. `death` (optionnel) : paragraphe affiché quand l'endurance tombe à 0.
-- `hero.stats` : chaque caractéristique a un `label` et soit `roll` (formule de dés), soit `value`. Les règles de combat utilisent `habilete` et `endurance`, le test de chance utilise `chance`. Une caractéristique ne dépasse jamais sa valeur de départ.
+- `hero.stats` : chaque caractéristique a un `label` et sa valeur de départ, selon l'un des deux modèles ci-dessous. Les règles de combat utilisent `habilete` et `endurance`, le test de chance utilise `chance`. Une caractéristique ne dépasse jamais sa valeur de départ.
+  - **Tirage aux dés** : `roll` (formule de dés) ou `value` (fixe). La partie commence directement.
+  - **Répartition de points** : `hero.points` donne une réserve, chaque caractéristique a une `base` et un `max`. Un écran de création demande au joueur de placer toute la réserve avant de commencer.
 - `items` : catalogue des objets, référencés par leur clé.
 
 ### Paragraphe

@@ -6,8 +6,10 @@ import { getParagraph, isEnding } from './story.js';
 
 export const LUCK_DICE = '2d6';
 
-export function createGame(story, rng = Math.random) {
-  const stats = rollStats(story.hero.stats, rng);
+export function createGame(story, rng = Math.random, allocation = {}) {
+  const stats = describeCreation(story)
+    ? allocateStats(story, allocation)
+    : rollStats(story.hero.stats, rng);
   const state = {
     storyId: story.id,
     paragraphId: null,
@@ -22,6 +24,40 @@ export function createGame(story, rng = Math.random) {
     chosen: [],
   };
   return trackChanges(state, enterParagraph(story, state, story.start));
+}
+
+// Décrit la création du héros par répartition de points, ou null si l'histoire tire les caractéristiques aux dés.
+export function describeCreation(story) {
+  if (story.hero.points === undefined) {
+    return null;
+  }
+  return {
+    points: story.hero.points,
+    stats: Object.entries(story.hero.stats).map(([name, definition]) => ({
+      name,
+      label: definition.label,
+      base: definition.base,
+      max: definition.max,
+    })),
+  };
+}
+
+function allocateStats(story, allocation) {
+  const creation = describeCreation(story);
+  let spent = 0;
+  const stats = {};
+  for (const stat of creation.stats) {
+    const bonus = allocation[stat.name] ?? 0;
+    if (bonus < 0 || stat.base + bonus > stat.max) {
+      throw new Error(`Répartition invalide pour ${stat.label}`);
+    }
+    spent += bonus;
+    stats[stat.name] = stat.base + bonus;
+  }
+  if (spent !== creation.points) {
+    throw new Error(`${creation.points} points à répartir, ${spent} placés`);
+  }
+  return stats;
 }
 
 function rollStats(definitions, rng) {
