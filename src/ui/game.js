@@ -235,7 +235,7 @@ function describeStatChange(story, change) {
   const definition = story.hero.stats[change.stat];
   const label = definition?.label ?? change.stat;
   const gained = change.delta > 0;
-  const quantity = definition?.unit ? `\\d+ ${unitPattern(definition.unit)}` : `\\d+ points? d['’]${escapeRegExp(label)}`;
+  const quantity = definition?.unit ? `\\d+ ${unitPattern(definition.unit)}` : `\\d+ points? (?:d['’]|de |du )${escapeRegExp(label)}`;
   return {
     className: gained ? 'stat-gain' : 'stat-loss',
     patterns: [quantity, escapeRegExp(definition?.unit ?? label)],
