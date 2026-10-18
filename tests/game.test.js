@@ -146,3 +146,13 @@ test('itemChanges détecte une perte sur les effets du paragraphe', () => {
   const drunk = choose(losing, state, listChoices(losing, state)[0]);
   assert.deepEqual(drunk.itemChanges, [{ item: 'clef', action: 'remove' }]);
 });
+
+test('statChanges liste les caractéristiques modifiées lors de la transition', () => {
+  const state = start();
+  assert.deepEqual(state.statChanges, []);
+  const fled = fleeCombat(story, pick(state, 'Gobelin'));
+  assert.deepEqual(fled.statChanges, [{ stat: 'endurance', delta: -2 }]);
+  const luck = resolveTest(story, pick(state, 'Pont'), minRoll).state;
+  assert.deepEqual(luck.statChanges, [{ stat: 'chance', delta: -1 }]);
+  assert.deepEqual(pick(fled, 'Retour').statChanges, []);
+});

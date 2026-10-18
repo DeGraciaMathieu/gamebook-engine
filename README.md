@@ -85,7 +85,7 @@ Un paragraphe contient `text`, des `effects` optionnels appliqués à l'arrivée
 
 Un paragraphe sans `choices`, `combat` ni `test` est une fin.
 
-Quand un objet est obtenu ou perdu en arrivant sur une page, son nom est surligné dans le texte (nom complet, sinon son premier mot). S'il n'y figure pas, une mention « Vous obtenez : … » est ajoutée sous le texte.
+Quand un objet est obtenu ou perdu en arrivant sur une page, son nom est surligné dans le texte (nom complet, sinon son premier mot). Quand une caractéristique change, la mention « N points d'Endurance » (sinon le mot « Endurance ») est surlignée. Ce qui n'est pas mentionné dans le texte est récapitulé en italique sous le dernier paragraphe (« Vous obtenez : Clef rouillée · Endurance −2 »).
 
 ### Conditions
 

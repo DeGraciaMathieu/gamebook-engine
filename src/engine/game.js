@@ -18,8 +18,9 @@ export function createGame(story, rng = Math.random) {
     combat: null,
     status: 'playing',
     itemChanges: [],
+    statChanges: [],
   };
-  return trackItemChanges(state, enterParagraph(story, state, story.start));
+  return trackChanges(state, enterParagraph(story, state, story.start));
 }
 
 function rollStats(definitions, rng) {
@@ -48,9 +49,9 @@ export function choose(story, state, choice) {
   }
   const next = applyEffects(choice.effects, state);
   if (isDead(next)) {
-    return trackItemChanges(state, die(story, next));
+    return trackChanges(state, die(story, next));
   }
-  return trackItemChanges(state, enterParagraph(story, next, choice.to));
+  return trackChanges(state, enterParagraph(story, next, choice.to));
 }
 
 // Test de Chance : réussite si 2d6 <= Chance ; la Chance baisse de 1 à chaque test.
@@ -68,7 +69,7 @@ export function resolveTest(story, state, rng = Math.random) {
     next = applyEffects([{ type: 'stat', stat: 'chance', delta: -1 }], state);
   }
   return {
-    state: trackItemChanges(state, enterParagraph(story, next, success ? test.success : test.failure)),
+    state: trackChanges(state, enterParagraph(story, next, success ? test.success : test.failure)),
     roll,
     success,
   };
@@ -86,7 +87,7 @@ export function fightRound(story, state, rng = Math.random) {
     return die(story, next);
   }
   if (isEnemyDefeated(combat)) {
-    return trackItemChanges(state, enterParagraph(story, next, currentParagraph(story, state).combat.win));
+    return trackChanges(state, enterParagraph(story, next, currentParagraph(story, state).combat.win));
   }
   return next;
 }
@@ -101,7 +102,7 @@ export function fleeCombat(story, state) {
   if (isDead(next)) {
     return die(story, next);
   }
-  return trackItemChanges(state, enterParagraph(story, next, flee.to));
+  return trackChanges(state, enterParagraph(story, next, flee.to));
 }
 
 function enterParagraph(story, state, paragraphId) {
@@ -119,16 +120,20 @@ function enterParagraph(story, state, paragraphId) {
   return next;
 }
 
-// Objets gagnés ou perdus entre deux pages, pour les mettre en avant dans le texte.
-function trackItemChanges(previous, next) {
+// Objets et caractéristiques modifiés entre deux pages, pour les mettre en avant dans le texte.
+function trackChanges(previous, next) {
   const gained = next.inventory.filter((item) => !previous.inventory.includes(item));
   const lost = previous.inventory.filter((item) => !next.inventory.includes(item));
+  const statChanges = Object.keys(next.stats)
+    .map((stat) => ({ stat, delta: next.stats[stat] - previous.stats[stat] }))
+    .filter((change) => change.delta !== 0);
   return {
     ...next,
     itemChanges: [
       ...gained.map((item) => ({ item, action: 'add' })),
       ...lost.map((item) => ({ item, action: 'remove' })),
     ],
+    statChanges,
   };
 }
 

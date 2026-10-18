@@ -96,40 +96,65 @@ function renderEnding(state, handlers) {
   ]);
 }
 
-// Surligne, dans le texte, le nom des objets obtenus ou perdus en arrivant sur cette page.
-// Si un objet n'est pas nommé dans le texte, une mention est ajoutée après le dernier paragraphe.
+// Surligne, dans le texte, les objets et caractéristiques modifiés en arrivant sur cette page.
+// Ce qui n'est pas mentionné dans le texte est récapitulé après le dernier paragraphe.
 function renderText(story, state, text) {
-  const pending = (state.itemChanges ?? []).map((change) => ({
-    ...change,
-    name: story.items[change.item]?.name ?? change.item,
-  }));
+  const pending = [
+    ...(state.itemChanges ?? []).map((change) => describeItemChange(story, change)),
+    ...(state.statChanges ?? []).map((change) => describeStatChange(story, change)),
+  ];
   const paragraphs = [].concat(text).map((chunk) =>
-    el('p', { class: 'page-text' }, highlightItems(frenchSpacing(chunk), pending)));
+    el('p', { class: 'page-text' }, highlightMentions(frenchSpacing(chunk), pending)));
   if (pending.length > 0) {
-    paragraphs.push(el('p', { class: 'page-text page-items' }, pending.flatMap((change, index) => [
-      index > 0 ? ', ' : (change.action === 'add' ? 'Vous obtenez : ' : 'Vous perdez : '),
-      renderItemMark(change, change.name),
+    paragraphs.push(el('p', { class: 'page-text page-changes' }, pending.flatMap((change, index) => [
+      index > 0 ? ' · ' : null,
+      renderMark(change, change.summary),
     ])));
   }
   return paragraphs;
 }
 
-function highlightItems(text, pending) {
+function describeItemChange(story, change) {
+  const name = story.items[change.item]?.name ?? change.item;
+  const gained = change.action === 'add';
+  return {
+    className: gained ? 'item-add' : 'item-remove',
+    patterns: [escapeRegExp(name), firstWordPattern(name)],
+    summary: `${gained ? 'Vous obtenez' : 'Vous perdez'} : ${name}`,
+  };
+}
+
+function describeStatChange(story, change) {
+  const label = story.hero.stats[change.stat]?.label ?? change.stat;
+  const gained = change.delta > 0;
+  return {
+    className: gained ? 'stat-gain' : 'stat-loss',
+    patterns: [`\\d+ points? d['’]${escapeRegExp(label)}`, escapeRegExp(label)],
+    summary: `${label} ${gained ? '+' : '−'}${Math.abs(change.delta)}`,
+  };
+}
+
+// Premier mot d'un nom, s'il est assez long pour être significatif (« amulette » pour « Amulette d'os »).
+function firstWordPattern(name) {
+  const word = name.split(/[\s']/)[0];
+  return word.length >= 4 ? escapeRegExp(word) : null;
+}
+
+function highlightMentions(text, pending) {
   for (const [index, change] of pending.entries()) {
-    const match = findItemMention(text, change.name);
+    const match = findMention(text, change.patterns);
     if (!match) continue;
     pending.splice(index, 1);
     const [before, after] = [text.slice(0, match.index), text.slice(match.index + match.length)];
-    return [...highlightItems(before, pending), renderItemMark(change, match.text), ...highlightItems(after, pending)];
+    return [...highlightMentions(before, pending), renderMark(change, match.text), ...highlightMentions(after, pending)];
   }
   return [text];
 }
 
-// Cherche le nom complet de l'objet, puis son premier mot (« amulette » pour « Amulette d'os »).
-function findItemMention(text, name) {
-  const candidates = [name, name.split(/[\s']/)[0]].filter((candidate) => candidate.length >= 4);
-  for (const candidate of candidates) {
-    const match = new RegExp(escapeRegExp(candidate), 'i').exec(text);
+function findMention(text, patterns) {
+  for (const pattern of patterns) {
+    if (!pattern) continue;
+    const match = new RegExp(pattern, 'i').exec(text);
     if (match) return { index: match.index, length: match[0].length, text: match[0] };
   }
   return null;
@@ -139,8 +164,8 @@ function escapeRegExp(text) {
   return text.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 }
 
-function renderItemMark(change, text) {
-  return el('mark', { class: `item-mark item-${change.action}` }, text);
+function renderMark(change, text) {
+  return el('mark', { class: `mark ${change.className}` }, text);
 }
 
 // Espaces insécables de la typographie française.

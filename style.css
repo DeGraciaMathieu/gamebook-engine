@@ -238,15 +238,15 @@ body {
 .roll-success { color: var(--success); }
 .roll-failure { color: var(--failure); }
 
-/* Objets obtenus ou perdus */
-.item-mark {
+/* Objets et caractéristiques modifiés */
+.mark {
   padding: 0 3px;
   border-radius: 3px;
   color: inherit;
   background-color: transparent;
   background-repeat: no-repeat;
   background-size: 0% 100%;
-  animation: item-mark-sweep 0.7s ease-out 0.15s forwards;
+  animation: mark-sweep 0.7s ease-out 0.15s forwards;
 }
 .item-add { background-image: linear-gradient(rgba(214, 170, 40, 0.5), rgba(214, 170, 40, 0.5)); }
 .item-remove {
@@ -254,10 +254,12 @@ body {
   text-decoration: line-through;
   text-decoration-color: var(--accent);
 }
-@keyframes item-mark-sweep {
+.stat-gain { background-image: linear-gradient(rgba(59, 107, 58, 0.3), rgba(59, 107, 58, 0.3)); }
+.stat-loss { background-image: linear-gradient(rgba(139, 46, 31, 0.28), rgba(139, 46, 31, 0.28)); }
+@keyframes mark-sweep {
   to { background-size: 100% 100%; }
 }
-.page-items {
+.page-changes {
   font-style: italic;
   color: var(--ink-soft);
 }
