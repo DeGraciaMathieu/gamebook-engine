@@ -1,0 +1,298 @@
+:root {
+  --paper: #f3eadb;
+  --paper-deep: #e8dcc6;
+  --ink: #2b2118;
+  --ink-soft: #6b5a48;
+  --accent: #8b2e1f;
+  --accent-ink: #fff7ee;
+  --success: #3b6b3a;
+  --failure: #8b2e1f;
+  --line: #cdbfa6;
+  --radius: 10px;
+  --font-serif: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-serif);
+  font-size: 18px;
+  line-height: 1.55;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-image: radial-gradient(circle at 20% 10%, rgba(255, 255, 255, 0.5), transparent 55%),
+    radial-gradient(circle at 80% 90%, rgba(120, 90, 40, 0.12), transparent 60%);
+  min-height: 100dvh;
+}
+
+.screen {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 0 16px calc(32px + env(safe-area-inset-bottom));
+}
+
+/* Boutons */
+.btn {
+  display: block;
+  width: 100%;
+  padding: 14px 18px;
+  border: 1px solid var(--ink);
+  border-radius: var(--radius);
+  background: transparent;
+  color: var(--ink);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  min-height: 48px;
+}
+.btn:active { transform: translateY(1px); }
+.btn-primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-ink);
+  text-align: center;
+}
+.btn-ghost {
+  border-color: var(--line);
+  color: var(--ink-soft);
+  text-align: center;
+}
+.btn-choice::before {
+  content: "➤ ";
+  color: var(--accent);
+}
+.btn-icon {
+  width: 44px;
+  height: 44px;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--ink);
+  font: inherit;
+  font-size: 26px;
+  line-height: 1;
+  cursor: pointer;
+}
+.btn-icon.is-active { background: var(--paper-deep); }
+
+.choices {
+  display: grid;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+/* Accueil */
+.home-header {
+  padding: 40px 0 24px;
+  text-align: center;
+}
+.home-kicker {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 0.85rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.home-title {
+  margin: 4px 0 0;
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+.story-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 16px;
+}
+.story-card {
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.35);
+}
+.story-card-title {
+  margin: 0 0 8px;
+  font-size: 1.35rem;
+  font-weight: 500;
+}
+.story-card-summary {
+  margin: 0 0 16px;
+  color: var(--ink-soft);
+}
+.story-card-actions {
+  display: grid;
+  gap: 10px;
+}
+
+/* En-tête de jeu */
+.game-header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 -16px;
+  padding: 8px;
+  padding-top: calc(8px + env(safe-area-inset-top, 0));
+  background: var(--paper-deep);
+  border-bottom: 1px solid var(--line);
+}
+.stats {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.2;
+}
+.stat-label {
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+.stat-value {
+  font-size: 1.05rem;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Inventaire */
+.inventory {
+  margin: 0 -16px;
+  padding: 12px 24px 16px;
+  background: var(--paper-deep);
+  border-bottom: 1px solid var(--line);
+}
+.inventory-title {
+  margin: 0 0 6px;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+.inventory-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.inventory-list li {
+  padding: 4px 10px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--paper);
+  font-size: 0.95rem;
+}
+.inventory-empty {
+  margin: 0;
+  color: var(--ink-soft);
+  font-style: italic;
+}
+
+/* Page */
+.page { padding-top: 24px; }
+.page-number {
+  margin: 0 0 12px;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.page-number::before, .page-number::after {
+  content: " — ";
+  color: var(--ink-soft);
+}
+.page-text {
+  margin: 0 0 1em;
+  text-align: justify;
+  hyphens: auto;
+}
+.page-number + .page-text::first-letter,
+.roll + .page-text::first-letter {
+  float: left;
+  margin: 6px 8px 0 0;
+  font-size: 3.2em;
+  line-height: 0.8;
+  color: var(--accent);
+}
+.roll {
+  margin: 0 0 20px;
+  padding: 10px 14px;
+  border-left: 3px solid currentColor;
+  font-style: italic;
+}
+.roll-success { color: var(--success); }
+.roll-failure { color: var(--failure); }
+
+/* Objets obtenus ou perdus */
+.item-mark {
+  padding: 0 3px;
+  border-radius: 3px;
+  color: inherit;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  animation: item-mark-sweep 0.7s ease-out 0.15s forwards;
+}
+.item-add { background-image: linear-gradient(rgba(214, 170, 40, 0.5), rgba(214, 170, 40, 0.5)); }
+.item-remove {
+  background-image: linear-gradient(rgba(139, 46, 31, 0.28), rgba(139, 46, 31, 0.28));
+  text-decoration: line-through;
+  text-decoration-color: var(--accent);
+}
+@keyframes item-mark-sweep {
+  to { background-size: 100% 100%; }
+}
+.page-items {
+  font-style: italic;
+  color: var(--ink-soft);
+}
+
+/* Combat */
+.combat {
+  margin-top: 24px;
+  padding: 16px;
+  border: 1px solid var(--accent);
+  border-radius: var(--radius);
+  background: rgba(139, 46, 31, 0.06);
+}
+.combat-name {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.combat-stats {
+  margin: 4px 0 0;
+  color: var(--ink-soft);
+  font-variant-numeric: tabular-nums;
+}
+.combat-log {
+  margin: 14px 0 0;
+  font-style: italic;
+}
+.combat-hit { color: var(--success); }
+.combat-wounded { color: var(--failure); }
+.combat .choices { margin-top: 16px; }
+
+/* Fin */
+.ending { margin-top: 32px; text-align: center; }
+.ending-title {
+  margin: 0;
+  font-size: 1.5rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}

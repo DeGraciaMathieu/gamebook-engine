@@ -1,0 +1,59 @@
+import { test } from 'node:test';
+import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
+import { validateStory, isEnding } from '../src/engine/story.js';
+import { makeStory } from './helpers.js';
+
+const demo = JSON.parse(readFileSync(new URL('../stories/demo/story.json', import.meta.url), 'utf8'));
+
+test('une histoire minimale est valide', () => {
+  const story = makeStory({ '1': { text: 'Fin' } });
+  assert.deepEqual(validateStory(story), []);
+});
+
+test('les cibles, objets et caractéristiques inconnus sont signalés', () => {
+  const story = makeStory({
+    '1': {
+      text: 'Départ',
+      effects: [{ type: 'item', action: 'add', item: 'fantome' }],
+      choices: [
+        { text: 'Aller', to: '99', if: { type: 'stat', stat: 'force', op: '>', value: 1 } },
+      ],
+      combat: { name: 'X', habilete: 1, endurance: 1, win: '98', flee: { to: '97' } },
+      test: { type: 'stat', stat: 'magie', dice: '1d6', success: '96', failure: '95' },
+    },
+  }, { start: '0', death: 'ailleurs' });
+  const errors = validateStory(story);
+  for (const needle of ['"0"', '"ailleurs"', '"fantome"', '"99"', '"force"', '"98"', '"97"', '"magie"', '"96"', '"95"']) {
+    assert.ok(errors.some((error) => error.includes(needle)), `erreur attendue pour ${needle} :\n${errors.join('\n')}`);
+  }
+});
+
+test('isEnding : seul un paragraphe sans choix, combat ni test est une fin', () => {
+  assert.equal(isEnding({ text: 'x' }), true);
+  assert.equal(isEnding({ text: 'x', choices: [] }), true);
+  assert.equal(isEnding({ text: 'x', choices: [{ text: 'a', to: '1' }] }), false);
+  assert.equal(isEnding({ text: 'x', combat: {} }), false);
+  assert.equal(isEnding({ text: 'x', test: {} }), false);
+});
+
+test("l'histoire de démo est valide", () => {
+  assert.deepEqual(validateStory(demo), []);
+});
+
+test("tous les paragraphes de la démo sont atteignables depuis le départ", () => {
+  const reachable = new Set([demo.death]);
+  const queue = [demo.start];
+  while (queue.length > 0) {
+    const id = queue.pop();
+    if (reachable.has(id)) continue;
+    reachable.add(id);
+    const paragraph = demo.paragraphs[id];
+    (paragraph.choices ?? []).forEach((choice) => queue.push(choice.to));
+    if (paragraph.combat) queue.push(paragraph.combat.win);
+    if (paragraph.combat?.flee) queue.push(paragraph.combat.flee.to);
+    if (paragraph.test) queue.push(paragraph.test.success, paragraph.test.failure);
+  }
+  const unreachable = Object.keys(demo.paragraphs).filter((id) => !reachable.has(id));
+  assert.deepEqual(unreachable, []);
+});

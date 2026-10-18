@@ -1,0 +1,11 @@
+{
+  "name": "adventuregame",
+  "version": "0.1.0",
+  "description": "Moteur de livre-jeu (livre dont vous êtes le héros) en vanilla JS, histoires en JSON",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "test": "node --test \"tests/**/*.test.js\"",
+    "start": "python3 -m http.server 8080"
+  }
+}
