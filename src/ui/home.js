@@ -3,7 +3,7 @@ import { el } from './dom.js';
 export function renderHome({ stories, hasSave, onStart, onContinue, onRestart }) {
   return el('main', { class: 'screen home' }, [
     el('header', { class: 'home-header' }, [
-      el('p', { class: 'home-kicker' }, 'Livres dont vous êtes le héros'),
+      el('p', { class: 'home-kicker' }, 'Le site dont vous êtes le héros'),
       el('h1', { class: 'home-title' }, 'Bibliothèque'),
     ]),
     el('ul', { class: 'story-list' }, stories.map((story) => renderStoryCard(story, {
