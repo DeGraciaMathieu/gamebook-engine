@@ -27,6 +27,7 @@ function renderStatRow(stat, bonus, remaining, handlers) {
   return el('li', { class: 'creation-stat' }, [
     el('div', { class: 'creation-stat-info' }, [
       el('span', { class: 'creation-stat-label' }, stat.label),
+      stat.description && el('span', { class: 'creation-stat-description' }, stat.description),
       el('span', { class: 'creation-stat-range' }, `${stat.base} à ${stat.max}`),
     ]),
     el('div', { class: 'stepper' }, [
