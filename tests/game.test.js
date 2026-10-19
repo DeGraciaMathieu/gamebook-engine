@@ -300,3 +300,29 @@ test('un combat peut se jouer sur une autre caractéristique, et fuir coûte les
   assert.equal(round.heroAttack, 2 + 20 + 1);
   assert.equal(fleeCombat(chase, state).stats.endurance, 17);
 });
+
+test('une caractéristique avec tick avance à chaque choix, en silence, mais pas sur un test', () => {
+  const clock = makeStory({
+    '1': { text: 'Départ', choices: [{ text: 'Avancer', to: '2' }] },
+    '2': { text: 'Couloir', effects: [{ type: 'stat', stat: 'temps', delta: -5 }], choices: [{ text: 'Sauter', to: '3' }] },
+    '3': { text: 'Saut', test: { type: 'stat', stat: 'habilete', dice: '1d6', success: '2', failure: '2' } },
+    '4': { text: 'Trop tard' },
+  }, {
+    hero: { stats: { habilete: { label: 'H', value: 10 }, endurance: { label: 'E', value: 20 }, chance: { label: 'C', value: 8 }, temps: { label: 'Temps', value: 10, capped: false, tick: -2 } } },
+    triggers: [{ label: 'Trop tard', if: { type: 'stat', stat: 'temps', op: '=', value: 0 }, to: '4' }],
+  });
+  const first = createGame(clock, minRoll);
+  assert.equal(first.stats.temps, 10);
+  const second = choose(clock, first, listChoices(clock, first)[0]);
+  assert.equal(second.stats.temps, 3);
+  assert.deepEqual(second.statChanges, [{ stat: 'temps', delta: -5 }]);
+  assert.equal(second.ticked, undefined);
+  const third = choose(clock, second, listChoices(clock, second)[0]);
+  assert.equal(third.stats.temps, 1);
+  const fourth = resolveTest(clock, third, minRoll).state;
+  assert.equal(fourth.stats.temps, 0);
+  assert.deepEqual(fourth.statChanges, [{ stat: 'temps', delta: -1 }]);
+  const fifth = choose(clock, fourth, listChoices(clock, fourth)[0]);
+  assert.equal(fifth.paragraphId, '4');
+  assert.equal(fifth.status, 'ended');
+});

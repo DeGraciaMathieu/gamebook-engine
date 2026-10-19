@@ -61,6 +61,9 @@ export function validateStory(story) {
   if (story.death) checkTarget(story.death, 'death');
   if (stats.length === 0) errors.push('Aucune caractéristique définie dans hero.stats');
   if (story.hero?.points !== undefined) checkCreation(story, errors);
+  for (const [name, definition] of Object.entries(story.hero?.stats ?? {})) {
+    if (definition.tick !== undefined && typeof definition.tick !== 'number') errors.push(`hero.stats.${name} : "tick" doit être un nombre`);
+  }
   (story.hero?.inventory ?? []).forEach((item) => checkItem(item, 'hero.inventory'));
 
   for (const [index, trigger] of (story.triggers ?? []).entries()) {

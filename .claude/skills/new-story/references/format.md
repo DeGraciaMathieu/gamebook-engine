@@ -28,6 +28,7 @@ La référence complète est dans `README.md` à la racine. Cette fiche donne un
 - `habilete`, `endurance`, `chance` sont les noms attendus par les règles de combat et de chance. Les labels et descriptions sont libres.
 - Sans `hero.points`, chaque caractéristique prend `roll` (ex : `"2d6+12"`) ou `value` et la partie démarre sans écran de création.
 - Une ressource (`capped: false`) s'accumule sans plafond ; `unit` au singulier.
+- Une horloge (`"tick": -1` sur la caractéristique) perd 1 à chaque choix pris sans l'annoncer ; les tests et les assauts ne comptent pas. Les gros coûts restent des effets chiffrés dans le texte. À combiner avec un déclencheur à 0.
 
 ## Paragraphe
 

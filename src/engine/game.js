@@ -110,7 +110,18 @@ export function choose(story, state, choice) {
   if (isDead(next)) {
     return trackChanges(state, die(story, next));
   }
-  return trackChanges(state, travel(story, state, next, choice.to));
+  return trackChanges(state, travel(story, state, tickStats(story, next), choice.to));
+}
+
+// Une caractéristique avec `tick` est une horloge : elle varie à chaque décision prise, sans que le texte
+// l'annonce. Résoudre un test ou un assaut n'est pas une décision et ne la fait pas avancer.
+function tickStats(story, state) {
+  const effects = Object.entries(story.hero.stats)
+    .filter(([, definition]) => definition.tick)
+    .map(([stat, definition]) => ({ type: 'stat', stat, delta: definition.tick }));
+  const next = applyEffects(effects, state);
+  const ticked = Object.fromEntries(effects.map(({ stat }) => [stat, next.stats[stat] - state.stats[stat]]));
+  return { ...next, ticked };
 }
 
 // Les choix déjà pris dans la partie, identifiés par page et position.
@@ -284,11 +295,12 @@ function enterParagraph(story, state, paragraphId) {
 }
 
 // Objets et caractéristiques modifiés entre deux pages, pour les mettre en avant dans le texte.
-function trackChanges(previous, next) {
+// L'avancée silencieuse des horloges n'en fait pas partie.
+function trackChanges(previous, { ticked = {}, ...next }) {
   const gained = next.inventory.filter((item) => !previous.inventory.includes(item));
   const lost = previous.inventory.filter((item) => !next.inventory.includes(item));
   const statChanges = Object.keys(next.stats)
-    .map((stat) => ({ stat, delta: next.stats[stat] - previous.stats[stat] }))
+    .map((stat) => ({ stat, delta: next.stats[stat] - previous.stats[stat] - (ticked[stat] ?? 0) }))
     .filter((change) => change.delta !== 0);
   return {
     ...next,
