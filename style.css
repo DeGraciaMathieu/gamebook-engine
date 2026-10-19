@@ -352,7 +352,17 @@ body {
   text-align: justify;
   hyphens: auto;
 }
-.page-number + .page-text::first-letter {
+.page-figure {
+  margin: 0 0 20px;
+}
+.page-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--ink-soft);
+}
+.page-number + .page-text::first-letter,
+.page-figure + .page-text::first-letter {
   float: left;
   margin: 6px 8px 0 0;
   font-size: 3.2em;

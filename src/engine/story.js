@@ -57,6 +57,7 @@ export function validateStory(story) {
   if (!story.id) errors.push('Champ "id" manquant');
   if (!story.title) errors.push('Champ "title" manquant');
   if (!story.start) errors.push('Champ "start" manquant');
+  if (story.art !== undefined && typeof story.art?.style !== 'string') errors.push('art.style : chaîne attendue');
   else checkTarget(story.start, 'start');
   if (story.death) checkTarget(story.death, 'death');
   if (stats.length === 0) errors.push('Aucune caractéristique définie dans hero.stats');
@@ -93,6 +94,7 @@ export function validateStory(story) {
   for (const [id, paragraph] of Object.entries(paragraphs)) {
     const where = `paragraphe "${id}"`;
     if (!paragraph.text) errors.push(`${where} : texte manquant`);
+    if (paragraph.image !== undefined) checkImage(paragraph.image, where, errors);
     checkEffects(paragraph.effects, where);
 
     for (const [index, choice] of (paragraph.choices ?? []).entries()) {
@@ -137,6 +139,13 @@ export function validateStory(story) {
   }
 
   return errors;
+}
+
+// Une illustration : un fichier relatif au dossier de l'histoire, un texte alternatif, et le prompt qui l'a produite.
+function checkImage(image, where, errors) {
+  if (typeof image.src !== 'string' || image.src === '') errors.push(`${where} : image.src manquant`);
+  if (typeof image.alt !== 'string' || image.alt === '') errors.push(`${where} : image.alt manquant`);
+  if (image.prompt !== undefined && typeof image.prompt !== 'string') errors.push(`${where} : image.prompt doit être une chaîne`);
 }
 
 // Avec une réserve de points, chaque caractéristique a soit une valeur fixe, soit une base et un maximum,

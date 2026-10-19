@@ -84,6 +84,7 @@ Une histoire invalide (cible manquante, objet inconnu…) est refusée au charge
 - **Ressources** comme l'or : une caractéristique avec `"capped": false` n'a pas de plafond et s'affiche sans maximum. `unit`, au singulier (ex : `"pièce d'or"`), sert au surlignage de « 5 pièces d'or » dans le texte et à l'affichage du marchand.
 - **Horloges** : une caractéristique avec `"tick": -1` varie de cette valeur à chaque choix pris, en silence (la variation n'est pas résumée sous le texte). Résoudre un test ou un assaut ne la fait pas avancer. Un déclencheur sur la valeur 0 en fait un compte à rebours.
 - `items` : catalogue des objets, référencés par leur clé.
+- `art.style` (optionnel) : la consigne de style commune à toutes les illustrations de l'histoire, préfixée à chaque prompt par `scripts/story-illustrate.mjs`.
 
 ### Paragraphe
 
@@ -104,6 +105,24 @@ Un paragraphe contient `text`, des `effects` optionnels appliqués à l'arrivée
 - `test` : `{ "type": "luck", "success": "<id>", "failure": "<id>" }` (réussite si 2d6 ≤ chance, puis chance −1) ou `{ "type": "stat", "stat": "habilete", "dice": "2d6", "success", "failure" }` (réussite si jet ≤ caractéristique).
 
 Un paragraphe sans `choices`, `combat` ni `test` est une fin.
+
+### Illustration
+
+```json
+"28": {
+  "image": { "src": "images/28.webp", "alt": "Le tyrannosaure franchit la clôture effondrée", "prompt": "Un tyrannosaure…" },
+  "text": "…"
+}
+```
+
+`image` est optionnel et s'affiche au-dessus du texte. `src` est relatif au dossier de l'histoire (`stories/<id>/`), `alt` est obligatoire. `prompt` décrit l'image à générer ; `art.style` à la racine de l'histoire y est préfixé. Les images sont générées une fois pour toutes et commitées :
+
+```bash
+OPENAI_API_KEY=… node scripts/story-illustrate.mjs stories/nublar/story.json              # génère les images manquantes
+OPENAI_API_KEY=… node scripts/story-illustrate.mjs stories/nublar/story.json --only 1,28 --force
+```
+
+Options : `--only <ids>`, `--force` (regénère même si le fichier existe), `--model` (`gpt-image-1`), `--quality` (`medium`), `--size` (`1024x1024`).
 
 ### Marchand
 

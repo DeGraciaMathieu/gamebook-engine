@@ -34,6 +34,8 @@ La référence complète est dans `README.md` à la racine. Cette fiche donne un
 
 `text` : chaîne ou tableau de chaînes (un élément par alinéa). `effects` optionnels appliqués à l'arrivée. Puis **un seul** parmi `choices`, `combat`, `test`. Un paragraphe sans les trois est une fin. `shop` s'ajoute à côté de `choices`.
 
+`image` optionnel : `{ "src": "images/7.webp", "alt": "…", "prompt": "…" }`, généré par `scripts/story-illustrate.mjs` avec le style commun `art.style` de l'histoire. Illustrer le lieu, pas l'issue ; ne pas montrer le héros de face.
+
 ```json
 "7": {
   "text": ["Alinéa 1.", "Alinéa 2."],

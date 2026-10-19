@@ -99,3 +99,13 @@ test('un combat valide sa caractéristique, ses dégâts et son armure', () => {
   assert.ok(errors.some((error) => error.includes('damage doit être')));
   assert.ok(errors.some((error) => error.includes('armor doit être')));
 });
+
+test('une illustration exige un fichier et un texte alternatif', () => {
+  const story = makeStory({ '1': { text: 'Fin', image: { src: 'images/1.webp', alt: 'Une crypte' } } });
+  assert.deepEqual(validateStory(story), []);
+  const broken = makeStory({ '1': { text: 'Fin', image: { src: '', prompt: 42 } } }, { art: {} });
+  const errors = validateStory(broken);
+  for (const needle of ['image.src', 'image.alt', 'image.prompt', 'art.style']) {
+    assert.ok(errors.some((error) => error.includes(needle)), `erreur attendue pour ${needle} :\n${errors.join('\n')}`);
+  }
+});

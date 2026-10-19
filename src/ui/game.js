@@ -12,6 +12,7 @@ export function renderGame({ story, state, menuOpen, muted, roll, fx, handlers }
     menuOpen && renderMenu(story, state, muted, handlers),
     el('article', { class: 'page' }, [
       el('p', { class: 'page-number' }, state.paragraphId),
+      paragraph.image && renderFigure(story, paragraph.image),
       ...renderText(story, state, paragraph.text),
       !roll && renderShop(story, state, handlers),
       renderActions(story, state, view, paragraph, { roll, fx, handlers }),
@@ -233,6 +234,13 @@ function renderEnding(state, handlers) {
       el('button', { class: 'btn btn-primary', onClick: handlers.onRestart }, 'Recommencer'),
       el('button', { class: 'btn btn-ghost', onClick: handlers.onQuit }, 'Retour à la bibliothèque'),
     ]),
+  ]);
+}
+
+// Les images d'une histoire vivent dans son dossier : stories/<id>/<src>.
+function renderFigure(story, image) {
+  return el('figure', { class: 'page-figure' }, [
+    el('img', { src: `stories/${story.id}/${image.src}`, alt: image.alt, loading: 'lazy', decoding: 'async' }),
   ]);
 }
 
