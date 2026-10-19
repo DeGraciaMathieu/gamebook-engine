@@ -33,6 +33,11 @@ export function isCapped(story, stat) {
   return story.hero.stats[stat].capped !== false;
 }
 
+// Une jauge inversée (radiation, faim, dette) se lit à l'envers : monter est une mauvaise nouvelle.
+export function isFavorable(story, stat, delta) {
+  return story.hero.stats[stat]?.inverted === true ? delta < 0 : delta > 0;
+}
+
 function statCaps(story, stats) {
   const caps = {};
   for (const stat of Object.keys(stats)) {

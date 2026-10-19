@@ -100,6 +100,13 @@ test('un combat valide sa caractéristique, ses dégâts et son armure', () => {
   assert.ok(errors.some((error) => error.includes('armor doit être')));
 });
 
+test('une jauge inversée se déclare par un booléen', () => {
+  const stats = (inverted) => ({ hero: { stats: { habilete: { label: 'H', value: 10 }, rads: { label: 'R', value: 0, inverted } } } });
+  assert.deepEqual(validateStory(makeStory({ '1': { text: 'Fin' } }, stats(true))), []);
+  const errors = validateStory(makeStory({ '1': { text: 'Fin' } }, stats('oui')));
+  assert.ok(errors.some((error) => error.includes('"inverted"')));
+});
+
 test('une illustration exige un fichier et un texte alternatif', () => {
   const story = makeStory({ '1': { text: 'Fin', image: { src: 'images/1.webp', alt: 'Une crypte' } } });
   assert.deepEqual(validateStory(story), []);

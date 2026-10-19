@@ -326,3 +326,12 @@ test('une caractéristique avec tick avance à chaque choix, en silence, mais pa
   assert.equal(fifth.paragraphId, '4');
   assert.equal(fifth.status, 'ended');
 });
+
+test('isFavorable lit une jauge inversée à l\'envers', async () => {
+  const { isFavorable } = await import('../src/engine/game.js');
+  const story = makeStory({ '1': { text: 'Fin' } }, { hero: { stats: { endurance: { label: 'E', value: 10 }, radiation: { label: 'R', value: 0, inverted: true } } } });
+  assert.equal(isFavorable(story, 'endurance', 2), true);
+  assert.equal(isFavorable(story, 'endurance', -2), false);
+  assert.equal(isFavorable(story, 'radiation', 2), false);
+  assert.equal(isFavorable(story, 'radiation', -2), true);
+});

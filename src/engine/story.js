@@ -64,6 +64,7 @@ export function validateStory(story) {
   if (story.hero?.points !== undefined) checkCreation(story, errors);
   for (const [name, definition] of Object.entries(story.hero?.stats ?? {})) {
     if (definition.tick !== undefined && typeof definition.tick !== 'number') errors.push(`hero.stats.${name} : "tick" doit être un nombre`);
+    if (definition.inverted !== undefined && typeof definition.inverted !== 'boolean') errors.push(`hero.stats.${name} : "inverted" doit être un booléen`);
   }
   (story.hero?.inventory ?? []).forEach((item) => checkItem(item, 'hero.inventory'));
 

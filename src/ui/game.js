@@ -1,6 +1,6 @@
 import { el } from './dom.js';
 import { renderDice } from './dice.js';
-import { currentParagraph, listChoices, hasChosen, describeTest, listOffers, isCapped } from '../engine/game.js';
+import { currentParagraph, listChoices, hasChosen, describeTest, listOffers, isCapped, isFavorable } from '../engine/game.js';
 import { combatBonus } from '../engine/modifiers.js';
 
 // `roll` décrit un lancer de dés en cours d'animation ; `fx` les effets visuels à jouer une fois sur ce rendu.
@@ -29,7 +29,7 @@ function renderHeader(story, view, fx, menuOpen, handlers) {
         el('span', { class: 'stat-label' }, definition.label),
         el('span', { class: `stat-value${delta ? ' is-bumped' : ''}` },
           isCapped(story, name) ? `${view.stats[name]}/${view.initialStats[name]}` : String(view.stats[name])),
-        delta && el('span', { class: `stat-delta ${delta > 0 ? 'delta-gain' : 'delta-loss'}` }, formatDelta(delta)),
+        delta && el('span', { class: `stat-delta ${isFavorable(story, name, delta) ? 'delta-gain' : 'delta-loss'}` }, formatDelta(delta)),
       ]);
     })),
     el('button', {
@@ -279,9 +279,10 @@ function describeStatChange(story, change) {
   const definition = story.hero.stats[change.stat];
   const label = definition?.label ?? change.stat;
   const gained = change.delta > 0;
+  const favorable = isFavorable(story, change.stat, change.delta);
   const quantity = definition?.unit ? `\\d+ ${unitPattern(definition.unit)}` : `\\d+ points? (?:d['’]|de |du )${escapeRegExp(label)}`;
   return {
-    className: gained ? 'stat-gain' : 'stat-loss',
+    className: favorable ? 'stat-gain' : 'stat-loss',
     patterns: [quantity, escapeRegExp(definition?.unit ?? label)],
     summary: `${label} ${gained ? '+' : '−'}${Math.abs(change.delta)}`,
   };
