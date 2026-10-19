@@ -29,6 +29,7 @@
       },
       "radiation": {
         "label": "Radiation",
+        "inverted": true,
         "description": "Ce que vous avez avalé de la Zone. Ça ne redescend qu'avec de l'anti-rad ou de la vodka. À 30, le corps cède.",
         "value": 0,
         "capped": false,
