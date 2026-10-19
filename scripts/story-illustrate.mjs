@@ -1,9 +1,11 @@
 // Génère les illustrations d'une histoire avec l'API Images d'OpenAI, une fois pour toutes :
 // chaque paragraphe avec `image.prompt` et sans fichier reçoit son image dans le dossier de l'histoire.
+// Pour une histoire en chapitres, `--only` accepte aussi les identifiants de la source (c03-5) via build-map.json.
 // Usage : OPENAI_API_KEY=… node scripts/story-illustrate.mjs stories/<id>/story.json [--only 1,28] [--force] [--model gpt-image-1] [--quality medium] [--size 1024x1024]
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { validateStory } from '../src/engine/story.js';
+import { readBuildMap } from './lib/story-source.mjs';
 
 const args = process.argv.slice(2);
 const path = args.find((arg) => !arg.startsWith('--'));
@@ -32,9 +34,11 @@ if (errors.length > 0) {
   console.error(`Histoire invalide :\n- ${errors.join('\n- ')}`);
   process.exit(1);
 }
+const buildMap = readBuildMap(path);
+const selected = (id) => only.length === 0 || only.includes(id) || only.includes(buildMap?.ids[id]);
 
 const pending = Object.entries(story.paragraphs)
-  .filter(([id, paragraph]) => paragraph.image?.prompt && (only.length === 0 || only.includes(id)))
+  .filter(([id, paragraph]) => paragraph.image?.prompt && selected(id))
   .filter(([, paragraph]) => force || !existsSync(join(dirname(path), paragraph.image.src)));
 if (pending.length === 0) {
   console.log('Rien à générer');

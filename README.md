@@ -22,7 +22,49 @@ node scripts/story-simulate.mjs stories/demo/story.json --runs 3000  # parties j
 node scripts/story-simulate.mjs stories/demo/story.json --strategy prudent
 ```
 
-Avec Claude Code, `/new-story <thème>` écrit une histoire complète en passant par ces contrôles, dans le style demandé (Défis Fantastiques, sobre ou picaresque, voir `.claude/skills/new-story/references/styles.md`), `/story-lint <id>` diagnostique une histoire existante, `/extend-story <id> <ajout>` greffe une branche. Les skills sont dans `.claude/skills/`.
+Avec Claude Code, `/new-story <thème>` écrit une histoire complète en passant par ces contrôles, dans le style demandé (Défis Fantastiques, sobre ou picaresque, voir `.claude/skills/new-story/references/styles.md`), `/new-long-story <thème>` écrit une histoire de 500 à 1000 paragraphes en chapitres rédigés par des sous-agents, `/story-lint <id>` diagnostique une histoire existante, `/extend-story <id> <ajout>` greffe une branche. Les skills sont dans `.claude/skills/`.
+
+## Histoire en chapitres
+
+Au-delà de 150 paragraphes, une histoire s'écrit en plusieurs fichiers dans `stories/<id>/source/`, et un script la fusionne en un `story.json` ordinaire que le moteur charge tel quel :
+
+```
+stories/<id>/source/story.src.json          manifeste : tout sauf les paragraphes (id, title, hero, items, modifiers, triggers, start, death…)
+stories/<id>/source/bible.md                 le monde, les personnages, les objets, les fins : ce que chaque rédacteur reçoit
+stories/<id>/source/chapters/<nn>-<nom>.json un chapitre : son contrat et ses paragraphes
+stories/<id>/story.json                      généré, commité : l'histoire jouable
+stories/<id>/build-map.json                  généré, commité : correspondance entre identifiants source et joués
+```
+
+Dans un chapitre `03-port.json`, les paragraphes s'appellent `c03-1`, `c03-2`… (préfixe `c<nn>-`, obligatoire, ce qui rend les collisions impossibles). Le contrat du chapitre dit comment il se branche aux autres :
+
+```json
+{
+  "title": "Le port du Sable Noir",
+  "summary": "Ce que le lecteur sait et possède en sortant du chapitre.",
+  "brief": "Consignes pour le rédacteur (facultatif).",
+  "entries": { "c03-1": "Arrivée par la route, de nuit" },
+  "exits": { "c04-1": "Embarquer sur la Louve", "c07-12": "Fuir par les marais" },
+  "provides": { "items": ["clef_rouillee"], "flags": ["pretre_vu"] },
+  "requires": { "items": [], "flags": ["marche_vu"] },
+  "image": "c03-5",
+  "paragraphs": { "c03-1": { "text": "…", "choices": [{ "text": "…", "to": "c04-1" }] } }
+}
+```
+
+- `entries` : tout ce par quoi on arrive de l'extérieur (sorties d'autres chapitres, `start`, `death`, cibles des déclencheurs), avec la situation d'arrivée.
+- `exits` : les seuls paragraphes extérieurs que le chapitre a le droit de viser ; chacun doit être une entrée déclarée de l'autre chapitre.
+- `provides` / `requires` : les objets et drapeaux que le chapitre donne, et ceux qu'il teste sans les donner (fournis en amont ou par le héros au départ).
+- `image` : le paragraphe illustré, un par chapitre au plus ; son `image.src` garde l'identifiant source (`images/c03-5.webp`), stable d'un build à l'autre.
+
+```bash
+node scripts/story-lint.mjs --chapter stories/<id>/source/chapters/03-port.json  # un chapitre seul : contrat, cibles externes déclarées tolérées, validation du moteur
+node scripts/story-lint.mjs stories/<id>          # contrats de tous les chapitres (sorties ↔ entrées, requis ↔ fourni, chapitres inatteignables), puis les contrôles habituels sur la fusion
+node scripts/story-build.mjs stories/<id> --seed 1  # fusion : paragraphes renumérotés de 1 à N dans un ordre tiré de la graine, cibles réécrites, build-map.json
+node scripts/story-simulate.mjs stories/<id>/story.json --runs 3000 --max-steps 2000  # avec build-map.json : identifiants traduits, jamais visités par chapitre
+```
+
+Un chapitre dont `paragraphs` est vide est « à écrire » : le lint de la source vérifie quand même son contrat, ce qui permet de valider un découpage avant la prose. `story.json` et `build-map.json` sont regénérés à chaque build et commités, pour rester jouables sans build ; on ne les édite jamais à la main. Les histoires existantes restent en un seul fichier.
 
 ## Structure
 
@@ -40,9 +82,11 @@ src/storage.js             sauvegarde auto en localStorage, une par histoire
 src/ui/                    rendu DOM : accueil, page de jeu
 stories/index.json         liste des histoires disponibles
 stories/<id>/story.json    une histoire
-scripts/                   contrôle (story-lint) et simulation (story-simulate) d'une histoire
-tests/                     tests du moteur
-.claude/skills/            commandes Claude Code : new-story, story-lint, extend-story
+stories/<id>/source/       histoire en chapitres (manifeste, bible, chapters/), fusionnée par story-build
+scripts/                   contrôle (story-lint), simulation (story-simulate), fusion (story-build), illustrations (story-illustrate)
+scripts/lib/               lecture et fusion d'une source en chapitres, contrôles partagés, contrats de chapitre
+tests/                     tests du moteur et des scripts
+.claude/skills/            commandes Claude Code : new-story, new-long-story, story-lint, extend-story
 ```
 
 ## Ajouter une histoire
@@ -122,7 +166,7 @@ OPENAI_API_KEY=… node scripts/story-illustrate.mjs stories/nublar/story.json  
 OPENAI_API_KEY=… node scripts/story-illustrate.mjs stories/nublar/story.json --only 1,28 --force
 ```
 
-Options : `--only <ids>`, `--force` (regénère même si le fichier existe), `--model` (`gpt-image-1`), `--quality` (`medium`), `--size` (`1024x1024`).
+Options : `--only <ids>` (pour une histoire en chapitres, les identifiants source `c03-5` sont acceptés), `--force` (regénère même si le fichier existe), `--model` (`gpt-image-1`), `--quality` (`medium`), `--size` (`1024x1024`).
 
 ### Marchand
 

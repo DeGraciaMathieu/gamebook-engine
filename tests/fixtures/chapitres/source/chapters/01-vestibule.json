@@ -1,0 +1,39 @@
+{
+  "title": "Le vestibule",
+  "summary": "Le héros a trouvé la clef et peut-être prié à l'autel ; il passe la porte, ouverte ou forcée.",
+  "brief": "Chapitre de départ : une boucle autour du vestibule, un test pour forcer la porte.",
+  "entries": { "c01-1": "Départ, dans le vestibule", "c01-mort": "Mort du héros (death)" },
+  "exits": { "c02-1": "Passer la porte avec la clef", "c02-2": "Forcer la porte" },
+  "provides": { "items": ["clef"], "flags": ["autel_vu"] },
+  "requires": { "items": [], "flags": [] },
+  "image": "c01-2",
+  "paragraphs": {
+    "c01-1": {
+      "text": "Vous entrez dans le vestibule. Une Clef brille sur le dallage.",
+      "effects": [{ "type": "item", "action": "add", "item": "clef" }],
+      "choices": [
+        { "text": "Ouvrir la porte avec la clef", "to": "c02-1", "if": { "type": "item", "item": "clef" } },
+        { "text": "Forcer la porte", "to": "c01-2" },
+        { "text": "Prier à l'autel", "to": "c01-3" }
+      ]
+    },
+    "c01-2": {
+      "image": { "src": "images/c01-2.webp", "alt": "Une porte cloutée au fond d'un vestibule", "prompt": "Une porte cloutée au fond d'un vestibule de pierre" },
+      "text": "La porte résiste. Tentez votre Chance.",
+      "test": { "type": "luck", "success": "c02-2", "failure": "c01-4" }
+    },
+    "c01-3": {
+      "text": "Vous priez à l'autel. Une lumière vous suit désormais.",
+      "effects": [{ "type": "flag", "flag": "autel_vu" }],
+      "choices": [{ "text": "Revenir au vestibule", "to": "c01-1" }]
+    },
+    "c01-4": {
+      "text": "Raté : la porte vous renvoie en arrière. Vous perdez 2 points d'Endurance.",
+      "effects": [{ "type": "stat", "stat": "endurance", "delta": -2 }],
+      "choices": [{ "text": "Revenir au vestibule", "to": "c01-1" }]
+    },
+    "c01-mort": {
+      "text": "Vous mourez dans le vestibule, la porte toujours close."
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "title": "La salle",
+  "summary": "Le héros a affronté ou payé le gardien et quitté la salle par la lumière ou dans le noir.",
+  "entries": { "c02-1": "Entrée par la porte ouverte", "c02-2": "Entrée par la porte forcée", "c02-3": "Déclencheur « Ruiné », de n'importe où" },
+  "exits": {},
+  "provides": { "items": ["potion"], "flags": [] },
+  "requires": { "items": [], "flags": ["autel_vu"] },
+  "paragraphs": {
+    "c02-1": {
+      "text": "La porte s'ouvre sans bruit. Une Potion est posée sur un coffre, et un gardien se lève.",
+      "effects": [{ "type": "item", "action": "add", "item": "potion" }],
+      "combat": { "name": "Gardien", "habilete": 6, "endurance": 4, "win": "c02-4", "flee": { "to": "c02-2" } }
+    },
+    "c02-2": {
+      "text": "La porte cède dans un fracas. Le gardien vous barre le passage.",
+      "choices": [
+        { "text": "Avancer malgré lui", "to": "c02-4" },
+        { "text": "Payer le gardien (2 pièces d'or)", "to": "c02-5", "if": { "type": "stat", "stat": "or", "op": ">=", "value": 2 }, "effects": [{ "type": "stat", "stat": "or", "delta": -2 }] }
+      ]
+    },
+    "c02-3": {
+      "text": "Vous n'avez plus une pièce. On vous jette dehors."
+    },
+    "c02-4": {
+      "text": "Le gardien ne vous gêne plus. Deux issues s'ouvrent.",
+      "choices": [
+        { "text": "Sortir par la lumière", "to": "c02-5", "if": { "type": "flag", "flag": "autel_vu" } },
+        { "text": "Sortir dans le noir", "to": "c02-6" }
+      ]
+    },
+    "c02-5": {
+      "text": "La lumière vous guide dehors. Vous avez réussi."
+    },
+    "c02-6": {
+      "text": "Vous sortez à tâtons, sans savoir ce que vous laissez derrière vous."
+    }
+  }
+}

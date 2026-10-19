@@ -1,0 +1,27 @@
+{
+  "id": "chapitres",
+  "title": "Les deux salles",
+  "summary": "Histoire-fixture en deux chapitres pour les tests de fusion et de lint.",
+  "start": "c01-1",
+  "death": "c01-mort",
+  "hero": {
+    "stats": {
+      "habilete": { "label": "Habileté", "value": 10 },
+      "endurance": { "label": "Endurance", "value": 20 },
+      "chance": { "label": "Chance", "value": 8 },
+      "or": { "label": "Or", "value": 5, "capped": false, "unit": "pièce d'or" }
+    },
+    "inventory": [],
+    "flags": {}
+  },
+  "items": {
+    "clef": { "name": "Clef" },
+    "potion": { "name": "Potion" }
+  },
+  "modifiers": [
+    { "label": "Potion", "if": { "type": "item", "item": "potion" }, "combat": { "attack": 1 } }
+  ],
+  "triggers": [
+    { "label": "Ruiné", "if": { "type": "stat", "stat": "or", "op": "=", "value": 0 }, "to": "c02-3" }
+  ]
+}
