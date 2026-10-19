@@ -2,6 +2,9 @@
   "id": "nublar",
   "title": "La Nuit d'Isla Nublar",
   "summary": "Les clôtures de Jurassic Park viennent de s'éteindre, la tempête frappe l'île, et le cargo de ravitaillement largue les amarres dans deux heures au quai Est. Vous êtes technicien de maintenance, et il n'y aura pas d'autre bateau.",
+  "art": {
+    "style": "Illustration de livre-jeu des années 1980 : gravure à la plume en noir et blanc, encre sur papier, hachures serrées, forts contrastes, cadrage pleine page, ambiance de nuit. La pluie tropicale n'apparaît qu'en extérieur, jamais dans une pièce fermée. Aucun texte, aucune lettre, aucun cadre décoratif. Le héros n'est jamais montré de face : de dos, de loin ou en silhouette."
+  },
   "start": "1",
   "death": "mort",
   "hero": {
@@ -177,6 +180,11 @@
   ],
   "paragraphs": {
     "1": {
+      "image": {
+        "src": "images/1.webp",
+        "alt": "Le hangar des véhicules plongé dans le noir, une porte de tôle ouverte sur la tempête",
+        "prompt": "Intérieur d'un grand hangar à véhicules plongé dans l'obscurité, jeeps alignées, outils suspendus. Au fond, une porte de tôle grande ouverte laisse entrer des rideaux de pluie et des éclairs sur la jungle. Une silhouette de dos, lampe torche à la main, regarde dehors."
+      },
       "text": [
         "Vous êtes technicien de maintenance à Jurassic Park, sur l'île d'Isla Nublar, et vous étiez de garde ce soir dans le hangar des véhicules lorsque toutes les lumières se sont éteintes d'un seul coup. Dehors, la tempête tropicale annoncée depuis trois jours frappe l'île de plein fouet ; la pluie tombe en rideaux et le vent fait claquer les portes de tôle.",
         "Sur votre radio de service, une voix affolée répète que les clôtures électriques de tous les enclos sont hors tension, et qu'il faut gagner le quai Est : le cargo de ravitaillement largue les amarres dans deux heures pour fuir l'ouragan, et il n'y aura pas d'autre bateau. Vous savez ce que signifient des clôtures sans courant sur cette île. Il vous reste 120 minutes de TEMPS, chaque décision en coûtera une, et chaque détour bien plus."
@@ -220,12 +228,22 @@
       }
     },
     "4": {
+      "image": {
+        "src": "images/4.webp",
+        "alt": "Le bunker de maintenance, deux tonnes d'acier refermées",
+        "prompt": "L'intérieur d'un bunker de béton nu, éclairé par une seule lampe : une lourde porte blindée fermée, des rations et des bidons d'eau sur une étagère. Une silhouette assise par terre contre le mur, de dos, tête baissée. Silence et poussière."
+      },
       "text": [
         "Le badge ouvre la porte blindée du bunker de maintenance, et vous la refermez derrière vous sur deux tonnes d'acier. À l'intérieur, de l'eau, des rations, une lampe, et le silence. Vous vous asseyez contre le mur, et vous ne bougez plus.",
         "Vous entendrez les hélicoptères passer deux jours plus tard, et vous ne sortirez pas. Vous sortirez le quatrième jour, quand les rations seront finies, sur une île vide, et l'on vous retrouvera sur la plage, trois semaines après, vivant et incapable de dire comment. Votre aventure s'achève ici."
       ]
     },
     "5": {
+      "image": {
+        "src": "images/5.webp",
+        "alt": "Le carrefour des pistes, un camion arrêté phares allumés",
+        "prompt": "Un carrefour de pistes de terre dans la jungle, la nuit sous la pluie, sous un panneau de bois à trois flèches. Un camion de maintenance est arrêté en travers de la piste, phares allumés, portières ouvertes, les faisceaux pleins de pluie. Plus loin, un arbre abattu barre la route. Vu de dos, depuis l'arrière d'une silhouette."
+      },
       "text": [
         "Au carrefour des pistes, trois chemins se séparent sous un panneau de bois. Vers l'est, la route du quai Est descend vers la côte. Vers le sud, un sentier s'enfonce dans la jungle. Un camion de maintenance est arrêté en travers de la piste, phares allumés, portières ouvertes. Plus loin, un arbre abattu par la tempête barre la route de l'est.",
         "Vous pouvez aussi revenir vers la route des enclos. Le chemin jusqu'ici vous a coûté 3 minutes de TEMPS. Qu'allez-vous faire ?"
@@ -340,6 +358,11 @@
       ]
     },
     "9": {
+      "image": {
+        "src": "images/9.webp",
+        "alt": "Le bâtiment des raptors derrière sa clôture de cinq mètres",
+        "prompt": "À la lisière de la jungle, la nuit sous la pluie : une hutte de gardien avec une lampe-tempête allumée au bord d'une piste, et plus loin un grand bâtiment de béton gris sans fenêtres, entouré d'une clôture de cinq mètres de haut. Une silhouette de dos sur la piste."
+      },
       "text": [
         "À la lisière de la jungle, le sentier rejoint une piste de service. Une hutte de gardien se dresse au bord du chemin, sa lampe-tempête encore allumée. Plus loin, un grand bâtiment de béton gris, entouré d'une clôture haute de cinq mètres : le bâtiment des raptors. La piste le longe pour descendre vers la plage du quai Est.",
         "Vous pouvez aussi remonter vers le carrefour des pistes. Le chemin jusqu'ici vous a coûté 3 minutes de TEMPS. Qu'allez-vous faire ?"
@@ -391,6 +414,11 @@
       ]
     },
     "10": {
+      "image": {
+        "src": "images/10.webp",
+        "alt": "Le raptor jaillit des fougères, griffe en faucille levée",
+        "prompt": "Un vélociraptor de deux mètres jaillit de fougères géantes, la nuit, sous la pluie : peau tachetée, mâchoire ouverte, griffe en faucille levée, muscles tendus. Portrait de l'animal en pleine attaque, vu de face, occupant toute l'image."
+      },
       "text": "Le raptor jaillit des fougères, deux mètres de muscles tachetés, la griffe en faucille levée, et il frappe avant même que vous ayez compris d'où il venait. Sa peau est épaisse comme du cuir bouilli. Vous devez le combattre, ou fuir vers la plage en lui abandonnant un morceau de vous.",
       "combat": {
         "name": "Velociraptor",
@@ -553,6 +581,11 @@
       }
     },
     "21": {
+      "image": {
+        "src": "images/21.webp",
+        "alt": "Le laboratoire, longue salle blanche aux paillasses couvertes d'instruments",
+        "prompt": "Un long laboratoire de génétique plongé dans la pénombre, paillasses couvertes de microscopes, d'incubateurs et de verrerie, éclairé par une lampe torche. À droite, une porte vitrée vers une nurserie pleine d'œufs sous lampes. À gauche, une armoire métallique verrouillée. Aucun texte lisible."
+      },
       "text": "Le laboratoire est une longue salle blanche, aux paillasses couvertes d'instruments. À droite, une porte mène à la nurserie, où l'on fait éclore les œufs. À gauche, une armoire métallique verrouillée porte l'inscription MATÉRIEL DE TERRAIN. Qu'allez-vous faire ?",
       "choices": [
         {
@@ -586,6 +619,11 @@
       ]
     },
     "23": {
+      "image": {
+        "src": "images/23.webp",
+        "alt": "Le tyrannosaure surgit sur la route des enclos, sous la pluie",
+        "prompt": "Une route de jungle la nuit, sous une pluie battante. Un tyrannosaure immense surgit entre les arbres et une clôture électrique effondrée, gueule ouverte, éclairé par un éclair. Au premier plan, de dos et minuscule, une silhouette court vers nous."
+      },
       "text": [
         "Le sol tremble. Derrière vous, les arbres s'écartent, et le tyrannosaure sort de la jungle dans un éclair, la gueule ouverte, plus grand que tout ce que vous aviez imaginé. Il vous a vu. Vous courez.",
         "Ce n'est pas un combat, c'est une course, et elle se joue sur votre ENDURANCE : chaque assaut gagné vous éloigne de lui, chaque assaut perdu, c'est sa gueule qui se referme à un mètre de vous et un arbre qui vous frappe au passage. Si vous fuyez, vous vous jetez dans la fosse de drainage au bord de la piste."
@@ -677,6 +715,11 @@
       ]
     },
     "29": {
+      "image": {
+        "src": "images/29.webp",
+        "alt": "La clôture de l'enclos du tyrannosaure couchée dans la boue",
+        "prompt": "Une large piste de terre la nuit sous la pluie, longeant une immense clôture électrique en acier dont une section entière est couchée dans la boue, câbles arrachés, isolateurs brisés. Derrière la brèche, la jungle noire. Au premier plan, une silhouette de dos s'arrête devant la brèche."
+      },
       "text": [
         "La route des enclos est une large piste de terre qui longe les grands enclos du parc. À votre gauche, la clôture de l'enclos du tyrannosaure est couchée dans la boue, ses câbles arrachés. Par la brèche, on pourrait couper à travers l'enclos et gagner un quart d'heure, mais seul un fou s'y risquerait sans savoir où se trouve son occupant, par la radio ou pour l'avoir vu de ses yeux.",
         "Un peu plus loin, un piquet et une chaîne marquent l'endroit où l'on attachait la chèvre. Un mirador de bois domine la route, et un abri pour les visiteurs offre un toit contre la pluie. Le chemin jusqu'ici vous a coûté 3 minutes de TEMPS. Qu'allez-vous faire ?"
@@ -789,6 +832,11 @@
       }
     },
     "34": {
+      "image": {
+        "src": "images/34.webp",
+        "alt": "Un raptor bondit sur le toit de la cabane de la pompe",
+        "prompt": "Une cabane de pompe sur une plage de sable noir, la nuit sous la pluie. Un vélociraptor bondit d'un seul élan sur le toit, griffes en avant, silhouette découpée par un éclair. Une silhouette humaine accroupie de dos près de la cheminée."
+      },
       "text": "Un raptor a senti votre odeur. Il tourne autour de la cabane, puis bondit sur le toit d'un seul élan. Vous devez le combattre, ou sauter du toit dans le sable et courir vers les rochers en lui abandonnant un morceau de vous.",
       "combat": {
         "name": "Velociraptor",
@@ -803,6 +851,11 @@
       }
     },
     "35": {
+      "image": {
+        "src": "images/35.webp",
+        "alt": "La serre tropicale, grande verrière pleine de fougères du crétacé",
+        "prompt": "L'intérieur d'une grande serre victorienne la nuit : verrière ruisselante de pluie, fougères arborescentes et cycas du crétacé, allées de gravier, une lampe torche qui éclaire un mouvement entre les frondes. Une silhouette de dos dans l'allée."
+      },
       "text": "La serre tropicale est une grande verrière où les botanistes du parc cultivent les plantes du crétacé. Il y fait chaud et sec, et l'on n'entend plus la pluie. Quelque chose remue entre les fougères.",
       "choices": [
         {
@@ -927,6 +980,11 @@
       ]
     },
     "43": {
+      "image": {
+        "src": "images/43.webp",
+        "alt": "Le marais aux eaux noires et son caillebotis de planches disjointes",
+        "prompt": "Un marais de jungle aux eaux noires, la nuit sous la pluie : un caillebotis de planches disjointes et moussues serpente entre les troncs morts et les roseaux, à demi submergé. Une silhouette de dos avance avec précaution, torche braquée sur les planches."
+      },
       "text": "Le sentier s'enfonce dans un marais aux eaux noires, où des planches disjointes forment un caillebotis. Sous la pluie, on ne distingue plus les planches de la vase.",
       "choices": [
         {
@@ -1111,6 +1169,11 @@
       ]
     },
     "56": {
+      "image": {
+        "src": "images/56.webp",
+        "alt": "La plage de sable noir et, au loin, les lumières du quai",
+        "prompt": "Une plage de sable noir battue par les vagues, la nuit, au pied d'une falaise. Au loin, les lumières d'un quai et d'un cargo, moteurs allumés. Entre les deux, une cabane de pompe à moitié ensablée et des rochers. Une silhouette de dos sur le sable regarde les lumières."
+      },
       "text": [
         "La plage du quai Est est une bande de sable noir battue par les vagues, au pied d'une falaise. À cinq cents mètres, les lumières du quai : le cargo est encore là, moteurs allumés, et des hommes s'affairent sur la passerelle. Entre vous et lui, une cabane de pompe à moitié ensablée.",
         "Si vous avez repéré le quai depuis une hauteur ou lu le plan de l'île, vous savez par où passer dans les rochers ; sinon, il faudra chercher le passage, à moins qu'il ne reste si peu de temps qu'il faille foncer droit devant. Si vous avez une radio, vous pouvez appeler le cargo. La descente jusqu'ici vous a coûté 3 minutes de TEMPS. Qu'allez-vous faire ?"
@@ -1256,6 +1319,11 @@
       ]
     },
     "58": {
+      "image": {
+        "src": "images/58.webp",
+        "alt": "Une bande de compsognathus sautille autour de vous",
+        "prompt": "Une demi-douzaine de petits dinosaures hauts comme des poulets, aux mouvements saccadés, bondissant hors des buissons autour de bottes vues de très près, la nuit dans la jungle sous la pluie. Vu du sol, à hauteur des animaux."
+      },
       "text": "Ils sortent des buissons à cinq ou six, de petits dinosaures hauts comme des poulets, aux mouvements saccadés, qui sautillent autour de vous en poussant des cris aigus. Ce sont des compsognathus, et ils mordent. Vous devez les combattre.",
       "combat": {
         "name": "Compsognathus",
@@ -1285,6 +1353,11 @@
       ]
     },
     "60": {
+      "image": {
+        "src": "images/60.webp",
+        "alt": "Le dilophosaure déploie sa collerette au milieu de la piste",
+        "prompt": "Un dilophosaure de la taille d'un grand chien, debout au milieu d'une piste de jungle la nuit : peau tachetée, double crête sur le crâne, tête penchée, et une large collerette de peau déployée autour du cou. Portrait de l'animal de face, sous la pluie."
+      },
       "text": "Au milieu de la piste se tient un dinosaure de la taille d'un grand chien, à la peau tachetée et à la double crête sur le crâne. Il penche la tête, et une collerette de peau se déploie autour de son cou avec un sifflement. C'est un dilophosaure, et il crache un venin qui aveugle. Si vous possédez une fusée de détresse, vous pouvez l'allumer pour l'effrayer. Vous pouvez aussi l'attaquer, ou tenter de l'esquiver.",
       "choices": [
         {
@@ -1345,6 +1418,11 @@
       ]
     },
     "63": {
+      "image": {
+        "src": "images/63.webp",
+        "alt": "Le panneau EAST DOCK tourné sur son poteau, des traces de pneus dans la boue",
+        "prompt": "Un embranchement de pistes dans la jungle, la nuit sous la pluie. Un panneau de bois en forme de flèche sur un poteau de travers, heurté, tourné dans une direction douteuse. Dans la boue, des traces de pneus fraîches quittent la piste vers la gauche. Aucun texte lisible sur le panneau."
+      },
       "text": [
         "La route du quai Est est une piste étroite qui serpente vers la côte à travers la jungle. À l'embranchement, un panneau de bois indique EAST DOCK avec une flèche, mais le poteau a été heurté et le panneau a tourné : la flèche pourrait aussi bien montrer n'importe quelle direction.",
         "Dans la boue, des traces de pneus fraîches quittent la piste vers la gauche. Si vous possédez la carte du parc, vous pouvez vérifier le bon chemin. La descente jusqu'ici vous a coûté 3 minutes de TEMPS. Qu'allez-vous faire ?"
@@ -1725,6 +1803,11 @@
       }
     },
     "87": {
+      "image": {
+        "src": "images/87.webp",
+        "alt": "Ramos coincé sous une étagère renversée, la jeep intacte à côté",
+        "prompt": "Un garage la nuit, éclairé par une lampe torche posée au sol : une étagère métallique renversée a coincé la jambe d'un gardien de sécurité en uniforme, allongé, grimaçant. À côté, une jeep de parc intacte, ses clefs pendues à un tableau au mur. Vu depuis la porte, de dos."
+      },
       "text": [
         "Dans le garage, une étagère métallique s'est renversée sur Ramos, un gardien de la sécurité que vous connaissez bien. Il est vivant, mais sa jambe est coincée et il ne pourra pas marcher cette nuit. À côté de lui, la jeep de service est intacte, et ses clefs pendent au tableau.",
         "Si vous désirez dégager Ramos et le porter sur votre épaule jusqu'au bateau, cela vous coûtera 10 minutes, et vous ne pourrez plus vous battre ni grimper aussi bien. Vous pouvez aussi prendre les clefs de la jeep. Qu'allez-vous faire ?"
@@ -1777,6 +1860,11 @@
       ]
     },
     "88": {
+      "image": {
+        "src": "images/88.webp",
+        "alt": "Le sentier de la jungle sous les fougères géantes",
+        "prompt": "Une piste de service étroite s'enfonçant dans une jungle de fougères géantes et de troncs moussus, la nuit, la pluie filtrée par la canopée. Au loin, une clairière herbeuse entre deux lisières et la verrière d'une serre. Une silhouette de dos, minuscule, avance sur la piste."
+      },
       "text": [
         "Le sentier de la jungle contourne les enclos par le sud. C'est une piste de service bordée de fougères géantes, où la pluie tombe moins dru sous les arbres. Devant vous, une plaine herbeuse s'ouvre entre deux lisières ; sur votre gauche, la serre tropicale du parc ; sur votre droite, un poste de garde et un ruisseau. Plus loin, le sentier traverse un marais, et, dans un creux, quelque chose qui ressemble à un nid.",
         "Le chemin jusqu'ici vous a coûté 3 minutes de TEMPS. Qu'allez-vous faire ?"
@@ -1837,6 +1925,11 @@
       ]
     },
     "90": {
+      "image": {
+        "src": "images/90.webp",
+        "alt": "Le hangar de maintenance, jeeps endormies et trappe ouverte au fond",
+        "prompt": "Intérieur d'une vaste halle de tôle, la nuit, éclairée seulement par une lampe torche : des véhicules de parc alignés, un dépôt de matériel derrière un grillage, un groupe électrogène silencieux, et au fond une trappe ouverte dans le sol de béton. Une silhouette de dos, torche en main."
+      },
       "text": [
         "Le hangar de maintenance est une vaste halle de tôle où dorment les véhicules du parc. Dans le noir, vous distinguez le dépôt de matériel, derrière son grillage ; la porte du garage, où l'on entend quelqu'un gémir ; le groupe électrogène de secours, qui n'a pas démarré ; le vestiaire du personnel et le bureau du chef d'atelier. Au fond, une trappe descend vers le tunnel de service qui mène au centre des visiteurs. La grande porte, elle, ouvre sur la route sous la pluie.",
         "Si vous avez une radio, vous pouvez écouter les annonces. Si vous possédez les clefs de la jeep, vous pouvez prendre la route au volant. Qu'allez-vous faire ?"
@@ -2019,6 +2112,11 @@
       ]
     },
     "98": {
+      "image": {
+        "src": "images/98.webp",
+        "alt": "L'aube grise sur le toit, un hélicoptère à l'horizon",
+        "prompt": "Depuis le toit d'une cabane sur une plage de sable noir, à l'aube grise après la tempête : la mer calme, la plage vide, et à l'horizon le point noir d'un hélicoptère. Une silhouette de dos, debout sur le toit, agite les bras."
+      },
       "text": [
         "L'aube vient, grise, et la pluie cesse. Depuis le toit, vous voyez la plage vide et la mer calme, et à l'horizon, le point noir d'un hélicoptère qui grossit. Vous agitez les bras. Ils vous voient.",
         "Dans l'hélicoptère, personne ne vous pose de questions. Vous ne saurez jamais combien ont survécu à cette nuit sur l'île, ni ce que sont devenus ceux qui y restaient. Votre aventure s'achève ici."
@@ -2144,6 +2242,11 @@
       ]
     },
     "107": {
+      "image": {
+        "src": "images/107.webp",
+        "alt": "Depuis la terrasse, le tyrannosaure au milieu de la route sous un éclair",
+        "prompt": "Vue depuis une terrasse de béton dominant une plaine de parc, la nuit sous l'orage. Un éclair illumine toute la plaine et révèle, loin sur une route, un tyrannosaure debout, haut comme une maison, la gueule levée vers la pluie. Une silhouette de dos appuyée à la rambarde, au premier plan."
+      },
       "text": "De la terrasse, vous dominez le parc jusqu'à la route des enclos. Un éclair illumine la plaine, et vous le voyez : le tyrannosaure, debout au milieu de la route, haut comme une maison, la gueule levée vers la pluie. Il est loin. Il n'est pas assez loin. Vous perdez 1 point de SANG-FROID.",
       "effects": [
         {
@@ -2341,6 +2444,11 @@
       ]
     },
     "118": {
+      "image": {
+        "src": "images/118.webp",
+        "alt": "Le pont de lianes au-dessus du ravin, des planches manquantes",
+        "prompt": "Un pont de lianes et de planches enjambant un ravin de jungle, la nuit sous la pluie et le vent, plusieurs planches manquantes, le pont balançant. Au fond, la mer et une plage. Une silhouette de dos s'engage sur les premières planches."
+      },
       "text": "Le pont de lianes enjambe le ravin qui sépare la jungle de la plage. Il se balance dans le vent, et il manque des planches. Testez votre Habileté.",
       "test": {
         "type": "stat",
@@ -2465,6 +2573,11 @@
       ]
     },
     "125": {
+      "image": {
+        "src": "images/125.webp",
+        "alt": "Un nid de raptors sous les fougères, les coquilles fraîchement éclos",
+        "prompt": "Sous des fougères géantes, la nuit sous la pluie, un nid de terre et de feuilles contenant une douzaine d'œufs de la taille d'un melon, la moitié éclos, coquilles brisées encore humides. Vu de près, éclairé par une lampe torche, une main de dos tenant la torche au bord du cadre."
+      },
       "text": "Dans le creux, sous les fougères, un nid de terre et de feuilles contient une douzaine d'œufs de la taille d'un melon, dont la moitié sont éclos. Les coquilles sont fraîches. Les raptors se reproduisent, et ils ne devraient pas. Vous perdez 2 points de SANG-FROID.",
       "effects": [
         {
@@ -2579,6 +2692,11 @@
       }
     },
     "133": {
+      "image": {
+        "src": "images/133.webp",
+        "alt": "La jeep sort du hangar, les phares noyés de pluie",
+        "prompt": "Vu de l'intérieur d'une jeep, depuis la banquette arrière derrière la silhouette du conducteur : les essuie-glaces débordés, le pare-brise ruisselant, les phares qui n'éclairent que des rideaux d'eau sur une piste de boue bordée de jungle, la nuit."
+      },
       "text": "Vous lancez le moteur de la jeep et vous sortez du hangar sous une pluie si dense que les essuie-glaces ne servent à rien. La route des enclos est une rivière de boue, et les phares n'éclairent que des rideaux d'eau. Testez votre Habileté.",
       "test": {
         "type": "stat",
@@ -2659,6 +2777,11 @@
       ]
     },
     "139": {
+      "image": {
+        "src": "images/139.webp",
+        "alt": "Le cargo s'écarte du quai, l'île s'éloigne dans la pluie",
+        "prompt": "Vu depuis le pont d'un cargo de ravitaillement sous la pluie, la nuit : la passerelle se relève, le quai s'éloigne, et derrière, une île sombre sans aucune lumière, couverte de jungle, sous un ciel d'orage. Une silhouette de dos s'accroche au bastingage."
+      },
       "text": [
         "Un marin vous tire sur le pont et la passerelle se relève dans un grincement de treuil. Le cargo s'écarte du quai, et Isla Nublar s'éloigne dans la pluie, avec ses lumières mortes et ses cris. Vous êtes vivant.",
         "Vous pensez à Ramos, resté sous son étagère dans le garage, ou à ceux que vous n'avez pas cherchés. À l'aube, vous verrez les hélicoptères passer vers l'île. Vous ne saurez jamais s'ils l'ont trouvé. Votre aventure s'achève ici."
@@ -2771,6 +2894,11 @@
       ]
     },
     "147": {
+      "image": {
+        "src": "images/147.webp",
+        "alt": "La salle de contrôle éteinte, un seul écran allumé : le plan de l'île",
+        "prompt": "Une salle de contrôle sombre et vide, rangées de consoles et d'écrans éteints. Un seul grand écran allumé montre le plan d'une île avec des lignes de clôtures qui clignotent. Une silhouette de dos devant l'écran, éclairée par sa lueur."
+      },
       "text": "La salle de contrôle est vide, et ses écrans sont éteints, sauf un : le plan de l'île, où les clôtures hors tension clignotent en rouge, toutes. Vous y lisez le chemin le plus court vers le quai Est, et où ne surtout pas passer. Ajoutez 10 minutes à votre TEMPS. Sur la console, un interrupteur permet de réarmer manuellement la clôture du bâtiment des raptors.",
       "effects": [
         {
@@ -2795,6 +2923,11 @@
       ]
     },
     "148": {
+      "image": {
+        "src": "images/148.webp",
+        "alt": "Le quai Est, le cargo contre la jetée, un homme en imperméable au pied de la passerelle",
+        "prompt": "Une jetée de béton la nuit sous la tempête : un cargo de ravitaillement tangue contre ses défenses, passerelle à moitié levée, marins sur le pont. Au pied de la passerelle, un homme en imperméable, seul, scrute la plage avec une lampe. Vu de loin depuis la plage, de dos."
+      },
       "text": [
         "Le quai Est est une jetée de béton où le cargo tangue contre ses défenses, sa passerelle levée à moitié, ses marins qui crient dans le vent. Au pied de la passerelle, un homme en imperméable, qui n'est pas un marin, scrute la plage avec une lampe. Il attend quelqu'un, et ce quelqu'un ne viendra pas.",
         "Si vous portez Ramos, la passerelle sera plus dure à franchir. Si vous avez la bombe de mousse à raser, l'homme en imperméable l'a reconnue à votre ceinture et il vous barre la passerelle : il faudra lui parler, ou jeter la bombe à l'eau sous ses yeux. Qu'allez-vous faire ?"
@@ -2955,6 +3088,11 @@
       }
     },
     "155": {
+      "image": {
+        "src": "images/155.webp",
+        "alt": "Attaché à la cheminée sur le toit de la cabane, des choses passent sur le sable",
+        "prompt": "Une cabane de pompe sur une plage de sable noir, la nuit sous la pluie. Sur le toit, une silhouette attachée à la cheminée avec une ceinture, de dos. En bas sur le sable, des silhouettes de dinosaures passent dans l'ombre, museaux baissés."
+      },
       "text": "Vous grimpez sur le toit de la cabane de la pompe, le plus haut point de la plage, et vous vous attachez à la cheminée avec votre ceinture. La nuit est longue. En bas, sur le sable, des choses passent, s'arrêtent, flairent, et repartent. Tentez votre Chance.",
       "test": {
         "type": "luck",
@@ -2963,6 +3101,11 @@
       }
     },
     "156": {
+      "image": {
+        "src": "images/156.webp",
+        "alt": "Le grand hall du centre des visiteurs, sous les squelettes suspendus",
+        "prompt": "Le grand hall d'un centre des visiteurs moderne, verre et béton, totalement plongé dans le noir. Des squelettes de dinosaures suspendus au plafond, éclairés par le faisceau d'une seule lampe torche. Une mezzanine à l'étage, des portes closes. Une silhouette de dos, petite, au centre du hall."
+      },
       "text": [
         "Le centre des visiteurs est un vaste bâtiment de verre et de béton, plongé dans le noir. Dans le grand hall, sous les squelettes suspendus, vous distinguez l'entrée du restaurant, la boutique de souvenirs, les cuisines, la salle de projection et les portes du parking. À l'étage, la salle de contrôle et le laboratoire sont fermés par des serrures à badge. L'infirmerie est au fond du couloir, et une terrasse domine le parc.",
         "Deux issues mènent vers l'est : la route des enclos, la plus directe, et le sentier de la jungle, qui contourne les enclos par le sud. La traversée du parc vous a coûté 3 minutes de TEMPS. Où désirez-vous aller ?"
@@ -3059,6 +3202,11 @@
       ]
     },
     "158": {
+      "image": {
+        "src": "images/158.webp",
+        "alt": "La cascade gonflée par la pluie et son bassin d'écume",
+        "prompt": "Une cascade de jungle gonflée par la pluie tombant dans un bassin d'écume, la nuit. On devine derrière la chute l'ouverture d'une grotte, et au bord du bassin un arbre immense. Une silhouette de dos, petite, au bord de l'eau."
+      },
       "text": "La piste débouche sur une cascade gonflée par la pluie, qui tombe dans un bassin d'écume. De là, trois chemins : la rivière, qu'il faut traverser à gué pour gagner le pont de lianes ; une grotte, derrière la chute d'eau, dont les ouvriers disent qu'elle ressort près de la plage ; et un grand arbre, au bord du bassin, d'où l'on doit voir la côte. Le chemin jusqu'ici vous a coûté 3 minutes de TEMPS. Qu'allez-vous faire ?",
       "effects": [
         {
@@ -3122,6 +3270,11 @@
       }
     },
     "mort": {
+      "image": {
+        "src": "images/mort.webp",
+        "alt": "Une lampe torche tombée dans la boue, la pluie sur les fougères",
+        "prompt": "Une lampe torche abandonnée dans la boue, encore allumée, son faisceau couché dans les fougères sous la pluie, la nuit dans la jungle. Des traces de griffes dans la boue. Aucune figure humaine."
+      },
       "text": "Vous ne vous relèverez pas. La pluie continue de tomber sur Isla Nublar, le cargo larguera ses amarres sans vous, et au matin, les hélicoptères ne trouveront que ce que l'île aura bien voulu leur laisser. Votre aventure s'achève ici."
     }
   }
