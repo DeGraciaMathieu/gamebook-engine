@@ -2,6 +2,9 @@
   "id": "demo",
   "title": "La Crypte du Roi Oublié",
   "summary": "Les champs de Valdorne dépérissent. Les villageois accusent la crypte scellée au-delà des ruines. Vous êtes la dernière lame qu'ils peuvent payer.",
+  "art": {
+    "style": "Illustration de livre-jeu des années 1980 : gravure à la plume en noir et blanc, encre sur papier, hachures serrées, forts contrastes, cadrage pleine page, fantasy médiévale, souterrains éclairés à la lanterne. Aucun texte, aucune lettre, aucun cadre décoratif. Le héros n'est jamais montré de face : de dos, de loin ou en silhouette."
+  },
   "start": "1",
   "death": "mort",
   "hero": {
@@ -75,6 +78,11 @@
   ],
   "paragraphs": {
     "1": {
+      "image": {
+        "src": "images/1.webp",
+        "alt": "L'entrée de la crypte bâille comme une gueule de pierre dans les ruines de Valdorne",
+        "prompt": "Des ruines envahies de ronces au crépuscule, et au milieu, l'entrée d'une crypte taillée dans la roche, béante comme une gueule de pierre, marches descendant dans le noir. Une silhouette de dos, lanterne à la main, au seuil."
+      },
       "text": [
         "Le crépuscule tombe sur les ruines de Valdorne. Devant vous, l'entrée de la crypte du Roi Oublié bâille comme une gueule de pierre.",
         "Les villageois vous ont payé d'avance : la malédiction qui ronge leurs récoltes vient d'ici, disent-ils. Vous allumez votre lanterne."
@@ -95,6 +103,11 @@
       ]
     },
     "22": {
+      "image": {
+        "src": "images/22.webp",
+        "alt": "Le colporteur et son étal de fortune contre un mur effondré",
+        "prompt": "Un colporteur voûté, capuchon rabattu, derrière un étal de fortune dressé contre un mur de ruines à demi effondré : une toile où sont posées une fiole de potion et un rouleau de corde de chanvre, une lanterne accrochée au mur. Vu depuis l'épaule d'une silhouette de dos."
+      },
       "text": [
         "Un colporteur a dressé son étal de fortune contre un mur à demi effondré. « Tout ce qu'il faut pour descendre là-dessous, et je rachète ce qui en remonte », lance-t-il en lorgnant votre sac.",
         "Sur la toile, une potion de vigueur et un rouleau de corde de chanvre."
@@ -150,6 +163,11 @@
       ]
     },
     "2": {
+      "image": {
+        "src": "images/2.webp",
+        "alt": "La porte de pierre gravée d'un roi au visage martelé",
+        "prompt": "Une lourde porte de pierre dans un couloir souterrain, gravée d'un roi couronné en bas-relief dont le visage a été martelé et effacé. Au centre, une serrure de bronze couverte de vert-de-gris. Lumière rasante d'une lanterne tenue hors cadre."
+      },
       "text": "Une lourde porte de pierre barre le passage, gravée d'un roi couronné dont le visage a été martelé. Une serrure de bronze vert-de-gris en marque le centre.",
       "choices": [
         {
@@ -198,6 +216,11 @@
       ]
     },
     "6": {
+      "image": {
+        "src": "images/6.webp",
+        "alt": "La salle circulaire aux trois couloirs",
+        "prompt": "Une salle circulaire souterraine, voûte de pierre, trois couloirs sombres ouverts dans le mur. Au sol, une inscription usée et illisible. En face, un portail de bronze orné. Une silhouette de dos au centre, lanterne levée, ombres longues."
+      },
       "text": [
         "Vous débouchez dans une salle circulaire où s'ouvrent trois couloirs. Au sol, une inscription usée : « Trois voies pour un seul trône ».",
         "À gauche, un cliquetis d'os. À droite, un courant d'air glacé. En face, un portail de bronze orné."
@@ -218,6 +241,11 @@
       ]
     },
     "7": {
+      "image": {
+        "src": "images/7.webp",
+        "alt": "Le squelette gardien en armure rouillée, hache à la main",
+        "prompt": "Un squelette en armure rouillée se dressant dans un couloir de crypte, une hache ébréchée à la main, les orbites vides brillant d'une lueur. Portrait de face de la créature, occupant toute l'image, éclairé par une lanterne."
+      },
       "text": "Un squelette en armure rouillée se dresse à votre approche, une hache ébréchée à la main. Ses orbites vides s'allument d'une lueur verte. Il vous barre le passage.",
       "combat": {
         "name": "Squelette gardien",
@@ -271,6 +299,11 @@
       ]
     },
     "8": {
+      "image": {
+        "src": "images/8.webp",
+        "alt": "Le pont de cordes pourri au-dessus du gouffre",
+        "prompt": "Un pont de cordes à moitié pourri tendu au-dessus d'un gouffre souterrain sans fond, planches manquantes. De l'autre côté, une petite chapelle taillée dans la roche. Une silhouette de dos pose le pied sur la première planche, lanterne tendue."
+      },
       "text": "Le couloir s'ouvre sur un gouffre que franchit un pont de cordes à moitié pourri. De l'autre côté, vous devinez une petite chapelle. Le pont craque sous votre premier pas. Tentez votre Chance.",
       "test": {
         "type": "luck",
@@ -366,6 +399,11 @@
       ]
     },
     "15": {
+      "image": {
+        "src": "images/15.webp",
+        "alt": "Le Roi Oublié sur son trône de pierre noire",
+        "prompt": "Une salle immense et sombre. Sur un trône de pierre noire, une silhouette décharnée et desséchée coiffée d'une couronne de fer, les yeux qui s'ouvrent. Vue depuis l'entrée, derrière une petite silhouette de dos, la lanterne n'éclairant que le bas des marches du trône."
+      },
       "text": [
         "Les battants s'ouvrent sur une salle immense. Sur un trône de pierre noire siège le Roi Oublié : une silhouette décharnée coiffée d'une couronne de fer, dont les yeux s'ouvrent lentement sur vous.",
         "« Encore un », souffle-t-il."
@@ -438,12 +476,22 @@
       ]
     },
     "19": {
+      "image": {
+        "src": "images/19.webp",
+        "alt": "La couronne tombe, le roi délivré s'affaisse",
+        "prompt": "Au pied d'un trône de pierre noire, une couronne de fer tombée sur les dalles et une silhouette décharnée affaissée qui se défait en poussière. Un rouleau déroulé dans une main au premier plan. Rayon de lumière descendant d'en haut."
+      },
       "text": [
         "Vous lisez les mots anciens à voix haute. Le roi se fige. Une larme de poussière coule le long de sa joue creuse.",
         "« Enfin », murmure-t-il. La couronne tombe, la silhouette s'affaisse, délivrée. La malédiction se dissipe avec son dernier souffle, et vous ressortez sous les étoiles."
       ]
     },
     "mort": {
+      "image": {
+        "src": "images/mort.webp",
+        "alt": "Une lanterne éteinte sur les dalles de la crypte",
+        "prompt": "Une lanterne renversée et éteinte sur les dalles d'un couloir de crypte, à côté d'une épée abandonnée. Des ossements anciens dans l'ombre. Aucune figure humaine."
+      },
       "text": "Vos forces vous abandonnent. La crypte du Roi Oublié garde un hôte de plus, et les champs de Valdorne resteront stériles. Votre aventure s'achève ici."
     }
   }
