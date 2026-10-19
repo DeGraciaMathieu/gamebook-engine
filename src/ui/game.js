@@ -237,11 +237,14 @@ function renderEnding(state, handlers) {
   ]);
 }
 
-// Les images d'une histoire vivent dans son dossier : stories/<id>/<src>.
+// Les images d'une histoire vivent dans son dossier : stories/<id>/<src>. Le cadre est carré et réservé
+// avant le chargement, l'image y apparaît en fondu (ou d'emblée si elle est déjà en cache).
 function renderFigure(story, image) {
-  return el('figure', { class: 'page-figure' }, [
-    el('img', { src: `stories/${story.id}/${image.src}`, alt: image.alt, loading: 'lazy', decoding: 'async' }),
-  ]);
+  const img = el('img', { src: `stories/${story.id}/${image.src}`, alt: image.alt, loading: 'lazy', decoding: 'async' });
+  const reveal = () => img.classList.add('loaded');
+  if (img.complete) reveal();
+  else img.addEventListener('load', reveal);
+  return el('figure', { class: 'page-figure' }, img);
 }
 
 // Surligne, dans le texte, les objets et caractéristiques modifiés en arrivant sur cette page.

@@ -354,13 +354,19 @@ body {
 }
 .page-figure {
   margin: 0 0 20px;
+  aspect-ratio: 1 / 1;
+  border: 1px solid var(--ink-soft);
+  background: var(--paper-deep);
 }
 .page-figure img {
   display: block;
   width: 100%;
-  height: auto;
-  border: 1px solid var(--ink-soft);
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.4s ease-out;
 }
+.page-figure img.loaded { opacity: 1; }
 .page-number + .page-text::first-letter,
 .page-figure + .page-text::first-letter {
   float: left;
