@@ -1,7 +1,8 @@
 // Contrôle d'une histoire : validation du moteur, atteignabilité, objets et drapeaux orphelins,
 // surlignage possible, grille de couverture des mécaniques.
 // Usage : node scripts/story-lint.mjs stories/<id>/story.json
-import { readFileSync } from 'node:fs';
+import { existsSync, readFileSync } from 'node:fs';
+import { dirname, join } from 'node:path';
 import { validateStory, isEnding } from '../src/engine/story.js';
 
 const path = process.argv[2];
@@ -103,6 +104,13 @@ items.filter((item) => !itemsAdded.has(item)).forEach((item) => warnings.push(`o
 items.filter((item) => itemsAdded.has(item) && !itemsUsed.has(item)).forEach((item) => warnings.push(`objet "${item}" obtenu mais jamais utile (aucune condition, vente ni retrait)`));
 [...flagsSet].filter((flag) => !flagsTested.has(flag)).forEach((flag) => warnings.push(`drapeau "${flag}" posé mais jamais testé`));
 [...flagsTested].filter((flag) => !flagsSet.has(flag)).forEach((flag) => warnings.push(`drapeau "${flag}" testé mais jamais posé`));
+
+// Illustrations : le fichier doit exister à côté de l'histoire
+for (const [id, paragraph] of paragraphs) {
+  if (paragraph.image && !existsSync(join(dirname(path), paragraph.image.src))) {
+    warnings.push(`paragraphe "${id}" : image "${paragraph.image.src}" absente${paragraph.image.prompt ? ' (à générer avec story-illustrate)' : ''}`);
+  }
+}
 
 // Surlignage : le texte doit nommer ce qu'il modifie
 const mentions = (text, candidates) => candidates.some((candidate) => candidate && new RegExp(candidate, 'i').test(text));
