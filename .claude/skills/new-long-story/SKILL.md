@@ -45,12 +45,12 @@ Puis écris chaque contrat dans `stories/<id>/source/chapters/<nn>-<nom>.json` a
   "exits": { "c06-1": "Embarquer sur la Louve", "c09-1": "Fuir par les marais, poursuivi" },
   "provides": { "items": ["clef_rouillee"], "flags": ["pretre_vu"] },
   "requires": { "items": [], "flags": ["marche_vu"] },
-  "image": "c05-7",
+  "images": ["c05-7", "c05-21"],
   "paragraphs": {}
 }
 ```
 
-Règles : les entrées d'un chapitre sont tout ce par quoi on peut y arriver de l'extérieur (sorties d'autres chapitres, `start`, `death`, cibles de déclencheurs) ; chaque sortie vise une entrée déclarée d'un autre chapitre ; `requires` ne cite que ce qui est fourni en amont ou par le héros au départ ; `image` désigne un paragraphe qui n'existe pas encore, le rédacteur le créera.
+Règles : les entrées d'un chapitre sont tout ce par quoi on peut y arriver de l'extérieur (sorties d'autres chapitres, `start`, `death`, cibles de déclencheurs) ; chaque sortie vise une entrée déclarée d'un autre chapitre ; `requires` ne cite que ce qui est fourni en amont ou par le héros au départ ; `images` désigne un à trois paragraphes qui n'existent pas encore, le rédacteur les créera.
 
 Lance `node scripts/story-lint.mjs stories/<id>` : il doit répondre « Contrats cohérents » sans erreur. Montre le tableau et la sortie du lint ; demande validation. Si l'utilisateur ajuste, reprends le tableau complet et relance le lint.
 
@@ -82,7 +82,7 @@ Un message court pour l'utilisateur :
 2. Le graphe résumé : chapitres par acte, nombre de paragraphes, fins et leurs conditions, convergences.
 3. Les chiffres de simulation (les deux stratégies) dans un petit tableau, avec les chapitres les moins visités.
 4. Les choix de conception discutables, les avertissements laissés volontairement, les frictions rencontrées avec les scripts ou le prompt (à reporter dans `.planning/` si demandé).
-5. La commande pour jouer : `npm start` puis http://localhost:8080. Les illustrations se génèrent ensuite avec `story-illustrate.mjs` (une par chapitre, celle du contrat).
+5. La commande pour jouer : `npm start` puis http://localhost:8080. Les illustrations se génèrent ensuite avec `story-illustrate.mjs` (celles du contrat, une à trois par chapitre).
 
 Ne commite pas sans qu'on te le demande.
 
@@ -92,4 +92,4 @@ Ne commite pas sans qu'on te le demande.
 - Les sous-agents reçoivent la bible et leur contrat, jamais l'histoire entière ni les autres chapitres.
 - Les identifiants de paragraphes sont `c<nn>-<n>` ; les objets et drapeaux viennent du manifeste et de la bible, un rédacteur n'en crée pas.
 - `story.json` et `build-map.json` sont générés et commités : on ne les édite jamais à la main, on rebuild.
-- Une illustration par chapitre au plus, celle du contrat.
+- Une à trois illustrations par chapitre, celles du contrat (`images`).

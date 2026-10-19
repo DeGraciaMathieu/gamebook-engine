@@ -25,7 +25,7 @@ Le skill `/new-story` écrit le JSON en une seule passe et fait valider un squel
 
 - Nouveau skill `new-long-story` plutôt qu'une taille « épique » dans `new-story` : le déroulé est trop différent (macro-squelette, sous-agents) pour partager un seul SKILL.md. Les références (`format.md`, `writing.md`, `styles.md`, `coverage.md`) sont partagées.
 - Identifiants préfixés par chapitre à l'écriture (`c03-17`), renumérotés aléatoirement à la fusion ; la correspondance est écrite dans `stories/<id>/build-map.json` pour retrouver un paragraphe.
-- Illustrations rationnées : une par chapitre au plus, choisie dans le contrat du chapitre.
+- Illustrations rationnées : une à trois par chapitre (d'abord une, portée à trois sur l'histoire pilote), choisies dans le contrat du chapitre (`images`).
 
 ## Hors périmètre
 

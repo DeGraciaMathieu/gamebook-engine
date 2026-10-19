@@ -6,7 +6,7 @@
   "exits": { "c02-1": "Passer la porte avec la clef", "c02-2": "Forcer la porte" },
   "provides": { "items": ["clef"], "flags": ["autel_vu"] },
   "requires": { "items": [], "flags": [] },
-  "image": "c01-2",
+  "images": ["c01-2"],
   "paragraphs": {
     "c01-1": {
       "text": "Vous entrez dans le vestibule. Une Clef brille sur le dallage.",

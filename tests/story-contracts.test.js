@@ -73,16 +73,21 @@ test('un paragraphe inatteignable depuis les entrées est signalé', () => {
   assert.ok(has(warnings, '"c01-2" inatteignable depuis les entrées'));
 });
 
-test('une illustration par chapitre, celle du contrat', () => {
+test('les illustrations sont celles du contrat, trois par chapitre au plus', () => {
   const image = { src: 'images/x.webp', alt: 'x' };
   const { errors, warnings } = checkChapterContract(chapter('c01', {
-    image: 'c01-3',
+    images: ['c01-3', 'c01-2'],
     paragraphs: { 'c01-1': { text: 'x', image, choices: [{ text: 'a', to: 'c01-2' }] }, 'c01-2': { text: 'Fin', image } },
   }));
   assert.ok(has(errors, 'image "c01-3" ne désigne aucun paragraphe'));
-  assert.ok(has(warnings, '"c01-1" illustré sans être l\'image du contrat'));
+  assert.ok(has(warnings, '"c01-1" illustré sans être déclaré dans images'));
+  assert.ok(!has(warnings, '"c01-2"'));
   const missing = checkChapterContract(chapter('c01', { image: 'c01-1' }));
   assert.ok(has(missing.warnings, '"c01-1" devrait porter l\'illustration'));
+  const many = checkChapterContract(chapter('c01', { images: ['c01-1', 'c01-1', 'c01-1', 'c01-1'] }));
+  assert.ok(has(many.warnings, '4 illustrations déclarées, 3 par chapitre au plus'));
+  const bad = checkChapterContract(chapter('c01', { images: 'c01-1' }));
+  assert.ok(has(bad.errors, '"images" doit lister'));
 });
 
 test('un chapitre sans paragraphes ne vérifie que son contrat', () => {

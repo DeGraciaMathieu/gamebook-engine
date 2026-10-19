@@ -47,7 +47,7 @@ Dans un chapitre `03-port.json`, les paragraphes s'appellent `c03-1`, `c03-2`…
   "exits": { "c04-1": "Embarquer sur la Louve", "c07-12": "Fuir par les marais" },
   "provides": { "items": ["clef_rouillee"], "flags": ["pretre_vu"] },
   "requires": { "items": [], "flags": ["marche_vu"] },
-  "image": "c03-5",
+  "images": ["c03-5", "c03-12"],
   "paragraphs": { "c03-1": { "text": "…", "choices": [{ "text": "…", "to": "c04-1" }] } }
 }
 ```
@@ -55,7 +55,7 @@ Dans un chapitre `03-port.json`, les paragraphes s'appellent `c03-1`, `c03-2`…
 - `entries` : tout ce par quoi on arrive de l'extérieur (sorties d'autres chapitres, `start`, `death`, cibles des déclencheurs), avec la situation d'arrivée.
 - `exits` : les seuls paragraphes extérieurs que le chapitre a le droit de viser ; chacun doit être une entrée déclarée de l'autre chapitre.
 - `provides` / `requires` : les objets et drapeaux que le chapitre donne, et ceux qu'il teste sans les donner (fournis en amont ou par le héros au départ).
-- `image` : le paragraphe illustré, un par chapitre au plus ; son `image.src` garde l'identifiant source (`images/c03-5.webp`), stable d'un build à l'autre.
+- `images` : les paragraphes illustrés, un à trois par chapitre (`image` pour un seul) ; leur `image.src` garde l'identifiant source (`images/c03-5.webp`), stable d'un build à l'autre.
 
 ```bash
 node scripts/story-lint.mjs --chapter stories/<id>/source/chapters/03-port.json  # un chapitre seul : contrat, cibles externes déclarées tolérées, validation du moteur

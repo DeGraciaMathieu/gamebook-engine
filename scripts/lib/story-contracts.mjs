@@ -4,11 +4,17 @@ import { basename } from 'node:path';
 import { buildGraph, collectUsage, reachableFrom, targetsOf } from './story-checks.mjs';
 import { prefixOf } from './story-source.mjs';
 
+const MAX_IMAGES = 3;
 const isObject = (value) => value !== null && typeof value === 'object' && !Array.isArray(value);
 const isStringList = (value) => Array.isArray(value) && value.every((entry) => typeof entry === 'string');
 
 export function chapterName(chapter) {
   return chapter.file ? basename(chapter.file) : chapter.prefix;
+}
+
+// `images` liste les paragraphes illustrés ; `image` (un seul) reste accepté.
+export function declaredImages(chapter) {
+  return chapter.images ?? (chapter.image !== undefined ? [chapter.image] : []);
 }
 
 export function isWritten(chapter) {
@@ -34,7 +40,10 @@ export function checkChapterContract(chapter) {
     if (!isObject(block) || !isStringList(block.items ?? []) || !isStringList(block.flags ?? [])) errors.push(`${where} : "${key}" attend { "items": [...], "flags": [...] }`);
   }
   if (chapter.image !== undefined && typeof chapter.image !== 'string') errors.push(`${where} : "image" doit être l'identifiant du paragraphe illustré`);
+  if (chapter.images !== undefined && !isStringList(chapter.images)) errors.push(`${where} : "images" doit lister les identifiants des paragraphes illustrés`);
   if (errors.length > 0) return { errors, warnings };
+  const declared = declaredImages(chapter);
+  if (declared.length > MAX_IMAGES) warnings.push(`${where} : ${declared.length} illustrations déclarées, ${MAX_IMAGES} par chapitre au plus`);
 
   const entries = Object.keys(chapter.entries);
   const exits = Object.keys(chapter.exits);
@@ -43,7 +52,7 @@ export function checkChapterContract(chapter) {
   }
   entries.filter((id) => prefixOf(id) !== chapter.prefix).forEach((id) => errors.push(`${where} : entrée "${id}" hors du chapitre ${chapter.prefix}`));
   exits.filter((id) => prefixOf(id) === chapter.prefix).forEach((id) => errors.push(`${where} : sortie "${id}" est interne au chapitre, une sortie mène à un autre chapitre`));
-  if (chapter.image !== undefined && prefixOf(chapter.image) !== chapter.prefix) errors.push(`${where} : image "${chapter.image}" hors du chapitre`);
+  declared.filter((id) => prefixOf(id) !== chapter.prefix).forEach((id) => errors.push(`${where} : image "${id}" hors du chapitre`));
 
   if (!isWritten(chapter)) return { errors, warnings };
 
@@ -70,11 +79,11 @@ export function checkChapterContract(chapter) {
   compareDeclarations(warnings, where, 'drapeau', 'flags', usage.flagsSet, usage.flagsTested, provides, requires);
 
   const illustrated = Object.keys(paragraphs).filter((id) => paragraphs[id].image);
-  if (chapter.image !== undefined) {
-    if (!paragraphs[chapter.image]) errors.push(`${where} : image "${chapter.image}" ne désigne aucun paragraphe du chapitre`);
-    else if (!paragraphs[chapter.image].image) warnings.push(`${where} : le paragraphe "${chapter.image}" devrait porter l'illustration (image.src, alt, prompt)`);
+  for (const id of declared) {
+    if (!paragraphs[id]) errors.push(`${where} : image "${id}" ne désigne aucun paragraphe du chapitre`);
+    else if (!paragraphs[id].image) warnings.push(`${where} : le paragraphe "${id}" devrait porter l'illustration (image.src, alt, prompt)`);
   }
-  illustrated.filter((id) => id !== chapter.image).forEach((id) => warnings.push(`${where} : paragraphe "${id}" illustré sans être l'image du contrat (une illustration par chapitre au plus)`));
+  illustrated.filter((id) => !declared.includes(id)).forEach((id) => warnings.push(`${where} : paragraphe "${id}" illustré sans être déclaré dans images (${MAX_IMAGES} par chapitre au plus)`));
 
   return { errors, warnings };
 }

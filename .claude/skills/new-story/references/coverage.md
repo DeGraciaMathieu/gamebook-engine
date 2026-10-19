@@ -65,5 +65,5 @@ Les règles ci-dessus valent chapitre par chapitre. À cette échelle s'ajoutent
 - **Économie par acte** : la ressource se gagne et se dépense dans chaque acte ; un marchand par acte au moins, avant la dépense qui compte.
 - **Attrition** : sur 150 actions, les dégâts s'additionnent et les consommables sont uniques. Adversaires courants 6 à 8 d'habileté, dégâts 2 ; pièges 2 à 3 points d'Endurance ; un lieu de repos par hub (une fois par visite, ou payant) ; Endurance de départ 18 à 20. Une jauge qui monte à chaque passage (radiation, faim) se dimensionne sur 100 à 150 passages, pas sur un chapitre.
 - **Consommables** : listés dans `requires` de chaque chapitre où l'on peut souffler, sinon le rédacteur n'en propose aucun.
-- **Illustrations** : une par chapitre au plus, désignée par le contrat (`image`), sur le lieu emblématique du chapitre.
+- **Illustrations** : une à trois par chapitre, désignées par le contrat (`images`) : le carrefour, un lieu marquant, un moment fort. Le lieu plutôt que l'issue, jamais le héros de face.
 - **Identifiants** : `c<nn>-<n>` à l'écriture, renumérotés à la fusion par `story-build.mjs` ; `build-map.json` fait la correspondance dans les deux sens.

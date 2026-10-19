@@ -20,7 +20,7 @@ Le contrat :
 - `exits` : les seuls paragraphes extérieurs que tu as le droit de viser (`to`, `win`, `flee.to`, `success`, `failure`), avec ce qui s'y passe. Chaque sortie doit être atteinte par au moins un chemin.
 - `provides` : ce que le chapitre donne (objets par un effet `add` ou une boutique, drapeaux par un effet `flag`). Tout ce qui est listé doit être donné ; rien d'autre ne l'est.
 - `requires` : ce que le chapitre a le droit de tester sans le fournir. Ne teste rien d'autre.
-- `image` : le paragraphe qui porte l'illustration, avec `"image": { "src": "images/[id-du-paragraphe].webp", "alt": "…", "prompt": "…" }`. Aucun autre paragraphe n'est illustré.
+- `images` : les paragraphes qui portent une illustration (un à trois), chacun avec `"image": { "src": "images/[id-du-paragraphe].webp", "alt": "…", "prompt": "…" }` (le prompt décrit le lieu, pas le héros de face, en une ou deux phrases). Aucun autre paragraphe n'est illustré.
 - `brief` : les scènes attendues.
 
 Les chapitres voisins (ne les lis pas, voici ce qu'il faut en savoir) :
@@ -45,7 +45,7 @@ Rapport final, en dix lignes au plus : nombre de paragraphes, carrefour, fins, c
 
 1. **Ordre** : traite les chapitres par acte, dans l'ordre du macro-squelette. Les résumés voisins viennent des contrats (phase 2), pas de la prose ; l'ordre ne bloque donc pas, mais lancer un acte à la fois garde les reprises lisibles.
 2. **Vagues** : 4 à 6 sous-agents à la fois, lancés dans un même message. Attends la fin de la vague avant la suivante ; ne prédis jamais le résultat d'un sous-agent.
-3. **Contrôle au retour** : pour chaque chapitre rendu, relance toi-même `node scripts/story-lint.mjs --chapter <fichier>` et compte les paragraphes. Un chapitre passe si : zéro erreur, chaque avertissement justifié, taille dans la fourchette, une seule illustration (celle du contrat).
+3. **Contrôle au retour** : pour chaque chapitre rendu, relance toi-même `node scripts/story-lint.mjs --chapter <fichier>` et compte les paragraphes. Un chapitre passe si : zéro erreur, chaque avertissement justifié, taille dans la fourchette, les illustrations du contrat et elles seules.
 4. **Reprise** : un chapitre refusé repart au même sous-agent par SendMessage avec la sortie du lint et la consigne précise (« la cible c07-3 n'est pas dans tes sorties : passe par c07-1 »). Trois reprises au plus ; ensuite, corrige toi-même.
 5. **Contrat à changer** : si un sous-agent démontre qu'il manque une sortie ou un objet, c'est le contrat qui change (et le contrat voisin : une sortie nouvelle exige une entrée nouvelle), puis `node scripts/story-lint.mjs stories/<id>` sur les contrats, puis le chapitre repart. Jamais de cible inventée.
 6. **Fin de phase** : quand tous les chapitres sont écrits, `node scripts/story-lint.mjs stories/<id>` doit passer sans erreur sur la fusion ; les avertissements d'orphelins (objet jamais utile, drapeau jamais testé) révèlent un contrat non honoré, à renvoyer au chapitre concerné.
