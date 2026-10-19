@@ -1,7 +1,7 @@
 {
   "id": "nublar",
   "title": "La Nuit d'Isla Nublar",
-  "summary": "Les clôtures de Jurassic Park viennent de s'éteindre, la tempête frappe l'île, et le cargo de ravitaillement largue les amarres dans 90 minutes au quai Est. Vous êtes technicien de maintenance, et il n'y aura pas d'autre bateau.",
+  "summary": "Les clôtures de Jurassic Park viennent de s'éteindre, la tempête frappe l'île, et le cargo de ravitaillement largue les amarres dans deux heures au quai Est. Vous êtes technicien de maintenance, et il n'y aura pas d'autre bateau.",
   "start": "1",
   "death": "mort",
   "hero": {
@@ -32,9 +32,10 @@
       },
       "temps": {
         "label": "Temps",
-        "value": 90,
+        "value": 120,
         "capped": false,
-        "unit": "minute"
+        "unit": "minute",
+        "tick": -1
       }
     },
     "points": 8,
@@ -178,7 +179,7 @@
     "1": {
       "text": [
         "Vous êtes technicien de maintenance à Jurassic Park, sur l'île d'Isla Nublar, et vous étiez de garde ce soir dans le hangar des véhicules lorsque toutes les lumières se sont éteintes d'un seul coup. Dehors, la tempête tropicale annoncée depuis trois jours frappe l'île de plein fouet ; la pluie tombe en rideaux et le vent fait claquer les portes de tôle.",
-        "Sur votre radio de service, une voix affolée répète que les clôtures électriques de tous les enclos sont hors tension, et qu'il faut gagner le quai Est : le cargo de ravitaillement largue les amarres dans 90 minutes pour fuir l'ouragan, et il n'y aura pas d'autre bateau. Vous savez ce que signifient des clôtures sans courant sur cette île. Il vous reste 90 minutes de TEMPS, et chaque détour en coûtera."
+        "Sur votre radio de service, une voix affolée répète que les clôtures électriques de tous les enclos sont hors tension, et qu'il faut gagner le quai Est : le cargo de ravitaillement largue les amarres dans deux heures pour fuir l'ouragan, et il n'y aura pas d'autre bateau. Vous savez ce que signifient des clôtures sans courant sur cette île. Il vous reste 120 minutes de TEMPS, chaque décision en coûtera une, et chaque détour bien plus."
       ],
       "choices": [
         {
