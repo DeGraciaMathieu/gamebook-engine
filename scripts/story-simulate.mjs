@@ -54,7 +54,7 @@ function playOne(report) {
   const visited = new Set([state.paragraphId]);
   for (let step = 0; step < MAX_STEPS; step++) {
     if (state.status !== 'playing') {
-      return { ending: `${state.paragraphId} (${state.status === 'dead' ? 'mort' : 'fin'})`, dead: state.status === 'dead', steps: step, visited };
+      return { ending: `${state.paragraphId} (${state.status === 'dead' ? 'mort' : 'fin'})`, dead: state.status === 'dead', steps: step, visited, fired: state.fired ?? [] };
     }
     if (state.combat) {
       const paragraph = getParagraph(story, state.paragraphId);
@@ -90,7 +90,7 @@ function playOne(report) {
     }
     visited.add(state.paragraphId);
   }
-  return { ending: 'boucle sans fin', dead: false, steps: MAX_STEPS, visited };
+  return { ending: 'boucle sans fin', dead: false, steps: MAX_STEPS, visited, fired: state.fired ?? [] };
 }
 
 const report = {
@@ -99,6 +99,7 @@ const report = {
   steps: 0,
   visits: new Map(Object.keys(story.paragraphs).map((id) => [id, 0])),
   combats: new Map(Object.entries(story.paragraphs).filter(([, p]) => p.combat).map(([id, p]) => [id, { name: p.combat.name, fought: 0, deaths: 0, fled: 0 }])),
+  triggers: (story.triggers ?? []).map(() => 0),
 };
 for (let i = 0; i < runs; i++) {
   const result = playOne(report);
@@ -106,6 +107,7 @@ for (let i = 0; i < runs; i++) {
   report.deaths += result.dead ? 1 : 0;
   report.steps += result.steps;
   result.visited.forEach((id) => report.visits.set(id, report.visits.get(id) + 1));
+  result.fired.forEach((index) => { report.triggers[index] += 1; });
 }
 
 const percent = (value) => `${(100 * value / runs).toFixed(1)} %`;
@@ -119,6 +121,12 @@ console.log('\nCombats');
 for (const combat of report.combats.values()) {
   const defeat = combat.fought ? (100 * combat.deaths / combat.fought).toFixed(1) : '0.0';
   console.log(`  ${combat.name.padEnd(20)} livré ${String(combat.fought).padStart(5)}×  mortel ${defeat.padStart(5)} %  fui ${combat.fled}×`);
+}
+if (report.triggers.length > 0) {
+  console.log('\nDéclencheurs');
+  (story.triggers ?? []).forEach((trigger, index) => {
+    console.log(`  ${(trigger.label ?? `déclencheur ${index + 1}`).padEnd(20)} ${percent(report.triggers[index]).padStart(7)}`);
+  });
 }
 const rare = [...report.visits.entries()].filter(([, count]) => count < runs * 0.02).map(([id, count]) => `${id} (${percent(count)})`);
 console.log(`\nParagraphes rares (moins de 2 % des parties) : ${rare.length ? rare.join(', ') : 'aucun'}`);
