@@ -1,0 +1,679 @@
+{
+  "title": "Les Entrepôts militaires",
+  "summary": "Le héros a traversé les Entrepôts militaires où la Liberté tient tête au Monolithe. Il a pu prendre le Vintorez sur le sniper du château d'eau, le PDA de Fantôme dans une datcha, une Grenade F1, et traverser le champ de mines avec ou sans la Carte. Il part vers la Forêt rouge (c14-2) ou revient au Bar (c08-4).",
+  "brief": "Région de guerre. Carrefour : la place du village entre les datchas. Scènes : la Liberté (si liberte_ami, ils donnent des munitions : +1 Chance ; si borov_mort, les bandits ont mis votre tête à prix : embuscade ; si devoir_ami, la Liberté se méfie), le sniper du Monolithe sur le château d'eau (combat redoutable ou approche par les toits : test d'Habileté ; il porte le Vintorez), le corps de Fantôme dans une datcha avec son PDA (lire : il parle de la chambre 26 de l'hôtel Polissya), le champ de mines sur la route de l'est (Carte des champs de mines : passe ; sinon test de Chance, échec −6 points d'Endurance), une attaque du Monolithe (combat avec fuite). Les consommables listés dans requires peuvent être consommés par un choix (effet remove + effet stat), le paragraphe d'arrivée le dit. Taille : 36 à 44 paragraphes.",
+  "entries": {
+    "c13-1": "Arrivée par la route du nord depuis Rostok, à l'entrée du village"
+  },
+  "exits": {
+    "c14-2": "Continuer vers la Forêt rouge",
+    "c08-4": "Revenir au Bar"
+  },
+  "provides": {
+    "items": [
+      "vintorez",
+      "pda_fantome",
+      "grenade"
+    ],
+    "flags": []
+  },
+  "requires": {
+    "items": [
+      "ak74",
+      "carte_militaire",
+      "grenade",
+      "trousse",
+      "antirad"
+    ],
+    "flags": [
+      "liberte_ami",
+      "devoir_ami",
+      "borov_mort"
+    ]
+  },
+  "image": "c13-5",
+  "paragraphs": {
+    "c13-1": {
+      "text": "La route du nord descend de Rostok entre deux rangées de pylônes. Devant vous, le village des Entrepôts militaires : des datchas de bois, des hangars de tôle, un château d'eau rouillé au-dessus des toits. Des coups de feu, au loin, espacés comme une horloge. Sur le bas-côté, un drapeau vert planté dans un tas de sable. Au bout de la route, un barrage. À gauche, les jardins et leurs clôtures couchées.",
+      "choices": [
+        {
+          "text": "Descendre la route jusqu'au barrage",
+          "to": "c13-17"
+        },
+        {
+          "text": "Contourner par les jardins",
+          "to": "c13-34"
+        }
+      ]
+    },
+    "c13-17": {
+      "text": "Deux hommes couchés derrière une mitrailleuse, un sac de sable, un drapeau vert percé. Celui qui parle a une cigarette éteinte au coin de la bouche. Il ne la rallume pas. D'où tu viens. Ce n'est pas une question. Derrière lui, dans la cour de l'ancienne ferme, on charge des caisses sur une civière qui a servi à autre chose.",
+      "choices": [
+        {
+          "text": "Rappeler la Vallée sombre au sergent",
+          "to": "c13-29",
+          "if": {
+            "type": "flag",
+            "flag": "liberte_ami"
+          }
+        },
+        {
+          "text": "Répondre : Agroprom, avec le Devoir",
+          "to": "c13-8",
+          "if": {
+            "type": "flag",
+            "flag": "devoir_ami"
+          }
+        },
+        {
+          "text": "Dire que vous venez du Bar",
+          "to": "c13-22"
+        }
+      ]
+    },
+    "c13-29": {
+      "text": "Il vous reconnaît avant que vous ayez fini. La Vallée. Il hoche la tête, fouille dans une caisse, vous lance deux chargeurs pleins et une poignée de cartouches en vrac. Avec ça, le sort hésite moins. Vous regagnez 1 point de Chance. Il montre le château d'eau du menton. Monolithe, là-haut, depuis trois jours. Il tire sur tout ce qui traverse la place. Et il y a un corps dans la datcha au toit crevé. Pas un des nôtres.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "chance",
+          "delta": 1
+        }
+      ],
+      "choices": [
+        {
+          "text": "Entrer dans le village",
+          "to": "c13-5"
+        }
+      ]
+    },
+    "c13-8": {
+      "text": "Le mot Devoir fait lever la mitrailleuse. On vous met à genoux dans la boue, le canon sur la nuque, le temps que quelqu'un aille chercher quelqu'un. Une heure. Votre détecteur, posé par terre, crépite tout seul. Vous prenez 2 rads. Puis le sergent revient, vous rend votre sac vidé puis rempli, et vous pousse vers la place. La base, non. Le village, si tu veux. Le Monolithe est sur le château d'eau.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "radiation",
+          "delta": 2
+        }
+      ],
+      "choices": [
+        {
+          "text": "Entrer dans le village",
+          "to": "c13-5"
+        }
+      ]
+    },
+    "c13-22": {
+      "text": "Le Bar. Il hausse une épaule, la cigarette bouge avec. Tout le monde vient du Bar. Il vous laisse passer sans vous fouiller, ce qui veut dire qu'il a mieux à faire. Reste à couvert sur la place. Il y en a un sur le château d'eau qui ne rate pas. Derrière lui, un homme sans jambes fume sur une civière et regarde le ciel.",
+      "choices": [
+        {
+          "text": "Entrer dans le village",
+          "to": "c13-5"
+        }
+      ]
+    },
+    "c13-34": {
+      "text": "Les jardins sont des carrés d'orties entre des clôtures couchées. Des pommiers tordus, des pommes noires qui ne tombent pas. Le compteur grimpe dès le premier pas. Vous prenez 2 rads. Dans l'herbe, un homme de la Liberté est allongé sur le dos, les mains sur le ventre, comme s'il dormait. Vous passez entre deux datchas et la place s'ouvre devant vous.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "radiation",
+          "delta": 2
+        }
+      ],
+      "choices": [
+        {
+          "text": "Déboucher sur la place",
+          "to": "c13-5"
+        }
+      ]
+    },
+    "c13-5": {
+      "text": "La place du village. Un poteau électrique au milieu, un bus sans roues, des datchas tout autour, volets clos ou arrachés. À l'ouest, le château d'eau sur ses pieds de fer. On voit le reflet d'une lunette tout en haut. À l'est, la route s'enfonce entre des panneaux à tête de mort. Au nord, la route de Rostok. Une datcha a le toit crevé, comme si quelque chose était tombé dessus.",
+      "image": {
+        "src": "images/c13-5.webp",
+        "alt": "La place du village des Entrepôts militaires, entre les datchas, dominée par le château d'eau.",
+        "prompt": "Une place de village abandonné entre des datchas de bois aux volets arrachés, un bus sans roues, un poteau électrique penché ; au fond, un château d'eau rouillé sur des pieds de fer domine les toits sous un ciel bas."
+      },
+      "choices": [
+        {
+          "text": "Aller vers le château d'eau",
+          "to": "c13-3",
+          "if": {
+            "type": "item",
+            "item": "vintorez",
+            "present": false
+          }
+        },
+        {
+          "text": "Fouiller la datcha au toit crevé",
+          "to": "c13-21",
+          "if": {
+            "type": "item",
+            "item": "pda_fantome",
+            "present": false
+          }
+        },
+        {
+          "text": "Lire l'affiche clouée au poteau",
+          "to": "c13-12",
+          "if": {
+            "type": "flag",
+            "flag": "borov_mort"
+          }
+        },
+        {
+          "text": "Prendre la route de l'est",
+          "to": "c13-4"
+        },
+        {
+          "text": "Remonter la route de Rostok",
+          "to": "c13-19"
+        },
+        {
+          "text": "Boire l'anti-rad",
+          "to": "c13-25",
+          "if": {
+            "type": "item",
+            "item": "antirad"
+          },
+          "effects": [
+            {
+              "type": "item",
+              "action": "remove",
+              "item": "antirad"
+            },
+            {
+              "type": "stat",
+              "stat": "radiation",
+              "delta": -5
+            }
+          ]
+        },
+        {
+          "text": "Vider la trousse de soins",
+          "to": "c13-39",
+          "if": {
+            "type": "item",
+            "item": "trousse"
+          },
+          "effects": [
+            {
+              "type": "item",
+              "action": "remove",
+              "item": "trousse"
+            },
+            {
+              "type": "stat",
+              "stat": "endurance",
+              "delta": 6
+            }
+          ]
+        }
+      ]
+    },
+    "c13-25": {
+      "text": "Vous buvez l'Anti-rad assis dans le bus sans roues, à l'abri de la lunette. Goût de craie, puis le compteur qui ralentit, puis presque rien. Vous perdez 5 rads. Par la vitre cassée, le château d'eau n'a pas bougé. Le reflet de la lunette non plus.",
+      "choices": [
+        {
+          "text": "Ressortir sur la place",
+          "to": "c13-5"
+        }
+      ]
+    },
+    "c13-39": {
+      "text": "Vous videz la Trousse de soins sur un siège du bus sans roues : compresse, bande, la seringue dans la cuisse. Le corps se tait un moment. Vous regagnez 6 points d'Endurance. La boîte vide reste sur le siège, à côté d'un journal de 1986.",
+      "choices": [
+        {
+          "text": "Ressortir sur la place",
+          "to": "c13-5"
+        }
+      ]
+    },
+    "c13-12": {
+      "text": "Une feuille agrafée au poteau, détrempée. Un visage au crayon, le vôtre, en mieux. Dessous, un chiffre, et le nom de Borov. Mort de préférence. Vous n'avez pas le temps de l'arracher. Deux hommes sortent du bus sans roues, un fusil de chasse et une barre de fer. Ils attendaient que vous vous arrêtiez pour lire.",
+      "combat": {
+        "name": "Deux bandits",
+        "habilete": 6,
+        "endurance": 8,
+        "damage": 2,
+        "win": "c13-27",
+        "flee": {
+          "to": "c13-5"
+        }
+      }
+    },
+    "c13-27": {
+      "text": "Les deux hommes restent sur la place. Le sniper ne tire pas sur les morts. Dans la poche du premier, 150 roubles pliés dans un papier gras ; dans celle du second, une photo de femme que vous laissez. Vous arrachez l'affiche et la pliez dans votre poche, sans savoir pourquoi.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "roubles",
+          "delta": 150
+        }
+      ],
+      "choices": [
+        {
+          "text": "Revenir au milieu de la place",
+          "to": "c13-5"
+        }
+      ]
+    },
+    "c13-19": {
+      "text": "La route de Rostok remonte entre les pylônes. Le barrage de la Liberté vous laisse sortir sans un mot ; sortir n'intéresse personne. Derrière vous, un coup de feu, un seul, depuis le village. Vous ne vous retournez pas. Devant, la cheminée de l'usine de Rostok, et sous elle, le Bar.",
+      "choices": [
+        {
+          "text": "Revenir au Bar",
+          "to": "c08-4"
+        }
+      ]
+    },
+    "c13-3": {
+      "text": "Le château d'eau est à cent mètres, de l'autre côté d'un terrain nu. Une échelle de fer monte le long de la cuve. Derrière un hangar de tôle, vous reprenez votre souffle. Une balle a claqué dans le gravier à un pas de vous, pour dire bonjour. Le toit du hangar touche presque la passerelle de la cuve. Sur le terrain, trois corps de la Liberté, et un chien qui en mange un.",
+      "choices": [
+        {
+          "text": "Monter l'échelle sous le feu",
+          "to": "c13-31"
+        },
+        {
+          "text": "Passer par les toits des hangars",
+          "to": "c13-14"
+        },
+        {
+          "text": "Arroser la plateforme à l'AK-74",
+          "to": "c13-37",
+          "if": {
+            "type": "item",
+            "item": "ak74"
+          }
+        }
+      ]
+    },
+    "c13-31": {
+      "text": "Vous courez. Les trois corps passent sous vos pieds, le chien s'écarte. L'échelle est froide et chaque barreau sonne. Là-haut, il a cessé de viser la place : il vise l'échelle. Il tire sans se presser, et ce qu'il touche ne se relève pas. Vous montez quand même.",
+      "combat": {
+        "name": "Sniper du Monolithe",
+        "habilete": 8,
+        "endurance": 8,
+        "damage": 2,
+        "win": "c13-2",
+        "flee": {
+          "to": "c13-3"
+        }
+      }
+    },
+    "c13-14": {
+      "text": "Le hangar a une gouttière qui tient. Vous grimpez, la tôle ploie sous vos genoux et chaque pas est un bruit. Le toit monte en pente douce jusqu'à la passerelle de la cuve, deux mètres de vide entre les deux. En bas, le chien lève la tête et vous regarde. Le sniper, lui, regarde la place. Testez votre Habileté.",
+      "test": {
+        "type": "stat",
+        "stat": "habilete",
+        "dice": "2d6",
+        "success": "c13-24",
+        "failure": "c13-9"
+      }
+    },
+    "c13-24": {
+      "text": "Réussi. Vous retombez sur la passerelle sans un son. Il est couché derrière sa lunette, le masque relevé sur le front, une bouteille d'eau à portée de main. Il parle tout bas au Monolithe. Le Couteau fait le reste. Il ne se retourne même pas.",
+      "choices": [
+        {
+          "text": "Fouiller le corps",
+          "to": "c13-2"
+        }
+      ]
+    },
+    "c13-9": {
+      "text": "Raté. La tôle cède sous votre pied, vous glissez jusqu'au bord et vous rattrapez d'une main à la gouttière, qui lâche. Vous tombez sur le gravier. Vous perdez 3 points d'Endurance. Là-haut, il a entendu. Il se retourne et tire sur l'échelle, la seule qui reste. Ce qu'il touche ne se relève pas.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -3
+        }
+      ],
+      "combat": {
+        "name": "Sniper du Monolithe",
+        "habilete": 8,
+        "endurance": 8,
+        "damage": 2,
+        "win": "c13-2",
+        "flee": {
+          "to": "c13-3"
+        }
+      }
+    },
+    "c13-37": {
+      "text": "Vous videz un chargeur de l'AK-74 sur la plateforme. La tôle de la cuve chante, l'eau pisse par vingt trous. Il se plaque, il perd sa ligne. Avec ça, on tire avant eux. Vous traversez le terrain pendant qu'il cherche sa lunette et montez l'échelle en tirant d'une main. Il vous attend en haut, à genoux, la joue contre la crosse.",
+      "combat": {
+        "name": "Sniper du Monolithe",
+        "habilete": 7,
+        "endurance": 6,
+        "damage": 2,
+        "win": "c13-2",
+        "flee": {
+          "to": "c13-3"
+        }
+      }
+    },
+    "c13-2": {
+      "text": "Il est mort les yeux ouverts, et ils sont blancs. Le fusil est encore chaud : un Vintorez, lunette, silencieux, crosse entourée de ruban. Le Vintorez ne fait pas de bruit, et ce qu'il touche ne se relève pas. D'ici, on voit tout le village, et plus loin, au nord, une colonne grise qui descend des collines en priant. Ils seront là avant la nuit.",
+      "effects": [
+        {
+          "type": "item",
+          "action": "add",
+          "item": "vintorez"
+        }
+      ],
+      "choices": [
+        {
+          "text": "Redescendre sur la place",
+          "to": "c13-5"
+        }
+      ]
+    },
+    "c13-21": {
+      "text": "La datcha au toit crevé a un jardin de planches et de ronces. Entre le portail et la porte, l'air tremble au-dessus de l'allée comme au-dessus d'un capot chaud : un « Trampoline ». Vous lancez un boulon. Il monte, ne redescend pas. Derrière la maison, une fenêtre sans vitre, à hauteur d'épaule, avec des dents de verre.",
+      "choices": [
+        {
+          "text": "Passer par la fenêtre arrière",
+          "to": "c13-16"
+        },
+        {
+          "text": "Traverser l'allée au boulon",
+          "to": "c13-33"
+        }
+      ]
+    },
+    "c13-33": {
+      "text": "Vous lancez un boulon, puis un autre. Le premier tombe, le second ne tombe pas. L'anomalie se déplace, lentement, comme une bête qui change de flanc dans son sommeil. Il faut passer entre deux de ses respirations, et personne ne sait combien elles durent. Tentez votre Chance.",
+      "test": {
+        "type": "luck",
+        "success": "c13-11",
+        "failure": "c13-26"
+      }
+    },
+    "c13-11": {
+      "text": "Réussi. Vous passez au moment où l'allée redevient une allée. Derrière vous, le dernier boulon part vers le ciel et ne revient pas. La porte de la datcha est ouverte. Ça sent le bois mouillé et autre chose, de plus ancien.",
+      "choices": [
+        {
+          "text": "Entrer dans la datcha",
+          "to": "c13-7"
+        }
+      ]
+    },
+    "c13-26": {
+      "text": "Raté. Le sol vous lâche et le ciel vient d'en bas. Vous retombez sur la clôture, puis sur le dos, le souffle parti. Vous perdez 3 points d'Endurance. Vous rampez le reste de l'allée. La porte est ouverte. Ça sent le bois mouillé et autre chose, de plus ancien.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -3
+        }
+      ],
+      "choices": [
+        {
+          "text": "Entrer dans la datcha",
+          "to": "c13-7"
+        }
+      ]
+    },
+    "c13-16": {
+      "text": "Vous passez par la fenêtre. Le verre vous ouvre la paume, proprement. Vous perdez 1 point d'Endurance. De l'autre côté, une cuisine : une table, une tasse, une radio ouverte en deux. Au plafond, le trou par lequel la pluie entre depuis des mois. Vous sucez votre main et poussez la porte de la pièce d'à côté.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -1
+        }
+      ],
+      "choices": [
+        {
+          "text": "Pousser la porte",
+          "to": "c13-7"
+        }
+      ]
+    },
+    "c13-7": {
+      "text": "Il est assis contre le mur, sous le trou du toit, un long manteau sur une combinaison, la capuche baissée. Un trou net dans la poitrine, pas de sortie. La pluie l'a lavé et séché cent fois. Sa main droite tient encore un PDA contre sa cuisse, comme on tient un livre qu'on a fini. Sur la planche d'en face, quelqu'un a gravé un nom : Fantôme.",
+      "choices": [
+        {
+          "text": "Fouiller le corps",
+          "to": "c13-30"
+        },
+        {
+          "text": "Ressortir sans le toucher",
+          "to": "c13-5"
+        }
+      ]
+    },
+    "c13-30": {
+      "text": "Ses doigts cèdent sans résister. Le PDA de Fantôme s'allume au premier contact, l'écran rayé, la batterie presque pleine. Dans sa besace, une Grenade F1 roulée dans une chaussette, et rien d'autre à manger. Vous prenez les deux. Il ne proteste pas.",
+      "effects": [
+        {
+          "type": "item",
+          "action": "add",
+          "item": "pda_fantome"
+        },
+        {
+          "type": "item",
+          "action": "add",
+          "item": "grenade"
+        }
+      ],
+      "choices": [
+        {
+          "text": "Lire le PDA",
+          "to": "c13-13"
+        },
+        {
+          "text": "Repartir vers la place",
+          "to": "c13-5"
+        }
+      ]
+    },
+    "c13-13": {
+      "text": "Un seul message, jamais envoyé. Strelok. Ils m'ont eu aux Entrepôts, je ne monterai pas. Le Décodeur est à l'hôtel Polissya, chambre 26, derrière le radiateur. Tu sais ce qu'il ouvre. Ne souhaite rien. Une lettre en guise de signature. Vous refermez le PDA. Dehors, la pluie reprend sur ce qui reste du toit.",
+      "choices": [
+        {
+          "text": "Repartir vers la place",
+          "to": "c13-5"
+        }
+      ]
+    },
+    "c13-4": {
+      "text": "La route de l'est sort du village entre deux hangars. Au dernier, la Liberté a dressé des sacs et une mitrailleuse qui regarde le nord. Ils sont quatre. Quand vous arrivez, la colonne grise sort des arbres : des hommes en combinaison, masque baissé, qui avancent en ligne et chantent. La mitrailleuse part. Deux d'entre eux tombent, les autres ne ralentissent pas. L'un vous a vu.",
+      "choices": [
+        {
+          "text": "Tenir la position avec la Liberté",
+          "to": "c13-20"
+        },
+        {
+          "text": "Lancer la Grenade F1",
+          "to": "c13-35",
+          "if": {
+            "type": "item",
+            "item": "grenade"
+          },
+          "effects": [
+            {
+              "type": "item",
+              "action": "remove",
+              "item": "grenade"
+            }
+          ]
+        },
+        {
+          "text": "Ramper dans le fossé jusqu'à la route",
+          "to": "c13-28"
+        }
+      ]
+    },
+    "c13-20": {
+      "text": "Il vient vers vous en priant, le fusil à la hanche, sans se baisser. Les balles de la Liberté le frôlent et il ne cligne pas des yeux. Sous le masque, la voix ne s'arrête pas, régulière, comme une litanie apprise par cœur. Ils ne négocient pas. Ils prient avant de tirer. Il tire.",
+      "combat": {
+        "name": "Soldat du Monolithe",
+        "habilete": 7,
+        "endurance": 8,
+        "damage": 2,
+        "win": "c13-10",
+        "flee": {
+          "to": "c13-28"
+        }
+      }
+    },
+    "c13-35": {
+      "text": "Vous dégoupillez, comptez deux, lancez. La Grenade F1 roule entre les jambes du premier et le chant s'arrête net. Quand la fumée se couche, il reste trois corps en travers de la route et un masque qui a roulé jusqu'à vos pieds. La mitrailleuse achève le reste. Vous n'avez plus de grenade.",
+      "choices": [
+        {
+          "text": "Avancer sur la route",
+          "to": "c13-10"
+        }
+      ]
+    },
+    "c13-10": {
+      "text": "Le silence revient par morceaux. Les hommes de la Liberté rechargent sans parler. Sur la route, les morts du Monolithe ont les yeux ouverts et blancs, et des visages de gens ordinaires. L'un porte une alliance. Plus loin, la route continue vers l'est entre des panneaux rouges à tête de mort, jusqu'aux premiers pins, qui sont rouges aussi.",
+      "choices": [
+        {
+          "text": "Continuer vers l'est",
+          "to": "c13-6"
+        }
+      ]
+    },
+    "c13-28": {
+      "text": "Vous rampez dans le fossé, le visage dans une eau qui n'a plus de couleur. Au-dessus, les balles passent dans les deux sens et le chant ne s'arrête pas. Le compteur grimpe. Vous prenez 3 rads. Cent mètres plus loin, le fossé rejoint la route de l'est, derrière les panneaux rouges. Derrière vous, la mitrailleuse se tait, et vous ne saurez jamais pourquoi.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "radiation",
+          "delta": 3
+        }
+      ],
+      "choices": [
+        {
+          "text": "Continuer vers l'est",
+          "to": "c13-6"
+        },
+        {
+          "text": "Boire l'anti-rad",
+          "to": "c13-38",
+          "if": {
+            "type": "item",
+            "item": "antirad"
+          },
+          "effects": [
+            {
+              "type": "item",
+              "action": "remove",
+              "item": "antirad"
+            },
+            {
+              "type": "stat",
+              "stat": "radiation",
+              "delta": -5
+            }
+          ]
+        }
+      ]
+    },
+    "c13-38": {
+      "text": "Vous buvez l'Anti-rad assis dans le fossé, le dos aux panneaux rouges. Le goût de craie, puis le compteur qui ralentit, puis presque rien. Vous perdez 5 rads. Vous jetez le flacon dans l'eau sans couleur, où il flotte un moment, puis non.",
+      "choices": [
+        {
+          "text": "Continuer vers l'est",
+          "to": "c13-6"
+        }
+      ]
+    },
+    "c13-6": {
+      "text": "La route de l'est est barrée de chevaux de frise et de panneaux : un crâne, un éclair, un mot en russe que la rouille a mangé. Au-delà, un champ d'herbe haute jusqu'aux pins rouges, et dedans, des traces, de pas et d'autre chose. Un soulier au milieu, seul. Les mines ne crépitent pas ; le détecteur ne sert à rien ici.",
+      "choices": [
+        {
+          "text": "Suivre la Carte des champs de mines",
+          "to": "c13-23",
+          "if": {
+            "type": "item",
+            "item": "carte_militaire"
+          }
+        },
+        {
+          "text": "Traverser en suivant les traces",
+          "to": "c13-15"
+        },
+        {
+          "text": "Revenir vers la place",
+          "to": "c13-5"
+        }
+      ]
+    },
+    "c13-23": {
+      "text": "Sur la Carte des champs de mines, l'officier d'Agroprom a tracé un couloir au crayon rouge, deux mètres de large, en zigzag, avec des repères : la borne, le pommier mort, le soulier. Vous suivez le crayon pas à pas. Le soulier est bien là. De l'autre côté, la route reprend et les pins commencent. Vous ne vous retournez pas sur l'herbe.",
+      "choices": [
+        {
+          "text": "Continuer vers la Forêt rouge",
+          "to": "c14-2"
+        }
+      ]
+    },
+    "c13-15": {
+      "text": "Vous mettez vos pieds dans les traces. Elles vont tout droit, puis s'arrêtent, puis reprennent plus loin, sans qu'on sache pourquoi. Entre les deux, l'herbe est intacte, haute, et elle bouge à peine dans le vent. Vous regardez le soulier et vous choisissez un pas. Tentez votre Chance.",
+      "test": {
+        "type": "luck",
+        "success": "c13-32",
+        "failure": "c13-18"
+      }
+    },
+    "c13-32": {
+      "text": "Réussi. L'herbe ne dit rien. Vous traversez les vingt derniers mètres sans respirer et touchez le bitume de l'autre côté comme on touche un mur après une course. Derrière vous, le soulier est toujours au milieu du champ. Devant, les pins rouges.",
+      "choices": [
+        {
+          "text": "Continuer vers la Forêt rouge",
+          "to": "c14-2"
+        }
+      ]
+    },
+    "c13-18": {
+      "text": "Raté. Un clic sous le pied, puis la terre monte. Vous vous réveillez trois mètres plus loin, le visage dans l'herbe, un sifflement dans la tête, la jambe droite mouillée. Vous perdez 3 points d'Endurance. Vous rampez le reste du champ sur les coudes, dans votre propre trace. Le bitume, enfin. Les pins rouges.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -3
+        }
+      ],
+      "choices": [
+        {
+          "text": "Continuer vers la Forêt rouge",
+          "to": "c14-2"
+        },
+        {
+          "text": "Vider la trousse de soins",
+          "to": "c13-36",
+          "if": {
+            "type": "item",
+            "item": "trousse"
+          },
+          "effects": [
+            {
+              "type": "item",
+              "action": "remove",
+              "item": "trousse"
+            },
+            {
+              "type": "stat",
+              "stat": "endurance",
+              "delta": 6
+            }
+          ]
+        }
+      ]
+    },
+    "c13-36": {
+      "text": "Vous videz la Trousse de soins sur le bitume : compresse, garrot, la seringue dans la cuisse. La jambe cesse de couler. Vous regagnez 6 points d'Endurance. Vous laissez la boîte vide au bord du champ, à côté du panneau à tête de mort, pour le suivant.",
+      "choices": [
+        {
+          "text": "Continuer vers la Forêt rouge",
+          "to": "c14-2"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,491 @@
+{
+  "title": "L'Arène",
+  "summary": "Le héros s'est battu dans l'Arène d'Arnie pour des roubles : un stalker, puis deux pseudo-chiens, puis une Chimère. Trois victoires font de lui le champion (`arene_champion`). Entre les rounds, le vestiaire : soins, bras de fer avec un parieur, ou renoncer. Il remonte au Bar (c08-2).",
+  "brief": "Boucle optionnelle. Arnie : trois rounds, mise libre. Combats successifs (un stalker habilete 8 endurance 8 ; deux pseudo-chiens ; une Chimère habilete 10 endurance 10 damage 3), chacun rapporte des roubles (300, 500, 1 000). On peut arrêter entre deux rounds et remonter. Trois victoires : arene_champion. Un combat sur une autre caractéristique (bras de fer sur l'Endurance contre un parieur, stat endurance). Carrefour : le vestiaire entre les rounds. Les consommables listés dans requires peuvent être consommés par un choix (effet remove + effet stat), le paragraphe d'arrivée le dit. Taille : 24 à 30 paragraphes.",
+  "entries": {
+    "c09-1": "Descente dans la fosse sous le Bar"
+  },
+  "exits": {
+    "c08-2": "Remonter au Bar"
+  },
+  "provides": {
+    "items": [],
+    "flags": [
+      "arene_champion"
+    ]
+  },
+  "requires": {
+    "items": [
+      "ak74",
+      "bandage",
+      "trousse"
+    ],
+    "flags": []
+  },
+  "image": "c09-4",
+  "paragraphs": {
+    "c09-1": {
+      "text": "L'escalier descend derrière la cuisine du Bar. Les marches sont humides, le mur suinte. En bas, une cave plus grande que le Bar lui-même : des projecteurs de chantier, une fosse de béton entourée de grilles, des hommes agglutinés contre le fer. Ça crie. Ça sent la sueur et le sang sec. Un type en costume trop petit, cigare éteint au coin de la bouche, vous regarde arriver sans bouger.",
+      "choices": [
+        {
+          "text": "Aller trouver l'homme au cigare",
+          "to": "c09-17"
+        },
+        {
+          "text": "Se glisser parmi les parieurs",
+          "to": "c09-9"
+        },
+        {
+          "text": "Remonter au Bar",
+          "to": "c08-2"
+        }
+      ]
+    },
+    "c09-17": {
+      "text": "Arnie ne tend pas la main. Il vous mesure comme on pèse une bête. Trois rounds, dit-il. Un homme, des chiens, et ce qu'on a trouvé dans la Forêt rouge. Tu vis, tu touches. Trois cents, cinq cents, mille. Pas de droit d'entrée, la mise, c'est ta peau. Tu peux arrêter entre deux rounds, personne ne t'en voudra. Il rallume son cigare. La fumée monte vers les projecteurs.",
+      "choices": [
+        {
+          "text": "Descendre dans la fosse",
+          "to": "c09-4"
+        },
+        {
+          "text": "Aller d'abord voir les parieurs",
+          "to": "c09-9"
+        },
+        {
+          "text": "Remonter au Bar",
+          "to": "c08-2"
+        }
+      ]
+    },
+    "c09-9": {
+      "text": "Contre la grille, les parieurs ne vous regardent pas. En bas, deux hommes tirent un troisième par les pieds. Il laisse une traînée sur le béton. Un gros à la veste de pluie compte des billets sur son genou. Il parle sans lever la tête. Si tu gagnes un round, reviens me voir. J'ai une table, et un bras. Derrière lui, quelqu'un lave la fosse à grande eau.",
+      "choices": [
+        {
+          "text": "Aller trouver l'homme au cigare",
+          "to": "c09-17"
+        },
+        {
+          "text": "Remonter au Bar",
+          "to": "c08-2"
+        }
+      ]
+    },
+    "c09-4": {
+      "text": "La grille se referme derrière vous. La fosse fait six mètres de large, le béton est encore mouillé. En face, un stalker en veste de toile, lame à la main, les yeux rouges de vodka. Il ne dit rien. Au-dessus, les visages s'écrasent contre le fer. Arnie frappe deux fois la grille avec une clef. C'est le signal.",
+      "image": {
+        "src": "images/c09-4.webp",
+        "alt": "Une fosse de béton sous des projecteurs de chantier, entourée de grilles où se pressent des silhouettes.",
+        "prompt": "Une fosse de combat en béton creusée dans une cave industrielle, éclairée par des projecteurs de chantier, cernée de grilles de fer contre lesquelles se pressent des silhouettes de parieurs. Sol mouillé, traces sombres, une échelle de fer dans un angle."
+      },
+      "combat": {
+        "name": "Le stalker aux yeux rouges",
+        "habilete": 6,
+        "endurance": 8,
+        "win": "c09-22"
+      }
+    },
+    "c09-22": {
+      "text": "Le stalker est à terre et ne se relève pas. Les parieurs hurlent, pour ou contre, on ne sait plus. Arnie vous fait passer par une porte basse et vous compte les billets sur place, un par un, sans les regarder. Vous gagnez 300 roubles. Un round, dit-il. Il te reste deux marches. Il montre une pièce au fond du couloir, avec un banc et une ampoule.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "roubles",
+          "delta": 300
+        }
+      ],
+      "choices": [
+        {
+          "text": "Passer au vestiaire",
+          "to": "c09-11"
+        },
+        {
+          "text": "Remonter au Bar avec les roubles",
+          "to": "c08-2"
+        }
+      ]
+    },
+    "c09-11": {
+      "text": "Le vestiaire est une cellule de béton avec un banc, une ampoule nue et un seau. Les cris de la fosse arrivent assourdis par le couloir. Le gros à la veste de pluie est assis là, une table pliante devant lui, le coude posé. Il tape du doigt sur le bois. Cent roubles, et on voit lequel des deux lâche. Au mur, quelqu'un a gravé des bâtons. Beaucoup de bâtons.",
+      "choices": [
+        {
+          "text": "Descendre pour le deuxième round",
+          "to": "c09-26"
+        },
+        {
+          "text": "Jouer au bras de fer (100 roubles)",
+          "to": "c09-21",
+          "if": {
+            "type": "stat",
+            "stat": "roubles",
+            "op": ">=",
+            "value": 100
+          },
+          "effects": [
+            {
+              "type": "stat",
+              "stat": "roubles",
+              "delta": -100
+            }
+          ]
+        },
+        {
+          "text": "Poser le bandage",
+          "to": "c09-12",
+          "if": {
+            "type": "item",
+            "item": "bandage"
+          },
+          "effects": [
+            {
+              "type": "item",
+              "action": "remove",
+              "item": "bandage"
+            },
+            {
+              "type": "stat",
+              "stat": "endurance",
+              "delta": 3
+            }
+          ]
+        },
+        {
+          "text": "Ouvrir la trousse de soins",
+          "to": "c09-18",
+          "if": {
+            "type": "item",
+            "item": "trousse"
+          },
+          "effects": [
+            {
+              "type": "item",
+              "action": "remove",
+              "item": "trousse"
+            },
+            {
+              "type": "stat",
+              "stat": "endurance",
+              "delta": 6
+            }
+          ]
+        },
+        {
+          "text": "Remonter au Bar",
+          "to": "c08-2"
+        }
+      ]
+    },
+    "c09-21": {
+      "text": "Sa main est molle et chaude. Puis elle ne l'est plus. Ce n'est pas une question de force, c'est une question de celui qui tient le plus longtemps : ça se joue sur l'Endurance. Il a le souffle court, mais il a fait ça cent fois. L'ampoule grésille au-dessus de la table. Vous pouvez lâcher à tout moment. La mise, elle, ne reviendra pas.",
+      "combat": {
+        "name": "Le parieur",
+        "stat": "endurance",
+        "habilete": 12,
+        "endurance": 6,
+        "damage": 2,
+        "win": "c09-3",
+        "flee": {
+          "to": "c09-25"
+        }
+      }
+    },
+    "c09-3": {
+      "text": "Son poignet plie, le dos de sa main touche le bois. Il reste un moment comme ça, le regard sur la table. Puis il sort la liasse et paie sans un mot. Vous empochez 200 roubles. Il masse son bras, rit tout seul. Demain j'en trouverai un autre, dit-il. Le couloir ramène vers le banc et l'ampoule.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "roubles",
+          "delta": 200
+        }
+      ],
+      "choices": [
+        {
+          "text": "Retourner s'asseoir sur le banc",
+          "to": "c09-11"
+        }
+      ]
+    },
+    "c09-25": {
+      "text": "Vous lâchez. Votre bras pend le long du corps et ne répond plus tout de suite. Vous perdez 2 points d'Endurance. Le gros ramasse la mise, la glisse dans sa veste de pluie et pose de nouveau le coude sur la table, pour le suivant. Il ne vous regarde plus. Le seau, dans le coin, est plein d'eau rouge.",
+      "choices": [
+        {
+          "text": "Retourner s'asseoir sur le banc",
+          "to": "c09-11"
+        }
+      ]
+    },
+    "c09-12": {
+      "text": "Vous serrez le bandage autour de l'entaille, avec les dents. Le tissu boit vite et devient brun. Vous regagnez 3 points d'Endurance. Dans le couloir, quelqu'un fait rouler une cage à roulettes sur le béton. Derrière les barreaux, ça gronde à deux voix, et une griffe racle le fer.",
+      "choices": [
+        {
+          "text": "Retourner s'asseoir sur le banc",
+          "to": "c09-11"
+        }
+      ]
+    },
+    "c09-18": {
+      "text": "Vous videz la trousse de soins sur le banc : compresses, aiguille, une ampoule jaune que vous cassez et buvez. La douleur recule derrière un mur de coton. Vous regagnez 6 points d'Endurance. L'ampoule du plafond cligne une fois. Vous jetez le reste dans le seau.",
+      "choices": [
+        {
+          "text": "Retourner s'asseoir sur le banc",
+          "to": "c09-11"
+        }
+      ]
+    },
+    "c09-26": {
+      "text": "La fosse a été lavée. Dans le mur d'en face, une trappe de fer, et derrière, un grondement à deux voix. Pseudo-chiens, dit quelqu'un en haut, et des billets changent de mains. Sur le côté, la grille présente des barreaux horizontaux, assez larges pour un pied. Arnie lève sa clef. Il vous laisse trois secondes.",
+      "choices": [
+        {
+          "text": "Grimper sur la grille avant le lâcher",
+          "to": "c09-6"
+        },
+        {
+          "text": "Rester au centre, couteau bas",
+          "to": "c09-19"
+        }
+      ]
+    },
+    "c09-6": {
+      "text": "Vous sautez sur les barreaux. Le fer est gras, les parieurs tapent dessus pour vous faire tomber, une main attrape votre cheville et lâche. La trappe claque en bas. Il faut tenir, trouver l'appui, et ne pas retomber au mauvais moment. Testez votre Habileté.",
+      "test": {
+        "type": "stat",
+        "stat": "habilete",
+        "dice": "2d6",
+        "success": "c09-2",
+        "failure": "c09-14"
+      }
+    },
+    "c09-2": {
+      "text": "Vous tenez. Les deux pseudo-chiens passent sous vous, se cognent au mur, reviennent. Depuis la grille, vous frappez le premier à la nuque quand il saute, puis vous retombez sur le second. Ils ne viennent qu'un à la fois, maintenant. Leurs yeux sont blancs, leur peau pend. Ils sentent la carcasse.",
+      "combat": {
+        "name": "Les pseudo-chiens, un par un",
+        "habilete": 5,
+        "endurance": 10,
+        "damage": 2,
+        "win": "c09-27"
+      }
+    },
+    "c09-14": {
+      "text": "Vous tombez. Le béton vous prend l'épaule, puis les deux bêtes vous prennent le reste. Vous perdez 3 points d'Endurance avant d'être debout. Elles tournent ensemble, l'une attend que l'autre morde. Au-dessus, les parieurs rient. Leur haleine sent la carcasse, et elles mordent à arracher.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -3
+        }
+      ],
+      "combat": {
+        "name": "Les pseudo-chiens",
+        "habilete": 7,
+        "endurance": 10,
+        "damage": 2,
+        "win": "c09-27"
+      }
+    },
+    "c09-19": {
+      "text": "La trappe claque. Deux pseudo-chiens sortent ensemble, bas sur pattes, les yeux blancs, la peau en lambeaux. Ils ne vous attaquent pas de front. L'un tourne, l'autre attend que vous le regardiez. Ils mordent à arracher. Au-dessus, personne ne parie plus sur vous.",
+      "combat": {
+        "name": "Les pseudo-chiens",
+        "habilete": 7,
+        "endurance": 10,
+        "damage": 2,
+        "win": "c09-27"
+      }
+    },
+    "c09-27": {
+      "text": "Les deux bêtes sont mortes, l'une sur l'autre. Vous avez du sang de chien jusqu'aux coudes. Arnie ouvre la porte basse et compte plus lentement, cette fois. Vous gagnez 500 roubles. Il regarde vos mains. Le troisième, dit-il, on l'a ramené de la Forêt rouge dans un camion-citerne. Personne n'a encore touché les mille. Puis il retourne à sa grille.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "roubles",
+          "delta": 500
+        }
+      ],
+      "choices": [
+        {
+          "text": "Passer au vestiaire",
+          "to": "c09-8"
+        }
+      ]
+    },
+    "c09-8": {
+      "text": "Le vestiaire, de nouveau. Le gros à la veste de pluie est parti, sa table aussi. Il reste le banc, l'ampoule, le seau. Au mur, parmi les bâtons gravés, trois sont entourés d'un cercle. Trois seulement. Par le couloir, on entend quelque chose respirer, lent, trop grave pour un chien. Les parieurs se sont tus.",
+      "choices": [
+        {
+          "text": "Descendre pour le troisième round",
+          "to": "c09-15"
+        },
+        {
+          "text": "Poser le bandage",
+          "to": "c09-5",
+          "if": {
+            "type": "item",
+            "item": "bandage"
+          },
+          "effects": [
+            {
+              "type": "item",
+              "action": "remove",
+              "item": "bandage"
+            },
+            {
+              "type": "stat",
+              "stat": "endurance",
+              "delta": 3
+            }
+          ]
+        },
+        {
+          "text": "Ouvrir la trousse de soins",
+          "to": "c09-23",
+          "if": {
+            "type": "item",
+            "item": "trousse"
+          },
+          "effects": [
+            {
+              "type": "item",
+              "action": "remove",
+              "item": "trousse"
+            },
+            {
+              "type": "stat",
+              "stat": "endurance",
+              "delta": 6
+            }
+          ]
+        },
+        {
+          "text": "Remonter au Bar avec les roubles",
+          "to": "c08-2"
+        }
+      ]
+    },
+    "c09-5": {
+      "text": "Vous nouez le bandage sur la morsure la plus large, à la cuisse. Le tissu colle tout de suite à la plaie. Vous regagnez 3 points d'Endurance. Dans le couloir, la respiration lente s'arrête, puis reprend, comme si la chose avait écouté le bruit du nœud.",
+      "choices": [
+        {
+          "text": "Retourner s'asseoir sur le banc",
+          "to": "c09-8"
+        }
+      ]
+    },
+    "c09-23": {
+      "text": "Vous videz la trousse de soins : compresses sur les morsures, l'aiguille dans la cuisse, sans regarder. La douleur s'éloigne derrière une vitre. Vous regagnez 6 points d'Endurance. Vous jetez l'emballage dans le seau. L'eau rouge le recouvre lentement, puis il coule.",
+      "choices": [
+        {
+          "text": "Retourner s'asseoir sur le banc",
+          "to": "c09-8"
+        }
+      ]
+    },
+    "c09-15": {
+      "text": "Ils ont ouvert le mur. Derrière, une cage de camion-citerne, et dedans, une « Chimère » : deux têtes, ou une tête et une bosse qui respire, des pattes trop longues, un cuir noir qui luit sous les projecteurs. Elle ne grogne pas. Elle vous regarde et calcule la distance. Les parieurs reculent de la grille. Arnie lève sa clef, et sa main tremble un peu.",
+      "choices": [
+        {
+          "text": "L'affronter au couteau, au centre",
+          "to": "c09-10"
+        },
+        {
+          "text": "Attendre son saut, dos à la grille",
+          "to": "c09-28"
+        },
+        {
+          "text": "Vider l'AK-74 dans la cage",
+          "to": "c09-7",
+          "if": {
+            "type": "item",
+            "item": "ak74"
+          }
+        }
+      ]
+    },
+    "c09-10": {
+      "text": "La Chimère sort de la cage en deux bonds. Elle frappe à casser des os, et elle frappe depuis des angles où rien ne devrait pouvoir frapper. Vous ne voyez que des pattes et des dents. Le béton tremble sous elle. Au-dessus, plus personne ne crie.",
+      "combat": {
+        "name": "La Chimère",
+        "habilete": 8,
+        "endurance": 10,
+        "damage": 2,
+        "win": "c09-16"
+      }
+    },
+    "c09-28": {
+      "text": "Vous collez le dos à la grille et vous attendez. Elle se ramasse, les pattes arrière tremblent, la bosse sur son dos respire plus vite. Il faut qu'elle saute, et qu'au dernier instant vous ne soyez plus là, pour que le fer la reçoive à votre place. Tentez votre Chance.",
+      "test": {
+        "type": "luck",
+        "success": "c09-24",
+        "failure": "c09-13"
+      }
+    },
+    "c09-24": {
+      "text": "Elle s'écrase dans la grille à l'endroit où vous étiez. Le fer plie, deux parieurs tombent en arrière. Quand elle se retourne, une de ses pattes avant traîne et le cuir est ouvert sur le flanc. Elle frappe toujours à casser des os. Mais elle est moins longue à tuer.",
+      "combat": {
+        "name": "La Chimère blessée",
+        "habilete": 8,
+        "endurance": 6,
+        "damage": 2,
+        "win": "c09-16"
+      }
+    },
+    "c09-13": {
+      "text": "Elle ne saute pas. Elle vous cueille contre la grille, et le fer vous rentre dans le dos pendant qu'elle vous roule dessous. Vous perdez 3 points d'Endurance. Quand vous vous relevez, elle est déjà au centre, intacte, et elle attend. Elle frappe à casser des os.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -3
+        }
+      ],
+      "combat": {
+        "name": "La Chimère",
+        "habilete": 8,
+        "endurance": 10,
+        "damage": 2,
+        "win": "c09-16"
+      }
+    },
+    "c09-7": {
+      "text": "Vous épaulez l'AK-74 et vous videz le chargeur dans la cage. La Chimère hurle, enfin, et s'affaisse contre les barreaux. Le silence dure une seconde. Puis les parieurs sifflent. Arnie ne compte rien. Il crache son cigare dans la fosse. Pas d'armes, dit-il. Les mille restent dans ma poche, et toi, tu ne redescends plus. Deux hommes vous poussent vers l'escalier.",
+      "choices": [
+        {
+          "text": "Remonter au Bar sous les sifflets",
+          "to": "c08-2"
+        }
+      ]
+    },
+    "c09-16": {
+      "text": "La Chimère est morte, la gueule ouverte sur le béton. Vous n'entendez plus que votre propre sang. Puis la cave explose. Arnie descend lui-même dans la fosse, ce qu'il ne fait jamais, et vous compte mille roubles sous les projecteurs, devant tout le monde. Vous gagnez 1 000 roubles. Il grave lui-même un bâton sur le mur, et l'entoure.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "roubles",
+          "delta": 1000
+        },
+        {
+          "type": "flag",
+          "flag": "arene_champion"
+        }
+      ],
+      "choices": [
+        {
+          "text": "Rester un moment avec les parieurs",
+          "to": "c09-20"
+        },
+        {
+          "text": "Remonter au Bar",
+          "to": "c08-2"
+        }
+      ]
+    },
+    "c09-20": {
+      "text": "On vous tend des verres que vous ne buvez pas. Le gros à la veste de pluie est revenu, il vous serre le bras, celui qu'il a tordu. Arnie fume à l'écart, le regard sur la Chimère qu'on hisse avec un treuil. Il dit, sans se tourner vers vous : là d'où elle vient, il y en a d'autres. Et pire que ça. Garde tes roubles pour là-haut. L'escalier vous attend.",
+      "choices": [
+        {
+          "text": "Remonter au Bar",
+          "to": "c08-2"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,565 @@
+{
+  "title": "La C-Conscience",
+  "summary": "Le héros est devant les cuves de la C-Conscience. Il a rejoint les voix (fin « Rejoindre ») ou, sachant ce qu'il est, les a débranchées (fin « Ce que vous êtes »). Toutes les issues sont des fins.",
+  "brief": "Chapitre de fins. Les cuves, les corps branchés, sept voix. Elles proposent : une cuve est vide. Fin « Rejoindre » (au rabais) : accepter, accessible à tous. Fin « Ce que vous êtes » (victoire pleine) : exige verite_connue et monolithe_vu (condition all) : le héros comprend qu'il est le dernier envoyé de Strelok, refuse, débranche les cuves ; la Zone ne disparaît pas, mais plus personne ne parle dans les têtes. Un chemin intermédiaire : essayer de débrancher sans savoir (sans verite_connue) : les gardes ou le psi vous arrêtent, −6 points d'Endurance, et il reste à accepter ou mourir (combat final contre un garde, habilete 11). Si conscience_appel, les voix connaissent votre nom, que vous ne connaissez pas. Pas de sortie. Les consommables listés dans requires peuvent être consommés par un choix (effet remove + effet stat), le paragraphe d'arrivée le dit. Taille : 26 à 32 paragraphes.",
+  "entries": {
+    "c30-1": "Dans la salle des cuves, les voix"
+  },
+  "exits": {},
+  "provides": {
+    "items": [],
+    "flags": []
+  },
+  "requires": {
+    "items": [],
+    "flags": [
+      "verite_connue",
+      "monolithe_vu",
+      "conscience_appel"
+    ]
+  },
+  "image": "c30-5",
+  "paragraphs": {
+    "c30-1": {
+      "text": [
+        "Sept cuves de verre, hautes comme des hommes, alignées sous les néons. Dedans, des corps nus flottent dans un liquide jaune, la nuque hérissée de câbles. Des bulles montent le long des visages. Ça sent le formol et le cuivre chaud.",
+        "Les voix sont déjà là. Sept, qui parlent ensemble, calmes, sans bouche. Entre. Nous t'attendions.",
+        "Au fond de la salle, une huitième cuve est ouverte, et le liquide y attend."
+      ],
+      "choices": [
+        {
+          "text": "Écouter ce qu'elles ont à dire",
+          "to": "c30-14"
+        },
+        {
+          "text": "Avancer entre les cuves sans répondre",
+          "to": "c30-22"
+        },
+        {
+          "text": "Demander pourquoi elles vous ont appelé",
+          "to": "c30-8",
+          "if": {
+            "type": "flag",
+            "flag": "conscience_appel"
+          }
+        }
+      ]
+    },
+    "c30-14": {
+      "text": [
+        "Elles racontent sans se presser. Un laboratoire sous le réacteur, en 2006. Sept chercheurs qui ont voulu réparer ce que les hommes avaient fait ici. Ils se sont branchés ensemble, ils ont cherché le champ qui lie les choses, ils l'ont trouvé. La Zone est ce qui a débordé.",
+        "Nous avons essayé de réparer. Ça n'a pas tenu. Depuis, nous gardons l'endroit.",
+        "Un ventilateur tourne dans le plafond, lent, à contretemps des voix."
+      ],
+      "choices": [
+        {
+          "text": "Les laisser finir",
+          "to": "c30-27"
+        },
+        {
+          "text": "Avancer vers la cuve vide",
+          "to": "c30-5"
+        }
+      ]
+    },
+    "c30-22": {
+      "text": [
+        "Vous passez entre les cuves. Les corps ne vous suivent pas des yeux : ils n'ont plus de paupières. Un vieux, un jeune, une femme au crâne rasé. Les câbles sortent des nuques et montent vers une armoire grise qui ronfle.",
+        "Les voix vous accompagnent, à la même distance quoi que vous fassiez. Tu peux regarder. Ils ne dorment pas. Ils pensent.",
+        "Au bout de la rangée, la huitième cuve est ouverte."
+      ],
+      "choices": [
+        {
+          "text": "S'arrêter devant la cuve vide",
+          "to": "c30-5"
+        },
+        {
+          "text": "Revenir écouter ce qu'elles disent",
+          "to": "c30-14"
+        }
+      ]
+    },
+    "c30-8": {
+      "text": [
+        "Elles disent votre nom.",
+        "Pas un surnom de stalker, pas celui du PDA. Un prénom, un patronyme, une ville au sud. Vous ne les connaissez pas. Ils sonnent juste, comme une clef qui tourne dans une serrure qu'on n'a jamais vue.",
+        "Nous te l'avons pris quand tu es passé. Nous pouvons te le rendre.",
+        "Dans la cuve la plus proche, une bulle reste collée à la vitre et ne monte pas."
+      ],
+      "choices": [
+        {
+          "text": "Demander quand vous êtes passé",
+          "to": "c30-3"
+        },
+        {
+          "text": "Ne pas répondre et avancer",
+          "to": "c30-5"
+        }
+      ]
+    },
+    "c30-3": {
+      "text": [
+        "Tu es déjà venu. Une fois, par la grande salle, devant la pierre qui brille. Tu as souhaité. Nous avons exaucé à notre façon : nous avons gardé ce qu'il y avait dans ta tête et rendu le reste à la Zone.",
+        "Vous ne vous souvenez de rien avant le Cordon. Vous le saviez. Vous ne saviez pas que quelqu'un l'avait décidé.",
+        "Le liquide jaune clapote doucement dans la cuve ouverte, au bout de la salle."
+      ],
+      "choices": [
+        {
+          "text": "Avancer vers la cuve vide",
+          "to": "c30-5"
+        },
+        {
+          "text": "Revenir vers l'entrée et les écouter",
+          "to": "c30-14"
+        }
+      ]
+    },
+    "c30-27": {
+      "text": [
+        "Nous avons besoin de bras.",
+        "Les corps dans les cuves ne bougent plus. Pour tenir la Zone, fermer ce qui s'ouvre, renvoyer ceux qui montent trop haut, il leur faut des mains dehors. Le Monolithe, ce sont leurs mains. Ceux qui arrivent jusqu'ici, ils les gardent ou ils les renvoient.",
+        "Et il faut une tête de plus ici. Une qui a marché jusqu'au bout. La cuve est prête depuis longtemps.",
+        "Un goutte-à-goutte compte les secondes au-dessus de vous."
+      ],
+      "choices": [
+        {
+          "text": "Aller voir la cuve vide",
+          "to": "c30-5"
+        },
+        {
+          "text": "Chercher ce qui alimente les cuves",
+          "to": "c30-2"
+        }
+      ]
+    },
+    "c30-5": {
+      "text": [
+        "La huitième cuve est ouverte comme une porte. Le liquide jaune arrive à mi-hauteur, tiède, avec une odeur de sel et de formol. Un faisceau de câbles pend au-dessus, les fiches propres, numérotées.",
+        "Les sept voix se taisent pour vous laisser regarder. C'est la première fois qu'elles se taisent.",
+        "Derrière vous, l'armoire grise ronfle. Au mur, une porte de fer sans poignée, et deux gardes immobiles en blouse qui ne vous regardent pas."
+      ],
+      "image": {
+        "src": "images/c30-5.webp",
+        "alt": "La salle des cuves de la C-Conscience : sept cuves de verre alignées sous les néons, des corps branchés qui flottent, et au bout de la rangée une huitième cuve ouverte.",
+        "prompt": "Une salle de laboratoire souterraine sous des néons : sept hautes cuves de verre alignées où flottent des corps nus reliés par des câbles à la nuque, une huitième cuve ouverte et vide au bout de la rangée, des faisceaux de câbles montant vers une armoire électrique grise, un carrelage blanc et une porte de fer sans poignée."
+      },
+      "choices": [
+        {
+          "text": "Entrer dans la cuve vide",
+          "to": "c30-19"
+        },
+        {
+          "text": "Regarder les autres cuves de plus près",
+          "to": "c30-25"
+        },
+        {
+          "text": "Chercher ce qui alimente les cuves",
+          "to": "c30-2"
+        },
+        {
+          "text": "Leur parler de la pierre peinte du palais",
+          "to": "c30-24",
+          "if": {
+            "type": "flag",
+            "flag": "monolithe_vu"
+          }
+        },
+        {
+          "text": "Dire ce que vous êtes",
+          "to": "c30-12",
+          "if": {
+            "type": "all",
+            "conditions": [
+              {
+                "type": "flag",
+                "flag": "verite_connue"
+              },
+              {
+                "type": "flag",
+                "flag": "monolithe_vu"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "c30-19": {
+      "text": [
+        "Vous montez sur le rebord. Le liquide prend votre jambe jusqu'au genou, tiède comme un bain qu'on a laissé. Les câbles descendent vers vous d'eux-mêmes, lents, comme des bras qui savent où aller.",
+        "Les voix reviennent, une à une, pas ensemble cette fois. Elles disent merci. Elles disent qu'on ne sent rien. Elles disent que le premier jour est le plus long.",
+        "Votre autre pied est encore sur le carrelage."
+      ],
+      "choices": [
+        {
+          "text": "Descendre dans la cuve",
+          "to": "c30-11"
+        },
+        {
+          "text": "Ressortir de la cuve",
+          "to": "c30-5"
+        }
+      ]
+    },
+    "c30-11": {
+      "text": [
+        "Le liquide se referme sur vous. Une fiche trouve votre nuque et c'est froid, puis ce n'est plus rien. Les sept voix deviennent huit.",
+        "Vous entendez la Zone entière d'un coup : les chiens du Cordon, l'Émission qui monte au nord, un stalker qui lance un boulon dans le Dépotoir et le regarde tomber.",
+        "Vous aviez un vœu. Vous ne vous rappelez plus lequel. Vous n'en avez plus besoin."
+      ]
+    },
+    "c30-25": {
+      "text": [
+        "Vous approchez votre front de la vitre. Derrière, un homme d'une cinquantaine d'années, la bouche ouverte, les yeux ouverts, et dans les yeux il n'y a rien et il y a tout. Une étiquette jaunie est collée au bas de la cuve.",
+        "La voix la plus proche se détache des autres et vient vers vous, seule, à travers le verre. Elle veut regarder dedans aussi. Tentez votre Chance."
+      ],
+      "test": {
+        "type": "luck",
+        "success": "c30-7",
+        "failure": "c30-16"
+      }
+    },
+    "c30-7": {
+      "text": [
+        "Vous tenez. La voix glisse et repart avec les autres.",
+        "Sur l'étiquette, une date, 1986, une autre, 2006, un numéro à trois chiffres. Les sept cuves portent la même étiquette, aux numéros près. La huitième aussi. Sur la huitième, le numéro est écrit à la main, et l'encre est fraîche.",
+        "Vous reculez. La vitre garde la trace de votre front."
+      ],
+      "choices": [
+        {
+          "text": "Revenir devant la cuve vide",
+          "to": "c30-5"
+        },
+        {
+          "text": "Chercher ce qui alimente les cuves",
+          "to": "c30-2"
+        }
+      ]
+    },
+    "c30-16": {
+      "text": [
+        "La voix entre. Un instant vous voyez la salle depuis la cuve : un stalker penché sur une vitre, sale, un détecteur qui pend, et vous ne savez plus lequel des deux est vous. Puis votre nez saigne et ça vous ramène. Vous perdez 3 points d'Endurance.",
+        "Sur l'étiquette, 1986, 2006, un numéro. Vous n'avez pas la tête à lire le reste."
+      ],
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -3
+        }
+      ],
+      "choices": [
+        {
+          "text": "Revenir devant la cuve vide",
+          "to": "c30-5"
+        },
+        {
+          "text": "S'essuyer et aller voir l'armoire grise",
+          "to": "c30-2"
+        }
+      ]
+    },
+    "c30-2": {
+      "text": [
+        "L'armoire grise est plus vieille que le reste : de la tôle soviétique, un cadenas scié, des disjoncteurs à poignée gros comme des mains. Sept marqués, un huitième neuf, et en bas une grande poignée seule. Les câbles entrent par le haut, épais comme des bras. Un transformateur chauffe la tôle.",
+        "Les gardes ont tourné la tête. Les voix ont repris, un peu plus vite. Tu ne sais pas ce que tu fais. Ce n'est pas une menace. Ils disent ce qu'ils savent."
+      ],
+      "choices": [
+        {
+          "text": "Baisser la grande poignée, en sachant",
+          "to": "c30-20",
+          "if": {
+            "type": "all",
+            "conditions": [
+              {
+                "type": "flag",
+                "flag": "verite_connue"
+              },
+              {
+                "type": "flag",
+                "flag": "monolithe_vu"
+              }
+            ]
+          }
+        },
+        {
+          "text": "Arracher les câbles des cuves",
+          "to": "c30-9"
+        },
+        {
+          "text": "Baisser les disjoncteurs un par un",
+          "to": "c30-28"
+        },
+        {
+          "text": "Revenir devant la cuve vide",
+          "to": "c30-5"
+        }
+      ]
+    },
+    "c30-24": {
+      "text": [
+        "Vous parlez du bloc de pierre peint du palais de la Culture, des hommes à genoux devant, des yeux blancs.",
+        "Les voix ne nient rien. Une pierre peinte, c'est ce qu'ils ont trouvé pour fixer les regards. Ce que les hommes prient, c'est une fréquence. Elle tient leur tête à notre place. Ceux qu'on ne peut pas garder ici, on les renvoie dehors avec ça dedans. Ils gardent bien.",
+        "Dans la cuve la plus proche, une main se ferme, lentement, puis s'ouvre."
+      ],
+      "choices": [
+        {
+          "text": "Revenir devant la cuve vide",
+          "to": "c30-5"
+        },
+        {
+          "text": "Chercher ce qui alimente les cuves",
+          "to": "c30-2"
+        }
+      ]
+    },
+    "c30-12": {
+      "text": [
+        "Vous le dites à voix haute, pour l'entendre une fois avec vos oreilles. Strelok est venu trois fois. La troisième, il a envoyé quelqu'un devant lui, quelqu'un qui savait pour les cuves et devait les fermer. Ils l'ont pris à la porte, vidé, renvoyé au sud sans nom. C'est vous. Vous êtes remonté quand même, parce que le chemin était resté dans les jambes.",
+        "Les voix se taisent. Pas pour vous laisser regarder. Elles comptent.",
+        "Vous revoyez les yeux blancs du palais. Vous savez ce qu'elles feraient de vous dehors."
+      ],
+      "choices": [
+        {
+          "text": "Aller à l'armoire grise",
+          "to": "c30-20"
+        },
+        {
+          "text": "Entrer dans la cuve quand même",
+          "to": "c30-26"
+        }
+      ]
+    },
+    "c30-20": {
+      "text": [
+        "Votre main est sur la grande poignée, celle du bas, sous les huit autres. La tôle est chaude. Le transformateur vibre dans votre bras jusqu'à l'épaule.",
+        "Les sept voix entrent dans votre main. Pas des mots : une envie d'ouvrir les doigts, aussi simple que la soif. Vos doigts s'ouvrent un peu. Vous savez d'où ça vient, et ça n'aide qu'à moitié.",
+        "Les gardes ont fait un pas. Testez votre Habileté."
+      ],
+      "test": {
+        "type": "stat",
+        "stat": "habilete",
+        "dice": "2d6",
+        "success": "c30-13",
+        "failure": "c30-21"
+      }
+    },
+    "c30-21": {
+      "text": [
+        "Vos doigts s'ouvrent. La poignée remonte seule et votre tête part contre la tôle, qui brûle. Vous perdez 3 points d'Endurance. Du sang dans l'œil, un goût de pile dans la bouche.",
+        "Les voix ne triomphent pas. Elles attendent, comme un bras qui a fini de pousser une porte et reste appuyé.",
+        "Les gardes se sont arrêtés à deux pas. Ils n'ont pas d'ordre."
+      ],
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -3
+        }
+      ],
+      "choices": [
+        {
+          "text": "Reprendre la poignée",
+          "to": "c30-20"
+        },
+        {
+          "text": "Lâcher et entrer dans la cuve",
+          "to": "c30-26"
+        }
+      ]
+    },
+    "c30-13": {
+      "text": [
+        "La poignée descend. Le ronflement s'arrête net, et le silence qui suit a une épaisseur.",
+        "Dans les cuves, les bulles cessent de monter. Les néons passent sur le secours, plus jaunes. Les voix ne crient pas. Elles s'éteignent une par une, comme on quitte une pièce, et chacune dit quelque chose en partant : un nom de ville, un prénom d'enfant, une équation, pardon.",
+        "Les gardes sont assis par terre. Ils regardent leurs mains."
+      ],
+      "choices": [
+        {
+          "text": "Rester jusqu'à la dernière voix",
+          "to": "c30-10"
+        },
+        {
+          "text": "Sortir sans regarder",
+          "to": "c30-18"
+        }
+      ]
+    },
+    "c30-10": {
+      "text": [
+        "La dernière voix est la plus vieille. Elle dit votre nom, le vrai, celui du sud, et elle ne l'emporte pas. Puis plus rien.",
+        "Le liquide jaune refroidit dans les cuves. Les corps descendent lentement au fond, et pour la première fois ils ont l'air de dormir.",
+        "La Zone ne s'en va pas. Dehors, les anomalies tournent toujours, l'Émission montera encore. Mais plus personne ne parle dans les têtes. Vous savez qui vous êtes. Vous remontez voir ce que ça vaut."
+      ]
+    },
+    "c30-18": {
+      "text": [
+        "Vous tournez le dos aux cuves avant qu'elles finissent. Les couloirs propres sont éclairés en jaune. Personne ne vous arrête : les gardes n'ont plus d'ordre, et les ordres, c'était tout ce qu'ils avaient.",
+        "Dans l'escalier, votre tête est à vous. Vous y trouvez un nom, une ville au sud, et la raison pour laquelle vous êtes monté. Le dernier que Strelok a envoyé. Vous ne savez pas ce qu'il dira. Vous le saurez.",
+        "Dehors, le ciel est gris, et il se tait."
+      ]
+    },
+    "c30-9": {
+      "text": [
+        "Vous arrachez un câble. Il sort de la nuque avec un bruit de bouchon, et les sept voix crient ensemble.",
+        "Ce n'est pas un cri qu'on entend. Il vous plie en deux, il vous vide par les yeux et par le nez. Vous perdez 3 points d'Endurance.",
+        "Quand vous relevez la tête, vous êtes sur le carrelage. Le câble est rebranché. Les deux gardes sont debout au-dessus de vous, et le plus grand tient un fusil par le canon, la crosse en bas."
+      ],
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -3
+        }
+      ],
+      "choices": [
+        {
+          "text": "Dire oui aux voix",
+          "to": "c30-15"
+        },
+        {
+          "text": "Se relever et se battre",
+          "to": "c30-4"
+        },
+        {
+          "text": "Ramper jusqu'à la grande poignée",
+          "to": "c30-20",
+          "if": {
+            "type": "all",
+            "conditions": [
+              {
+                "type": "flag",
+                "flag": "verite_connue"
+              },
+              {
+                "type": "flag",
+                "flag": "monolithe_vu"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "c30-28": {
+      "text": [
+        "Vous baissez le premier disjoncteur. Il remonte sous votre main. Le deuxième, pareil : quelqu'un les tient de l'autre côté, et ce quelqu'un est les cuves. Puis la crosse vous arrive à la nuque et le carrelage vient vite. Vous perdez 3 points d'Endurance.",
+        "Le garde vous retourne du pied. Son masque n'a pas de visage, juste deux verres ronds où la salle se reflète en petit, deux fois. Les voix ont repris, calmes. Nous t'avions dit."
+      ],
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -3
+        }
+      ],
+      "choices": [
+        {
+          "text": "Dire oui aux voix",
+          "to": "c30-15"
+        },
+        {
+          "text": "Lui prendre le fusil",
+          "to": "c30-4"
+        },
+        {
+          "text": "Rouler jusqu'à la grande poignée",
+          "to": "c30-20",
+          "if": {
+            "type": "all",
+            "conditions": [
+              {
+                "type": "flag",
+                "flag": "verite_connue"
+              },
+              {
+                "type": "flag",
+                "flag": "monolithe_vu"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "c30-15": {
+      "text": [
+        "Vous dites oui.",
+        "Les gardes vous relèvent sans brutalité, un sous chaque bras, et vous portent jusqu'à la cuve. Le liquide est tiède. Les câbles trouvent votre nuque. La douleur s'en va la première, puis le carrelage, puis le nord et le sud.",
+        "Les sept voix deviennent huit. Vous entendez la Zone entière, et dedans un stalker qui marche vers le centre, un détecteur à la main, sans savoir qui il est. Vous le laissez venir."
+      ]
+    },
+    "c30-4": {
+      "text": [
+        "Le garde ne crie pas, ne prie pas. Il frappe à casser des os, la crosse d'abord, la lame ensuite, et derrière les verres ronds il n'y a aucune hâte : il sait où vous allez bouger avant vous, parce que les cuves le lui disent.",
+        "L'autre garde n'approche pas. Il attend son tour."
+      ],
+      "combat": {
+        "name": "Garde de la C-Conscience",
+        "habilete": 9,
+        "endurance": 8,
+        "damage": 2,
+        "win": "c30-23"
+      }
+    },
+    "c30-23": {
+      "text": [
+        "Le garde tombe. Il ne saigne presque pas et il ne lâche pas son fusil, même mort.",
+        "Les voix ne crient pas cette fois. Il y en a d'autres. Il y en a toujours d'autres. La porte de fer sans poignée s'ouvre sur un couloir, et vous entendez des bottes.",
+        "Votre bras tremble. Dans la cuve ouverte, le liquide jaune n'a pas bougé."
+      ],
+      "choices": [
+        {
+          "text": "Entrer dans la cuve",
+          "to": "c30-15"
+        },
+        {
+          "text": "Attendre le suivant",
+          "to": "c30-17"
+        },
+        {
+          "text": "Courir à la grande poignée",
+          "to": "c30-20",
+          "if": {
+            "type": "all",
+            "conditions": [
+              {
+                "type": "flag",
+                "flag": "verite_connue"
+              },
+              {
+                "type": "flag",
+                "flag": "monolithe_vu"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "c30-17": {
+      "text": [
+        "Ils sont deux cette fois, et ils entrent ensemble par la porte de fer. Pas un mot. Ils se placent de chaque côté, à la distance exacte, et leurs mouvements sont ceux d'un seul homme avec quatre mains.",
+        "Ce n'est pas un combat qu'on gagne. C'est un combat qu'on fait durer."
+      ],
+      "combat": {
+        "name": "Les gardes",
+        "habilete": 9,
+        "endurance": 12,
+        "damage": 2,
+        "win": "c30-6"
+      }
+    },
+    "c30-6": {
+      "text": [
+        "Le dernier garde tombe en travers du premier.",
+        "Vous ne tenez plus debout. Vos mains n'arrivent plus à se fermer sur quoi que ce soit, et de la porte viennent d'autres bottes, pas pressées.",
+        "Les voix ne demandent plus. Elles attendent, c'est tout. Vous allez jusqu'à la cuve vous-même, parce qu'il n'y a nulle part ailleurs où aller dans cette salle, et vous entrez. Le liquide tiède. Les câbles. Huit voix.",
+        "Vous n'avez plus besoin de vœu."
+      ]
+    },
+    "c30-26": {
+      "text": [
+        "Vous savez ce que vous êtes, et vous entrez quand même.",
+        "Le liquide se referme. La fiche trouve la nuque. Les sept voix vous font place, et la place a votre forme : elle vous attendait depuis la première fois.",
+        "Quelque part, Strelok attend le dernier qu'il a envoyé. Il attendra. Vous voyez le Cordon, les types de vingt ans, le feu. Vous pourriez leur parler dans la tête. Vous le ferez. C'est ça, le bras."
+      ]
+    }
+  }
+}

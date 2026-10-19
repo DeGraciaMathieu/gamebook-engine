@@ -1,0 +1,397 @@
+{
+  "title": "Le poste du Devoir",
+  "summary": "Le héros a passé la barricade du Devoir sur la route de Rostok : avec le Laissez-passer, comme ami du Devoir, contre 500 roubles, par les collines irradiées, ou de force (`devoir_ennemi`). Au feu, il a appris que le Guide est au Bar et que le nord est fermé par le Brûleur. Il entre dans Rostok, vers le Bar (c08-1).",
+  "brief": "Convergence de l'acte 1 : tout le monde passe ici. Deux entrées : la route du nord (c07-1), la route de l'ouest (c07-2). Scènes : la file des stalkers, le sergent-chef Kouznetsov qui vérifie (Laissez-passer : passe ; devoir_ami : passe ; 500 roubles : passe ; sinon : contourner par les collines irradiées, 3 rads et test de Chance, ou forcer : combat contre deux gardes, devoir_ennemi). Un feu de camp où l'on échange des nouvelles (le Guide est au Bar ; le nord est fermé par le Brûleur). Carrefour : le feu devant la barricade. Court. Les consommables listés dans requires peuvent être consommés par un choix (effet remove + effet stat), le paragraphe d'arrivée le dit. Taille : 22 à 28 paragraphes.",
+  "entries": {
+    "c07-1": "Arrivée par la route du nord, depuis le Dépotoir ou Agroprom",
+    "c07-2": "Arrivée par la route de l'ouest, depuis la Vallée sombre"
+  },
+  "exits": {
+    "c08-1": "Entrer dans Rostok, vers le Bar « 100 Rads »"
+  },
+  "provides": {
+    "items": [],
+    "flags": [
+      "devoir_ennemi"
+    ]
+  },
+  "requires": {
+    "items": [
+      "passe_bar",
+      "ak74"
+    ],
+    "flags": [
+      "devoir_ami"
+    ]
+  },
+  "image": "c07-3",
+  "paragraphs": {
+    "c07-1": {
+      "text": "La route du nord monte entre deux talus de ronces. Au sommet, la barricade : des wagons de marchandises couchés en travers du bitume, soudés bout à bout, la rouille repeinte en gris et rouge. Un canon antiaérien dépasse du dernier, le nez vers le nord. Devant, une file d'hommes avec leurs sacs. Sur le côté, dans le fossé, un feu, et des silhouettes assises qui ne regardent pas la file. Le vent apporte l'odeur du gasoil et du pain grillé.",
+      "choices": [
+        {
+          "text": "Rejoindre la file devant les wagons",
+          "to": "c07-17"
+        },
+        {
+          "text": "S'asseoir au feu, dans le fossé",
+          "to": "c07-3"
+        }
+      ]
+    },
+    "c07-2": {
+      "text": "La route de l'ouest sort de la brume de la Vallée sombre et retombe sur du bitume sec. Devant vous, les wagons de la barricade ferment la route de Rostok, gris et rouge, soudés bout à bout. Un canon antiaérien braque le ciel au-dessus du dernier. Deux hommes en gris-rouge vous ont déjà vu ; l'un parle dans une radio. Plus bas, un feu brûle dans le fossé, des stalkers autour, et la file de ceux qui attendent devant les wagons.",
+      "choices": [
+        {
+          "text": "Rejoindre la file devant les wagons",
+          "to": "c07-17"
+        },
+        {
+          "text": "S'asseoir au feu, dans le fossé",
+          "to": "c07-3"
+        }
+      ]
+    },
+    "c07-3": {
+      "text": "Le feu brûle dans un bidon coupé, devant la barricade. Autour, cinq ou six stalkers, les sacs entre les genoux, une casserole sur les braises. Personne ne demande votre nom. Un vieux à la barbe jaune vous fait une place avec le pied. De l'autre côté du bidon, un type à la joue bandée compte des billets et les recompte. Au-dessus de vous, sur le wagon, un homme du Devoir regarde le feu comme on regarde une bête en cage.",
+      "image": {
+        "src": "images/c07-3.webp",
+        "alt": "Un feu dans un bidon coupé devant une barricade de wagons soudés, des stalkers assis autour, un canon antiaérien dressé sur le dernier wagon.",
+        "prompt": "Un feu de camp dans un bidon coupé au bord d'une route, au pied d'une barricade de wagons de marchandises rouillés soudés bout à bout, un canon antiaérien dressé sur le dernier wagon et une sentinelle en silhouette dessus. Des stalkers assis de dos autour du feu, sacs entre les genoux, ciel bas et talus de ronces."
+      },
+      "choices": [
+        {
+          "text": "Écouter le vieux à la barbe jaune",
+          "to": "c07-9"
+        },
+        {
+          "text": "Questionner l'homme à la joue bandée",
+          "to": "c07-21"
+        },
+        {
+          "text": "Rejoindre la file devant les wagons",
+          "to": "c07-17"
+        },
+        {
+          "text": "Longer la barricade vers les collines",
+          "to": "c07-8"
+        }
+      ]
+    },
+    "c07-9": {
+      "text": "Le vieux parle sans vous regarder. Rostok, c'est le Bar. Le Bar, c'est le Barman, et dans le coin du Barman, dos au mur, il y a le Guide. Il ne boit pas. Il est allé au nord et il est revenu, le seul. Il parle à qui lui plaît. Le vieux crache dans le feu. À toi de voir si tu lui plais. Puis il se tait, les mains tendues vers les braises, comme s'il avait déjà trop dit.",
+      "choices": [
+        {
+          "text": "Rester au feu",
+          "to": "c07-3"
+        },
+        {
+          "text": "Rejoindre la file devant les wagons",
+          "to": "c07-17"
+        }
+      ]
+    },
+    "c07-21": {
+      "text": "L'homme à la joue bandée range ses billets. Le nord, tu oublies. Passé le Bar, passé les Entrepôts militaires, il y a le Brûleur de cerveaux. Tu montes la crête, tes pensées ne sont plus à toi, tu redescends avec un fusil et des yeux blancs. Il touche son pansement. Et ici, c'est Kouznetsov. Un papier du Devoir, ou cinq cents roubles, ou tu restes au feu avec nous. Il regarde votre sac. Ils regardent tous votre sac.",
+      "choices": [
+        {
+          "text": "Rester au feu",
+          "to": "c07-3"
+        },
+        {
+          "text": "Rejoindre la file devant les wagons",
+          "to": "c07-17"
+        }
+      ]
+    },
+    "c07-17": {
+      "text": "La file avance par à-coups. Devant vous, un soldat retourne un sac sur une bâche : conserves, chargeurs, un artefact dans un chiffon. Il le soupèse, le remet. Un autre stalker ressort de la barricade en marchant vite, sans son fusil, et ne regarde personne. Au-dessus, le canon antiaérien grince quand le vent tourne. Vous sentez l'huile de graissage et la sueur de ceux qui attendent. Le soldat lève le menton vers vous.",
+      "choices": [
+        {
+          "text": "Avancer jusqu'au sergent",
+          "to": "c07-6"
+        },
+        {
+          "text": "Quitter la file pour le feu",
+          "to": "c07-3"
+        }
+      ]
+    },
+    "c07-6": {
+      "text": "Le sergent-chef Kouznetsov est grand, gris, les lunettes de visée relevées sur le front. Il ne regarde pas votre visage, il regarde vos mains. Papiers. Sac. Le soldat vide le vôtre sur la bâche, pièce par pièce, et Kouznetsov attend. Derrière lui, le passage entre deux wagons, et au bout, la rue de Rostok, grise, vide, qui sent la ferraille. Le nord n'est pas pour vous, dit-il. Il le dit à tout le monde.",
+      "choices": [
+        {
+          "text": "Tendre le Laissez-passer du Devoir",
+          "to": "c07-14",
+          "if": {
+            "type": "item",
+            "item": "passe_bar"
+          }
+        },
+        {
+          "text": "Rappeler la cour d'Agroprom",
+          "to": "c07-23",
+          "if": {
+            "type": "flag",
+            "flag": "devoir_ami"
+          }
+        },
+        {
+          "text": "Payer le passage (500 roubles)",
+          "to": "c07-11",
+          "if": {
+            "type": "stat",
+            "stat": "roubles",
+            "op": ">=",
+            "value": 500
+          },
+          "effects": [
+            {
+              "type": "stat",
+              "stat": "roubles",
+              "delta": -500
+            }
+          ]
+        },
+        {
+          "text": "Dire que vous n'avez rien de tout ça",
+          "to": "c07-19"
+        }
+      ]
+    },
+    "c07-14": {
+      "text": "Il déplie le Laissez-passer du Devoir, lit le tampon, lit le nom de celui qui l'a signé. Quelque chose bouge dans sa mâchoire. Il vous le rend plié en quatre, comme on rend une chose sale. Ramasse ton sac. Le soldat s'écarte. Entre les deux wagons, le passage est juste assez large pour un homme et son sac. De l'autre côté, Rostok, et sous la rue, dit-on, un bar.",
+      "choices": [
+        {
+          "text": "Entrer dans Rostok, vers le Bar « 100 Rads »",
+          "to": "c08-1"
+        }
+      ]
+    },
+    "c07-23": {
+      "text": "Agroprom, dites-vous. La cour, les silos. Le soldat qui vide votre sac s'arrête, un chargeur à la main. C'est lui, sergent. Celui des silos. Kouznetsov vous regarde, cette fois, et c'est long. Puis il fait un signe de deux doigts, et le soldat remet tout dans votre sac, dans l'ordre. Le Devoir n'oublie pas, dit-il. Ni dans un sens ni dans l'autre. Le passage entre les wagons est ouvert.",
+      "choices": [
+        {
+          "text": "Entrer dans Rostok, vers le Bar « 100 Rads »",
+          "to": "c08-1"
+        }
+      ]
+    },
+    "c07-11": {
+      "text": "Vous laissez 500 roubles sur la bâche. Kouznetsov ne les compte pas ; le soldat le fait pour lui, lentement, en mouillant son pouce. Les billets disparaissent dans une caisse de munitions. Le sergent-chef se retourne déjà vers le suivant. Vous ramassez votre sac. Entre les deux wagons, le passage sent la rouille et le froid. Personne ne vous dit adieu, personne ne vous dit rien.",
+      "choices": [
+        {
+          "text": "Entrer dans Rostok, vers le Bar « 100 Rads »",
+          "to": "c08-1"
+        }
+      ]
+    },
+    "c07-19": {
+      "text": "Alors tu retournes d'où tu viens. Kouznetsov ne hausse pas la voix. Le soldat repousse votre sac du pied, hors de la bâche, et le suivant prend votre place avant que vous ayez fini de ramasser. Sur le wagon, l'homme au fusil a baissé son canon de quelques degrés. Vous vous retrouvez sur la route, le sac à moitié fermé, le feu d'un côté, et de l'autre la barricade qui s'étire vers des collines grises.",
+      "choices": [
+        {
+          "text": "Retourner au feu",
+          "to": "c07-3"
+        },
+        {
+          "text": "Longer la barricade vers les collines",
+          "to": "c07-8"
+        },
+        {
+          "text": "Forcer le passage",
+          "to": "c07-20"
+        }
+      ]
+    },
+    "c07-8": {
+      "text": "La barricade finit où commencent les collines : des wagons encore, puis des rouleaux de barbelé, puis plus rien que de la terre nue et des carcasses de voitures montées les unes sur les autres. Personne ne garde ce côté-là. Ils n'ont pas besoin. Votre détecteur se met à crépiter avant même que vous ayez quitté la route, et l'air au-dessus des carcasses tremble par endroits, comme au-dessus d'un capot chaud.",
+      "choices": [
+        {
+          "text": "S'engager entre les carcasses",
+          "to": "c07-15"
+        },
+        {
+          "text": "Revenir au feu",
+          "to": "c07-3"
+        }
+      ]
+    },
+    "c07-15": {
+      "text": "Le compteur grimpe. Vous prenez 3 rads. La terre est tiède sous vos semelles, et il n'y a pas d'herbe, pas un brin. Entre deux carcasses, un « Carrousel » tourne sur lui-même, lent, un entonnoir de poussière qui ne retombe pas. Vous lancez un boulon. Il part de côté. Il faut passer entre ce tourbillon et le fossé où l'air ondule. Tentez votre Chance.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "radiation",
+          "delta": 3
+        }
+      ],
+      "test": {
+        "type": "luck",
+        "success": "c07-4",
+        "failure": "c07-22"
+      }
+    },
+    "c07-4": {
+      "text": "Le boulon suivant retombe droit. Vous passez entre le tourbillon et le fossé sans que rien vous touche, à petits pas, le dos rond. Derrière les dernières carcasses, le barbelé est couché, écrasé par ceux qui sont passés avant vous. Vous redescendez vers la route de l'autre côté des wagons. Le canon antiaérien vous tourne le dos. Vos mains ne tremblent que lorsque c'est fini.",
+      "choices": [
+        {
+          "text": "Descendre vers Rostok",
+          "to": "c07-12"
+        }
+      ]
+    },
+    "c07-22": {
+      "text": "Le fossé n'ondulait pas pour rien. Le « Brûleur » se lève sous vos pieds, un souffle de four, et vous roulez de côté avec la manche en flammes. Vous perdez 3 points d'Endurance. Vous étouffez le feu dans la terre, la joue contre la terre, le compteur contre l'oreille. Quand vous vous relevez, le barbelé est devant vous, couché, et derrière, la route de l'autre côté des wagons.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -3
+        }
+      ],
+      "choices": [
+        {
+          "text": "Descendre vers Rostok en serrant les dents",
+          "to": "c07-12"
+        }
+      ]
+    },
+    "c07-12": {
+      "text": "Vous êtes derrière la barricade. D'ici, les wagons sont les mêmes, rouille et gris, mais le canon antiaérien ne vous regarde plus. La rue de Rostok commence : des murs d'usine, une passerelle, des fenêtres sans vitres. Quelque part là-dessous, on vend de la saucisse et de la vodka. Vous n'avez pas de papier, et personne ne vous en demande plus.",
+      "choices": [
+        {
+          "text": "Entrer dans Rostok, vers le Bar « 100 Rads »",
+          "to": "c08-1"
+        }
+      ]
+    },
+    "c07-20": {
+      "text": "Il y a deux hommes au passage entre les wagons, et un troisième sur le toit, avec le fusil. Le reste du Devoir est au feu, à la radio, ou derrière le canon. Les stalkers de la file ont reculé d'un pas sans se consulter ; ils savent lire une épaule qui se tend. Le soldat le plus proche a le doigt hors de la détente. Pas encore dessus.",
+      "choices": [
+        {
+          "text": "Tirer le premier avec l'AK-74",
+          "to": "c07-7",
+          "if": {
+            "type": "item",
+            "item": "ak74"
+          }
+        },
+        {
+          "text": "Charger le passage entre les wagons",
+          "to": "c07-16"
+        },
+        {
+          "text": "Baisser les yeux et retourner au feu",
+          "to": "c07-3"
+        }
+      ]
+    },
+    "c07-7": {
+      "text": "La rafale de l'AK-74 part avant que le soldat ait baissé les yeux. Il tombe contre le wagon et y reste. Celui du toit disparaît ; l'autre, au passage, tire déjà, et il tire bien. Avec ça, on tire avant eux, mais il reste un homme entre vous et Rostok, et il ne reculera pas. Le Devoir vient de vous mettre sur sa liste.",
+      "effects": [
+        {
+          "type": "flag",
+          "flag": "devoir_ennemi"
+        }
+      ],
+      "combat": {
+        "name": "Soldat du Devoir",
+        "habilete": 6,
+        "endurance": 8,
+        "damage": 2,
+        "win": "c07-10",
+        "flee": {
+          "to": "c07-18"
+        }
+      }
+    },
+    "c07-16": {
+      "text": "Vous courez vers le passage, le Pistolet Makarov au bout du bras. Les deux soldats n'ont pas besoin de se parler : l'un tire, l'autre avance, et ils échangent. Ils frappent à casser des os, et derrière eux, dans le wagon, on entend des bottes qui descendent. Il faut les abattre avant que les autres arrivent. Le Devoir vient de vous mettre sur sa liste.",
+      "effects": [
+        {
+          "type": "flag",
+          "flag": "devoir_ennemi"
+        }
+      ],
+      "combat": {
+        "name": "Deux soldats du Devoir",
+        "habilete": 7,
+        "endurance": 12,
+        "damage": 2,
+        "win": "c07-10",
+        "flee": {
+          "to": "c07-18"
+        }
+      }
+    },
+    "c07-10": {
+      "text": "Les soldats sont à terre. Le passage est libre, et au-dessus, le canon antiaérien commence à tourner, lentement, avec un bruit de treuil : quelqu'un a décidé que vous valiez un obus. Des bottes dans le wagon. Il faut traverser les deux wagons soudés, passer sous les poutres, et sortir dans la rue avant que la mire vous trouve. Testez votre Habileté.",
+      "test": {
+        "type": "stat",
+        "stat": "habilete",
+        "dice": "2d6",
+        "success": "c07-24",
+        "failure": "c07-5"
+      }
+    },
+    "c07-24": {
+      "text": "Vous passez sous les poutres sans accrocher le sac, et la rue de Rostok vous reçoit avant le premier coup. L'obus éclate derrière vous, contre le wagon, et vous couche dans la poussière sans vous toucher. Vous rampez jusqu'au premier mur. Dans votre dos, le Devoir crie des ordres. Devant, l'usine, et sous l'usine, dit-on, un bar. Ils n'oublieront pas votre visage.",
+      "choices": [
+        {
+          "text": "Entrer dans Rostok, vers le Bar « 100 Rads »",
+          "to": "c08-1"
+        }
+      ]
+    },
+    "c07-5": {
+      "text": "Le sac accroche une poutre et vous tombez la moitié du corps dehors quand l'obus éclate. Un éclat vous ouvre l'épaule. Vous perdez 3 points d'Endurance. Vous roulez jusqu'au premier mur de Rostok, la manche collée à la peau, et les ordres du Devoir vous suivent dans la rue sans vous rattraper. Devant, l'usine. Ils n'oublieront pas votre visage.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -3
+        }
+      ],
+      "choices": [
+        {
+          "text": "Entrer dans Rostok, vers le Bar « 100 Rads »",
+          "to": "c08-1"
+        }
+      ]
+    },
+    "c07-18": {
+      "text": "Vous avez lâché le passage et couru. Les balles du Devoir claquent dans le talus autour de vous, hautes, exprès ou non. Les stalkers du feu ne lèvent pas la tête : on ne regarde pas celui qui a tiré sur la barricade. Vous roulez dans le fossé, la route à gauche, les collines grises à droite, et le canon antiaérien qui cherche encore. Le Devoir ne vous laissera plus approcher de la file.",
+      "choices": [
+        {
+          "text": "Fuir dans les collines, le long des wagons",
+          "to": "c07-8"
+        },
+        {
+          "text": "Rester dans le fossé jusqu'à la nuit",
+          "to": "c07-13"
+        }
+      ]
+    },
+    "c07-13": {
+      "text": "La nuit tombe tôt. L'eau du fossé est froide et le compteur la trouve bonne : vous prenez 2 rads. Vous perdez 2 points d'Endurance à claquer des dents sous un morceau de tôle. Quand les projecteurs du Devoir s'éteignent, vous rampez sous le dernier wagon, entre les roues bloquées, le ventre dans la boue, jusqu'à ce que la rue de Rostok soit sous vos mains.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "radiation",
+          "delta": 2
+        },
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -2
+        }
+      ],
+      "choices": [
+        {
+          "text": "Se relever de l'autre côté des wagons",
+          "to": "c07-12"
+        }
+      ]
+    }
+  }
+}

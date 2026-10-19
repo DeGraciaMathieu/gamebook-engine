@@ -1,0 +1,494 @@
+{
+  "title": "Le Radar",
+  "summary": "Le héros a passé la crête du Radar sous le Brûleur de cerveaux. Avec le Casque psi, il est entré dans le bunker et a éteint le Brûleur (`brouilleur_eteint`), ou a seulement traversé. Sans Casque, le Monolithe l'a pris (fin). Il descend vers Pripyat par la route (c18-1).",
+  "brief": "Convergence de l'acte 2 (voie principale). c16-1 : la crête, l'antenne couchée, les pensées qui viennent de l'extérieur. Sans Casque psi : test de Chance ; échec : fin « Le Monolithe vous prend » (vos pensées se vident, vous prenez votre place sur la crête, le fusil vers le sud) ; réussite : on redescend en courant, −4 points d'Endurance et psi déjà posé ou non, sans pouvoir entrer dans le bunker. Avec Casque psi : le bunker, les soldats du Monolithe (combats, Vintorez utile, Grenade), la salle de contrôle, le bouton (brouilleur_eteint). Si verite_connue, le héros comprend ce que le Brûleur protège : une ligne. Carrefour : le pied de l'antenne. Les consommables listés dans requires peuvent être consommés par un choix (effet remove + effet stat), le paragraphe d'arrivée le dit. Taille : 28 à 34 paragraphes.",
+  "entries": {
+    "c16-1": "Sur la crête du Radar, l'antenne couchée en travers du ciel"
+  },
+  "exits": {
+    "c18-1": "Descendre vers Pripyat par la route"
+  },
+  "provides": {
+    "items": [],
+    "flags": [
+      "brouilleur_eteint"
+    ]
+  },
+  "requires": {
+    "items": [
+      "casque_psi",
+      "vintorez",
+      "grenade",
+      "antirad",
+      "trousse"
+    ],
+    "flags": [
+      "verite_connue"
+    ]
+  },
+  "image": "c16-2",
+  "paragraphs": {
+    "c16-1": {
+      "text": "La crête. L'antenne est couchée en travers du ciel, cent cinquante mètres de treillis rouillé, et le vent passe au travers avec un bruit de corde. Vous n'entendez pas le vent. Vous entendez une phrase qui n'est pas à vous. Elle dit de poser votre arme. Elle le dit calmement, de l'intérieur, comme un souvenir. Le détecteur se tait. En bas, un bunker de béton, une porte de fer, des silhouettes grises alignées qui ne bougent pas.",
+      "choices": [
+        {
+          "text": "Mettre le Casque psi et descendre vers l'antenne",
+          "to": "c16-4",
+          "if": {
+            "type": "item",
+            "item": "casque_psi"
+          }
+        },
+        {
+          "text": "Descendre la crête tête nue",
+          "to": "c16-10",
+          "if": {
+            "type": "not",
+            "condition": {
+              "type": "item",
+              "item": "casque_psi"
+            }
+          }
+        }
+      ]
+    },
+    "c16-2": {
+      "text": "Le pied de l'antenne. Les pylônes montent du béton comme des troncs, et le treillis couché bourdonne au-dessus, un bourdon de ruche qu'on sent dans les dents. Une échelle grimpe sur l'embase. En face, le bunker : une porte de fer entrebâillée, un escalier qui descend, une lumière jaune au fond. Sur le seuil, des douilles et un chapelet de ferraille.",
+      "image": {
+        "src": "images/c16-2.webp",
+        "alt": "Le pied de l'antenne du Radar, pylônes de fer et porte de bunker entrouverte",
+        "prompt": "Au pied d'une gigantesque antenne soviétique couchée en travers du ciel, des pylônes de treillis rouillé montent d'une dalle de béton fissuré. En face, la porte de fer entrebâillée d'un bunker d'où filtre une lumière jaune, des douilles sur le seuil."
+      },
+      "choices": [
+        {
+          "text": "Pousser la porte du bunker",
+          "to": "c16-15"
+        },
+        {
+          "text": "Monter sur l'embase de l'antenne",
+          "to": "c16-19"
+        },
+        {
+          "text": "Boire l'anti-rad",
+          "to": "c16-24",
+          "if": {
+            "type": "item",
+            "item": "antirad"
+          },
+          "effects": [
+            {
+              "type": "item",
+              "action": "remove",
+              "item": "antirad"
+            },
+            {
+              "type": "stat",
+              "stat": "radiation",
+              "delta": -5
+            }
+          ]
+        },
+        {
+          "text": "Vider la trousse de soins",
+          "to": "c16-9",
+          "if": {
+            "type": "item",
+            "item": "trousse"
+          },
+          "effects": [
+            {
+              "type": "item",
+              "action": "remove",
+              "item": "trousse"
+            },
+            {
+              "type": "stat",
+              "stat": "endurance",
+              "delta": 6
+            }
+          ]
+        },
+        {
+          "text": "Laisser le bunker et descendre vers la route",
+          "to": "c16-26"
+        }
+      ]
+    },
+    "c16-3": {
+      "text": "Le second tombe sur le premier. La prière s'arrête au milieu d'un mot. Vous descendez les dernières marches en vous tenant au mur, les oreilles qui sifflent. Au pied de l'escalier, des empreintes de paumes noires couvrent le béton à hauteur d'homme, des centaines. Un couloir part à droite, éclairé de rouge.",
+      "choices": [
+        {
+          "text": "Suivre le couloir rouge",
+          "to": "c16-8"
+        }
+      ]
+    },
+    "c16-4": {
+      "text": "Le Casque psi serre les tempes. Dès que la sangle se bloque, la phrase recule, comme une radio qu'on tourne vers le mur. Elle est encore là. Elle ne vous atteint plus. Vous descendez la pente de graviers vers l'antenne. À mi-chemin, la route de béton se sépare : tout droit, elle file au pied du treillis ; à gauche, des baraquements de tôle, une fumée mince, une voix qui psalmodie.",
+      "choices": [
+        {
+          "text": "Suivre la route jusqu'au pied de l'antenne",
+          "to": "c16-2"
+        },
+        {
+          "text": "Couper par les baraquements",
+          "to": "c16-12"
+        }
+      ]
+    },
+    "c16-5": {
+      "text": "Vous appuyez. Rien n'explose. Les aiguilles descendent toutes ensemble jusqu'à zéro et s'y couchent. Le bourdon dans vos dents s'arrête, et le silence qui vient derrière est si large que vous entendez votre sang. Pour la première fois depuis la crête, la phrase n'est plus là. Il n'y a plus que vous dans votre tête. Vous ne savez pas si c'est mieux.",
+      "effects": [
+        {
+          "type": "flag",
+          "flag": "brouilleur_eteint"
+        }
+      ],
+      "choices": [
+        {
+          "text": "Remonter à l'air libre",
+          "to": "c16-13"
+        }
+      ]
+    },
+    "c16-6": {
+      "text": "Les boîtes tintent, ou vous n'avez pas été assez vite : il est debout, le fusil en main, et il ne crie pas. Il tire. Les yeux blancs ne clignent pas. Il se bat comme quelqu'un qui a déjà accepté de mourir ici, et c'est ce qui le rend dangereux.",
+      "combat": {
+        "name": "Soldat du Monolithe",
+        "habilete": 6,
+        "endurance": 8,
+        "win": "c16-28",
+        "flee": {
+          "to": "c16-2"
+        }
+      }
+    },
+    "c16-7": {
+      "text": "Vous posez votre arme. C'est facile. Vous n'aviez jamais remarqué comme c'était lourd. La phrase prend la place vide et s'y installe, et ce qui restait de vous s'en va comme le vent dans le treillis. Vous montez sur la crête. Vous prenez votre place dans la rangée, le fusil vers le sud. Vous attendez celui qui arrive. Il arrive toujours."
+    },
+    "c16-8": {
+      "text": "Le couloir rouge. Les néons de secours grésillent, un sur deux. Les murs transpirent. Le compteur grimpe. Vous prenez 2 rads. Au bout, une porte avec un hublot, et derrière le hublot une lumière verte qui pulse au rythme du bourdon dans vos dents. À mi-chemin, un escalier de fer descend vers un bruit de turbine.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "radiation",
+          "delta": 2
+        }
+      ],
+      "choices": [
+        {
+          "text": "Pousser la porte au hublot",
+          "to": "c16-29"
+        },
+        {
+          "text": "Descendre vers le bruit de turbine",
+          "to": "c16-17"
+        }
+      ]
+    },
+    "c16-9": {
+      "text": "Vous videz la trousse de soins sur le béton : garrot, seringue, compresses. Vous faites ce qu'il faut, vite, sans regarder la plaie. Vous regagnez 6 points d'Endurance. Les emballages s'envolent vers les baraquements. Au-dessus, le treillis bourdonne. Vous repliez le reste et vous relevez face à la porte de fer.",
+      "choices": [
+        {
+          "text": "Se relever face à la porte",
+          "to": "c16-2"
+        }
+      ]
+    },
+    "c16-10": {
+      "text": "Vous descendez tête nue. À chaque pas la phrase est plus proche, plus claire, et ce n'est plus une phrase, c'est une main qui cherche la prise. Elle dit : pose ton arme. Elle dit : tu es arrivé. Vous pensez à votre nom. Vous n'en avez pas. C'est ça qu'elle cherche, la place vide. Tentez votre Chance.",
+      "test": {
+        "type": "luck",
+        "success": "c16-16",
+        "failure": "c16-33"
+      }
+    },
+    "c16-11": {
+      "text": "L'officier ne bouge plus. Devant vous, le bouton rouge sous son capot de verre, et autour, les cadrans : les aiguilles tremblent toutes au même rythme, celui du bourdon dans vos dents. Le capot se soulève sans effort. Quelqu'un l'a huilé. Sur la console, deux mots gravés au couteau dans la bakélite : pas toi.",
+      "choices": [
+        {
+          "text": "Appuyer sur le bouton",
+          "to": "c16-5"
+        },
+        {
+          "text": "Lire les cadrans avant d'appuyer",
+          "to": "c16-22",
+          "if": {
+            "type": "flag",
+            "flag": "verite_connue"
+          }
+        },
+        {
+          "text": "Laisser le Brûleur tourner et remonter",
+          "to": "c16-26"
+        }
+      ]
+    },
+    "c16-12": {
+      "text": "Un soldat du Monolithe est à genoux entre deux baraques, le masque relevé, les yeux blancs ouverts sur rien. Il prie. Le fusil est posé devant lui, à plat, comme une offrande. Il ne vous a pas entendu. La fumée vient d'un bidon où brûlent des papiers. Entre lui et le pied de l'antenne, trente mètres de tôle et de gravier.",
+      "choices": [
+        {
+          "text": "Le tirer au Vintorez depuis la tôle",
+          "to": "c16-31",
+          "if": {
+            "type": "item",
+            "item": "vintorez"
+          }
+        },
+        {
+          "text": "Passer derrière les baraques sans bruit",
+          "to": "c16-14"
+        },
+        {
+          "text": "Se jeter sur lui",
+          "to": "c16-6"
+        }
+      ]
+    },
+    "c16-13": {
+      "text": "Dehors, les soldats du Monolithe sont assis par terre le long de la route, les fusils posés à côté d'eux. Ils ne prient plus. Ils regardent leurs mains. L'un d'eux pleure sans bruit. Aucun ne vous regarde passer. L'antenne ne bourdonne plus ; le vent passe au travers avec un bruit de corde, et cette fois vous l'entendez. En bas, la route descend vers le nord. Un panneau écaillé : Pripyat.",
+      "choices": [
+        {
+          "text": "Descendre vers Pripyat par la route",
+          "to": "c18-1"
+        }
+      ]
+    },
+    "c16-14": {
+      "text": "Vous longez la tôle, pas après pas, le gravier roule sous les semelles. Le soldat psalmodie plus fort. Un câble traîne en travers du passage, à hauteur de cheville, et derrière il y a des boîtes de conserve vides enfilées dessus, une alarme de pauvre. Testez votre Habileté.",
+      "test": {
+        "type": "stat",
+        "stat": "habilete",
+        "dice": "2d6",
+        "success": "c16-21",
+        "failure": "c16-6"
+      }
+    },
+    "c16-15": {
+      "text": "L'escalier descend sous une ampoule nue. En bas, deux soldats du Monolithe, à genoux face au mur, dos à vous, le masque sur la nuque. Ils récitent ensemble. Le mot Monolithe revient toutes les trois secondes. Leurs fusils sont appuyés contre le béton, à portée de main. L'air monte, chaud, avec une odeur d'ozone et d'huile de machine.",
+      "choices": [
+        {
+          "text": "Lancer la Grenade F1 dans l'escalier",
+          "to": "c16-20",
+          "if": {
+            "type": "item",
+            "item": "grenade"
+          },
+          "effects": [
+            {
+              "type": "item",
+              "action": "remove",
+              "item": "grenade"
+            }
+          ]
+        },
+        {
+          "text": "Attendre la fin de la prière",
+          "to": "c16-23"
+        },
+        {
+          "text": "Descendre l'escalier en tirant",
+          "to": "c16-32"
+        }
+      ]
+    },
+    "c16-16": {
+      "text": "Vous tenez. Pas longtemps, pas bien, mais vous tenez : vous courez, de travers, en contournant l'antenne par la pente est, et la main lâche prise à mesure que le treillis s'éloigne. Vous tombez deux fois. Vous saignez du nez. Vous perdez 3 points d'Endurance. Quand vous vous relevez, vous êtes sur la route en bas, le bunker est au-dessus, hors de portée, et un panneau écaillé dit Pripyat.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -3
+        }
+      ],
+      "choices": [
+        {
+          "text": "Descendre vers Pripyat par la route",
+          "to": "c18-1"
+        }
+      ]
+    },
+    "c16-17": {
+      "text": "Les générateurs. Trois cuves grosses comme des wagons, des câbles épais comme un bras qui montent au plafond et filent vers le nord, à travers le béton. Ça chauffe. Le compteur s'affole. Vous prenez 3 rads. Un escalier de service grimpe le long du mur et débouche, d'après le plan peint sur la porte, derrière la salle de contrôle.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "radiation",
+          "delta": 3
+        }
+      ],
+      "choices": [
+        {
+          "text": "Monter l'escalier de service",
+          "to": "c16-30"
+        }
+      ]
+    },
+    "c16-18": {
+      "text": "Il épaule avant que vous l'ayez atteint. Dans la salle, pas d'abri : la console, la chaise, lui. Il tire sans cesser de sourire, et chaque balle qui frappe vous dit de rester. Il frappe à casser des os, et la lumière verte pulse derrière lui comme un pouls.",
+      "combat": {
+        "name": "Officier du Monolithe",
+        "habilete": 7,
+        "endurance": 8,
+        "damage": 2,
+        "win": "c16-11"
+      }
+    },
+    "c16-19": {
+      "text": "Vous grimpez l'échelle jusqu'à la première plate-forme. Le fer est chaud. Le compteur crépite. Vous prenez 2 rads. De là-haut, le nord s'ouvre : la grande roue de Pripyat, les immeubles sans vitres, et plus loin la cheminée de la Centrale, mince comme une aiguille. Entre vous et elle, rien ne bouge. Rien n'a bougé depuis vingt ans.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "radiation",
+          "delta": 2
+        }
+      ],
+      "choices": [
+        {
+          "text": "Redescendre au pied de l'antenne",
+          "to": "c16-2"
+        }
+      ]
+    },
+    "c16-20": {
+      "text": "La Grenade F1 rebondit deux fois sur les marches. Ils ne se retournent pas. Vous vous plaquez contre le mur. Le souffle remonte l'escalier et éteint l'ampoule. Quand la poussière retombe, il n'y a plus de prière. Vous descendez à tâtons sur des gravats et des morceaux de masque. Un couloir s'ouvre à droite, éclairé de rouge.",
+      "choices": [
+        {
+          "text": "Suivre le couloir rouge",
+          "to": "c16-8"
+        }
+      ]
+    },
+    "c16-21": {
+      "text": "Vous enjambez le câble. Les boîtes ne bougent pas. Derrière vous, la prière continue, régulière, et vous comprenez qu'il ne prie pas pour lui. Vous sortez des baraquements par l'arrière. L'antenne est là, énorme, couchée sur ses pylônes, et sa base ressemble à une cathédrale de fer.",
+      "choices": [
+        {
+          "text": "Rejoindre le pied de l'antenne",
+          "to": "c16-2"
+        }
+      ]
+    },
+    "c16-22": {
+      "text": "Vous savez ce qu'il y a sous le Sarcophage, et vous comprenez les cadrans. Ce n'est pas un émetteur. C'est un relais. Les aiguilles ne mesurent pas ce qui sort d'ici, elles mesurent ce qui passe : une ligne, du Radar à la Centrale, et sous la Centrale, les cuves. Le Brûleur ne garde pas la Zone. Il garde une ligne. Ce qui parle dans les têtes passe par ici pour descendre vers le sud.",
+      "choices": [
+        {
+          "text": "Appuyer sur le bouton",
+          "to": "c16-5"
+        },
+        {
+          "text": "Laisser la ligne ouverte et remonter",
+          "to": "c16-26"
+        }
+      ]
+    },
+    "c16-23": {
+      "text": "Vous restez sur la marche du haut, la main sur la rampe. La prière tourne, reprend, tourne. Ils peuvent finir maintenant ou dans une heure. Ils peuvent se lever et partir vers le couloir, ou se lever et se retourner. L'ampoule grésille au-dessus de votre tête. Tentez votre Chance.",
+      "test": {
+        "type": "luck",
+        "success": "c16-27",
+        "failure": "c16-32"
+      }
+    },
+    "c16-24": {
+      "text": "Vous cassez l'ampoule d'Anti-rad et buvez d'un coup, adossé à un pylône. Le goût de fer reste dans la bouche. Le compteur redescend. Vous perdez 5 rads. Au-dessus, le treillis bourdonne, indifférent. Vous jetez le verre dans les douilles, où il ne fait aucun bruit.",
+      "choices": [
+        {
+          "text": "Se relever contre le pylône",
+          "to": "c16-2"
+        }
+      ]
+    },
+    "c16-25": {
+      "text": "Le Vintorez tousse une fois. L'officier regarde sa poitrine, puis vous, avec quelque chose qui ressemble à de la gratitude. Il s'assied par terre, dos à la console, et ne se relève pas. La lumière verte pulse toujours derrière le hublot. Vous enjambez ses jambes.",
+      "choices": [
+        {
+          "text": "S'approcher de la console",
+          "to": "c16-11"
+        }
+      ]
+    },
+    "c16-26": {
+      "text": "Vous laissez le Brûleur tourner. Derrière vous, le treillis bourdonne toujours, et la phrase attend, de l'autre côté du Casque psi, patiente comme une marée. La route de béton descend vers le nord entre deux rangées de pylônes. Des soldats gris la bordent, immobiles, les fusils vers le sud. Aucun ne se retourne. Vous n'êtes pas celui qu'ils guettent. Un panneau écaillé : Pripyat.",
+      "choices": [
+        {
+          "text": "Descendre vers Pripyat par la route",
+          "to": "c18-1"
+        }
+      ]
+    },
+    "c16-27": {
+      "text": "Ils se lèvent ensemble et s'en vont vers la gauche, sans un regard en arrière, les fusils à l'épaule. La prière s'éloigne dans le béton. Vous descendez. Au pied de l'escalier, le mur est noir de mains : des empreintes de paume, des centaines, à hauteur d'homme. Un couloir part à droite, éclairé de rouge.",
+      "choices": [
+        {
+          "text": "Suivre le couloir rouge",
+          "to": "c16-8"
+        }
+      ]
+    },
+    "c16-28": {
+      "text": "Il tombe sur son fusil. Les yeux restent ouverts, blancs, et pendant un instant la phrase derrière le casque se tait, comme si quelqu'un avait raccroché. Puis elle reprend. Vous fouillez le corps par habitude : rien, pas même un nom. Vous laissez le bidon brûler et rejoignez la route de béton.",
+      "choices": [
+        {
+          "text": "Rejoindre le pied de l'antenne",
+          "to": "c16-2"
+        }
+      ]
+    },
+    "c16-29": {
+      "text": "La salle de contrôle. Des cadrans de bakélite, des aiguilles dans le vert, et au centre un bouton rouge sous un capot de verre. Devant, un officier du Monolithe, debout, le masque sur la table. Il vous regarde entrer avec ses yeux blancs et il sourit. Il dit : tu arrives. Il dit : il t'attend. Il prend son fusil sans se presser.",
+      "choices": [
+        {
+          "text": "Tirer au Vintorez avant qu'il épaule",
+          "to": "c16-25",
+          "if": {
+            "type": "item",
+            "item": "vintorez"
+          }
+        },
+        {
+          "text": "Se jeter sur lui",
+          "to": "c16-18"
+        }
+      ]
+    },
+    "c16-30": {
+      "text": "Vous sortez d'un placard de câbles dans le dos d'un officier du Monolithe. Il est assis devant la console, le masque sur la table, et il parle aux cadrans à voix basse. Il ne vous entend pas. Vous faites ce qu'on fait dans ce cas. Il ne se retourne pas. Vous le poussez de la chaise et prenez sa place devant la lumière verte.",
+      "choices": [
+        {
+          "text": "Regarder la console",
+          "to": "c16-11"
+        }
+      ]
+    },
+    "c16-31": {
+      "text": "Le Vintorez ne fait pas de bruit, et ce qu'il touche ne se relève pas. Le soldat s'incline une dernière fois et reste incliné. Le bidon continue de brûler. Vous passez à côté de lui. Ses lèvres bougent encore, ou c'est la fumée. La route de béton reprend sous vos pieds jusqu'au pied de l'antenne.",
+      "choices": [
+        {
+          "text": "Rejoindre le pied de l'antenne",
+          "to": "c16-2"
+        }
+      ]
+    },
+    "c16-32": {
+      "text": "Ils vous ont vu avant que vous ayez fini de descendre. Pas de cri : ils se lèvent, prennent les fusils, et tirent en continuant de réciter. Dans l'escalier, vous n'avez que les marches pour vous couvrir. Leurs balles frappent à casser des os.",
+      "combat": {
+        "name": "Les gardes de l'escalier",
+        "habilete": 7,
+        "endurance": 12,
+        "damage": 2,
+        "win": "c16-3",
+        "flee": {
+          "to": "c16-2"
+        }
+      }
+    },
+    "c16-33": {
+      "text": "Vos genoux cèdent. Vous êtes à quatre pattes dans la caillasse, et la phrase est dedans maintenant, elle remue vos doigts un par un pour qu'ils lâchent la crosse. Vous mordez votre langue jusqu'au sang. Le goût de fer fait une seconde de silence. Une seconde, c'est ce que vous avez. Tentez votre Chance.",
+      "test": {
+        "type": "luck",
+        "success": "c16-16",
+        "failure": "c16-7"
+      }
+    }
+  }
+}

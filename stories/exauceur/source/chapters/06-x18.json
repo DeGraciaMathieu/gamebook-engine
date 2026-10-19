@@ -1,0 +1,610 @@
+{
+  "title": "Le laboratoire X-18",
+  "summary": "Le héros est descendu dans le X-18 avec la Clef, a traversé les poltergeists et le gaz vert, a pu prendre les Documents du X-18, l'artefact Âme et une Trousse de soins, et a affronté ou évité le Pseudo-géant. Il remonte dans la Vallée sombre (c05-2).",
+  "brief": "Donjon à trois niveaux. La porte s'ouvre avec la Clef du X-18 : sans elle, pas d'entrée (c06-1 commence devant la porte avec la clef ; le rédacteur de c05 ne mène ici qu'avec la clef). Sans Lampe torche, chaque niveau coûte des points d'Endurance ou un test. Niveau 1 : poltergeists (objets jetés : test de Chance, échec −3 points d'Endurance), archives : Documents du X-18 dans un coffre. Niveau 2 : la Trousse de soins, l'Âme dans une anomalie. Niveau 3 : gaz vert (Masque à gaz ou 3 rads et −3 points d'Endurance), le Pseudo-géant (boss : habilete 10, endurance 12, damage 4 ; évitable par Grenade F1 ou en refermant la porte : test d'Habileté). Carrefour : le palier du niveau 2. Les consommables listés dans requires peuvent être consommés par un choix (effet remove + effet stat), le paragraphe d'arrivée le dit. Taille : 30 à 38 paragraphes.",
+  "entries": {
+    "c06-1": "Devant la porte du X-18, la Clef en main, l'escalier qui descend"
+  },
+  "exits": {
+    "c05-2": "Remonter dans la Vallée sombre"
+  },
+  "provides": {
+    "items": [
+      "documents_x18",
+      "artefact_ame",
+      "trousse"
+    ],
+    "flags": []
+  },
+  "requires": {
+    "items": [
+      "cle_x18",
+      "masque_gaz",
+      "lampe",
+      "grenade",
+      "antirad",
+      "trousse"
+    ],
+    "flags": []
+  },
+  "image": "c06-9",
+  "paragraphs": {
+    "c06-1": {
+      "text": "La porte est au fond de l'usine, derrière une grille que quelqu'un a découpée au chalumeau. Du fer, deux battants, une serrure grosse comme un poing. Au-dessus, peint au pochoir : X-18. La Clef du X-18 pèse dans votre main. Derrière le fer, un escalier descend, et l'air qui monte est plus froid que la vallée. Votre détecteur ne dit rien. C'est ce qui vous gêne.",
+      "choices": [
+        {
+          "text": "Tourner la Clef du X-18 dans la serrure",
+          "to": "c06-17",
+          "if": {
+            "type": "item",
+            "item": "cle_x18"
+          }
+        },
+        {
+          "text": "Renoncer et remonter dans la Vallée sombre",
+          "to": "c05-2"
+        }
+      ]
+    },
+    "c06-17": {
+      "text": "La clef tourne en trois tours. Le battant s'ouvre sur un palier de béton et un escalier qui se perd. Une ampoule morte pend au bout de son fil. Sur le mur, des traces de mains, à hauteur d'homme, puis plus bas, puis au ras du sol. Vous refermez derrière vous. Le bruit de la vallée s'arrête net.",
+      "choices": [
+        {
+          "text": "Allumer la Lampe torche et descendre",
+          "to": "c06-11",
+          "if": {
+            "type": "item",
+            "item": "lampe"
+          }
+        },
+        {
+          "text": "Descendre à tâtons dans le noir",
+          "to": "c06-4"
+        }
+      ]
+    },
+    "c06-4": {
+      "text": "Vous comptez les marches. Vingt, puis un palier, puis vingt encore. Le béton est humide et quelque chose a coulé le long des murs, qui colle aux doigts. À la trentième marche, votre pied ne trouve rien. L'escalier tourne, ou il manque une marche, vous ne le saurez qu'en tombant. Testez votre Habileté.",
+      "test": {
+        "type": "stat",
+        "stat": "habilete",
+        "dice": "2d6",
+        "success": "c06-11",
+        "failure": "c06-22"
+      }
+    },
+    "c06-22": {
+      "text": "Votre pied passe dans le vide. Vous roulez sur six marches et le béton vous reçoit sur l'épaule. Vous perdez 3 points d'Endurance. En bas, vous restez un moment sans bouger. Quelque part dans le noir, un objet en métal tombe, roule, s'arrête. Personne ne l'a fait tomber.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -3
+        }
+      ],
+      "choices": [
+        {
+          "text": "Vous relever et suivre le couloir",
+          "to": "c06-11"
+        }
+      ]
+    },
+    "c06-11": {
+      "text": "Le premier niveau est un couloir de portes de fer, numérotées à la peinture. Une lampe de secours clignote au fond, verte, et s'éteint quand vous la regardez. Un extincteur traverse le couloir à hauteur de tête et s'écrase contre le mur. Rien ne l'a lancé. Trois portes : ARCHIVES, un vestiaire, et au bout, l'escalier qui continue.",
+      "choices": [
+        {
+          "text": "Pousser la porte des archives",
+          "to": "c06-25"
+        },
+        {
+          "text": "Entrer dans le vestiaire",
+          "to": "c06-30"
+        },
+        {
+          "text": "Descendre l'escalier du fond",
+          "to": "c06-9"
+        }
+      ]
+    },
+    "c06-30": {
+      "text": "Des casiers de tôle, ouverts pour la plupart, des blouses pendues qui n'ont plus de forme. Au sol, un stalker assis contre le mur, le menton sur la poitrine, mort depuis longtemps. Son PDA est en miettes. Un seul casier est fermé, marqué d'une croix au couteau. Sur la porte, on a gratté : pas le trois.",
+      "choices": [
+        {
+          "text": "Ouvrir le casier marqué d'une croix",
+          "to": "c06-6"
+        },
+        {
+          "text": "Retourner dans le couloir",
+          "to": "c06-11"
+        }
+      ]
+    },
+    "c06-6": {
+      "text": "La porte du casier s'ouvre seule avant que vous la touchiez, et vous frappe au visage. Vous perdez 2 points d'Endurance. Dedans, une liasse serrée par un élastique : 120 roubles. Et une photo de femme, dont vous ne prenez rien. Dans le couloir, quelque chose rit, ou tousse. Vous ne restez pas pour savoir.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -2
+        },
+        {
+          "type": "stat",
+          "stat": "roubles",
+          "delta": 120
+        }
+      ],
+      "choices": [
+        {
+          "text": "Retourner dans le couloir",
+          "to": "c06-11"
+        }
+      ]
+    },
+    "c06-25": {
+      "text": "Les archives sont une salle longue, des rayonnages jusqu'au plafond, des classeurs gonflés d'eau. Au fond, un coffre de fer scellé dans le mur. Vous faites trois pas. Les classeurs se mettent à tomber, un par un, puis tous. Une chaise se lève, tourne et cherche votre tête. L'air sent l'ozone. Tentez votre Chance.",
+      "test": {
+        "type": "luck",
+        "success": "c06-2",
+        "failure": "c06-13"
+      }
+    },
+    "c06-13": {
+      "text": "La chaise vous trouve. Elle vous frappe aux côtes et vous perdez 3 points d'Endurance. Vous tombez entre deux rayonnages. Les classeurs continuent de pleuvoir, puis cessent, comme si ce qui jouait s'ennuyait. Le coffre est là, à six pas. Il n'a pas bougé. Lui, personne ne le jette.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -3
+        }
+      ],
+      "choices": [
+        {
+          "text": "Ramper jusqu'au coffre",
+          "to": "c06-2"
+        }
+      ]
+    },
+    "c06-2": {
+      "text": "Le coffre est fermé par une poignée à barillet, rouillée dans son logement. Sur la porte, une plaque : DOCUMENTS, NE PAS SORTIR. Le détecteur se réveille et crépite une fois, puis rien. Vous calez votre épaule contre le fer et tirez. Derrière vous, les rayonnages grincent. Testez votre Habileté.",
+      "test": {
+        "type": "stat",
+        "stat": "habilete",
+        "dice": "2d6",
+        "success": "c06-19",
+        "failure": "c06-28"
+      }
+    },
+    "c06-19": {
+      "text": "La poignée cède d'un coup. Dans le coffre, un dossier cartonné, épais, intact : les Documents du X-18. Des schémas de cuve, des courbes, des noms de patients rayés. Vous le glissez dans votre veste sans lire. Au fond des archives, une seconde porte donne sur l'escalier. Les classeurs ne bougent plus. Ils vous laissent partir avec ça.",
+      "effects": [
+        {
+          "type": "item",
+          "action": "add",
+          "item": "documents_x18"
+        }
+      ],
+      "choices": [
+        {
+          "text": "Descendre par l'escalier du fond",
+          "to": "c06-9"
+        }
+      ]
+    },
+    "c06-28": {
+      "text": "Le barillet ne bouge pas. Un classeur vous frappe à la tempe et vous perdez 2 points d'Endurance. Le sang coule dans l'œil. Le coffre est toujours là, muet. Au fond de la salle, une seconde porte donne sur l'escalier, pour ceux qui renoncent.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -2
+        }
+      ],
+      "choices": [
+        {
+          "text": "Forcer encore la poignée du coffre",
+          "to": "c06-2"
+        },
+        {
+          "text": "Laisser le coffre et descendre",
+          "to": "c06-9"
+        }
+      ]
+    },
+    "c06-9": {
+      "text": "Le palier du deuxième niveau est une pièce ronde, béton nu, trois portes et un escalier qui continue. CUVES, INFIRMERIE, et sur la troisième, rien qu'un chiffre : 3. De là-bas monte une lueur verte et une odeur de pomme pourrie. Au sol, des traces de pas dans la poussière, toutes dans le même sens. Vers le bas. Aucune ne revient.",
+      "image": {
+        "src": "images/c06-9.webp",
+        "alt": "Palier souterrain circulaire en béton nu, trois portes de fer, un escalier qui descend vers une lueur verte",
+        "prompt": "Un palier souterrain circulaire en béton nu, trois portes de fer marquées à la peinture, des traces de pas dans la poussière, un escalier qui descend vers une faible lueur venue d'en bas. Lieu désert, aucun personnage."
+      },
+      "choices": [
+        {
+          "text": "Entrer dans la salle des cuves",
+          "to": "c06-14"
+        },
+        {
+          "text": "Pousser la porte de l'infirmerie",
+          "to": "c06-16"
+        },
+        {
+          "text": "Descendre au troisième niveau",
+          "to": "c06-10"
+        },
+        {
+          "text": "Remonter jusqu'à l'usine",
+          "to": "c06-32"
+        }
+      ]
+    },
+    "c06-14": {
+      "text": "La salle des cuves est plus grande que ce que l'usine laisse croire. Des cylindres de verre hauts comme deux hommes, vides, l'un fendu. Il fait noir sauf au fond, où l'air tourne sur lui-même en soulevant des éclats de verre. Votre détecteur se met à chanter, par saccades. Il y a quelque chose là-dedans, et ça vaut le voyage.",
+      "choices": [
+        {
+          "text": "Éclairer la salle avec la Lampe torche",
+          "to": "c06-31",
+          "if": {
+            "type": "item",
+            "item": "lampe"
+          }
+        },
+        {
+          "text": "Avancer dans le noir vers le bruit",
+          "to": "c06-7"
+        }
+      ]
+    },
+    "c06-31": {
+      "text": "Le faisceau de la Lampe torche balaie les cuves. Dans le fond, l'anomalie « Carrousel » tourne lentement, invisible sauf pour la poussière qu'elle fait monter en spirale. Au centre, posée comme une bille au fond d'un bol, une pierre bleue qui bat. L'Âme. Vous repérez le bord du Carrousel : trois mètres. Un boulon le dira.",
+      "choices": [
+        {
+          "text": "Lancer un boulon et aller chercher l'Âme",
+          "to": "c06-20"
+        },
+        {
+          "text": "Revenir sur le palier",
+          "to": "c06-9"
+        }
+      ]
+    },
+    "c06-7": {
+      "text": "Dans le noir, votre genou rencontre la cuve fendue. Le verre entre dans la peau et vous perdez 2 points d'Endurance. Vous suivez le détecteur à l'oreille. Au fond, l'air tourne et soulève la poussière, et dedans une lueur bleue bat comme un cœur : un artefact. Entre vous et lui, le « Carrousel ». Vous ne voyez pas où il commence.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -2
+        }
+      ],
+      "choices": [
+        {
+          "text": "Lancer un boulon et aller chercher l'Âme",
+          "to": "c06-20"
+        },
+        {
+          "text": "Revenir sur le palier",
+          "to": "c06-9"
+        }
+      ]
+    },
+    "c06-20": {
+      "text": "Vous lancez un boulon. Il monte, tourne deux fois et retombe à vos pieds, tordu. Le bord est là. Vous avancez à plat ventre, le bras tendu vers la pierre. L'air vous tire la manche. Le détecteur hurle. Tentez votre Chance.",
+      "test": {
+        "type": "luck",
+        "success": "c06-3",
+        "failure": "c06-26"
+      }
+    },
+    "c06-3": {
+      "text": "Vos doigts se referment sur la pierre, et le Carrousel vous lâche la manche, comme s'il n'en voulait plus. L'Âme est tiède, elle bat lentement contre la paume. Les stalkers disent que les savants de Yantar paient ça le prix d'une vie. Vous la rangez contre la poitrine. Les cuves vides vous regardent sortir.",
+      "effects": [
+        {
+          "type": "item",
+          "action": "add",
+          "item": "artefact_ame"
+        }
+      ],
+      "choices": [
+        {
+          "text": "Revenir sur le palier",
+          "to": "c06-9"
+        }
+      ]
+    },
+    "c06-26": {
+      "text": "Le Carrousel vous prend par le bras. Il vous soulève, vous retourne et vous jette contre une cuve. Le verre tient, pas vos côtes. Vous perdez 3 points d'Endurance. Vous restez au sol le temps que la pièce arrête de tourner. La pierre bleue bat toujours au centre, à trois mètres, comme si de rien n'était.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -3
+        }
+      ],
+      "choices": [
+        {
+          "text": "Retenter votre chance vers l'Âme",
+          "to": "c06-20"
+        },
+        {
+          "text": "Renoncer et revenir sur le palier",
+          "to": "c06-9"
+        }
+      ]
+    },
+    "c06-16": {
+      "text": "L'infirmerie a gardé son carrelage blanc et une table d'examen avec des sangles. Les sangles sont bouclées sur rien. Dans l'armoire vitrée, des fioles vides, des seringues, et une boîte à croix rouge que personne n'a ouverte : une Trousse de soins. Au mur, un tableau de doses, des noms, des dates. La dernière date est d'avant la Zone.",
+      "effects": [
+        {
+          "type": "item",
+          "action": "add",
+          "item": "trousse"
+        }
+      ],
+      "choices": [
+        {
+          "text": "Revenir sur le palier",
+          "to": "c06-9"
+        }
+      ]
+    },
+    "c06-10": {
+      "text": "L'escalier du troisième niveau descend dans le vert. Le gaz tient au sol comme une eau, épais, et monte à chaque marche. Ça sent la pomme pourrie et le cuivre. Les traces de pas s'y enfoncent et disparaissent. Votre compteur tique une fois, puis deux. Tout en bas, un bruit lourd, régulier, qui ressemble à quelqu'un qui dort.",
+      "choices": [
+        {
+          "text": "Mettre le Masque à gaz et descendre",
+          "to": "c06-33",
+          "if": {
+            "type": "item",
+            "item": "masque_gaz"
+          }
+        },
+        {
+          "text": "Descendre en retenant votre souffle",
+          "to": "c06-5"
+        }
+      ]
+    },
+    "c06-33": {
+      "text": "Le Masque à gaz colle au visage et le monde se met à sentir le caoutchouc. Le vert monte jusqu'à la poitrine, puis au-dessus de la tête. Vous descendez dans un aquarium. Le compteur tique mais reste sage. En bas, une antichambre, une porte de fer entrouverte, et le bruit lourd derrière, qui s'est arrêté quand vous avez posé le pied.",
+      "choices": [
+        {
+          "text": "Entrer dans l'antichambre",
+          "to": "c06-23"
+        }
+      ]
+    },
+    "c06-5": {
+      "text": "Vous descendez en apnée. Le vert vous prend aux yeux, puis aux poumons quand il faut bien respirer. Ça brûle. Vous toussez du sang dans votre manche et vous perdez 3 points d'Endurance. Le compteur grimpe : vous prenez 3 rads. En bas, une antichambre, une porte de fer entrouverte, et le bruit lourd qui s'est arrêté quand vous avez posé le pied.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -3
+        },
+        {
+          "type": "stat",
+          "stat": "radiation",
+          "delta": 3
+        }
+      ],
+      "choices": [
+        {
+          "text": "Entrer dans l'antichambre",
+          "to": "c06-23"
+        }
+      ]
+    },
+    "c06-23": {
+      "text": "L'antichambre est un sas : deux portes, un lavabo arraché, un rideau de plastique. Derrière la porte du fond, quelque chose respire, et à chaque souffle le béton tremble sous vos bottes. Sur le mur, un panneau d'affichage, des photos de patients. Le dernier, c'est un homme très grand. Sur la photo d'après, il n'est plus un homme.",
+      "choices": [
+        {
+          "text": "Boire l'anti-rad",
+          "to": "c06-12",
+          "if": {
+            "type": "item",
+            "item": "antirad"
+          },
+          "effects": [
+            {
+              "type": "item",
+              "action": "remove",
+              "item": "antirad"
+            },
+            {
+              "type": "stat",
+              "stat": "radiation",
+              "delta": -5
+            }
+          ]
+        },
+        {
+          "text": "Vider la Trousse de soins",
+          "to": "c06-29",
+          "if": {
+            "type": "item",
+            "item": "trousse"
+          },
+          "effects": [
+            {
+              "type": "item",
+              "action": "remove",
+              "item": "trousse"
+            },
+            {
+              "type": "stat",
+              "stat": "endurance",
+              "delta": 6
+            }
+          ]
+        },
+        {
+          "text": "Pousser la porte de fer",
+          "to": "c06-8"
+        }
+      ]
+    },
+    "c06-12": {
+      "text": "Vous buvez l'Anti-rad d'un trait. C'est amer, puis froid, et ça descend jusque dans les jambes. Le compteur se calme : vous perdez 5 rads. Vos mains tremblent un peu moins. Vous laissez tomber la fiole dans le lavabo arraché. Derrière la porte, la respiration reprend, plus courte. Il sait que vous êtes là.",
+      "choices": [
+        {
+          "text": "Vider la Trousse de soins",
+          "to": "c06-29",
+          "if": {
+            "type": "item",
+            "item": "trousse"
+          },
+          "effects": [
+            {
+              "type": "item",
+              "action": "remove",
+              "item": "trousse"
+            },
+            {
+              "type": "stat",
+              "stat": "endurance",
+              "delta": 6
+            }
+          ]
+        },
+        {
+          "text": "Pousser la porte de fer",
+          "to": "c06-8"
+        }
+      ]
+    },
+    "c06-29": {
+      "text": "Vous videz la Trousse de soins. Deux bandes serrées, une seringue dans la cuisse, la plaie du genou refermée avec du fil. Vous regagnez 6 points d'Endurance. Vous jetez la boîte vide. Elle rebondit sur le carrelage, et derrière la porte, la respiration s'arrête. Puis quelque chose se lève.",
+      "choices": [
+        {
+          "text": "Boire l'anti-rad",
+          "to": "c06-12",
+          "if": {
+            "type": "item",
+            "item": "antirad"
+          },
+          "effects": [
+            {
+              "type": "item",
+              "action": "remove",
+              "item": "antirad"
+            },
+            {
+              "type": "stat",
+              "stat": "radiation",
+              "delta": -5
+            }
+          ]
+        },
+        {
+          "text": "Pousser la porte de fer",
+          "to": "c06-8"
+        }
+      ]
+    },
+    "c06-8": {
+      "text": "La porte s'ouvre sur une salle de machines, des cuves couchées, un plafond perdu dans le vert. Au milieu, le Pseudo-géant. Trois mètres, une tête trop petite, des bras qui touchent le sol, et des sangles encore nouées aux poignets. Il vous regarde avec des yeux d'homme. Il fait un pas et le sol se fend. Dans ce vert, sans lumière, vous ne retrouveriez pas la poignée de la porte. Vous avez le temps d'une seule chose.",
+      "choices": [
+        {
+          "text": "Lancer la Grenade F1 et se plaquer au sol",
+          "to": "c06-18",
+          "if": {
+            "type": "item",
+            "item": "grenade"
+          },
+          "effects": [
+            {
+              "type": "item",
+              "action": "remove",
+              "item": "grenade"
+            }
+          ]
+        },
+        {
+          "text": "Refermer la porte de fer sur lui",
+          "to": "c06-27",
+          "if": {
+            "type": "item",
+            "item": "lampe"
+          }
+        },
+        {
+          "text": "Tirer et tenir devant lui",
+          "to": "c06-21"
+        }
+      ]
+    },
+    "c06-18": {
+      "text": "La Grenade F1 roule entre ses pieds. Vous vous plaquez derrière une cuve. L'explosion mange le gaz d'un coup et la pièce devient blanche. Quand vous rouvrez les yeux, le Pseudo-géant est couché sur le flanc, une jambe tordue sous lui, et il respire encore, lentement. Il ne se relèvera pas avant longtemps. Vous passez à côté de lui. Il vous suit des yeux.",
+      "choices": [
+        {
+          "text": "Traverser la salle",
+          "to": "c06-24"
+        }
+      ]
+    },
+    "c06-27": {
+      "text": "Vous saisissez la poignée à deux mains. La porte est lourde, le gond rouillé crie, et derrière elle le Pseudo-géant a déjà traversé la moitié de la salle. Le faisceau de la Lampe torche tremble sur ses dents. Il reste trois pas. Testez votre Habileté.",
+      "test": {
+        "type": "stat",
+        "stat": "habilete",
+        "dice": "2d6",
+        "success": "c06-15",
+        "failure": "c06-21"
+      }
+    },
+    "c06-15": {
+      "text": "La porte de fer claque avant lui. Il frappe, une fois, deux fois, et le fer se bombe vers vous, mais tient. Puis plus rien. Vous entendez son souffle revenir derrière la porte, lent, patient. Il a le temps. Vous, non. L'escalier remonte derrière vous dans le vert.",
+      "choices": [
+        {
+          "text": "Remonter au palier du deuxième niveau",
+          "to": "c06-9"
+        },
+        {
+          "text": "Remonter jusqu'à l'usine",
+          "to": "c06-32"
+        }
+      ]
+    },
+    "c06-21": {
+      "text": "Il est sur vous. Chaque coup ferait éclater une porte de voiture, et vous n'êtes pas une porte. Vous tirez dans la tête trop petite, vous reculez entre les cuves, vous tirez encore. Il frappe à casser des os. Si vous reculez jusqu'à la porte, il ne vous suit pas : il garde la salle, pas les marches.",
+      "combat": {
+        "name": "Pseudo-géant",
+        "habilete": 8,
+        "endurance": 12,
+        "damage": 2,
+        "win": "c06-24",
+        "flee": {
+          "to": "c06-15"
+        }
+      }
+    },
+    "c06-24": {
+      "text": "Le Pseudo-géant ne bouge plus, ou plus assez. Au-delà, un bureau vitré, le poste de l'homme qui tenait les sangles. Son squelette est encore sur la chaise, blouse, lunettes. Dans le tiroir, une liasse d'avant la Zone, et une autre d'après : 300 roubles. Sur le bureau, une feuille, une seule phrase : ils n'ont pas besoin de nous pour rêver. Vous ne savez pas qui est « ils ».",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "roubles",
+          "delta": 300
+        }
+      ],
+      "choices": [
+        {
+          "text": "Remonter au palier du deuxième niveau",
+          "to": "c06-9"
+        },
+        {
+          "text": "Remonter jusqu'à l'usine",
+          "to": "c06-32"
+        }
+      ]
+    },
+    "c06-32": {
+      "text": "Vous remontez. Le vert vous lâche au deuxième niveau, le noir au premier. Dans le couloir, un classeur tombe derrière vous, seul, sans conviction. L'escalier, la porte de fer, la clef qui tourne dans l'autre sens. Dehors, c'est encore la Vallée sombre, la brume, le jour qu'il reste. Vous respirez par la bouche pendant un long moment.",
+      "choices": [
+        {
+          "text": "Sortir dans la Vallée sombre",
+          "to": "c05-2"
+        }
+      ]
+    }
+  }
+}

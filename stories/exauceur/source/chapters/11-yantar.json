@@ -1,0 +1,934 @@
+{
+  "title": "Yantar",
+  "summary": "Le héros a atteint le bunker de Sakharov au bord du lac mort, entre les zombies, le lac irradié et l'usine chimique où rôde un Snork. Sakharov échange la Combinaison SEVA contre l'Âme (s'il doit le camion des scientifiques) ou 2 000 roubles, demande d'éteindre le X-16, lit les Documents du X-16, et donne le Casque psi à qui a éteint l'émetteur (`sakharov_ami`). Le héros descend dans le X-16 (c12-1), part vers la Forêt rouge par le nord (c14-1, 3 rads sans SEVA) ou revient au Bar (c08-3).",
+  "brief": "Hub de l'acte 2. Deux entrées : les Terres sauvages (c11-1), la remontée du X-16 (c11-2). Carrefour : la porte du bunker. Scènes : les zombies entre l'usine et le bunker (combat avec fuite, ils sont lents), Sakharov (si scientifiques_sauves, il est reconnaissant : SEVA contre l'Âme seulement, sinon 2 000 roubles ; il demande d'éteindre le X-16 ; si x16_eteint, il donne le Casque psi ; si Documents du X-16 et verite_connue, il explique ce qu'il peut), le lac (rads, un Anti-rad à ramasser n'est pas fourni ici : ne pas en ajouter), l'usine chimique (Snork). Sans SEVA, le chemin vers la Forêt rouge coûte 3 rads. Les consommables listés dans requires peuvent être consommés par un choix (effet remove + effet stat), le paragraphe d'arrivée le dit. Taille : 36 à 44 paragraphes.",
+  "entries": {
+    "c11-1": "Arrivée depuis les Terres sauvages, en vue du lac",
+    "c11-2": "Remontée du X-16, par la porte de l'usine"
+  },
+  "exits": {
+    "c12-1": "Descendre dans le laboratoire X-16",
+    "c14-1": "Partir vers la Forêt rouge par le nord",
+    "c08-3": "Revenir au Bar par les Terres sauvages"
+  },
+  "provides": {
+    "items": [
+      "seva",
+      "casque_psi"
+    ],
+    "flags": [
+      "sakharov_ami",
+      "dormi_bunker"
+    ]
+  },
+  "requires": {
+    "items": [
+      "artefact_ame",
+      "documents_x16",
+      "antirad",
+      "trousse"
+    ],
+    "flags": [
+      "scientifiques_sauves",
+      "x16_eteint",
+      "verite_connue"
+    ]
+  },
+  "image": "c11-4",
+  "paragraphs": {
+    "c11-1": {
+      "text": "Les Terres sauvages s'arrêtent à une clôture couchée. Derrière, le terrain descend vers un lac qui ne reflète rien. Une usine sur la rive gauche, cheminée, cuves. Sur la rive droite, une bosse de terre sous une bâche de plomb, une antenne : le bunker des scientifiques. Entre les deux, des silhouettes marchent dans l'herbe grise, lentement, sans but. Le compteur crépite quand le vent vient du lac.",
+      "choices": [
+        {
+          "text": "Descendre droit vers le bunker",
+          "to": "c11-11"
+        },
+        {
+          "text": "Longer la rive du lac",
+          "to": "c11-4"
+        },
+        {
+          "text": "Couper par l'usine chimique",
+          "to": "c11-15"
+        }
+      ]
+    },
+    "c11-2": {
+      "text": "Vous poussez la porte de l'usine et le jour vous frappe. Après les couloirs du X-16, l'air de dehors a un goût de rouille et d'ammoniac. Le lac est à la même place. Le bunker aussi, sous sa bâche de plomb. Dans l'herbe entre les deux, les silhouettes sont là, debout ou couchées, vous ne savez pas encore.",
+      "choices": [
+        {
+          "text": "Marcher droit vers le bunker",
+          "to": "c11-23",
+          "if": {
+            "type": "flag",
+            "flag": "x16_eteint"
+          }
+        },
+        {
+          "text": "Se faufiler entre les zombies",
+          "to": "c11-11"
+        },
+        {
+          "text": "Longer la rive du lac",
+          "to": "c11-4"
+        }
+      ]
+    },
+    "c11-3": {
+      "text": "Ce que ça veut dire, il le dit en comptant sur ses doigts. Un : l'émetteur d'ici n'est pas le seul. Deux : ils ont été construits avant 2006, par des gens qui avaient des moyens. Trois : quelqu'un lit dans les têtes, de loin, et ce quelqu'un est au nord. Il replie les feuilles et vous les rend. Garde-les. Ne les vends pas aux militaires. Les militaires, c'est eux.",
+      "choices": [
+        {
+          "text": "Retourner à la table",
+          "to": "c11-13"
+        }
+      ]
+    },
+    "c11-4": {
+      "text": "La rive est une croûte grise qui craque sous les bottes. Le lac ne bouge pas. Des poissons blancs flottent le ventre en l'air depuis si longtemps qu'ils ne sentent plus rien. Une barque à demi coulée, le nom effacé. Le compteur grimpe dès que vous approchez de l'eau. Vous prenez 2 rads. Sur l'autre rive, l'usine fume sans feu.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "radiation",
+          "delta": 2
+        }
+      ],
+      "image": {
+        "src": "images/c11-4.webp",
+        "alt": "La rive grise d'un lac mort, une barque à demi coulée, une usine chimique sur l'autre rive",
+        "prompt": "Rive d'un lac mort sous un ciel bas : croûte de boue craquelée, poissons blancs flottant le ventre en l'air, une barque à demi coulée au nom effacé. Sur l'autre rive, les cuves et la cheminée penchée d'une usine chimique soviétique ; au loin, une butte de terre couverte d'une bâche de plomb surmontée d'une antenne."
+      },
+      "choices": [
+        {
+          "text": "Boire l'anti-rad",
+          "to": "c11-16",
+          "if": {
+            "type": "item",
+            "item": "antirad"
+          },
+          "effects": [
+            {
+              "type": "item",
+              "action": "remove",
+              "item": "antirad"
+            },
+            {
+              "type": "stat",
+              "stat": "radiation",
+              "delta": -5
+            }
+          ]
+        },
+        {
+          "text": "Suivre la rive vers le bunker",
+          "to": "c11-39"
+        },
+        {
+          "text": "Suivre la rive vers l'usine",
+          "to": "c11-29"
+        }
+      ]
+    },
+    "c11-5": {
+      "text": "Il prend l'Âme dans sa main et elle lui éclaire les lunettes par en dessous. Mes gens m'ont parlé du camion, dit-il. Des Terres sauvages. Ils ont dit un stalker, pas un nom. Il range l'artefact dans une boîte de plomb et pousse la Combinaison SEVA vers vous. Elle pèse ce qu'elle pèse. Il regarde déjà ailleurs.",
+      "effects": [
+        {
+          "type": "item",
+          "action": "remove",
+          "item": "artefact_ame"
+        },
+        {
+          "type": "item",
+          "action": "add",
+          "item": "seva"
+        }
+      ],
+      "choices": [
+        {
+          "text": "Retourner à la table",
+          "to": "c11-13"
+        }
+      ]
+    },
+    "c11-6": {
+      "text": "Le Snork ne bouge plus. Sous le masque à gaz, un visage d'homme, jeune, les dents cassées. Il porte encore une plaque de soldat. Vous ne la lisez pas. Le hall est à vous, et l'escalier descend sous sa lampe rouge dans une odeur de câble chaud. Le ventilateur, en bas, tourne encore.",
+      "choices": [
+        {
+          "text": "Vider la trousse de soins",
+          "to": "c11-37",
+          "if": {
+            "type": "item",
+            "item": "trousse"
+          },
+          "effects": [
+            {
+              "type": "item",
+              "action": "remove",
+              "item": "trousse"
+            },
+            {
+              "type": "stat",
+              "stat": "endurance",
+              "delta": 6
+            }
+          ]
+        },
+        {
+          "text": "Descendre dans le laboratoire X-16",
+          "to": "c12-1"
+        },
+        {
+          "text": "Ressortir",
+          "to": "c11-15"
+        }
+      ]
+    },
+    "c11-7": {
+      "text": "La porte du bunker est une plaque d'acier dans la terre, sous un auvent de plomb. Un interphone, une caméra qui bouge quand vous bougez. Le compteur se tait ici : on a bien choisi l'endroit. D'ici on voit tout Yantar : l'usine et ses cuves, le lac plat, la route qui monte au nord vers des pins qui ne sont plus verts.",
+      "choices": [
+        {
+          "text": "Appuyer sur l'interphone",
+          "to": "c11-41"
+        },
+        {
+          "text": "Frapper deux coups, comme convenu",
+          "to": "c11-13",
+          "if": {
+            "type": "flag",
+            "flag": "sakharov_ami"
+          }
+        },
+        {
+          "text": "Dormir une nuit sous l'auvent de plomb",
+          "to": "c11-43",
+          "if": {
+            "type": "flag",
+            "flag": "dormi_bunker",
+            "value": false
+          }
+        },
+        {
+          "text": "Longer la rive du lac",
+          "to": "c11-4"
+        },
+        {
+          "text": "Traverser vers l'usine chimique",
+          "to": "c11-11"
+        },
+        {
+          "text": "Marcher vers l'usine entre les corps",
+          "to": "c11-15",
+          "if": {
+            "type": "flag",
+            "flag": "x16_eteint"
+          }
+        },
+        {
+          "text": "Partir vers la Forêt rouge par le nord",
+          "to": "c11-18"
+        },
+        {
+          "text": "Revenir au Bar par les Terres sauvages",
+          "to": "c08-3"
+        }
+      ]
+    },
+    "c11-8": {
+      "text": "Il n'y a pas de deuxième boulon. L'air vous attrape par le milieu et vous jette sur le talus, puis vous ramène, puis vous lâche. Vous perdez 3 points d'Endurance. Vous restez couché le temps de sentir si tout tient. Le lac n'a toujours pas une ride. Le bunker est là-haut, à dix mètres de gravier.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -3
+        }
+      ],
+      "choices": [
+        {
+          "text": "Vider la trousse de soins",
+          "to": "c11-20",
+          "if": {
+            "type": "item",
+            "item": "trousse"
+          },
+          "effects": [
+            {
+              "type": "item",
+              "action": "remove",
+              "item": "trousse"
+            },
+            {
+              "type": "stat",
+              "stat": "endurance",
+              "delta": 6
+            }
+          ]
+        },
+        {
+          "text": "Monter à la porte du bunker",
+          "to": "c11-7"
+        }
+      ]
+    },
+    "c11-9": {
+      "text": "Ils s'éloignent. Le groupe dérive vers le lac comme une chose qu'on a lâchée, et la bande d'herbe jusqu'au bunker se vide. Vous la traversez courbé, sans respirer. Derrière vous, un zombie s'arrête, se retourne, regarde l'endroit où vous étiez, puis repart.",
+      "choices": [
+        {
+          "text": "Aller à la porte du bunker",
+          "to": "c11-7"
+        },
+        {
+          "text": "Continuer vers l'usine chimique",
+          "to": "c11-15"
+        }
+      ]
+    },
+    "c11-10": {
+      "text": "L'émetteur est éteint, et Sakharov le savait avant vous : ses écrans sont plats depuis des heures. Il sort d'une armoire un Casque psi, cuir et cuivre, des fils jusqu'à une boîte de ceinture. Avec ça, le Brûleur ne te prendra pas. Peut-être. Il vous pousse vers un lit de camp. Dors. Vous dormez quatre heures d'un bloc. Vous regagnez 4 points d'Endurance. Il vous doit quelque chose, et il le sait.",
+      "effects": [
+        {
+          "type": "item",
+          "action": "add",
+          "item": "casque_psi"
+        },
+        {
+          "type": "flag",
+          "flag": "sakharov_ami"
+        },
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": 4
+        }
+      ],
+      "choices": [
+        {
+          "text": "Retourner à la table",
+          "to": "c11-13"
+        }
+      ]
+    },
+    "c11-11": {
+      "text": "Ils sont une dizaine entre l'usine et le bunker. Combinaisons de stalkers, casques, fusils tenus comme des pelles. Ils marchent, s'arrêtent, repartent. Le premier vous voit. Il tourne la tête comme on tourne une page, puis lève son arme sans viser. Les autres suivent, lentement. Ils marmonnent tous la même chose, et vous n'entendez pas quoi.",
+      "choices": [
+        {
+          "text": "Passer en force, couteau et pistolet",
+          "to": "c11-30"
+        },
+        {
+          "text": "Attendre qu'ils s'écartent",
+          "to": "c11-38"
+        },
+        {
+          "text": "Reculer vers la rive du lac",
+          "to": "c11-4"
+        }
+      ]
+    },
+    "c11-12": {
+      "text": "Une marche sonne. Il est sur vous avant le second bruit, tombé d'une cuve, masque à gaz, mains nues, et il frappe à casser des os. Vous perdez 3 points d'Endurance. Vous roulez, vous vous relevez. Il est déjà accroupi, prêt à sauter encore. La porte est loin ; il vous rattrapera une fois, pas deux.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -3
+        }
+      ],
+      "combat": {
+        "name": "Snork",
+        "habilete": 6,
+        "endurance": 7,
+        "damage": 2,
+        "win": "c11-6",
+        "flee": {
+          "to": "c11-15"
+        }
+      }
+    },
+    "c11-13": {
+      "text": "Le professeur Sakharov ne tient pas en place. Lunettes épaisses, blouse sous la combinaison, il parle en marchant entre trois écrans et une table couverte de pièces de détecteurs. Alors, dehors ? Combien ? Ils marchent encore ? Ne réponds pas, je sais. Sur un crochet, une combinaison lourde, la visière rayée. Il voit que vous la regardez. Tout le monde la regarde.",
+      "choices": [
+        {
+          "text": "Demander la combinaison",
+          "to": "c11-28",
+          "if": {
+            "type": "item",
+            "item": "seva",
+            "present": false
+          }
+        },
+        {
+          "text": "Parler du laboratoire sous l'usine",
+          "to": "c11-36",
+          "if": {
+            "type": "flag",
+            "flag": "x16_eteint",
+            "value": false
+          }
+        },
+        {
+          "text": "Dire que l'émetteur est éteint",
+          "to": "c11-10",
+          "if": {
+            "type": "all",
+            "conditions": [
+              {
+                "type": "flag",
+                "flag": "x16_eteint"
+              },
+              {
+                "type": "item",
+                "item": "casque_psi",
+                "present": false
+              }
+            ]
+          }
+        },
+        {
+          "text": "Poser les Documents du X-16 sur la table",
+          "to": "c11-24",
+          "if": {
+            "type": "item",
+            "item": "documents_x16"
+          }
+        },
+        {
+          "text": "Ressortir",
+          "to": "c11-7"
+        }
+      ]
+    },
+    "c11-14": {
+      "text": "Le PDA contient quarante messages pour quelqu'un qui s'appelle Olia. Le dernier date de trois mois : je rentre dimanche. Dans la doublure du gilet, des billets pliés, humides. Vous trouvez 120 roubles. Les autres corps n'ont rien qu'un stalker n'ait déjà pris.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "roubles",
+          "delta": 120
+        }
+      ],
+      "choices": [
+        {
+          "text": "Vider la trousse de soins",
+          "to": "c11-20",
+          "if": {
+            "type": "item",
+            "item": "trousse"
+          },
+          "effects": [
+            {
+              "type": "item",
+              "action": "remove",
+              "item": "trousse"
+            },
+            {
+              "type": "stat",
+              "stat": "endurance",
+              "delta": 6
+            }
+          ]
+        },
+        {
+          "text": "Aller à la porte du bunker",
+          "to": "c11-7"
+        },
+        {
+          "text": "Continuer vers l'usine chimique",
+          "to": "c11-15"
+        }
+      ]
+    },
+    "c11-15": {
+      "text": "L'usine chimique est une boîte de brique et de cuves rouillées, avec une cheminée qui penche. La porte principale est entrouverte sur du noir. L'ammoniac pique les yeux à vingt mètres. Au-dessus de la porte, à la peinture : X-16, une flèche vers le bas, un mot effacé. Dans l'herbe derrière vous, debout ou couchés, les zombies tiennent la bande entre ici et le bunker.",
+      "choices": [
+        {
+          "text": "Entrer dans l'usine",
+          "to": "c11-34"
+        },
+        {
+          "text": "Marcher vers le bunker entre les corps",
+          "to": "c11-23",
+          "if": {
+            "type": "flag",
+            "flag": "x16_eteint"
+          }
+        },
+        {
+          "text": "Traverser vers le bunker",
+          "to": "c11-11"
+        },
+        {
+          "text": "Longer la rive du lac",
+          "to": "c11-4"
+        }
+      ]
+    },
+    "c11-16": {
+      "text": "Vous videz l'anti-rad d'un trait, le goût de fer au fond. Le compteur ralentit, hésite, se calme. Vous perdez 5 rads. Les poissons morts vous regardent avec leurs yeux de lait. Le lac n'a pas bougé pendant tout ce temps, pas une ride.",
+      "choices": [
+        {
+          "text": "Suivre la rive vers le bunker",
+          "to": "c11-39"
+        },
+        {
+          "text": "Suivre la rive vers l'usine",
+          "to": "c11-29"
+        }
+      ]
+    },
+    "c11-17": {
+      "text": "Ils ne s'écartent pas. Une main vous prend la nuque, froide, une main de noyé. Vous perdez 2 points d'Endurance. Le zombie vous regarde de très près et répète : la pierre, la pierre. Vous le repoussez. Les autres ferment le cercle, lentement. Ils sont lents. On peut encore courir.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -2
+        }
+      ],
+      "combat": {
+        "name": "Les zombies",
+        "habilete": 5,
+        "endurance": 8,
+        "damage": 2,
+        "win": "c11-26",
+        "flee": {
+          "to": "c11-35"
+        }
+      }
+    },
+    "c11-18": {
+      "text": "La route du nord contourne le lac par une digue, puis monte entre des pylônes vers des pins qui ont la couleur de la rouille. Le vent vient de là-haut et apporte la poussière de la crête : le compteur crépite sans s'arrêter. Derrière vous, Yantar, son lac, son usine, ses marcheurs. Personne ne vous regarde partir.",
+      "choices": [
+        {
+          "text": "Enfiler la Combinaison SEVA",
+          "to": "c11-32",
+          "if": {
+            "type": "item",
+            "item": "seva"
+          }
+        },
+        {
+          "text": "Marcher dans la poussière",
+          "to": "c11-25"
+        },
+        {
+          "text": "Revenir à la porte du bunker",
+          "to": "c11-7"
+        }
+      ]
+    },
+    "c11-19": {
+      "text": "Il regarde l'Âme sans la toucher. Elle est belle. Elle vaut ce qu'elle vaut au Bar, pas ici. Il remet la combinaison sur son crochet. Deux mille, dit-il. On ne négocie pas avec quelqu'un qu'on ne connaît pas. Il se rassoit devant ses écrans et vous n'existez plus pendant quelques secondes.",
+      "choices": [
+        {
+          "text": "Retourner à la table",
+          "to": "c11-13"
+        }
+      ]
+    },
+    "c11-20": {
+      "text": "Vous videz la trousse de soins, assis dans l'herbe, le dos au béton. Les compresses sentent l'alcool, la bande colle mal. Vous regagnez 6 points d'Endurance. Au loin, sur la bâche de plomb, l'antenne du bunker tourne d'un quart de tour, s'arrête, repart.",
+      "choices": [
+        {
+          "text": "Aller à la porte du bunker",
+          "to": "c11-7"
+        },
+        {
+          "text": "Continuer vers l'usine chimique",
+          "to": "c11-15"
+        }
+      ]
+    },
+    "c11-21": {
+      "text": "Vous avancez au bord du hall, là où le sol est propre, sans verre. La respiration est quelque part à gauche, derrière une cuve. Elle s'arrête quand vous vous arrêtez. L'escalier est à quinze mètres. Les dernières marches de fer sonnent au moindre poids. Testez votre Habileté.",
+      "test": {
+        "type": "stat",
+        "stat": "habilete",
+        "dice": "2d6",
+        "success": "c11-42",
+        "failure": "c11-12"
+      }
+    },
+    "c11-22": {
+      "text": "Le deuxième boulon tombe du bon côté. L'anomalie est à gauche, collée au talus ; vous passez à droite, les bottes dans l'eau morte, et l'air se referme derrière vous avec un bruit de drap. Le bunker est là, dix mètres au-dessus, sa bâche de plomb luisante d'une pluie ancienne.",
+      "choices": [
+        {
+          "text": "Monter à la porte du bunker",
+          "to": "c11-7"
+        }
+      ]
+    },
+    "c11-23": {
+      "text": "Ils sont couchés. Tous. L'émetteur s'est tu et ils sont tombés là où ils marchaient, dans l'herbe, la bouche ouverte, les mains encore à demi fermées sur des fusils. L'un d'eux respire, lentement, comme un dormeur. Vous enjambez les corps. Personne ne marmonne plus à Yantar, et le silence est pire.",
+      "choices": [
+        {
+          "text": "Aller à la porte du bunker",
+          "to": "c11-7"
+        },
+        {
+          "text": "Continuer vers l'usine chimique",
+          "to": "c11-15"
+        }
+      ]
+    },
+    "c11-24": {
+      "text": "Les Documents du X-16 sont encore humides. Sakharov les étale sous la lampe et lit avec les lèvres. Des schémas, des courbes, des listes de noms barrés. Il lit vite, puis plus lentement, puis il s'arrête sur une page et la tourne vers le mur, comme s'il ne voulait pas qu'elle le voie.",
+      "choices": [
+        {
+          "text": "Dire ce que vous avez compris",
+          "to": "c11-31",
+          "if": {
+            "type": "flag",
+            "flag": "verite_connue"
+          }
+        },
+        {
+          "text": "Lui demander ce que ça veut dire",
+          "to": "c11-3"
+        }
+      ]
+    },
+    "c11-25": {
+      "text": "Vous marchez la bouche fermée, ce qui ne sert à rien. La poussière de la crête passe par tout. Le compteur grimpe jusqu'aux pins et ne redescend pas. Vous prenez 3 rads. Les premiers troncs sont rouges jusqu'au sol, et le silence commence là, net, comme une porte.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "radiation",
+          "delta": 3
+        }
+      ],
+      "choices": [
+        {
+          "text": "Boire l'anti-rad",
+          "to": "c11-40",
+          "if": {
+            "type": "item",
+            "item": "antirad"
+          },
+          "effects": [
+            {
+              "type": "item",
+              "action": "remove",
+              "item": "antirad"
+            },
+            {
+              "type": "stat",
+              "stat": "radiation",
+              "delta": -5
+            }
+          ]
+        },
+        {
+          "text": "Entrer dans la Forêt rouge",
+          "to": "c14-1"
+        }
+      ]
+    },
+    "c11-26": {
+      "text": "Ils sont tombés. Le dernier est encore à genoux, la tête ouverte, et il continue de parler. Vous vous penchez. La pierre, dit-il. Elle donne. Puis plus rien. Vous essuyez le couteau sur son gilet. Dans la poche, un PDA qui clignote encore.",
+      "choices": [
+        {
+          "text": "Fouiller les corps",
+          "to": "c11-14"
+        },
+        {
+          "text": "Vider la trousse de soins",
+          "to": "c11-20",
+          "if": {
+            "type": "item",
+            "item": "trousse"
+          },
+          "effects": [
+            {
+              "type": "item",
+              "action": "remove",
+              "item": "trousse"
+            },
+            {
+              "type": "stat",
+              "stat": "endurance",
+              "delta": 6
+            }
+          ]
+        },
+        {
+          "text": "Aller à la porte du bunker",
+          "to": "c11-7"
+        },
+        {
+          "text": "Continuer vers l'usine chimique",
+          "to": "c11-15"
+        }
+      ]
+    },
+    "c11-27": {
+      "text": "Vous l'attendez au milieu du hall, là où il y a de la place. Il vient par-dessus une cuve, masque à gaz, tuyau arraché qui pend, ce qu'il reste d'un uniforme. Il frappe à casser des os. Chaque saut en finit un et en prépare un autre. Vous pouvez encore reculer vers la porte ; il vous rattrapera une fois, pas deux.",
+      "combat": {
+        "name": "Snork",
+        "habilete": 6,
+        "endurance": 7,
+        "damage": 2,
+        "win": "c11-6",
+        "flee": {
+          "to": "c11-15"
+        }
+      }
+    },
+    "c11-28": {
+      "text": "Il décroche la combinaison et la pose sur la table comme un corps. La SEVA. Plomb dans la doublure, filtre fermé, avec ça tu marches dans ce que tu veux. Deux mille. Il dit le chiffre sans vous regarder. Ou une Âme, mais je ne prends pas n'importe quelle Âme, et je ne la prends pas de n'importe qui.",
+      "choices": [
+        {
+          "text": "Donner l'Âme",
+          "to": "c11-5",
+          "if": {
+            "type": "all",
+            "conditions": [
+              {
+                "type": "flag",
+                "flag": "scientifiques_sauves"
+              },
+              {
+                "type": "item",
+                "item": "artefact_ame"
+              }
+            ]
+          }
+        },
+        {
+          "text": "Proposer l'Âme",
+          "to": "c11-19",
+          "if": {
+            "type": "all",
+            "conditions": [
+              {
+                "type": "flag",
+                "flag": "scientifiques_sauves",
+                "value": false
+              },
+              {
+                "type": "item",
+                "item": "artefact_ame"
+              }
+            ]
+          }
+        },
+        {
+          "text": "Payer 2 000 roubles",
+          "to": "c11-33",
+          "if": {
+            "type": "stat",
+            "stat": "roubles",
+            "op": ">=",
+            "value": 2000
+          }
+        },
+        {
+          "text": "Renoncer",
+          "to": "c11-13"
+        }
+      ]
+    },
+    "c11-29": {
+      "text": "Une conduite de béton sort du flanc de l'usine et crache dans le lac un filet jaune qui ne se mélange pas à l'eau. Le compteur ne grimpe pas, il crie. Vous prenez 2 rads. Vous passez au-dessus de la conduite sur une planche posée là par quelqu'un qui est passé avant vous et n'a pas laissé d'autre trace.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "radiation",
+          "delta": 2
+        }
+      ],
+      "choices": [
+        {
+          "text": "Entrer dans l'usine par la conduite",
+          "to": "c11-34"
+        },
+        {
+          "text": "Contourner jusqu'à l'entrée de l'usine",
+          "to": "c11-15"
+        }
+      ]
+    },
+    "c11-30": {
+      "text": "Vous allez au plus court. Ils sont lents, ils tirent au hasard, mais ils ne tombent pas quand ils devraient. Vous frappez à la tête. Ce qui coule n'a pas la couleur du sang. Derrière vous, on peut toujours courir : ils ne suivent pas plus vite qu'un homme qui marche.",
+      "combat": {
+        "name": "Les zombies",
+        "habilete": 5,
+        "endurance": 8,
+        "damage": 2,
+        "win": "c11-26",
+        "flee": {
+          "to": "c11-35"
+        }
+      }
+    },
+    "c11-31": {
+      "text": "Vous dites : une cuve. Des cerveaux dedans. La Zone, c'est eux. Sakharov enlève ses lunettes, et sans elles il a l'air d'un vieillard. Il ne demande pas d'où vous le tenez. Alors tu sais, dit-il. Je le savais aussi, sur le papier. Il vous rend les Documents du X-16 un à un. Ne le dis à personne. Ils recrutent ceux qui savent.",
+      "choices": [
+        {
+          "text": "Retourner à la table",
+          "to": "c11-13"
+        }
+      ]
+    },
+    "c11-32": {
+      "text": "Dans la Combinaison SEVA, le monde devient un bruit de filtre et un rond de visière. Le compteur grimpe dehors et ne grimpe pas dedans. Vous montez la route sans courir. Les pylônes passent. Les premiers pins ont des aiguilles rouges jusqu'au sol, et sous eux la poussière est blanche comme de la farine.",
+      "choices": [
+        {
+          "text": "Entrer dans la Forêt rouge",
+          "to": "c14-1"
+        }
+      ]
+    },
+    "c11-33": {
+      "text": "Vous comptez 2 000 roubles sur la table, en billets qui sentent la Zone. Il ne recompte pas. Il tire la Combinaison SEVA vers vous et retourne à ses écrans avant que vous l'ayez soulevée. Elle pèse comme un homme. Dedans, il fait aussitôt plus chaud et plus silencieux.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "roubles",
+          "delta": -2000
+        },
+        {
+          "type": "item",
+          "action": "add",
+          "item": "seva"
+        }
+      ],
+      "choices": [
+        {
+          "text": "Retourner à la table",
+          "to": "c11-13"
+        }
+      ]
+    },
+    "c11-34": {
+      "text": "À l'intérieur, les cuves sont ouvertes et vides, des escaliers de fer montent à rien. Au fond du hall, derrière une grille repliée, un escalier descend sous une lampe rouge qui marche encore. Entre vous et lui, quelque chose respire. Un souffle dans un masque, régulier, puis une course de pattes sur le béton, puis plus rien. Un Snork. Ils sautent.",
+      "choices": [
+        {
+          "text": "Gagner l'escalier sans bruit",
+          "to": "c11-21"
+        },
+        {
+          "text": "L'attendre, couteau en main",
+          "to": "c11-27"
+        },
+        {
+          "text": "Ressortir",
+          "to": "c11-15"
+        }
+      ]
+    },
+    "c11-35": {
+      "text": "Vous courez. Ils ne courent pas. Derrière un réservoir de l'usine, vous reprenez votre souffle. Dans l'herbe, le groupe se disperse déjà, chacun à sa marche, chacun à sa phrase. L'un d'eux a tourné vers vous et ne vous a pas trouvé. Il continue vers le lac.",
+      "choices": [
+        {
+          "text": "Longer la rive du lac",
+          "to": "c11-4"
+        },
+        {
+          "text": "Contourner jusqu'à l'usine",
+          "to": "c11-15"
+        },
+        {
+          "text": "Retenter le passage",
+          "to": "c11-11"
+        }
+      ]
+    },
+    "c11-36": {
+      "text": "Il baisse la voix, ce qui chez lui veut dire parler à hauteur normale. Sous l'usine, un laboratoire. X-16. Un émetteur. Ce que tu as vu dehors, c'est lui qui le fabrique : des stalkers qui ont trop écouté. Il faut l'éteindre. Trois étages, une salle, une commande. Je ne peux pas y aller. Toi, peut-être. Il tape du doigt sur la table. Le casque, après.",
+      "choices": [
+        {
+          "text": "Demander la combinaison d'abord",
+          "to": "c11-28",
+          "if": {
+            "type": "item",
+            "item": "seva",
+            "present": false
+          }
+        },
+        {
+          "text": "Ressortir",
+          "to": "c11-7"
+        }
+      ]
+    },
+    "c11-37": {
+      "text": "Vous videz la trousse de soins sur une marche, sous la lampe rouge. Les bandes tiennent mal à cause de la sueur, mais elles tiennent. Vous regagnez 6 points d'Endurance. Dans le hall, le corps du Snork fait une tache plus noire dans le noir. En bas, le ventilateur tourne.",
+      "choices": [
+        {
+          "text": "Descendre dans le laboratoire X-16",
+          "to": "c12-1"
+        },
+        {
+          "text": "Ressortir",
+          "to": "c11-15"
+        }
+      ]
+    },
+    "c11-38": {
+      "text": "Vous vous accroupissez derrière un bloc de béton. Ils passent à trois mètres. Un morceau de leur marmonnement vous arrive : au centre, la pierre, au centre. Ils ne regardent rien. Si le vent tourne, s'ils vous sentent, ils tourneront avec lui. Tentez votre Chance.",
+      "test": {
+        "type": "luck",
+        "success": "c11-9",
+        "failure": "c11-17"
+      }
+    },
+    "c11-39": {
+      "text": "La rive se resserre entre l'eau et un talus. Devant vous, l'herbe est couchée en rond, comme sous un poids qu'on ne voit pas : un « Trampoline ». Le détecteur n'en dit rien, ce n'est pas son travail. Vous lancez un boulon. Il part de travers, vers le lac, et vous ne le voyez pas retomber. Tentez votre Chance.",
+      "test": {
+        "type": "luck",
+        "success": "c11-22",
+        "failure": "c11-8"
+      }
+    },
+    "c11-40": {
+      "text": "Vous videz l'anti-rad sous le premier pin, dos au tronc rouge. Le goût de fer, puis le compteur qui se calme. Vous perdez 5 rads. Au-dessus de vous, les aiguilles ne bougent pas. Il n'y a pas de vent dans la forêt ; il s'est arrêté avec le reste.",
+      "choices": [
+        {
+          "text": "Entrer dans la Forêt rouge",
+          "to": "c14-1"
+        }
+      ]
+    },
+    "c11-41": {
+      "text": "L'interphone grésille longtemps avant qu'une voix vienne, vite, trop près du micro. Qui ? D'où ? Montre tes mains. Montre ton sac. Tu as un détecteur, lequel ? Non, ne réponds pas. La caméra descend sur vous, remonte. Les verrous jouent l'un après l'autre, quatre, cinq. La porte s'ouvre sur un escalier qui sent le chlore et le café.",
+      "choices": [
+        {
+          "text": "Descendre dans le bunker",
+          "to": "c11-13"
+        }
+      ]
+    },
+    "c11-42": {
+      "text": "Il ne vous a pas entendu. Vous êtes sur l'escalier, sous la lampe rouge, et la respiration dans le masque continue derrière la cuve, patiente, sans vous. Les marches descendent dans une odeur de câble chaud. Quelque part en bas, un ventilateur tourne encore.",
+      "choices": [
+        {
+          "text": "Descendre dans le laboratoire X-16",
+          "to": "c12-1"
+        },
+        {
+          "text": "Remonter et ressortir",
+          "to": "c11-15"
+        }
+      ]
+    },
+    "c11-43": {
+      "text": "Sakharov ne vous laisse pas entrer, mais il laisse la porte entrebâillée et une couverture passe par la fente. Vous dormez contre l'acier, sous le plomb, et pour une fois le compteur ne dit rien de toute la nuit. Au matin, les zombies marchent toujours au bord du lac, au même endroit. Vous regagnez 8 points d'Endurance.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": 8
+        },
+        {
+          "type": "flag",
+          "flag": "dormi_bunker"
+        }
+      ],
+      "choices": [
+        {
+          "text": "Se relever devant la porte",
+          "to": "c11-7"
+        }
+      ]
+    }
+  }
+}

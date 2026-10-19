@@ -1,0 +1,699 @@
+{
+  "title": "Les Terres sauvages",
+  "summary": "Le héros a traversé les Terres sauvages sous les snipers mercenaires. Il a pu sortir le camion des scientifiques (`scientifiques_sauves`), ramasser Conserve, Grenade F1, Anti-rad, et une Boule de feu dans le fossé. Il continue vers Yantar (c11-1) ou revient au Bar (c08-3).",
+  "brief": "Région de transit sous le feu. Carrefour : le pont de fer (rejoint par les entrepôts et par le fossé). Scènes : les snipers sur les toits (test d'Habileté pour traverser, échec −4 points d'Endurance ; avec AK-74, on peut les déloger : combat), le camion renversé des scientifiques encerclé par des Snorks (combat avec fuite, ou Grenade ; les sauver : scientifiques_sauves), la Boule de feu dans le fossé (Détecteur Ours, test de Chance), la cave d'un entrepôt (Conserve, Anti-rad, Grenade). Une anomalie « Carrousel » sur la route. Les consommables listés dans requires peuvent être consommés par un choix (effet remove + effet stat), le paragraphe d'arrivée le dit. Taille : 32 à 40 paragraphes.",
+  "entries": {
+    "c10-1": "Sortie de Rostok par la porte des Terres sauvages"
+  },
+  "exits": {
+    "c11-1": "Continuer vers Yantar",
+    "c08-3": "Revenir au Bar"
+  },
+  "provides": {
+    "items": [
+      "conserve",
+      "grenade",
+      "antirad",
+      "artefact_boule"
+    ],
+    "flags": [
+      "scientifiques_sauves"
+    ]
+  },
+  "requires": {
+    "items": [
+      "ak74",
+      "grenade",
+      "antirad",
+      "detecteur_ours",
+      "bandage"
+    ],
+    "flags": []
+  },
+  "image": "c10-5",
+  "paragraphs": {
+    "c10-1": {
+      "text": [
+        "Le portail de tôle de Rostok grince et se referme dans votre dos. Devant vous, la route descend entre deux rangées d'entrepôts aux toits crevés. Plus loin, un pont de fer enjambe un fossé, et derrière, la plaine jusqu'à Yantar.",
+        "Le vent apporte une odeur de caoutchouc brûlé. Sur le mur, à côté du portail, quelqu'un a écrit à la craie : toits, tireurs, courir. Le détecteur se tait."
+      ],
+      "choices": [
+        {
+          "text": "Descendre la route vers les entrepôts",
+          "to": "c10-17"
+        },
+        {
+          "text": "Longer le fossé en contrebas",
+          "to": "c10-25"
+        },
+        {
+          "text": "Revenir au Bar",
+          "to": "c08-3"
+        }
+      ]
+    },
+    "c10-17": {
+      "text": [
+        "La route est jonchée de boulons. Quelqu'un les a lancés avant vous et aucun n'a dépassé le poteau penché. Là, l'air tourne sur lui-même et soulève la poussière en spirale lente : un « Carrousel » posé en travers du goudron.",
+        "À gauche, les hangars laissent un passage entre deux murs, mais l'herbe y est rousse et le compteur grimpe dès que vous approchez."
+      ],
+      "choices": [
+        {
+          "text": "Passer au ras du Carrousel",
+          "to": "c10-9"
+        },
+        {
+          "text": "Contourner par les hangars",
+          "to": "c10-33"
+        }
+      ]
+    },
+    "c10-9": {
+      "text": [
+        "Vous lancez un boulon. Il part de côté, monte, se met à tourner et ne retombe pas.",
+        "Vous marchez le long du mur, le dos à la brique, à trois pas de la spirale. La poussière vous tire par la manche. Le Carrousel respire, ralentit, reprend. Tentez votre Chance."
+      ],
+      "test": {
+        "type": "luck",
+        "success": "c10-28",
+        "failure": "c10-14"
+      }
+    },
+    "c10-28": {
+      "text": [
+        "Le Carrousel vous relâche. Vous passez le poteau penché et la poussière retombe derrière vous, en un cercle propre sur le goudron. Votre manche est déchirée, pas votre bras.",
+        "Devant, les entrepôts s'alignent jusqu'au pont. Une pie se pose sur un toit et repart aussitôt."
+      ],
+      "choices": [
+        {
+          "text": "Continuer entre les entrepôts",
+          "to": "c10-22"
+        }
+      ]
+    },
+    "c10-14": {
+      "text": [
+        "Le Carrousel vous attrape. Le sol disparaît, le mur tourne, vous êtes jeté contre la brique comme un sac. Vous perdez 3 points d'Endurance.",
+        "Quand la poussière retombe, vous êtes de l'autre côté du poteau, à plat ventre, l'oreille qui siffle. Votre sac a tenu."
+      ],
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -3
+        }
+      ],
+      "choices": [
+        {
+          "text": "Se relever et continuer",
+          "to": "c10-22"
+        }
+      ]
+    },
+    "c10-33": {
+      "text": [
+        "Entre les hangars, l'herbe rousse craque sous les bottes. Le compteur grimpe, puis grimpe encore. Vous prenez 2 rads.",
+        "Un bidon éventré fume sans feu. Vous passez vite, la manche sur la bouche, et ressortez sur la route derrière le poteau penché, là où le Carrousel ne vous voit plus."
+      ],
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "radiation",
+          "delta": 2
+        }
+      ],
+      "choices": [
+        {
+          "text": "Rejoindre les entrepôts",
+          "to": "c10-22"
+        }
+      ]
+    },
+    "c10-22": {
+      "text": [
+        "L'entrepôt le plus proche a perdu sa porte. Dedans, des étagères vides, des bâches, une odeur de gasoil et d'urine. Au fond, un escalier descend vers une cave. Une corde est tendue en travers, avec un mot accroché : occupé. Le mot a pris la pluie.",
+        "Par les fenêtres crevées, on voit le pont de fer. Sur les toits d'en face, rien ne bouge, ce qui ne veut rien dire."
+      ],
+      "choices": [
+        {
+          "text": "Descendre dans la cave",
+          "to": "c10-7"
+        },
+        {
+          "text": "Marcher jusqu'au pont de fer",
+          "to": "c10-5"
+        }
+      ]
+    },
+    "c10-7": {
+      "text": [
+        "Il fait noir à mi-escalier. Quelque chose respire en bas, vite, à travers un filtre.",
+        "Un Snork monte les marches à quatre pattes, le masque à gaz collé au visage, la bouche ouverte dessous. Il saute avant que vous ayez levé le pistolet. Il frappe à casser des os."
+      ],
+      "combat": {
+        "name": "Snork",
+        "habilete": 5,
+        "endurance": 6,
+        "damage": 2,
+        "win": "c10-30",
+        "flee": {
+          "to": "c10-22"
+        }
+      }
+    },
+    "c10-30": {
+      "text": [
+        "Le Snork retombe sur les marches et ne bouge plus. En bas, la cave est sèche : un matelas, une bougie, un sac dont le propriétaire est resté quelque part dehors.",
+        "Dedans, une Conserve, un Anti-rad, et une Grenade F1 enveloppée dans une chaussette. Vous prenez tout. Le mot sur la corde n'était pas pour vous."
+      ],
+      "effects": [
+        {
+          "type": "item",
+          "action": "add",
+          "item": "conserve"
+        },
+        {
+          "type": "item",
+          "action": "add",
+          "item": "antirad"
+        },
+        {
+          "type": "item",
+          "action": "add",
+          "item": "grenade"
+        }
+      ],
+      "choices": [
+        {
+          "text": "Manger la conserve",
+          "to": "c10-12",
+          "if": {
+            "type": "item",
+            "item": "conserve"
+          },
+          "effects": [
+            {
+              "type": "item",
+              "action": "remove",
+              "item": "conserve"
+            },
+            {
+              "type": "stat",
+              "stat": "endurance",
+              "delta": 2
+            }
+          ]
+        },
+        {
+          "text": "Remonter vers le pont de fer",
+          "to": "c10-5"
+        }
+      ]
+    },
+    "c10-12": {
+      "text": [
+        "Vous ouvrez la conserve avec le couteau. Du poisson, froid, salé, et vous mangez assis sur le matelas d'un mort. Vous regagnez 2 points d'Endurance.",
+        "La bougie fume. En haut, le vent fait claquer une bâche contre la tôle, régulier, comme quelqu'un qui frappe pour entrer."
+      ],
+      "choices": [
+        {
+          "text": "Remonter vers le pont de fer",
+          "to": "c10-5"
+        }
+      ]
+    },
+    "c10-25": {
+      "text": [
+        "Le fossé court le long de la route, deux mètres en contrebas, plein d'eau noire et de roseaux morts. Le compteur crépite dès les premiers pas. Vous prenez 3 rads.",
+        "Quelque part devant, une lueur orange palpite sous la vase, s'éteint, revient. À votre ceinture, le détecteur s'est mis à chanter."
+      ],
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "radiation",
+          "delta": 3
+        }
+      ],
+      "choices": [
+        {
+          "text": "Suivre le détecteur vers la lueur",
+          "to": "c10-3",
+          "if": {
+            "type": "item",
+            "item": "detecteur_ours"
+          }
+        },
+        {
+          "text": "Remonter vers le pont de fer",
+          "to": "c10-5"
+        }
+      ]
+    },
+    "c10-3": {
+      "text": [
+        "L'eau vous monte aux genoux. Elle est tiède. La lueur est là, sous dix centimètres de vase : une Boule de feu, qui pulse comme un cœur lent. Autour, l'eau fume.",
+        "Vous retirez un gant. Il y a une distance à partir de laquelle ça brûle, et personne ne la connaît avant. Tentez votre Chance."
+      ],
+      "test": {
+        "type": "luck",
+        "success": "c10-19",
+        "failure": "c10-21"
+      }
+    },
+    "c10-19": {
+      "text": [
+        "Vos doigts se referment sur la Boule de feu et elle se laisse prendre. Chaude, pas plus qu'une pierre au soleil. Vous la glissez dans le bocal de plomb, au fond du sac, et le fossé redevient noir.",
+        "Le détecteur se tait. Huit cents, dirait le Barman, sans lever la tête."
+      ],
+      "effects": [
+        {
+          "type": "item",
+          "action": "add",
+          "item": "artefact_boule"
+        }
+      ],
+      "choices": [
+        {
+          "text": "Sortir du fossé",
+          "to": "c10-11"
+        }
+      ]
+    },
+    "c10-21": {
+      "text": [
+        "La vase cède et la Boule de feu s'enfonce, et votre main avec. Ça brûle jusqu'à l'os. Vous vous jetez en arrière dans l'eau noire. Vous perdez 3 points d'Endurance.",
+        "Votre gant fume. La lueur est repartie plus loin, sous les roseaux, là où vous n'irez pas."
+      ],
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -3
+        }
+      ],
+      "choices": [
+        {
+          "text": "Sortir du fossé",
+          "to": "c10-11"
+        }
+      ]
+    },
+    "c10-11": {
+      "text": [
+        "Vous remontez la pente du fossé sur les mains. La route est là, et le pont de fer à cent mètres, ses poutres rouillées en croix au-dessus de l'eau noire.",
+        "Vos bottes dégouttent. Le compteur a cessé de crépiter, mais votre bouche a un goût de pièce de monnaie."
+      ],
+      "choices": [
+        {
+          "text": "Boire l'anti-rad",
+          "to": "c10-27",
+          "if": {
+            "type": "item",
+            "item": "antirad"
+          },
+          "effects": [
+            {
+              "type": "item",
+              "action": "remove",
+              "item": "antirad"
+            },
+            {
+              "type": "stat",
+              "stat": "radiation",
+              "delta": -5
+            }
+          ]
+        },
+        {
+          "text": "Marcher jusqu'au pont de fer",
+          "to": "c10-5"
+        }
+      ]
+    },
+    "c10-27": {
+      "text": [
+        "Vous mordez le bouchon et buvez l'anti-rad d'un trait. Amer, puis froid dans la poitrine. Vous perdez 5 rads.",
+        "Le goût de monnaie reste. Vous jetez la fiole dans le fossé ; elle flotte un instant sur l'eau noire avant de couler."
+      ],
+      "choices": [
+        {
+          "text": "Marcher jusqu'au pont de fer",
+          "to": "c10-5"
+        }
+      ]
+    },
+    "c10-5": {
+      "text": [
+        "Le pont de fer. Quarante mètres de poutres en croix sur le fossé d'eau noire, un tablier de planches à moitié mangé. De l'autre côté, la route monte vers un camion couché sur le flanc, loin, minuscule.",
+        "Sur les toits à droite, un reflet de lunette, deux fois. Vous êtes à l'ombre d'une pile de béton. Sur la pile, à hauteur d'homme, trois impacts groupés, encore clairs."
+      ],
+      "image": {
+        "src": "images/c10-5.webp",
+        "alt": "Le pont de fer sur le fossé d'eau noire, entrepôts aux toits crevés derrière",
+        "prompt": "Un pont de chemin de fer rouillé aux poutres en croix enjambe un fossé d'eau noire bordé de roseaux morts, tablier de planches disjointes ; derrière, des entrepôts soviétiques aux toits crevés et, au loin, un camion couché sur le flanc sous un ciel bas. Une silhouette de stalker, de dos, abritée contre une pile de béton criblée d'impacts."
+      },
+      "choices": [
+        {
+          "text": "Traverser le pont à découvert",
+          "to": "c10-20"
+        },
+        {
+          "text": "Déloger le tireur avec l'AK-74",
+          "to": "c10-15",
+          "if": {
+            "type": "item",
+            "item": "ak74"
+          }
+        },
+        {
+          "text": "Attendre la nuit sous le pont",
+          "to": "c10-4"
+        },
+        {
+          "text": "Redescendre dans le fossé",
+          "to": "c10-25"
+        },
+        {
+          "text": "Retourner fouiller les entrepôts",
+          "to": "c10-22"
+        }
+      ]
+    },
+    "c10-20": {
+      "text": [
+        "Vous partez en courant. Les planches sonnent creux, deux manquent, vous sautez. La première balle arrive avant le bruit et claque dans une poutre à hauteur de tête. La deuxième vous suit.",
+        "Il reste vingt mètres, et un coude à prendre derrière la pile d'en face. Testez votre Habileté."
+      ],
+      "test": {
+        "type": "stat",
+        "stat": "habilete",
+        "dice": "2d6",
+        "success": "c10-31",
+        "failure": "c10-8"
+      }
+    },
+    "c10-31": {
+      "text": [
+        "Vous passez. La troisième balle arrache une écharde de la dernière planche, et vous êtes derrière la pile de béton, à plat, le souffle en morceaux.",
+        "Les tireurs ne descendent pas de leurs toits : les mercenaires sont payés pour un endroit, pas pour vous. La route vers le camion s'enfonce dans un pli de terrain où ils ne voient plus."
+      ],
+      "choices": [
+        {
+          "text": "Monter vers le camion",
+          "to": "c10-16"
+        }
+      ]
+    },
+    "c10-8": {
+      "text": [
+        "La balle vous prend sous l'épaule, à la fin du pont, et vous finissez le trajet à quatre pattes. Vous perdez 3 points d'Endurance.",
+        "Derrière la pile, vous regardez : un trou net, la veste qui s'imbibe. Les tireurs ne descendent pas. Ils ont fait leur travail. Au-dessus, l'un d'eux allume une cigarette ; vous voyez la braise."
+      ],
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -3
+        }
+      ],
+      "choices": [
+        {
+          "text": "Appliquer le bandage",
+          "to": "c10-24",
+          "if": {
+            "type": "item",
+            "item": "bandage"
+          },
+          "effects": [
+            {
+              "type": "item",
+              "action": "remove",
+              "item": "bandage"
+            },
+            {
+              "type": "stat",
+              "stat": "endurance",
+              "delta": 3
+            }
+          ]
+        },
+        {
+          "text": "Monter vers le camion",
+          "to": "c10-16"
+        }
+      ]
+    },
+    "c10-24": {
+      "text": [
+        "Vous serrez le bandage sous l'épaule, les dents sur l'extrémité, jusqu'à ce que le sang cesse de passer. Vous regagnez 3 points d'Endurance.",
+        "Le bras répond. Sur le toit, la braise de la cigarette monte et descend. Il a tout son temps. Pas vous."
+      ],
+      "choices": [
+        {
+          "text": "Monter vers le camion",
+          "to": "c10-16"
+        }
+      ]
+    },
+    "c10-15": {
+      "text": [
+        "Vous grimpez l'échelle de fer de l'entrepôt d'angle, l'AK-74 en bandoulière, et sortez sur le toit par la trappe. Le mercenaire est à dix mètres, à genoux derrière la cheminée, combinaison bleue et masque. Il se retourne.",
+        "Avec ça, on tire avant eux. Mais il a aussi quelque chose, et il frappe à casser des os."
+      ],
+      "combat": {
+        "name": "Mercenaire",
+        "habilete": 7,
+        "endurance": 8,
+        "damage": 2,
+        "win": "c10-34",
+        "flee": {
+          "to": "c10-5"
+        }
+      }
+    },
+    "c10-34": {
+      "text": [
+        "Le mercenaire s'affaisse contre la cheminée. Sur le toit d'en face, l'autre tireur se couche et ne se relève plus : il a compris. Dans la poche du mort, 80 roubles et une photo que vous ne regardez pas.",
+        "D'ici, on voit tout : le pont, le fossé, et le camion couché, avec autour des formes à quatre pattes qui tournent."
+      ],
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "roubles",
+          "delta": 80
+        }
+      ],
+      "choices": [
+        {
+          "text": "Redescendre et monter vers le camion",
+          "to": "c10-16"
+        }
+      ]
+    },
+    "c10-4": {
+      "text": [
+        "Vous attendez sous le tablier, les pieds dans l'eau noire, pendant que le jour s'en va. Le compteur crépite doucement. Vous prenez 2 rads.",
+        "Quand il fait assez noir pour que les lunettes ne servent plus, vous traversez sur les poutres, sous les planches, le fer froid contre la poitrine. Personne ne tire. En haut, quelqu'un tousse."
+      ],
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "radiation",
+          "delta": 2
+        }
+      ],
+      "choices": [
+        {
+          "text": "Monter vers le camion",
+          "to": "c10-16"
+        }
+      ]
+    },
+    "c10-16": {
+      "text": [
+        "Le camion est couché dans le pli de terrain, blanc, un sigle d'institut sur la portière, les roues en l'air. À l'intérieur, on frappe contre la tôle.",
+        "Autour, quatre Snorks tournent à quatre pattes, masques collés au visage. L'un d'eux grimpe sur la cabine et gratte le pare-brise. Ils ne vous ont pas senti. Le vent vient d'eux."
+      ],
+      "choices": [
+        {
+          "text": "Charger les Snorks",
+          "to": "c10-29"
+        },
+        {
+          "text": "Lancer la grenade sous le camion",
+          "to": "c10-23",
+          "if": {
+            "type": "item",
+            "item": "grenade"
+          },
+          "effects": [
+            {
+              "type": "item",
+              "action": "remove",
+              "item": "grenade"
+            }
+          ]
+        },
+        {
+          "text": "Contourner le camion sans se montrer",
+          "to": "c10-13"
+        }
+      ]
+    },
+    "c10-29": {
+      "text": [
+        "Vous tirez sur celui de la cabine. Il tombe, et les trois autres arrivent ensemble, en bonds, pas en courant. Dans le camion, on a cessé de frapper.",
+        "Vous reculez contre la roue avant. Ils frappent à casser des os, et ils ne s'arrêtent pas au premier sang."
+      ],
+      "combat": {
+        "name": "Les Snorks",
+        "habilete": 6,
+        "endurance": 10,
+        "damage": 2,
+        "win": "c10-10",
+        "flee": {
+          "to": "c10-26"
+        }
+      }
+    },
+    "c10-10": {
+      "text": [
+        "Le dernier Snork se traîne encore sur trois pattes et vous l'achevez au couteau. Silence.",
+        "Puis, dans le camion, un coup contre la tôle, hésitant, et une voix qui demande si c'est fini. Vous dites que oui. Vous ne savez pas si c'est vrai. Vos mains tremblent, mais c'est l'habitude."
+      ],
+      "choices": [
+        {
+          "text": "Ouvrir la portière du camion",
+          "to": "c10-2"
+        }
+      ]
+    },
+    "c10-23": {
+      "text": [
+        "Vous dégoupillez la grenade, comptez deux, et la lancez sous le camion. Les Snorks lèvent la tête ensemble. L'explosion soulève la poussière et le camion d'un demi-mètre.",
+        "Quand ça retombe, il reste deux masques dans l'herbe et un corps qui rampe, que vous achevez. Dans le camion, on a cessé de frapper. Puis ça recommence, plus fort."
+      ],
+      "choices": [
+        {
+          "text": "Ouvrir la portière du camion",
+          "to": "c10-2"
+        }
+      ]
+    },
+    "c10-2": {
+      "text": [
+        "Trois hommes en combinaison orange sortent par le pare-brise, un quatrième reste dedans, la jambe prise sous le siège. Ils sont de Yantar, du bunker de Sakharov, et ils répètent ce nom comme un mot de passe.",
+        "Le camion peut rouler s'il est remis sur ses roues : il faut quatre dos et un cric. Ils vous regardent. Le plus vieux tient le cric."
+      ],
+      "choices": [
+        {
+          "text": "Aider à redresser le camion",
+          "to": "c10-32"
+        },
+        {
+          "text": "Les laisser et continuer",
+          "to": "c10-18"
+        }
+      ]
+    },
+    "c10-32": {
+      "text": [
+        "Le camion retombe sur ses roues dans un bruit de ferraille qui s'entend jusqu'aux toits. Le moteur part à la troisième tentative. Le plus vieux vous met 100 roubles dans la main sans vous regarder, et dit que Sakharov saura.",
+        "Ils partent vers le nord à vingt à l'heure, le pare-brise cassé. La route de Yantar est devant vous, tracée dans leurs ornières."
+      ],
+      "effects": [
+        {
+          "type": "flag",
+          "flag": "scientifiques_sauves"
+        },
+        {
+          "type": "stat",
+          "stat": "roubles",
+          "delta": 100
+        }
+      ],
+      "choices": [
+        {
+          "text": "Suivre les ornières vers le nord",
+          "to": "c10-18"
+        }
+      ]
+    },
+    "c10-13": {
+      "text": [
+        "Vous passez par le haut du pli, à plat ventre dans les chardons, et le camion reste en bas avec ses Snorks. On frappe encore contre la tôle quand vous atteignez la route. Puis plus.",
+        "Vous ne vous retournez pas. La Zone n'a pas besoin de vous pour finir ce qu'elle commence."
+      ],
+      "choices": [
+        {
+          "text": "Continuer sur la route du nord",
+          "to": "c10-18"
+        }
+      ]
+    },
+    "c10-26": {
+      "text": [
+        "Vous lâchez le camion et vous courez. Les Snorks ne suivent pas : ils ont ce qu'ils veulent. Derrière vous, la tôle sonne encore, puis une portière cède.",
+        "Vous ne vous retournez pas. Sur la route, plus haut, le vent couvre tout, et c'est mieux."
+      ],
+      "choices": [
+        {
+          "text": "Continuer sur la route du nord",
+          "to": "c10-18"
+        }
+      ]
+    },
+    "c10-18": {
+      "text": [
+        "La route monte vers le nord entre deux rangées de pylônes couchés. Les Terres sauvages se referment derrière vous : le pont, les toits, le fossé où la lueur a dû repartir.",
+        "Devant, la plaine s'aplatit vers une tache grise, et l'air y prend une odeur de produit chimique, lourde, que le vent n'emporte pas. Yantar. Derrière, Rostok et son bar, une demi-journée."
+      ],
+      "choices": [
+        {
+          "text": "Boire l'anti-rad",
+          "to": "c10-6",
+          "if": {
+            "type": "item",
+            "item": "antirad"
+          },
+          "effects": [
+            {
+              "type": "item",
+              "action": "remove",
+              "item": "antirad"
+            },
+            {
+              "type": "stat",
+              "stat": "radiation",
+              "delta": -5
+            }
+          ]
+        },
+        {
+          "text": "Continuer vers Yantar",
+          "to": "c11-1"
+        },
+        {
+          "text": "Revenir au Bar",
+          "to": "c08-3"
+        }
+      ]
+    },
+    "c10-6": {
+      "text": [
+        "Vous buvez l'anti-rad au bord de la route, assis sur un pylône. Amer, puis froid. Vous perdez 5 rads.",
+        "Le compteur se calme. Au nord, la tache grise ne bouge pas, et quelque chose y marche, lentement, plusieurs choses, en ligne."
+      ],
+      "choices": [
+        {
+          "text": "Continuer vers Yantar",
+          "to": "c11-1"
+        },
+        {
+          "text": "Revenir au Bar",
+          "to": "c08-3"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,493 @@
+{
+  "title": "Le pont de la Centrale",
+  "summary": "Le héros a passé le viaduc vers la Centrale : en Tenue du Monolithe sans un mot, par le dessous du pont, ou de force (`pont_force`). Il arrive sur le parvis de la Centrale (c24-1).",
+  "brief": "Convergence de l'acte 3. c23-1 : le début du viaduc, le poste de garde. En Tenue du Monolithe : on passe (si monolithe_vu, on sait quoi répondre à la prière du garde, sinon test de Chance). Sans : par le dessous (test d'Habileté, Corde non requise, échec −5 points d'Endurance et 3 rads) ou forcer (combat contre le poste, Vintorez et Grenade utiles, pont_force : la Centrale sera en alerte). Carrefour : la pile du pont. Court. Les consommables listés dans requires peuvent être consommés par un choix (effet remove + effet stat), le paragraphe d'arrivée le dit. Taille : 22 à 28 paragraphes.",
+  "entries": {
+    "c23-1": "Au début du viaduc, le poste de garde du Monolithe devant"
+  },
+  "exits": {
+    "c24-1": "Arriver sur le parvis de la Centrale"
+  },
+  "provides": {
+    "items": [],
+    "flags": [
+      "pont_force"
+    ]
+  },
+  "requires": {
+    "items": [
+      "tenue_monolithe",
+      "grenade",
+      "vintorez",
+      "trousse"
+    ],
+    "flags": [
+      "monolithe_vu"
+    ]
+  },
+  "image": "c23-2",
+  "paragraphs": {
+    "c23-1": {
+      "text": [
+        "Le viaduc commence là où la rue s'arrête. Deux cents mètres de béton au-dessus de la voie ferrée, un parapet bas, et au milieu, un poste de garde en parpaings avec un brasero qui fume. Deux silhouettes grises devant. Elles ne bougent pas.",
+        "Au bout du pont, la cheminée de la Centrale sort de la brume comme un doigt. En contrebas, le remblai descend vers la boue et les piles."
+      ],
+      "choices": [
+        {
+          "text": "Avancer entre les blocs de béton",
+          "to": "c23-2"
+        },
+        {
+          "text": "Descendre le remblai sous le pont",
+          "to": "c23-14"
+        }
+      ]
+    },
+    "c23-2": {
+      "text": [
+        "Les blocs forment une chicane. Vous passez de l'un à l'autre, le dos contre le béton froid. À cinquante mètres, le poste : une meurtrière, un canon qui dépasse, le brasero.",
+        "Les deux gardes portent le masque. L'un d'eux parle, bas, sans s'arrêter. Une prière. L'autre regarde le pont, pas vous. Pas encore."
+      ],
+      "image": {
+        "src": "images/c23-2.webp",
+        "alt": "Le viaduc vers la Centrale, barré de blocs de béton, le poste de garde au milieu du tablier.",
+        "prompt": "Un viaduc de béton barré d'une chicane de blocs et de sacs de sable, un poste de garde en parpaings au milieu du tablier avec un brasero qui fume. Au loin, la cheminée de la Centrale sous un ciel bas, la voie ferrée en contrebas."
+      },
+      "choices": [
+        {
+          "text": "Marcher vers eux en Tenue du Monolithe",
+          "to": "c23-17",
+          "if": {
+            "type": "item",
+            "item": "tenue_monolithe"
+          }
+        },
+        {
+          "text": "Viser le premier garde au Vintorez",
+          "to": "c23-11",
+          "if": {
+            "type": "item",
+            "item": "vintorez"
+          }
+        },
+        {
+          "text": "Lancer la Grenade F1 dans le poste",
+          "to": "c23-15",
+          "if": {
+            "type": "item",
+            "item": "grenade"
+          },
+          "effects": [
+            {
+              "type": "item",
+              "action": "remove",
+              "item": "grenade"
+            }
+          ]
+        },
+        {
+          "text": "Charger le poste avant la fin de la prière",
+          "to": "c23-3"
+        },
+        {
+          "text": "Redescendre vers le remblai",
+          "to": "c23-14"
+        }
+      ]
+    },
+    "c23-17": {
+      "text": [
+        "Vous avancez à découvert, dans la tenue grise. Le garde qui priait se tait. Il vous regarde venir, les yeux blancs derrière le masque, et il dit la première moitié de la phrase, celle qu'ils disent tous avant de tirer. Le Monolithe voit.",
+        "Il attend la suite. Son doigt est sur la détente. Le brasero crache une étincelle."
+      ],
+      "choices": [
+        {
+          "text": "Répondre la fin de la prière",
+          "to": "c23-25",
+          "if": {
+            "type": "flag",
+            "flag": "monolithe_vu"
+          }
+        },
+        {
+          "text": "Baisser la tête et murmurer n'importe quoi",
+          "to": "c23-9"
+        },
+        {
+          "text": "Tirer le premier, sous la tenue",
+          "to": "c23-3"
+        }
+      ]
+    },
+    "c23-9": {
+      "text": "Vous murmurez. Des mots qui ressemblent aux leurs, le même rythme, la tête basse. Le garde penche la tête. Derrière lui, l'autre a cessé de regarder le pont. Il y a ce silence où tout se décide, le vent dans les câbles, le brasero qui craque. Tentez votre Chance.",
+      "test": {
+        "type": "luck",
+        "success": "c23-22",
+        "failure": "c23-5"
+      }
+    },
+    "c23-22": {
+      "text": [
+        "Le garde hoche la tête. Il n'a pas compris, mais il a reconnu quelque chose, le ton, la soumission. Il s'écarte. L'autre ne tourne même pas la tête.",
+        "Vous passez entre eux, la barrière se lève, et le pont s'ouvre devant vous, long et vide. Vous ne regardez pas derrière. Au bout, la Centrale grossit à chaque pas."
+      ],
+      "choices": [
+        {
+          "text": "Descendre vers le parvis de la Centrale",
+          "to": "c24-1"
+        }
+      ]
+    },
+    "c23-5": {
+      "text": [
+        "Le garde relève son arme. Ce que vous avez dit n'était pas la suite. Il tire, vous vous jetez de côté, la balle fait sauter un éclat de parapet.",
+        "Le second reste au poste, son canon sur vous, mais c'est le premier qui vient. Il n'y a nulle part où aller sur un pont, sauf en avant ou par-dessus bord."
+      ],
+      "combat": {
+        "name": "Le garde du pont",
+        "habilete": 6,
+        "endurance": 8,
+        "win": "c23-13",
+        "flee": {
+          "to": "c23-18"
+        }
+      }
+    },
+    "c23-13": {
+      "text": [
+        "Le garde tombe contre le parapet et n'en bouge plus. L'autre, au poste, parle dans sa radio sans vous quitter des yeux, puis il recule derrière les parpaings et tire deux fois, trop loin. Il ne vous suivra pas. Il a dit ce qu'il avait à dire.",
+        "Vous traversez dans une tenue qui ne trompe plus personne. Au bout du viaduc, la Centrale attend, et maintenant elle sait."
+      ],
+      "effects": [
+        {
+          "type": "flag",
+          "flag": "pont_force"
+        }
+      ],
+      "choices": [
+        {
+          "text": "Descendre vers le parvis de la Centrale",
+          "to": "c24-1"
+        }
+      ]
+    },
+    "c23-25": {
+      "text": [
+        "Vous dites la fin. Les mots du palais, dans l'ordre, sans hésiter. Le garde baisse son arme. Il ne vous salue pas, il n'y a rien à saluer, vous êtes l'un d'eux. L'autre lève la barrière.",
+        "Vous passez. Sous le masque, votre souffle sent le caoutchouc. Le pont est long. Personne ne vous appelle. Au bout, la cheminée de la Centrale, et sous elle le béton du Sarcophage."
+      ],
+      "choices": [
+        {
+          "text": "Descendre vers le parvis de la Centrale",
+          "to": "c24-1"
+        }
+      ]
+    },
+    "c23-11": {
+      "text": [
+        "Vous posez le Vintorez sur le bloc. Le premier garde est dans la lunette, la prière lui fait bouger la tête. Le Vintorez ne fait pas de bruit, et ce qu'il touche ne se relève pas. Il tombe.",
+        "Le second se retourne vers le parapet, pas vers vous. Il cherche. Vous avez le temps d'un deuxième tir, pas plus. Testez votre Habileté."
+      ],
+      "test": {
+        "type": "stat",
+        "stat": "habilete",
+        "dice": "2d6",
+        "success": "c23-20",
+        "failure": "c23-7"
+      }
+    },
+    "c23-20": {
+      "text": "Le second tombe à côté du premier. Rien n'a fait de bruit, pas même eux. Le brasero continue de fumer entre les deux corps. Vous rechargez, vous attendez, personne ne sort du poste. Sur le pont, le vent pousse une feuille de tôle qui racle le béton, et c'est tout.",
+      "choices": [
+        {
+          "text": "Avancer jusqu'au poste de garde",
+          "to": "c23-19"
+        }
+      ]
+    },
+    "c23-7": {
+      "text": [
+        "Raté. La balle claque sur le parpaing et le second garde vous a vu. Il ne prie pas, il n'a plus le temps.",
+        "Il vient en tirant par courtes rafales, et vous entendez les balles entrer dans les blocs autour de vous, une à une, comme des coups de marteau. Il frappe fort, et de près."
+      ],
+      "combat": {
+        "name": "Le second garde",
+        "habilete": 7,
+        "endurance": 8,
+        "damage": 2,
+        "win": "c23-19",
+        "flee": {
+          "to": "c23-18"
+        }
+      }
+    },
+    "c23-15": {
+      "text": [
+        "La grenade roule sous la meurtrière. Vous comptez. Le souffle vous arrive dans la poitrine avant le bruit.",
+        "Quand la fumée se couche, le poste n'a plus de toit et les deux gardes sont sous les parpaings. Un bras dépasse, la main encore sur l'arme. Le brasero a roulé sur le pont et brûle seul. Toute la ville a entendu."
+      ],
+      "choices": [
+        {
+          "text": "Avancer jusqu'au poste de garde",
+          "to": "c23-19"
+        }
+      ]
+    },
+    "c23-3": {
+      "text": [
+        "Vous tirez avant la fin de la prière. Le premier garde se plie, pas assez, il se relève derrière les sacs de sable et l'autre est déjà sur vous.",
+        "Ils tirent à deux, sans crier, sans un mot que vous ne connaissez pas. Les balles mordent le béton à hauteur de visage. Ici, c'est le poste entier qui est contre vous."
+      ],
+      "combat": {
+        "name": "Le poste de garde",
+        "habilete": 7,
+        "endurance": 12,
+        "damage": 2,
+        "win": "c23-19",
+        "flee": {
+          "to": "c23-18"
+        }
+      }
+    },
+    "c23-19": {
+      "text": [
+        "Le poste de garde est à vous. Il sent la poudre et le charbon. Sur la table, entre les cartouches, une radio chuinte. Une voix demande : Poste trois. Puis encore. Poste trois. Vous ne répondez pas.",
+        "Quelque part au bout du pont, dans le grand bâtiment, quelqu'un pose la radio et prend son fusil. Le viaduc devant vous est vide jusqu'à la Centrale."
+      ],
+      "effects": [
+        {
+          "type": "flag",
+          "flag": "pont_force"
+        }
+      ],
+      "choices": [
+        {
+          "text": "Vider la Trousse de soins",
+          "to": "c23-8",
+          "if": {
+            "type": "item",
+            "item": "trousse"
+          },
+          "effects": [
+            {
+              "type": "item",
+              "action": "remove",
+              "item": "trousse"
+            },
+            {
+              "type": "stat",
+              "stat": "endurance",
+              "delta": 6
+            }
+          ]
+        },
+        {
+          "text": "Traverser le viaduc vers la Centrale",
+          "to": "c23-24"
+        }
+      ]
+    },
+    "c23-8": {
+      "text": "Vous videz la trousse, assis contre les parpaings, le dos aux morts. Les compresses, l'ampoule, tout. Vous regagnez 6 points d'Endurance. La radio continue d'appeler le poste trois. Vous la retournez face contre la table. Ça ne change rien à la voix.",
+      "choices": [
+        {
+          "text": "Traverser le viaduc vers la Centrale",
+          "to": "c23-24"
+        }
+      ]
+    },
+    "c23-24": {
+      "text": [
+        "Vous traversez. Le vent passe sous le tablier et fait chanter quelque chose de métallique. Personne sur le pont. À l'autre bout, la barrière est baissée et la guérite est vide : la relève n'a pas attendu.",
+        "Sur le béton, une empreinte de botte dans la poussière, fraîche, qui va vers la Centrale. Ils savent. La cheminée est là, énorme, et sous elle le Sarcophage."
+      ],
+      "choices": [
+        {
+          "text": "Descendre vers le parvis de la Centrale",
+          "to": "c24-1"
+        }
+      ]
+    },
+    "c23-18": {
+      "text": [
+        "Vous passez par-dessus le parapet. Le remblai vous reçoit mal : des pierres, des orties, un rouleau de barbelé qui vous retient par la manche.",
+        "En haut, ils ne descendent pas. Ils tirent deux fois dans le vide, puis ils reprennent la prière. Vous êtes sous le pont, dans l'ombre des piles, et la boue sent le fer chaud."
+      ],
+      "choices": [
+        {
+          "text": "Longer la voie jusqu'à la pile",
+          "to": "c23-6"
+        }
+      ]
+    },
+    "c23-14": {
+      "text": [
+        "Le remblai descend en pente de cailloux vers la voie ferrée. Des rails rouges, des traverses pourries, et au-dessus, le tablier du viaduc qui bouche le ciel. Le détecteur crépite par à-coups.",
+        "Vous marchez sur la voie, courbé, entre les flaques d'eau noire. Devant vous, la première pile du pont monte du ballast comme une tour, avec une échelle de fer scellée dans le béton."
+      ],
+      "choices": [
+        {
+          "text": "Aller jusqu'à la pile",
+          "to": "c23-6"
+        },
+        {
+          "text": "Remonter vers les blocs de béton",
+          "to": "c23-2"
+        }
+      ]
+    },
+    "c23-6": {
+      "text": [
+        "La pile du pont. Du béton brut, piqué de mousse, et l'échelle de service qui monte vers le dessous du tablier, vingt mètres plus haut. Au pied, une cabane d'éclusier au toit crevé. Vers l'est, la voie continue sous les arches, dans une boue qui luit.",
+        "En haut, assourdi par le béton, un pas qui va et vient. Le garde. Il ne regarde pas en bas."
+      ],
+      "choices": [
+        {
+          "text": "Grimper l'échelle jusqu'aux poutres",
+          "to": "c23-21"
+        },
+        {
+          "text": "Entrer dans la cabane de l'éclusier",
+          "to": "c23-12"
+        },
+        {
+          "text": "Suivre la voie sous les arches",
+          "to": "c23-4"
+        },
+        {
+          "text": "Vider la Trousse de soins",
+          "to": "c23-26",
+          "if": {
+            "type": "item",
+            "item": "trousse"
+          },
+          "effects": [
+            {
+              "type": "item",
+              "action": "remove",
+              "item": "trousse"
+            },
+            {
+              "type": "stat",
+              "stat": "endurance",
+              "delta": 6
+            }
+          ]
+        }
+      ]
+    },
+    "c23-21": {
+      "text": [
+        "Les barreaux sont froids, puis ils ne le sont plus : à mi-hauteur, le fer est tiède, et le détecteur se met à crier. Vous montez sans regarder la boue.",
+        "Le dernier barreau manque. Il faut lâcher une main, attraper la poutre, et se hisser dans le noir sous le tablier. Testez votre Habileté."
+      ],
+      "test": {
+        "type": "stat",
+        "stat": "habilete",
+        "dice": "2d6",
+        "success": "c23-10",
+        "failure": "c23-16"
+      }
+    },
+    "c23-10": {
+      "text": [
+        "Vous êtes dessus. Allongé sur la poutre, la joue contre l'acier, avec au-dessus de vous, à travers les joints du tablier, un pas qui passe et repasse.",
+        "Vous rampez. Poutre après poutre, cinquante mètres, cent, la rouille vous entre dans les paumes. Le garde s'arrête une fois, juste au-dessus. Puis il repart. Vous arrivez à la dernière pile."
+      ],
+      "choices": [
+        {
+          "text": "Redescendre de l'autre côté",
+          "to": "c23-23"
+        }
+      ]
+    },
+    "c23-16": {
+      "text": [
+        "Vous ratez la poutre. La chute est courte et le sol est mou : la boue sous la pile, celle qui luit. Vous perdez 3 points d'Endurance. Le détecteur hurle le temps que vous en sortiez. Vous prenez 3 rads.",
+        "En haut, le pas s'est arrêté. Il reprend. Il n'a rien entendu, ou il s'en moque."
+      ],
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -3
+        },
+        {
+          "type": "stat",
+          "stat": "radiation",
+          "delta": 3
+        }
+      ],
+      "choices": [
+        {
+          "text": "Remonter à l'échelle",
+          "to": "c23-6"
+        },
+        {
+          "text": "Suivre la voie sous les arches",
+          "to": "c23-4"
+        }
+      ]
+    },
+    "c23-4": {
+      "text": [
+        "Sous les arches, la voie est sous l'eau. Vous marchez dedans. Elle est tiède, elle ne devrait pas l'être, et le détecteur ne se tait plus. Vous prenez 3 rads.",
+        "Une arche, deux, trois. Des carcasses de wagons sous la troisième, des os de chien dedans. Le pas, au-dessus, ne vous suit pas. Au bout, le remblai remonte vers l'autre rive."
+      ],
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "radiation",
+          "delta": 3
+        }
+      ],
+      "choices": [
+        {
+          "text": "Remonter le remblai vers la Centrale",
+          "to": "c23-23"
+        }
+      ]
+    },
+    "c23-23": {
+      "text": [
+        "L'autre côté. Vous sortez de sous le pont par le remblai, derrière la guérite de l'extrémité. Elle est vide : le garde de ce bout est resté au milieu, près du brasero. Vous enjambez la barrière baissée.",
+        "Devant vous, la route descend vers le grand bâtiment, la cheminée, et le béton gris du Sarcophage. Personne ne sait que vous êtes là."
+      ],
+      "choices": [
+        {
+          "text": "Descendre vers le parvis de la Centrale",
+          "to": "c24-1"
+        }
+      ]
+    },
+    "c23-12": {
+      "text": [
+        "La cabane sent le moisi et la pisse de rat. Sur le lit de fer, un stalker en combinaison verte, sec comme du bois. Ses mains sont noires jusqu'aux poignets : brûlées, pas par le feu. Il a monté l'échelle avant vous, et il est redescendu.",
+        "La boue sous le plancher vous chauffe les bottes. Vous prenez 2 rads. Sur le mur, gravé au couteau : ne touche pas les barreaux."
+      ],
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "radiation",
+          "delta": 2
+        }
+      ],
+      "choices": [
+        {
+          "text": "Ressortir vers la pile",
+          "to": "c23-6"
+        }
+      ]
+    },
+    "c23-26": {
+      "text": "Vous videz la trousse, assis contre la pile, la tête sous le béton. Les compresses, l'ampoule, tout. Vous regagnez 6 points d'Endurance. Le pas, là-haut, continue d'aller et venir. Il ne sait pas que vous êtes dessous. Il ne saura pas.",
+      "choices": [
+        {
+          "text": "Revenir au pied de l'échelle",
+          "to": "c23-6"
+        }
+      ]
+    }
+  }
+}

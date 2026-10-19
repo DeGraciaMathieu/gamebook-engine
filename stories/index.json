@@ -14,5 +14,9 @@
   {
     "id": "nublar",
     "path": "stories/nublar/story.json"
+  },
+  {
+    "id": "exauceur",
+    "path": "stories/exauceur/story.json"
   }
 ]

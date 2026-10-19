@@ -1,0 +1,742 @@
+{
+  "title": "La Forêt rouge",
+  "summary": "Le héros a traversé la Forêt rouge, parlé au Forestier (`forestier_vu`), trouvé l'Oasis et son Cœur, bu à sa source (`oasis_bu`), ramassé un Anti-rad. Il monte vers le Radar (c16-1) ou, avec la Carte du Guide, prend le tunnel du Guide (c17-1).",
+  "brief": "Région. Deux entrées : depuis Yantar (c14-1), depuis les Entrepôts (c14-2). Sans SEVA, la forêt coûte 2 à 4 rads par traversée. Carrefour : la cabane du Forestier au croisement des pistes. Scènes : les chiens de la forêt (combat avec fuite), le Forestier (il indique l'Oasis et le chemin du Radar ; il sait que le Guide a un tunnel : forestier_vu), l'Oasis : une cave fermée par des lianes (Couteau) où le Détecteur Ours trouve le Cœur de l'Oasis ; boire à la source remet la Chance à son maximum une fois (oasis_bu, setStat chance 10), le pont gardé par un pseudo-géant (combat boss avec fuite, ou contourner par la rivière : rads). La sortie c17-1 n'apparaît qu'avec la Carte du Guide. La crête du Radar est en vue : le texte dit que les pensées commencent à venir de l'extérieur. Les consommables listés dans requires peuvent être consommés par un choix (effet remove + effet stat), le paragraphe d'arrivée le dit. Taille : 38 à 45 paragraphes.",
+  "entries": {
+    "c14-1": "Arrivée depuis Yantar, par le nord du lac",
+    "c14-2": "Arrivée depuis les Entrepôts militaires, par la route coupée"
+  },
+  "exits": {
+    "c16-1": "Monter vers le Radar et le Brûleur de cerveaux",
+    "c17-1": "Prendre le tunnel du Guide sous la crête (Carte du Guide)"
+  },
+  "provides": {
+    "items": [
+      "artefact_coeur",
+      "antirad"
+    ],
+    "flags": [
+      "oasis_bu",
+      "forestier_vu"
+    ]
+  },
+  "requires": {
+    "items": [
+      "carte_guide",
+      "detecteur_ours",
+      "seva",
+      "couteau",
+      "antirad",
+      "bandage",
+      "conserve"
+    ],
+    "flags": []
+  },
+  "image": "c14-8",
+  "paragraphs": {
+    "c14-1": {
+      "text": "Le lac mort reste derrière vous, avec ses marmonnements. Devant, les premiers pins. Leurs aiguilles ne sont pas mortes : elles sont rouges, comme passées à la rouille. Le détecteur crépite une fois, puis se tait. Une piste part droit entre les troncs. À l'est, un ruisseau descend vers la rivière dans un lit de galets pâles. Aucun oiseau. Vous ne vous souvenez pas de la dernière fois que vous en avez entendu un.",
+      "choices": [
+        {
+          "text": "Couper droit entre les pins",
+          "to": "c14-23"
+        },
+        {
+          "text": "Suivre le lit du ruisseau",
+          "to": "c14-6"
+        }
+      ]
+    },
+    "c14-23": {
+      "text": "Sous les pins, la lumière est rouge aussi. Le compteur monte dès le premier pas et ne redescend plus. Les aiguilles craquent sous vos bottes comme du verre fin. Au milieu de la piste, un sac à dos ouvert, vide, et pas de propriétaire. Il faut traverser vite, ou traverser fermé.",
+      "choices": [
+        {
+          "text": "Traverser en Combinaison SEVA",
+          "to": "c14-11",
+          "if": {
+            "type": "item",
+            "item": "seva"
+          }
+        },
+        {
+          "text": "Traverser en courant",
+          "to": "c14-37"
+        }
+      ]
+    },
+    "c14-11": {
+      "text": "La combinaison respire pour vous. Le compteur hurle contre la visière, et rien n'entre. Vous marchez au pas, au milieu des pins rouges, comme on marche dans une église. De l'autre côté, la piste en rejoint une seconde, plus large. Un panneau de pionniers, étoile rouge décolorée, pointe vers un camp qui n'existe plus.",
+      "choices": [
+        {
+          "text": "Continuer vers le croisement des pistes",
+          "to": "c14-13"
+        }
+      ]
+    },
+    "c14-37": {
+      "text": "Vous courez. Les branches basses vous fouettent le visage, le compteur grimpe à chaque enjambée. Un goût de cuivre dans la bouche. Vous prenez 3 rads. De l'autre côté, vous vous pliez en deux, les mains sur les genoux. La piste en rejoint une seconde, plus large. Un panneau de pionniers, étoile rouge décolorée, pointe vers le nord.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "radiation",
+          "delta": 3
+        }
+      ],
+      "choices": [
+        {
+          "text": "Continuer vers le croisement des pistes",
+          "to": "c14-13"
+        }
+      ]
+    },
+    "c14-6": {
+      "text": "Le ruisseau n'a plus d'eau, juste des galets blancs et une odeur de pierre chauffée. À mi-pente, les galets sont rangés en cercle. Trop bien rangés. L'air tourne au-dessus, lentement, comme de l'eau dans une bonde. Un « Carrousel ». Vous lancez un boulon. Il part sur la gauche, sans tomber. Il faut passer par le bord, là où ça tourne moins. Tentez votre Chance.",
+      "test": {
+        "type": "luck",
+        "success": "c14-30",
+        "failure": "c14-18"
+      }
+    },
+    "c14-30": {
+      "text": "Le boulon tombe du bon côté. Vous passez par le bord, à plat contre la berge, et l'air ne vous prend pas. Derrière vous, les galets se mettent à rouler tout seuls, puis s'arrêtent. Le ruisseau sec débouche sur une piste large, bordée de pins rouges. Un panneau de pionniers y pointe vers le nord.",
+      "choices": [
+        {
+          "text": "Continuer vers le croisement des pistes",
+          "to": "c14-13"
+        }
+      ]
+    },
+    "c14-18": {
+      "text": "L'air vous prend par l'épaule. Vous tournez une fois, deux fois, et la berge vous rattrape de plein fouet. Vous restez un moment face contre les galets, à compter vos côtes. Vous perdez 3 points d'Endurance. Quand vous vous relevez, le cercle s'est refermé derrière vous, et la piste large est là, bordée de pins rouges.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -3
+        }
+      ],
+      "choices": [
+        {
+          "text": "Continuer vers le croisement des pistes",
+          "to": "c14-13"
+        }
+      ]
+    },
+    "c14-2": {
+      "text": "La route coupée s'arrête net : l'asphalte s'est ouvert sur deux mètres, et de la fissure monte une chaleur qui fait trembler les pins de l'autre côté. Un « Brûleur » en travers du chemin. Un camion militaire est couché dans le fossé, la peinture cloquée. Au-delà, la forêt est rouge. Entre les flammes invisibles, il y a un passage, peut-être. Ou le sous-bois, à droite, qui fait le tour.",
+      "choices": [
+        {
+          "text": "Lancer un boulon et passer entre les flammes",
+          "to": "c14-41"
+        },
+        {
+          "text": "Contourner par le sous-bois",
+          "to": "c14-9"
+        }
+      ]
+    },
+    "c14-41": {
+      "text": "Le boulon s'enflamme en l'air et retombe, noir, à trente centimètres de la fissure. Vous en lancez un second, plus à gauche. Celui-là retombe froid. Un couloir d'un pas de large, entre deux chaleurs. Vous ôtez votre sac pour le tenir contre vous. Testez votre Habileté.",
+      "test": {
+        "type": "stat",
+        "stat": "habilete",
+        "dice": "2d6",
+        "success": "c14-15",
+        "failure": "c14-27"
+      }
+    },
+    "c14-15": {
+      "text": "Vous passez dans le couloir froid, un pied devant l'autre, sans toucher les bords. La chaleur vous lèche les deux joues et ne mord pas. De l'autre côté, l'asphalte reprend, puis se perd sous les aiguilles rouges. Le camion sent le caoutchouc brûlé. La route devient piste, et la piste descend vers un croisement.",
+      "choices": [
+        {
+          "text": "Descendre vers le croisement",
+          "to": "c14-13"
+        }
+      ]
+    },
+    "c14-27": {
+      "text": "Le feu vous attrape par le mollet. Pas de flamme, rien à voir : la peau noircit sous le pantalon comme sous un fer. Vous vous jetez de l'autre côté en roulant. Vous perdez 3 points d'Endurance. Le pantalon fume encore quand vous vous relevez. La route devient piste, et la piste descend vers un croisement, sous les pins rouges.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -3
+        }
+      ],
+      "choices": [
+        {
+          "text": "Descendre vers le croisement",
+          "to": "c14-13"
+        }
+      ]
+    },
+    "c14-9": {
+      "text": "Le sous-bois est dense, fougères rousses et ronces sans feuilles. Le compteur monte dès que vous quittez l'asphalte. Les troncs sont tachés de blanc, comme de la chaux. Un chien est mort là, raide, le ventre gonflé. Le tour de la fissure fait deux cents mètres, pas plus. Deux cents mètres de compteur.",
+      "choices": [
+        {
+          "text": "Passer en Combinaison SEVA",
+          "to": "c14-34",
+          "if": {
+            "type": "item",
+            "item": "seva"
+          }
+        },
+        {
+          "text": "Passer en retenant votre souffle",
+          "to": "c14-20"
+        }
+      ]
+    },
+    "c14-34": {
+      "text": "Le filtre de la combinaison siffle à chaque inspiration. Rien ne passe. Vous contournez la fissure en vous tenant aux troncs tachés, et les fougères s'ouvrent devant vous sans un bruit. De l'autre côté, la route reprend, puis se perd sous les aiguilles rouges, et descend vers un croisement de pistes.",
+      "choices": [
+        {
+          "text": "Descendre vers le croisement",
+          "to": "c14-13"
+        }
+      ]
+    },
+    "c14-20": {
+      "text": "Vous retenez votre souffle le plus longtemps possible, puis vous respirez quand même. L'air a un goût de clou. Les fougères rousses vous arrivent à la taille et laissent une poudre sur vos manches. Vous prenez 3 rads. De l'autre côté, la route reprend, puis se perd sous les aiguilles, et descend vers un croisement de pistes.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "radiation",
+          "delta": 3
+        }
+      ],
+      "choices": [
+        {
+          "text": "Descendre vers le croisement",
+          "to": "c14-13"
+        }
+      ]
+    },
+    "c14-13": {
+      "text": "Au croisement, les pistes font une clairière de terre battue. Au milieu, une carcasse de voiture sans roues. Derrière, cinq ou six chiens aveugles, couchés dans la poussière, la tête tournée vers vous. Ils ne voient pas. Ils sentent. Le plus gros se lève lentement, les yeux blancs, la lèvre déjà retroussée. Plus loin, entre les pins, la fumée d'une cheminée.",
+      "choices": [
+        {
+          "text": "Passer sans bruit par la lisière",
+          "to": "c14-39"
+        },
+        {
+          "text": "Tirer le premier",
+          "to": "c14-25"
+        }
+      ]
+    },
+    "c14-39": {
+      "text": "Vous longez la lisière, un pas à la fois, le vent dans le visage. Les chiens tournent la tête ensemble, comme une seule bête. Le gros renifle, la truffe haute. Il y a une pente de pierre entre vous et la fumée, et pas un bruit à faire. Tentez votre Chance.",
+      "test": {
+        "type": "luck",
+        "success": "c14-4",
+        "failure": "c14-25"
+      }
+    },
+    "c14-4": {
+      "text": "Le vent tient. Les chiens vous perdent, ou vous laissent. Le gros se recouche dans la poussière, le museau sur les pattes, et ne lève plus la tête. Vous montez la pente de pierre sans vous retourner. En haut, les pistes se croisent devant une cabane de rondins. Le toit fume.",
+      "choices": [
+        {
+          "text": "Approcher de la cabane",
+          "to": "c14-22"
+        }
+      ]
+    },
+    "c14-25": {
+      "text": "Les chiens viennent. Pas en meute : en vague, de tous les côtés à la fois, bas, silencieux, les crocs jaunes. Le gros vous arrive à la cuisse. Il n'y a pas d'arbre à grimper, pas de porte. Il y a la carcasse de voiture, pour se mettre dos à quelque chose.",
+      "combat": {
+        "name": "Les chiens aveugles",
+        "habilete": 6,
+        "endurance": 8,
+        "damage": 2,
+        "win": "c14-31",
+        "flee": {
+          "to": "c14-17"
+        }
+      }
+    },
+    "c14-31": {
+      "text": "Le dernier chien tombe sur le flanc et ne se relève pas. Les autres sont déjà morts ou déjà loin. Vous restez contre la voiture le temps de recharger, les mains pas tout à fait sûres. La poussière retombe. En haut de la pente de pierre, une cabane de rondins, et quelqu'un sur le seuil qui a tout regardé sans bouger.",
+      "choices": [
+        {
+          "text": "Monter vers la cabane",
+          "to": "c14-22"
+        }
+      ]
+    },
+    "c14-17": {
+      "text": "Vous courez vers la pente de pierre, les chiens aux mollets. Un coup de fusil claque en haut, un seul. Le gros chien s'effondre, les autres s'éparpillent entre les pins. Sur le seuil d'une cabane de rondins, un homme rabaisse son fusil et rentre sans un mot. Vous arrivez au croisement des pistes, le souffle court.",
+      "choices": [
+        {
+          "text": "Approcher de la cabane",
+          "to": "c14-22"
+        }
+      ]
+    },
+    "c14-22": {
+      "text": "Devant la cabane, les pistes se croisent. Une descend vers l'ouest, dans un ravin où les pins sont plus rouges encore. Une monte au nord, vers la rivière ; au-delà, sur la crête, une antenne couchée en travers du ciel, grande comme un pont. La porte de la cabane est entrebâillée. Sur le seuil, une chaise, un fusil appuyé contre le mur. Le détecteur se tait ici. C'est reposant.",
+      "choices": [
+        {
+          "text": "Frapper à la porte du Forestier",
+          "to": "c14-7"
+        },
+        {
+          "text": "Descendre dans le ravin, vers l'ouest",
+          "to": "c14-10"
+        },
+        {
+          "text": "Monter vers la rivière et la crête",
+          "to": "c14-12"
+        },
+        {
+          "text": "Manger la conserve",
+          "to": "c14-42",
+          "if": {
+            "type": "item",
+            "item": "conserve"
+          },
+          "effects": [
+            {
+              "type": "item",
+              "action": "remove",
+              "item": "conserve"
+            },
+            {
+              "type": "stat",
+              "stat": "endurance",
+              "delta": 2
+            }
+          ]
+        },
+        {
+          "text": "Poser un bandage",
+          "to": "c14-14",
+          "if": {
+            "type": "item",
+            "item": "bandage"
+          },
+          "effects": [
+            {
+              "type": "item",
+              "action": "remove",
+              "item": "bandage"
+            },
+            {
+              "type": "stat",
+              "stat": "endurance",
+              "delta": 3
+            }
+          ]
+        },
+        {
+          "text": "Boire l'anti-rad",
+          "to": "c14-29",
+          "if": {
+            "type": "item",
+            "item": "antirad"
+          },
+          "effects": [
+            {
+              "type": "item",
+              "action": "remove",
+              "item": "antirad"
+            },
+            {
+              "type": "stat",
+              "stat": "radiation",
+              "delta": -5
+            }
+          ]
+        }
+      ]
+    },
+    "c14-7": {
+      "text": "Il ne répond pas. Il est déjà assis, le fusil sur les genoux, un homme sans âge, la barbe de la couleur des pins. Il vous regarde comme on regarde la pluie. Tu vas au nord. Ce n'est pas une question. Dans le ravin, il y a une cave. On y boit une fois. Pas deux. Et sous la crête, il y a un trou que le Guide connaît. Le Guide et personne d'autre.",
+      "effects": [
+        {
+          "type": "flag",
+          "flag": "forestier_vu"
+        }
+      ],
+      "choices": [
+        {
+          "text": "Lui demander le chemin de la crête",
+          "to": "c14-35"
+        },
+        {
+          "text": "Retourner au croisement",
+          "to": "c14-22"
+        }
+      ]
+    },
+    "c14-35": {
+      "text": "Le pont, dit-il. Il y a quelque chose sur le pont. Il montre une main, les doigts écartés, puis les referme. Grand comme ça. Ou la rivière, si tu aimes l'eau. L'eau brûle, ici. Passé la rivière, la crête. Passé la crête, ce n'est plus toi qui penses. Il se tait. Il a dit tout ce qu'il savait d'ailleurs, et c'est peu.",
+      "choices": [
+        {
+          "text": "Retourner au croisement",
+          "to": "c14-22"
+        }
+      ]
+    },
+    "c14-42": {
+      "text": "Vous ouvrez la conserve et la mangez debout, sur le seuil, avec les doigts. Du poisson dans de l'huile, froid, qui sent la boîte. Vous regagnez 2 points d'Endurance. Le Forestier ne vous regarde pas manger. Il regarde la crête.",
+      "choices": [
+        {
+          "text": "Retourner au croisement",
+          "to": "c14-22"
+        }
+      ]
+    },
+    "c14-14": {
+      "text": "Vous défaites le bandage et le serrez sur ce qui saigne encore. La gaze colle tout de suite. Vous regagnez 3 points d'Endurance. Dans la poussière devant la cabane, des traces de pattes partout, et une seule trace de bottes : les vôtres.",
+      "choices": [
+        {
+          "text": "Retourner au croisement",
+          "to": "c14-22"
+        }
+      ]
+    },
+    "c14-29": {
+      "text": "Vous videz l'anti-rad d'un trait. Un goût de craie et de métal, puis une chaleur qui descend dans les jambes. Vous perdez 5 rads. Le compteur se calme. Au-dessus de la cabane, le ciel a cette couleur de tôle qu'il prend avant le soir.",
+      "choices": [
+        {
+          "text": "Retourner au croisement",
+          "to": "c14-22"
+        }
+      ]
+    },
+    "c14-10": {
+      "text": "La piste du ravin descend raide, entre des pins si rouges qu'ils semblent peints. Le compteur reprend dès les premiers mètres et ne lâche plus. Au fond, derrière les troncs, une lumière. Pas le jour : une lumière qui monte du sol, blanche, immobile. Les aiguilles craquent. Il y a cent mètres de descente, cent mètres de compteur.",
+      "choices": [
+        {
+          "text": "Descendre en Combinaison SEVA",
+          "to": "c14-33",
+          "if": {
+            "type": "item",
+            "item": "seva"
+          }
+        },
+        {
+          "text": "Descendre en courant",
+          "to": "c14-19"
+        }
+      ]
+    },
+    "c14-33": {
+      "text": "La combinaison bourdonne contre vos oreilles, et le compteur, derrière la visière, hurle pour rien. Vous descendez en vous retenant aux troncs. L'écorce reste sur vos gants, rouge, comme de la poudre. Au fond du ravin, la lumière vient d'un trou dans la roche, entre deux racines grosses comme des cuisses.",
+      "choices": [
+        {
+          "text": "Approcher du trou dans la roche",
+          "to": "c14-8"
+        }
+      ]
+    },
+    "c14-19": {
+      "text": "Vous dévalez, à moitié en glissant, les mains dans les aiguilles. Le compteur grimpe sans s'arrêter. Vous prenez 2 rads. En bas, vous crachez rouge : de la poussière d'écorce, seulement, vous l'espérez. La lumière vient d'un trou dans la roche, entre deux racines grosses comme des cuisses.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "radiation",
+          "delta": 2
+        }
+      ],
+      "choices": [
+        {
+          "text": "Approcher du trou dans la roche",
+          "to": "c14-8"
+        }
+      ]
+    },
+    "c14-8": {
+      "text": "L'entrée de la cave est basse, fermée par des lianes grises, épaisses comme des câbles. La lumière passe entre elles et tombe sur le sol en lames. Devant, un stalker assis contre la roche, mort depuis longtemps, les mains encore posées sur les lianes. Son sac est ouvert. Dedans, un Anti-rad intact et une photo que vous ne regardez pas. Vous prenez l'Anti-rad.",
+      "effects": [
+        {
+          "type": "item",
+          "action": "add",
+          "item": "antirad"
+        }
+      ],
+      "image": {
+        "src": "images/c14-8.webp",
+        "alt": "L'entrée d'une cave au fond d'un ravin de pins rouges, barrée de lianes, d'où monte une lumière blanche ; un stalker mort assis contre la roche.",
+        "prompt": "Au fond d'un ravin de pins aux aiguilles rouges, une entrée de cave basse entre deux grosses racines, barrée de lianes épaisses comme des câbles ; une lumière blanche monte de l'intérieur et tombe en lames entre les lianes. Un stalker mort est assis contre la roche, sac ouvert, les mains posées sur les lianes."
+      },
+      "choices": [
+        {
+          "text": "Écarter les lianes",
+          "to": "c14-26"
+        },
+        {
+          "text": "Remonter vers la cabane",
+          "to": "c14-22"
+        }
+      ]
+    },
+    "c14-26": {
+      "text": "Les lianes ne bougent pas. Elles sont sèches et tendues, et elles ne sentent pas la plante : elles sentent le fil de fer. Derrière, la lumière blanche, et un bruit d'eau, régulier, comme un robinet qu'on aurait laissé couler depuis vingt ans. Le mort, à côté, a les paumes ouvertes. Il a essayé avec les mains.",
+      "choices": [
+        {
+          "text": "Trancher les lianes au Couteau",
+          "to": "c14-16",
+          "if": {
+            "type": "item",
+            "item": "couteau"
+          }
+        },
+        {
+          "text": "Arracher les lianes à mains nues",
+          "to": "c14-40"
+        }
+      ]
+    },
+    "c14-40": {
+      "text": "Vous empoignez la liane du milieu à deux mains et tirez en arrière de tout votre poids. Elle cède d'un centimètre, puis se tend comme une corde d'arc. Il y a des fibres dedans qui coupent comme du verre. Il faut tirer d'un coup, au bon endroit. Testez votre Habileté.",
+      "test": {
+        "type": "stat",
+        "stat": "habilete",
+        "dice": "2d6",
+        "success": "c14-16",
+        "failure": "c14-3"
+      }
+    },
+    "c14-3": {
+      "text": "La liane claque et vous ouvre les paumes. Vous lâchez, vous jurez, vous reprenez. Le sang rend les fibres glissantes, ce qui aide. Vous perdez 3 points d'Endurance. À la fin, il y a un trou assez large pour un homme, et vos mains laissent des traces sur la roche en passant.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -3
+        }
+      ],
+      "choices": [
+        {
+          "text": "Entrer dans la cave",
+          "to": "c14-16"
+        }
+      ]
+    },
+    "c14-16": {
+      "text": "Vous passez. Dedans, la lumière vient de l'eau. Une source sort de la roche dans une vasque de pierre et l'éclaire par en dessous, blanche, sans chaleur. Le plafond est bas, couvert de racines. L'air est tiède et sent le fer mouillé. Le compteur, ici, ne dit rien. Au fond, sur une pierre plate, quelque chose fait trembler l'air, comme un capot chaud.",
+      "choices": [
+        {
+          "text": "Boire à la source",
+          "to": "c14-38",
+          "if": {
+            "type": "flag",
+            "flag": "oasis_bu",
+            "value": false
+          }
+        },
+        {
+          "text": "Chercher avec le Détecteur Ours",
+          "to": "c14-24",
+          "if": {
+            "type": "all",
+            "conditions": [
+              {
+                "type": "item",
+                "item": "detecteur_ours"
+              },
+              {
+                "type": "stat",
+                "stat": "batterie",
+                "op": ">",
+                "value": 0
+              },
+              {
+                "type": "item",
+                "item": "artefact_coeur",
+                "present": false
+              }
+            ]
+          }
+        },
+        {
+          "text": "Remonter vers la cabane",
+          "to": "c14-22"
+        }
+      ]
+    },
+    "c14-38": {
+      "text": "L'eau est froide comme une lame. Vous buvez dans vos mains, puis à même la vasque, longtemps. Quand vous relevez la tête, la lumière a changé, ou vos yeux. Tout est net : chaque racine, chaque goutte. Votre Chance remonte à 10. La Zone vous laissera passer un peu plus loin, cette fois. Une fois.",
+      "effects": [
+        {
+          "type": "setStat",
+          "stat": "chance",
+          "value": 10
+        },
+        {
+          "type": "flag",
+          "flag": "oasis_bu"
+        }
+      ],
+      "choices": [
+        {
+          "text": "Chercher avec le Détecteur Ours",
+          "to": "c14-24",
+          "if": {
+            "type": "all",
+            "conditions": [
+              {
+                "type": "item",
+                "item": "detecteur_ours"
+              },
+              {
+                "type": "stat",
+                "stat": "batterie",
+                "op": ">",
+                "value": 0
+              },
+              {
+                "type": "item",
+                "item": "artefact_coeur",
+                "present": false
+              }
+            ]
+          }
+        },
+        {
+          "text": "Remonter vers la cabane",
+          "to": "c14-22"
+        }
+      ]
+    },
+    "c14-24": {
+      "text": "Le Détecteur Ours crépite dès que vous l'approchez de la pierre plate, de plus en plus serré, puis d'un seul trait. L'air tremble sur un point. Vous tendez la main, vous fermez les doigts sur du vide, et le vide pèse. Le Cœur de l'Oasis. Il est tiède, et il bat, lentement, à contretemps du vôtre. Depuis la cave, les boulons tomberont du bon côté.",
+      "effects": [
+        {
+          "type": "item",
+          "action": "add",
+          "item": "artefact_coeur"
+        }
+      ],
+      "choices": [
+        {
+          "text": "Boire à la source",
+          "to": "c14-38",
+          "if": {
+            "type": "flag",
+            "flag": "oasis_bu",
+            "value": false
+          }
+        },
+        {
+          "text": "Remonter vers la cabane",
+          "to": "c14-22"
+        }
+      ]
+    },
+    "c14-12": {
+      "text": "La piste nord sort des pins sur une rivière lente, brune, qui fume dans le froid. Un pont de béton la traverse, et sur le pont, assis, quelque chose de la taille d'une voiture. Un Pseudo-géant. Il ne bouge pas. Il attend que le pont serve. Au-delà, la crête monte vers l'antenne couchée, et c'est là que ça commence : une pensée qui n'est pas la vôtre, posée dans votre tête comme une main.",
+      "choices": [
+        {
+          "text": "Passer le pont",
+          "to": "c14-32"
+        },
+        {
+          "text": "Descendre vers la rivière",
+          "to": "c14-21"
+        },
+        {
+          "text": "Retourner à la cabane",
+          "to": "c14-22"
+        }
+      ]
+    },
+    "c14-32": {
+      "text": "Il vous a entendu au premier pas sur le béton. Il se lève, et le pont tremble. Il frappe à casser des os, et les balles rentrent dans sa graisse sans ressortir. Derrière lui, de l'autre côté, la piste continue vers la crête. Il n'y a que lui entre vous et elle.",
+      "combat": {
+        "name": "Le Pseudo-géant",
+        "habilete": 8,
+        "endurance": 12,
+        "damage": 2,
+        "armor": 1,
+        "win": "c14-43",
+        "flee": {
+          "to": "c14-5"
+        }
+      }
+    },
+    "c14-5": {
+      "text": "Vous reculez sur le pont et sautez dans la berge. Le Pseudo-géant ne suit pas : il se rassoit, le béton craque sous lui, et il recommence à attendre. Vous avez du sang dans la bouche, et une pensée qui n'est pas à vous vous dit de revenir. Vous ne revenez pas. Sous le pont, la rivière brune coule sans bruit.",
+      "choices": [
+        {
+          "text": "Descendre vers la rivière",
+          "to": "c14-21"
+        },
+        {
+          "text": "Retourner à la cabane",
+          "to": "c14-22"
+        }
+      ]
+    },
+    "c14-21": {
+      "text": "Sous le pont, la rivière est large de vingt mètres et pas plus profonde qu'une taille d'homme. Elle fume. Sur les galets de la rive, le compteur grimpe avant même que vous touchiez l'eau. Au-dessus, le Pseudo-géant ne regarde pas en bas. L'autre rive est là, une pente d'argile, et la crête.",
+      "choices": [
+        {
+          "text": "Traverser en Combinaison SEVA",
+          "to": "c14-36",
+          "if": {
+            "type": "item",
+            "item": "seva"
+          }
+        },
+        {
+          "text": "Traverser à gué",
+          "to": "c14-28"
+        }
+      ]
+    },
+    "c14-36": {
+      "text": "L'eau vous arrive à la poitrine et pèse sur la combinaison comme une main. Le compteur hurle dans votre oreille, sans conséquence. Vous sortez sur l'argile de l'autre rive et l'eau brune coule de vous en fumant. Le Pseudo-géant, sur le pont, n'a pas tourné la tête. La crête est au-dessus. La pensée qui n'est pas la vôtre aussi.",
+      "choices": [
+        {
+          "text": "Monter vers la crête",
+          "to": "c14-43"
+        }
+      ]
+    },
+    "c14-28": {
+      "text": "L'eau vous arrive à la poitrine. Elle est tiède, ce qui est pire que froide. Le compteur hurle tout le long, et vous sentez l'eau sur la peau comme une brûlure lente. Vous prenez 4 rads. Vous sortez sur l'argile de l'autre rive, les vêtements qui fument. Le Pseudo-géant n'a pas tourné la tête. La crête est au-dessus.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "radiation",
+          "delta": 4
+        }
+      ],
+      "choices": [
+        {
+          "text": "Monter vers la crête",
+          "to": "c14-43"
+        }
+      ]
+    },
+    "c14-43": {
+      "text": "Vous êtes de l'autre côté. La piste monte vers la crête à travers les derniers pins, rouges jusqu'au sommet. En haut, l'antenne couchée barre tout le ciel. À mi-pente, un transformateur de béton, porte de fer entrouverte, et une bouche d'égout qui descend dans le noir sous la colline. Vous avez dix pensées, et trois ne sont pas à vous. Elles disent de monter. Elles disent que le Monolithe attend.",
+      "choices": [
+        {
+          "text": "Monter vers le Radar et le Brûleur de cerveaux",
+          "to": "c16-1"
+        },
+        {
+          "text": "Prendre le tunnel du Guide sous la crête",
+          "to": "c17-1",
+          "if": {
+            "type": "any",
+            "conditions": [
+              {
+                "type": "item",
+                "item": "carte_guide"
+              },
+              {
+                "type": "flag",
+                "flag": "forestier_vu"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

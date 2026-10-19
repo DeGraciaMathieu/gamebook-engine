@@ -1,0 +1,550 @@
+{
+  "title": "La piscine et le poste de police",
+  "summary": "Le héros a traversé la piscine vide et le poste de police où le Monolithe entrepose ses morts. Il a pu prendre une Tenue du Monolithe sur un corps dans les cellules, une Vodka dans le bureau du chef, et 150 roubles dans un portefeuille. Il repart sur la place (c18-3).",
+  "brief": "Région. Le bassin vide, le plongeoir (test d'Habileté pour traverser par la passerelle), deux monolithiens de garde au poste de police (les tuer sans bruit avec le Couteau : test d'Habileté ; les abattre au Makarov : combat ; attendre qu'ils partent : test de Chance). Les corps dans les cellules : la Tenue du Monolithe (la prendre coûte 2 rads : elle est irradiée). La Vodka dans le bureau. Carrefour : le vestiaire entre le bassin et le poste. Les consommables listés dans requires peuvent être consommés par un choix (effet remove + effet stat), le paragraphe d'arrivée le dit. Taille : 28 à 34 paragraphes.",
+  "entries": {
+    "c22-1": "À la grille de la piscine, le poste de police à côté"
+  },
+  "exits": {
+    "c18-3": "Repartir sur la place"
+  },
+  "provides": {
+    "items": [
+      "tenue_monolithe",
+      "vodka"
+    ],
+    "flags": []
+  },
+  "requires": {
+    "items": [
+      "couteau",
+      "makarov",
+      "vodka",
+      "bandage"
+    ],
+    "flags": []
+  },
+  "image": "c22-3",
+  "paragraphs": {
+    "c22-1": {
+      "text": "La grille de la piscine tient sur un seul gond. Derrière, le bâtiment aux baies crevées, et sur le fronton un mot auquel il manque trois lettres. À côté, le poste de police : deux étages jaunes, des barreaux aux fenêtres du bas, la grille de sa cour barrée d'une chaîne et d'un cadenas neuf. Quelqu'un entre encore ici. Le vent pousse des feuilles dans le hall. Rien ne bouge sur les toits. Le détecteur se tait.",
+      "choices": [
+        {
+          "text": "Pousser la porte du hall",
+          "to": "c22-14"
+        },
+        {
+          "text": "Passer par la baie crevée du bassin",
+          "to": "c22-3"
+        },
+        {
+          "text": "Repartir sur la place",
+          "to": "c18-3"
+        }
+      ]
+    },
+    "c22-14": {
+      "text": "Le hall sent la poussière mouillée. Des tourniquets, une caisse vitrée, un tableau des horaires de 1986 encore épinglé. Sous le plafond, les lettres d'un slogan ont perdu leur peinture. Deux portes. Celle de gauche ouvre sur le bassin, on le sent au courant d'air. Celle de droite, un couloir carrelé vers les douches et les vestiaires, et au bout, une lumière grise qui vient d'une cour.",
+      "choices": [
+        {
+          "text": "Suivre le couloir des douches",
+          "to": "c22-17"
+        },
+        {
+          "text": "Entrer dans le bassin",
+          "to": "c22-3"
+        },
+        {
+          "text": "Ressortir par la grille",
+          "to": "c18-3"
+        }
+      ]
+    },
+    "c22-3": {
+      "text": "Le bassin est vide depuis vingt ans. Au fond, une boue sèche craquelée, un vélo d'enfant, des carreaux bleus tombés des murs. Le plongeoir se dresse au bout, intact. Sur votre droite, la galerie des gradins s'est effondrée ; il n'en reste qu'une passerelle de fer qui longe le mur au-dessus du vide, jusqu'à la porte des vestiaires. En bas, une échelle rouillée monte vers la même porte. Le détecteur crépite quand vous vous penchez sur le fond.",
+      "image": {
+        "src": "images/c22-3.webp",
+        "alt": "Le bassin vide d'une piscine en ruine, le plongeoir au fond, une passerelle de fer le long du mur au-dessus du vide.",
+        "prompt": "Intérieur d'une piscine abandonnée de Pripyat : le grand bassin vide au fond craquelé où gît un vélo d'enfant, un plongeoir intact au bout, les baies vitrées brisées, une étroite passerelle de fer suspendue le long du mur au-dessus du vide, lumière grise tombant des verrières."
+      },
+      "choices": [
+        {
+          "text": "Traverser par la passerelle",
+          "to": "c22-20"
+        },
+        {
+          "text": "Descendre dans le bassin et le traverser",
+          "to": "c22-16"
+        },
+        {
+          "text": "Revenir dans le hall",
+          "to": "c22-14"
+        }
+      ]
+    },
+    "c22-20": {
+      "text": "La passerelle tient sur deux étais et sur l'habitude. Elle ploie sous votre premier pas, et une plaque se détache, tombe, met longtemps à toucher le fond. Six mètres de vide à gauche, le mur lisse à droite. Rien pour se tenir. Vous avancez un pied après l'autre, les yeux sur la porte. Testez votre Habileté.",
+      "test": {
+        "type": "stat",
+        "stat": "habilete",
+        "dice": "2d6",
+        "success": "c22-9",
+        "failure": "c22-27"
+      }
+    },
+    "c22-9": {
+      "text": "Vous passez. La dernière plaque ploie, et vous êtes sur le seuil des vestiaires, le cœur dans la gorge. D'ici, par la baie crevée, on voit la cour du poste de police : un fourgon sans roues, un perron, et deux silhouettes grises qui ne bougent pas. Elles portent des masques. Elles regardent la rue, pas la piscine. Vous reculez dans l'ombre de la porte.",
+      "choices": [
+        {
+          "text": "Entrer dans les vestiaires",
+          "to": "c22-7"
+        }
+      ]
+    },
+    "c22-27": {
+      "text": "Vous tombez. La plaque cède sous vous, et le fond du bassin arrive d'un coup. Vous perdez 3 points d'Endurance. Vous restez un moment sur le dos, dans la boue sèche, à regarder le plongeoir à l'envers. Le détecteur crépite contre votre poitrine. Vous vous relevez. L'échelle rouillée est à dix mètres.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -3
+        }
+      ],
+      "choices": [
+        {
+          "text": "Gagner l'échelle et monter",
+          "to": "c22-7"
+        }
+      ]
+    },
+    "c22-16": {
+      "text": "Vous descendez par le petit bain. La boue sèche casse sous vos bottes comme une croûte de pain. Au milieu, le vélo d'enfant, la chaîne rouillée sur le pédalier. Le compteur grimpe d'un coup et ne redescend pas avant l'échelle. Vous prenez 3 rads. Vous montez les barreaux un par un. En haut, la porte des vestiaires est entrouverte sur le noir.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "radiation",
+          "delta": 3
+        }
+      ],
+      "choices": [
+        {
+          "text": "Pousser la porte des vestiaires",
+          "to": "c22-7"
+        }
+      ]
+    },
+    "c22-7": {
+      "text": "Les vestiaires. Des casiers de tôle ouverts, des bancs de bois, un maillot de bain pendu à une patère depuis 1986. Ça sent encore le chlore, sous la poussière, allez savoir comment. Au fond, une porte de service bat sur la cour du poste de police. Par l'entrebâillement, le perron, et une voix qui psalmodie. Derrière vous, la porte du bassin ; à gauche, le couloir des douches, où l'air tourne.",
+      "choices": [
+        {
+          "text": "Passer dans la cour du poste",
+          "to": "c22-18"
+        },
+        {
+          "text": "Retourner au bassin",
+          "to": "c22-3"
+        },
+        {
+          "text": "Boire la vodka",
+          "to": "c22-23",
+          "if": {
+            "type": "item",
+            "item": "vodka"
+          },
+          "effects": [
+            {
+              "type": "item",
+              "action": "remove",
+              "item": "vodka"
+            },
+            {
+              "type": "stat",
+              "stat": "radiation",
+              "delta": -2
+            },
+            {
+              "type": "stat",
+              "stat": "chance",
+              "delta": -1
+            }
+          ]
+        },
+        {
+          "text": "Poser le bandage",
+          "to": "c22-11",
+          "if": {
+            "type": "item",
+            "item": "bandage"
+          },
+          "effects": [
+            {
+              "type": "item",
+              "action": "remove",
+              "item": "bandage"
+            },
+            {
+              "type": "stat",
+              "stat": "endurance",
+              "delta": 3
+            }
+          ]
+        }
+      ]
+    },
+    "c22-23": {
+      "text": "Vous videz la Vodka assis sur un banc, en trois gorgées qui brûlent. Vous perdez 2 rads. Vous perdez 1 point de Chance. La bouteille roule sous les casiers. Dans la cour, la voix psalmodie toujours, le même mot, sans se presser. Vous attendez que la pièce arrête de tourner.",
+      "choices": [
+        {
+          "text": "Se relever du banc",
+          "to": "c22-7"
+        }
+      ]
+    },
+    "c22-11": {
+      "text": "Vous déroulez le Bandage autour de ce qui saigne et serrez avec les dents. Vous regagnez 3 points d'Endurance. Le tissu prend la couleur de la boue. Dans la cour, la voix s'est tue, puis reprend. Vous nouez le dernier tour et reprenez votre arme.",
+      "choices": [
+        {
+          "text": "Reprendre votre place près de la porte",
+          "to": "c22-7"
+        }
+      ]
+    },
+    "c22-18": {
+      "text": "La cour du poste. Un fourgon UAZ sans roues, un drapeau de la milice en loques, des douilles partout. Sur le perron arrière, deux monolithiens en tenue grise, masques relevés sur le front, les yeux blancs tournés vers la rue. L'un psalmodie. L'autre tient un fusil sur le ventre et dodeline. Entre vous et eux, dix mètres de dalles et une rangée de poubelles renversées. Derrière eux, la porte du poste est ouverte.",
+      "choices": [
+        {
+          "text": "Les égorger au couteau, l'un après l'autre",
+          "to": "c22-5",
+          "if": {
+            "type": "item",
+            "item": "couteau"
+          }
+        },
+        {
+          "text": "Les abattre au Makarov",
+          "to": "c22-25",
+          "if": {
+            "type": "item",
+            "item": "makarov"
+          }
+        },
+        {
+          "text": "Attendre qu'ils s'en aillent",
+          "to": "c22-12"
+        },
+        {
+          "text": "Reculer dans les vestiaires",
+          "to": "c22-7"
+        }
+      ]
+    },
+    "c22-5": {
+      "text": "Vous longez les poubelles, le couteau le long de la cuisse. Celui qui psalmodie est le plus près. Il ne vous entend pas ; dans sa tête, quelqu'un parle plus fort. Le second dodeline à deux pas, le dos tourné. Il faudra que le premier ne crie pas, et que le second ne se retourne pas avant. Testez votre Habileté.",
+      "test": {
+        "type": "stat",
+        "stat": "habilete",
+        "dice": "2d6",
+        "success": "c22-29",
+        "failure": "c22-8"
+      }
+    },
+    "c22-29": {
+      "text": "Le premier ne crie pas. Vous le retenez par le masque pendant qu'il s'affaisse, et le second se retourne juste à temps pour prendre la lame sous le menton. Il tombe sans un bruit sur son fusil. Le silence revient d'un coup, plus large. Vous essuyez le couteau sur une manche grise. La porte du poste est ouverte sur un couloir sombre.",
+      "choices": [
+        {
+          "text": "Entrer dans le poste",
+          "to": "c22-4"
+        },
+        {
+          "text": "Reculer dans les vestiaires",
+          "to": "c22-7"
+        }
+      ]
+    },
+    "c22-8": {
+      "text": "Le premier crie. Un son court, coupé net, mais le second s'est retourné, et la crosse de son fusil vous prend à la tempe. Vous perdez 3 points d'Endurance. Il recule d'un pas pour mettre le canon entre vous. Il n'y a plus de silence à sauver.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -3
+        }
+      ],
+      "combat": {
+        "name": "Le monolithien",
+        "habilete": 6,
+        "endurance": 6,
+        "damage": 2,
+        "win": "c22-21",
+        "flee": {
+          "to": "c22-7"
+        }
+      }
+    },
+    "c22-25": {
+      "text": "Vous tirez d'abord sur celui qui dodeline. Le premier coup l'assoit, le second le couche. L'autre a cessé de psalmodier. Il ramasse le fusil du mort sans se presser, comme si ce qui parle dans sa tête lui avait dit que ce n'était rien. Il tire en avançant, et les balles font sauter des éclats de dalle autour de vos bottes.",
+      "combat": {
+        "name": "Les deux monolithiens",
+        "habilete": 7,
+        "endurance": 10,
+        "damage": 2,
+        "win": "c22-21",
+        "flee": {
+          "to": "c22-7"
+        }
+      }
+    },
+    "c22-12": {
+      "text": "Vous vous accroupissez derrière les poubelles. Le psalmodieur se tait. L'autre relève la tête, dit quelque chose, et ils regardent tous les deux la rue, longtemps. Une relève, ou un corps à rentrer, ou rien. Vous ne savez pas combien de temps ils restent ici d'habitude, ni si la Zone a envie de vous laisser tranquille aujourd'hui. Tentez votre Chance.",
+      "test": {
+        "type": "luck",
+        "success": "c22-15",
+        "failure": "c22-26"
+      }
+    },
+    "c22-15": {
+      "text": "Ils s'en vont. Un troisième arrive par la rue, un corps gris en travers des épaules, et les deux gardes le suivent à l'intérieur en psalmodiant. Des pas dans un escalier, une porte de fer. Puis ils ressortent tous les trois par la grille de la cour, que le dernier referme à la chaîne. Le perron est vide. Vous comptez jusqu'à cent avant de bouger.",
+      "choices": [
+        {
+          "text": "Entrer dans le poste",
+          "to": "c22-4"
+        },
+        {
+          "text": "Reculer dans les vestiaires",
+          "to": "c22-7"
+        }
+      ]
+    },
+    "c22-26": {
+      "text": "Le premier vous a vu. Il ne crie pas ; il dit un mot, calmement, et le second lève son fusil. Ils tirent ensemble, en avançant, comme on tire dans un exercice. Une balle fait sonner la poubelle contre votre épaule. Vous avez le temps de viser une fois avant qu'ils soient sur vous.",
+      "combat": {
+        "name": "Les deux monolithiens",
+        "habilete": 7,
+        "endurance": 10,
+        "damage": 2,
+        "win": "c22-21",
+        "flee": {
+          "to": "c22-7"
+        }
+      }
+    },
+    "c22-21": {
+      "text": "Ils sont à terre. Les détonations roulent encore entre les immeubles, et quelque part vers la place, une autre voix se met à psalmodier, puis se tait. Le sang des monolithiens est rouge, comme le vôtre. Vous en aviez douté. Le perron, la porte ouverte, un couloir sombre qui sent le formol. Il faut faire vite, ou ne pas entrer.",
+      "choices": [
+        {
+          "text": "Entrer dans le poste",
+          "to": "c22-4"
+        },
+        {
+          "text": "Reculer dans les vestiaires",
+          "to": "c22-7"
+        }
+      ]
+    },
+    "c22-4": {
+      "text": "Le poste de police. Un comptoir, un registre ouvert à une page de 1986, un portrait sans visage au mur. Ça sent le formol et la poussière de craie. Sur la droite, le bureau du chef, sa porte vitrée au carreau fendu. Au fond, un escalier descend vers les cellules, et c'est de là que monte le froid, et autre chose, que le détecteur sent avant vous.",
+      "choices": [
+        {
+          "text": "Descendre aux cellules",
+          "to": "c22-10"
+        },
+        {
+          "text": "Entrer dans le bureau du chef",
+          "to": "c22-2"
+        },
+        {
+          "text": "Sortir par la grille de la rue",
+          "to": "c22-30"
+        },
+        {
+          "text": "Ressortir par la cour",
+          "to": "c22-7"
+        }
+      ]
+    },
+    "c22-10": {
+      "text": "Les cellules. Quatre grilles ouvertes, et dans chacune, des corps en tenue grise alignés sur le sol, les mains croisées, le masque sur le visage. Une vingtaine. Pas d'odeur, ou presque ; le froid les garde. Quelqu'un a écrit un mot à la craie sur chaque mur, le même. Le détecteur crépite plus fort quand vous approchez. Ce n'est pas d'eux que vient la radiation. C'est de ce qu'ils portent.",
+      "choices": [
+        {
+          "text": "Prendre la Tenue sur un corps",
+          "to": "c22-19",
+          "if": {
+            "type": "item",
+            "item": "tenue_monolithe",
+            "present": false
+          }
+        },
+        {
+          "text": "Fouiller les poches des morts",
+          "to": "c22-24"
+        },
+        {
+          "text": "Remonter l'escalier des cellules",
+          "to": "c22-4"
+        }
+      ]
+    },
+    "c22-19": {
+      "text": "Vous choisissez le plus grand. La combinaison se détache des épaules avec un bruit de toile, et le compteur monte pendant tout le temps que vous mettez à l'enfiler. Vous prenez 2 rads. Tenue du Monolithe : grise, lourde, le masque qui sent la salive d'un autre. Dans la poche de poitrine, un papier plié avec le mot à la craie. Vous le laissez. Le mort, dessous, est un garçon de vingt ans.",
+      "effects": [
+        {
+          "type": "item",
+          "action": "add",
+          "item": "tenue_monolithe"
+        },
+        {
+          "type": "stat",
+          "stat": "radiation",
+          "delta": 2
+        }
+      ],
+      "choices": [
+        {
+          "text": "Fouiller les poches des autres",
+          "to": "c22-24"
+        },
+        {
+          "text": "Remonter l'escalier des cellules",
+          "to": "c22-4"
+        }
+      ]
+    },
+    "c22-24": {
+      "text": "Vous passez de corps en corps, à genoux. Les poches sont presque vides : des cartouches, une icône en fer-blanc, un bout de pain dur. Le froid vous entre dans les mains. Dans la dernière cellule, un corps a les mains décroisées. Vous ne vous souvenez pas s'il les avait ainsi en entrant. Tentez votre Chance.",
+      "test": {
+        "type": "luck",
+        "success": "c22-13",
+        "failure": "c22-6"
+      }
+    },
+    "c22-13": {
+      "text": "Il est bien mort. Sous lui, un portefeuille de la milice, avec 150 roubles en billets neufs, et personne ici pour vous demander d'où ils viennent. Vous les rangez. Le mot à la craie, sur le mur au-dessus, a été écrit par une main qui tremblait.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "roubles",
+          "delta": 150
+        }
+      ],
+      "choices": [
+        {
+          "text": "Prendre la Tenue sur un corps",
+          "to": "c22-19",
+          "if": {
+            "type": "item",
+            "item": "tenue_monolithe",
+            "present": false
+          }
+        },
+        {
+          "text": "Remonter l'escalier des cellules",
+          "to": "c22-4"
+        }
+      ]
+    },
+    "c22-6": {
+      "text": "Il n'est pas mort. La main se referme sur votre poignet, et le masque se tourne vers vous, les yeux blancs ouverts. Il serre à vous casser l'os ; vous lui mettez le genou sur la gorge jusqu'à ce que ça cède. Vous perdez 3 points d'Endurance. Il avait dans l'autre main ses propres cartouches, qu'il n'a pas eu le temps de donner à personne.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -3
+        }
+      ],
+      "choices": [
+        {
+          "text": "Prendre la Tenue sur un corps",
+          "to": "c22-19",
+          "if": {
+            "type": "item",
+            "item": "tenue_monolithe",
+            "present": false
+          }
+        },
+        {
+          "text": "Remonter l'escalier des cellules",
+          "to": "c22-4"
+        }
+      ]
+    },
+    "c22-2": {
+      "text": "Le bureau du chef. Un fauteuil de skaï, un téléphone sans fil, des dossiers gonflés d'eau. Dans le tiroir, une Vodka aux deux tiers pleine, l'étiquette rongée. Les monolithiens ne boivent pas ; celle-ci est d'avant eux. Vous la prenez. Par la fenêtre à barreaux, le perron, le fourgon, et la lumière qui baisse.",
+      "effects": [
+        {
+          "type": "item",
+          "action": "add",
+          "item": "vodka"
+        }
+      ],
+      "choices": [
+        {
+          "text": "Descendre aux cellules",
+          "to": "c22-10"
+        },
+        {
+          "text": "Revenir au comptoir",
+          "to": "c22-4"
+        }
+      ]
+    },
+    "c22-30": {
+      "text": "La rue. La grille de la cour tient par une chaîne, et vous passez par-dessus. Derrière vous, le poste, la piscine, les morts alignés dans le froid. Le vent ramène de la place le grincement de la grande roue. Sur un toit, une silhouette grise tourne la tête, puis la détourne, ou n'a jamais regardé.",
+      "choices": [
+        {
+          "text": "Repartir sur la place",
+          "to": "c18-3"
+        },
+        {
+          "text": "Retourner dans les vestiaires",
+          "to": "c22-7"
+        }
+      ]
+    },
+    "c22-17": {
+      "text": "Le couloir des douches. Des pommeaux tordus, du carrelage vert, une rigole au milieu. À mi-chemin, l'air tourne. Les feuilles mortes sur le sol décrivent un cercle lent, à hauteur de genou, montent, retombent. Une « Carrousel ». Elle tient toute la largeur du couloir. Le détecteur crépite par saccades, au rythme de la rotation. De l'autre côté, la porte des vestiaires.",
+      "choices": [
+        {
+          "text": "Lancer un boulon et passer",
+          "to": "c22-28"
+        },
+        {
+          "text": "Retourner vers le bassin",
+          "to": "c22-3"
+        }
+      ]
+    },
+    "c22-28": {
+      "text": "Vous lancez le boulon. Il entre dans le cercle, s'arrête net en l'air, tourne deux fois et file contre le carrelage, qu'il fend. Il y a un rythme. Entre deux tours, une seconde où l'air se relâche, peut-être. Vous comptez. Vous courez. Tentez votre Chance.",
+      "test": {
+        "type": "luck",
+        "success": "c22-31",
+        "failure": "c22-22"
+      }
+    },
+    "c22-31": {
+      "text": "Vous passez. L'air se referme derrière vous avec un bruit de drap claqué, et une poignée de feuilles vous suit, s'arrête, retombe. Vous êtes contre la porte des vestiaires, le souffle court, entier. Le boulon, derrière, continue de tourner dans le cercle, lentement, comme s'il cherchait la sortie.",
+      "choices": [
+        {
+          "text": "Entrer dans les vestiaires",
+          "to": "c22-7"
+        }
+      ]
+    },
+    "c22-22": {
+      "text": "L'air vous attrape. Il vous soulève, vous retourne, et vous jette contre le mur des douches, puis contre l'autre. Vous perdez 3 points d'Endurance. Le cercle vous lâche de l'autre côté, sur le carrelage, les oreilles pleines d'un sifflement. Vous rampez jusqu'à la porte des vestiaires avant qu'il reprenne.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -3
+        }
+      ],
+      "choices": [
+        {
+          "text": "Entrer dans les vestiaires",
+          "to": "c22-7"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,783 @@
+{
+  "title": "Le Cordon",
+  "summary": "Le héros a quitté le village des débutants du Cordon après avoir parlé au Loup et marchandé avec Sidorovitch. Il a pu trouver une Méduse dans le champ d'anomalies, une Vodka sur un stalker brûlé, un Bandage et une Conserve dans le bus des chiens aveugles, un Anti-rad dans le fossé sous le pont, et acheter Veste de cuir, Anti-rad, Vodka, Lampe torche, Piles, Bandage ou Conserve. Il part vers le nord par le pont des militaires (100 roubles, ou le fossé irradié) vers le Dépotoir (c02), ou par le tunnel du remblai et son Électro vers Agroprom (c03).",
+  "brief": "Chapitre de départ. c01-1 : réveil dans le village des débutants, le feu, le Loup qui explique une fois (boulon, détecteur). Carrefour : la place du village (feu, bunker de Sidorovitch, champ au sud, route au nord, tunnel à l'ouest) rejoint par plusieurs chemins. Scènes : le bunker (boutique : vend gilet_cuir 300, antirad 150, vodka 50, lampe 100, piles 80, bandage 60, conserve 40 ; rachète artefact_meduse 400, makarov 100, couteau 30), le champ d'anomalies « Électro » au sud où le Détecteur Ours trouve la Méduse (test de Chance, échec : −4 points d'Endurance), les chiens aveugles près du bus (combat, fuite possible), le pont des militaires qui tirent sur qui approche (test ou rads). Aucune mort trop facile : c'est le tutoriel, mais la Zone tue déjà. c01-mort est le paragraphe de mort de toute l'histoire (court, définitif, voir la bible). c01-rads est la cible du déclencheur « Le corps cède » : il s'ouvre sur le constat (« Vous ne sentez plus vos jambes. Le compteur ne s'arrête plus. ») et c'est une fin, sans lien avec le Cordon. Les consommables listés dans requires peuvent être consommés par un choix (effet remove + effet stat), le paragraphe d'arrivée le dit. Taille : 38 à 45 paragraphes.",
+  "entries": {
+    "c01-1": "Départ : réveil au village des débutants du Cordon, au feu",
+    "c01-mort": "Mort du héros, de n'importe où (death) : Endurance à zéro",
+    "c01-rads": "Déclencheur « Le corps cède », de n'importe où : 30 rads ou plus, fin"
+  },
+  "exits": {
+    "c02-1": "Prendre la route du nord vers le Dépotoir",
+    "c03-1": "Passer par le tunnel du remblai vers Agroprom"
+  },
+  "provides": {
+    "items": [
+      "artefact_meduse",
+      "gilet_cuir",
+      "antirad",
+      "vodka",
+      "lampe",
+      "piles",
+      "bandage",
+      "conserve"
+    ],
+    "flags": []
+  },
+  "requires": {
+    "items": [
+      "detecteur_ours",
+      "couteau",
+      "makarov"
+    ],
+    "flags": []
+  },
+  "image": "c01-5",
+  "paragraphs": {
+    "c01-1": {
+      "text": "Vous vous réveillez contre un mur de planches, le feu encore chaud à vos pieds. Vous ne savez pas comment vous êtes arrivé là, ni d'où. Un détecteur pend à votre cou, un pistolet pèse dans la poche. Autour du feu, des types de vingt ans se passent une guitare. Un homme en veste kaki, plus vieux, vous regarde depuis un moment. Il dit : tu es au Cordon. On m'appelle le Loup. J'explique une fois.",
+      "choices": [
+        {
+          "text": "Écouter ce que le Loup a à dire",
+          "to": "c01-23"
+        },
+        {
+          "text": "Se lever et faire le tour du village",
+          "to": "c01-5"
+        }
+      ]
+    },
+    "c01-23": {
+      "text": "Le Loup s'accroupit, ramasse un boulon dans la cendre et le pose dans votre main. Un boulon avant chaque pas. Le détecteur avant chaque boulon. Si le boulon ne retombe pas, tu ne passes pas. Il pointe le sud : un champ, des pylônes, l'air qui tremble entre eux. Il y a des artefacts là-dedans, et des types qui y sont restés. Il attend que vous ayez compris. Il ne répétera pas.",
+      "choices": [
+        {
+          "text": "Demander le chemin du tunnel",
+          "to": "c01-9"
+        },
+        {
+          "text": "Demander ce qu'il y a au nord",
+          "to": "c01-31"
+        },
+        {
+          "text": "Le remercier et aller sur la place",
+          "to": "c01-5"
+        }
+      ]
+    },
+    "c01-9": {
+      "text": "À l'ouest, dit le Loup, le remblai de la voie ferrée. Un tunnel passe dessous, vers Agroprom. Les militaires ne le gardent pas, ils ont peur de ce qu'il y a dedans. Une « Électro » s'est installée au milieu, elle se charge et se décharge comme une respiration. Tu comptes, tu lances, tu passes. Il essuie ses mains sur sa veste kaki. C'est tout ce que je sais.",
+      "choices": [
+        {
+          "text": "Aller sur la place du village",
+          "to": "c01-5"
+        }
+      ]
+    },
+    "c01-31": {
+      "text": "Au nord, le pont de chemin de fer. Les militaires sont dessus, avec une mitrailleuse et de l'ennui. Ils tirent sur ce qui bouge, sauf quand ça paye. Derrière, la route monte vers le Dépotoir, des collines de ferraille irradiée où les bandits tiennent un hangar. Le Loup crache dans le feu. Tout le monde part vers le nord. Peu reviennent dire pourquoi.",
+      "choices": [
+        {
+          "text": "Aller sur la place du village",
+          "to": "c01-5"
+        }
+      ]
+    },
+    "c01-5": {
+      "text": "La place du village : une dizaine de maisons de bois aux volets clos, un feu qui ne s'éteint jamais, une porte de fer dans la colline, fermée par une grille. Au sud, les orties montent jusqu'aux pylônes. Au nord, la route et, loin, l'arche du pont. À l'ouest, le remblai de la voie ferrée coupe l'horizon. Un bus rouillé est couché dans un fossé, à mi-chemin. Il ne vient aucun bruit de nulle part.",
+      "image": {
+        "src": "images/c01-5.webp",
+        "alt": "La place du village des débutants au Cordon, le feu, la porte du bunker dans la colline",
+        "prompt": "Un hameau de maisons de bois aux volets clos autour d'un feu de camp, une porte de fer grillagée enfoncée dans une colline, des pylônes électriques au-dessus d'un champ d'orties, un bus rouillé couché dans un fossé au loin, sous un ciel bas."
+      },
+      "choices": [
+        {
+          "text": "Descendre au bunker de Sidorovitch",
+          "to": "c01-7"
+        },
+        {
+          "text": "S'asseoir au feu avec les jeunes",
+          "to": "c01-14"
+        },
+        {
+          "text": "Entrer dans le champ des pylônes",
+          "to": "c01-19"
+        },
+        {
+          "text": "Marcher vers le bus rouillé",
+          "to": "c01-16"
+        },
+        {
+          "text": "Prendre la route du nord vers le pont",
+          "to": "c01-21"
+        },
+        {
+          "text": "Suivre la voie ferrée vers le tunnel",
+          "to": "c01-15"
+        }
+      ]
+    },
+    "c01-14": {
+      "text": "Le feu brûle sur un lit de boulons noircis. Trois jeunes en vestes trop grandes se passent une guitare et une bouteille. Ils ne demandent pas votre nom. L'un d'eux dit que le Dépotoir a pris deux types la semaine dernière, et qu'ils avaient un détecteur comme le vôtre. Personne ne rit. La fumée sent la résine et le caoutchouc brûlé.",
+      "choices": [
+        {
+          "text": "Demander ce qu'ils savent de l'Exauceur",
+          "to": "c01-11"
+        },
+        {
+          "text": "Boire la vodka avec eux",
+          "to": "c01-37",
+          "if": {
+            "type": "item",
+            "item": "vodka"
+          },
+          "effects": [
+            {
+              "type": "item",
+              "action": "remove",
+              "item": "vodka"
+            },
+            {
+              "type": "stat",
+              "stat": "radiation",
+              "delta": -2
+            },
+            {
+              "type": "stat",
+              "stat": "chance",
+              "delta": -1
+            }
+          ]
+        },
+        {
+          "text": "Ouvrir une conserve",
+          "to": "c01-3",
+          "if": {
+            "type": "item",
+            "item": "conserve"
+          },
+          "effects": [
+            {
+              "type": "item",
+              "action": "remove",
+              "item": "conserve"
+            },
+            {
+              "type": "stat",
+              "stat": "endurance",
+              "delta": 2
+            }
+          ]
+        },
+        {
+          "text": "Poser un bandage",
+          "to": "c01-26",
+          "if": {
+            "type": "item",
+            "item": "bandage"
+          },
+          "effects": [
+            {
+              "type": "item",
+              "action": "remove",
+              "item": "bandage"
+            },
+            {
+              "type": "stat",
+              "stat": "endurance",
+              "delta": 3
+            }
+          ]
+        },
+        {
+          "text": "Boire l'anti-rad",
+          "to": "c01-18",
+          "if": {
+            "type": "item",
+            "item": "antirad"
+          },
+          "effects": [
+            {
+              "type": "item",
+              "action": "remove",
+              "item": "antirad"
+            },
+            {
+              "type": "stat",
+              "stat": "radiation",
+              "delta": -5
+            }
+          ]
+        },
+        {
+          "text": "Changer les piles du détecteur",
+          "to": "c01-40",
+          "if": {
+            "type": "item",
+            "item": "piles"
+          },
+          "effects": [
+            {
+              "type": "item",
+              "action": "remove",
+              "item": "piles"
+            },
+            {
+              "type": "setStat",
+              "stat": "batterie",
+              "value": 60
+            }
+          ]
+        },
+        {
+          "text": "Retourner sur la place",
+          "to": "c01-5"
+        }
+      ]
+    },
+    "c01-11": {
+      "text": "La guitare s'arrête. L'Exauceur, dit le plus vieux, qui a vingt-deux ans. Une pierre au centre, sous la Centrale. Tu lui demandes, elle donne. Un type est revenu, une fois. Il s'est assis ici, à ta place. Il a souri pendant trois jours sans dire un mot, puis il est reparti vers le nord. La guitare reprend. Personne ne sait qui a allumé ce feu.",
+      "choices": [
+        {
+          "text": "Rester au feu",
+          "to": "c01-14"
+        },
+        {
+          "text": "Retourner sur la place",
+          "to": "c01-5"
+        }
+      ]
+    },
+    "c01-37": {
+      "text": "La vodka brûle et ne réchauffe rien. La bouteille passe de main en main et revient vide. Le compteur du détecteur redescend d'un cran, votre regard aussi. Vous perdez 2 rads. Vous perdez 1 point de Chance. Le gamin à la guitare joue faux et personne ne corrige.",
+      "choices": [
+        {
+          "text": "Rester au feu",
+          "to": "c01-14"
+        }
+      ]
+    },
+    "c01-3": {
+      "text": "Vous ouvrez la conserve et mangez froid, à même la boîte. Du poisson gris dans de l'huile. Ça tient au corps. Vous regagnez 2 points d'Endurance. Le gamin regarde la boîte vide, l'huile qui brille au fond. Vous la lui laissez. Il la lèche sans vous regarder.",
+      "choices": [
+        {
+          "text": "Rester au feu",
+          "to": "c01-14"
+        }
+      ]
+    },
+    "c01-26": {
+      "text": "Vous déroulez le bandage et serrez là où ça saigne. Le tissu sent le camphre et le vieux. Vous regagnez 3 points d'Endurance. Un des jeunes détourne les yeux. Il n'a pas encore vu de sang. Ça viendra, et personne ici ne lui tiendra le bras.",
+      "choices": [
+        {
+          "text": "Rester au feu",
+          "to": "c01-14"
+        }
+      ]
+    },
+    "c01-18": {
+      "text": "La seringue d'anti-rad pique au creux du bras, froide, puis chaude. Le goût de fer dans la bouche s'efface. Vous perdez 5 rads. Le détecteur crépite moins. Vous jetez la seringue au feu. Elle siffle, et les jeunes la regardent fondre comme on regarde quelqu'un de riche.",
+      "choices": [
+        {
+          "text": "Rester au feu",
+          "to": "c01-14"
+        }
+      ]
+    },
+    "c01-40": {
+      "text": "Vous ouvrez le dos du détecteur avec l'ongle et glissez les piles neuves. L'aiguille frémit, le témoin reprend son vert. Il crépite une fois, pour dire qu'il est là. Autour du feu, personne n'en a d'avance. Ils regardent vos mains refermer le boîtier, et la guitare reprend un peu plus bas.",
+      "choices": [
+        {
+          "text": "Rester au feu",
+          "to": "c01-14"
+        }
+      ]
+    },
+    "c01-7": {
+      "text": "Un escalier de béton descend sous la colline, puis une grille, puis une pièce encombrée de caisses sous une lampe nue. Sidorovitch est assis derrière un comptoir, gros, la chemise tachée, un carnet ouvert. Il ne lève pas les yeux. Trois cents la veste. Cent cinquante l'anti-rad. Il achète les artefacts, les armes, tout ce qui se revend. Il ne fait pas de cadeaux, et ne fait pas semblant d'en faire.",
+      "shop": {
+        "currency": "roubles",
+        "sell": [
+          {
+            "item": "gilet_cuir",
+            "price": 300
+          },
+          {
+            "item": "antirad",
+            "price": 150
+          },
+          {
+            "item": "lampe",
+            "price": 100
+          },
+          {
+            "item": "piles",
+            "price": 80
+          },
+          {
+            "item": "bandage",
+            "price": 60
+          },
+          {
+            "item": "vodka",
+            "price": 50
+          },
+          {
+            "item": "conserve",
+            "price": 40
+          }
+        ],
+        "buy": [
+          {
+            "item": "artefact_meduse",
+            "price": 400
+          },
+          {
+            "item": "makarov",
+            "price": 100
+          },
+          {
+            "item": "couteau",
+            "price": 30
+          }
+        ]
+      },
+      "choices": [
+        {
+          "text": "Lui demander ce qu'il sait du nord",
+          "to": "c01-29"
+        },
+        {
+          "text": "Remonter sur la place",
+          "to": "c01-5"
+        }
+      ]
+    },
+    "c01-29": {
+      "text": "Sidorovitch tourne une page. Le nord, dit-il. Le pont, c'est cent roubles pour les soldats, ou une balle, ils ne sont pas regardants. Le Dépotoir, c'est les bandits, ils prennent ce qu'ils veulent et parfois le reste. Agroprom, c'est le Devoir, ils ne prennent rien, c'est pire. Il relève enfin les yeux, une seconde. Ramène-moi des artefacts. Vivant, de préférence, ça se paye mieux.",
+      "choices": [
+        {
+          "text": "Regarder ce qu'il vend",
+          "to": "c01-7"
+        },
+        {
+          "text": "Remonter sur la place",
+          "to": "c01-5"
+        }
+      ]
+    },
+    "c01-19": {
+      "text": "Les orties montent à la taille, puis à la poitrine. Entre les pylônes, l'air tremble comme au-dessus d'un capot chaud et grésille par instants, bleu, puis rien : une « Électro », puis une autre. Le compteur grimpe. Vous prenez 2 rads. Un boulon rouillé est planté dans la boue, et plus loin une botte, sans personne dedans. Le détecteur crépite une fois, vers la gauche.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "radiation",
+          "delta": 2
+        }
+      ],
+      "choices": [
+        {
+          "text": "Suivre le crépitement du Détecteur Ours",
+          "to": "c01-34",
+          "if": {
+            "type": "item",
+            "item": "detecteur_ours"
+          }
+        },
+        {
+          "text": "Avancer un boulon à la fois",
+          "to": "c01-12"
+        },
+        {
+          "text": "Ressortir du champ",
+          "to": "c01-5"
+        }
+      ]
+    },
+    "c01-34": {
+      "text": "Le détecteur crépite plus vite, puis par saccades, et vous le suivez entre deux anomalies qui se chargent à votre passage. L'odeur d'ozone pique les yeux. L'aiguille s'affole vers un creux où quelque chose luit, bleu pâle, au ras des orties. Il reste trois mètres d'air qui tremble, et le détecteur ne dit pas où poser le pied. Tentez votre Chance.",
+      "test": {
+        "type": "luck",
+        "success": "c01-27",
+        "failure": "c01-4"
+      }
+    },
+    "c01-12": {
+      "text": "Vous lancez un boulon. Il retombe. Un pas. Vous lancez le suivant. Il monte, hésite, et claque dans un éclair bleu qui vous laisse l'ozone au fond de la gorge. Vous contournez. Entre deux pylônes, une lueur bleu pâle au ras des orties. Pour l'atteindre, il faut placer le dernier boulon juste, au bord du tremblement. Testez votre Habileté.",
+      "test": {
+        "type": "stat",
+        "stat": "habilete",
+        "dice": "2d6",
+        "success": "c01-27",
+        "failure": "c01-4"
+      }
+    },
+    "c01-27": {
+      "text": "Vous passez. Dans le creux, l'artefact luit sans chaleur : une Méduse grosse comme un poing, translucide, qui pulse lentement, comme si elle respirait. Vous la ramassez dans un chiffon. Elle pèse moins qu'elle ne devrait. Derrière vous, l'anomalie se recharge avec un bruit de verre qu'on frotte.",
+      "effects": [
+        {
+          "type": "item",
+          "action": "add",
+          "item": "artefact_meduse"
+        }
+      ],
+      "choices": [
+        {
+          "text": "Revenir au village",
+          "to": "c01-5"
+        },
+        {
+          "text": "Pousser plus loin dans le champ",
+          "to": "c01-38"
+        }
+      ]
+    },
+    "c01-4": {
+      "text": "L'air se referme sur vous. La décharge vous traverse du talon à la nuque, vous jette dans les orties, et pendant un moment vous ne sentez plus vos mains. Vous perdez 3 points d'Endurance. Vous rampez hors du tremblement. Vos cheveux sentent le brûlé. L'anomalie se recharge, patiente. Dix mètres plus loin, la lueur bleue est toujours là.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -3
+        }
+      ],
+      "choices": [
+        {
+          "text": "Suivre le détecteur une nouvelle fois",
+          "to": "c01-34",
+          "if": {
+            "type": "item",
+            "item": "detecteur_ours"
+          }
+        },
+        {
+          "text": "Retenter le passage au boulon",
+          "to": "c01-12"
+        },
+        {
+          "text": "Ressortir du champ",
+          "to": "c01-5"
+        }
+      ]
+    },
+    "c01-38": {
+      "text": "Plus loin, les orties sont couchées en cercle, comme après un orage. Au centre, un stalker est assis contre un pylône, noir de la tête aux pieds, la bouche ouverte. Le compteur grimpe. Vous prenez 2 rads. Dans sa poche, une bouteille de vodka intacte, l'étiquette pâlie. Vous la prenez. Il n'en a plus besoin, et il n'y a rien d'autre sur lui.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "radiation",
+          "delta": 2
+        },
+        {
+          "type": "item",
+          "action": "add",
+          "item": "vodka"
+        }
+      ],
+      "choices": [
+        {
+          "text": "Revenir au village",
+          "to": "c01-5"
+        }
+      ]
+    },
+    "c01-16": {
+      "text": "Le bus est couché dans le fossé, les vitres soufflées, la peinture rouge partie par plaques. Des chiens dorment dans son ombre. Quatre, cinq. Quand vous approchez, les têtes se lèvent ensemble, et vous voyez qu'ils n'ont pas d'yeux, seulement des croûtes là où ils étaient. Ils vous sentent. Le plus gros se lève sans un bruit.",
+      "choices": [
+        {
+          "text": "Tirer sur le chien de tête",
+          "to": "c01-32",
+          "if": {
+            "type": "item",
+            "item": "makarov"
+          }
+        },
+        {
+          "text": "Faire face aux chiens",
+          "to": "c01-24"
+        },
+        {
+          "text": "Reculer vers le village sans courir",
+          "to": "c01-5"
+        }
+      ]
+    },
+    "c01-32": {
+      "text": "Vous sortez le Makarov. Le chien de tête avance de biais, la gueule basse, les autres derrière lui comme une seule bête. Vous avez le temps d'un tir, peut-être deux. La crosse est poisseuse dans votre main. Testez votre Habileté.",
+      "test": {
+        "type": "stat",
+        "stat": "habilete",
+        "dice": "2d6",
+        "success": "c01-8",
+        "failure": "c01-24"
+      }
+    },
+    "c01-8": {
+      "text": "La balle prend le chien dans le crâne et il se couche en travers des autres. Ils s'arrêtent. Ils tournent leurs têtes sans yeux vers le bruit, vers l'odeur du sang de leur chef, et ils reculent dans les orties, un à un, sans se presser. Le bus est à vous. L'écho du coup de feu met longtemps à revenir.",
+      "choices": [
+        {
+          "text": "Fouiller le bus",
+          "to": "c01-13"
+        },
+        {
+          "text": "Retourner sur la place",
+          "to": "c01-5"
+        }
+      ]
+    },
+    "c01-24": {
+      "text": "Ils arrivent ensemble, bas, sans aboyer. Un chien aveugle ne mord pas, il arrache. Vous sentez le premier avant de le voir, l'haleine de charogne, les dents contre la cuisse. Il faut tenir debout. Celui qui tombe ne se relève pas.",
+      "combat": {
+        "name": "Les chiens aveugles",
+        "habilete": 5,
+        "endurance": 6,
+        "damage": 2,
+        "win": "c01-36",
+        "flee": {
+          "to": "c01-2"
+        }
+      }
+    },
+    "c01-36": {
+      "text": "Le dernier chien gémit dans les orties, puis se tait. Vos mains tremblent, et l'odeur reste, chien mouillé et pourriture. Les corps sont maigres sous le poil, les côtes saillantes. Ils dormaient à l'ombre du bus pour une raison. Vous la voyez par la vitre arrière : une botte, un sac, quelqu'un qui n'a pas eu votre chance.",
+      "choices": [
+        {
+          "text": "Fouiller le bus",
+          "to": "c01-13"
+        },
+        {
+          "text": "Retourner sur la place",
+          "to": "c01-5"
+        }
+      ]
+    },
+    "c01-13": {
+      "text": "À l'intérieur, les sièges sont éventrés, la mousse mangée. Au fond, un stalker sans visage est assis à sa place, comme un passager. Son sac a été ouvert par les chiens, pas vidé. Vous y trouvez un bandage encore roulé dans son plastique et une conserve cabossée. Vous les prenez. Son PDA est mort. Vous le lui laissez.",
+      "effects": [
+        {
+          "type": "item",
+          "action": "add",
+          "item": "bandage"
+        },
+        {
+          "type": "item",
+          "action": "add",
+          "item": "conserve"
+        }
+      ],
+      "choices": [
+        {
+          "text": "Retourner sur la place",
+          "to": "c01-5"
+        }
+      ]
+    },
+    "c01-2": {
+      "text": "Vous courez. Les chiens suivent, puis s'arrêtent net au bord de la route, comme à une limite, et restent là à tourner leurs têtes sans yeux vers vous. L'odeur du feu, peut-être. Vous arrivez au village le souffle court, une jambe mouillée de sang. Personne ne demande.",
+      "choices": [
+        {
+          "text": "Reprendre votre souffle sur la place",
+          "to": "c01-5"
+        }
+      ]
+    },
+    "c01-21": {
+      "text": "La route monte vers le pont de chemin de fer, une arche de béton noircie, des sacs de sable sur le tablier, une mitrailleuse qui vous suit déjà. Un haut-parleur grésille : halte. En contrebas, un fossé d'eau brune passe sous l'arche, et le compteur s'y réveille avant même que vous ayez approché. Sur le talus, une croix faite de deux planches.",
+      "choices": [
+        {
+          "text": "Avancer à découvert, les mains levées",
+          "to": "c01-10"
+        },
+        {
+          "text": "Descendre dans le fossé sous le pont",
+          "to": "c01-28"
+        },
+        {
+          "text": "Revenir au village",
+          "to": "c01-5"
+        }
+      ]
+    },
+    "c01-10": {
+      "text": "Vous montez la route au pas, les mains ouvertes. Le haut-parleur répète halte, et derrière, une voix sans haut-parleur rit. Le canon de la mitrailleuse bouge d'un centimètre. Ils s'ennuient depuis des mois. Tout dépend de celui qui a le doigt sur la détente, et de ce qu'il a bu. Tentez votre Chance.",
+      "test": {
+        "type": "luck",
+        "success": "c01-35",
+        "failure": "c01-17"
+      }
+    },
+    "c01-35": {
+      "text": "Ils ne tirent pas. Un sergent descend du tablier, le casque en arrière, un cure-dent, et vous arrête à dix mètres avec la main. Cent roubles, le passage. Derrière lui, la route continue vers le nord et des collines grises. Il ne regarde pas votre sac, il regarde vos poches. Il a tout le temps.",
+      "choices": [
+        {
+          "text": "Payer le passage (100 roubles)",
+          "to": "c01-6",
+          "if": {
+            "type": "stat",
+            "stat": "roubles",
+            "op": ">=",
+            "value": 100
+          },
+          "effects": [
+            {
+              "type": "stat",
+              "stat": "roubles",
+              "delta": -100
+            }
+          ]
+        },
+        {
+          "text": "Refuser et redescendre",
+          "to": "c01-39"
+        }
+      ]
+    },
+    "c01-6": {
+      "text": "Vous donnez 100 roubles. Le sergent compte deux fois, sans se presser, et fait signe au tablier. Personne ne lève de barrière, il n'y en a pas. Vous passez sous l'arche entre deux regards. Il dit : si tu redescends, c'est le même prix. Derrière vous, le haut-parleur se remet à grésiller, pour le suivant.",
+      "choices": [
+        {
+          "text": "Continuer vers le nord",
+          "to": "c01-22"
+        }
+      ]
+    },
+    "c01-39": {
+      "text": "Le sergent hausse les épaules. Il en voit dix par jour. Il crache son cure-dent et remonte. Le haut-parleur dit encore halte, pour la forme, pendant que vous redescendez à reculons, les mains toujours ouvertes. Au bout de la route, le village n'a pas bougé. Le fossé sous l'arche vous regarde passer, brun, tranquille.",
+      "choices": [
+        {
+          "text": "Descendre dans le fossé sous le pont",
+          "to": "c01-28"
+        },
+        {
+          "text": "Revenir au village",
+          "to": "c01-5"
+        }
+      ]
+    },
+    "c01-17": {
+      "text": "La balle vous prend l'épaule et vous couche sur la route. Pas de deuxième tir. Vous entendez rire là-haut, puis le haut-parleur : halte, pour la forme. Vous perdez 3 points d'Endurance. Vous rampez jusqu'au talus, la manche lourde et chaude. La croix de planches est tout près. Quelqu'un a gravé une date dessus, pas de nom.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -3
+        }
+      ],
+      "choices": [
+        {
+          "text": "Ramper jusqu'au fossé sous le pont",
+          "to": "c01-28"
+        },
+        {
+          "text": "Redescendre vers le village",
+          "to": "c01-5"
+        }
+      ]
+    },
+    "c01-28": {
+      "text": "L'eau brune monte aux genoux et sous l'arche il fait nuit en plein jour. Ça sent la vase et le métal. Le compteur grimpe. Vous prenez 3 rads. Un stalker est couché dans l'eau, le visage tourné vers le béton. Dans la poche de sa veste, une seringue d'anti-rad encore scellée. Il ne l'a pas utilisée à temps. Vous la prenez.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "radiation",
+          "delta": 3
+        },
+        {
+          "type": "item",
+          "action": "add",
+          "item": "antirad"
+        }
+      ],
+      "choices": [
+        {
+          "text": "Suivre le fossé jusqu'à la route du nord",
+          "to": "c01-22"
+        },
+        {
+          "text": "Remonter vers le village",
+          "to": "c01-5"
+        }
+      ]
+    },
+    "c01-22": {
+      "text": "Passé le pont, la route s'élargit et se vide. Des pylônes couchés, un panneau criblé que personne ne lit plus. Devant, les collines grises prennent forme : ce n'est pas de la terre, c'est de la ferraille, des carcasses empilées jusqu'au ciel bas. L'air sent déjà le fer chaud. Vous ne vous retournez pas. Il n'y a rien derrière qui vous attende.",
+      "choices": [
+        {
+          "text": "Prendre la route du nord vers le Dépotoir",
+          "to": "c02-1"
+        }
+      ]
+    },
+    "c01-15": {
+      "text": "Le remblai de la voie ferrée court vers l'ouest, haut comme une maison, et la voie dessus est mangée d'herbe. Un tunnel passe dessous, bouche noire, l'eau goutte de la voûte. Dix mètres à l'intérieur, l'air tremble et crépite d'un bleu froid, puis s'éteint, puis reprend. Une « Électro », qui respire. Une carcasse de chien est collée au mur, racornie.",
+      "choices": [
+        {
+          "text": "Compter et passer entre deux décharges",
+          "to": "c01-33"
+        },
+        {
+          "text": "Longer le mur en rampant dans l'eau",
+          "to": "c01-30"
+        },
+        {
+          "text": "Revenir au village",
+          "to": "c01-5"
+        }
+      ]
+    },
+    "c01-33": {
+      "text": "Vous comptez. Quatre secondes de bleu, six de noir. Vous lancez un boulon : il traverse pendant le noir et tinte de l'autre côté. Vous respirez une fois. Il faut courir six secondes dans le noir sans glisser sur ce qui recouvre le sol. L'anomalie se charge. Tentez votre Chance.",
+      "test": {
+        "type": "luck",
+        "success": "c01-25",
+        "failure": "c01-20"
+      }
+    },
+    "c01-20": {
+      "text": "Un pied glisse. Le bleu vous rattrape à mi-course et vous mord la jambe, un fouet de feu froid qui vous jette contre le mur. Vous perdez 3 points d'Endurance. Vous rampez le reste dans le noir, les dents serrées, jusqu'à la lumière grise de l'autre bouche. Derrière vous, l'anomalie reprend son souffle comme si rien ne s'était passé.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -3
+        }
+      ],
+      "choices": [
+        {
+          "text": "Sortir du tunnel vers Agroprom",
+          "to": "c01-25"
+        }
+      ]
+    },
+    "c01-30": {
+      "text": "Vous vous couchez dans l'eau et avancez le long du mur, là où le bleu ne descend pas. L'eau est froide, épaisse, et le compteur, collé contre la pierre, grimpe sans relâche. Vous prenez 2 rads. Au-dessus de vous, l'anomalie se décharge, et la lumière vous montre vos mains dans l'eau, blanches, comme celles d'un autre. Puis le noir, puis la sortie.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "radiation",
+          "delta": 2
+        }
+      ],
+      "choices": [
+        {
+          "text": "Sortir du tunnel vers Agroprom",
+          "to": "c01-25"
+        }
+      ]
+    },
+    "c01-25": {
+      "text": "De l'autre côté, la voie ferrée continue en tranchée entre deux talus d'herbe haute. Le ciel est le même, bas, sans oiseau. Loin devant, des silos et une cheminée de brique, et un bruit de tôle qui bat au vent. Vous vous retournez une fois : la bouche du tunnel respire encore son bleu, lentement. Le Cordon est derrière.",
+      "choices": [
+        {
+          "text": "Suivre la voie ferrée vers Agroprom",
+          "to": "c03-1"
+        }
+      ]
+    },
+    "c01-mort": {
+      "text": "La Zone garde ce qu'elle prend. Vous tombez là où vous êtes, et personne ne vient. Le détecteur crépite encore un moment contre votre poitrine, puis se tait. Le ciel reste bas. Quelqu'un trouvera votre PDA, et ira au nord à votre place."
+    },
+    "c01-rads": {
+      "text": "Vous ne sentez plus vos jambes. Le compteur ne s'arrête plus. Vous vous asseyez contre ce qui se trouve là, un pylône, un mur, une carcasse, et vous regardez le ciel bas sans rien lui demander. La bouche a un goût de fer. Le détecteur continue seul, longtemps, dans un monde où plus personne ne lance de boulon."
+    }
+  }
+}

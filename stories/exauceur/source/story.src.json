@@ -1,0 +1,296 @@
+{
+  "id": "exauceur",
+  "title": "L'Exauceur de vœux",
+  "summary": "La Zone a repris Tchernobyl. Au centre, derrière le Brûleur de cerveaux et la Centrale, une pierre exauce les vœux, dit-on. Vous êtes un stalker sans nom. Vous allez au centre.",
+  "art": {
+    "style": "Illustration de livre-jeu : gravure à l'encre en noir et blanc, hachures serrées, forts contrastes, cadrage pleine page. Ruines soviétiques, béton fissuré, ferraille, végétation morte, ciels bas, anomalies à peine visibles comme des déformations de l'air. Aucun texte, aucune lettre, aucun cadre décoratif. Le héros n'est jamais montré de face : de dos, de loin ou en silhouette."
+  },
+  "start": "c01-1",
+  "death": "c01-mort",
+  "hero": {
+    "stats": {
+      "habilete": {
+        "label": "Habileté",
+        "description": "Tirer, lancer un boulon juste, forcer une porte.",
+        "base": 7,
+        "max": 12
+      },
+      "endurance": {
+        "label": "Endurance",
+        "description": "Ce qu'il vous reste de corps. À zéro, la Zone vous garde.",
+        "base": 20,
+        "max": 32
+      },
+      "chance": {
+        "label": "Chance",
+        "description": "Ce que la Zone consent à vous laisser. Elle consent de moins en moins.",
+        "base": 7,
+        "max": 11
+      },
+      "radiation": {
+        "label": "Radiation",
+        "description": "Ce que vous avez avalé de la Zone. Ça ne redescend qu'avec de l'anti-rad ou de la vodka. À 30, le corps cède.",
+        "value": 0,
+        "capped": false,
+        "unit": "rad"
+      },
+      "roubles": {
+        "label": "Roubles",
+        "description": "Ce que vous pouvez payer.",
+        "value": 200,
+        "capped": false,
+        "unit": "rouble"
+      },
+      "batterie": {
+        "label": "Batterie",
+        "description": "La pile de votre détecteur. Elle baisse à chaque décision. À zéro, il se tait.",
+        "value": 60,
+        "tick": -1
+      }
+    },
+    "points": 8,
+    "inventory": [
+      "couteau",
+      "makarov",
+      "detecteur_ours"
+    ],
+    "flags": {}
+  },
+  "items": {
+    "couteau": {
+      "name": "Couteau"
+    },
+    "makarov": {
+      "name": "Pistolet Makarov"
+    },
+    "detecteur_ours": {
+      "name": "Détecteur Ours"
+    },
+    "ak74": {
+      "name": "AK-74"
+    },
+    "vintorez": {
+      "name": "Vintorez"
+    },
+    "gilet_cuir": {
+      "name": "Veste de cuir"
+    },
+    "seva": {
+      "name": "Combinaison SEVA"
+    },
+    "casque_psi": {
+      "name": "Casque psi"
+    },
+    "antirad": {
+      "name": "Anti-rad"
+    },
+    "vodka": {
+      "name": "Vodka"
+    },
+    "bandage": {
+      "name": "Bandage"
+    },
+    "trousse": {
+      "name": "Trousse de soins"
+    },
+    "conserve": {
+      "name": "Conserve"
+    },
+    "piles": {
+      "name": "Piles"
+    },
+    "lampe": {
+      "name": "Lampe torche"
+    },
+    "masque_gaz": {
+      "name": "Masque à gaz"
+    },
+    "corde": {
+      "name": "Corde"
+    },
+    "grenade": {
+      "name": "Grenade F1"
+    },
+    "cle_x18": {
+      "name": "Clef du X-18"
+    },
+    "documents_x18": {
+      "name": "Documents du X-18"
+    },
+    "documents_x16": {
+      "name": "Documents du X-16"
+    },
+    "flash_strelok": {
+      "name": "Clé USB de Strelok"
+    },
+    "pda_fantome": {
+      "name": "PDA de Fantôme"
+    },
+    "decodeur": {
+      "name": "Décodeur"
+    },
+    "carte_guide": {
+      "name": "Carte du Guide"
+    },
+    "carte_militaire": {
+      "name": "Carte des champs de mines"
+    },
+    "passe_bar": {
+      "name": "Laissez-passer du Devoir"
+    },
+    "tenue_monolithe": {
+      "name": "Tenue du Monolithe"
+    },
+    "artefact_meduse": {
+      "name": "Méduse"
+    },
+    "artefact_boule": {
+      "name": "Boule de feu"
+    },
+    "artefact_ame": {
+      "name": "Âme"
+    },
+    "artefact_coeur": {
+      "name": "Cœur de l'Oasis"
+    }
+  },
+  "modifiers": [
+    {
+      "label": "AK-74",
+      "if": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "item": "ak74"
+          },
+          {
+            "type": "item",
+            "item": "vintorez",
+            "present": false
+          }
+        ]
+      },
+      "combat": {
+        "attack": 1
+      }
+    },
+    {
+      "label": "Vintorez",
+      "if": {
+        "type": "item",
+        "item": "vintorez"
+      },
+      "combat": {
+        "attack": 2
+      }
+    },
+    {
+      "label": "Veste de cuir",
+      "if": {
+        "type": "item",
+        "item": "gilet_cuir"
+      },
+      "combat": {
+        "damageTaken": -1
+      }
+    },
+    {
+      "label": "Détecteur Ours",
+      "if": {
+        "type": "all",
+        "conditions": [
+          {
+            "type": "item",
+            "item": "detecteur_ours"
+          },
+          {
+            "type": "stat",
+            "stat": "batterie",
+            "op": ">",
+            "value": 0
+          }
+        ]
+      },
+      "test": {
+        "stat": "chance",
+        "bonus": 1
+      }
+    },
+    {
+      "label": "Détecteur muet",
+      "if": {
+        "type": "stat",
+        "stat": "batterie",
+        "op": "=",
+        "value": 0
+      },
+      "test": {
+        "stat": "chance",
+        "bonus": -1
+      }
+    },
+    {
+      "label": "Cœur de l'Oasis",
+      "if": {
+        "type": "item",
+        "item": "artefact_coeur"
+      },
+      "test": {
+        "stat": "chance",
+        "bonus": 1
+      }
+    },
+    {
+      "label": "Irradié",
+      "if": {
+        "type": "stat",
+        "stat": "radiation",
+        "op": ">=",
+        "value": 18
+      },
+      "combat": {
+        "attack": -1
+      },
+      "test": {
+        "stat": "habilete",
+        "bonus": -1
+      }
+    },
+    {
+      "label": "Blessé",
+      "if": {
+        "type": "stat",
+        "stat": "endurance",
+        "op": "<=",
+        "value": 5
+      },
+      "combat": {
+        "attack": -1
+      }
+    },
+    {
+      "label": "Psi",
+      "if": {
+        "type": "flag",
+        "flag": "psi_touche"
+      },
+      "test": {
+        "stat": "chance",
+        "bonus": -1
+      }
+    }
+  ],
+  "triggers": [
+    {
+      "label": "Le corps cède",
+      "if": {
+        "type": "stat",
+        "stat": "radiation",
+        "op": ">=",
+        "value": 30
+      },
+      "to": "c01-rads"
+    }
+  ]
+}

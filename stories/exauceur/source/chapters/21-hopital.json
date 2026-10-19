@@ -1,0 +1,597 @@
+{
+  "title": "L'hôpital",
+  "summary": "Le héros est descendu dans les sous-sols de l'hôpital : morgue, laboratoire militaire, Sangsues. Il a pu prendre une Grenade F1 dans l'armoire et une Trousse de soins. Il remonte sur la place (c18-3).",
+  "brief": "Donjon noir. Sans Lampe torche, tests et points d'Endurance. Le laboratoire militaire (Masque à gaz pour la salle contaminée, sinon 3 rads), l'armoire aux Grenades F1 (cadenas : test d'Habileté), la morgue (Trousse de soins), des Sangsues invisibles (deux combats, fuite possible). Carrefour : le couloir central du sous-sol. Les consommables listés dans requires peuvent être consommés par un choix (effet remove + effet stat), le paragraphe d'arrivée le dit. Taille : 28 à 34 paragraphes.",
+  "entries": {
+    "c21-1": "Dans le hall de l'hôpital, l'escalier du sous-sol"
+  },
+  "exits": {
+    "c18-3": "Remonter sur la place"
+  },
+  "provides": {
+    "items": [
+      "grenade",
+      "trousse"
+    ],
+    "flags": []
+  },
+  "requires": {
+    "items": [
+      "lampe",
+      "masque_gaz",
+      "grenade",
+      "trousse",
+      "bandage"
+    ],
+    "flags": []
+  },
+  "image": "c21-4",
+  "paragraphs": {
+    "c21-1": {
+      "text": "Le hall de l'hôpital. Des brancards renversés, un comptoir d'accueil sous la poussière, un tableau des services dont les lettres sont tombées. Au fond, derrière une porte battante, un escalier descend vers le sous-sol. Il fait noir dès la troisième marche. Un courant d'air monte de là, froid, qui sent le carrelage mouillé et l'éther. Quelque chose goutte, en bas, à intervalles réguliers.",
+      "choices": [
+        {
+          "text": "Descendre avec la lampe torche",
+          "to": "c21-4",
+          "if": {
+            "type": "item",
+            "item": "lampe"
+          }
+        },
+        {
+          "text": "Descendre à tâtons",
+          "to": "c21-14"
+        },
+        {
+          "text": "Ressortir sur la place",
+          "to": "c18-3"
+        }
+      ]
+    },
+    "c21-2": {
+      "text": "La porte d'acier porte la même tôle que le couloir : ZONE CONTAMINÉE, et dessous, à la peinture, un trèfle noir sur fond jaune. Elle n'est pas verrouillée. Quand vous la tirez, un souffle sort, tiède, avec un goût de métal sur la langue. Le détecteur crépite. Une odeur d'ammoniaque et de quelque chose de brûlé. À l'intérieur, pas un bruit.",
+      "choices": [
+        {
+          "text": "Mettre le masque à gaz et entrer",
+          "to": "c21-22",
+          "if": {
+            "type": "item",
+            "item": "masque_gaz"
+          }
+        },
+        {
+          "text": "Entrer en retenant votre souffle",
+          "to": "c21-7"
+        },
+        {
+          "text": "Revenir au couloir central",
+          "to": "c21-4"
+        }
+      ]
+    },
+    "c21-3": {
+      "text": "La Sangsue apparaît en sautant : un corps gris, une bouche qui s'ouvre en quatre, des bras trop longs. Elle disparaît entre deux coups et revient d'ailleurs. Chaque fois qu'elle touche, elle emporte quelque chose de vous. Il n'y a pas de mur où s'adosser : seulement les tables d'acier, la double porte, et le couloir derrière.",
+      "combat": {
+        "name": "Sangsue",
+        "habilete": 6,
+        "endurance": 8,
+        "damage": 2,
+        "win": "c21-26",
+        "flee": {
+          "to": "c21-4"
+        }
+      }
+    },
+    "c21-4": {
+      "text": "Le couloir central du sous-sol. Du carrelage vert jusqu'à hauteur d'épaule, des conduites le long du plafond, deux centimètres d'eau sur le sol. Des portes des deux côtés. À gauche, une double porte à hublot et le mot MORGUE au pochoir. Tout droit, le couloir continue vers des câbles et un panneau militaire. L'escalier est derrière vous. Le goutte-à-goutte vient de partout à la fois.",
+      "image": {
+        "src": "images/c21-4.webp",
+        "alt": "Couloir de sous-sol d'hôpital carrelé et inondé, une double porte à hublot sur la gauche, le noir au fond",
+        "prompt": "Un couloir de sous-sol d'hôpital soviétique abandonné, carrelage vert écaillé jusqu'à mi-hauteur, conduites rouillées au plafond, quelques centimètres d'eau noire au sol qui reflètent la lumière d'une torche, une double porte à hublot sur la gauche, le couloir se perdant dans l'obscurité au fond, vu depuis le bas d'un escalier."
+      },
+      "choices": [
+        {
+          "text": "Pousser la porte de la morgue",
+          "to": "c21-6"
+        },
+        {
+          "text": "Suivre le couloir vers le panneau militaire",
+          "to": "c21-10"
+        },
+        {
+          "text": "Vider la trousse de soins",
+          "to": "c21-23",
+          "if": {
+            "type": "item",
+            "item": "trousse"
+          },
+          "effects": [
+            {
+              "type": "item",
+              "action": "remove",
+              "item": "trousse"
+            },
+            {
+              "type": "stat",
+              "stat": "endurance",
+              "delta": 6
+            }
+          ]
+        },
+        {
+          "text": "Poser un bandage",
+          "to": "c21-11",
+          "if": {
+            "type": "item",
+            "item": "bandage"
+          },
+          "effects": [
+            {
+              "type": "item",
+              "action": "remove",
+              "item": "bandage"
+            },
+            {
+              "type": "stat",
+              "stat": "endurance",
+              "delta": 3
+            }
+          ]
+        },
+        {
+          "text": "Remonter sur la place",
+          "to": "c18-3"
+        }
+      ]
+    },
+    "c21-5": {
+      "text": "La lame ripe. Elle entre dans votre paume, entre le pouce et l'index, et ressort rouge. Vous perdez 2 points d'Endurance. Le cadenas n'a pas bougé. Vous enveloppez la main dans un pan de chemise. Le sang goutte dans l'eau, s'y étale lentement, et vous regardez ça plus longtemps que nécessaire.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -2
+        }
+      ],
+      "choices": [
+        {
+          "text": "Reprendre le cadenas",
+          "to": "c21-25"
+        },
+        {
+          "text": "Laisser l'armoire et fouiller les paillasses",
+          "to": "c21-20"
+        },
+        {
+          "text": "Ressortir vers le couloir central",
+          "to": "c21-4"
+        }
+      ]
+    },
+    "c21-6": {
+      "text": "La double porte s'ouvre sur un froid qui n'a pas de raison d'être là : le courant est coupé depuis vingt ans. Derrière le hublot, le noir est complet. Ça sent le formol et, dessous, autre chose, plus doux. Une roulette grince quelque part à l'intérieur, pas longtemps, comme si on venait de lâcher un chariot.",
+      "choices": [
+        {
+          "text": "Entrer avec la lampe torche",
+          "to": "c21-29",
+          "if": {
+            "type": "item",
+            "item": "lampe"
+          }
+        },
+        {
+          "text": "Entrer à tâtons",
+          "to": "c21-21"
+        },
+        {
+          "text": "Revenir au couloir central",
+          "to": "c21-4"
+        }
+      ]
+    },
+    "c21-7": {
+      "text": "L'air vous brûle la gorge dès le seuil. Le compteur grimpe. Vous prenez 3 rads. Le laboratoire : des paillasses, une rangée de cuves vides aux parois jaunies, des blouses pendues qui ont gardé la forme des bras. Une armoire métallique, cadenassée, avec un pochoir militaire. Vous respirez par la manche. Ça ne change rien, mais vous le faites.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "radiation",
+          "delta": 3
+        }
+      ],
+      "choices": [
+        {
+          "text": "Forcer le cadenas de l'armoire",
+          "to": "c21-25",
+          "if": {
+            "type": "item",
+            "item": "grenade",
+            "present": false
+          }
+        },
+        {
+          "text": "Fouiller les paillasses",
+          "to": "c21-20"
+        },
+        {
+          "text": "Ressortir vers le couloir central",
+          "to": "c21-4"
+        }
+      ]
+    },
+    "c21-8": {
+      "text": "Vous tombez. Le dos, puis la nuque, puis le reste, sur l'angle des marches jusqu'en bas. Vous perdez 3 points d'Endurance. Vous restez un moment allongé dans l'eau froide, à écouter. Le goutte-à-goutte n'a pas changé de rythme. Rien d'autre ne bouge. Vous vous relevez. Devant vous, un couloir, que vous devinez plus que vous ne le voyez.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -3
+        }
+      ],
+      "choices": [
+        {
+          "text": "Suivre le couloir",
+          "to": "c21-4"
+        },
+        {
+          "text": "Remonter sur la place",
+          "to": "c18-3"
+        }
+      ]
+    },
+    "c21-9": {
+      "text": "Dans le tiroir du chariot, sous des ciseaux et une scie à os, une Trousse de soins militaire, fermée, le sceau intact. Vous la glissez dans votre sac. Quelqu'un l'a posée là pour recoudre, ou pour se recoudre, et n'en a pas eu le temps. Le tiroir du dessous contient des étiquettes vierges et un stylo qui écrit encore.",
+      "effects": [
+        {
+          "type": "item",
+          "action": "add",
+          "item": "trousse"
+        }
+      ],
+      "choices": [
+        {
+          "text": "Ouvrir un des tiroirs froids",
+          "to": "c21-18"
+        },
+        {
+          "text": "Revenir au couloir central",
+          "to": "c21-4"
+        }
+      ]
+    },
+    "c21-10": {
+      "text": "Le couloir se rétrécit. Les conduites descendent le long des murs, rejointes par des câbles militaires, neufs, fixés par des colliers. Un panneau de tôle : ZONE CONTAMINÉE, ACCÈS RÉGLEMENTÉ, et un numéro d'unité. L'eau est plus profonde ici, elle monte au-dessus de la cheville. Au fond, l'obscurité a une épaisseur différente, comme si le couloir s'arrêtait avant le mur.",
+      "choices": [
+        {
+          "text": "Avancer la lampe torche devant vous",
+          "to": "c21-19",
+          "if": {
+            "type": "item",
+            "item": "lampe"
+          }
+        },
+        {
+          "text": "Avancer dans le noir",
+          "to": "c21-30"
+        },
+        {
+          "text": "Revenir au couloir central",
+          "to": "c21-4"
+        }
+      ]
+    },
+    "c21-11": {
+      "text": "Vous serrez le bandage autour de ce qui saigne le plus. Le tissu boit tout de suite. Vous regagnez 3 points d'Endurance. Vous attendez que le battement dans vos oreilles ralentisse. Il ralentit. Dans le couloir, l'eau clapote, une fois, loin, comme si quelque chose y avait posé un pied. Puis plus rien.",
+      "choices": [
+        {
+          "text": "Reprendre le couloir",
+          "to": "c21-4"
+        }
+      ]
+    },
+    "c21-12": {
+      "text": "Le plateau tombe. L'acier sonne sur le carrelage, longtemps. Quelque chose d'invisible vous frappe à l'épaule avant la fin du bruit. Vous perdez 3 points d'Endurance. Vous reculez contre la table, le sang chaud sous la veste. La respiration n'est plus lente. Elle est tout près, et elle a une odeur.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -3
+        }
+      ],
+      "choices": [
+        {
+          "text": "Tirer vers l'odeur",
+          "to": "c21-3"
+        },
+        {
+          "text": "Fuir vers le couloir",
+          "to": "c21-4"
+        }
+      ]
+    },
+    "c21-13": {
+      "text": "L'anse cède. Sur l'étagère du haut, une caisse à six logements, un seul occupé : une Grenade F1. Vous la pesez dans la main, lourde, quadrillée, la goupille encore droite. Avec ça, on n'a pas besoin de voir pour toucher. Le reste de l'armoire : des chargeurs vides, un carnet de garde, un paquet de cigarettes dont il manque une.",
+      "effects": [
+        {
+          "type": "item",
+          "action": "add",
+          "item": "grenade"
+        }
+      ],
+      "choices": [
+        {
+          "text": "Fouiller les paillasses",
+          "to": "c21-20"
+        },
+        {
+          "text": "Ressortir vers le couloir central",
+          "to": "c21-4"
+        }
+      ]
+    },
+    "c21-14": {
+      "text": "Vous descendez, une main sur le mur. Le carrelage sue. Les marches sont inégales et certaines manquent, vous le sentez à la pointe du pied avant d'y poser le poids. Le bruit de l'eau se rapproche. L'odeur d'éther aussi. À mi-chemin, votre semelle glisse sur quelque chose de mou qui n'est pas de la boue. Tentez votre Chance.",
+      "test": {
+        "type": "luck",
+        "success": "c21-4",
+        "failure": "c21-8"
+      }
+    },
+    "c21-15": {
+      "text": "Vous avez tiré là où l'eau s'est fendue. Un cri, pas humain, et l'eau qui gicle en reculant. Vous ne l'avez pas tuée. Elle est quelque part devant, et elle sait où vous êtes maintenant. Entre vous, dix mètres d'eau noire et une porte d'acier dont vous devinez le cadre à la poussière de lumière qui passe dessous.",
+      "choices": [
+        {
+          "text": "Tirer encore vers le bruit",
+          "to": "c21-17"
+        },
+        {
+          "text": "Lancer une grenade F1 dans le couloir",
+          "to": "c21-28",
+          "if": {
+            "type": "item",
+            "item": "grenade"
+          },
+          "effects": [
+            {
+              "type": "item",
+              "action": "remove",
+              "item": "grenade"
+            }
+          ]
+        },
+        {
+          "text": "Reculer vers le couloir central",
+          "to": "c21-4"
+        }
+      ]
+    },
+    "c21-16": {
+      "text": "Vos mains trouvent le chariot sans rien renverser. Des manches d'instruments, le bord d'un tiroir. La respiration, à droite, n'a pas changé. Vous vous tenez immobile dans le noir, le pouls dans la gorge, entre une chose qui dort et un tiroir que vous ne pouvez pas voir.",
+      "choices": [
+        {
+          "text": "Fouiller le tiroir du chariot",
+          "to": "c21-9",
+          "if": {
+            "type": "item",
+            "item": "trousse",
+            "present": false
+          }
+        },
+        {
+          "text": "Tirer vers la respiration",
+          "to": "c21-3"
+        },
+        {
+          "text": "Reculer vers le couloir",
+          "to": "c21-4"
+        }
+      ]
+    },
+    "c21-17": {
+      "text": "La Sangsue devient visible une seconde à chaque bond : grise, le crâne long, la bouche ouverte en quatre pétales. Puis l'eau se referme sur rien. On ne la voit qu'au moment où elle frappe, et elle frappe à vous arracher le bras. Derrière elle, la porte d'acier. Derrière vous, le couloir central.",
+      "combat": {
+        "name": "Sangsue",
+        "habilete": 7,
+        "endurance": 8,
+        "damage": 2,
+        "win": "c21-2",
+        "flee": {
+          "to": "c21-4"
+        }
+      }
+    },
+    "c21-18": {
+      "text": "Le tiroir glisse sur ses rails sans un bruit. Un homme en combinaison grise, les yeux ouverts, blancs. Un masque du Monolithe est posé sur sa poitrine, replié. L'étiquette au gros orteil porte une date de l'an dernier et une mention au crayon : sujet 11, conforme. Vous refermez. Les deux tiroirs voisins portent des étiquettes identiques, sans la mention.",
+      "choices": [
+        {
+          "text": "Revenir au couloir central",
+          "to": "c21-4"
+        }
+      ]
+    },
+    "c21-19": {
+      "text": "Le faisceau s'arrête sur une porte d'acier, dix mètres plus loin. Entre vous et elle, l'air tremble. Une silhouette debout, découpée dans l'eau et le carrelage, qui respire. Ses pieds font deux creux dans la surface. Elle tourne ce qui doit être sa tête vers la lumière, lentement, comme on se réveille.",
+      "choices": [
+        {
+          "text": "Tirer sur la silhouette",
+          "to": "c21-17"
+        },
+        {
+          "text": "Lancer une grenade F1 dans le couloir",
+          "to": "c21-28",
+          "if": {
+            "type": "item",
+            "item": "grenade"
+          },
+          "effects": [
+            {
+              "type": "item",
+              "action": "remove",
+              "item": "grenade"
+            }
+          ]
+        },
+        {
+          "text": "Reculer vers le couloir central",
+          "to": "c21-4"
+        }
+      ]
+    },
+    "c21-20": {
+      "text": "Les paillasses sont couvertes de verrerie cassée et de cahiers gonflés par l'eau. Un seul reste lisible, sous une cloche de verre : des colonnes de numéros, des dates de l'an dernier, et un mot répété en face de chaque numéro, conforme, conforme, non conforme. Le dernier numéro est le 11. Au fond du cahier, un schéma à main levée : une cuve, un corps dedans, des fils.",
+      "choices": [
+        {
+          "text": "Forcer le cadenas de l'armoire",
+          "to": "c21-25",
+          "if": {
+            "type": "item",
+            "item": "grenade",
+            "present": false
+          }
+        },
+        {
+          "text": "Ressortir vers le couloir central",
+          "to": "c21-4"
+        }
+      ]
+    },
+    "c21-21": {
+      "text": "Vous entrez les mains devant vous. Acier froid : une table. Une rigole sous les doigts, poisseuse. Vous contournez. Un bruit de respiration, quelque part sur votre droite, lente, trop lente pour un homme. Vous avancez vers l'autre côté, un pas, puis un autre, au milieu d'objets que vous ne voyez pas. Tentez votre Chance.",
+      "test": {
+        "type": "luck",
+        "success": "c21-16",
+        "failure": "c21-12"
+      }
+    },
+    "c21-22": {
+      "text": "Le masque sent le caoutchouc et la vieille sueur. À travers les verres, le laboratoire : des paillasses, une rangée de cuves vides aux parois jaunies, des blouses pendues qui ont gardé la forme des bras. Une armoire métallique, fermée par un cadenas, avec un pochoir militaire. Ce que vous respirez est filtré. Ce que vous voyez, non.",
+      "choices": [
+        {
+          "text": "Forcer le cadenas de l'armoire",
+          "to": "c21-25",
+          "if": {
+            "type": "item",
+            "item": "grenade",
+            "present": false
+          }
+        },
+        {
+          "text": "Fouiller les paillasses",
+          "to": "c21-20"
+        },
+        {
+          "text": "Ressortir vers le couloir central",
+          "to": "c21-4"
+        }
+      ]
+    },
+    "c21-23": {
+      "text": "Vous vous adossez au carrelage, hors de l'eau, sur la dernière marche de l'escalier. Vous videz la trousse : compresses, agrafes, une seringue que vous plantez sans regarder. Vous regagnez 6 points d'Endurance. Le goutte-à-goutte continue. Vous laissez la boîte vide sur la marche, à côté d'une autre, plus ancienne, que quelqu'un a laissée là avant vous.",
+      "choices": [
+        {
+          "text": "Reprendre le couloir",
+          "to": "c21-4"
+        }
+      ]
+    },
+    "c21-24": {
+      "text": "Vous éteignez la lampe. Vous avez compté les pas : six jusqu'au chariot. Vous les faites dans le noir, en posant le pied dans l'eau sans la fendre. La respiration dans l'angle ne change pas. Au quatrième pas, un plateau d'instruments bascule sous votre coude. Vous le rattrapez, ou non. Tentez votre Chance.",
+      "test": {
+        "type": "luck",
+        "success": "c21-9",
+        "failure": "c21-12"
+      }
+    },
+    "c21-25": {
+      "text": "Le cadenas est gros, rouillé à moitié, le genre qu'on ouvre d'un coup ou pas du tout. Vous glissez la lame du couteau dans l'anse et faites levier. Le métal gémit. Dans l'armoire, quelque chose roule contre la tôle. Il faut forcer sans faire sauter la lame, et sans tout faire tomber. Testez votre Habileté.",
+      "test": {
+        "type": "stat",
+        "stat": "habilete",
+        "dice": "2d6",
+        "success": "c21-13",
+        "failure": "c21-5"
+      }
+    },
+    "c21-26": {
+      "text": "Elle tombe et reste visible. Un corps gris, nu, le crâne allongé, les tentacules de la bouche qui se recroquevillent. Vous attendez qu'elle cesse de bouger. Elle cesse. La morgue est à vous, pour ce que ça vaut : deux tables d'acier, un mur de tiroirs froids, un chariot d'instruments contre la table de droite.",
+      "choices": [
+        {
+          "text": "Fouiller le tiroir du chariot",
+          "to": "c21-9",
+          "if": {
+            "type": "item",
+            "item": "trousse",
+            "present": false
+          }
+        },
+        {
+          "text": "Ouvrir un des tiroirs froids",
+          "to": "c21-18"
+        },
+        {
+          "text": "Revenir au couloir central",
+          "to": "c21-4"
+        }
+      ]
+    },
+    "c21-27": {
+      "text": "Elle est sur vous avant le coup de feu. Une griffe ouvre votre bras de l'épaule au coude. Vous perdez 3 points d'Endurance. Elle recule dans l'eau, invisible, et revient d'un autre côté. On ne la voit qu'au moment où elle frappe, et c'est déjà trop tard. Il faut tirer à l'oreille, et vite.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -3
+        }
+      ],
+      "combat": {
+        "name": "Sangsue",
+        "habilete": 7,
+        "endurance": 8,
+        "damage": 2,
+        "win": "c21-2",
+        "flee": {
+          "to": "c21-4"
+        }
+      }
+    },
+    "c21-28": {
+      "text": "Vous dégoupillez la Grenade F1 et la lancez dans l'eau, devant la silhouette. Vous plongez. L'explosion remplit le couloir et vous rend sourd. Quand l'eau retombe, la Sangsue est allongée contre la porte d'acier, visible, en deux morceaux qui ne bougent plus. Vous n'avez plus de grenade. Vos oreilles sifflent. La porte a tenu.",
+      "choices": [
+        {
+          "text": "Pousser la porte d'acier",
+          "to": "c21-2"
+        },
+        {
+          "text": "Revenir au couloir central",
+          "to": "c21-4"
+        }
+      ]
+    },
+    "c21-29": {
+      "text": "Le faisceau balaie la salle. Deux tables d'acier, une rigole, un mur de tiroirs froids dont trois sont ouverts. Un chariot d'instruments contre la table de droite. Dans l'angle, près des tiroirs, l'air tremble. Une silhouette d'homme, accroupie, à travers laquelle on voit le carrelage. Elle respire. Elle ne vous a pas encore senti.",
+      "choices": [
+        {
+          "text": "Tirer sur la forme dans l'angle",
+          "to": "c21-3"
+        },
+        {
+          "text": "Gagner le chariot sans bruit",
+          "to": "c21-24"
+        },
+        {
+          "text": "Reculer dans le couloir",
+          "to": "c21-4"
+        }
+      ]
+    },
+    "c21-30": {
+      "text": "Vous avancez dans le noir, le dos à la conduite. L'eau se fend devant vous, une fois, et ce n'est pas vous. Vous vous immobilisez. Quelque chose respire entre la porte et vous, et se déplace sans bruit, sauf celui de l'eau. Il faut tirer avant qu'elle ne soit sur vous, à l'oreille, sans voir. Testez votre Habileté.",
+      "test": {
+        "type": "stat",
+        "stat": "habilete",
+        "dice": "2d6",
+        "success": "c21-15",
+        "failure": "c21-27"
+      }
+    }
+  }
+}

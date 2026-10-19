@@ -1,0 +1,483 @@
+{
+  "title": "La salle des machines",
+  "summary": "Le héros a traversé la salle des machines : l'escalier dans le noir, la passerelle des turbines, puis les Snorks et la salle des pompes, ou le monolithien et la salle de contrôle du réacteur 4 (`reacteur_vu`), dans une radiation qui tue sans SEVA. Il débouche dans le Sarcophage par les couloirs du bas (c27-1).",
+  "brief": "Donjon irradié. Sans SEVA : 4 rads par salle, avec : 1 rad. Sans Lampe torche, tests. Le gaz de la salle des pompes (Masque à gaz ou 3 rads). Des Snorks dans les turbines (combat avec fuite), un monolithien en prière (combat). La salle de contrôle : les cadrans à zéro, reacteur_vu. Carrefour : la passerelle des turbines. Les consommables listés dans requires peuvent être consommés par un choix (effet remove + effet stat), le paragraphe d'arrivée le dit. Taille : 28 à 34 paragraphes.",
+  "entries": {
+    "c25-1": "À la porte de la salle des machines, les turbines dans le noir"
+  },
+  "exits": {
+    "c27-1": "Déboucher dans le Sarcophage par les couloirs du bas"
+  },
+  "provides": {
+    "items": [],
+    "flags": [
+      "reacteur_vu"
+    ]
+  },
+  "requires": {
+    "items": [
+      "seva",
+      "antirad",
+      "lampe",
+      "masque_gaz",
+      "trousse"
+    ],
+    "flags": []
+  },
+  "image": "c25-5",
+  "paragraphs": {
+    "c25-1": {
+      "text": "La porte de la salle des machines est ouverte sur le noir. Derrière, quelque chose de très grand se tait : les turbines, couchées sur des centaines de mètres, et l'air qui sent le métal et l'huile froide. Le compteur crépite à intervalles réguliers, comme une horloge. Un escalier de fer descend sous le niveau du sol. Vous ne voyez pas sa troisième marche.",
+      "choices": [
+        {
+          "text": "Allumer la Lampe torche et descendre",
+          "to": "c25-17",
+          "if": {
+            "type": "item",
+            "item": "lampe"
+          }
+        },
+        {
+          "text": "Descendre l'escalier à tâtons",
+          "to": "c25-9"
+        }
+      ]
+    },
+    "c25-17": {
+      "text": "Le faisceau de la Lampe torche accroche des rampes, des câbles pendus, une marche manquante que vous enjambez. En bas, un sol de béton couvert d'une poussière grise, intacte, sans une trace de pas. Au fond, la salle des turbines s'ouvre, et le compteur accélère dès que vous tendez la main vers elle. Quarante rads par mètre, disait quelqu'un au Bar. Vous le croyez.",
+      "choices": [
+        {
+          "text": "Boucler la Combinaison SEVA et entrer",
+          "to": "c25-28",
+          "if": {
+            "type": "item",
+            "item": "seva"
+          }
+        },
+        {
+          "text": "Entrer dans la salle des turbines",
+          "to": "c25-3"
+        }
+      ]
+    },
+    "c25-9": {
+      "text": "Vous descendez une main sur la rampe, l'autre devant vous. La rampe est froide et grasse. Les marches sonnent creux. Quelque part en dessous, de l'eau goutte sur de la tôle, une fois toutes les deux secondes. Vous comptez les marches pour ne pas penser au reste. À la vingtième, la rampe s'arrête, et pas l'escalier. Testez votre Habileté.",
+      "test": {
+        "type": "stat",
+        "stat": "habilete",
+        "dice": "2d6",
+        "success": "c25-23",
+        "failure": "c25-12"
+      }
+    },
+    "c25-23": {
+      "text": "Vous atteignez le bas sans tomber. Vos semelles trouvent un sol plat, une poussière épaisse qui étouffe les pas. Vous restez une seconde immobile, à écouter. Rien que l'eau, et le compteur. Devant vous, l'obscurité est différente : plus grande, plus froide. La salle des turbines. Le compteur accélère quand vous avancez d'un pas.",
+      "choices": [
+        {
+          "text": "Boucler la Combinaison SEVA et entrer",
+          "to": "c25-28",
+          "if": {
+            "type": "item",
+            "item": "seva"
+          }
+        },
+        {
+          "text": "Entrer dans la salle des turbines",
+          "to": "c25-3"
+        }
+      ]
+    },
+    "c25-12": {
+      "text": "Une marche manque. Vous tombez de tout votre poids, l'épaule la première, sur le béton. La rampe que vous cherchez n'est pas là. Vous restez au sol le temps que le noir arrête de tourner. Vous perdez 3 points d'Endurance. Quand vous vous relevez, le compteur a changé de rythme. Devant, l'air est plus froid, plus vaste : la salle des turbines.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -3
+        }
+      ],
+      "choices": [
+        {
+          "text": "Boucler la Combinaison SEVA et entrer",
+          "to": "c25-28",
+          "if": {
+            "type": "item",
+            "item": "seva"
+          }
+        },
+        {
+          "text": "Entrer dans la salle des turbines",
+          "to": "c25-3"
+        }
+      ]
+    },
+    "c25-28": {
+      "text": "Le joint de la Combinaison SEVA siffle en se fermant. Dedans, votre respiration fait plus de bruit que la salle. Vous traversez entre les carters des turbines, des cylindres gros comme des maisons, à la peinture cloquée. Le compteur grimpe, puis se calme. Vous prenez 1 rad. Une passerelle de fer court au-dessus des machines. Un escalier y monte.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "radiation",
+          "delta": 1
+        }
+      ],
+      "choices": [
+        {
+          "text": "Monter sur la passerelle",
+          "to": "c25-5"
+        }
+      ]
+    },
+    "c25-3": {
+      "text": "Vous entrez à découvert. Le compteur ne crépite plus, il siffle. Entre les carters des turbines, l'air a un goût de cuivre, et vos dents vous font mal. Vous marchez vite, sans courir, les yeux sur l'escalier de fer qui monte vers une passerelle. Vous prenez 4 rads. Quand vous posez le pied sur la première marche, vous avez envie de vomir.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "radiation",
+          "delta": 4
+        }
+      ],
+      "choices": [
+        {
+          "text": "Monter sur la passerelle",
+          "to": "c25-5"
+        }
+      ]
+    },
+    "c25-5": {
+      "text": "La passerelle des turbines. Du fer ajouré, des rambardes, et sous vos pieds les huit turbines mortes alignées jusqu'à la nuit. Des toiles de câbles pendent des ponts roulants. Loin devant, une porte haute, avec un cadre de lumière grise : la salle de contrôle. En bas, dans la fosse entre les machines, quelque chose respire dans un masque. Plusieurs choses.",
+      "image": {
+        "src": "images/c25-5.webp",
+        "alt": "Une passerelle de fer suspendue au-dessus des turbines mortes d'une centrale, dans l'obscurité",
+        "prompt": "Une passerelle de fer ajourée suspendue au-dessus d'une immense salle des turbines abandonnée, les carters des turbines alignés dans l'obscurité jusqu'à se perdre, des câbles pendant des ponts roulants, une porte haute au fond cernée d'une faible lueur grise ; vue en enfilade depuis la passerelle, sans personnage."
+      },
+      "choices": [
+        {
+          "text": "Descendre dans la fosse des turbines",
+          "to": "c25-14"
+        },
+        {
+          "text": "Suivre la passerelle jusqu'à la porte",
+          "to": "c25-2"
+        },
+        {
+          "text": "Vous injecter l'Anti-rad",
+          "to": "c25-19",
+          "if": {
+            "type": "item",
+            "item": "antirad"
+          },
+          "effects": [
+            {
+              "type": "item",
+              "action": "remove",
+              "item": "antirad"
+            },
+            {
+              "type": "stat",
+              "stat": "radiation",
+              "delta": -5
+            }
+          ]
+        },
+        {
+          "text": "Vider la Trousse de soins",
+          "to": "c25-7",
+          "if": {
+            "type": "item",
+            "item": "trousse"
+          },
+          "effects": [
+            {
+              "type": "item",
+              "action": "remove",
+              "item": "trousse"
+            },
+            {
+              "type": "stat",
+              "stat": "endurance",
+              "delta": 6
+            }
+          ]
+        }
+      ]
+    },
+    "c25-19": {
+      "text": "La seringue de l'Anti-rad entre dans la cuisse à travers le tissu. Le liquide est froid, puis chaud. Le compteur ne change pas, c'est vous qui changez : le goût de cuivre recule, les dents cessent de faire mal. Vous perdez 5 rads. Vous jetez la seringue vide dans la fosse. Elle met longtemps à toucher le fond.",
+      "choices": [
+        {
+          "text": "Reprendre la marche sur la passerelle",
+          "to": "c25-5"
+        }
+      ]
+    },
+    "c25-7": {
+      "text": "Vous vous asseyez le dos à la rambarde et vous videz la Trousse de soins : la compresse, le fil, l'ampoule qu'on casse avec les dents. Les mains tremblent, mais elles savent faire. Vous regagnez 6 points d'Endurance. En bas, la respiration de masque s'est rapprochée. Vous rangez le reste, ce qui ne sert plus à rien, par habitude.",
+      "choices": [
+        {
+          "text": "Reprendre la marche sur la passerelle",
+          "to": "c25-5"
+        }
+      ]
+    },
+    "c25-14": {
+      "text": "Vous descendez l'échelle dans la fosse. Ils sortent de sous les carters avant que vous ayez touché le sol : trois Snorks, à quatre pattes, les masques à gaz incrustés dans la chair, les tuyaux qui battent. Ils sautent plus loin qu'un homme ne court. Leurs griffes ouvrent le tissu comme du papier. L'échelle est derrière vous, si vous tenez jusqu'à elle.",
+      "combat": {
+        "name": "Les Snorks",
+        "habilete": 6,
+        "endurance": 10,
+        "damage": 2,
+        "win": "c25-26",
+        "flee": {
+          "to": "c25-5"
+        }
+      }
+    },
+    "c25-26": {
+      "text": "Le dernier Snork retombe sur le dos et ne bouge plus. Dans la fosse, derrière les corps, une trappe de fer ouverte sur un escalier. En dessous, le silence lourd de pompes qui ne tournent plus depuis vingt ans, et une odeur qui pique les yeux dès la première marche : un gaz jaune, épais, qui dort au ras du sol de la salle des pompes.",
+      "choices": [
+        {
+          "text": "Mettre le Masque à gaz avant de descendre",
+          "to": "c25-11",
+          "if": {
+            "type": "item",
+            "item": "masque_gaz"
+          }
+        },
+        {
+          "text": "Descendre en retenant votre souffle",
+          "to": "c25-21"
+        }
+      ]
+    },
+    "c25-11": {
+      "text": "Le Masque à gaz colle au visage, et le monde se réduit à deux hublots embués. Vous traversez la salle des pompes dans un gaz qui tourbillonne à vos genoux, entre des cuves cerclées de rouille. Les manomètres marquent zéro. De l'autre côté, un couloir descend encore, et le jaune s'arrête à son seuil, comme s'il avait peur d'aller plus bas.",
+      "choices": [
+        {
+          "text": "Suivre le couloir qui descend",
+          "to": "c25-6"
+        }
+      ]
+    },
+    "c25-21": {
+      "text": "Vous traversez la salle des pompes en retenant votre souffle. Dix pas, quinze, les cuves, les tuyaux, le gaz qui monte en volutes lentes à chaque enjambée. À vingt, vos poumons gagnent. Vous respirez une fois, et c'est comme avaler du verre pilé. Vous prenez 3 rads. Vous atteignez le couloir plié en deux, en toussant quelque chose de clair.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "radiation",
+          "delta": 3
+        }
+      ],
+      "choices": [
+        {
+          "text": "Suivre le couloir qui descend",
+          "to": "c25-6"
+        }
+      ]
+    },
+    "c25-2": {
+      "text": "Près de la porte de la salle de contrôle, un homme est à genoux, le front contre le fer. Combinaison grise, masque relevé, un fusil posé en travers des cuisses. Il parle au Monolithe, tout bas, des mots qui reviennent. Il ne vous a pas entendu. La passerelle entre vous et lui fait vingt mètres, et chaque plaque sonne.",
+      "choices": [
+        {
+          "text": "Lui tirer dessus pendant qu'il prie",
+          "to": "c25-16"
+        },
+        {
+          "text": "Passer dans son dos sans bruit",
+          "to": "c25-30"
+        }
+      ]
+    },
+    "c25-16": {
+      "text": "La première balle le touche à l'épaule, et il se lève comme si elle ne l'avait pas touché. Ses yeux sont blancs. Il tire au jugé, puis il vient. Le fusil cogne à la rambarde, il le lâche, et il a un couteau. Il ne crie pas. Il prie encore pendant qu'il frappe, à casser des os.",
+      "combat": {
+        "name": "Monolithien en prière",
+        "habilete": 7,
+        "endurance": 8,
+        "damage": 2,
+        "win": "c25-13"
+      }
+    },
+    "c25-30": {
+      "text": "Vous posez le pied sur la plaque suivante, lentement, le poids sur le bord. Elle tient. La suivante aussi. Il prie toujours, le front contre la porte, et sa voix couvre la vôtre, votre souffle, le fer. Dix mètres. Cinq. La dernière plaque est déboulonnée d'un côté. Testez votre Habileté.",
+      "test": {
+        "type": "stat",
+        "stat": "habilete",
+        "dice": "2d6",
+        "success": "c25-8",
+        "failure": "c25-24"
+      }
+    },
+    "c25-8": {
+      "text": "Vous passez. La plaque ne bouge pas, et lui non plus. Vous contournez son dos courbé à moins d'un mètre, assez près pour sentir l'odeur de sa combinaison, laine mouillée et poudre. Il dit un mot que vous ne comprenez pas, puis le même. La porte de la salle de contrôle est entrouverte derrière lui, et la lumière grise vient de là.",
+      "choices": [
+        {
+          "text": "Pousser la porte sans vous retourner",
+          "to": "c25-13"
+        }
+      ]
+    },
+    "c25-24": {
+      "text": "La plaque bascule et sonne comme une cloche. Il se retourne d'un bloc, le fusil déjà levé, et la première balle vous prend au flanc avant que vous ayez compris qu'il avait tiré. Vous perdez 2 points d'Endurance. Il vient vers vous en priant, les yeux blancs, le couteau sorti. Il frappe à casser des os.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -2
+        }
+      ],
+      "combat": {
+        "name": "Monolithien en prière",
+        "habilete": 7,
+        "endurance": 8,
+        "damage": 2,
+        "win": "c25-13"
+      }
+    },
+    "c25-13": {
+      "text": "La porte de la salle de contrôle. Vous laissez le monolithien derrière vous, à genoux ou couché, vous ne le regardez plus. La porte tient par un gond. Une lumière grise filtre, celle de néons de secours qui n'auraient pas dû survivre à vingt ans. Le compteur hurle quand vous passez la main dans l'entrebâillement. C'est ici que ça s'est passé. C'est ici que ça se passe encore.",
+      "choices": [
+        {
+          "text": "Boucler la Combinaison SEVA et entrer",
+          "to": "c25-4",
+          "if": {
+            "type": "item",
+            "item": "seva"
+          }
+        },
+        {
+          "text": "Entrer dans la salle de contrôle",
+          "to": "c25-20"
+        }
+      ]
+    },
+    "c25-4": {
+      "text": "La Combinaison SEVA siffle, bouclée. Vous passez la porte. Le compteur grimpe d'un coup, se stabilise, et dans la combinaison vous entendez votre cœur. Vous prenez 1 rad. La salle de contrôle du réacteur 4 est intacte, comme si l'équipe était sortie fumer. Des pupitres en arc de cercle, des centaines de cadrans, des chaises renversées.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "radiation",
+          "delta": 1
+        }
+      ],
+      "choices": [
+        {
+          "text": "Avancer entre les pupitres",
+          "to": "c25-27"
+        }
+      ]
+    },
+    "c25-20": {
+      "text": "Vous passez la porte à découvert. Le compteur ne grimpe pas, il saute, et vous sentez une chaleur sur le visage, une chaleur qui ne vient de nulle part. Vous prenez 4 rads. La salle de contrôle du réacteur 4 est intacte : des pupitres en arc de cercle, des centaines de cadrans, des chaises renversées. Vous saignez du nez, sans douleur.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "radiation",
+          "delta": 4
+        }
+      ],
+      "choices": [
+        {
+          "text": "Avancer entre les pupitres",
+          "to": "c25-27"
+        }
+      ]
+    },
+    "c25-27": {
+      "text": "Les cadrans sont tous à zéro. Chaque aiguille repose sur sa butée, des centaines d'aiguilles, et les voyants sont éteints, sauf un, rouge, au-dessus du pupitre central, qui ne clignote pas. Vous passez la main sur un cadran sans le toucher. Vous êtes au-dessus de ce qui a brûlé. Vous l'avez vu. Un escalier de service s'ouvre derrière le dernier pupitre.",
+      "effects": [
+        {
+          "type": "flag",
+          "flag": "reacteur_vu"
+        }
+      ],
+      "choices": [
+        {
+          "text": "Descendre par l'escalier de service",
+          "to": "c25-10"
+        }
+      ]
+    },
+    "c25-10": {
+      "text": "L'escalier de service tourne sur lui-même dans un puits de béton, sans rampe. Les néons s'arrêtent après deux étages ; ensuite, c'est une lueur orange, très faible, qui monte d'en bas. Les murs sont tièdes. Vous comptez huit paliers. Au dernier, l'escalier s'ouvre sur des couloirs noyés jusqu'aux chevilles, et l'orange est plus net.",
+      "choices": [
+        {
+          "text": "Entrer dans les couloirs du bas",
+          "to": "c25-6"
+        }
+      ]
+    },
+    "c25-6": {
+      "text": "Les couloirs du bas. De l'eau jusqu'aux chevilles, un plafond bas, des câbles qui pendent au-dessus de l'eau, et quelque part devant, une lumière orange qui ne vient d'aucune lampe. Des tuyaux courent le long des murs et disparaissent dans le noir. Le sol, sous l'eau, n'est pas plat. Il y a des trous. Vous ne savez pas où.",
+      "choices": [
+        {
+          "text": "Suivre le faisceau de la Lampe torche",
+          "to": "c25-22",
+          "if": {
+            "type": "item",
+            "item": "lampe"
+          }
+        },
+        {
+          "text": "Avancer à tâtons le long du mur",
+          "to": "c25-15"
+        }
+      ]
+    },
+    "c25-22": {
+      "text": "Le faisceau de la Lampe torche fait de l'eau un miroir noir, et sous ce miroir, les trous apparaissent : des regards sans grille, des fosses de câbles, une tous les dix mètres. Vous les contournez. Sur les murs, à hauteur de main, des traces de doigts dans la suie, tournées dans votre sens. Devant, l'orange grandit, et la chaleur avec.",
+      "choices": [
+        {
+          "text": "Marcher vers la lumière orange",
+          "to": "c25-25"
+        }
+      ]
+    },
+    "c25-15": {
+      "text": "Vous avancez la main sur le mur, le pied qui tâte avant chaque pas. Le mur est tiède, et l'eau aussi. Le compteur crépite au rythme du cœur. À un moment, la main trouve, dans la suie, des traces de doigts, tournées dans votre sens. À un autre, le pied ne trouve rien. Tentez votre Chance.",
+      "test": {
+        "type": "luck",
+        "success": "c25-29",
+        "failure": "c25-18"
+      }
+    },
+    "c25-29": {
+      "text": "Vous ne tombez pas. Le pied reste suspendu une seconde au-dessus de rien, puis vous le ramenez, lentement, sur le bord. Un regard ouvert, sans grille, et l'eau qui tourne lentement dedans. Vous le contournez le dos au mur. Après ça, il y en a d'autres, et vous les trouvez tous, un par un, à la pointe du pied.",
+      "choices": [
+        {
+          "text": "Marcher vers la lumière orange",
+          "to": "c25-25"
+        }
+      ]
+    },
+    "c25-18": {
+      "text": "Vous tombez. L'eau vous ferme la bouche, puis le fond, du béton et de la ferraille, vous prend le genou. Vous ressortez en vous hissant aux câbles. La flaque où vous êtes tombé est chaude, et le compteur hurle. Vous perdez 3 points d'Endurance. Vous prenez 2 rads. Vous repartez en boitant vers la lumière orange.",
+      "effects": [
+        {
+          "type": "stat",
+          "stat": "endurance",
+          "delta": -3
+        },
+        {
+          "type": "stat",
+          "stat": "radiation",
+          "delta": 2
+        }
+      ],
+      "choices": [
+        {
+          "text": "Marcher vers la lumière orange",
+          "to": "c25-25"
+        }
+      ]
+    },
+    "c25-25": {
+      "text": "La lumière orange vient d'un couloir qui n'est plus en béton gris mais en béton coulé, grumeleux, jeté à la hâte, avec des traînées de rouille comme des coulées de sang sec. Le mur est chaud. Au bout, une grille arrachée, et derrière, la lueur qui monte d'un puits. Vous entrez dans le Sarcophage par en dessous, là où personne n'est censé entrer.",
+      "choices": [
+        {
+          "text": "Passer la grille",
+          "to": "c27-1"
+        }
+      ]
+    }
+  }
+}
