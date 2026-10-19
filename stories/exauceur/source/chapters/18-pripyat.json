@@ -38,7 +38,11 @@
       "guide_chemin"
     ]
   },
-  "image": "c18-1",
+  "images": [
+    "c18-1",
+    "c18-14",
+    "c18-40"
+  ],
   "paragraphs": {
     "c18-1": {
       "text": "La route descend du Radar entre deux rangées de pins morts. Au bord, un panneau de béton, le nom de la ville en lettres blanches, une moitié tombée dans l'herbe. Derrière, les immeubles. Seize étages, pas une vitre, et au-dessus des toits, la grande roue, arrêtée depuis vingt ans. Le vent apporte une odeur de poussière froide. Sur un toit, quelque chose bouge. Le Monolithe tient la ville. On avance de porche en porche, ou pas du tout.",
@@ -193,6 +197,11 @@
       ]
     },
     "c18-14": {
+      "image": {
+        "src": "images/c18-14.webp",
+        "alt": "La place de Pripyat sous la grande roue arrêtée, l'hôtel et le palais, des tireurs sur les toits",
+        "prompt": "Une grande place de ville morte envahie de bouleaux, dominée par une grande roue arrêtée aux nacelles pendantes. Autour, un hôtel de huit étages sans vitres, un palais à colonnes, l'avenue vers le nord entre les immeubles. Sur les toits, de petites silhouettes grises immobiles, fusils tournés vers le sud. Ciel bas, poussière froide. Le héros en silhouette dans l'ombre d'un porche, de dos."
+      },
       "text": "La place. La grande roue au-dessus, ses nacelles jaunes qui grincent, une par une, quand le vent passe. Autour : l'hôtel Polissya, huit étages, son nom en lettres creuses sur le toit ; le palais de la Culture et ses colonnes ; plus loin l'hôpital, la piscine. Au nord, entre les immeubles, l'avenue qui mène au pont de la Centrale. Sur les toits, le Monolithe. Ils regardent. Ils ne tirent pas sur la place. Pas encore.",
       "choices": [
         {
@@ -654,6 +663,11 @@
       ]
     },
     "c18-40": {
+      "image": {
+        "src": "images/c18-40.webp",
+        "alt": "L'avenue vide vers le nord, et au bout la cheminée de la Centrale au-dessus du viaduc",
+        "prompt": "Une avenue large comme un fleuve, asphalte crevé de bouleaux, bordée d'immeubles aux fenêtres vides. Au bout, entre les façades, la cheminée mince de la Centrale et la masse du Sarcophage, et sous elle le viaduc. Ciel lourd. Le héros de dos, seul au milieu de la chaussée, petit, marchant vers le nord."
+      },
       "text": "L'avenue vers le nord. Entre les immeubles, au bout, la cheminée de la Centrale, et sous elle, le viaduc. Chaque pas vers là-bas en est un de moins vers le sud. Ceux qui prennent le pont ne reviennent pas à Pripyat : pas l'hôtel, pas la place, pas le porche. Ce que vous n'avez pas trouvé ici restera ici.",
       "choices": [
         {

@@ -25,7 +25,11 @@
     ],
     "flags": []
   },
-  "image": "c19-5",
+  "images": [
+    "c19-5",
+    "c19-17",
+    "c19-31"
+  ],
   "paragraphs": {
     "c19-1": {
       "text": "Le hall de l'hôtel Polissya sent le plâtre mouillé et la cave. Le comptoir de la réception est couché sur le flanc, les casiers à clefs vides. Au fond, l'escalier monte dans la pénombre, large, avec sa rampe de cuivre vert-de-gris. Huit étages au-dessus de vous. Quelque part là-haut, une porte claque toute seule, puis plus rien. Le détecteur crépite une fois et se tait.",
@@ -41,6 +45,11 @@
       ]
     },
     "c19-17": {
+      "image": {
+        "src": "images/c19-17.webp",
+        "alt": "L'escalier éventré de l'hôtel, une volée manquante au-dessus du vide",
+        "prompt": "La cage d'escalier d'un hôtel en ruine : une large volée s'arrête net au troisième étage, quatre mètres de vide, et les marches reprennent de l'autre côté, rampe de cuivre tordue. Au fond du trou, dans les gravats, un matelas et un casque. Verre et plâtre sur les marches, lumière grise tombant d'en haut. Le héros de dos au bord du vide, mesurant le saut."
+      },
       "text": "Le premier étage, le deuxième. Les marches sont couvertes de verre et de gravats qui crissent. Au troisième, l'escalier s'arrête. Une volée entière manque, tombée dans la cage avec le palier. Il reste quatre mètres de vide et, de l'autre côté, les marches qui reprennent vers le quatrième. En bas, dans le trou, un matelas et un casque. Vous mesurez le saut avec les yeux.",
       "choices": [
         {
@@ -375,6 +384,11 @@
       ]
     },
     "c19-31": {
+      "image": {
+        "src": "images/c19-31.webp",
+        "alt": "La chambre 26 de l'hôtel, une valise de stalker vide sous la fenêtre et un sac de couchage",
+        "prompt": "Une chambre d'hôtel soviétique défraîchie : un lit nu, une armoire ouverte, et sous la fenêtre sans vitre une valise de stalker ouverte et vide. Par terre, un sac de couchage, une boîte de conserve propre, un livre ouvert à l'envers. Au fond, la porte entrouverte d'une salle de bain au carrelage bleu. Lumière grise de la fenêtre, le héros absent."
+      },
       "text": "La chambre 26. Un lit, une armoire ouverte, une valise de stalker sous la fenêtre avec le nom de Fantôme au feutre sur la toile. Vide. Un sac de couchage, une boîte de conserve propre, un livre ouvert à l'envers. Il a dormi ici. Il est reparti sans rien. La salle de bain est au fond, porte entrouverte, carrelage bleu.",
       "choices": [
         {

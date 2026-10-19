@@ -24,7 +24,11 @@
     ],
     "flags": []
   },
-  "image": "c26-4",
+  "images": [
+    "c26-4",
+    "c26-12",
+    "c26-7"
+  ],
   "paragraphs": {
     "c26-1": {
       "text": "Le vent vous trouve au pied de l'échelle. Il descend de la cheminée en sifflant dans les barreaux, et il sent la rouille et une neige qui n'est pas tombée. L'échelle monte le long du mur de la salle des machines, trente mètres de fer peint en rouge, écaillé à moitié. Plus loin, une porte de service bat sur un escalier noir. En haut, quelque chose claque dans le vent, régulier, comme un drapeau. Ou comme une bâche sur un corps.",
@@ -82,6 +86,11 @@
       ]
     },
     "c26-12": {
+      "image": {
+        "src": "images/c26-12.webp",
+        "alt": "Le toit de gravier de la salle des machines, la cheminée rayée haubanée de câbles, le Sarcophage derrière.",
+        "prompt": "Vue depuis le bord d'un immense toit de gravier et de bitume fendu, long comme une rue, balayé par le vent. À l'autre bout se dresse une haute cheminée industrielle rayée de bandes claires et sombres, haubanée de câbles tendus, et derrière elle la masse de béton gris du Sarcophage, reliée à la cheminée par une passerelle qui pend. Au milieu du toit, une cabine de ventilation en tôle à la porte ouverte et des bouches de conduits rouillées dans le sol ; une silhouette de stalker de dos, courbée contre le vent, au premier plan."
+      },
       "text": "Le toit de la salle des machines est un champ de gravier et de bitume fendu, long comme une rue. La cheminée se dresse à l'autre bout, rayée de rouge et de blanc, haubanée de câbles qui chantent. Derrière elle, le Sarcophage, son béton gris, et une passerelle qui pend entre les deux. Au milieu du toit, une cabine de ventilation, porte ouverte. Des bouches de conduits s'ouvrent dans le sol. Le vent ne s'arrête jamais ici.",
       "choices": [
         {
@@ -349,6 +358,11 @@
       ]
     },
     "c26-7": {
+      "image": {
+        "src": "images/c26-7.webp",
+        "alt": "Une Chimère à deux têtes accrochée aux haubans de la cheminée, au-dessus d'un socle de béton.",
+        "prompt": "Au pied d'une cheminée industrielle rayée, une Chimère au poil gris de poussière est accrochée aux haubans par ses quatre pattes, deux têtes tournées vers le bas, quatre yeux fixes. En contrebas, un large socle de béton et le départ d'une passerelle de caillebotis suspendue vers le Sarcophage ; une silhouette de stalker aplatie derrière le socle, vue de dos, minuscule. Ciel bas, vent, câbles vibrants, hachures serrées."
+      },
       "text": "La Chimère est sur la cheminée, à dix mètres, accrochée aux haubans par ses quatre pattes. Deux têtes, deux paires d'yeux qui ne clignent pas en même temps. Elle vous a senti avant que vous l'ayez vue, c'est à ça qu'on les reconnaît. Son poil est gris de poussière. Entre elle et vous, le socle, et au-delà, la passerelle qui commence. Elle ne bouge pas. Ça ne veut rien dire.",
       "choices": [
         {

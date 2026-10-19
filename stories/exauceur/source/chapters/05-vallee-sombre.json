@@ -33,7 +33,11 @@
       "bandits_ennemis"
     ]
   },
-  "image": "c05-7",
+  "images": [
+    "c05-7",
+    "c05-31",
+    "c05-35"
+  ],
   "paragraphs": {
     "c05-1": {
       "text": "Le ravin s'ouvre sur du blanc. La brume remplit la Vallée sombre jusqu'au bord, et vous êtes au-dessus, sur une corniche d'argile où le Dépotoir finit de rouiller. En dessous, quelque chose bat : une musique lointaine, une basse qui tape. Des drapeaux verts montent et descendent dans le brouillard. Plus loin, un bâtiment noir, une cheminée. Le détecteur crépite une fois, puis se tait.",
@@ -579,6 +583,11 @@
       ]
     },
     "c05-31": {
+      "image": {
+        "src": "images/c05-31.webp",
+        "alt": "La cour de l'usine de Borov dans la Vallée sombre, feu de palettes, bandits aux cartes et bureau éclairé",
+        "prompt": "La cour d'une usine noire dans la brume : des camions sans roues, un feu de palettes, des hommes en blouson de cuir qui jouent aux cartes sur un capot sans lever les yeux. Au fond d'une halle ouverte, une porte de fer cadenassée au-dessus d'un escalier qui descend. À l'étage, derrière une vitre sale, un bureau éclairé où se devine un homme assis. Le stalker entre par la grille, de dos, en silhouette au premier plan."
+      },
       "text": "La cour de l'usine. Des camions sans roues, un feu de palettes, des hommes en cuir qui jouent aux cartes sur un capot et ne lèvent pas les yeux. Au fond de la halle, une porte de fer avec un escalier qui descend, et un cadenas gros comme un poing. Au-dessus, derrière une vitre sale, un bureau éclairé. Borov. Il vous a déjà vu.",
       "choices": [
         {
@@ -675,6 +684,11 @@
       ]
     },
     "c05-35": {
+      "image": {
+        "src": "images/c05-35.webp",
+        "alt": "La rive de la Vallée sombre, le pont effondré dans la rivière et les roseaux couchés par une bête invisible",
+        "prompt": "Une rive de roseaux morts au bord d'une rivière fumante dans une brume épaisse, un pont de béton effondré dont les ferrailles tordues pendent dans l'eau. Sur dix mètres de large, les roseaux sont couchés comme sous un poids énorme, et dans le brouillard se devine à peine une masse de la taille d'un camion, sans forme nette. Au premier plan, le stalker de dos, figé, le détecteur à la main. Ciel bas, eau qui tremble dans les ornières."
+      },
       "text": "La rive. Des roseaux morts, la rivière qui sent le soufre, le compteur qui grimpe. Vous prenez 3 rads. Le pont effondré pend dans l'eau par ses ferrailles. Alors le sol tape, une fois. Puis une autre, plus près. Dans la brume, quelque chose de la taille d'un camion respire, et vous ne le voyez pas. Les roseaux se couchent sur dix mètres de large.",
       "effects": [
         {

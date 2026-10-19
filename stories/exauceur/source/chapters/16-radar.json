@@ -26,9 +26,18 @@
       "verite_connue"
     ]
   },
-  "image": "c16-2",
+  "images": [
+    "c16-2",
+    "c16-1",
+    "c16-29"
+  ],
   "paragraphs": {
     "c16-1": {
+      "image": {
+        "src": "images/c16-1.webp",
+        "alt": "La crête du Radar, l'antenne géante couchée et des silhouettes grises alignées devant un bunker",
+        "prompt": "Vue depuis une crête de graviers : une antenne de cent cinquante mètres, treillis rouillé, couchée en travers d'un ciel bas, le vent passant au travers. En contrebas, un bunker de béton à porte de fer et, devant lui, une rangée de silhouettes grises immobiles, fusils tournés vers le sud. Le héros de dos, au premier plan, minuscule face à la structure."
+      },
       "text": "La crête. L'antenne est couchée en travers du ciel, cent cinquante mètres de treillis rouillé, et le vent passe au travers avec un bruit de corde. Vous n'entendez pas le vent. Vous entendez une phrase qui n'est pas à vous. Elle dit de poser votre arme. Elle le dit calmement, de l'intérieur, comme un souvenir. Le détecteur se tait. En bas, un bunker de béton, une porte de fer, des silhouettes grises alignées qui ne bougent pas.",
       "choices": [
         {
@@ -435,6 +444,11 @@
       ]
     },
     "c16-29": {
+      "image": {
+        "src": "images/c16-29.webp",
+        "alt": "La salle de contrôle du Radar, cadrans de bakélite et bouton rouge sous un capot de verre",
+        "prompt": "Une salle de contrôle souterraine : murs de cadrans de bakélite aux aiguilles tremblantes, câbles au plafond, et au centre un bouton rouge sous un capot de verre. Devant la console, un officier du Monolithe debout, masque posé sur la table, yeux blancs, un sourire fixe. Derrière lui, un hublot où pulse une lumière verte. Cadrage frontal depuis la porte, le héros absent."
+      },
       "text": "La salle de contrôle. Des cadrans de bakélite, des aiguilles dans le vert, et au centre un bouton rouge sous un capot de verre. Devant, un officier du Monolithe, debout, le masque sur la table. Il vous regarde entrer avec ses yeux blancs et il sourit. Il dit : tu arrives. Il dit : il t'attend. Il prend son fusil sans se presser.",
       "choices": [
         {

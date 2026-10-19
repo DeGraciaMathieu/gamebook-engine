@@ -32,7 +32,11 @@
     ],
     "flags": []
   },
-  "image": "c01-5",
+  "images": [
+    "c01-5",
+    "c01-21",
+    "c01-19"
+  ],
   "paragraphs": {
     "c01-1": {
       "text": "Vous vous réveillez contre un mur de planches, le feu encore chaud à vos pieds. Vous ne savez pas comment vous êtes arrivé là, ni d'où. Un détecteur pend à votre cou, un pistolet pèse dans la poche. Autour du feu, des types de vingt ans se passent une guitare. Un homme en veste kaki, plus vieux, vous regarde depuis un moment. Il dit : tu es au Cordon. On m'appelle le Loup. J'explique une fois.",
@@ -366,6 +370,11 @@
       ]
     },
     "c01-19": {
+      "image": {
+        "src": "images/c01-19.webp",
+        "alt": "Le champ d'orties du Cordon sous les pylônes, l'air qui tremble entre deux anomalies Électro",
+        "prompt": "Un champ d'orties à hauteur de poitrine entre de grands pylônes électriques rouillés, sous un ciel bas. Entre deux pylônes, l'air se déforme et de fins arcs électriques grésillent au ras des herbes : deux anomalies Électro. Au premier plan, un boulon rouillé planté dans la boue et une botte vide ; plus loin, une faible lueur bleu pâle dans un creux. Le stalker est de dos, en bas du cadre, un détecteur à la main."
+      },
       "text": "Les orties montent à la taille, puis à la poitrine. Entre les pylônes, l'air tremble comme au-dessus d'un capot chaud et grésille par instants, bleu, puis rien : une « Électro », puis une autre. Le compteur grimpe. Vous prenez 2 rads. Un boulon rouillé est planté dans la boue, et plus loin une botte, sans personne dedans. Le détecteur crépite une fois, vers la gauche.",
       "effects": [
         {
@@ -581,6 +590,11 @@
       ]
     },
     "c01-21": {
+      "image": {
+        "src": "images/c01-21.webp",
+        "alt": "Le pont de chemin de fer du Cordon, sacs de sable, mitrailleuse et croix de planches sur le talus",
+        "prompt": "Une route défoncée monte vers une arche de pont de chemin de fer en béton noirci, des sacs de sable empilés sur le tablier et le canon d'une mitrailleuse qui dépasse, un haut-parleur fixé à un poteau. En contrebas, un fossé d'eau brune passe sous l'arche ; sur le talus, une croix faite de deux planches. Vu depuis la route, en contre-plongée, une silhouette de stalker de dos tout en bas du cadre, les mains ouvertes."
+      },
       "text": "La route monte vers le pont de chemin de fer, une arche de béton noircie, des sacs de sable sur le tablier, une mitrailleuse qui vous suit déjà. Un haut-parleur grésille : halte. En contrebas, un fossé d'eau brune passe sous l'arche, et le compteur s'y réveille avant même que vous ayez approché. Sur le talus, une croix faite de deux planches.",
       "choices": [
         {

@@ -18,9 +18,18 @@
       "conscience_appel"
     ]
   },
-  "image": "c30-5",
+  "images": [
+    "c30-5",
+    "c30-1",
+    "c30-2"
+  ],
   "paragraphs": {
     "c30-1": {
+      "image": {
+        "src": "images/c30-1.webp",
+        "alt": "Sept cuves de verre alignées sous des néons, des silhouettes humaines indistinctes flottant dedans, reliées au plafond par des câbles.",
+        "prompt": "Une salle de laboratoire carrelée où sept hautes cuves de verre cylindriques sont alignées sous des néons. Dans chacune, une silhouette humaine indistincte, à peine visible à travers un liquide trouble et jaunâtre, suspendue dans une combinaison grise, des bulles montant le long du verre, des faisceaux de câbles sortant du sommet de la cuve vers le plafond. Au fond de la rangée, une huitième cuve ouverte et vide. Au premier plan, une silhouette de stalker de dos sur le seuil, minuscule devant les cuves. Hachures serrées, verre, reflets, lumière crue."
+      },
       "text": [
         "Sept cuves de verre, hautes comme des hommes, alignées sous les néons. Dedans, des corps nus flottent dans un liquide jaune, la nuque hérissée de câbles. Des bulles montent le long des visages. Ça sent le formol et le cuivre chaud.",
         "Les voix sont déjà là. Sept, qui parlent ensemble, calmes, sans bouche. Entre. Nous t'attendions.",
@@ -141,7 +150,7 @@
       "image": {
         "src": "images/c30-5.webp",
         "alt": "La salle des cuves de la C-Conscience : sept cuves de verre alignées sous les néons, des corps branchés qui flottent, et au bout de la rangée une huitième cuve ouverte.",
-        "prompt": "Une salle de laboratoire souterraine sous des néons : sept hautes cuves de verre alignées où flottent des corps nus reliés par des câbles à la nuque, une huitième cuve ouverte et vide au bout de la rangée, des faisceaux de câbles montant vers une armoire électrique grise, un carrelage blanc et une porte de fer sans poignée."
+        "prompt": "Une salle de laboratoire souterraine sous des néons : sept hautes cuves de verre alignées où flottent des silhouettes humaines indistinctes en combinaison grise, à peine visibles dans un liquide trouble, reliées par des câbles au sommet de la cuve, une huitième cuve ouverte et vide au bout de la rangée, des faisceaux de câbles montant vers une armoire électrique grise, un carrelage blanc et une porte de fer sans poignée."
       },
       "choices": [
         {
@@ -259,6 +268,11 @@
       ]
     },
     "c30-2": {
+      "image": {
+        "src": "images/c30-2.webp",
+        "alt": "Une vieille armoire électrique en tôle, huit disjoncteurs à poignée et une grande poignée seule en bas, des câbles épais entrant par le haut.",
+        "prompt": "Gros plan sur une armoire électrique soviétique en tôle grise cabossée, cadenas scié pendant, portes ouvertes : à l'intérieur, une rangée de gros disjoncteurs à poignée, sept usés et un huitième neuf, et tout en bas une grande poignée isolée. Des câbles épais comme des bras entrent par le haut depuis le plafond. Une main gantée de stalker s'approche de la grande poignée, bras vu de dos ; derrière, floues, deux silhouettes de gardes en blouse immobiles et le reflet des cuves."
+      },
       "text": [
         "L'armoire grise est plus vieille que le reste : de la tôle soviétique, un cadenas scié, des disjoncteurs à poignée gros comme des mains. Sept marqués, un huitième neuf, et en bas une grande poignée seule. Les câbles entrent par le haut, épais comme des bras. Un transformateur chauffe la tôle.",
         "Les gardes ont tourné la tête. Les voix ont repris, un peu plus vite. Tu ne sais pas ce que tu fais. Ce n'est pas une menace. Ils disent ce qu'ils savent."

@@ -502,6 +502,11 @@
       }
     },
     "15": {
+      "image": {
+        "src": "images/c10-16.webp",
+        "alt": "Un camion blanc renversé dans un pli de terrain, des Snorks masqués qui rôdent autour",
+        "prompt": "Un camion blanc d'institut scientifique couché sur le flanc dans un pli de terrain, roues en l'air, pare-brise fissuré. Autour, quatre Snorks à quatre pattes, masques à gaz collés au visage, l'un grimpé sur la cabine qui gratte le pare-brise. Herbe morte, chardons, ciel bas ; vue depuis le haut du pli, entre les chardons, le héros absent."
+      },
       "text": [
         "Le camion est couché dans le pli de terrain, blanc, un sigle d'institut sur la portière, les roues en l'air. À l'intérieur, on frappe contre la tôle.",
         "Autour, quatre Snorks tournent à quatre pattes, masques collés au visage. L'un d'eux grimpe sur la cabine et gratte le pare-brise. Ils ne vous ont pas senti. Le vent vient d'eux."
@@ -584,6 +589,11 @@
       }
     },
     "19": {
+      "image": {
+        "src": "images/c06-11.webp",
+        "alt": "Couloir de béton aux portes de fer, un extincteur en vol lancé par une main invisible",
+        "prompt": "Un couloir souterrain de béton au premier niveau d'un laboratoire, bordé de portes de fer numérotées à la peinture, une lampe de secours verte qui clignote tout au fond. Un extincteur traverse le couloir en l'air, à hauteur de tête, lancé par rien, poussière et débris en suspension. Vu depuis le bas de l'escalier, aucune silhouette."
+      },
       "text": "Le premier niveau est un couloir de portes de fer, numérotées à la peinture. Une lampe de secours clignote au fond, verte, et s'éteint quand vous la regardez. Un extincteur traverse le couloir à hauteur de tête et s'écrase contre le mur. Rien ne l'a lancé. Trois portes : ARCHIVES, un vestiaire, et au bout, l'escalier qui continue.",
       "choices": [
         {
@@ -821,6 +831,11 @@
       ]
     },
     "38": {
+      "image": {
+        "src": "images/c28-10.webp",
+        "alt": "La pierre de l'Exauceur s'embrase d'une lumière blanche qui efface les ombres de la salle.",
+        "prompt": "La grande pierre noire de l'Exauceur, veinée de lignes lentes comme sous une peau, rayonne d'une lumière blanche qui monte de ses veines comme une marée et noie la salle de béton : les ombres disparaissent, les sacs contre les murs se dissolvent dans le blanc, les armatures du plafond se découpent en fils noirs. Au premier plan, une silhouette de stalker de dos, bras levé devant le visage, réduite à un contour. Gravure presque entièrement blanche, hachures qui s'effacent vers le centre."
+      },
       "text": "Vous dites : que la Zone disparaisse. Vous l'avez dit pour les autres, pour les types du Cordon avec leur guitare, pour les morts contre le mur. Peut-être un peu pour vous. La pierre ne bourdonne plus : elle brille. La lumière monte de ses veines comme une marée, blanche, et la salle perd ses ombres une à une. Vous avez encore le temps de vous taire. Elle n'a pas fini d'écouter.",
       "choices": [
         {
@@ -1045,6 +1060,11 @@
       ]
     },
     "52": {
+      "image": {
+        "src": "images/c12-1.webp",
+        "alt": "Un escalier de fer descend dans le noir sous un panneau à demi décollé, une lumière rouge très loin",
+        "prompt": "Le haut d'un escalier de fer qui plonge dans le noir d'un laboratoire souterrain, vu de derrière la silhouette d'un stalker arrêté sur la première marche, lampe torche à la main. Au mur de brique, un panneau à demi décollé avec une flèche pointant vers le bas, des tuyaux rouillés, une porte d'usine refermée derrière. Tout au fond, minuscule, un point de lumière rouge."
+      },
       "text": "La porte de l'usine se referme derrière vous. Un escalier de fer descend dans le noir, et l'odeur monte : chlore, rouille, quelque chose de sucré. Au mur, un panneau à moitié décollé, X-16, et une flèche vers le bas. Une lumière rouge clignote très loin, s'éteint, revient. Le détecteur se tait. Ici, il n'y a rien à détecter.",
       "choices": [
         {
@@ -1841,6 +1861,11 @@
       ]
     },
     "102": {
+      "image": {
+        "src": "images/c07-6.webp",
+        "alt": "Un sergent du Devoir devant une bâche où l'on vide un sac, entre deux wagons",
+        "prompt": "Le poste de contrôle au pied d'une barricade de wagons soudés : un grand sergent-chef grisonnant, lunettes de visée relevées sur le front, debout devant une bâche étalée au sol où un soldat vide un sac pièce par pièce, conserves et chargeurs. Derrière eux, le passage étroit entre deux wagons rouillés ouvre sur une rue d'usine grise et vide. Vue de dos, par-dessus l'épaule du stalker contrôlé."
+      },
       "text": "Le sergent-chef Kouznetsov est grand, gris, les lunettes de visée relevées sur le front. Il ne regarde pas votre visage, il regarde vos mains. Papiers. Sac. Le soldat vide le vôtre sur la bâche, pièce par pièce, et Kouznetsov attend. Derrière lui, le passage entre deux wagons, et au bout, la rue de Rostok, grise, vide, qui sent la ferraille. Le nord n'est pas pour vous, dit-il. Il le dit à tout le monde.",
       "choices": [
         {
@@ -2069,6 +2094,11 @@
       }
     },
     "117": {
+      "image": {
+        "src": "images/c21-29.webp",
+        "alt": "Une morgue éclairée à la torche, tables d'acier, tiroirs froids, et dans l'angle une silhouette translucide accroupie.",
+        "prompt": "Une morgue de sous-sol vue à la lumière d'une torche : deux tables d'acier avec leur rigole, un mur de tiroirs frigorifiques dont trois sont ouverts, un chariot d'instruments contre la table de droite, du carrelage vert et de l'eau au sol. Dans l'angle près des tiroirs, l'air tremble et dessine une silhouette d'homme accroupie, presque transparente, à travers laquelle on voit le carrelage : une Sangsue. Le faisceau vient de la porte, le héros reste hors champ."
+      },
       "text": "Le faisceau balaie la salle. Deux tables d'acier, une rigole, un mur de tiroirs froids dont trois sont ouverts. Un chariot d'instruments contre la table de droite. Dans l'angle, près des tiroirs, l'air tremble. Une silhouette d'homme, accroupie, à travers laquelle on voit le carrelage. Elle respire. Elle ne vous a pas encore senti.",
       "choices": [
         {
@@ -2281,6 +2311,11 @@
       }
     },
     "128": {
+      "image": {
+        "src": "images/c01-19.webp",
+        "alt": "Le champ d'orties du Cordon sous les pylônes, l'air qui tremble entre deux anomalies Électro",
+        "prompt": "Un champ d'orties à hauteur de poitrine entre de grands pylônes électriques rouillés, sous un ciel bas. Entre deux pylônes, l'air se déforme et de fins arcs électriques grésillent au ras des herbes : deux anomalies Électro. Au premier plan, un boulon rouillé planté dans la boue et une botte vide ; plus loin, une faible lueur bleu pâle dans un creux. Le stalker est de dos, en bas du cadre, un détecteur à la main."
+      },
       "text": "Les orties montent à la taille, puis à la poitrine. Entre les pylônes, l'air tremble comme au-dessus d'un capot chaud et grésille par instants, bleu, puis rien : une « Électro », puis une autre. Le compteur grimpe. Vous prenez 2 rads. Un boulon rouillé est planté dans la boue, et plus loin une botte, sans personne dedans. Le détecteur crépite une fois, vers la gauche.",
       "effects": [
         {
@@ -2367,6 +2402,11 @@
       ]
     },
     "133": {
+      "image": {
+        "src": "images/c27-6.webp",
+        "alt": "Quatre monolithiens à genoux devant une arche de lumière blanche, un gardien debout dans le couloir orange.",
+        "prompt": "Long couloir rectiligne du Sarcophage aux murs de peinture orange cloquée, vu depuis l'ombre d'un contrefort. Au bout, une arche d'où déborde une lumière blanche aveuglante ; devant elle, quatre fidèles du Monolithe à genoux, de dos, en capuches et masques, et un cinquième debout, fusil en travers, qui regarde vers nous. Forts contrastes entre l'orange sombre du béton et le blanc de l'arche."
+      },
       "text": "Le couloir vers la lumière blanche est droit, long, et le chant s'y fait net : quatre voix, une même note. Au bout, devant une arche, quatre monolithiens à genoux, dos à vous, face à la lumière. Un dernier gardien se tient debout, fusil en travers, et il regarde le couloir. Il vous a vu. Il attend de savoir ce que vous êtes.",
       "choices": [
         {
@@ -2439,6 +2479,11 @@
       ]
     },
     "137": {
+      "image": {
+        "src": "images/c07-8.webp",
+        "alt": "Carcasses de voitures empilées sur une terre nue, barbelés, l'air qui tremble",
+        "prompt": "La fin de la barricade de wagons, là où commencent les collines : des rouleaux de barbelé, puis de la terre nue sans un brin d'herbe et des carcasses de voitures rouillées empilées les unes sur les autres. Au-dessus des carcasses, l'air tremble par endroits, une spirale de poussière lente entre deux épaves. Ciel bas, aucune sentinelle, une silhouette de stalker vue de loin au bord de la route."
+      },
       "text": "La barricade finit où commencent les collines : des wagons encore, puis des rouleaux de barbelé, puis plus rien que de la terre nue et des carcasses de voitures montées les unes sur les autres. Personne ne garde ce côté-là. Ils n'ont pas besoin. Votre détecteur se met à crépiter avant même que vous ayez quitté la route, et l'air au-dessus des carcasses tremble par endroits, comme au-dessus d'un capot chaud.",
       "choices": [
         {
@@ -2704,6 +2749,11 @@
       ]
     },
     "155": {
+      "image": {
+        "src": "images/c30-2.webp",
+        "alt": "Une vieille armoire électrique en tôle, huit disjoncteurs à poignée et une grande poignée seule en bas, des câbles épais entrant par le haut.",
+        "prompt": "Gros plan sur une armoire électrique soviétique en tôle grise cabossée, cadenas scié pendant, portes ouvertes : à l'intérieur, une rangée de gros disjoncteurs à poignée, sept usés et un huitième neuf, et tout en bas une grande poignée isolée. Des câbles épais comme des bras entrent par le haut depuis le plafond. Une main gantée de stalker s'approche de la grande poignée, bras vu de dos ; derrière, floues, deux silhouettes de gardes en blouse immobiles et le reflet des cuves."
+      },
       "text": [
         "L'armoire grise est plus vieille que le reste : de la tôle soviétique, un cadenas scié, des disjoncteurs à poignée gros comme des mains. Sept marqués, un huitième neuf, et en bas une grande poignée seule. Les câbles entrent par le haut, épais comme des bras. Un transformateur chauffe la tôle.",
         "Les gardes ont tourné la tête. Les voix ont repris, un peu plus vite. Tu ne sais pas ce que tu fais. Ce n'est pas une menace. Ils disent ce qu'ils savent."
@@ -2984,6 +3034,11 @@
       ]
     },
     "170": {
+      "image": {
+        "src": "images/c02-16.webp",
+        "alt": "Le fossé du Dépotoir traversé d'arcs électriques, un artefact qui rougeoie dans l'herbe brûlée",
+        "prompt": "Un fossé encaissé entre des carcasses de voitures, où des arcs électriques courent d'une tôle à l'autre dans une anomalie Électro. Au milieu, dans l'herbe brûlée, une petite sphère rougeoyante grosse comme un poing : un artefact. Au bord du fossé, au premier plan, la silhouette d'un stalker accroupi de dos, un boulon dans la main tendue, le détecteur à la ceinture. Fortes lumières blanches des arcs sur la rouille noire."
+      },
       "text": "Le fossé est bleu. Pas l'eau : l'air. Des arcs courent d'une carcasse à l'autre, claquent, meurent, repartent. Une « Électro ». Au milieu, dans l'herbe brûlée, quelque chose rougeoie, gros comme un poing. Le Détecteur Ours crépite comme une friture. Il crépite avant vous. Un boulon avant chaque pas, disait le Loup.",
       "choices": [
         {
@@ -3025,6 +3080,11 @@
       ]
     },
     "173": {
+      "image": {
+        "src": "images/c21-1.webp",
+        "alt": "Le hall d'un hôpital abandonné, brancards renversés, une porte battante ouverte sur un escalier noir.",
+        "prompt": "Le hall d'accueil d'un hôpital soviétique abandonné : brancards renversés, comptoir sous la poussière, tableau des services aux lettres tombées, un sol jonché de gravats. Au fond, une porte battante entrouverte sur un escalier qui descend dans le noir complet, un courant d'air froid que suggèrent des feuilles mortes soulevées. Lumière grise tombant des fenêtres brisées, sans personnage."
+      },
       "text": "Le hall de l'hôpital. Des brancards renversés, un comptoir d'accueil sous la poussière, un tableau des services dont les lettres sont tombées. Au fond, derrière une porte battante, un escalier descend vers le sous-sol. Il fait noir dès la troisième marche. Un courant d'air monte de là, froid, qui sent le carrelage mouillé et l'éther. Quelque chose goutte, en bas, à intervalles réguliers.",
       "choices": [
         {
@@ -3290,6 +3350,11 @@
       ]
     },
     "187": {
+      "image": {
+        "src": "images/c11-7.webp",
+        "alt": "La porte d'acier du bunker des scientifiques sous son auvent de plomb, Yantar en contrebas",
+        "prompt": "Une porte d'acier encastrée dans une butte de terre, sous un auvent de plaques de plomb ; à côté, un interphone et une petite caméra tournée vers le spectateur, une antenne plantée au sommet de la butte. En contrebas, tout Yantar s'étale : les cuves et la cheminée penchée de l'usine chimique, le lac plat et gris, une route qui contourne le lac par une digue et monte au nord vers une ligne de pins sombres. Une silhouette de stalker, de dos, au bas de la pente."
+      },
       "text": "La porte du bunker est une plaque d'acier dans la terre, sous un auvent de plomb. Un interphone, une caméra qui bouge quand vous bougez. Le compteur se tait ici : on a bien choisi l'endroit. D'ici on voit tout Yantar : l'usine et ses cuves, le lac plat, la route qui monte au nord vers des pins qui ne sont plus verts.",
       "choices": [
         {
@@ -3377,7 +3442,7 @@
       "image": {
         "src": "images/c30-5.webp",
         "alt": "La salle des cuves de la C-Conscience : sept cuves de verre alignées sous les néons, des corps branchés qui flottent, et au bout de la rangée une huitième cuve ouverte.",
-        "prompt": "Une salle de laboratoire souterraine sous des néons : sept hautes cuves de verre alignées où flottent des corps nus reliés par des câbles à la nuque, une huitième cuve ouverte et vide au bout de la rangée, des faisceaux de câbles montant vers une armoire électrique grise, un carrelage blanc et une porte de fer sans poignée."
+        "prompt": "Une salle de laboratoire souterraine sous des néons : sept hautes cuves de verre alignées où flottent des silhouettes humaines indistinctes en combinaison grise, à peine visibles dans un liquide trouble, reliées par des câbles au sommet de la cuve, une huitième cuve ouverte et vide au bout de la rangée, des faisceaux de câbles montant vers une armoire électrique grise, un carrelage blanc et une porte de fer sans poignée."
       },
       "choices": [
         {
@@ -3420,6 +3485,11 @@
       ]
     },
     "191": {
+      "image": {
+        "src": "images/c24-1.webp",
+        "alt": "Le parvis immense de la Centrale, camions renversés, le Sarcophage de béton et la cheminée rayée contre un ciel bas.",
+        "prompt": "Une dalle de béton grande comme un champ, jonchée de camions renversés aux pneus fondus, une cour de transformateurs sur la gauche où l'air tremble à peine. Au bout, le Sarcophage : un bloc gris qui mange la moitié du ciel, et à côté la haute cheminée rayée de la Centrale plantée comme une aiguille. Pas un oiseau, ciel bas et lourd, poussière. Le héros en minuscule silhouette de dos au bord de la dalle."
+      },
       "text": "Le parvis de la Centrale est une dalle de béton grande comme un champ. Au bout, le Sarcophage : un bloc gris qui mange la moitié du ciel, et la cheminée rayée de rouge plantée à côté comme une aiguille. Pas un oiseau. Le vent apporte une odeur de fer et de poussière chaude. Entre vous et le béton, des camions renversés, une cour de transformateurs où l'air tremble, et la dalle nue.",
       "choices": [
         {
@@ -3644,6 +3714,11 @@
       }
     },
     "204": {
+      "image": {
+        "src": "images/c30-1.webp",
+        "alt": "Sept cuves de verre alignées sous des néons, des silhouettes humaines indistinctes flottant dedans, reliées au plafond par des câbles.",
+        "prompt": "Une salle de laboratoire carrelée où sept hautes cuves de verre cylindriques sont alignées sous des néons. Dans chacune, une silhouette humaine indistincte, à peine visible à travers un liquide trouble et jaunâtre, suspendue dans une combinaison grise, des bulles montant le long du verre, des faisceaux de câbles sortant du sommet de la cuve vers le plafond. Au fond de la rangée, une huitième cuve ouverte et vide. Au premier plan, une silhouette de stalker de dos sur le seuil, minuscule devant les cuves. Hachures serrées, verre, reflets, lumière crue."
+      },
       "text": [
         "Sept cuves de verre, hautes comme des hommes, alignées sous les néons. Dedans, des corps nus flottent dans un liquide jaune, la nuque hérissée de câbles. Des bulles montent le long des visages. Ça sent le formol et le cuivre chaud.",
         "Les voix sont déjà là. Sept, qui parlent ensemble, calmes, sans bouche. Entre. Nous t'attendions.",
@@ -3978,6 +4053,11 @@
       ]
     },
     "221": {
+      "image": {
+        "src": "images/c03-32.webp",
+        "alt": "La salle des pompes d'Agroprom, trois pompes mortes et une trappe ouverte sur une échelle",
+        "prompt": "Une salle industrielle sombre avec trois grosses pompes mortes, de la taille de voitures, et de l'eau noire sur le sol qui reflète la lumière grise d'une lucarne. Au centre, une trappe de fonte ouverte sur une échelle de fer qui descend dans le noir, une flèche grossière gravée dans la rouille pointant vers le bas. Tuyaux, vannes, volants rouillés. Une silhouette de stalker, de dos, penchée au bord de la trappe."
+      },
       "text": "La salle des pompes. Trois pompes mortes, grosses comme des voitures, et de l'eau noire à mi-cheville qui ne vient de nulle part. Au centre, une trappe de fonte ouverte sur une échelle. Il en monte un froid qui n'a rien à voir avec la saison, et une odeur de cave et de fer. Quelqu'un a gravé une flèche dans la rouille, vers le bas. Pas de date.",
       "choices": [
         {
@@ -4101,6 +4181,11 @@
       ]
     },
     "232": {
+      "image": {
+        "src": "images/c04-9.webp",
+        "alt": "Le Contrôleur debout au bout de la galerie, devant la porte ouverte d'une chambre carrée",
+        "prompt": "Une galerie d'égout voûtée, des tuyaux le long des parois, éclairée seulement par la lueur jaune d'une porte ouverte au fond. Devant la porte, immobile, un Contrôleur : grand, voûté, le crâne gonflé et difforme, les bras trop longs pendant le long du corps, l'air ondulant autour de sa tête. Au premier plan, le stalker de dos, en silhouette, une main sur le mur et un pistolet dans l'autre. Noir profond, hachures serrées, la créature à contre-jour."
+      },
       "text": "Il est là, au bout de la galerie, devant une porte ouverte sur une chambre carrée. Grand, voûté, le crâne gonflé comme une outre, les bras trop longs posés le long du corps. Un Contrôleur. Il ne vous regarde pas encore. La pression derrière votre front a un rythme, maintenant, et c'est le sien.",
       "choices": [
         {
@@ -4241,6 +4326,11 @@
       ]
     },
     "239": {
+      "image": {
+        "src": "images/c03-19.webp",
+        "alt": "La fusillade dans la cour d'Agroprom entre les silos, militaires au portail et Devoir derrière les sacs de sable",
+        "prompt": "La cour d'une usine agricole en ruine entre de hauts silos de béton percés. Des militaires casqués entrent par un portail de tôle en tirant, par bonds, et des hommes du Devoir répondent depuis des sacs de sable ; un officier gît à découvert dans la boue du portail. Fumée de poudre, douilles, éclats sur la tôle. Au premier plan, le stalker est caché de dos à l'angle d'un tank d'eau sur pilotis qui fuit, hors du combat."
+      },
       "text": "La cour s'étend entre les silos, et ça commence. Les militaires entrent par le portail est en tirant, casques baissés, par bonds de cinq mètres. Le Devoir répond depuis les sacs de sable, sans crier. Un officier tombe le premier, à découvert, dans la boue du portail, et personne ne va le chercher. Vous êtes à l'angle d'un tank d'eau, hors de tout. La tôle vibre à chaque impact. L'herbe, derrière vous, sent la poudre.",
       "choices": [
         {
@@ -4266,6 +4356,11 @@
       ]
     },
     "240": {
+      "image": {
+        "src": "images/c04-7.webp",
+        "alt": "La chambre carrée des souterrains, une grille de fer scellée et la cache de Strelok derrière",
+        "prompt": "Une petite chambre souterraine au sol dallé, les murs de briques suintants, éclairée par une lampe torche. Sur le mur du fond, une grille de fer scellée dans la brique sans serrure ni gonds, et derrière, dans la pénombre, une pièce cachée : un matelas, des caisses empilées, une lampe à pétrole éteinte. Près d'une échelle de fer, une porte à barre poussoir. La silhouette du stalker de dos, les mains sur les barreaux de la grille."
+      },
       "text": "Une chambre carrée, un sol de dalles, et sur le mur du fond une grille de fer scellée, derrière laquelle on devine une pièce : un matelas, des caisses, une lampe à pétrole. Pas de serrure. Pas de gonds visibles. Quelqu'un a voulu que ça ressemble à un mur. Près de l'échelle, une porte à barre poussoir, de celles qui ne s'ouvrent que d'un côté.",
       "choices": [
         {
@@ -5183,6 +5278,11 @@
       ]
     },
     "296": {
+      "image": {
+        "src": "images/c16-29.webp",
+        "alt": "La salle de contrôle du Radar, cadrans de bakélite et bouton rouge sous un capot de verre",
+        "prompt": "Une salle de contrôle souterraine : murs de cadrans de bakélite aux aiguilles tremblantes, câbles au plafond, et au centre un bouton rouge sous un capot de verre. Devant la console, un officier du Monolithe debout, masque posé sur la table, yeux blancs, un sourire fixe. Derrière lui, un hublot où pulse une lumière verte. Cadrage frontal depuis la porte, le héros absent."
+      },
       "text": "La salle de contrôle. Des cadrans de bakélite, des aiguilles dans le vert, et au centre un bouton rouge sous un capot de verre. Devant, un officier du Monolithe, debout, le masque sur la table. Il vous regarde entrer avec ses yeux blancs et il sourit. Il dit : tu arrives. Il dit : il t'attend. Il prend son fusil sans se presser.",
       "choices": [
         {
@@ -5200,6 +5300,11 @@
       ]
     },
     "297": {
+      "image": {
+        "src": "images/c25-6.webp",
+        "alt": "Un couloir bas noyé jusqu'aux chevilles, câbles pendants, et au fond une lueur orange qui ne vient d'aucune lampe.",
+        "prompt": "Les couloirs du bas de la Centrale : un plafond bas de béton, de l'eau noire jusqu'aux chevilles qui reflète des câbles pendants, des tuyaux courant le long des murs et disparaissant dans l'obscurité, des traces de doigts dans la suie à hauteur de main. Au fond, une lueur orange diffuse qui ne vient d'aucune lampe, et à sa lumière la surface de l'eau trahit un regard ouvert, sans grille. Le héros de dos, en silhouette contre la lueur."
+      },
       "text": "Les couloirs du bas. De l'eau jusqu'aux chevilles, un plafond bas, des câbles qui pendent au-dessus de l'eau, et quelque part devant, une lumière orange qui ne vient d'aucune lampe. Des tuyaux courent le long des murs et disparaissent dans le noir. Le sol, sous l'eau, n'est pas plat. Il y a des trous. Vous ne savez pas où.",
       "choices": [
         {
@@ -5593,6 +5698,11 @@
       }
     },
     "321": {
+      "image": {
+        "src": "images/c18-14.webp",
+        "alt": "La place de Pripyat sous la grande roue arrêtée, l'hôtel et le palais, des tireurs sur les toits",
+        "prompt": "Une grande place de ville morte envahie de bouleaux, dominée par une grande roue arrêtée aux nacelles pendantes. Autour, un hôtel de huit étages sans vitres, un palais à colonnes, l'avenue vers le nord entre les immeubles. Sur les toits, de petites silhouettes grises immobiles, fusils tournés vers le sud. Ciel bas, poussière froide. Le héros en silhouette dans l'ombre d'un porche, de dos."
+      },
       "text": "La place. La grande roue au-dessus, ses nacelles jaunes qui grincent, une par une, quand le vent passe. Autour : l'hôtel Polissya, huit étages, son nom en lettres creuses sur le toit ; le palais de la Culture et ses colonnes ; plus loin l'hôpital, la piscine. Au nord, entre les immeubles, l'avenue qui mène au pont de la Centrale. Sur les toits, le Monolithe. Ils regardent. Ils ne tirent pas sur la place. Pas encore.",
       "choices": [
         {
@@ -5635,6 +5745,11 @@
       ]
     },
     "322": {
+      "image": {
+        "src": "images/c20-1.webp",
+        "alt": "Le porche à colonnes du palais de la Culture, mosaïque criblée de balles et bougies sur les marches",
+        "prompt": "Le porche d'un palais de la Culture soviétique : des colonnes carrées qui tiennent encore, des portes sans vitres, et au-dessus une mosaïque de travailleurs souriants aux visages crevés par les balles. Sur les marches, des bougies éteintes dans des boîtes de conserve, alignées en rangs. De l'intérieur, une pénombre. Le héros de dos, au pied des marches."
+      },
       "text": "Sous le porche du palais de la Culture, les colonnes tiennent encore. Les vitres, non. Une mosaïque de travailleurs souriants court au-dessus des portes, les visages crevés à coups de balles. À l'intérieur, quelque chose chante. Pas une chanson : une phrase, reprise, toujours la même, par des voix qui ne respirent pas au même endroit. Sur les marches, des bougies éteintes dans des boîtes de conserve, alignées comme pour une fête.",
       "choices": [
         {
@@ -5769,6 +5884,11 @@
       }
     },
     "331": {
+      "image": {
+        "src": "images/c08-21.webp",
+        "alt": "Un vieil homme en veste grise seul à sa table dans le coin sombre du Bar",
+        "prompt": "Dans le coin le plus sombre de la cave voûtée du Bar, un vieil homme en veste grise assis dos au mur, mains posées à plat sur une table de ferraille, un verre d'eau intact devant lui. Autour de sa table, un cercle de vide ; plus loin, les tables occupées, le poêle, les ampoules nues. Au premier plan, de dos, un stalker qui traverse la salle vers lui."
+      },
       "text": "Vous traversez la salle. Le vieux ne lève pas la tête, mais il vous a vu avant que vous décidiez de venir. Veste grise, mains posées à plat sur la table, un verre d'eau qu'il n'a pas touché. Autour de lui, une table de vide : les stalkers laissent de la place à ceux qui reviennent du nord, comme on laisse de la place aux morts.",
       "choices": [
         {
@@ -6251,6 +6371,11 @@
       ]
     },
     "356": {
+      "image": {
+        "src": "images/c18-40.webp",
+        "alt": "L'avenue vide vers le nord, et au bout la cheminée de la Centrale au-dessus du viaduc",
+        "prompt": "Une avenue large comme un fleuve, asphalte crevé de bouleaux, bordée d'immeubles aux fenêtres vides. Au bout, entre les façades, la cheminée mince de la Centrale et la masse du Sarcophage, et sous elle le viaduc. Ciel lourd. Le héros de dos, seul au milieu de la chaussée, petit, marchant vers le nord."
+      },
       "text": "L'avenue vers le nord. Entre les immeubles, au bout, la cheminée de la Centrale, et sous elle, le viaduc. Chaque pas vers là-bas en est un de moins vers le sud. Ceux qui prennent le pont ne reviennent pas à Pripyat : pas l'hôtel, pas la place, pas le porche. Ce que vous n'avez pas trouvé ici restera ici.",
       "choices": [
         {
@@ -6284,6 +6409,11 @@
       ]
     },
     "358": {
+      "image": {
+        "src": "images/c15-7.webp",
+        "alt": "La barrière du poste militaire levée, un stalker de dos passe entre les barbelés vers la route et les pylônes",
+        "prompt": "La barrière rayée d'un poste militaire levée, une guérite avec des billets posés sur le capot, un lieutenant au gilet ouvert qui regarde ailleurs. Un stalker de dos, sac sur l'épaule, passe entre deux rangées de barbelés et s'engage sur la même route grise bordée de pylônes, sous une pluie fine. Loin devant, un bus à l'arrêt, des silhouettes assises derrière les vitres."
+      },
       "text": "Le lieutenant compte sans se presser. Vous laissez 3 000 roubles sur le capot de la guérite et la barrière se lève. Vous passez entre les barbelés avec vos artefacts dans le sac, votre pistolet, votre détecteur qui ne crépitera plus. Personne ne vous fouille. De l'autre côté, la même route, les mêmes pylônes. Un bus, plus loin, avec des gens dedans qui ne vous regardent pas. Vous ne savez toujours pas qui vous êtes. Vous rêverez de la Zone chaque nuit."
     },
     "359": {
@@ -7138,6 +7268,11 @@
       ]
     },
     "411": {
+      "image": {
+        "src": "images/c19-31.webp",
+        "alt": "La chambre 26 de l'hôtel, une valise de stalker vide sous la fenêtre et un sac de couchage",
+        "prompt": "Une chambre d'hôtel soviétique défraîchie : un lit nu, une armoire ouverte, et sous la fenêtre sans vitre une valise de stalker ouverte et vide. Par terre, un sac de couchage, une boîte de conserve propre, un livre ouvert à l'envers. Au fond, la porte entrouverte d'une salle de bain au carrelage bleu. Lumière grise de la fenêtre, le héros absent."
+      },
       "text": "La chambre 26. Un lit, une armoire ouverte, une valise de stalker sous la fenêtre avec le nom de Fantôme au feutre sur la toile. Vide. Un sac de couchage, une boîte de conserve propre, un livre ouvert à l'envers. Il a dormi ici. Il est reparti sans rien. La salle de bain est au fond, porte entrouverte, carrelage bleu.",
       "choices": [
         {
@@ -7880,6 +8015,11 @@
       ]
     },
     "457": {
+      "image": {
+        "src": "images/c14-22.webp",
+        "alt": "La cabane du Forestier au croisement des pistes, une chaise et un fusil sur le seuil, l'antenne couchée au loin",
+        "prompt": "Une cabane de rondins au milieu de pins aux aiguilles rouges, porte entrebâillée, une chaise et un fusil appuyé contre le mur sur le seuil, un vieil homme barbu assis sur la chaise, fusil sur les genoux. Devant, deux pistes se croisent : l'une descend vers un ravin aux pins plus sombres, l'autre monte vers le nord ; au-dessus de la crête, en travers du ciel, une antenne gigantesque couchée comme un pont de fer. Un stalker de dos, au croisement."
+      },
       "text": "Devant la cabane, les pistes se croisent. Une descend vers l'ouest, dans un ravin où les pins sont plus rouges encore. Une monte au nord, vers la rivière ; au-delà, sur la crête, une antenne couchée en travers du ciel, grande comme un pont. La porte de la cabane est entrebâillée. Sur le seuil, une chaise, un fusil appuyé contre le mur. Le détecteur se tait ici. C'est reposant.",
       "choices": [
         {
@@ -7999,6 +8139,11 @@
       }
     },
     "461": {
+      "image": {
+        "src": "images/c25-27.webp",
+        "alt": "La salle de contrôle d'un réacteur, pupitres en arc de cercle, des centaines de cadrans à zéro, un seul voyant rouge.",
+        "prompt": "La salle de contrôle du réacteur 4, intacte sous la poussière : des pupitres en arc de cercle, des centaines de cadrans dont chaque aiguille repose sur sa butée, des rangées de voyants éteints sauf un, rouge, au-dessus du pupitre central, des chaises renversées au sol. Lumière grise de néons de secours, le héros vu de dos, la main tendue au-dessus d'un cadran sans le toucher. Les cadrans sont lisses, sans chiffres ni lettres."
+      },
       "text": "Les cadrans sont tous à zéro. Chaque aiguille repose sur sa butée, des centaines d'aiguilles, et les voyants sont éteints, sauf un, rouge, au-dessus du pupitre central, qui ne clignote pas. Vous passez la main sur un cadran sans le toucher. Vous êtes au-dessus de ce qui a brûlé. Vous l'avez vu. Un escalier de service s'ouvre derrière le dernier pupitre.",
       "effects": [
         {
@@ -8014,6 +8159,11 @@
       ]
     },
     "462": {
+      "image": {
+        "src": "images/c20-27.webp",
+        "alt": "Depuis le balcon, la salle de cinéma et trois hommes gris agenouillés devant un bloc de béton peint",
+        "prompt": "Vu d'en haut depuis un balcon de théâtre, par-dessus une rambarde : des rangées de fauteuils rouges déchirés descendent vers une scène où se dresse un bloc de béton de deux mètres, peint en gris et or avec un cercle au centre. Trois hommes en combinaison grise à genoux lui font face, masques relevés sur le front ; un quatrième se tient debout entre eux, tête penchée, écoutant. Des bougies brûlent au pied de la scène. Le héros absent du cadre."
+      },
       "text": "Personne n'a levé la tête. Vous êtes à plat ventre derrière la rambarde, et la salle est sous vous. Sur la scène, un bloc de béton de deux mètres, peint en gris et or, un cercle au centre. Trois hommes en combinaison grise lui font face, masques relevés sur le front. Ils psalmodient, et chaque phrase finit sur le même mot. Entre eux, un quatrième ne chante pas. Il écoute.",
       "choices": [
         {
@@ -8188,6 +8338,11 @@
       ]
     },
     "476": {
+      "image": {
+        "src": "images/c28-1.webp",
+        "alt": "La salle de l'Exauceur : une grande pierre noire qui luit par en dessous, des sacs et des fusils abandonnés le long des murs.",
+        "prompt": "Une salle de béton nu, plus petite qu'une chapelle. Au centre, une pierre noire grande comme une voiture, posée sur le sol, dont une lueur chaude sort par en dessous comme d'une braise couverte. Le long des murs, des sacs à dos affaissés, des fusils debout contre le béton, des gamelles, abandonnés en rangs. Une silhouette de stalker sur le seuil, de dos, le détecteur pendu à la poitrine, seule source d'échelle."
+      },
       "text": "La salle est plus petite que vous ne pensiez. Au milieu, la pierre : grande comme une voiture, noire, et elle luit par en dessous, comme une braise qu'on a couverte. Elle bourdonne. Le son est dans vos dents avant d'être dans vos oreilles. Le détecteur, lui, ne dit rien. Le long des murs, des sacs, des fusils debout contre le béton, des gamelles. Ceux qui sont venus ont laissé leurs affaires. Ils ne sont pas repartis les chercher.",
       "choices": [
         {
@@ -8764,6 +8919,11 @@
       ]
     },
     "514": {
+      "image": {
+        "src": "images/c05-31.webp",
+        "alt": "La cour de l'usine de Borov dans la Vallée sombre, feu de palettes, bandits aux cartes et bureau éclairé",
+        "prompt": "La cour d'une usine noire dans la brume : des camions sans roues, un feu de palettes, des hommes en blouson de cuir qui jouent aux cartes sur un capot sans lever les yeux. Au fond d'une halle ouverte, une porte de fer cadenassée au-dessus d'un escalier qui descend. À l'étage, derrière une vitre sale, un bureau éclairé où se devine un homme assis. Le stalker entre par la grille, de dos, en silhouette au premier plan."
+      },
       "text": "La cour de l'usine. Des camions sans roues, un feu de palettes, des hommes en cuir qui jouent aux cartes sur un capot et ne lèvent pas les yeux. Au fond de la halle, une porte de fer avec un escalier qui descend, et un cadenas gros comme un poing. Au-dessus, derrière une vitre sale, un bureau éclairé. Borov. Il vous a déjà vu.",
       "choices": [
         {
@@ -9157,6 +9317,11 @@
       ]
     },
     "537": {
+      "image": {
+        "src": "images/c23-6.webp",
+        "alt": "Sous le viaduc, une pile de béton moussue avec une échelle de fer qui monte vers le tablier, une cabane au toit crevé.",
+        "prompt": "Le dessous d'un viaduc : une pile de béton brut piquée de mousse montant vers le tablier vingt mètres plus haut, une échelle de service en fer scellée dans le béton, au pied une cabane d'éclusier au toit crevé. La voie ferrée rouillée continue sous les arches dans une boue qui luit faiblement, des flaques d'eau noire entre les traverses. Lumière rasante sous le tablier qui bouche le ciel, le héros en petite silhouette au pied de l'échelle."
+      },
       "text": [
         "La pile du pont. Du béton brut, piqué de mousse, et l'échelle de service qui monte vers le dessous du tablier, vingt mètres plus haut. Au pied, une cabane d'éclusier au toit crevé. Vers l'est, la voie continue sous les arches, dans une boue qui luit.",
         "En haut, assourdi par le béton, un pas qui va et vient. Le garde. Il ne regarde pas en bas."
@@ -9297,6 +9462,11 @@
       ]
     },
     "548": {
+      "image": {
+        "src": "images/c01-21.webp",
+        "alt": "Le pont de chemin de fer du Cordon, sacs de sable, mitrailleuse et croix de planches sur le talus",
+        "prompt": "Une route défoncée monte vers une arche de pont de chemin de fer en béton noirci, des sacs de sable empilés sur le tablier et le canon d'une mitrailleuse qui dépasse, un haut-parleur fixé à un poteau. En contrebas, un fossé d'eau brune passe sous l'arche ; sur le talus, une croix faite de deux planches. Vu depuis la route, en contre-plongée, une silhouette de stalker de dos tout en bas du cadre, les mains ouvertes."
+      },
       "text": "La route monte vers le pont de chemin de fer, une arche de béton noircie, des sacs de sable sur le tablier, une mitrailleuse qui vous suit déjà. Un haut-parleur grésille : halte. En contrebas, un fossé d'eau brune passe sous l'arche, et le compteur s'y réveille avant même que vous ayez approché. Sur le talus, une croix faite de deux planches.",
       "choices": [
         {
@@ -9563,6 +9733,11 @@
       ]
     },
     "562": {
+      "image": {
+        "src": "images/c11-11.webp",
+        "alt": "Une dizaine de zombies en combinaisons de stalkers marchent dans l'herbe grise entre l'usine et le bunker",
+        "prompt": "Une bande d'herbe grise au bord d'un lac mort, entre une usine chimique à gauche et une butte sous bâche de plomb à droite. Une dizaine de zombies en combinaisons et casques de stalkers avancent lentement, voûtés, fusils tenus comme des pelles, la bouche entrouverte ; le premier tourne la tête vers le spectateur et lève son arme sans viser. Des blocs de béton dans l'herbe, un ciel bas. Vu de derrière un bloc de béton, au ras du sol."
+      },
       "text": "Ils sont une dizaine entre l'usine et le bunker. Combinaisons de stalkers, casques, fusils tenus comme des pelles. Ils marchent, s'arrêtent, repartent. Le premier vous voit. Il tourne la tête comme on tourne une page, puis lève son arme sans viser. Les autres suivent, lentement. Ils marmonnent tous la même chose, et vous n'entendez pas quoi.",
       "choices": [
         {
@@ -9805,6 +9980,11 @@
       ]
     },
     "577": {
+      "image": {
+        "src": "images/c02-1.webp",
+        "alt": "L'entrée du Dépotoir, collines de camions empilés et le hangar de béton au loin",
+        "prompt": "Une route sort d'entre deux talus et s'arrête devant des collines qui sont des camions empilés, des bennes et des carcasses de bus entassées jusqu'au ciel bas. L'air tremble de chaleur au-dessus de la ferraille. Au loin, un cube de béton gris sans fenêtre : le hangar. À gauche de la route, un bus couché sur le flanc. Une silhouette de stalker, de dos et de loin, regarde les collines depuis le bord de la route."
+      },
       "text": "La route sort du Cordon entre deux talus et s'arrête devant les collines. Ce ne sont pas des collines. Des camions empilés, des bennes, des carcasses de bus à perte de vue, et par-dessus une couleur de rouille que la lumière n'arrange pas. L'air sent le fer chaud. Au loin, un cube de béton gris : le hangar. Le détecteur cliquette sans se presser. À gauche de la route, un bus couché sur le flanc.",
       "choices": [
         {
@@ -10576,6 +10756,11 @@
       ]
     },
     "628": {
+      "image": {
+        "src": "images/c19-17.webp",
+        "alt": "L'escalier éventré de l'hôtel, une volée manquante au-dessus du vide",
+        "prompt": "La cage d'escalier d'un hôtel en ruine : une large volée s'arrête net au troisième étage, quatre mètres de vide, et les marches reprennent de l'autre côté, rampe de cuivre tordue. Au fond du trou, dans les gravats, un matelas et un casque. Verre et plâtre sur les marches, lumière grise tombant d'en haut. Le héros de dos au bord du vide, mesurant le saut."
+      },
       "text": "Le premier étage, le deuxième. Les marches sont couvertes de verre et de gravats qui crissent. Au troisième, l'escalier s'arrête. Une volée entière manque, tombée dans la cage avec le palier. Il reste quatre mètres de vide et, de l'autre côté, les marches qui reprennent vers le quatrième. En bas, dans le trou, un matelas et un casque. Vous mesurez le saut avec les yeux.",
       "choices": [
         {
@@ -10665,6 +10850,11 @@
       ]
     },
     "634": {
+      "image": {
+        "src": "images/c17-1.webp",
+        "alt": "Un transformateur couché sous des pins morts, une trappe de fonte ouverte dessous",
+        "prompt": "Dans une forêt de pins rougis, un transformateur électrique couché sur le flanc, le ventre ouvert, ses bobines pleines d'aiguilles de pin. Dessous, une trappe de fonte ronde, entrouverte sur le noir. Au loin, au-dessus de la crête, la masse d'une antenne couchée. Le héros accroupi de dos près de la trappe, une carte dépliée à la main."
+      },
       "text": "Le transformateur est couché sur le flanc, le ventre ouvert, ses bobines pleines d'aiguilles de pin. Dessous, une trappe de fonte, celle que le Guide a dessinée d'un trait sur sa carte, avec une croix tous les cinquante mètres jusqu'à Pripyat. Vous dépliez la Carte du Guide une dernière fois. L'antenne du Radar gronde quelque part à l'est, au-dessus de la crête. Ici, rien ne gronde. La trappe sent l'eau froide.",
       "choices": [
         {
@@ -10737,6 +10927,11 @@
       }
     },
     "641": {
+      "image": {
+        "src": "images/c22-18.webp",
+        "alt": "La cour d'un poste de police en ruine, un fourgon sans roues, deux gardes masqués immobiles sur le perron.",
+        "prompt": "La cour arrière d'un poste de police de Pripyat : un fourgon UAZ sans roues posé sur ses essieux, un drapeau en loques, des douilles sur les dalles, une rangée de poubelles renversées au premier plan. Sur le perron, deux hommes en combinaison grise, masques relevés sur le front, l'un les mains jointes, l'autre un fusil sur le ventre, les yeux tournés vers la rue. Vue depuis l'ombre d'une porte de service, le héros absent ou en silhouette au bord du cadre."
+      },
       "text": "La cour du poste. Un fourgon UAZ sans roues, un drapeau de la milice en loques, des douilles partout. Sur le perron arrière, deux monolithiens en tenue grise, masques relevés sur le front, les yeux blancs tournés vers la rue. L'un psalmodie. L'autre tient un fusil sur le ventre et dodeline. Entre vous et eux, dix mètres de dalles et une rangée de poubelles renversées. Derrière eux, la porte du poste est ouverte.",
       "choices": [
         {
@@ -10906,6 +11101,11 @@
       ]
     },
     "651": {
+      "image": {
+        "src": "images/c29-18.webp",
+        "alt": "Une antichambre sombre devant une double porte vitrée baignée de lumière verte, des cuves hautes derrière la vitre.",
+        "prompt": "Une antichambre basse et sombre, sans néons, où toute la lumière vient d'une double porte vitrée au fond, d'un vert d'aquarium. Derrière la vitre, des formes hautes et floues : des cuves cylindriques, des tubes, des corps qui flottent. Contre le mur, un pupitre et un fauteuil vide tourné vers l'entrée. Une silhouette de stalker à contre-jour, de dos, s'approche de la vitre. Forts contrastes, cadrage frontal."
+      },
       "text": "Une antichambre basse, sans néons, éclairée par la lumière verte qui filtre d'une double porte vitrée au fond. Derrière la vitre, des formes hautes, des cuves, des tubes, des choses qui flottent. Un bourdonnement de pompes. Les voix sont là, toutes, et elles ne parlent plus : elles vous regardent venir. Contre le mur, un pupitre et un fauteuil. Le fauteuil est tourné vers vous. Il est vide.",
       "choices": [
         {
@@ -11225,6 +11425,11 @@
       "text": "La première pièce vous ouvre l'arcade. La deuxième casse un doigt. Puis il n'y a plus de pièces séparées, seulement le poids. Vous tombez à genoux, puis à plat, le visage sur le métal froid, et le métal monte autour de vous comme de l'eau. Il est chaud, maintenant. Il sent le fer. Vous avez demandé la richesse. Vous l'avez, jusque dans la bouche."
     },
     "669": {
+      "image": {
+        "src": "images/c22-10.webp",
+        "alt": "Les cellules d'un poste de police, grilles ouvertes, des corps en tenue grise alignés sur le sol, masqués.",
+        "prompt": "Le sous-sol d'un poste de police : un couloir étroit, quatre cellules aux grilles ouvertes, et dans chacune des corps en combinaison grise alignés sur le sol, les mains croisées sur la poitrine, le masque sur le visage. Un mot illisible tracé à la craie sur chaque mur, rendu comme une simple trace blanche sans lettres. Lumière froide d'une torche depuis l'escalier, vapeur de froid au ras du sol, le héros vu de dos en haut des marches."
+      },
       "text": "Les cellules. Quatre grilles ouvertes, et dans chacune, des corps en tenue grise alignés sur le sol, les mains croisées, le masque sur le visage. Une vingtaine. Pas d'odeur, ou presque ; le froid les garde. Quelqu'un a écrit un mot à la craie sur chaque mur, le même. Le détecteur crépite plus fort quand vous approchez. Ce n'est pas d'eux que vient la radiation. C'est de ce qu'ils portent.",
       "choices": [
         {
@@ -11442,6 +11647,11 @@
       ]
     },
     "683": {
+      "image": {
+        "src": "images/c26-12.webp",
+        "alt": "Le toit de gravier de la salle des machines, la cheminée rayée haubanée de câbles, le Sarcophage derrière.",
+        "prompt": "Vue depuis le bord d'un immense toit de gravier et de bitume fendu, long comme une rue, balayé par le vent. À l'autre bout se dresse une haute cheminée industrielle rayée de bandes claires et sombres, haubanée de câbles tendus, et derrière elle la masse de béton gris du Sarcophage, reliée à la cheminée par une passerelle qui pend. Au milieu du toit, une cabine de ventilation en tôle à la porte ouverte et des bouches de conduits rouillées dans le sol ; une silhouette de stalker de dos, courbée contre le vent, au premier plan."
+      },
       "text": "Le toit de la salle des machines est un champ de gravier et de bitume fendu, long comme une rue. La cheminée se dresse à l'autre bout, rayée de rouge et de blanc, haubanée de câbles qui chantent. Derrière elle, le Sarcophage, son béton gris, et une passerelle qui pend entre les deux. Au milieu du toit, une cabine de ventilation, porte ouverte. Des bouches de conduits s'ouvrent dans le sol. Le vent ne s'arrête jamais ici.",
       "choices": [
         {
@@ -11611,6 +11821,11 @@
       ]
     },
     "693": {
+      "image": {
+        "src": "images/c29-13.webp",
+        "alt": "Un couloir blanc carrelé sous des néons, une caméra dans sa bulle de verre au plafond, une porte grise entrebâillée.",
+        "prompt": "Couloir de laboratoire propre et carrelé de blanc, éclairé par des néons sans faille, qui tourne à angle droit au fond. Au plafond, deux caméras sous des bulles de verre, tournées vers nous ; sur la gauche, une porte grise entrebâillée sur le noir. Des traces de bottes boueuses sur le carrelage lavé, et une silhouette de stalker de dos, sale, déplacée dans ce lieu aseptisé. Aucun panneau, aucune inscription."
+      },
       "text": "La caméra pivote avec vous, lentement, sans bruit. Puis une deuxième, plus loin. Le couloir tourne à angle droit. Derrière l'angle, des voix d'hommes, une radio qui grésille, une chaise qui racle. Un panneau au mur, en cyrillique, une flèche : décontamination. Sur votre gauche, avant l'angle, une porte grise entrebâillée d'où sort le bourdonnement d'un transformateur.",
       "choices": [
         {
@@ -11789,6 +12004,11 @@
       ]
     },
     "705": {
+      "image": {
+        "src": "images/c12-7.webp",
+        "alt": "La salle de l'émetteur psi, une colonne cerclée d'anneaux qui s'immobilisent, un levier abaissé",
+        "prompt": "Une salle souterraine au carrelage blanc fissuré, sous des néons dont la moitié sont morts : au centre, une colonne de métal haute jusqu'au plafond, cerclée d'anneaux massifs qui viennent de s'immobiliser, reliée par des câbles à des armoires de contrôle à cadrans. Au premier plan, un gros levier abaissé sur un pupitre, une chemise cartonnée posée à côté, et la main d'un stalker encore sur la poignée, vu de dos. Une traînée de sang sur le carrelage."
+      },
       "text": "Le levier résiste, puis cède d'un coup. Les anneaux ralentissent. Le ronronnement descend, descend, et s'arrête, et le silence qui vient après est si grand que vous entendez votre sang. Votre nez ne saigne plus. Quelque part au-dessus, les voix qui marmonnaient se sont tues, et vous savez sans l'avoir vu que les hommes se sont assis. L'émetteur du X-16 est éteint.",
       "effects": [
         {
@@ -12092,6 +12312,11 @@
       ]
     },
     "717": {
+      "image": {
+        "src": "images/c09-15.webp",
+        "alt": "Une Chimère au cuir noir dans une cage ouverte sur la fosse de l'Arène",
+        "prompt": "Dans la fosse de béton de l'Arène, sous les projecteurs de chantier, le mur d'en face s'est ouvert sur une cage de camion-citerne. Dedans, une Chimère : une tête et une bosse qui respire, des pattes trop longues, un cuir noir qui luit. Au-dessus, les parieurs reculent de la grille ; à l'écart, un homme en costume trop petit lève une clef. Le héros n'est pas visible."
+      },
       "text": "Ils ont ouvert le mur. Derrière, une cage de camion-citerne, et dedans, une « Chimère » : deux têtes, ou une tête et une bosse qui respire, des pattes trop longues, un cuir noir qui luit sous les projecteurs. Elle ne grogne pas. Elle vous regarde et calcule la distance. Les parieurs reculent de la grille. Arnie lève sa clef, et sa main tremble un peu.",
       "choices": [
         {
@@ -12337,6 +12562,11 @@
       }
     },
     "733": {
+      "image": {
+        "src": "images/c05-35.webp",
+        "alt": "La rive de la Vallée sombre, le pont effondré dans la rivière et les roseaux couchés par une bête invisible",
+        "prompt": "Une rive de roseaux morts au bord d'une rivière fumante dans une brume épaisse, un pont de béton effondré dont les ferrailles tordues pendent dans l'eau. Sur dix mètres de large, les roseaux sont couchés comme sous un poids énorme, et dans le brouillard se devine à peine une masse de la taille d'un camion, sans forme nette. Au premier plan, le stalker de dos, figé, le détecteur à la main. Ciel bas, eau qui tremble dans les ornières."
+      },
       "text": "La rive. Des roseaux morts, la rivière qui sent le soufre, le compteur qui grimpe. Vous prenez 3 rads. Le pont effondré pend dans l'eau par ses ferrailles. Alors le sol tape, une fois. Puis une autre, plus près. Dans la brume, quelque chose de la taille d'un camion respire, et vous ne le voyez pas. Les roseaux se couchent sur dix mètres de large.",
       "effects": [
         {
@@ -12560,6 +12790,11 @@
       ]
     },
     "750": {
+      "image": {
+        "src": "images/c06-8.webp",
+        "alt": "Un Pseudo-géant aux bras trop longs dans une salle de cuves noyée de gaz vert",
+        "prompt": "Une salle de machines souterraine noyée dans un gaz épais, des cuves couchées, le plafond perdu dans la brume. Au centre, un Pseudo-géant de trois mètres, tête trop petite, bras qui touchent le sol, des sangles encore nouées aux poignets, le sol fendu sous son pied. Il est vu depuis le seuil d'une porte de fer entrouverte, le faisceau d'une lampe torche tremblant sur lui ; le héros n'apparaît pas."
+      },
       "text": "La porte s'ouvre sur une salle de machines, des cuves couchées, un plafond perdu dans le vert. Au milieu, le Pseudo-géant. Trois mètres, une tête trop petite, des bras qui touchent le sol, et des sangles encore nouées aux poignets. Il vous regarde avec des yeux d'homme. Il fait un pas et le sol se fend. Dans ce vert, sans lumière, vous ne retrouveriez pas la poignée de la porte. Vous avez le temps d'une seule chose.",
       "choices": [
         {
@@ -12633,6 +12868,11 @@
       ]
     },
     "754": {
+      "image": {
+        "src": "images/c27-18.webp",
+        "alt": "Une porte d'acier propre avec un clavier et une lampe verte, au fond d'un couloir de béton orange rouillé.",
+        "prompt": "Au bout d'un couloir de béton coulé, peint d'un orange qui cloque et coule, une porte d'acier lisse et neuve, sans rouille, avec un petit clavier à douze touches sur le chambranle et une lampe unique allumée au-dessus. De la lumière froide filtre sous la porte ; de grands ventilateurs industriels grillagés bordent le couloir. Une silhouette de stalker de dos, au premier plan, le détecteur à la main."
+      },
       "text": "Le couloir des ventilateurs se termine sur une porte d'acier qui n'a rien à faire ici : propre, sans rouille, avec un clavier à douze touches et une lampe verte au-dessus. L'air qui passe sous la porte est frais, et il sent le formol. Les ventilateurs sont derrière. Quelqu'un entretient cette porte. Quelqu'un vit là-dessous depuis longtemps.",
       "choices": [
         {
@@ -13014,6 +13254,11 @@
       }
     },
     "776": {
+      "image": {
+        "src": "images/c16-1.webp",
+        "alt": "La crête du Radar, l'antenne géante couchée et des silhouettes grises alignées devant un bunker",
+        "prompt": "Vue depuis une crête de graviers : une antenne de cent cinquante mètres, treillis rouillé, couchée en travers d'un ciel bas, le vent passant au travers. En contrebas, un bunker de béton à porte de fer et, devant lui, une rangée de silhouettes grises immobiles, fusils tournés vers le sud. Le héros de dos, au premier plan, minuscule face à la structure."
+      },
       "text": "La crête. L'antenne est couchée en travers du ciel, cent cinquante mètres de treillis rouillé, et le vent passe au travers avec un bruit de corde. Vous n'entendez pas le vent. Vous entendez une phrase qui n'est pas à vous. Elle dit de poser votre arme. Elle le dit calmement, de l'intérieur, comme un souvenir. Le détecteur se tait. En bas, un bunker de béton, une porte de fer, des silhouettes grises alignées qui ne bougent pas.",
       "choices": [
         {
@@ -13136,6 +13381,11 @@
       ]
     },
     "786": {
+      "image": {
+        "src": "images/c26-7.webp",
+        "alt": "Une Chimère à deux têtes accrochée aux haubans de la cheminée, au-dessus d'un socle de béton.",
+        "prompt": "Au pied d'une cheminée industrielle rayée, une Chimère au poil gris de poussière est accrochée aux haubans par ses quatre pattes, deux têtes tournées vers le bas, quatre yeux fixes. En contrebas, un large socle de béton et le départ d'une passerelle de caillebotis suspendue vers le Sarcophage ; une silhouette de stalker aplatie derrière le socle, vue de dos, minuscule. Ciel bas, vent, câbles vibrants, hachures serrées."
+      },
       "text": "La Chimère est sur la cheminée, à dix mètres, accrochée aux haubans par ses quatre pattes. Deux têtes, deux paires d'yeux qui ne clignent pas en même temps. Elle vous a senti avant que vous l'ayez vue, c'est à ça qu'on les reconnaît. Son poil est gris de poussière. Entre elle et vous, le socle, et au-delà, la passerelle qui commence. Elle ne bouge pas. Ça ne veut rien dire.",
       "choices": [
         {
@@ -14452,6 +14702,11 @@
       ]
     },
     "870": {
+      "image": {
+        "src": "images/c14-12.webp",
+        "alt": "Un Pseudo-géant assis sur un pont de béton au-dessus d'une rivière qui fume, l'antenne couchée sur la crête",
+        "prompt": "Une rivière lente et brune qui fume dans le froid, sortant d'une forêt de pins rouges ; un pont de béton la traverse, et au milieu du pont, assis, une masse de muscle grise de la taille d'une voiture, un Pseudo-géant à la tête enfoncée dans les épaules, immobile. Au-delà, une crête nue monte vers une antenne couchée en travers du ciel. Vu depuis la lisière, de loin, derrière un tronc, la silhouette d'un stalker accroupi."
+      },
       "text": "La piste nord sort des pins sur une rivière lente, brune, qui fume dans le froid. Un pont de béton la traverse, et sur le pont, assis, quelque chose de la taille d'une voiture. Un Pseudo-géant. Il ne bouge pas. Il attend que le pont serve. Au-delà, la crête monte vers l'antenne couchée, et c'est là que ça commence : une pensée qui n'est pas la vôtre, posée dans votre tête comme une main.",
       "choices": [
         {
@@ -14560,6 +14815,11 @@
       ]
     },
     "877": {
+      "image": {
+        "src": "images/c23-1.webp",
+        "alt": "Le début d'un viaduc de béton au-dessus d'une voie ferrée, et au loin la cheminée de la Centrale dans la brume.",
+        "prompt": "Le départ d'un long viaduc de béton là où une rue de Pripyat s'arrête : un parapet bas, le tablier qui file sur deux cents mètres au-dessus d'une voie ferrée, au milieu un poste de garde en parpaings avec un brasero qui fume et deux silhouettes grises immobiles devant. Tout au bout, la cheminée de la Centrale sort de la brume comme un doigt, le remblai descendant vers la boue et les piles. Vue du héros de dos, au bord de la rue."
+      },
       "text": [
         "Le viaduc commence là où la rue s'arrête. Deux cents mètres de béton au-dessus de la voie ferrée, un parapet bas, et au milieu, un poste de garde en parpaings avec un brasero qui fume. Deux silhouettes grises devant. Elles ne bougent pas.",
         "Au bout du pont, la cheminée de la Centrale sort de la brume comme un doigt. En contrebas, le remblai descend vers la boue et les piles."
@@ -14698,6 +14958,11 @@
       ]
     },
     "885": {
+      "image": {
+        "src": "images/c13-7.webp",
+        "alt": "Le corps de Fantôme assis contre le mur d'une datcha au toit crevé, un PDA dans la main",
+        "prompt": "L'intérieur d'une datcha de bois au toit crevé, la lumière grise tombant par le trou sur un homme mort assis contre le mur, long manteau sur une combinaison, capuche baissée, un trou net dans la poitrine, la main droite tenant encore un PDA contre sa cuisse. Des planches, des feuilles mortes et des gravats au sol ; sur la planche d'en face, une entaille gravée, illisible. Cadrage serré, depuis la porte."
+      },
       "text": "Il est assis contre le mur, sous le trou du toit, un long manteau sur une combinaison, la capuche baissée. Un trou net dans la poitrine, pas de sortie. La pluie l'a lavé et séché cent fois. Sa main droite tient encore un PDA contre sa cuisse, comme on tient un livre qu'on a fini. Sur la planche d'en face, quelqu'un a gravé un nom : Fantôme.",
       "choices": [
         {
@@ -15233,6 +15498,11 @@
       }
     },
     "909": {
+      "image": {
+        "src": "images/c13-6.webp",
+        "alt": "La route de l'est barrée de chevaux de frise et de panneaux à tête de mort devant le champ de mines",
+        "prompt": "Une route de campagne barrée par des chevaux de frise rouillés et des panneaux de tôle à tête de mort et éclair, rongés de rouille. Au-delà, un champ d'herbe haute où des traces de pas font un chemin interrompu, un soulier abandonné seul au milieu ; au fond, la lisière de pins aux aiguilles rouges sous un ciel bas. La silhouette d'un stalker de dos, arrêté devant les panneaux, un boulon à la main."
+      },
       "text": "La route de l'est est barrée de chevaux de frise et de panneaux : un crâne, un éclair, un mot en russe que la rouille a mangé. Au-delà, un champ d'herbe haute jusqu'aux pins rouges, et dedans, des traces, de pas et d'autre chose. Un soulier au milieu, seul. Les mines ne crépitent pas ; le détecteur ne sert à rien ici.",
       "choices": [
         {
@@ -15283,6 +15553,11 @@
       }
     },
     "912": {
+      "image": {
+        "src": "images/c17-12.webp",
+        "alt": "Un tunnel de service voûté inondé, l'air qui tremble au-dessus du canal, des traits de craie au mur",
+        "prompt": "Un tunnel de béton bas et voûté, eau noire jusqu'aux mollets coulant vers le fond, un gros tuyau le long de la paroi droite. À cinquante mètres, l'air se déforme au-dessus du canal comme au-dessus d'une tôle chaude : une anomalie à peine visible. Des traces de rats grimpent sur le tuyau. Sur la paroi, à hauteur d'épaule, des traits de craie blanche presque effacés. Le héros en silhouette, de dos, au premier plan."
+      },
       "text": "Le tunnel est droit, bas, voûté. L'eau coule vers le nord, lente. À cinquante mètres, l'air tremble au-dessus du canal comme au-dessus d'une tôle au soleil : un « Trampoline ». Vous ne le verriez pas si vous ne saviez pas. Les rats l'évitent, leurs traces grimpent sur le tuyau de droite. Sur la paroi, à hauteur d'épaule, des traits de craie blanche, presque effacés.",
       "choices": [
         {
@@ -15324,6 +15599,11 @@
       ]
     },
     "914": {
+      "image": {
+        "src": "images/c09-11.webp",
+        "alt": "Cellule de béton, un banc, une ampoule nue, un homme au coude posé sur une table pliante",
+        "prompt": "Le vestiaire de l'Arène : une cellule de béton avec un banc, une ampoule nue et un seau dans un coin. Un homme gros en veste de pluie assis derrière une table pliante, le coude posé, la main ouverte pour un bras de fer. Au mur, des centaines d'entailles gravées dans le béton. Un couloir sombre d'où monte la lumière des projecteurs, le héros absent."
+      },
       "text": "Le vestiaire est une cellule de béton avec un banc, une ampoule nue et un seau. Les cris de la fosse arrivent assourdis par le couloir. Le gros à la veste de pluie est assis là, une table pliante devant lui, le coude posé. Il tape du doigt sur le bois. Cent roubles, et on voit lequel des deux lâche. Au mur, quelqu'un a gravé des bâtons. Beaucoup de bâtons.",
       "choices": [
         {
@@ -15660,6 +15940,11 @@
       }
     },
     "931": {
+      "image": {
+        "src": "images/c15-4.webp",
+        "alt": "Le passeur à la lampe avance dans un collecteur de béton, l'eau jusqu'aux cuisses, sous l'église",
+        "prompt": "L'intérieur d'un collecteur de béton sous une église, tunnel bas et rond aux parois suintantes, l'eau noire jusqu'aux cuisses. Devant, de dos, un homme en manteau avec une lampe à la main et un boulon dans l'autre, arrêté pour écouter ; derrière lui, la silhouette d'un stalker. Au fond, le faisceau de la lampe accroche une échelle de fer qui monte vers une plaque ronde."
+      },
       "text": "Il compte vos 2 000 roubles, éteint le réchaud. Le collecteur commence sous l'église : une bouche de béton, de l'eau jusqu'aux cuisses, une odeur de fer rouillé. Il marche devant avec une lampe et un boulon à la main, s'arrête, écoute, repart. Les parois tièdes disent que l'eau n'est pas propre. Vous prenez 2 rads. Il ne parle pas. Au bout, une échelle, et le bruit de la pluie.",
       "effects": [
         {
@@ -15676,6 +15961,11 @@
       ]
     },
     "932": {
+      "image": {
+        "src": "images/c10-18.webp",
+        "alt": "Route vers le nord entre des pylônes couchés, Yantar en tache grise à l'horizon",
+        "prompt": "Une route qui monte vers le nord entre deux rangées de pylônes électriques couchés dans l'herbe morte. Derrière, loin, le pont de fer et les toits crevés des entrepôts ; devant, la plaine s'aplatit vers une tache grise d'usine chimique sous un ciel lourd, une brume basse qui ne bouge pas. Une silhouette de stalker de dos, sac au dos, au milieu de la route."
+      },
       "text": [
         "La route monte vers le nord entre deux rangées de pylônes couchés. Les Terres sauvages se referment derrière vous : le pont, les toits, le fossé où la lueur a dû repartir.",
         "Devant, la plaine s'aplatit vers une tache grise, et l'air y prend une odeur de produit chimique, lourde, que le vent n'emporte pas. Yantar. Derrière, Rostok et son bar, une demi-journée."
@@ -15847,6 +16137,11 @@
       ]
     },
     "945": {
+      "image": {
+        "src": "images/c24-13.webp",
+        "alt": "Un réduit sous un escalier de fer, matelas, bougies et caisse de bois, la porte de tôle ouverte sur le parvis et le Sarcophage.",
+        "prompt": "L'intérieur d'un réduit de deux mètres sous la première volée d'un escalier de fer : un vieux matelas, des bougies fondues, une caisse de bois, des marques au charbon sur le mur de béton. La porte de tôle est ouverte et cadre le parvis dehors : la dalle, les camions renversés et, au loin, la masse grise du Sarcophage sous un ciel redevenu gris. Vue depuis le fond du réduit, le héros absent."
+      },
       "text": "Sous l'escalier de la cheminée. Le ciel est redevenu gris, le sol s'est tu. Le réduit sent la bougie et le vieux matelas. Par la porte de tôle, vous voyez la dalle, les camions, et le Sarcophage de nouveau à sa place. En bas, à gauche, une porte de fer dans le flanc de la Centrale. Au-dessus, l'échelle qui monte dans le vent.",
       "choices": [
         {
@@ -15965,6 +16260,11 @@
       ]
     },
     "948": {
+      "image": {
+        "src": "images/c08-1.webp",
+        "alt": "Cour d'usine à Rostok, un canon antiaérien et un escalier qui descend sous l'usine",
+        "prompt": "La cour d'une usine soviétique : hangars de tôle, rails envahis d'herbe qui ne mènent nulle part, un canon antiaérien braqué vers le nord, deux patrouilleurs en silhouette. Au fond, un escalier de béton descend sous l'usine vers une porte de fer, une ampoule allumée au-dessus. Ciel bas, poussière, vue depuis le portail d'entrée, le héros absent."
+      },
       "text": "Rostok commence par un mur. Des hangars de tôle, des rails qui ne mènent plus nulle part, un canon braqué sur le nord. Les hommes du Devoir patrouillent en gris et rouge, et personne ne vous regarde plus de deux secondes. Au fond de la cour, un escalier de béton descend sous l'usine. Sur la porte, à la peinture blanche : 100 Rads. Ça sent la saucisse et le chlore avant même d'avoir poussé le battant.",
       "choices": [
         {

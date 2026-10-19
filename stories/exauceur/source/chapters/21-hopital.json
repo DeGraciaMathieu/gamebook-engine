@@ -25,9 +25,18 @@
     ],
     "flags": []
   },
-  "image": "c21-4",
+  "images": [
+    "c21-4",
+    "c21-1",
+    "c21-29"
+  ],
   "paragraphs": {
     "c21-1": {
+      "image": {
+        "src": "images/c21-1.webp",
+        "alt": "Le hall d'un hôpital abandonné, brancards renversés, une porte battante ouverte sur un escalier noir.",
+        "prompt": "Le hall d'accueil d'un hôpital soviétique abandonné : brancards renversés, comptoir sous la poussière, tableau des services aux lettres tombées, un sol jonché de gravats. Au fond, une porte battante entrouverte sur un escalier qui descend dans le noir complet, un courant d'air froid que suggèrent des feuilles mortes soulevées. Lumière grise tombant des fenêtres brisées, sans personnage."
+      },
       "text": "Le hall de l'hôpital. Des brancards renversés, un comptoir d'accueil sous la poussière, un tableau des services dont les lettres sont tombées. Au fond, derrière une porte battante, un escalier descend vers le sous-sol. Il fait noir dès la troisième marche. Un courant d'air monte de là, froid, qui sent le carrelage mouillé et l'éther. Quelque chose goutte, en bas, à intervalles réguliers.",
       "choices": [
         {
@@ -567,6 +576,11 @@
       ]
     },
     "c21-29": {
+      "image": {
+        "src": "images/c21-29.webp",
+        "alt": "Une morgue éclairée à la torche, tables d'acier, tiroirs froids, et dans l'angle une silhouette translucide accroupie.",
+        "prompt": "Une morgue de sous-sol vue à la lumière d'une torche : deux tables d'acier avec leur rigole, un mur de tiroirs frigorifiques dont trois sont ouverts, un chariot d'instruments contre la table de droite, du carrelage vert et de l'eau au sol. Dans l'angle près des tiroirs, l'air tremble et dessine une silhouette d'homme accroupie, presque transparente, à travers laquelle on voit le carrelage : une Sangsue. Le faisceau vient de la porte, le héros reste hors champ."
+      },
       "text": "Le faisceau balaie la salle. Deux tables d'acier, une rigole, un mur de tiroirs froids dont trois sont ouverts. Un chariot d'instruments contre la table de droite. Dans l'angle, près des tiroirs, l'air tremble. Une silhouette d'homme, accroupie, à travers laquelle on voit le carrelage. Elle respire. Elle ne vous a pas encore senti.",
       "choices": [
         {

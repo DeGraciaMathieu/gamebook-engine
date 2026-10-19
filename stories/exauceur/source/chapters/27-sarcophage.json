@@ -28,7 +28,11 @@
       "reacteur_vu"
     ]
   },
-  "image": "c27-4",
+  "images": [
+    "c27-4",
+    "c27-6",
+    "c27-18"
+  ],
   "paragraphs": {
     "c27-1": {
       "text": "Le béton vous prend à la gorge. Les couloirs du Sarcophage sont peints en orange, une peinture épaisse coulée à la hâte, qui cloque sous vos doigts comme une peau. Le compteur ne crépite plus : il siffle, continu. Vous êtes entré. Devant vous, le couloir principal file vers une lueur rouge. Sur la gauche, un escalier de service monte dans le noir, et quelqu'un y chante, bas, une seule note.",
@@ -390,6 +394,11 @@
       ]
     },
     "c27-6": {
+      "image": {
+        "src": "images/c27-6.webp",
+        "alt": "Quatre monolithiens à genoux devant une arche de lumière blanche, un gardien debout dans le couloir orange.",
+        "prompt": "Long couloir rectiligne du Sarcophage aux murs de peinture orange cloquée, vu depuis l'ombre d'un contrefort. Au bout, une arche d'où déborde une lumière blanche aveuglante ; devant elle, quatre fidèles du Monolithe à genoux, de dos, en capuches et masques, et un cinquième debout, fusil en travers, qui regarde vers nous. Forts contrastes entre l'orange sombre du béton et le blanc de l'arche."
+      },
       "text": "Le couloir vers la lumière blanche est droit, long, et le chant s'y fait net : quatre voix, une même note. Au bout, devant une arche, quatre monolithiens à genoux, dos à vous, face à la lumière. Un dernier gardien se tient debout, fusil en travers, et il regarde le couloir. Il vous a vu. Il attend de savoir ce que vous êtes.",
       "choices": [
         {
@@ -481,6 +490,11 @@
       ]
     },
     "c27-18": {
+      "image": {
+        "src": "images/c27-18.webp",
+        "alt": "Une porte d'acier propre avec un clavier et une lampe verte, au fond d'un couloir de béton orange rouillé.",
+        "prompt": "Au bout d'un couloir de béton coulé, peint d'un orange qui cloque et coule, une porte d'acier lisse et neuve, sans rouille, avec un petit clavier à douze touches sur le chambranle et une lampe unique allumée au-dessus. De la lumière froide filtre sous la porte ; de grands ventilateurs industriels grillagés bordent le couloir. Une silhouette de stalker de dos, au premier plan, le détecteur à la main."
+      },
       "text": "Le couloir des ventilateurs se termine sur une porte d'acier qui n'a rien à faire ici : propre, sans rouille, avec un clavier à douze touches et une lampe verte au-dessus. L'air qui passe sous la porte est frais, et il sent le formol. Les ventilateurs sont derrière. Quelqu'un entretient cette porte. Quelqu'un vit là-dessous depuis longtemps.",
       "choices": [
         {

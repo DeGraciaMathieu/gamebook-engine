@@ -25,9 +25,18 @@
     ],
     "flags": []
   },
-  "image": "c20-6",
+  "images": [
+    "c20-6",
+    "c20-1",
+    "c20-27"
+  ],
   "paragraphs": {
     "c20-1": {
+      "image": {
+        "src": "images/c20-1.webp",
+        "alt": "Le porche à colonnes du palais de la Culture, mosaïque criblée de balles et bougies sur les marches",
+        "prompt": "Le porche d'un palais de la Culture soviétique : des colonnes carrées qui tiennent encore, des portes sans vitres, et au-dessus une mosaïque de travailleurs souriants aux visages crevés par les balles. Sur les marches, des bougies éteintes dans des boîtes de conserve, alignées en rangs. De l'intérieur, une pénombre. Le héros de dos, au pied des marches."
+      },
       "text": "Sous le porche du palais de la Culture, les colonnes tiennent encore. Les vitres, non. Une mosaïque de travailleurs souriants court au-dessus des portes, les visages crevés à coups de balles. À l'intérieur, quelque chose chante. Pas une chanson : une phrase, reprise, toujours la même, par des voix qui ne respirent pas au même endroit. Sur les marches, des bougies éteintes dans des boîtes de conserve, alignées comme pour une fête.",
       "choices": [
         {
@@ -141,6 +150,11 @@
       }
     },
     "c20-27": {
+      "image": {
+        "src": "images/c20-27.webp",
+        "alt": "Depuis le balcon, la salle de cinéma et trois hommes gris agenouillés devant un bloc de béton peint",
+        "prompt": "Vu d'en haut depuis un balcon de théâtre, par-dessus une rambarde : des rangées de fauteuils rouges déchirés descendent vers une scène où se dresse un bloc de béton de deux mètres, peint en gris et or avec un cercle au centre. Trois hommes en combinaison grise à genoux lui font face, masques relevés sur le front ; un quatrième se tient debout entre eux, tête penchée, écoutant. Des bougies brûlent au pied de la scène. Le héros absent du cadre."
+      },
       "text": "Personne n'a levé la tête. Vous êtes à plat ventre derrière la rambarde, et la salle est sous vous. Sur la scène, un bloc de béton de deux mètres, peint en gris et or, un cercle au centre. Trois hommes en combinaison grise lui font face, masques relevés sur le front. Ils psalmodient, et chaque phrase finit sur le même mot. Entre eux, un quatrième ne chante pas. Il écoute.",
       "choices": [
         {

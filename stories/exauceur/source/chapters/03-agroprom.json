@@ -31,7 +31,11 @@
     ],
     "flags": []
   },
-  "image": "c03-4",
+  "images": [
+    "c03-4",
+    "c03-19",
+    "c03-32"
+  ],
   "paragraphs": {
     "c03-1": {
       "text": "Le tunnel du remblai vous recrache à l'ouest de l'usine. Derrière vous, le Cordon. Devant, une clôture couchée, des herbes hautes jusqu'à la poitrine, et les silos d'Agroprom, gris contre le ciel. Un tank d'eau fuit quelque part, un filet continu sur la tôle. Le détecteur reste calme. Dans les herbes, quelque chose a tracé un sillon, large, récent. Le fossé qui longe la clôture est à sec, et luit d'une rouille qui n'est pas de la rouille.",
@@ -173,6 +177,11 @@
       ]
     },
     "c03-19": {
+      "image": {
+        "src": "images/c03-19.webp",
+        "alt": "La fusillade dans la cour d'Agroprom entre les silos, militaires au portail et Devoir derrière les sacs de sable",
+        "prompt": "La cour d'une usine agricole en ruine entre de hauts silos de béton percés. Des militaires casqués entrent par un portail de tôle en tirant, par bonds, et des hommes du Devoir répondent depuis des sacs de sable ; un officier gît à découvert dans la boue du portail. Fumée de poudre, douilles, éclats sur la tôle. Au premier plan, le stalker est caché de dos à l'angle d'un tank d'eau sur pilotis qui fuit, hors du combat."
+      },
       "text": "La cour s'étend entre les silos, et ça commence. Les militaires entrent par le portail est en tirant, casques baissés, par bonds de cinq mètres. Le Devoir répond depuis les sacs de sable, sans crier. Un officier tombe le premier, à découvert, dans la boue du portail, et personne ne va le chercher. Vous êtes à l'angle d'un tank d'eau, hors de tout. La tôle vibre à chaque impact. L'herbe, derrière vous, sent la poudre.",
       "choices": [
         {
@@ -632,6 +641,11 @@
       ]
     },
     "c03-32": {
+      "image": {
+        "src": "images/c03-32.webp",
+        "alt": "La salle des pompes d'Agroprom, trois pompes mortes et une trappe ouverte sur une échelle",
+        "prompt": "Une salle industrielle sombre avec trois grosses pompes mortes, de la taille de voitures, et de l'eau noire sur le sol qui reflète la lumière grise d'une lucarne. Au centre, une trappe de fonte ouverte sur une échelle de fer qui descend dans le noir, une flèche grossière gravée dans la rouille pointant vers le bas. Tuyaux, vannes, volants rouillés. Une silhouette de stalker, de dos, penchée au bord de la trappe."
+      },
       "text": "La salle des pompes. Trois pompes mortes, grosses comme des voitures, et de l'eau noire à mi-cheville qui ne vient de nulle part. Au centre, une trappe de fonte ouverte sur une échelle. Il en monte un froid qui n'a rien à voir avec la saison, et une odeur de cave et de fer. Quelqu'un a gravé une flèche dans la rouille, vers le bas. Pas de date.",
       "choices": [
         {

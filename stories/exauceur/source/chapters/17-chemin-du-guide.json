@@ -26,9 +26,18 @@
       "forestier_vu"
     ]
   },
-  "image": "c17-4",
+  "images": [
+    "c17-4",
+    "c17-1",
+    "c17-12"
+  ],
   "paragraphs": {
     "c17-1": {
+      "image": {
+        "src": "images/c17-1.webp",
+        "alt": "Un transformateur couché sous des pins morts, une trappe de fonte ouverte dessous",
+        "prompt": "Dans une forêt de pins rougis, un transformateur électrique couché sur le flanc, le ventre ouvert, ses bobines pleines d'aiguilles de pin. Dessous, une trappe de fonte ronde, entrouverte sur le noir. Au loin, au-dessus de la crête, la masse d'une antenne couchée. Le héros accroupi de dos près de la trappe, une carte dépliée à la main."
+      },
       "text": "Le transformateur est couché sur le flanc, le ventre ouvert, ses bobines pleines d'aiguilles de pin. Dessous, une trappe de fonte, celle que le Guide a dessinée d'un trait sur sa carte, avec une croix tous les cinquante mètres jusqu'à Pripyat. Vous dépliez la Carte du Guide une dernière fois. L'antenne du Radar gronde quelque part à l'est, au-dessus de la crête. Ici, rien ne gronde. La trappe sent l'eau froide.",
       "choices": [
         {
@@ -81,6 +90,11 @@
       ]
     },
     "c17-12": {
+      "image": {
+        "src": "images/c17-12.webp",
+        "alt": "Un tunnel de service voûté inondé, l'air qui tremble au-dessus du canal, des traits de craie au mur",
+        "prompt": "Un tunnel de béton bas et voûté, eau noire jusqu'aux mollets coulant vers le fond, un gros tuyau le long de la paroi droite. À cinquante mètres, l'air se déforme au-dessus du canal comme au-dessus d'une tôle chaude : une anomalie à peine visible. Des traces de rats grimpent sur le tuyau. Sur la paroi, à hauteur d'épaule, des traits de craie blanche presque effacés. Le héros en silhouette, de dos, au premier plan."
+      },
       "text": "Le tunnel est droit, bas, voûté. L'eau coule vers le nord, lente. À cinquante mètres, l'air tremble au-dessus du canal comme au-dessus d'une tôle au soleil : un « Trampoline ». Vous ne le verriez pas si vous ne saviez pas. Les rats l'évitent, leurs traces grimpent sur le tuyau de droite. Sur la paroi, à hauteur d'épaule, des traits de craie blanche, presque effacés.",
       "choices": [
         {

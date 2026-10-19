@@ -30,7 +30,11 @@
     ],
     "flags": []
   },
-  "image": "c10-5",
+  "images": [
+    "c10-5",
+    "c10-16",
+    "c10-18"
+  ],
   "paragraphs": {
     "c10-1": {
       "text": [
@@ -510,6 +514,11 @@
       ]
     },
     "c10-16": {
+      "image": {
+        "src": "images/c10-16.webp",
+        "alt": "Un camion blanc renversé dans un pli de terrain, des Snorks masqués qui rôdent autour",
+        "prompt": "Un camion blanc d'institut scientifique couché sur le flanc dans un pli de terrain, roues en l'air, pare-brise fissuré. Autour, quatre Snorks à quatre pattes, masques à gaz collés au visage, l'un grimpé sur la cabine qui gratte le pare-brise. Herbe morte, chardons, ciel bas ; vue depuis le haut du pli, entre les chardons, le héros absent."
+      },
       "text": [
         "Le camion est couché dans le pli de terrain, blanc, un sigle d'institut sur la portière, les roues en l'air. À l'intérieur, on frappe contre la tôle.",
         "Autour, quatre Snorks tournent à quatre pattes, masques collés au visage. L'un d'eux grimpe sur la cabine et gratte le pare-brise. Ils ne vous ont pas senti. Le vent vient d'eux."
@@ -644,6 +653,11 @@
       ]
     },
     "c10-18": {
+      "image": {
+        "src": "images/c10-18.webp",
+        "alt": "Route vers le nord entre des pylônes couchés, Yantar en tache grise à l'horizon",
+        "prompt": "Une route qui monte vers le nord entre deux rangées de pylônes électriques couchés dans l'herbe morte. Derrière, loin, le pont de fer et les toits crevés des entrepôts ; devant, la plaine s'aplatit vers une tache grise d'usine chimique sous un ciel lourd, une brume basse qui ne bouge pas. Une silhouette de stalker de dos, sac au dos, au milieu de la route."
+      },
       "text": [
         "La route monte vers le nord entre deux rangées de pylônes couchés. Les Terres sauvages se referment derrière vous : le pont, les toits, le fossé où la lueur a dû repartir.",
         "Devant, la plaine s'aplatit vers une tache grise, et l'air y prend une odeur de produit chimique, lourde, que le vent n'emporte pas. Yantar. Derrière, Rostok et son bar, une demi-journée."

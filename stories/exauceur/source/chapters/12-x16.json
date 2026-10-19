@@ -29,9 +29,18 @@
     ],
     "flags": []
   },
-  "image": "c12-6",
+  "images": [
+    "c12-6",
+    "c12-1",
+    "c12-7"
+  ],
   "paragraphs": {
     "c12-1": {
+      "image": {
+        "src": "images/c12-1.webp",
+        "alt": "Un escalier de fer descend dans le noir sous un panneau à demi décollé, une lumière rouge très loin",
+        "prompt": "Le haut d'un escalier de fer qui plonge dans le noir d'un laboratoire souterrain, vu de derrière la silhouette d'un stalker arrêté sur la première marche, lampe torche à la main. Au mur de brique, un panneau à demi décollé avec une flèche pointant vers le bas, des tuyaux rouillés, une porte d'usine refermée derrière. Tout au fond, minuscule, un point de lumière rouge."
+      },
       "text": "La porte de l'usine se referme derrière vous. Un escalier de fer descend dans le noir, et l'odeur monte : chlore, rouille, quelque chose de sucré. Au mur, un panneau à moitié décollé, X-16, et une flèche vers le bas. Une lumière rouge clignote très loin, s'éteint, revient. Le détecteur se tait. Ici, il n'y a rien à détecter.",
       "choices": [
         {
@@ -470,6 +479,11 @@
       ]
     },
     "c12-7": {
+      "image": {
+        "src": "images/c12-7.webp",
+        "alt": "La salle de l'émetteur psi, une colonne cerclée d'anneaux qui s'immobilisent, un levier abaissé",
+        "prompt": "Une salle souterraine au carrelage blanc fissuré, sous des néons dont la moitié sont morts : au centre, une colonne de métal haute jusqu'au plafond, cerclée d'anneaux massifs qui viennent de s'immobiliser, reliée par des câbles à des armoires de contrôle à cadrans. Au premier plan, un gros levier abaissé sur un pupitre, une chemise cartonnée posée à côté, et la main d'un stalker encore sur la poignée, vu de dos. Une traînée de sang sur le carrelage."
+      },
       "text": "Le levier résiste, puis cède d'un coup. Les anneaux ralentissent. Le ronronnement descend, descend, et s'arrête, et le silence qui vient après est si grand que vous entendez votre sang. Votre nez ne saigne plus. Quelque part au-dessus, les voix qui marmonnaient se sont tues, et vous savez sans l'avoir vu que les hommes se sont assis. L'émetteur du X-16 est éteint.",
       "effects": [
         {

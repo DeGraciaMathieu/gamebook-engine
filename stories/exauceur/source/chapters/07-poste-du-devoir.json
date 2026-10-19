@@ -24,7 +24,11 @@
       "devoir_ami"
     ]
   },
-  "image": "c07-3",
+  "images": [
+    "c07-3",
+    "c07-6",
+    "c07-8"
+  ],
   "paragraphs": {
     "c07-1": {
       "text": "La route du nord monte entre deux talus de ronces. Au sommet, la barricade : des wagons de marchandises couchés en travers du bitume, soudés bout à bout, la rouille repeinte en gris et rouge. Un canon antiaérien dépasse du dernier, le nez vers le nord. Devant, une file d'hommes avec leurs sacs. Sur le côté, dans le fossé, un feu, et des silhouettes assises qui ne regardent pas la file. Le vent apporte l'odeur du gasoil et du pain grillé.",
@@ -118,6 +122,11 @@
       ]
     },
     "c07-6": {
+      "image": {
+        "src": "images/c07-6.webp",
+        "alt": "Un sergent du Devoir devant une bâche où l'on vide un sac, entre deux wagons",
+        "prompt": "Le poste de contrôle au pied d'une barricade de wagons soudés : un grand sergent-chef grisonnant, lunettes de visée relevées sur le front, debout devant une bâche étalée au sol où un soldat vide un sac pièce par pièce, conserves et chargeurs. Derrière eux, le passage étroit entre deux wagons rouillés ouvre sur une rue d'usine grise et vide. Vue de dos, par-dessus l'épaule du stalker contrôlé."
+      },
       "text": "Le sergent-chef Kouznetsov est grand, gris, les lunettes de visée relevées sur le front. Il ne regarde pas votre visage, il regarde vos mains. Papiers. Sac. Le soldat vide le vôtre sur la bâche, pièce par pièce, et Kouznetsov attend. Derrière lui, le passage entre deux wagons, et au bout, la rue de Rostok, grise, vide, qui sent la ferraille. Le nord n'est pas pour vous, dit-il. Il le dit à tout le monde.",
       "choices": [
         {
@@ -204,6 +213,11 @@
       ]
     },
     "c07-8": {
+      "image": {
+        "src": "images/c07-8.webp",
+        "alt": "Carcasses de voitures empilées sur une terre nue, barbelés, l'air qui tremble",
+        "prompt": "La fin de la barricade de wagons, là où commencent les collines : des rouleaux de barbelé, puis de la terre nue sans un brin d'herbe et des carcasses de voitures rouillées empilées les unes sur les autres. Au-dessus des carcasses, l'air tremble par endroits, une spirale de poussière lente entre deux épaves. Ciel bas, aucune sentinelle, une silhouette de stalker vue de loin au bord de la route."
+      },
       "text": "La barricade finit où commencent les collines : des wagons encore, puis des rouleaux de barbelé, puis plus rien que de la terre nue et des carcasses de voitures montées les unes sur les autres. Personne ne garde ce côté-là. Ils n'ont pas besoin. Votre détecteur se met à crépiter avant même que vous ayez quitté la route, et l'air au-dessus des carcasses tremble par endroits, comme au-dessus d'un capot chaud.",
       "choices": [
         {

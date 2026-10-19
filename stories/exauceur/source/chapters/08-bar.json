@@ -51,9 +51,18 @@
       "arene_champion"
     ]
   },
-  "image": "c08-2",
+  "images": [
+    "c08-2",
+    "c08-1",
+    "c08-21"
+  ],
   "paragraphs": {
     "c08-1": {
+      "image": {
+        "src": "images/c08-1.webp",
+        "alt": "Cour d'usine à Rostok, un canon antiaérien et un escalier qui descend sous l'usine",
+        "prompt": "La cour d'une usine soviétique : hangars de tôle, rails envahis d'herbe qui ne mènent nulle part, un canon antiaérien braqué vers le nord, deux patrouilleurs en silhouette. Au fond, un escalier de béton descend sous l'usine vers une porte de fer, une ampoule allumée au-dessus. Ciel bas, poussière, vue depuis le portail d'entrée, le héros absent."
+      },
       "text": "Rostok commence par un mur. Des hangars de tôle, des rails qui ne mènent plus nulle part, un canon braqué sur le nord. Les hommes du Devoir patrouillent en gris et rouge, et personne ne vous regarde plus de deux secondes. Au fond de la cour, un escalier de béton descend sous l'usine. Sur la porte, à la peinture blanche : 100 Rads. Ça sent la saucisse et le chlore avant même d'avoir poussé le battant.",
       "choices": [
         {
@@ -571,6 +580,11 @@
       ]
     },
     "c08-21": {
+      "image": {
+        "src": "images/c08-21.webp",
+        "alt": "Un vieil homme en veste grise seul à sa table dans le coin sombre du Bar",
+        "prompt": "Dans le coin le plus sombre de la cave voûtée du Bar, un vieil homme en veste grise assis dos au mur, mains posées à plat sur une table de ferraille, un verre d'eau intact devant lui. Autour de sa table, un cercle de vide ; plus loin, les tables occupées, le poêle, les ampoules nues. Au premier plan, de dos, un stalker qui traverse la salle vers lui."
+      },
       "text": "Vous traversez la salle. Le vieux ne lève pas la tête, mais il vous a vu avant que vous décidiez de venir. Veste grise, mains posées à plat sur la table, un verre d'eau qu'il n'a pas touché. Autour de lui, une table de vide : les stalkers laissent de la place à ceux qui reviennent du nord, comme on laisse de la place aux morts.",
       "choices": [
         {

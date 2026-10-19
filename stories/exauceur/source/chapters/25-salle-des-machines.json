@@ -24,7 +24,11 @@
     ],
     "flags": []
   },
-  "image": "c25-5",
+  "images": [
+    "c25-5",
+    "c25-27",
+    "c25-6"
+  ],
   "paragraphs": {
     "c25-1": {
       "text": "La porte de la salle des machines est ouverte sur le noir. Derrière, quelque chose de très grand se tait : les turbines, couchées sur des centaines de mètres, et l'air qui sent le métal et l'huile froide. Le compteur crépite à intervalles réguliers, comme une horloge. Un escalier de fer descend sous le niveau du sol. Vous ne voyez pas sa troisième marche.",
@@ -383,6 +387,11 @@
       ]
     },
     "c25-27": {
+      "image": {
+        "src": "images/c25-27.webp",
+        "alt": "La salle de contrôle d'un réacteur, pupitres en arc de cercle, des centaines de cadrans à zéro, un seul voyant rouge.",
+        "prompt": "La salle de contrôle du réacteur 4, intacte sous la poussière : des pupitres en arc de cercle, des centaines de cadrans dont chaque aiguille repose sur sa butée, des rangées de voyants éteints sauf un, rouge, au-dessus du pupitre central, des chaises renversées au sol. Lumière grise de néons de secours, le héros vu de dos, la main tendue au-dessus d'un cadran sans le toucher. Les cadrans sont lisses, sans chiffres ni lettres."
+      },
       "text": "Les cadrans sont tous à zéro. Chaque aiguille repose sur sa butée, des centaines d'aiguilles, et les voyants sont éteints, sauf un, rouge, au-dessus du pupitre central, qui ne clignote pas. Vous passez la main sur un cadran sans le toucher. Vous êtes au-dessus de ce qui a brûlé. Vous l'avez vu. Un escalier de service s'ouvre derrière le dernier pupitre.",
       "effects": [
         {
@@ -407,6 +416,11 @@
       ]
     },
     "c25-6": {
+      "image": {
+        "src": "images/c25-6.webp",
+        "alt": "Un couloir bas noyé jusqu'aux chevilles, câbles pendants, et au fond une lueur orange qui ne vient d'aucune lampe.",
+        "prompt": "Les couloirs du bas de la Centrale : un plafond bas de béton, de l'eau noire jusqu'aux chevilles qui reflète des câbles pendants, des tuyaux courant le long des murs et disparaissant dans l'obscurité, des traces de doigts dans la suie à hauteur de main. Au fond, une lueur orange diffuse qui ne vient d'aucune lampe, et à sa lumière la surface de l'eau trahit un regard ouvert, sans grille. Le héros de dos, en silhouette contre la lueur."
+      },
       "text": "Les couloirs du bas. De l'eau jusqu'aux chevilles, un plafond bas, des câbles qui pendent au-dessus de l'eau, et quelque part devant, une lumière orange qui ne vient d'aucune lampe. Des tuyaux courent le long des murs et disparaissent dans le noir. Le sol, sous l'eau, n'est pas plat. Il y a des trous. Vous ne savez pas où.",
       "choices": [
         {

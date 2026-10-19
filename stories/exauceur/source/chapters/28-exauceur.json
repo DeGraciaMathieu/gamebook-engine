@@ -18,9 +18,18 @@
       "sarcophage_entre"
     ]
   },
-  "image": "c28-3",
+  "images": [
+    "c28-3",
+    "c28-1",
+    "c28-10"
+  ],
   "paragraphs": {
     "c28-1": {
+      "image": {
+        "src": "images/c28-1.webp",
+        "alt": "La salle de l'Exauceur : une grande pierre noire qui luit par en dessous, des sacs et des fusils abandonnés le long des murs.",
+        "prompt": "Une salle de béton nu, plus petite qu'une chapelle. Au centre, une pierre noire grande comme une voiture, posée sur le sol, dont une lueur chaude sort par en dessous comme d'une braise couverte. Le long des murs, des sacs à dos affaissés, des fusils debout contre le béton, des gamelles, abandonnés en rangs. Une silhouette de stalker sur le seuil, de dos, le détecteur pendu à la poitrine, seule source d'échelle."
+      },
       "text": "La salle est plus petite que vous ne pensiez. Au milieu, la pierre : grande comme une voiture, noire, et elle luit par en dessous, comme une braise qu'on a couverte. Elle bourdonne. Le son est dans vos dents avant d'être dans vos oreilles. Le détecteur, lui, ne dit rien. Le long des murs, des sacs, des fusils debout contre le béton, des gamelles. Ceux qui sont venus ont laissé leurs affaires. Ils ne sont pas repartis les chercher.",
       "choices": [
         {
@@ -272,6 +281,11 @@
       "text": "Vous ne mourrez pas. Vous êtes debout à côté d'elle, la main encore posée, et vous le resterez. Un jour quelqu'un entrera, verra les sacs contre le mur, et deux pierres au lieu d'une. Il s'approchera de la plus grande. Vous aurez le temps de le voir faire, et le temps d'après, et tout le temps. On vous avait dit : à la lettre."
     },
     "c28-10": {
+      "image": {
+        "src": "images/c28-10.webp",
+        "alt": "La pierre de l'Exauceur s'embrase d'une lumière blanche qui efface les ombres de la salle.",
+        "prompt": "La grande pierre noire de l'Exauceur, veinée de lignes lentes comme sous une peau, rayonne d'une lumière blanche qui monte de ses veines comme une marée et noie la salle de béton : les ombres disparaissent, les sacs contre les murs se dissolvent dans le blanc, les armatures du plafond se découpent en fils noirs. Au premier plan, une silhouette de stalker de dos, bras levé devant le visage, réduite à un contour. Gravure presque entièrement blanche, hachures qui s'effacent vers le centre."
+      },
       "text": "Vous dites : que la Zone disparaisse. Vous l'avez dit pour les autres, pour les types du Cordon avec leur guitare, pour les morts contre le mur. Peut-être un peu pour vous. La pierre ne bourdonne plus : elle brille. La lumière monte de ses veines comme une marée, blanche, et la salle perd ses ombres une à une. Vous avez encore le temps de vous taire. Elle n'a pas fini d'écouter.",
       "choices": [
         {

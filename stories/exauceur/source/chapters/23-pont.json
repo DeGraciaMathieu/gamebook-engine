@@ -25,9 +25,18 @@
       "monolithe_vu"
     ]
   },
-  "image": "c23-2",
+  "images": [
+    "c23-2",
+    "c23-1",
+    "c23-6"
+  ],
   "paragraphs": {
     "c23-1": {
+      "image": {
+        "src": "images/c23-1.webp",
+        "alt": "Le début d'un viaduc de béton au-dessus d'une voie ferrée, et au loin la cheminée de la Centrale dans la brume.",
+        "prompt": "Le départ d'un long viaduc de béton là où une rue de Pripyat s'arrête : un parapet bas, le tablier qui file sur deux cents mètres au-dessus d'une voie ferrée, au milieu un poste de garde en parpaings avec un brasero qui fume et deux silhouettes grises immobiles devant. Tout au bout, la cheminée de la Centrale sort de la brume comme un doigt, le remblai descendant vers la boue et les piles. Vue du héros de dos, au bord de la rue."
+      },
       "text": [
         "Le viaduc commence là où la rue s'arrête. Deux cents mètres de béton au-dessus de la voie ferrée, un parapet bas, et au milieu, un poste de garde en parpaings avec un brasero qui fume. Deux silhouettes grises devant. Elles ne bougent pas.",
         "Au bout du pont, la cheminée de la Centrale sort de la brume comme un doigt. En contrebas, le remblai descend vers la boue et les piles."
@@ -338,6 +347,11 @@
       ]
     },
     "c23-6": {
+      "image": {
+        "src": "images/c23-6.webp",
+        "alt": "Sous le viaduc, une pile de béton moussue avec une échelle de fer qui monte vers le tablier, une cabane au toit crevé.",
+        "prompt": "Le dessous d'un viaduc : une pile de béton brut piquée de mousse montant vers le tablier vingt mètres plus haut, une échelle de service en fer scellée dans le béton, au pied une cabane d'éclusier au toit crevé. La voie ferrée rouillée continue sous les arches dans une boue qui luit faiblement, des flaques d'eau noire entre les traverses. Lumière rasante sous le tablier qui bouche le ciel, le héros en petite silhouette au pied de l'échelle."
+      },
       "text": [
         "La pile du pont. Du béton brut, piqué de mousse, et l'échelle de service qui monte vers le dessous du tablier, vingt mètres plus haut. Au pied, une cabane d'éclusier au toit crevé. Vers l'est, la voie continue sous les arches, dans une boue qui luit.",
         "En haut, assourdi par le béton, un pas qui va et vient. Le garde. Il ne regarde pas en bas."

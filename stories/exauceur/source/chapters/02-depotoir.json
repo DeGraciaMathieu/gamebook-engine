@@ -31,9 +31,18 @@
     ],
     "flags": []
   },
-  "image": "c02-3",
+  "images": [
+    "c02-3",
+    "c02-1",
+    "c02-16"
+  ],
   "paragraphs": {
     "c02-1": {
+      "image": {
+        "src": "images/c02-1.webp",
+        "alt": "L'entrée du Dépotoir, collines de camions empilés et le hangar de béton au loin",
+        "prompt": "Une route sort d'entre deux talus et s'arrête devant des collines qui sont des camions empilés, des bennes et des carcasses de bus entassées jusqu'au ciel bas. L'air tremble de chaleur au-dessus de la ferraille. Au loin, un cube de béton gris sans fenêtre : le hangar. À gauche de la route, un bus couché sur le flanc. Une silhouette de stalker, de dos et de loin, regarde les collines depuis le bord de la route."
+      },
       "text": "La route sort du Cordon entre deux talus et s'arrête devant les collines. Ce ne sont pas des collines. Des camions empilés, des bennes, des carcasses de bus à perte de vue, et par-dessus une couleur de rouille que la lumière n'arrange pas. L'air sent le fer chaud. Au loin, un cube de béton gris : le hangar. Le détecteur cliquette sans se presser. À gauche de la route, un bus couché sur le flanc.",
       "choices": [
         {
@@ -335,6 +344,11 @@
       ]
     },
     "c02-16": {
+      "image": {
+        "src": "images/c02-16.webp",
+        "alt": "Le fossé du Dépotoir traversé d'arcs électriques, un artefact qui rougeoie dans l'herbe brûlée",
+        "prompt": "Un fossé encaissé entre des carcasses de voitures, où des arcs électriques courent d'une tôle à l'autre dans une anomalie Électro. Au milieu, dans l'herbe brûlée, une petite sphère rougeoyante grosse comme un poing : un artefact. Au bord du fossé, au premier plan, la silhouette d'un stalker accroupi de dos, un boulon dans la main tendue, le détecteur à la ceinture. Fortes lumières blanches des arcs sur la rouille noire."
+      },
       "text": "Le fossé est bleu. Pas l'eau : l'air. Des arcs courent d'une carcasse à l'autre, claquent, meurent, repartent. Une « Électro ». Au milieu, dans l'herbe brûlée, quelque chose rougeoie, gros comme un poing. Le Détecteur Ours crépite comme une friture. Il crépite avant vous. Un boulon avant chaque pas, disait le Loup.",
       "choices": [
         {

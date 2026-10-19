@@ -31,7 +31,11 @@
       "borov_mort"
     ]
   },
-  "image": "c13-5",
+  "images": [
+    "c13-5",
+    "c13-7",
+    "c13-6"
+  ],
   "paragraphs": {
     "c13-1": {
       "text": "La route du nord descend de Rostok entre deux rangées de pylônes. Devant vous, le village des Entrepôts militaires : des datchas de bois, des hangars de tôle, un château d'eau rouillé au-dessus des toits. Des coups de feu, au loin, espacés comme une horloge. Sur le bas-côté, un drapeau vert planté dans un tas de sable. Au bout de la route, un barrage. À gauche, les jardins et leurs clôtures couchées.",
@@ -433,6 +437,11 @@
       ]
     },
     "c13-7": {
+      "image": {
+        "src": "images/c13-7.webp",
+        "alt": "Le corps de Fantôme assis contre le mur d'une datcha au toit crevé, un PDA dans la main",
+        "prompt": "L'intérieur d'une datcha de bois au toit crevé, la lumière grise tombant par le trou sur un homme mort assis contre le mur, long manteau sur une combinaison, capuche baissée, un trou net dans la poitrine, la main droite tenant encore un PDA contre sa cuisse. Des planches, des feuilles mortes et des gravats au sol ; sur la planche d'en face, une entaille gravée, illisible. Cadrage serré, depuis la porte."
+      },
       "text": "Il est assis contre le mur, sous le trou du toit, un long manteau sur une combinaison, la capuche baissée. Un trou net dans la poitrine, pas de sortie. La pluie l'a lavé et séché cent fois. Sa main droite tient encore un PDA contre sa cuisse, comme on tient un livre qu'on a fini. Sur la planche d'en face, quelqu'un a gravé un nom : Fantôme.",
       "choices": [
         {
@@ -584,6 +593,11 @@
       ]
     },
     "c13-6": {
+      "image": {
+        "src": "images/c13-6.webp",
+        "alt": "La route de l'est barrée de chevaux de frise et de panneaux à tête de mort devant le champ de mines",
+        "prompt": "Une route de campagne barrée par des chevaux de frise rouillés et des panneaux de tôle à tête de mort et éclair, rongés de rouille. Au-delà, un champ d'herbe haute où des traces de pas font un chemin interrompu, un soulier abandonné seul au milieu ; au fond, la lisière de pins aux aiguilles rouges sous un ciel bas. La silhouette d'un stalker de dos, arrêté devant les panneaux, un boulon à la main."
+      },
       "text": "La route de l'est est barrée de chevaux de frise et de panneaux : un crâne, un éclair, un mot en russe que la rouille a mangé. Au-delà, un champ d'herbe haute jusqu'aux pins rouges, et dedans, des traces, de pas et d'autre chose. Un soulier au milieu, seul. Les mines ne crépitent pas ; le détecteur ne sert à rien ici.",
       "choices": [
         {

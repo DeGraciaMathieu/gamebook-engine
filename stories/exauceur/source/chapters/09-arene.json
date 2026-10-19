@@ -22,7 +22,11 @@
     ],
     "flags": []
   },
-  "image": "c09-4",
+  "images": [
+    "c09-4",
+    "c09-11",
+    "c09-15"
+  ],
   "paragraphs": {
     "c09-1": {
       "text": "L'escalier descend derrière la cuisine du Bar. Les marches sont humides, le mur suinte. En bas, une cave plus grande que le Bar lui-même : des projecteurs de chantier, une fosse de béton entourée de grilles, des hommes agglutinés contre le fer. Ça crie. Ça sent la sueur et le sang sec. Un type en costume trop petit, cigare éteint au coin de la bouche, vous regarde arriver sans bouger.",
@@ -106,6 +110,11 @@
       ]
     },
     "c09-11": {
+      "image": {
+        "src": "images/c09-11.webp",
+        "alt": "Cellule de béton, un banc, une ampoule nue, un homme au coude posé sur une table pliante",
+        "prompt": "Le vestiaire de l'Arène : une cellule de béton avec un banc, une ampoule nue et un seau dans un coin. Un homme gros en veste de pluie assis derrière une table pliante, le coude posé, la main ouverte pour un bras de fer. Au mur, des centaines d'entailles gravées dans le béton. Un couloir sombre d'où monte la lumière des projecteurs, le héros absent."
+      },
       "text": "Le vestiaire est une cellule de béton avec un banc, une ampoule nue et un seau. Les cris de la fosse arrivent assourdis par le couloir. Le gros à la veste de pluie est assis là, une table pliante devant lui, le coude posé. Il tape du doigt sur le bois. Cent roubles, et on voit lequel des deux lâche. Au mur, quelqu'un a gravé des bâtons. Beaucoup de bâtons.",
       "choices": [
         {
@@ -380,6 +389,11 @@
       ]
     },
     "c09-15": {
+      "image": {
+        "src": "images/c09-15.webp",
+        "alt": "Une Chimère au cuir noir dans une cage ouverte sur la fosse de l'Arène",
+        "prompt": "Dans la fosse de béton de l'Arène, sous les projecteurs de chantier, le mur d'en face s'est ouvert sur une cage de camion-citerne. Dedans, une Chimère : une tête et une bosse qui respire, des pattes trop longues, un cuir noir qui luit. Au-dessus, les parieurs reculent de la grille ; à l'écart, un homme en costume trop petit lève une clef. Le héros n'est pas visible."
+      },
       "text": "Ils ont ouvert le mur. Derrière, une cage de camion-citerne, et dedans, une « Chimère » : deux têtes, ou une tête et une bosse qui respire, des pattes trop longues, un cuir noir qui luit sous les projecteurs. Elle ne grogne pas. Elle vous regarde et calcule la distance. Les parieurs reculent de la grille. Arnie lève sa clef, et sa main tremble un peu.",
       "choices": [
         {

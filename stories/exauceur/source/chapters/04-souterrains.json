@@ -29,7 +29,11 @@
       "strelok_piste"
     ]
   },
-  "image": "c04-6",
+  "images": [
+    "c04-6",
+    "c04-9",
+    "c04-7"
+  ],
   "paragraphs": {
     "c04-1": {
       "text": "La trappe retombe au-dessus de vous. Le bruit roule dans la galerie et ne revient pas. Vous êtes dans l'égout d'Agroprom, sur une margelle de béton, de l'eau noire à vos pieds. Ça sent la rouille et le gaz de marais. Le détecteur crépite une fois, puis se tait. Devant, le noir est complet, de celui qu'on touche.",
@@ -282,6 +286,11 @@
       ]
     },
     "c04-9": {
+      "image": {
+        "src": "images/c04-9.webp",
+        "alt": "Le Contrôleur debout au bout de la galerie, devant la porte ouverte d'une chambre carrée",
+        "prompt": "Une galerie d'égout voûtée, des tuyaux le long des parois, éclairée seulement par la lueur jaune d'une porte ouverte au fond. Devant la porte, immobile, un Contrôleur : grand, voûté, le crâne gonflé et difforme, les bras trop longs pendant le long du corps, l'air ondulant autour de sa tête. Au premier plan, le stalker de dos, en silhouette, une main sur le mur et un pistolet dans l'autre. Noir profond, hachures serrées, la créature à contre-jour."
+      },
       "text": "Il est là, au bout de la galerie, devant une porte ouverte sur une chambre carrée. Grand, voûté, le crâne gonflé comme une outre, les bras trop longs posés le long du corps. Un Contrôleur. Il ne vous regarde pas encore. La pression derrière votre front a un rythme, maintenant, et c'est le sien.",
       "choices": [
         {
@@ -410,6 +419,11 @@
       ]
     },
     "c04-7": {
+      "image": {
+        "src": "images/c04-7.webp",
+        "alt": "La chambre carrée des souterrains, une grille de fer scellée et la cache de Strelok derrière",
+        "prompt": "Une petite chambre souterraine au sol dallé, les murs de briques suintants, éclairée par une lampe torche. Sur le mur du fond, une grille de fer scellée dans la brique sans serrure ni gonds, et derrière, dans la pénombre, une pièce cachée : un matelas, des caisses empilées, une lampe à pétrole éteinte. Près d'une échelle de fer, une porte à barre poussoir. La silhouette du stalker de dos, les mains sur les barreaux de la grille."
+      },
       "text": "Une chambre carrée, un sol de dalles, et sur le mur du fond une grille de fer scellée, derrière laquelle on devine une pièce : un matelas, des caisses, une lampe à pétrole. Pas de serrure. Pas de gonds visibles. Quelqu'un a voulu que ça ressemble à un mur. Près de l'échelle, une porte à barre poussoir, de celles qui ne s'ouvrent que d'un côté.",
       "choices": [
         {

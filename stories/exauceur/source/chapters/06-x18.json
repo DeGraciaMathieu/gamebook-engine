@@ -27,7 +27,11 @@
     ],
     "flags": []
   },
-  "image": "c06-9",
+  "images": [
+    "c06-9",
+    "c06-11",
+    "c06-8"
+  ],
   "paragraphs": {
     "c06-1": {
       "text": "La porte est au fond de l'usine, derrière une grille que quelqu'un a découpée au chalumeau. Du fer, deux battants, une serrure grosse comme un poing. Au-dessus, peint au pochoir : X-18. La Clef du X-18 pèse dans votre main. Derrière le fer, un escalier descend, et l'air qui monte est plus froid que la vallée. Votre détecteur ne dit rien. C'est ce qui vous gêne.",
@@ -90,6 +94,11 @@
       ]
     },
     "c06-11": {
+      "image": {
+        "src": "images/c06-11.webp",
+        "alt": "Couloir de béton aux portes de fer, un extincteur en vol lancé par une main invisible",
+        "prompt": "Un couloir souterrain de béton au premier niveau d'un laboratoire, bordé de portes de fer numérotées à la peinture, une lampe de secours verte qui clignote tout au fond. Un extincteur traverse le couloir en l'air, à hauteur de tête, lancé par rien, poussière et débris en suspension. Vu depuis le bas de l'escalier, aucune silhouette."
+      },
       "text": "Le premier niveau est un couloir de portes de fer, numérotées à la peinture. Une lampe de secours clignote au fond, verte, et s'éteint quand vous la regardez. Un extincteur traverse le couloir à hauteur de tête et s'écrase contre le mur. Rien ne l'a lancé. Trois portes : ARCHIVES, un vestiaire, et au bout, l'escalier qui continue.",
       "choices": [
         {
@@ -501,6 +510,11 @@
       ]
     },
     "c06-8": {
+      "image": {
+        "src": "images/c06-8.webp",
+        "alt": "Un Pseudo-géant aux bras trop longs dans une salle de cuves noyée de gaz vert",
+        "prompt": "Une salle de machines souterraine noyée dans un gaz épais, des cuves couchées, le plafond perdu dans la brume. Au centre, un Pseudo-géant de trois mètres, tête trop petite, bras qui touchent le sol, des sangles encore nouées aux poignets, le sol fendu sous son pied. Il est vu depuis le seuil d'une porte de fer entrouverte, le faisceau d'une lampe torche tremblant sur lui ; le héros n'apparaît pas."
+      },
       "text": "La porte s'ouvre sur une salle de machines, des cuves couchées, un plafond perdu dans le vert. Au milieu, le Pseudo-géant. Trois mètres, une tête trop petite, des bras qui touchent le sol, et des sangles encore nouées aux poignets. Il vous regarde avec des yeux d'homme. Il fait un pas et le sol se fend. Dans ce vert, sans lumière, vous ne retrouveriez pas la poignée de la porte. Vous avez le temps d'une seule chose.",
       "choices": [
         {

@@ -30,9 +30,18 @@
       "pont_force"
     ]
   },
-  "image": "c24-3",
+  "images": [
+    "c24-3",
+    "c24-1",
+    "c24-13"
+  ],
   "paragraphs": {
     "c24-1": {
+      "image": {
+        "src": "images/c24-1.webp",
+        "alt": "Le parvis immense de la Centrale, camions renversés, le Sarcophage de béton et la cheminée rayée contre un ciel bas.",
+        "prompt": "Une dalle de béton grande comme un champ, jonchée de camions renversés aux pneus fondus, une cour de transformateurs sur la gauche où l'air tremble à peine. Au bout, le Sarcophage : un bloc gris qui mange la moitié du ciel, et à côté la haute cheminée rayée de la Centrale plantée comme une aiguille. Pas un oiseau, ciel bas et lourd, poussière. Le héros en minuscule silhouette de dos au bord de la dalle."
+      },
       "text": "Le parvis de la Centrale est une dalle de béton grande comme un champ. Au bout, le Sarcophage : un bloc gris qui mange la moitié du ciel, et la cheminée rayée de rouge plantée à côté comme une aiguille. Pas un oiseau. Le vent apporte une odeur de fer et de poussière chaude. Entre vous et le béton, des camions renversés, une cour de transformateurs où l'air tremble, et la dalle nue.",
       "choices": [
         {
@@ -317,6 +326,11 @@
       ]
     },
     "c24-13": {
+      "image": {
+        "src": "images/c24-13.webp",
+        "alt": "Un réduit sous un escalier de fer, matelas, bougies et caisse de bois, la porte de tôle ouverte sur le parvis et le Sarcophage.",
+        "prompt": "L'intérieur d'un réduit de deux mètres sous la première volée d'un escalier de fer : un vieux matelas, des bougies fondues, une caisse de bois, des marques au charbon sur le mur de béton. La porte de tôle est ouverte et cadre le parvis dehors : la dalle, les camions renversés et, au loin, la masse grise du Sarcophage sous un ciel redevenu gris. Vue depuis le fond du réduit, le héros absent."
+      },
       "text": "Sous l'escalier de la cheminée. Le ciel est redevenu gris, le sol s'est tu. Le réduit sent la bougie et le vieux matelas. Par la porte de tôle, vous voyez la dalle, les camions, et le Sarcophage de nouveau à sa place. En bas, à gauche, une porte de fer dans le flanc de la Centrale. Au-dessus, l'échelle qui monte dans le vent.",
       "choices": [
         {

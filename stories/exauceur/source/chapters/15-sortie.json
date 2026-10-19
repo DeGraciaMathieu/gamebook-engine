@@ -18,7 +18,11 @@
       "barman_confiance"
     ]
   },
-  "image": "c15-3",
+  "images": [
+    "c15-3",
+    "c15-4",
+    "c15-7"
+  ],
   "paragraphs": {
     "c15-1": {
       "text": "La route du sud descend entre deux rangées de pylônes. Au bout, le poste militaire : une barrière rayée, un mirador, des barbelés qui luisent sous la pluie fine. Derrière, le monde d'avant, qui ressemble au même champ gris. Ici, il n'y a plus rien à trouver. Un camion bâché attend devant la barrière, moteur coupé. Personne n'en descend.",
@@ -98,6 +102,11 @@
       ]
     },
     "c15-7": {
+      "image": {
+        "src": "images/c15-7.webp",
+        "alt": "La barrière du poste militaire levée, un stalker de dos passe entre les barbelés vers la route et les pylônes",
+        "prompt": "La barrière rayée d'un poste militaire levée, une guérite avec des billets posés sur le capot, un lieutenant au gilet ouvert qui regarde ailleurs. Un stalker de dos, sac sur l'épaule, passe entre deux rangées de barbelés et s'engage sur la même route grise bordée de pylônes, sous une pluie fine. Loin devant, un bus à l'arrêt, des silhouettes assises derrière les vitres."
+      },
       "text": "Le lieutenant compte sans se presser. Vous laissez 3 000 roubles sur le capot de la guérite et la barrière se lève. Vous passez entre les barbelés avec vos artefacts dans le sac, votre pistolet, votre détecteur qui ne crépitera plus. Personne ne vous fouille. De l'autre côté, la même route, les mêmes pylônes. Un bus, plus loin, avec des gens dedans qui ne vous regardent pas. Vous ne savez toujours pas qui vous êtes. Vous rêverez de la Zone chaque nuit."
     },
     "c15-16": {
@@ -237,6 +246,11 @@
       ]
     },
     "c15-4": {
+      "image": {
+        "src": "images/c15-4.webp",
+        "alt": "Le passeur à la lampe avance dans un collecteur de béton, l'eau jusqu'aux cuisses, sous l'église",
+        "prompt": "L'intérieur d'un collecteur de béton sous une église, tunnel bas et rond aux parois suintantes, l'eau noire jusqu'aux cuisses. Devant, de dos, un homme en manteau avec une lampe à la main et un boulon dans l'autre, arrêté pour écouter ; derrière lui, la silhouette d'un stalker. Au fond, le faisceau de la lampe accroche une échelle de fer qui monte vers une plaque ronde."
+      },
       "text": "Il compte vos 2 000 roubles, éteint le réchaud. Le collecteur commence sous l'église : une bouche de béton, de l'eau jusqu'aux cuisses, une odeur de fer rouillé. Il marche devant avec une lampe et un boulon à la main, s'arrête, écoute, repart. Les parois tièdes disent que l'eau n'est pas propre. Vous prenez 2 rads. Il ne parle pas. Au bout, une échelle, et le bruit de la pluie.",
       "effects": [
         {

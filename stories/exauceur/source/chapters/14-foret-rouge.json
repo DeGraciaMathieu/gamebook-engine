@@ -32,7 +32,11 @@
     ],
     "flags": []
   },
-  "image": "c14-8",
+  "images": [
+    "c14-8",
+    "c14-22",
+    "c14-12"
+  ],
   "paragraphs": {
     "c14-1": {
       "text": "Le lac mort reste derrière vous, avec ses marmonnements. Devant, les premiers pins. Leurs aiguilles ne sont pas mortes : elles sont rouges, comme passées à la rouille. Le détecteur crépite une fois, puis se tait. Une piste part droit entre les troncs. À l'est, un ruisseau descend vers la rivière dans un lit de galets pâles. Aucun oiseau. Vous ne vous souvenez pas de la dernière fois que vous en avez entendu un.",
@@ -274,6 +278,11 @@
       ]
     },
     "c14-22": {
+      "image": {
+        "src": "images/c14-22.webp",
+        "alt": "La cabane du Forestier au croisement des pistes, une chaise et un fusil sur le seuil, l'antenne couchée au loin",
+        "prompt": "Une cabane de rondins au milieu de pins aux aiguilles rouges, porte entrebâillée, une chaise et un fusil appuyé contre le mur sur le seuil, un vieil homme barbu assis sur la chaise, fusil sur les genoux. Devant, deux pistes se croisent : l'une descend vers un ravin aux pins plus sombres, l'autre monte vers le nord ; au-dessus de la crête, en travers du ciel, une antenne gigantesque couchée comme un pont de fer. Un stalker de dos, au croisement."
+      },
       "text": "Devant la cabane, les pistes se croisent. Une descend vers l'ouest, dans un ravin où les pins sont plus rouges encore. Une monte au nord, vers la rivière ; au-delà, sur la crête, une antenne couchée en travers du ciel, grande comme un pont. La porte de la cabane est entrebâillée. Sur le seuil, une chaise, un fusil appuyé contre le mur. Le détecteur se tait ici. C'est reposant.",
       "choices": [
         {
@@ -627,6 +636,11 @@
       ]
     },
     "c14-12": {
+      "image": {
+        "src": "images/c14-12.webp",
+        "alt": "Un Pseudo-géant assis sur un pont de béton au-dessus d'une rivière qui fume, l'antenne couchée sur la crête",
+        "prompt": "Une rivière lente et brune qui fume dans le froid, sortant d'une forêt de pins rouges ; un pont de béton la traverse, et au milieu du pont, assis, une masse de muscle grise de la taille d'une voiture, un Pseudo-géant à la tête enfoncée dans les épaules, immobile. Au-delà, une crête nue monte vers une antenne couchée en travers du ciel. Vu depuis la lisière, de loin, derrière un tronc, la silhouette d'un stalker accroupi."
+      },
       "text": "La piste nord sort des pins sur une rivière lente, brune, qui fume dans le froid. Un pont de béton la traverse, et sur le pont, assis, quelque chose de la taille d'une voiture. Un Pseudo-géant. Il ne bouge pas. Il attend que le pont serve. Au-delà, la crête monte vers l'antenne couchée, et c'est là que ça commence : une pensée qui n'est pas la vôtre, posée dans votre tête comme une main.",
       "choices": [
         {

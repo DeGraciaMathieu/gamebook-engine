@@ -34,7 +34,11 @@
       "verite_connue"
     ]
   },
-  "image": "c11-4",
+  "images": [
+    "c11-4",
+    "c11-7",
+    "c11-11"
+  ],
   "paragraphs": {
     "c11-1": {
       "text": "Les Terres sauvages s'arrêtent à une clôture couchée. Derrière, le terrain descend vers un lac qui ne reflète rien. Une usine sur la rive gauche, cheminée, cuves. Sur la rive droite, une bosse de terre sous une bâche de plomb, une antenne : le bunker des scientifiques. Entre les deux, des silhouettes marchent dans l'herbe grise, lentement, sans but. Le compteur crépite quand le vent vient du lac.",
@@ -183,6 +187,11 @@
       ]
     },
     "c11-7": {
+      "image": {
+        "src": "images/c11-7.webp",
+        "alt": "La porte d'acier du bunker des scientifiques sous son auvent de plomb, Yantar en contrebas",
+        "prompt": "Une porte d'acier encastrée dans une butte de terre, sous un auvent de plaques de plomb ; à côté, un interphone et une petite caméra tournée vers le spectateur, une antenne plantée au sommet de la butte. En contrebas, tout Yantar s'étale : les cuves et la cheminée penchée de l'usine chimique, le lac plat et gris, une route qui contourne le lac par une digue et monte au nord vers une ligne de pins sombres. Une silhouette de stalker, de dos, au bas de la pente."
+      },
       "text": "La porte du bunker est une plaque d'acier dans la terre, sous un auvent de plomb. Un interphone, une caméra qui bouge quand vous bougez. Le compteur se tait ici : on a bien choisi l'endroit. D'ici on voit tout Yantar : l'usine et ses cuves, le lac plat, la route qui monte au nord vers des pins qui ne sont plus verts.",
       "choices": [
         {
@@ -307,6 +316,11 @@
       ]
     },
     "c11-11": {
+      "image": {
+        "src": "images/c11-11.webp",
+        "alt": "Une dizaine de zombies en combinaisons de stalkers marchent dans l'herbe grise entre l'usine et le bunker",
+        "prompt": "Une bande d'herbe grise au bord d'un lac mort, entre une usine chimique à gauche et une butte sous bâche de plomb à droite. Une dizaine de zombies en combinaisons et casques de stalkers avancent lentement, voûtés, fusils tenus comme des pelles, la bouche entrouverte ; le premier tourne la tête vers le spectateur et lève son arme sans viser. Des blocs de béton dans l'herbe, un ciel bas. Vu de derrière un bloc de béton, au ras du sol."
+      },
       "text": "Ils sont une dizaine entre l'usine et le bunker. Combinaisons de stalkers, casques, fusils tenus comme des pelles. Ils marchent, s'arrêtent, repartent. Le premier vous voit. Il tourne la tête comme on tourne une page, puis lève son arme sans viser. Les autres suivent, lentement. Ils marmonnent tous la même chose, et vous n'entendez pas quoi.",
       "choices": [
         {

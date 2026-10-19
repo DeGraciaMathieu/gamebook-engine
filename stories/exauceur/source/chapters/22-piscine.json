@@ -24,7 +24,11 @@
     ],
     "flags": []
   },
-  "image": "c22-3",
+  "images": [
+    "c22-3",
+    "c22-18",
+    "c22-10"
+  ],
   "paragraphs": {
     "c22-1": {
       "text": "La grille de la piscine tient sur un seul gond. Derrière, le bâtiment aux baies crevées, et sur le fronton un mot auquel il manque trois lettres. À côté, le poste de police : deux étages jaunes, des barreaux aux fenêtres du bas, la grille de sa cour barrée d'une chaîne et d'un cadenas neuf. Quelqu'un entre encore ici. Le vent pousse des feuilles dans le hall. Rien ne bouge sur les toits. Le détecteur se tait.",
@@ -210,6 +214,11 @@
       ]
     },
     "c22-18": {
+      "image": {
+        "src": "images/c22-18.webp",
+        "alt": "La cour d'un poste de police en ruine, un fourgon sans roues, deux gardes masqués immobiles sur le perron.",
+        "prompt": "La cour arrière d'un poste de police de Pripyat : un fourgon UAZ sans roues posé sur ses essieux, un drapeau en loques, des douilles sur les dalles, une rangée de poubelles renversées au premier plan. Sur le perron, deux hommes en combinaison grise, masques relevés sur le front, l'un les mains jointes, l'autre un fusil sur le ventre, les yeux tournés vers la rue. Vue depuis l'ombre d'une porte de service, le héros absent ou en silhouette au bord du cadre."
+      },
       "text": "La cour du poste. Un fourgon UAZ sans roues, un drapeau de la milice en loques, des douilles partout. Sur le perron arrière, deux monolithiens en tenue grise, masques relevés sur le front, les yeux blancs tournés vers la rue. L'un psalmodie. L'autre tient un fusil sur le ventre et dodeline. Entre vous et eux, dix mètres de dalles et une rangée de poubelles renversées. Derrière eux, la porte du poste est ouverte.",
       "choices": [
         {
@@ -363,6 +372,11 @@
       ]
     },
     "c22-10": {
+      "image": {
+        "src": "images/c22-10.webp",
+        "alt": "Les cellules d'un poste de police, grilles ouvertes, des corps en tenue grise alignés sur le sol, masqués.",
+        "prompt": "Le sous-sol d'un poste de police : un couloir étroit, quatre cellules aux grilles ouvertes, et dans chacune des corps en combinaison grise alignés sur le sol, les mains croisées sur la poitrine, le masque sur le visage. Un mot illisible tracé à la craie sur chaque mur, rendu comme une simple trace blanche sans lettres. Lumière froide d'une torche depuis l'escalier, vapeur de froid au ras du sol, le héros vu de dos en haut des marches."
+      },
       "text": "Les cellules. Quatre grilles ouvertes, et dans chacune, des corps en tenue grise alignés sur le sol, les mains croisées, le masque sur le visage. Une vingtaine. Pas d'odeur, ou presque ; le froid les garde. Quelqu'un a écrit un mot à la craie sur chaque mur, le même. Le détecteur crépite plus fort quand vous approchez. Ce n'est pas d'eux que vient la radiation. C'est de ce qu'ils portent.",
       "choices": [
         {
