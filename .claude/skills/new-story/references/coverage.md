@@ -50,3 +50,20 @@ Chaque ligne au moins une fois dans l'histoire, vérifiée par `node scripts/sto
 - Aucune fin ne doit dépasser 70 % des parties, aucune fin hors mort ne doit être sous 3 %.
 - Un combat « mortel » au-delà de 50 % des rencontres est un boss : il doit être évitable ou préparable (potion, fuite, chemin alternatif).
 - Un paragraphe « rare » (moins de 2 %) est soit un secret assumé, soit un bug de conception.
+
+## Grands graphes (histoires en chapitres, 500 à 1000 paragraphes)
+
+Les règles ci-dessus valent chapitre par chapitre. À cette échelle s'ajoutent des règles de structure, contrôlées par `node scripts/story-lint.mjs stories/<id>` (contrats) et par le tableau par chapitre de `node scripts/story-simulate.mjs`.
+
+- **Actes et régions** : 3 à 5 actes, chacun fait de 4 à 10 chapitres qui sont des régions (un quartier, une forêt, un étage). Un chapitre fait 25 à 50 paragraphes, a 1 à 3 entrées et 1 à 4 sorties vers d'autres chapitres.
+- **Un carrefour par chapitre** : chaque chapitre a son carrefour (rejoint par 2 chemins, 2 choix ou plus) et une boucle optionnelle qui y ramène. Les carrefours d'une même région sont reliés entre eux : le joueur circule dans la région avant d'en sortir.
+- **Points de convergence** : entre deux actes, tous les chemins passent par 1 à 3 chapitres de convergence. C'est là que l'histoire vérifie ce que le héros a rapporté de l'acte (objet, drapeau, seuil) et que les rédacteurs de l'acte suivant peuvent compter sur un état connu, décrit dans la bible.
+- **Dépendances en amont seulement** : un chapitre ne requiert que ce que fournissent les chapitres en amont (ou le héros au départ), jamais un chapitre parallèle du même acte. Deux branches parallèles d'un acte fournissent des moyens différents d'atteindre la même convergence (`any`).
+- **Ce qu'une partie voit** : 100 à 150 paragraphes par partie sur 1000, soit une longueur moyenne de 80 à 150 actions. En dessous, les actes sont trop courts ; au-dessus, les boucles tournent à vide.
+- **Jamais visités** : sur 3000 parties, au plus 10 % des paragraphes jamais visités en tout, et au plus 25 % dans un chapitre. Un chapitre traversé par moins de 3 % des parties est un secret assumé ou un bug de conception ; un chapitre traversé par toutes les parties est une convergence et doit être écrit comme telle.
+- **Fins réparties** : au moins 5 fins hors mort, portées par 3 chapitres au moins et pas toutes dans le dernier acte (une sortie précoce, amère ou au rabais, dans l'acte 2 ou 3). La mort par combat et par piège doit être possible dans chaque acte.
+- **Économie par acte** : la ressource se gagne et se dépense dans chaque acte ; un marchand par acte au moins, avant la dépense qui compte.
+- **Attrition** : sur 150 actions, les dégâts s'additionnent et les consommables sont uniques. Adversaires courants 6 à 8 d'habileté, dégâts 2 ; pièges 2 à 3 points d'Endurance ; un lieu de repos par hub (une fois par visite, ou payant) ; Endurance de départ 18 à 20. Une jauge qui monte à chaque passage (radiation, faim) se dimensionne sur 100 à 150 passages, pas sur un chapitre.
+- **Consommables** : listés dans `requires` de chaque chapitre où l'on peut souffler, sinon le rédacteur n'en propose aucun.
+- **Illustrations** : une par chapitre au plus, désignée par le contrat (`image`), sur le lieu emblématique du chapitre.
+- **Identifiants** : `c<nn>-<n>` à l'écriture, renumérotés à la fusion par `story-build.mjs` ; `build-map.json` fait la correspondance dans les deux sens.
