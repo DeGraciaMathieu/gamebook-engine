@@ -34,14 +34,17 @@
       "text": "La grille de la piscine tient sur un seul gond. Derrière, le bâtiment aux baies crevées, et sur le fronton un mot auquel il manque trois lettres. À côté, le poste de police : deux étages jaunes, des barreaux aux fenêtres du bas, la grille de sa cour barrée d'une chaîne et d'un cadenas neuf. Quelqu'un entre encore ici. Le vent pousse des feuilles dans le hall. Rien ne bouge sur les toits. Le détecteur se tait.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Pousser la porte du hall",
           "to": "c22-14"
         },
         {
+          "kind": "aller",
           "text": "Passer par la baie crevée du bassin",
           "to": "c22-3"
         },
         {
+          "kind": "aller",
           "text": "Repartir sur la place",
           "to": "c18-3"
         }
@@ -51,14 +54,17 @@
       "text": "Le hall sent la poussière mouillée. Des tourniquets, une caisse vitrée, un tableau des horaires de 1986 encore épinglé. Sous le plafond, les lettres d'un slogan ont perdu leur peinture. Deux portes. Celle de gauche ouvre sur le bassin, on le sent au courant d'air. Celle de droite, un couloir carrelé vers les douches et les vestiaires, et au bout, une lumière grise qui vient d'une cour.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Suivre le couloir des douches",
           "to": "c22-17"
         },
         {
+          "kind": "aller",
           "text": "Entrer dans le bassin",
           "to": "c22-3"
         },
         {
+          "kind": "aller",
           "text": "Ressortir par la grille",
           "to": "c18-3"
         }
@@ -73,14 +79,17 @@
       },
       "choices": [
         {
+          "kind": "aller",
           "text": "Traverser par la passerelle",
           "to": "c22-20"
         },
         {
+          "kind": "aller",
           "text": "Descendre dans le bassin et le traverser",
           "to": "c22-16"
         },
         {
+          "kind": "aller",
           "text": "Revenir dans le hall",
           "to": "c22-14"
         }
@@ -100,6 +109,7 @@
       "text": "Vous passez. La dernière plaque ploie, et vous êtes sur le seuil des vestiaires, le cœur dans la gorge. D'ici, par la baie crevée, on voit la cour du poste de police : un fourgon sans roues, un perron, et deux silhouettes grises qui ne bougent pas. Elles portent des masques. Elles regardent la rue, pas la piscine. Vous reculez dans l'ombre de la porte.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Entrer dans les vestiaires",
           "to": "c22-7"
         }
@@ -116,6 +126,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Gagner l'échelle et monter",
           "to": "c22-7"
         }
@@ -132,6 +143,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Pousser la porte des vestiaires",
           "to": "c22-7"
         }
@@ -141,14 +153,17 @@
       "text": "Les vestiaires. Des casiers de tôle ouverts, des bancs de bois, un maillot de bain pendu à une patère depuis 1986. Ça sent encore le chlore, sous la poussière, allez savoir comment. Au fond, une porte de service bat sur la cour du poste de police. Par l'entrebâillement, le perron, et une voix qui psalmodie. Derrière vous, la porte du bassin ; à gauche, le couloir des douches, où l'air tourne.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Passer dans la cour du poste",
           "to": "c22-18"
         },
         {
+          "kind": "aller",
           "text": "Retourner au bassin",
           "to": "c22-3"
         },
         {
+          "kind": "agir",
           "text": "Boire la vodka",
           "to": "c22-23",
           "if": {
@@ -174,6 +189,7 @@
           ]
         },
         {
+          "kind": "agir",
           "text": "Poser le bandage",
           "to": "c22-11",
           "if": {
@@ -199,6 +215,7 @@
       "text": "Vous videz la Vodka assis sur un banc, en trois gorgées qui brûlent. Vous perdez 2 rads. Vous perdez 1 point de Chance. La bouteille roule sous les casiers. Dans la cour, la voix psalmodie toujours, le même mot, sans se presser. Vous attendez que la pièce arrête de tourner.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Se relever du banc",
           "to": "c22-7"
         }
@@ -208,6 +225,7 @@
       "text": "Vous déroulez le Bandage autour de ce qui saigne et serrez avec les dents. Vous regagnez 3 points d'Endurance. Le tissu prend la couleur de la boue. Dans la cour, la voix s'est tue, puis reprend. Vous nouez le dernier tour et reprenez votre arme.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Reprendre votre place près de la porte",
           "to": "c22-7"
         }
@@ -222,6 +240,7 @@
       "text": "La cour du poste. Un fourgon UAZ sans roues, un drapeau de la milice en loques, des douilles partout. Sur le perron arrière, deux monolithiens en tenue grise, masques relevés sur le front, les yeux blancs tournés vers la rue. L'un psalmodie. L'autre tient un fusil sur le ventre et dodeline. Entre vous et eux, dix mètres de dalles et une rangée de poubelles renversées. Derrière eux, la porte du poste est ouverte.",
       "choices": [
         {
+          "kind": "attaquer",
           "text": "Les égorger au couteau, l'un après l'autre",
           "to": "c22-5",
           "if": {
@@ -230,6 +249,7 @@
           }
         },
         {
+          "kind": "attaquer",
           "text": "Les abattre au Makarov",
           "to": "c22-25",
           "if": {
@@ -238,10 +258,12 @@
           }
         },
         {
+          "kind": "agir",
           "text": "Attendre qu'ils s'en aillent",
           "to": "c22-12"
         },
         {
+          "kind": "aller",
           "text": "Reculer dans les vestiaires",
           "to": "c22-7"
         }
@@ -261,10 +283,12 @@
       "text": "Le premier ne crie pas. Vous le retenez par le masque pendant qu'il s'affaisse, et le second se retourne juste à temps pour prendre la lame sous le menton. Il tombe sans un bruit sur son fusil. Le silence revient d'un coup, plus large. Vous essuyez le couteau sur une manche grise. La porte du poste est ouverte sur un couloir sombre.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Entrer dans le poste",
           "to": "c22-4"
         },
         {
+          "kind": "aller",
           "text": "Reculer dans les vestiaires",
           "to": "c22-7"
         }
@@ -315,10 +339,12 @@
       "text": "Ils s'en vont. Un troisième arrive par la rue, un corps gris en travers des épaules, et les deux gardes le suivent à l'intérieur en psalmodiant. Des pas dans un escalier, une porte de fer. Puis ils ressortent tous les trois par la grille de la cour, que le dernier referme à la chaîne. Le perron est vide. Vous comptez jusqu'à cent avant de bouger.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Entrer dans le poste",
           "to": "c22-4"
         },
         {
+          "kind": "aller",
           "text": "Reculer dans les vestiaires",
           "to": "c22-7"
         }
@@ -341,10 +367,12 @@
       "text": "Ils sont à terre. Les détonations roulent encore entre les immeubles, et quelque part vers la place, une autre voix se met à psalmodier, puis se tait. Le sang des monolithiens est rouge, comme le vôtre. Vous en aviez douté. Le perron, la porte ouverte, un couloir sombre qui sent le formol. Il faut faire vite, ou ne pas entrer.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Entrer dans le poste",
           "to": "c22-4"
         },
         {
+          "kind": "aller",
           "text": "Reculer dans les vestiaires",
           "to": "c22-7"
         }
@@ -354,18 +382,22 @@
       "text": "Le poste de police. Un comptoir, un registre ouvert à une page de 1986, un portrait sans visage au mur. Ça sent le formol et la poussière de craie. Sur la droite, le bureau du chef, sa porte vitrée au carreau fendu. Au fond, un escalier descend vers les cellules, et c'est de là que monte le froid, et autre chose, que le détecteur sent avant vous.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Descendre aux cellules",
           "to": "c22-10"
         },
         {
+          "kind": "aller",
           "text": "Entrer dans le bureau du chef",
           "to": "c22-2"
         },
         {
+          "kind": "aller",
           "text": "Sortir par la grille de la rue",
           "to": "c22-30"
         },
         {
+          "kind": "aller",
           "text": "Ressortir par la cour",
           "to": "c22-7"
         }
@@ -380,6 +412,7 @@
       "text": "Les cellules. Quatre grilles ouvertes, et dans chacune, des corps en tenue grise alignés sur le sol, les mains croisées, le masque sur le visage. Une vingtaine. Pas d'odeur, ou presque ; le froid les garde. Quelqu'un a écrit un mot à la craie sur chaque mur, le même. Le détecteur crépite plus fort quand vous approchez. Ce n'est pas d'eux que vient la radiation. C'est de ce qu'ils portent.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Prendre la Tenue sur un corps",
           "to": "c22-19",
           "if": {
@@ -389,10 +422,12 @@
           }
         },
         {
+          "kind": "agir",
           "text": "Fouiller les poches des morts",
           "to": "c22-24"
         },
         {
+          "kind": "aller",
           "text": "Remonter l'escalier des cellules",
           "to": "c22-4"
         }
@@ -414,10 +449,12 @@
       ],
       "choices": [
         {
+          "kind": "agir",
           "text": "Fouiller les poches des autres",
           "to": "c22-24"
         },
         {
+          "kind": "aller",
           "text": "Remonter l'escalier des cellules",
           "to": "c22-4"
         }
@@ -442,6 +479,7 @@
       ],
       "choices": [
         {
+          "kind": "agir",
           "text": "Prendre la Tenue sur un corps",
           "to": "c22-19",
           "if": {
@@ -451,6 +489,7 @@
           }
         },
         {
+          "kind": "aller",
           "text": "Remonter l'escalier des cellules",
           "to": "c22-4"
         }
@@ -467,6 +506,7 @@
       ],
       "choices": [
         {
+          "kind": "agir",
           "text": "Prendre la Tenue sur un corps",
           "to": "c22-19",
           "if": {
@@ -476,6 +516,7 @@
           }
         },
         {
+          "kind": "aller",
           "text": "Remonter l'escalier des cellules",
           "to": "c22-4"
         }
@@ -492,10 +533,12 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Descendre aux cellules",
           "to": "c22-10"
         },
         {
+          "kind": "aller",
           "text": "Revenir au comptoir",
           "to": "c22-4"
         }
@@ -505,10 +548,12 @@
       "text": "La rue. La grille de la cour tient par une chaîne, et vous passez par-dessus. Derrière vous, le poste, la piscine, les morts alignés dans le froid. Le vent ramène de la place le grincement de la grande roue. Sur un toit, une silhouette grise tourne la tête, puis la détourne, ou n'a jamais regardé.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Repartir sur la place",
           "to": "c18-3"
         },
         {
+          "kind": "aller",
           "text": "Retourner dans les vestiaires",
           "to": "c22-7"
         }
@@ -518,10 +563,12 @@
       "text": "Le couloir des douches. Des pommeaux tordus, du carrelage vert, une rigole au milieu. À mi-chemin, l'air tourne. Les feuilles mortes sur le sol décrivent un cercle lent, à hauteur de genou, montent, retombent. Une « Carrousel ». Elle tient toute la largeur du couloir. Le détecteur crépite par saccades, au rythme de la rotation. De l'autre côté, la porte des vestiaires.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Lancer un boulon et passer",
           "to": "c22-28"
         },
         {
+          "kind": "aller",
           "text": "Retourner vers le bassin",
           "to": "c22-3"
         }
@@ -539,6 +586,7 @@
       "text": "Vous passez. L'air se referme derrière vous avec un bruit de drap claqué, et une poignée de feuilles vous suit, s'arrête, retombe. Vous êtes contre la porte des vestiaires, le souffle court, entier. Le boulon, derrière, continue de tourner dans le cercle, lentement, comme s'il cherchait la sortie.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Entrer dans les vestiaires",
           "to": "c22-7"
         }
@@ -555,6 +603,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Entrer dans les vestiaires",
           "to": "c22-7"
         }

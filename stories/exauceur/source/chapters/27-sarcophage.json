@@ -44,10 +44,12 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Suivre le couloir principal",
           "to": "c27-19"
         },
         {
+          "kind": "aller",
           "text": "Monter l'escalier de service",
           "to": "c27-26"
         }
@@ -63,10 +65,12 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Descendre par l'échelle de fer",
           "to": "c27-28"
         },
         {
+          "kind": "aller",
           "text": "Suivre la passerelle jusqu'à la cabine",
           "to": "c27-8"
         }
@@ -76,10 +80,12 @@
       "text": "Le couloir principal se termine sur une flaque. Noire, luisante, large comme une chambre, elle a coulé d'une fissure du plafond et s'est figée en cœur de lave. Du corium. Le compteur hurle d'un seul trait. Au-delà, la lueur rouge, et le son d'une goutte qui tombe dans un puits. Une gaine technique s'ouvre dans le mur à hauteur d'épaule, étroite, tiède.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Traverser la flaque en courant",
           "to": "c27-7"
         },
         {
+          "kind": "agir",
           "text": "Boire l'anti-rad et traverser",
           "to": "c27-23",
           "if": {
@@ -100,6 +106,7 @@
           ]
         },
         {
+          "kind": "aller",
           "text": "Ramper dans la gaine technique",
           "to": "c27-11"
         }
@@ -116,6 +123,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Descendre vers le puits",
           "to": "c27-4"
         }
@@ -132,6 +140,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Descendre vers le puits",
           "to": "c27-4"
         }
@@ -151,6 +160,7 @@
       "text": "La tôle tient. Vous sortez de la gaine de l'autre côté de la flaque, les genoux brûlés par le métal, le compteur presque calme. Le couloir descend vers une lueur rouge. Au fond, un puits, et autour du puits, un silence de cathédrale.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Descendre vers le puits",
           "to": "c27-4"
         }
@@ -167,6 +177,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Descendre vers le puits",
           "to": "c27-4"
         }
@@ -176,6 +187,7 @@
       "text": "L'escalier de service tourne deux fois et débouche sur un palier. Deux monolithiens sont là, à genoux, le front contre le mur orange, le fusil posé en travers des cuisses. Celui de gauche chante sa note. Celui de droite respire par un masque fendu. Derrière eux, un couloir mène au centre du Sarcophage. Ils n'ont pas tourné la tête. Pas encore.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Faire le signe et passer entre eux",
           "to": "c27-9",
           "if": {
@@ -193,10 +205,12 @@
           }
         },
         {
+          "kind": "aller",
           "text": "Se glisser le long du mur",
           "to": "c27-21"
         },
         {
+          "kind": "attaquer",
           "text": "Tirer le premier",
           "to": "c27-5"
         }
@@ -206,6 +220,7 @@
       "text": "Vous faites le signe que vous avez vu au palais de la Culture : la main sur la poitrine, puis vers le sol. Dans la Tenue du Monolithe, vous n'êtes qu'un frère de plus qui va prier au centre. Celui de gauche ouvre les yeux, blancs, vous regarde, reprend sa note. Vous passez entre eux. Le couloir s'ouvre sur un puits rouge.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Avancer jusqu'au puits",
           "to": "c27-4"
         }
@@ -223,6 +238,7 @@
       "text": "Il recommence à respirer. Le gravillon n'a rien dit. Vous passez la porte du palier sans un regard derrière vous, et vous ne respirez vous-même qu'au bout de vingt mètres, quand le couloir s'élargit sur une lueur rouge et le bord d'un puits.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Avancer jusqu'au puits",
           "to": "c27-4"
         }
@@ -244,6 +260,7 @@
       "text": "Il tombe contre le mur et y reste, le front sur la peinture, comme s'il priait encore. L'autre n'a pas cessé de chanter ; il n'a pas ouvert les yeux. Vous ne le touchez pas. Vous passez la porte du palier. Le couloir descend vers une lueur rouge et un bruit de goutte dans le vide.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Avancer jusqu'au puits",
           "to": "c27-4"
         }
@@ -261,6 +278,7 @@
       "text": "L'échelle tient. Les derniers barreaux sont chauds ; vous sautez le dernier mètre sur le béton gris, qui sonne creux. La lueur rouge vient d'un puits au centre, large comme une maison, et quelque chose tombe dedans, goutte à goutte, depuis le plafond.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Marcher jusqu'au puits",
           "to": "c27-4"
         }
@@ -277,6 +295,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Marcher jusqu'au puits",
           "to": "c27-4"
         }
@@ -286,6 +305,7 @@
       "text": "La cabine vitrée est une salle de contrôle, la jumelle de celle du réacteur. Cadrans à zéro, aiguilles tombées, un fauteuil tourné vers la vitre. Sur le pupitre, une tasse pleine de poussière. Un monolithien est assis par terre sous le pupitre, le fusil entre les genoux : il dort, ou il prie, ou il est mort. Un escalier de métal descend vers le centre.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Chercher la porte derrière les cadrans",
           "to": "c27-31",
           "if": {
@@ -294,10 +314,12 @@
           }
         },
         {
+          "kind": "agir",
           "text": "Fouiller la salle",
           "to": "c27-14"
         },
         {
+          "kind": "aller",
           "text": "Descendre l'escalier de métal",
           "to": "c27-4"
         }
@@ -307,6 +329,7 @@
       "text": "Vous connaissez ces cadrans. Dans la salle du réacteur, derrière le même panneau, il y avait un placard à fusibles. Ici, le panneau pivote sur un gond huilé, sans bruit, et donne sur un couloir court, propre, et une porte d'acier avec un clavier à douze touches. Le monolithien n'a pas bougé. Une lampe verte veille au-dessus du clavier.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Approcher de la porte au clavier",
           "to": "c27-18"
         }
@@ -328,6 +351,7 @@
       "text": "Il glisse sous le pupitre, à l'endroit même où il attendait, et la prière s'arrête au milieu d'un mot. Dans la cabine, plus rien ne bouge que la poussière. Rien dans les tiroirs qui vaille. L'escalier de métal descend vers le centre, où une lueur rouge bat lentement, comme un cœur.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Descendre l'escalier de métal",
           "to": "c27-4"
         }
@@ -342,14 +366,17 @@
       },
       "choices": [
         {
+          "kind": "aller",
           "text": "Suivre la lumière blanche au fond du couloir",
           "to": "c27-6"
         },
         {
+          "kind": "aller",
           "text": "Suivre le ronronnement des ventilateurs",
           "to": "c27-18"
         },
         {
+          "kind": "aller",
           "text": "Faire le tour par la galerie basse",
           "to": "c27-20"
         }
@@ -359,6 +386,7 @@
       "text": "La galerie fait le tour du puits à hauteur de genou ; il faut la suivre courbé. À mi-tour, une alcôve. Un stalker est assis là, la combinaison ouverte, un carnet sur les cuisses. Mort depuis longtemps, sec, la bouche ouverte sur le puits. Sur la dernière page du carnet, une ligne : « Ne demande pas. C'est elle qui demande. » Son sac est vide.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Vider la trousse de soins",
           "to": "c27-13",
           "if": {
@@ -379,6 +407,7 @@
           ]
         },
         {
+          "kind": "aller",
           "text": "Revenir au bord du puits",
           "to": "c27-4"
         }
@@ -388,6 +417,7 @@
       "text": "Vous vous asseyez à côté du mort, dos au béton, et vous videz la Trousse de soins : la compresse sur l'épaule, l'ampoule dans la cuisse. Vous regagnez 6 points d'Endurance. Le mort regarde le puits. Vous aussi, un moment. La lumière rouge ne bouge pas, et pourtant elle respire. Vous vous relevez.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Revenir au bord du puits",
           "to": "c27-4"
         }
@@ -402,6 +432,7 @@
       "text": "Le couloir vers la lumière blanche est droit, long, et le chant s'y fait net : quatre voix, une même note. Au bout, devant une arche, quatre monolithiens à genoux, dos à vous, face à la lumière. Un dernier gardien se tient debout, fusil en travers, et il regarde le couloir. Il vous a vu. Il attend de savoir ce que vous êtes.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Faire le signe et marcher vers l'arche",
           "to": "c27-25",
           "if": {
@@ -419,10 +450,12 @@
           }
         },
         {
+          "kind": "agir",
           "text": "Attendre dans l'ombre qu'il se détourne",
           "to": "c27-16"
         },
         {
+          "kind": "attaquer",
           "text": "Tirer sur le gardien debout",
           "to": "c27-10"
         }
@@ -432,6 +465,7 @@
       "text": "La main sur la poitrine, puis vers le sol. Dans la Tenue du Monolithe, vous êtes un frère qui vient voir. Le gardien baisse le fusil et vous rend le signe. Les quatre ne tournent pas la tête. Vous passez entre eux et l'arche, et leur chant vous suit sous la voûte jusqu'à ce que la lumière blanche le couvre.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Entrer sous l'arche",
           "to": "c27-22"
         }
@@ -449,6 +483,7 @@
       "text": "Personne ne se retourne. Vous passez derrière le gardien, si près que vous sentez son odeur de laine mouillée, puis entre les quatre dos courbés. Leur note ne vacille pas. Sous l'arche, la lumière blanche est plus forte que le rouge du puits, et plus froide.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Entrer sous l'arche",
           "to": "c27-22"
         }
@@ -471,6 +506,7 @@
       "text": "Il tombe à genoux, puis sur le côté, et sa tête roule vers l'arche. Les quatre chantent encore. Pas un n'a bougé pour lui. Vous passez entre eux, l'arme braquée sur des nuques qui ne se retournent pas. Sous l'arche, la lumière blanche vous prend les yeux.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Entrer sous l'arche",
           "to": "c27-22"
         }
@@ -480,10 +516,12 @@
       "text": "Une antichambre. Le béton ici est nu, sans peinture, et la lumière blanche le rend presque tendre. Elle vient d'au-delà d'un seuil, au bout de la pièce, et elle bourdonne, bas, comme un transformateur. Elle écoute. Vous le savez sans savoir comment. Derrière vous, le chant, le puits rouge, et toute la Zone qui vous a laissé venir jusqu'ici.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Aller vers la lumière",
           "to": "c28-1"
         },
         {
+          "kind": "aller",
           "text": "Revenir au puits",
           "to": "c27-4"
         }
@@ -498,6 +536,7 @@
       "text": "Le couloir des ventilateurs se termine sur une porte d'acier qui n'a rien à faire ici : propre, sans rouille, avec un clavier à douze touches et une lampe verte au-dessus. L'air qui passe sous la porte est frais, et il sent le formol. Les ventilateurs sont derrière. Quelqu'un entretient cette porte. Quelqu'un vit là-dessous depuis longtemps.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Ouvrir la porte avec le Décodeur",
           "to": "c27-27",
           "if": {
@@ -506,10 +545,12 @@
           }
         },
         {
+          "kind": "parler",
           "text": "Taper un code au hasard",
           "to": "c27-29"
         },
         {
+          "kind": "aller",
           "text": "Revenir au puits",
           "to": "c27-4"
         }
@@ -519,6 +560,7 @@
       "text": "Le Décodeur se clipse sur le clavier. Ses chiffres courent, s'arrêtent un à un, et la lampe verte clignote deux fois. Un verrou glisse dans l'acier avec un bruit de bouteille qu'on débouche. La porte s'ouvre sur un couloir aux néons, blanc, propre, où vos bottes laissent des traces noires. L'air est froid. Derrière vous, le Sarcophage se referme sur son puits.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Entrer dans le couloir aux néons",
           "to": "c29-1"
         }
@@ -535,6 +577,7 @@
       ],
       "choices": [
         {
+          "kind": "agir",
           "text": "Ouvrir la porte avec le Décodeur",
           "to": "c27-27",
           "if": {
@@ -543,6 +586,7 @@
           }
         },
         {
+          "kind": "aller",
           "text": "Revenir au puits",
           "to": "c27-4"
         }

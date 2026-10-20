@@ -43,10 +43,12 @@
       "text": "Le ravin s'ouvre sur du blanc. La brume remplit la Vallée sombre jusqu'au bord, et vous êtes au-dessus, sur une corniche d'argile où le Dépotoir finit de rouiller. En dessous, quelque chose bat : une musique lointaine, une basse qui tape. Des drapeaux verts montent et descendent dans le brouillard. Plus loin, un bâtiment noir, une cheminée. Le détecteur crépite une fois, puis se tait.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Descendre vers les drapeaux verts",
           "to": "c05-4"
         },
         {
+          "kind": "aller",
           "text": "Suivre le fond du ravin jusqu'à la route",
           "to": "c05-19"
         }
@@ -56,6 +58,7 @@
       "text": "Vous remontez l'escalier du X-18 marche par marche, et l'air redevient respirable à mi-hauteur. La porte de fer. La halle. Le feu de palettes brûle encore dans la cour, mais la partie de cartes s'est déplacée, et personne ne regarde la porte dont on ne revient pas. Derrière la grille, le jour est gris comme de la cendre.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Traverser la cour à découvert",
           "to": "c05-42",
           "if": {
@@ -64,6 +67,7 @@
           }
         },
         {
+          "kind": "aller",
           "text": "Longer le mur jusqu'au quai de chargement",
           "to": "c05-8"
         }
@@ -73,6 +77,7 @@
       "text": "Borov est assis sur un fauteuil de dentiste, un gilet de chaînes d'or sur un blouson de cuir, le crâne rasé qui brille sous l'ampoule. Au cou, sur un cordon, une clef de fer longue comme une main. Borov sait ce que tu veux. Tout le monde veut la même chose. Borov la vend mille, et Borov ne discute pas. Il se tourne vers la fenêtre pour cracher. Le cordon pend dans son dos.",
       "choices": [
         {
+          "kind": "payer",
           "text": "Payer la Clef du X-18 (1 000 roubles)",
           "to": "c05-39",
           "if": {
@@ -90,14 +95,17 @@
           ]
         },
         {
+          "kind": "attaquer",
           "text": "Trancher le cordon pendant qu'il crache",
           "to": "c05-13"
         },
         {
+          "kind": "attaquer",
           "text": "Tirer le premier",
           "to": "c05-5"
         },
         {
+          "kind": "attaquer",
           "text": "Lancer la Grenade F1 et sauter dans l'escalier",
           "to": "c05-17",
           "if": {
@@ -113,6 +121,7 @@
           ]
         },
         {
+          "kind": "aller",
           "text": "Redescendre sans rien dire",
           "to": "c05-31"
         }
@@ -122,6 +131,7 @@
       "text": "La ferme de la Liberté : un corps de bâtiment éventré, des sacs de sable, un drapeau vert sur chaque poteau. Un gars en treillis dépareillé vous regarde monter, le fusil sur le ventre, un joint à la bouche. La musique vient de la grange. Il ne bouge pas. Chez nous, on entre avec quelque chose dans les mains, ou on n'entre pas.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Entrer, la sentinelle vous connaît",
           "to": "c05-16",
           "if": {
@@ -130,6 +140,7 @@
           }
         },
         {
+          "kind": "parler",
           "text": "Lui tendre la Vodka",
           "to": "c05-37",
           "if": {
@@ -145,10 +156,12 @@
           ]
         },
         {
+          "kind": "parler",
           "text": "Proposer vos bras",
           "to": "c05-30"
         },
         {
+          "kind": "aller",
           "text": "Redescendre vers la route",
           "to": "c05-7"
         }
@@ -193,18 +206,22 @@
       },
       "choices": [
         {
+          "kind": "aller",
           "text": "Monter vers la ferme aux drapeaux verts",
           "to": "c05-4"
         },
         {
+          "kind": "aller",
           "text": "Descendre vers l'usine",
           "to": "c05-10"
         },
         {
+          "kind": "aller",
           "text": "Longer la rivière jusqu'au pont effondré",
           "to": "c05-35"
         },
         {
+          "kind": "agir",
           "text": "Poser un Bandage",
           "to": "c05-22",
           "if": {
@@ -225,6 +242,7 @@
           ]
         },
         {
+          "kind": "aller",
           "text": "Prendre la route de l'ouest vers le Devoir",
           "to": "c07-2"
         }
@@ -257,6 +275,7 @@
       "text": "L'usine. Une grille de fer, deux bandits assis sur des pneus, un chien mort devant eux qu'ils n'ont pas bougé. Blousons de cuir, masques de ski relevés sur le front. Celui de gauche se lève. Cent pour passer. Chez Borov, tout se paie, même la porte.",
       "choices": [
         {
+          "kind": "payer",
           "text": "Payer le passage (100 roubles)",
           "to": "c05-31",
           "if": {
@@ -274,6 +293,7 @@
           ]
         },
         {
+          "kind": "aller",
           "text": "Entrer l'AK-74 en travers de la poitrine",
           "to": "c05-31",
           "if": {
@@ -282,10 +302,12 @@
           }
         },
         {
+          "kind": "agir",
           "text": "Forcer la grille",
           "to": "c05-20"
         },
         {
+          "kind": "aller",
           "text": "Repartir vers la route",
           "to": "c05-7"
         }
@@ -304,6 +326,7 @@
       "text": "Le type aux cheveux longs crache dans le feu. Borov ? Il tient l'usine avec vingt gars et un gilet en or. Il vend tout : les balles, le passage, les gens. Il porte une clef au cou, une clef de fer, et il dit que c'est la clef de l'enfer. Sous l'usine, il y a un laboratoire. Ceux qui descendent, on ne les revoit pas. Borov n'est jamais descendu.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Retourner au feu",
           "to": "c05-16"
         }
@@ -323,6 +346,7 @@
       "text": "Le second chien ne se relève pas. Vous essuyez la lame sur son flanc. Les deux corps restent au milieu du chemin, comme tout ce qui tombe ici. Vous reprenez votre souffle, puis le chemin. L'asphalte apparaît sous la boue, fendu, et la brume se referme derrière vous.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Prendre la route de la vallée",
           "to": "c05-7"
         }
@@ -339,6 +363,7 @@
       ],
       "choices": [
         {
+          "kind": "agir",
           "text": "Se relever et reprendre la route",
           "to": "c05-7"
         }
@@ -364,10 +389,12 @@
       },
       "choices": [
         {
+          "kind": "parler",
           "text": "Demander ce qu'on sait de Borov",
           "to": "c05-12"
         },
         {
+          "kind": "parler",
           "text": "Proposer de tenir le pont cette nuit",
           "to": "c05-30",
           "if": {
@@ -377,6 +404,7 @@
           }
         },
         {
+          "kind": "aller",
           "text": "Redescendre vers la route",
           "to": "c05-7"
         }
@@ -397,10 +425,12 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Descendre l'escalier du X-18",
           "to": "c06-1"
         },
         {
+          "kind": "aller",
           "text": "Sortir de l'usine",
           "to": "c05-42"
         }
@@ -425,6 +455,7 @@
       ],
       "choices": [
         {
+          "kind": "attaquer",
           "text": "Abattre le premier avec le Pistolet Makarov",
           "to": "c05-33",
           "if": {
@@ -433,10 +464,12 @@
           }
         },
         {
+          "kind": "agir",
           "text": "Les attendre, la lame basse",
           "to": "c05-11"
         },
         {
+          "kind": "aller",
           "text": "Courir vers la route",
           "to": "c05-26"
         }
@@ -468,6 +501,7 @@
       "text": "Vous vous asseyez sur la glissière, le dos à la brume. Le bandage sent le vieux désinfectant. Vous serrez, vous nouez. Vous regagnez 3 points d'Endurance. En bas, à l'usine, quelqu'un rit, un rire qui ne finit pas bien. Vous remettez la veste.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Reprendre la route",
           "to": "c05-7"
         }
@@ -486,6 +520,7 @@
       "text": "Vous lâchez le pont. Les deux gars de la Liberté vous regardent partir sans crier ; ils n'ont pas le temps. Derrière vous, un homme hurle, puis l'eau. Vous courez jusqu'à la route avec la brume dans la bouche. Vous ne remonterez pas à la ferme ce soir.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Reprendre la route",
           "to": "c05-7"
         }
@@ -544,10 +579,12 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Descendre l'escalier du X-18",
           "to": "c06-1"
         },
         {
+          "kind": "aller",
           "text": "Sortir de l'usine",
           "to": "c05-42"
         }
@@ -564,6 +601,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Prendre la route de la vallée",
           "to": "c05-7"
         }
@@ -573,10 +611,12 @@
       "text": "Le chef de la ferme n'a pas de nom qu'on vous donne. Il vous jauge, la main sur une carte dessinée au feutre. Le pont. Ce qui vit dans la rivière monte chaque nuit par le pont et nous mange un homme par semaine. Tiens-le avec deux des miens jusqu'à l'aube. Après, la ferme est à toi comme à nous. Il ne sourit pas. Dehors, il commence à faire noir.",
       "choices": [
         {
+          "kind": "parler",
           "text": "Accepter et descendre au pont",
           "to": "c05-9"
         },
         {
+          "kind": "parler",
           "text": "Refuser et redescendre vers la route",
           "to": "c05-7"
         }
@@ -591,6 +631,7 @@
       "text": "La cour de l'usine. Des camions sans roues, un feu de palettes, des hommes en cuir qui jouent aux cartes sur un capot et ne lèvent pas les yeux. Au fond de la halle, une porte de fer avec un escalier qui descend, et un cadenas gros comme un poing. Au-dessus, derrière une vitre sale, un bureau éclairé. Borov. Il vous a déjà vu.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Monter au bureau de Borov",
           "to": "c05-3",
           "if": {
@@ -610,6 +651,7 @@
           }
         },
         {
+          "kind": "aller",
           "text": "Monter au bureau de Borov",
           "to": "c05-25",
           "if": {
@@ -628,6 +670,7 @@
           }
         },
         {
+          "kind": "agir",
           "text": "Ouvrir la porte de fer avec la Clef",
           "to": "c06-1",
           "if": {
@@ -636,6 +679,7 @@
           }
         },
         {
+          "kind": "aller",
           "text": "Ressortir vers la route",
           "to": "c05-7"
         }
@@ -645,10 +689,12 @@
       "text": "Personne ne vous a vu. Le gravier n'a pas parlé, le bandit a fini sans se retourner. Vous passez la brèche et la clôture se referme sur l'usine comme sur un rêve. La route de la vallée est là, en contrebas, et la brume la mange des deux côtés. Vous ne vous retournez pas.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Descendre sur la route de la vallée",
           "to": "c05-7"
         },
         {
+          "kind": "aller",
           "text": "Prendre la route de l'ouest vers le Devoir",
           "to": "c07-2"
         }
@@ -658,6 +704,7 @@
       "text": "Le coup claque dans la brume et le premier chien se plie en deux sans un bruit. Le second s'arrête, renifle le sang, et file dans le blanc. L'écho du Makarov roule longtemps dans la vallée. Quelque part, en bas, la musique s'arrête, puis reprend. Vous rechargez en marchant. La route est là, sous vos bottes, un asphalte fendu d'herbes.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Prendre la route de la vallée",
           "to": "c05-7"
         }
@@ -674,10 +721,12 @@
       ],
       "choices": [
         {
+          "kind": "agir",
           "text": "Ouvrir la porte de fer et descendre",
           "to": "c06-1"
         },
         {
+          "kind": "aller",
           "text": "Sortir de l'usine sans courir",
           "to": "c05-42"
         }
@@ -699,10 +748,12 @@
       ],
       "choices": [
         {
+          "kind": "agir",
           "text": "Se coucher dans les roseaux",
           "to": "c05-18"
         },
         {
+          "kind": "aller",
           "text": "Courir vers la route",
           "to": "c05-27"
         }
@@ -712,10 +763,12 @@
       "text": "Le garde tombe sur le quai et le fusil lui échappe. Dans la cour, personne n'a bougé : un coup de feu de plus. Vous passez la brèche de la clôture. La brume vous prend, et l'usine redevient une masse noire sans fenêtres, comme si vous n'y étiez jamais descendu.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Descendre sur la route de la vallée",
           "to": "c05-7"
         },
         {
+          "kind": "aller",
           "text": "Prendre la route de l'ouest vers le Devoir",
           "to": "c07-2"
         }
@@ -725,6 +778,7 @@
       "text": "Il prend la Vodka, lit l'étiquette comme un passeport, la glisse dans sa poche. Entre. Vous n'avez plus rien à boire. La cour sent l'herbe brûlée et l'huile de fusil. Au centre, un feu dans un demi-bidon ; autour, dix hommes qui ne se ressemblent pas, tous avec le même brassard vert.",
       "choices": [
         {
+          "kind": "aller",
           "text": "S'approcher du feu",
           "to": "c05-16"
         }
@@ -734,6 +788,7 @@
       "text": "Vous êtes sur la route, et il n'y est pas. Les coups s'éloignent le long de la rive, vers l'usine, puis se perdent. Vos mains tremblent. La brume se referme sur la rivière comme si rien n'y vivait. Vous ne retournerez pas voir.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Reprendre la route de la vallée",
           "to": "c05-7"
         }
@@ -750,10 +805,12 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Descendre l'escalier du X-18",
           "to": "c06-1"
         },
         {
+          "kind": "aller",
           "text": "Ressortir vers la route",
           "to": "c05-42"
         }
@@ -763,6 +820,7 @@
       "text": "Ils vous ont perdu. Le vent a tourné, la brume a fait le reste. Vous les entendez aboyer vers la colline, loin, dans la mauvaise direction. Vous marchez encore cent mètres sans respirer. Puis l'asphalte, sous la boue. La route de la vallée.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Prendre la route de la vallée",
           "to": "c05-7"
         }
@@ -779,6 +837,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Remonter sur la route",
           "to": "c05-7"
         }
@@ -788,10 +847,12 @@
       "text": "Devant l'usine, la route de la vallée remonte dans la brume. Les bandits de la grille vous regardent passer et ne disent rien. Le chien mort est toujours là. À l'ouest, les drapeaux verts ; plus loin, la route qui monte vers Rostok. Derrière vous, la cheminée sans fumée.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Reprendre la route de la vallée",
           "to": "c05-7"
         },
         {
+          "kind": "aller",
           "text": "Prendre la route de l'ouest vers le Devoir",
           "to": "c07-2"
         }
@@ -812,10 +873,12 @@
       ],
       "choices": [
         {
+          "kind": "agir",
           "text": "Rester au feu de la Liberté",
           "to": "c05-16"
         },
         {
+          "kind": "aller",
           "text": "Redescendre vers la route",
           "to": "c05-7"
         }
@@ -825,6 +888,7 @@
       "text": "Le second lâche son fusil avant de tomber. La grille est ouverte. Dans la cour, personne ne vient : ici, les coups de feu font partie du bruit. Vous enjambez le chien mort. Le compteur ne bouge pas. Le danger, ici, n'est pas dans l'air.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Entrer dans la cour",
           "to": "c05-31"
         }

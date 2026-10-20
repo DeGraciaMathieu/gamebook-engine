@@ -53,10 +53,12 @@
       },
       "choices": [
         {
+          "kind": "aller",
           "text": "Descendre l'avenue entre les immeubles",
           "to": "c18-27"
         },
         {
+          "kind": "aller",
           "text": "Passer par les cours intérieures",
           "to": "c18-33"
         }
@@ -66,10 +68,12 @@
       "text": "Le tunnel du Guide finit ici : une cave de Pripyat, l'eau jusqu'aux chevilles, des bocaux sur des étagères, un escalier de béton qui monte vers un rectangle de jour gris. Vous êtes passé sous la crête et sous leurs lignes. Au-dessus, des pas. Lents, égaux. Quelqu'un fait les cent pas dans le hall, le dos à vous, le visage vers le sud.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Monter l'escalier jusqu'au hall",
           "to": "c18-39"
         },
         {
+          "kind": "aller",
           "text": "Suivre la cave jusqu'à la cour",
           "to": "c18-31"
         }
@@ -79,6 +83,7 @@
       "text": "Vous ressortez sur la place. Rien n'a bougé : la grande roue, les nacelles, le vent. Sur les toits, les mêmes silhouettes grises, tournées vers le sud. Une nacelle grince, plus haut, plus loin, comme si la roue avait fait un cran. Vous ne l'avez pas vue tourner. Vous ne la verrez jamais tourner.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Regagner le pied de la grande roue",
           "to": "c18-14"
         }
@@ -88,6 +93,7 @@
       "text": "Vous retombez de l'autre côté, les deux pieds dans le plâtre. Rien ne bouge dans l'immeuble. Un pigeon décolle quelque part au-dessus, c'est tout. La porte ouverte donne sur un couloir, un portemanteau, un imperméable d'enfant encore pendu à sa patère, et au fond, la lumière d'une cuisine.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Entrer dans l'appartement",
           "to": "c18-29"
         }
@@ -97,6 +103,7 @@
       "text": "Le dernier tombe en arrière contre le mur et glisse jusqu'au sol. Il prie encore, plus bas, puis plus du tout. Trois corps gris sous le porche, l'odeur de cordite et de sang chaud. Vous ne ramassez rien : leurs chargeurs sont vides, ils tiraient avec ce qui restait. Dehors, la rue est vide. La place, la grande roue, l'hôtel au fond.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Gagner la place",
           "to": "c18-14"
         }
@@ -113,6 +120,7 @@
       ],
       "choices": [
         {
+          "kind": "agir",
           "text": "Regarder ce qui vient",
           "to": "c18-24"
         }
@@ -122,6 +130,7 @@
       "text": "Vous dévalez l'escalier de la cave, une balle dans le béton au-dessus de votre tête, une autre qui déchire la manche et la peau dessous. Elle ne descend pas. Elle reste en haut, le fusil braqué sur le noir, et elle prie. Vous suivez l'eau jusqu'au fond de la cave, là où un soupirail cassé laisse passer une lame de jour.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Sortir par le soupirail dans la cour",
           "to": "c18-31"
         }
@@ -152,10 +161,12 @@
       "text": "Vous ouvrez la conserve et vous mangez froid, avec les doigts. Du poisson, du sel, de l'huile. Vous regagnez 2 points d'Endurance. Sur le mur d'en face, un enfant a dessiné une maison et un soleil à la craie, et la craie a tenu vingt ans. Vous léchez la boîte. Vous la posez contre le mur, sous le soleil.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Rester encore un peu sous le porche",
           "to": "c18-36"
         },
         {
+          "kind": "aller",
           "text": "Retourner sur la place",
           "to": "c18-14"
         }
@@ -182,6 +193,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Gagner la place",
           "to": "c18-14"
         }
@@ -191,6 +203,7 @@
       "text": "Par la fenêtre, toute la place, et les toits. Vous les comptez : six tireurs, un par toit, tous tournés vers le sud. Ils ne regardent ni la place ni les portes. Le Monolithe garde la ville contre ce qui vient du sud. Au nord, l'avenue vers le pont est vide : rien ne garde la sortie. On ne garde pas une porte dont personne ne revient.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Redescendre sur la place",
           "to": "c18-14"
         }
@@ -205,26 +218,32 @@
       "text": "La place. La grande roue au-dessus, ses nacelles jaunes qui grincent, une par une, quand le vent passe. Autour : l'hôtel Polissya, huit étages, son nom en lettres creuses sur le toit ; le palais de la Culture et ses colonnes ; plus loin l'hôpital, la piscine. Au nord, entre les immeubles, l'avenue qui mène au pont de la Centrale. Sur les toits, le Monolithe. Ils regardent. Ils ne tirent pas sur la place. Pas encore.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Entrer dans l'hôtel Polissya",
           "to": "c19-1"
         },
         {
+          "kind": "aller",
           "text": "Entrer dans le palais de la Culture",
           "to": "c20-1"
         },
         {
+          "kind": "aller",
           "text": "Descendre dans l'hôpital",
           "to": "c21-1"
         },
         {
+          "kind": "aller",
           "text": "Aller à la piscine et au poste de police",
           "to": "c22-1"
         },
         {
+          "kind": "aller",
           "text": "Marcher vers le pont de la Centrale",
           "to": "c18-40"
         },
         {
+          "kind": "agir",
           "text": "Dormir dans un appartement de la place",
           "to": "c18-45",
           "if": {
@@ -234,10 +253,12 @@
           }
         },
         {
+          "kind": "agir",
           "text": "Fouiller l'immeuble d'en face",
           "to": "c18-21"
         },
         {
+          "kind": "agir",
           "text": "Souffler sous un porche",
           "to": "c18-36"
         }
@@ -257,10 +278,12 @@
       "text": "Vous buvez l'anti-rad d'un trait. Le goût de craie, puis la nausée, puis le calme. Le compteur redescend, cran par cran, comme une respiration qui se pose. Vous perdez 5 rads. Dans la boîte aux lettres derrière vous, une enveloppe jamais ouverte, le timbre encore collé. Vous la laissez.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Rester encore un peu sous le porche",
           "to": "c18-36"
         },
         {
+          "kind": "aller",
           "text": "Retourner sur la place",
           "to": "c18-14"
         }
@@ -283,6 +306,7 @@
       "text": "Les caves de Pripyat communiquent, le Guide l'avait dessiné en marge de sa carte. Vous suivez l'eau d'un immeuble à l'autre, dans le noir et l'odeur de vase, sous les pas du Monolithe. Vous sortez par un soupirail au pied du remblai. Le viaduc est au-dessus de vous, et la Centrale au bout. Personne ne vous a vu arriver.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Prendre le pont de la Centrale",
           "to": "c23-1"
         }
@@ -304,6 +328,7 @@
       "text": "La combinaison siffle à chaque pas, le filtre avale l'air de la cour et rend un goût de caoutchouc. Le compteur grimpe, grimpe, et ne vous touche pas. Vous traversez entre les balançoires sans vous presser. Au bout de l'herbe, le dos d'un immeuble, puis la place : la grande roue, l'hôtel, le palais.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Gagner la place",
           "to": "c18-14"
         }
@@ -323,6 +348,7 @@
       "text": "Vous montez l'escalier quatre à quatre, une balle dans le dos du sac, une autre qui brûle la hanche. Au troisième, un appartement sans porte, un balcon, le balcon voisin. Vous sautez. Ils ne suivent pas : ils ne montent pas, ils restent dans la rue à prier vers l'escalier. Vous redescendez par l'autre cage. La place est là, la grande roue au-dessus.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Gagner la place",
           "to": "c18-14"
         }
@@ -339,6 +365,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Prendre le pont de la Centrale",
           "to": "c23-1"
         }
@@ -348,6 +375,7 @@
       "text": "Trois hommes du Monolithe, combinaisons grises, masques, le fusil en travers. Ils marchent à pas égaux, comme on marche dans une église. L'un parle, les deux autres répondent, les mêmes mots, chaque fois. Ils viennent vers votre porche. Dans dix pas, ils verront la trace de vos bottes dans le plâtre.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Sortir du porche devant eux",
           "to": "c18-43",
           "if": {
@@ -356,10 +384,12 @@
           }
         },
         {
+          "kind": "agir",
           "text": "Attendre dans le noir du porche",
           "to": "c18-8"
         },
         {
+          "kind": "attaquer",
           "text": "Tirer le premier",
           "to": "c18-35"
         }
@@ -369,10 +399,12 @@
       "text": "Vous roulez le bandage serré sur ce qui saigne. Le tissu boit, puis tient. Vous regagnez 3 points d'Endurance. Le vélo d'enfant, contre le mur, a encore ses roulettes. Quelqu'un l'a rangé là, un soir, pour le lendemain. Vous jetez le papier du bandage dans la boîte aux lettres.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Rester encore un peu sous le porche",
           "to": "c18-36"
         },
         {
+          "kind": "aller",
           "text": "Retourner sur la place",
           "to": "c18-14"
         }
@@ -390,6 +422,7 @@
       "text": "L'avenue est large comme un fleuve, l'asphalte crevé par les bouleaux. Un coup de feu claque, puis l'écho entre les façades. Le crépi explose à un mètre de votre tête. Ils sont sur les toits, deux au moins, et ils ont le temps. Les porches sont à trente mètres les uns des autres. Entre deux, il n'y a rien que le jour.",
       "choices": [
         {
+          "kind": "attaquer",
           "text": "Répondre au tir avec le Vintorez",
           "to": "c18-9",
           "if": {
@@ -398,6 +431,7 @@
           }
         },
         {
+          "kind": "aller",
           "text": "Courir de porche en porche",
           "to": "c18-15"
         }
@@ -407,6 +441,7 @@
       "text": "Elle n'a pas bougé. Vous êtes dehors, dans la rue derrière elle, le dos au mur tiède. Elle regarde toujours le sud. Vous longez les façades jusqu'au coin. La place : la grande roue au-dessus des toits, l'hôtel en face, le palais à gauche, et sur les toits, les tireurs, qui regardent tous ailleurs que vers vous.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Gagner la place",
           "to": "c18-14"
         }
@@ -428,10 +463,12 @@
       ],
       "choices": [
         {
+          "kind": "agir",
           "text": "Regarder la place par la fenêtre",
           "to": "c18-13"
         },
         {
+          "kind": "aller",
           "text": "Redescendre sur la place",
           "to": "c18-14"
         }
@@ -441,6 +478,7 @@
       "text": "Il relève la tête et repart. Les deux autres le suivent, à pas égaux, sans avoir regardé le noir. Leur prière s'éloigne vers le sud. Vous attendez que la rue soit vide. Sous le porche, quelqu'un a gravé une date dans le plâtre, et un prénom. Vous sortez. La place, la grande roue, l'hôtel au fond.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Gagner la place",
           "to": "c18-14"
         }
@@ -450,6 +488,7 @@
       "text": "La cave débouche dans une cour par un soupirail cassé. L'herbe, les balançoires, un landau sur le flanc. Le détecteur crépite dès que vous sortez la tête, et ne s'arrête plus. De l'autre côté de la cour, entre deux immeubles, la place et la grande roue. Trente mètres d'herbe, et personne ne tire sur l'herbe.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Traverser en Combinaison SEVA",
           "to": "c18-20",
           "if": {
@@ -458,6 +497,7 @@
           }
         },
         {
+          "kind": "aller",
           "text": "Traverser en courant",
           "to": "c18-12"
         }
@@ -467,10 +507,12 @@
       "text": "Vous ouvrez le boîtier du détecteur avec l'ongle et vous changez les piles. Il crépite une fois, pour dire qu'il est là. Il crépitera avant vous, de nouveau. Vous gardez les piles mortes dans la poche, par habitude, comme si quelqu'un allait les reprendre. Sous le porche, le vent a cessé.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Rester encore un peu sous le porche",
           "to": "c18-36"
         },
         {
+          "kind": "aller",
           "text": "Retourner sur la place",
           "to": "c18-14"
         }
@@ -480,6 +522,7 @@
       "text": "Les cours intérieures. Derrière les immeubles, l'herbe monte à la hanche, et dans l'herbe, des balançoires, un bac à sable, une voiture sans roues. Le détecteur crépite dès les premiers pas, puis ne s'arrête plus. Les cours sont le chemin le plus sûr de Pripyat. C'est pour ça que personne n'y tire. C'est pour ça que tout y est encore.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Traverser en Combinaison SEVA",
           "to": "c18-20",
           "if": {
@@ -488,6 +531,7 @@
           }
         },
         {
+          "kind": "aller",
           "text": "Traverser en courant",
           "to": "c18-12"
         }
@@ -497,6 +541,7 @@
       "text": "Personne ne tire. Les canons vous suivent jusqu'au bout de l'avenue, puis se lèvent, un par un. Ceux qui vont au pont, on les laisse aller. Le Monolithe sait où mène le pont. Au pied du remblai, le viaduc commence, et le poste de garde, et la Centrale au-dessus, sa cheminée dans le ciel bas.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Prendre le pont de la Centrale",
           "to": "c23-1"
         }
@@ -519,6 +564,7 @@
       "text": "Un porche sans porte, à l'angle de la place. Des boîtes aux lettres, un vélo d'enfant, le silence. Vous posez le sac. D'ici, on voit la place sans être vu des toits. Le plâtre sent le froid. C'est le seul endroit de Pripyat où l'on peut s'asseoir, et vous vous asseyez.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Manger la conserve",
           "to": "c18-10",
           "if": {
@@ -539,6 +585,7 @@
           ]
         },
         {
+          "kind": "agir",
           "text": "Poser le bandage",
           "to": "c18-25",
           "if": {
@@ -559,6 +606,7 @@
           ]
         },
         {
+          "kind": "agir",
           "text": "Vider la trousse de soins",
           "to": "c18-42",
           "if": {
@@ -579,6 +627,7 @@
           ]
         },
         {
+          "kind": "agir",
           "text": "Boire l'anti-rad",
           "to": "c18-16",
           "if": {
@@ -599,6 +648,7 @@
           ]
         },
         {
+          "kind": "agir",
           "text": "Changer les piles du détecteur",
           "to": "c18-32",
           "if": {
@@ -619,6 +669,7 @@
           ]
         },
         {
+          "kind": "aller",
           "text": "Retourner sur la place",
           "to": "c18-14"
         }
@@ -635,6 +686,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Entrer dans l'appartement",
           "to": "c18-29"
         }
@@ -644,6 +696,7 @@
       "text": "Le tireur bascule par-dessus la rambarde et tombe seize étages sans un cri. Le second ne tire plus. Vous l'entendez prier, là-haut, une voix plate qui répète le même mot. Vous repartez le long des façades. Au bout de l'avenue, la place s'ouvre, et devant la place, des silhouettes grises marchent au milieu de la rue, le fusil bas.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Continuer jusqu'au bout de l'avenue",
           "to": "c18-24"
         }
@@ -653,10 +706,12 @@
       "text": "Le hall, la lumière par la porte sans battant. Une sentinelle du Monolithe, debout, le fusil contre l'épaule, face à la rue. Elle ne bouge pas. Elle regarde le sud, comme tous les autres, parce que c'est du sud que viennent ceux qu'on tue. Derrière elle, à quatre mètres, la porte de la cour et la rue qui mène à la place.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Passer dans son dos",
           "to": "c18-11"
         },
         {
+          "kind": "aller",
           "text": "Redescendre et suivre la cave jusqu'à la cour",
           "to": "c18-31"
         }
@@ -671,6 +726,7 @@
       "text": "L'avenue vers le nord. Entre les immeubles, au bout, la cheminée de la Centrale, et sous elle, le viaduc. Chaque pas vers là-bas en est un de moins vers le sud. Ceux qui prennent le pont ne reviennent pas à Pripyat : pas l'hôtel, pas la place, pas le porche. Ce que vous n'avez pas trouvé ici restera ici.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Suivre les caves jusqu'au viaduc",
           "to": "c18-18",
           "if": {
@@ -679,10 +735,12 @@
           }
         },
         {
+          "kind": "aller",
           "text": "Longer l'avenue à découvert",
           "to": "c18-26"
         },
         {
+          "kind": "aller",
           "text": "Retourner sur la place",
           "to": "c18-14"
         }
@@ -692,6 +750,7 @@
       "text": "Pas une balle ne vous touche. Vous partez sur le deux, vous arrivez au porche quand le crépi saute à l'endroit où vous étiez. Encore un, encore un. Le dernier porche donne sur la place. Vous vous adossez au mur, les poumons en feu. Dans la rue, devant vous, des silhouettes grises marchent au milieu de l'asphalte, le fusil bas.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Regarder ce qui vient",
           "to": "c18-24"
         }
@@ -701,10 +760,12 @@
       "text": "Vous videz la trousse de soins : la seringue dans la cuisse, la compresse, l'agrafe sur ce qui bâille. Les mains tremblent moins. Vous regagnez 6 points d'Endurance. La trousse vide, vous la laissez sur la boîte aux lettres, pour le prochain, s'il y en a un. Il n'y en aura pas.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Rester encore un peu sous le porche",
           "to": "c18-36"
         },
         {
+          "kind": "aller",
           "text": "Retourner sur la place",
           "to": "c18-14"
         }
@@ -714,6 +775,7 @@
       "text": "Vous sortez dans la rue. Ils s'arrêtent. Le premier vous regarde, et il n'y a rien derrière ses yeux : depuis que le Brûleur s'est tu, plus personne ne leur parle. Il cherche le mot qu'il répétait, il ne le trouve pas. Les deux autres regardent le ciel. Vous passez entre eux. L'un pose la main sur votre manche, puis la retire. Derrière, la place et la grande roue.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Gagner la place",
           "to": "c18-14"
         }
@@ -723,6 +785,7 @@
       "text": "Elle tombe sans lâcher le fusil. Son masque s'est fendu ; dessous, un visage de vingt ans, les yeux blancs. Vous l'écoutez finir. Personne ne vient : les coups de feu, ici, ne surprennent personne. Vous sortez par la porte de la cour. La rue, le coin, et la place : la grande roue, l'hôtel en face, le palais à gauche.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Gagner la place",
           "to": "c18-14"
         }
@@ -743,6 +806,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Redescendre sur la place",
           "to": "c18-14"
         }

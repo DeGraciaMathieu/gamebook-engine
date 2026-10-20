@@ -43,14 +43,17 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Descendre la route vers les entrepôts",
           "to": "c10-17"
         },
         {
+          "kind": "aller",
           "text": "Longer le fossé en contrebas",
           "to": "c10-25"
         },
         {
+          "kind": "aller",
           "text": "Revenir au Bar",
           "to": "c08-3"
         }
@@ -63,10 +66,12 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Passer au ras du Carrousel",
           "to": "c10-9"
         },
         {
+          "kind": "aller",
           "text": "Contourner par les hangars",
           "to": "c10-33"
         }
@@ -90,6 +95,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Continuer entre les entrepôts",
           "to": "c10-22"
         }
@@ -109,6 +115,7 @@
       ],
       "choices": [
         {
+          "kind": "agir",
           "text": "Se relever et continuer",
           "to": "c10-22"
         }
@@ -128,6 +135,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Rejoindre les entrepôts",
           "to": "c10-22"
         }
@@ -140,10 +148,12 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Descendre dans la cave",
           "to": "c10-7"
         },
         {
+          "kind": "aller",
           "text": "Marcher jusqu'au pont de fer",
           "to": "c10-5"
         }
@@ -189,6 +199,7 @@
       ],
       "choices": [
         {
+          "kind": "agir",
           "text": "Manger la conserve",
           "to": "c10-12",
           "if": {
@@ -209,6 +220,7 @@
           ]
         },
         {
+          "kind": "aller",
           "text": "Remonter vers le pont de fer",
           "to": "c10-5"
         }
@@ -221,6 +233,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Remonter vers le pont de fer",
           "to": "c10-5"
         }
@@ -240,6 +253,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Suivre le détecteur vers la lueur",
           "to": "c10-3",
           "if": {
@@ -248,6 +262,7 @@
           }
         },
         {
+          "kind": "aller",
           "text": "Remonter vers le pont de fer",
           "to": "c10-5"
         }
@@ -278,6 +293,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Sortir du fossé",
           "to": "c10-11"
         }
@@ -297,6 +313,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Sortir du fossé",
           "to": "c10-11"
         }
@@ -309,6 +326,7 @@
       ],
       "choices": [
         {
+          "kind": "agir",
           "text": "Boire l'anti-rad",
           "to": "c10-27",
           "if": {
@@ -329,6 +347,7 @@
           ]
         },
         {
+          "kind": "aller",
           "text": "Marcher jusqu'au pont de fer",
           "to": "c10-5"
         }
@@ -341,6 +360,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Marcher jusqu'au pont de fer",
           "to": "c10-5"
         }
@@ -358,10 +378,12 @@
       },
       "choices": [
         {
+          "kind": "aller",
           "text": "Traverser le pont à découvert",
           "to": "c10-20"
         },
         {
+          "kind": "attaquer",
           "text": "Déloger le tireur avec l'AK-74",
           "to": "c10-15",
           "if": {
@@ -370,14 +392,17 @@
           }
         },
         {
+          "kind": "agir",
           "text": "Attendre la nuit sous le pont",
           "to": "c10-4"
         },
         {
+          "kind": "aller",
           "text": "Redescendre dans le fossé",
           "to": "c10-25"
         },
         {
+          "kind": "aller",
           "text": "Retourner fouiller les entrepôts",
           "to": "c10-22"
         }
@@ -403,6 +428,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Monter vers le camion",
           "to": "c10-16"
         }
@@ -422,6 +448,7 @@
       ],
       "choices": [
         {
+          "kind": "agir",
           "text": "Appliquer le bandage",
           "to": "c10-24",
           "if": {
@@ -442,6 +469,7 @@
           ]
         },
         {
+          "kind": "aller",
           "text": "Monter vers le camion",
           "to": "c10-16"
         }
@@ -454,6 +482,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Monter vers le camion",
           "to": "c10-16"
         }
@@ -489,6 +518,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Redescendre et monter vers le camion",
           "to": "c10-16"
         }
@@ -508,6 +538,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Monter vers le camion",
           "to": "c10-16"
         }
@@ -525,10 +556,12 @@
       ],
       "choices": [
         {
+          "kind": "attaquer",
           "text": "Charger les Snorks",
           "to": "c10-29"
         },
         {
+          "kind": "attaquer",
           "text": "Lancer la grenade sous le camion",
           "to": "c10-23",
           "if": {
@@ -544,6 +577,7 @@
           ]
         },
         {
+          "kind": "aller",
           "text": "Contourner le camion sans se montrer",
           "to": "c10-13"
         }
@@ -572,6 +606,7 @@
       ],
       "choices": [
         {
+          "kind": "agir",
           "text": "Ouvrir la portière du camion",
           "to": "c10-2"
         }
@@ -584,6 +619,7 @@
       ],
       "choices": [
         {
+          "kind": "agir",
           "text": "Ouvrir la portière du camion",
           "to": "c10-2"
         }
@@ -596,10 +632,12 @@
       ],
       "choices": [
         {
+          "kind": "agir",
           "text": "Aider à redresser le camion",
           "to": "c10-32"
         },
         {
+          "kind": "agir",
           "text": "Les laisser et continuer",
           "to": "c10-18"
         }
@@ -623,6 +661,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Suivre les ornières vers le nord",
           "to": "c10-18"
         }
@@ -635,6 +674,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Continuer sur la route du nord",
           "to": "c10-18"
         }
@@ -647,6 +687,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Continuer sur la route du nord",
           "to": "c10-18"
         }
@@ -664,6 +705,7 @@
       ],
       "choices": [
         {
+          "kind": "agir",
           "text": "Boire l'anti-rad",
           "to": "c10-6",
           "if": {
@@ -684,10 +726,12 @@
           ]
         },
         {
+          "kind": "aller",
           "text": "Continuer vers Yantar",
           "to": "c11-1"
         },
         {
+          "kind": "aller",
           "text": "Revenir au Bar",
           "to": "c08-3"
         }
@@ -700,10 +744,12 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Continuer vers Yantar",
           "to": "c11-1"
         },
         {
+          "kind": "aller",
           "text": "Revenir au Bar",
           "to": "c08-3"
         }

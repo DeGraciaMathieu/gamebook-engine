@@ -192,6 +192,7 @@
       ],
       "choices": [
         {
+          "kind": "agir",
           "text": "Regarder autour de vous dans le hangar",
           "to": "90"
         }
@@ -213,6 +214,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Monter vers le hall",
           "to": "156"
         }
@@ -258,18 +260,22 @@
       ],
       "choices": [
         {
+          "kind": "agir",
           "text": "Fouiller le camion de maintenance",
           "to": "100"
         },
         {
+          "kind": "aller",
           "text": "Franchir l'arbre abattu vers l'est",
           "to": "119"
         },
         {
+          "kind": "aller",
           "text": "Prendre la route du quai Est",
           "to": "63"
         },
         {
+          "kind": "aller",
           "text": "Suivre le raccourci de la note vers la cascade",
           "to": "158",
           "if": {
@@ -285,6 +291,7 @@
           ]
         },
         {
+          "kind": "agir",
           "text": "Vous soigner avec la trousse de secours",
           "to": "5",
           "if": {
@@ -305,10 +312,12 @@
           ]
         },
         {
+          "kind": "aller",
           "text": "Prendre le sentier de la jungle",
           "to": "88"
         },
         {
+          "kind": "aller",
           "text": "Revenir vers la route des enclos",
           "to": "29"
         }
@@ -344,6 +353,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Remonter et rejoindre le carrefour des pistes",
           "to": "5"
         }
@@ -353,6 +363,7 @@
       "text": "Le premier raptor surgit des fougères à votre gauche, et vous lui plantez la seringue de tranquillisant dans le cou avant qu'il ne referme ses mâchoires. Il titube, siffle, et s'affaisse dans la boue. Le second recule, hésite, puis s'éloigne pour flairer son compagnon endormi. Vous ne demandez pas votre reste.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Descendre vers la plage",
           "to": "56"
         }
@@ -377,18 +388,22 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Entrer dans la hutte du gardien",
           "to": "80"
         },
         {
+          "kind": "aller",
           "text": "Entrer dans le bâtiment des raptors",
           "to": "140"
         },
         {
+          "kind": "aller",
           "text": "Longer la clôture des raptors vers la plage",
           "to": "120"
         },
         {
+          "kind": "agir",
           "text": "Vous soigner avec la trousse de secours",
           "to": "9",
           "if": {
@@ -409,6 +424,7 @@
           ]
         },
         {
+          "kind": "aller",
           "text": "Remonter vers le carrefour des pistes",
           "to": "5"
         }
@@ -470,6 +486,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Ressortir sur le sentier",
           "to": "88"
         }
@@ -479,6 +496,7 @@
       "text": "Le tunnel de service est un boyau de béton qui court sous le parc jusqu'au centre des visiteurs. Les lampes du plafond sont éteintes, et l'eau de pluie coule déjà sur le sol. Si vous possédez une lampe torche, vous pouvez l'allumer. Sinon, il vous faudra avancer dans le noir.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Allumer la lampe torche",
           "to": "62",
           "if": {
@@ -487,6 +505,7 @@
           }
         },
         {
+          "kind": "aller",
           "text": "Avancer dans le noir",
           "to": "131"
         }
@@ -508,6 +527,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Ressortir dans le hall",
           "to": "156"
         }
@@ -517,6 +537,7 @@
       "text": "Les isolateurs sont muets, et à trente mètres, le grillage est ouvert comme du papier. Dans la boue, des empreintes à trois doigts, longues comme votre main, descendent vers la plage. Et puis, dans les fougères, un sifflement bref, qui reçoit une réponse de l'autre côté de la piste. Ils chassent à deux. Si vous possédez une seringue de tranquillisant, vous pouvez l'utiliser sur le premier qui approche. Si vous possédez des lunettes de vision nocturne, vous pouvez tenter de les voir avant qu'ils ne vous voient et de vous cacher. Sinon, vous pouvez courir vers la plage en espérant les devancer, ou vous battre.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Planter la seringue de tranquillisant",
           "to": "8",
           "if": {
@@ -532,6 +553,7 @@
           ]
         },
         {
+          "kind": "agir",
           "text": "Chausser les lunettes et vous cacher",
           "to": "132",
           "if": {
@@ -540,10 +562,12 @@
           }
         },
         {
+          "kind": "aller",
           "text": "Courir vers la plage",
           "to": "161"
         },
         {
+          "kind": "attaquer",
           "text": "Vous battre",
           "to": "10"
         }
@@ -553,6 +577,7 @@
       "text": "La corde mord une branche solide et vous passez le tronc en moins d'une minute, pour vous retrouver de l'autre côté, sur la piste de l'est. Ajoutez 5 minutes à votre TEMPS.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Revenir au carrefour par l'autre côté",
           "to": "5"
         }
@@ -562,10 +587,12 @@
       "text": "L'infirmerie a déjà été fouillée : les tiroirs sont ouverts, les flacons renversés. Il reste un placard fermé, en hauteur, que personne ne semble avoir atteint.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Fouiller le placard du haut",
           "to": "150"
         },
         {
+          "kind": "aller",
           "text": "Ressortir dans le hall",
           "to": "156"
         }
@@ -590,14 +617,17 @@
       "text": "Le laboratoire est une longue salle blanche, aux paillasses couvertes d'instruments. À droite, une porte mène à la nurserie, où l'on fait éclore les œufs. À gauche, une armoire métallique verrouillée porte l'inscription MATÉRIEL DE TERRAIN. Qu'allez-vous faire ?",
       "choices": [
         {
+          "kind": "aller",
           "text": "Entrer dans la nurserie",
           "to": "123"
         },
         {
+          "kind": "agir",
           "text": "Forcer l'armoire de matériel",
           "to": "154"
         },
         {
+          "kind": "aller",
           "text": "Redescendre dans le hall",
           "to": "156"
         }
@@ -614,6 +644,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Reprendre la route",
           "to": "29"
         }
@@ -660,6 +691,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Ressortir dans le hall",
           "to": "156"
         }
@@ -676,6 +708,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Ressortir sur le sentier",
           "to": "88"
         }
@@ -685,10 +718,12 @@
       "text": "Au parking, les voiturettes électriques des visiteurs sont alignées, inertes depuis la coupure. L'une d'elles a une batterie de secours sous le siège. Si vous parvenez à la brancher, elle vous conduira jusqu'à la route des enclos en quelques minutes.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Brancher la batterie de secours",
           "to": "3"
         },
         {
+          "kind": "aller",
           "text": "Remonter dans le hall",
           "to": "156"
         }
@@ -710,6 +745,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Rejoindre le pont de lianes",
           "to": "118"
         }
@@ -734,10 +770,12 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Longer la clôture couchée",
           "to": "142"
         },
         {
+          "kind": "aller",
           "text": "Couper à travers l'enclos par la brèche",
           "to": "51",
           "if": {
@@ -755,18 +793,22 @@
           }
         },
         {
+          "kind": "agir",
           "text": "Examiner la chaîne de la chèvre",
           "to": "22"
         },
         {
+          "kind": "aller",
           "text": "Monter au mirador",
           "to": "108"
         },
         {
+          "kind": "agir",
           "text": "Vous mettre à l'abri un moment",
           "to": "30"
         },
         {
+          "kind": "aller",
           "text": "Revenir au centre des visiteurs",
           "to": "156"
         }
@@ -788,6 +830,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Reprendre la route",
           "to": "29"
         }
@@ -817,6 +860,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Reprendre le sentier",
           "to": "88"
         }
@@ -860,10 +904,12 @@
       "text": "La serre tropicale est une grande verrière où les botanistes du parc cultivent les plantes du crétacé. Il y fait chaud et sec, et l'on n'entend plus la pluie. Quelque chose remue entre les fougères.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Avancer entre les plantes",
           "to": "24"
         },
         {
+          "kind": "aller",
           "text": "Ressortir sur le sentier",
           "to": "88"
         }
@@ -880,6 +926,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Revenir à l'embranchement",
           "to": "63"
         }
@@ -896,6 +943,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Rejoindre le carrefour des pistes",
           "to": "5"
         }
@@ -908,6 +956,7 @@
       ],
       "choices": [
         {
+          "kind": "agir",
           "text": "Vous enfermer dans le bunker de maintenance",
           "to": "4",
           "if": {
@@ -916,6 +965,7 @@
           }
         },
         {
+          "kind": "agir",
           "text": "Tenir jusqu'à l'aube sur un toit",
           "to": "155"
         }
@@ -925,14 +975,17 @@
       "text": "La jeep du parc est encastrée dans un talus, le moteur encore chaud, le treuil déroulé dans le vide. La portière du conducteur est ouverte, et il n'y a personne au volant. Sur le siège passager, un sac de voyage. Dans l'herbe, autour du véhicule, des traces de pas qui ne vont nulle part. Qu'allez-vous faire ?",
       "choices": [
         {
+          "kind": "agir",
           "text": "Fouiller la jeep",
           "to": "78"
         },
         {
+          "kind": "agir",
           "text": "Prendre le sac de voyage",
           "to": "44"
         },
         {
+          "kind": "aller",
           "text": "Passer au large et continuer vers la cascade",
           "to": "60"
         }
@@ -949,6 +1002,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Sortir sur la plage",
           "to": "56"
         }
@@ -975,6 +1029,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Continuer à pied sur la route des enclos",
           "to": "29"
         }
@@ -989,10 +1044,12 @@
       "text": "Le sentier s'enfonce dans un marais aux eaux noires, où des planches disjointes forment un caillebotis. Sous la pluie, on ne distingue plus les planches de la vase.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Traverser sur le caillebotis",
           "to": "13"
         },
         {
+          "kind": "aller",
           "text": "Revenir sur le sentier",
           "to": "88"
         }
@@ -1009,6 +1066,7 @@
       ],
       "choices": [
         {
+          "kind": "agir",
           "text": "Faire face",
           "to": "101"
         }
@@ -1025,6 +1083,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Descendre vers la plage",
           "to": "56"
         }
@@ -1041,6 +1100,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Monter à bord",
           "to": "47"
         }
@@ -1056,6 +1116,7 @@
       "text": "Vos nerfs lâchent. Vous courez, sans savoir où, sans savoir depuis combien de temps, en hurlant peut-être, à travers des fougères qui vous fouettent le visage, et vous ne vous arrêtez que lorsque vos jambes refusent d'avancer. Tentez votre Chance.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Reprendre vos esprits",
           "to": "94"
         }
@@ -1080,6 +1141,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Redescendre dans le hall",
           "to": "156"
         }
@@ -1089,10 +1151,12 @@
       "text": "La brèche ouvre sur l'enclos du tyrannosaure : une plaine d'herbe haute, battue par la pluie, que traverse une piste de service. De l'autre côté, à cinq cents mètres, la porte de service donne directement sur le carrefour des pistes. C'est le chemin le plus court de toute l'île, et le plus fou.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Traverser l'enclos",
           "to": "141"
         },
         {
+          "kind": "agir",
           "text": "Renoncer et revenir sur la route",
           "to": "29"
         }
@@ -1102,10 +1166,12 @@
       "text": "Le poste de garde est une guérite de bois, la porte ouverte, la lampe renversée. Au mur, un râtelier à fusils fermé par une chaîne. Il reste une arme dedans.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Forcer le râtelier",
           "to": "33"
         },
         {
+          "kind": "aller",
           "text": "Ressortir sur le sentier",
           "to": "88"
         }
@@ -1127,6 +1193,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Ressortir dans le hall",
           "to": "156"
         }
@@ -1148,6 +1215,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Ressortir sur le sentier",
           "to": "88"
         }
@@ -1164,6 +1232,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Reprendre la route",
           "to": "29"
         }
@@ -1188,6 +1257,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Rejoindre le quai en cherchant le passage dans les rochers",
           "to": "148",
           "if": {
@@ -1218,6 +1288,7 @@
           ]
         },
         {
+          "kind": "aller",
           "text": "Rejoindre le quai par le passage que vous avez repéré",
           "to": "148",
           "if": {
@@ -1235,6 +1306,7 @@
           }
         },
         {
+          "kind": "aller",
           "text": "Foncer droit vers le quai, il reste trop peu de temps",
           "to": "148",
           "if": {
@@ -1245,6 +1317,7 @@
           }
         },
         {
+          "kind": "agir",
           "text": "Vous soigner avec la trousse de secours",
           "to": "56",
           "if": {
@@ -1265,10 +1338,12 @@
           ]
         },
         {
+          "kind": "agir",
           "text": "Fouiller la cabane de la pompe",
           "to": "72"
         },
         {
+          "kind": "parler",
           "text": "Appeler le capitaine à la radio",
           "to": "77",
           "if": {
@@ -1289,6 +1364,7 @@
           }
         },
         {
+          "kind": "parler",
           "text": "Écouter la radio du cargo",
           "to": "112",
           "if": {
@@ -1314,6 +1390,7 @@
       ],
       "choices": [
         {
+          "kind": "agir",
           "text": "Regarder autour de vous",
           "to": "5"
         }
@@ -1348,6 +1425,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Revenir au carrefour",
           "to": "5"
         }
@@ -1362,6 +1440,7 @@
       "text": "Au milieu de la piste se tient un dinosaure de la taille d'un grand chien, à la peau tachetée et à la double crête sur le crâne. Il penche la tête, et une collerette de peau se déploie autour de son cou avec un sifflement. C'est un dilophosaure, et il crache un venin qui aveugle. Si vous possédez une fusée de détresse, vous pouvez l'allumer pour l'effrayer. Vous pouvez aussi l'attaquer, ou tenter de l'esquiver.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Allumer la fusée de détresse",
           "to": "136",
           "if": {
@@ -1377,10 +1456,12 @@
           ]
         },
         {
+          "kind": "attaquer",
           "text": "L'attaquer",
           "to": "75"
         },
         {
+          "kind": "agir",
           "text": "Tenter de l'esquiver",
           "to": "31"
         }
@@ -1397,6 +1478,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Monter à bord",
           "to": "139"
         }
@@ -1413,6 +1495,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Monter vers le hall",
           "to": "156"
         }
@@ -1437,10 +1520,12 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Suivre la flèche du panneau",
           "to": "36"
         },
         {
+          "kind": "agir",
           "text": "Vérifier le chemin sur la carte du parc",
           "to": "93",
           "if": {
@@ -1449,6 +1534,7 @@
           }
         },
         {
+          "kind": "aller",
           "text": "Suivre les traces de pneus",
           "to": "82"
         }
@@ -1465,6 +1551,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Descendre vers la plage",
           "to": "56"
         }
@@ -1486,6 +1573,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Retourner dans le hangar",
           "to": "90"
         }
@@ -1510,6 +1598,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Retourner dans le hangar",
           "to": "90"
         }
@@ -1532,6 +1621,7 @@
       "text": "Vous décrochez les clefs de la jeep du tableau. Le réservoir est plein, et les phares fonctionnent. Avec un véhicule, vous pourriez gagner beaucoup de temps sur la route des enclos, si la route est encore praticable sous cette pluie.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Retourner dans le hangar",
           "to": "90"
         }
@@ -1553,6 +1643,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Ressortir dans le hall",
           "to": "156"
         }
@@ -1562,6 +1653,7 @@
       "text": "Le laboratoire de génétique est fermé par une porte vitrée à serrure magnétique. Si vous possédez un badge de sécurité, vous pouvez l'ouvrir. Sinon, elle ne cédera pas.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Ouvrir avec le badge de sécurité",
           "to": "21",
           "if": {
@@ -1570,6 +1662,7 @@
           }
         },
         {
+          "kind": "aller",
           "text": "Redescendre dans le hall",
           "to": "156"
         }
@@ -1579,10 +1672,12 @@
       "text": "La cabane de la pompe est un abri de planches où l'on range le matériel du quai. La porte bat dans le vent. À l'intérieur, dans le noir, quelque chose a renversé les étagères.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Entrer dans la cabane",
           "to": "12"
         },
         {
+          "kind": "agir",
           "text": "Rester sur la plage",
           "to": "56"
         }
@@ -1607,6 +1702,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Revenir dans le laboratoire",
           "to": "21"
         }
@@ -1633,6 +1729,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Continuer à pied",
           "to": "29"
         }
@@ -1653,6 +1750,7 @@
       ],
       "choices": [
         {
+          "kind": "agir",
           "text": "Reposer la radio et courir vers le quai",
           "to": "56"
         }
@@ -1681,6 +1779,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Redescendre",
           "to": "158"
         }
@@ -1690,10 +1789,12 @@
       "text": "La hutte du gardien est une pièce unique, avec un lit de camp, une table et une lampe-tempête. Quelqu'un est assis sur le lit, dans l'ombre, et il ne bouge pas.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Vous approcher",
           "to": "104"
         },
         {
+          "kind": "aller",
           "text": "Ressortir sans bruit",
           "to": "9"
         }
@@ -1710,6 +1811,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Continuer vers le carrefour des pistes",
           "to": "5"
         }
@@ -1719,6 +1821,7 @@
       "text": "Les traces de pneus quittent la piste et plongent dans la pente, en zigzag, comme celles d'un conducteur qui ne voyait plus la route. En bas, les phares d'une jeep éclairent la jungle de biais.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Descendre vers la jeep",
           "to": "39"
         }
@@ -1759,6 +1862,7 @@
       },
       "choices": [
         {
+          "kind": "aller",
           "text": "Retourner dans le hangar",
           "to": "90"
         }
@@ -1780,6 +1884,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Retourner au milieu du hangar",
           "to": "90"
         }
@@ -1815,6 +1920,7 @@
       ],
       "choices": [
         {
+          "kind": "agir",
           "text": "Dégager Ramos et le prendre sur votre épaule",
           "to": "67",
           "if": {
@@ -1837,6 +1943,7 @@
           ]
         },
         {
+          "kind": "agir",
           "text": "Prendre les clefs de la jeep",
           "to": "69",
           "if": {
@@ -1855,6 +1962,7 @@
           ]
         },
         {
+          "kind": "aller",
           "text": "Retourner dans le hangar",
           "to": "90"
         }
@@ -1879,26 +1987,32 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Traverser la plaine herbeuse",
           "to": "145"
         },
         {
+          "kind": "aller",
           "text": "Entrer dans la serre",
           "to": "35"
         },
         {
+          "kind": "agir",
           "text": "Fouiller le poste de garde",
           "to": "52"
         },
         {
+          "kind": "agir",
           "text": "Boire au ruisseau",
           "to": "32"
         },
         {
+          "kind": "agir",
           "text": "Examiner le nid",
           "to": "125"
         },
         {
+          "kind": "aller",
           "text": "Traverser le marais",
           "to": "43"
         }
@@ -1920,6 +2034,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Revenir dans le laboratoire",
           "to": "21"
         }
@@ -1937,6 +2052,7 @@
       ],
       "choices": [
         {
+          "kind": "parler",
           "text": "Écouter la radio de service",
           "to": "121",
           "if": {
@@ -1957,30 +2073,37 @@
           }
         },
         {
+          "kind": "agir",
           "text": "Fouiller le dépôt de matériel",
           "to": "83"
         },
         {
+          "kind": "aller",
           "text": "Entrer dans le garage",
           "to": "87"
         },
         {
+          "kind": "agir",
           "text": "Tenter de relancer le groupe électrogène",
           "to": "11"
         },
         {
+          "kind": "aller",
           "text": "Passer au vestiaire",
           "to": "65"
         },
         {
+          "kind": "aller",
           "text": "Entrer dans le bureau du chef d'atelier",
           "to": "127"
         },
         {
+          "kind": "aller",
           "text": "Descendre dans le tunnel de service",
           "to": "15"
         },
         {
+          "kind": "aller",
           "text": "Prendre la jeep",
           "to": "133",
           "if": {
@@ -1989,6 +2112,7 @@
           }
         },
         {
+          "kind": "aller",
           "text": "Sortir sur la route à pied",
           "to": "114"
         }
@@ -2009,6 +2133,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Redescendre et reprendre la route",
           "to": "29"
         }
@@ -2025,6 +2150,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Ressortir sur la piste",
           "to": "9"
         }
@@ -2041,6 +2167,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Continuer sur la piste",
           "to": "60"
         }
@@ -2075,6 +2202,7 @@
       ],
       "choices": [
         {
+          "kind": "agir",
           "text": "Regarder autour de vous",
           "to": "5"
         }
@@ -2090,6 +2218,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Redescendre dans le hall",
           "to": "156"
         }
@@ -2099,6 +2228,7 @@
       "text": "La grotte derrière la cascade est une galerie de roche noire, basse et humide, où règne un noir absolu. Si vous possédez une lampe torche, vous pouvez l'allumer. Sinon, il vous faudra avancer dans l'obscurité.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Allumer la lampe torche",
           "to": "40",
           "if": {
@@ -2107,6 +2237,7 @@
           }
         },
         {
+          "kind": "aller",
           "text": "Avancer dans le noir",
           "to": "146"
         }
@@ -2139,6 +2270,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Quitter la jeep et continuer vers la cascade",
           "to": "60"
         }
@@ -2148,10 +2280,12 @@
       "text": "Le camion de maintenance est celui de l'équipe de nuit. Le moteur tourne encore, mais la cabine est vide, et la portière du conducteur pend sur un seul gond. Il y a peut-être de quoi vous aider à l'intérieur.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Monter dans la cabine",
           "to": "73"
         },
         {
+          "kind": "aller",
           "text": "Revenir au carrefour",
           "to": "5"
         }
@@ -2174,10 +2308,12 @@
       "text": "L'homme en imperméable regarde la bombe de mousse à raser, puis vous. « Ce n'est pas vous que j'attendais, dit-il, mais la marchandise est la marchandise. Montez à bord avec moi, et à San José, vous serez plus riche que ce parc ne vous aurait jamais payé. » Il ne demande pas ce qu'est devenu celui qu'il attendait. Allez-vous accepter, ou reprendre la bombe et revenir à la passerelle ?",
       "choices": [
         {
+          "kind": "parler",
           "text": "Accepter et monter à bord avec lui",
           "to": "144"
         },
         {
+          "kind": "parler",
           "text": "Refuser et revenir à la passerelle",
           "to": "148"
         }
@@ -2199,6 +2335,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Revenir au carrefour",
           "to": "5"
         }
@@ -2228,6 +2365,7 @@
       ],
       "choices": [
         {
+          "kind": "agir",
           "text": "Faire face",
           "to": "75"
         }
@@ -2237,6 +2375,7 @@
       "text": "La salle de contrôle vous indique qu'un groupe de petits animaux rôde dans les buissons de la route, et vous fait passer par le fossé opposé. Vous atteignez le centre des visiteurs sans encombre, trempé jusqu'aux os.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Entrer dans le centre des visiteurs",
           "to": "156"
         }
@@ -2262,6 +2401,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Rentrer dans le hall",
           "to": "156"
         }
@@ -2271,10 +2411,12 @@
       "text": "Le mirador est une tour de bois de dix mètres, dont l'échelle ruisselle de pluie. De là-haut, on doit voir jusqu'à la côte.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Grimper à l'échelle",
           "to": "85"
         },
         {
+          "kind": "aller",
           "text": "Reprendre la route",
           "to": "29"
         }
@@ -2295,6 +2437,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Redescendre dans le hangar",
           "to": "90"
         }
@@ -2304,6 +2447,7 @@
       "text": "La rivière est en crue, large et rapide, charriant des branches. Un câble de sécurité tendu entre deux arbres marque le gué. Si vous possédez une corde, vous pouvez vous assurer au câble. Sinon, il faudra traverser à la force des bras.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Vous assurer avec la corde",
           "to": "124",
           "if": {
@@ -2312,6 +2456,7 @@
           }
         },
         {
+          "kind": "aller",
           "text": "Traverser à la force des bras",
           "to": "41"
         }
@@ -2333,6 +2478,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Gagner la lisière",
           "to": "9"
         }
@@ -2349,6 +2495,7 @@
       ],
       "choices": [
         {
+          "kind": "agir",
           "text": "Reposer la radio",
           "to": "56"
         }
@@ -2365,6 +2512,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Revenir sur la plage",
           "to": "56"
         }
@@ -2374,10 +2522,12 @@
       "text": "La route qui mène au centre des visiteurs est bordée de buissons épais, et la pluie y fait un bruit de torrent. Quelque chose remue dans les buissons, à votre hauteur, et vous suit. Si vous avez une radio, vous pouvez appeler la salle de contrôle pour savoir ce qu'ils voient sur leurs caméras, ce qui coûte 5 minutes. Sinon, vous pressez le pas.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Presser le pas sans regarder",
           "to": "66"
         },
         {
+          "kind": "parler",
           "text": "Appeler la salle de contrôle à la radio (5 minutes)",
           "to": "106",
           "if": {
@@ -2405,6 +2555,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Remonter dans le hall",
           "to": "156"
         }
@@ -2426,6 +2577,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Gagner la lisière",
           "to": "9"
         }
@@ -2435,10 +2587,12 @@
       "text": "Le restaurant est désert, les tables encore dressées pour un dîner qui n'a pas eu lieu. Près du comptoir, un gardien de la sécurité est étendu sur le sol, et il ne bouge plus. Son badge de sécurité est accroché à sa poitrine. Autour de lui, des bruits de pattes légères s'éloignent dans l'obscurité.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Vous approcher du gardien",
           "to": "49"
         },
         {
+          "kind": "aller",
           "text": "Ressortir dans le hall",
           "to": "156"
         }
@@ -2463,6 +2617,7 @@
       "text": "L'arbre abattu barre la route de l'est de toute sa hauteur, un tronc énorme hérissé de branches brisées. Si vous possédez une corde, vous pouvez la lancer par-dessus et franchir l'obstacle rapidement. Sinon, il faudra escalader.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Lancer la corde par-dessus le tronc",
           "to": "18",
           "if": {
@@ -2478,6 +2633,7 @@
           ]
         },
         {
+          "kind": "aller",
           "text": "Escalader le tronc",
           "to": "137"
         }
@@ -2487,6 +2643,7 @@
       "text": "La piste longe la clôture du bâtiment des raptors, cinq mètres de grillage sous des isolateurs de céramique. Si la clôture est sous tension, les isolateurs bourdonnent et une lampe rouge clignote à chaque poteau. Vous tendez l'oreille.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Continuer le long de la clôture",
           "to": "64",
           "if": {
@@ -2495,6 +2652,7 @@
           }
         },
         {
+          "kind": "aller",
           "text": "Continuer le long de la clôture",
           "to": "17",
           "if": {
@@ -2522,6 +2680,7 @@
       ],
       "choices": [
         {
+          "kind": "agir",
           "text": "Reposer la radio et regarder autour de vous",
           "to": "90"
         }
@@ -2538,6 +2697,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Gagner la lisière",
           "to": "9"
         }
@@ -2559,6 +2719,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Revenir dans le laboratoire",
           "to": "21"
         }
@@ -2568,6 +2729,7 @@
       "text": "Assuré au câble par la corde, vous traversez sans que le courant puisse vous emporter, et vous atteignez l'autre rive au pied du pont de lianes.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Gagner le pont de lianes",
           "to": "118"
         }
@@ -2589,6 +2751,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Reprendre le sentier",
           "to": "88"
         }
@@ -2610,6 +2773,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Ressortir sur la piste",
           "to": "9"
         }
@@ -2630,10 +2794,12 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Monter sur le toit",
           "to": "109"
         },
         {
+          "kind": "aller",
           "text": "Retourner dans le hangar",
           "to": "90"
         }
@@ -2671,6 +2837,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Ressortir dans le hall",
           "to": "156"
         }
@@ -2723,6 +2890,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Ressortir sur la piste",
           "to": "9"
         }
@@ -2732,6 +2900,7 @@
       "text": "La salle de contrôle vous indique que le tyrannosaure est au nord de la route, près des véhicules des visiteurs, et vous fait passer par le fossé sud. Vous atteignez le carrefour des pistes sans l'avoir vu.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Continuer vers le carrefour des pistes",
           "to": "5"
         }
@@ -2741,6 +2910,7 @@
       "text": "La fusée de détresse s'embrase dans un jet de lumière rouge et de fumée. Le dilophosaure recule en sifflant, aveuglé, et disparaît dans les fourrés. Vous passez en tenant la fusée devant vous jusqu'à ce qu'elle s'éteigne.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Continuer vers la cascade",
           "to": "158"
         }
@@ -2772,6 +2942,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Revenir au carrefour",
           "to": "5"
         }
@@ -2792,10 +2963,12 @@
       "text": "Le bâtiment des raptors est une forteresse de béton aux portes blindées. La porte du personnel est entrouverte, et de l'intérieur monte une odeur de bête fauve. On y garde le matériel vétérinaire pour les animaux les plus dangereux du parc.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Entrer dans le bâtiment",
           "to": "128"
         },
         {
+          "kind": "agir",
           "text": "Rester dehors",
           "to": "9"
         }
@@ -2813,10 +2986,12 @@
       "text": "Vous suivez la clôture couchée, en marchant sur les câbles morts. La piste tourne et descend vers un carrefour. Dans la jungle, à votre droite, un rugissement roule comme le tonnerre, et vous ne sauriez dire à quelle distance. Si vous avez une radio, vous pouvez demander à la salle de contrôle où se trouve l'animal, ce qui vous coûtera 5 minutes. Sinon, vous continuez en espérant qu'il soit loin.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Continuer en silence",
           "to": "86"
         },
         {
+          "kind": "parler",
           "text": "Appeler la salle de contrôle (5 minutes)",
           "to": "135",
           "if": {
@@ -2854,6 +3029,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Continuer à pied",
           "to": "114"
         }
@@ -2889,6 +3065,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Sortir sur la plage",
           "to": "56"
         }
@@ -2914,10 +3091,12 @@
       ],
       "choices": [
         {
+          "kind": "agir",
           "text": "Tenter de réarmer la clôture des raptors",
           "to": "151"
         },
         {
+          "kind": "aller",
           "text": "Redescendre dans le hall",
           "to": "156"
         }
@@ -2935,6 +3114,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Monter à la passerelle avec Ramos sur l'épaule",
           "to": "20",
           "if": {
@@ -2955,6 +3135,7 @@
           }
         },
         {
+          "kind": "aller",
           "text": "Monter à la passerelle",
           "to": "159",
           "if": {
@@ -2978,6 +3159,7 @@
           }
         },
         {
+          "kind": "parler",
           "text": "Montrer la bombe de mousse à l'homme en imperméable",
           "to": "102",
           "if": {
@@ -2986,6 +3168,7 @@
           }
         },
         {
+          "kind": "agir",
           "text": "Jeter la bombe de mousse dans le port",
           "to": "56",
           "if": {
@@ -3013,6 +3196,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Retourner au milieu du hangar",
           "to": "90"
         }
@@ -3052,6 +3236,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Atteindre l'autre côté",
           "to": "56"
         }
@@ -3073,6 +3258,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Ressortir dans le hall",
           "to": "156"
         }
@@ -3120,42 +3306,52 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Entrer dans le restaurant",
           "to": "117"
         },
         {
+          "kind": "aller",
           "text": "Entrer dans la boutique de souvenirs",
           "to": "70"
         },
         {
+          "kind": "aller",
           "text": "Passer par les cuisines",
           "to": "153"
         },
         {
+          "kind": "aller",
           "text": "Entrer dans la salle de projection",
           "to": "16"
         },
         {
+          "kind": "aller",
           "text": "Descendre au parking",
           "to": "27"
         },
         {
+          "kind": "aller",
           "text": "Monter à la salle de contrôle",
           "to": "157"
         },
         {
+          "kind": "aller",
           "text": "Monter au laboratoire",
           "to": "71"
         },
         {
+          "kind": "aller",
           "text": "Aller à l'infirmerie",
           "to": "19"
         },
         {
+          "kind": "aller",
           "text": "Sortir sur la terrasse",
           "to": "107"
         },
         {
+          "kind": "agir",
           "text": "Vous soigner avec la trousse de secours",
           "to": "156",
           "if": {
@@ -3176,10 +3372,12 @@
           ]
         },
         {
+          "kind": "aller",
           "text": "Prendre la route des enclos",
           "to": "29"
         },
         {
+          "kind": "aller",
           "text": "Prendre le sentier de la jungle",
           "to": "88"
         }
@@ -3189,6 +3387,7 @@
       "text": "La salle de contrôle est fermée par une porte à serrure magnétique. Si vous possédez un badge de sécurité, vous pouvez l'ouvrir. Sinon, elle ne cédera pas.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Ouvrir avec le badge de sécurité",
           "to": "147",
           "if": {
@@ -3197,6 +3396,7 @@
           }
         },
         {
+          "kind": "aller",
           "text": "Redescendre dans le hall",
           "to": "156"
         }
@@ -3218,14 +3418,17 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Traverser la rivière",
           "to": "110"
         },
         {
+          "kind": "aller",
           "text": "Entrer dans la grotte derrière la cascade",
           "to": "97"
         },
         {
+          "kind": "aller",
           "text": "Grimper au grand arbre",
           "to": "79"
         }
@@ -3257,6 +3460,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Ressortir sur la piste",
           "to": "9"
         }

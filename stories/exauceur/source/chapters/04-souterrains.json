@@ -39,6 +39,7 @@
       "text": "La trappe retombe au-dessus de vous. Le bruit roule dans la galerie et ne revient pas. Vous êtes dans l'égout d'Agroprom, sur une margelle de béton, de l'eau noire à vos pieds. Ça sent la rouille et le gaz de marais. Le détecteur crépite une fois, puis se tait. Devant, le noir est complet, de celui qu'on touche.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Allumer la Lampe torche",
           "to": "c04-19",
           "if": {
@@ -47,6 +48,7 @@
           }
         },
         {
+          "kind": "aller",
           "text": "Avancer à tâtons le long du mur",
           "to": "c04-8"
         }
@@ -56,6 +58,7 @@
       "text": "Le faisceau de la Lampe torche découpe un tunnel voûté, des câbles qui pendent, des traces de mains à hauteur d'épaule, noires de graisse. Quelqu'un a marché ici, souvent, sans lumière. Un caillebotis manque au milieu de la margelle ; vous l'enjambez. Au bout, la galerie se sépare, et une flèche peinte descend.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Suivre les traces jusqu'à la bifurcation",
           "to": "c04-33"
         }
@@ -73,6 +76,7 @@
       "text": "Le caillebotis tient. Vous passez le pied, puis l'autre, et le sol redevient du béton. Plus loin, un filet de jour tombe d'une grille au plafond, assez pour deviner que la galerie se sépare. Sous la grille, une flèche peinte descend.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Continuer jusqu'à la bifurcation",
           "to": "c04-33"
         }
@@ -89,6 +93,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Continuer jusqu'à la bifurcation",
           "to": "c04-33"
         }
@@ -98,10 +103,12 @@
       "text": "Une plaque émaillée, à moitié mangée, une flèche vers le bas. À gauche, le puits de maintenance : un trou rond, des barreaux scellés dans la paroi, dont trois manquent. À droite, le collecteur s'enfonce en pente douce sous une eau immobile qui fait tiquer le détecteur à travers la poche.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Descendre par le puits",
           "to": "c04-11"
         },
         {
+          "kind": "aller",
           "text": "Suivre le collecteur dans l'eau",
           "to": "c04-17"
         }
@@ -111,6 +118,7 @@
       "text": "Vous vous penchez. Le puits est profond, dix mètres peut-être, les barreaux rouillés jusqu'au cœur. Les trois manquants laissent un vide en plein milieu, trop large pour une enjambée. Tout en bas, un reflet jaune, et un bruit de moteur qui tourne sans personne.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Descendre à la Corde",
           "to": "c04-3",
           "if": {
@@ -119,6 +127,7 @@
           }
         },
         {
+          "kind": "aller",
           "text": "Descendre par les barreaux",
           "to": "c04-24"
         }
@@ -138,6 +147,7 @@
       "text": "Vos pieds touchent le fond. Au-dessus, le rond du puits est déjà une pièce de monnaie grise. Une porte de fer entrebâillée laisse passer le bruit du moteur et une lumière jaune, basse, qui bat comme un pouls. Sur la porte, une main peinte, doigts écartés.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Pousser la porte de fer",
           "to": "c04-6"
         }
@@ -154,6 +164,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Pousser la porte de fer",
           "to": "c04-6"
         }
@@ -170,6 +181,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Continuer dans le collecteur",
           "to": "c04-22"
         }
@@ -179,6 +191,7 @@
       "text": "Un homme est assis contre la paroi, l'eau à la poitrine, la tête penchée comme s'il écoutait. Mort depuis des mois. Son fusil pointe encore sur sa propre tempe. Son sac est vide, quelqu'un est passé avant vous. Au-dessus de lui, gravé au couteau dans le calcaire : NE LE REGARDE PAS. Plus loin, le collecteur remonte vers une lumière jaune et un bruit de pompe.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Continuer vers la lumière",
           "to": "c04-6"
         }
@@ -193,18 +206,22 @@
       },
       "choices": [
         {
+          "kind": "aller",
           "text": "Remonter par la trappe de la salle",
           "to": "c03-3"
         },
         {
+          "kind": "aller",
           "text": "Prendre la galerie sèche",
           "to": "c04-13"
         },
         {
+          "kind": "aller",
           "text": "Suivre le canal inondé",
           "to": "c04-12"
         },
         {
+          "kind": "agir",
           "text": "Boire l'anti-rad",
           "to": "c04-35",
           "if": {
@@ -230,6 +247,7 @@
       "text": "Vous cassez le col de l'ampoule d'Anti-rad et avalez. Un goût de fer et de pomme pourrie. Les tremblements passent, le détecteur se calme au fond du sac. Vous perdez 5 rads. La pompe tourne toujours. La salle n'a pas bougé.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Revenir au milieu de la salle",
           "to": "c04-6"
         }
@@ -239,6 +257,7 @@
       "text": "Passé la porte au triangle, la galerie est sèche et le noir revient d'un coup, comme une main sur les yeux. Il y a une odeur nouvelle, de bête et de vieux pansement. Et quelque chose d'autre, qu'on n'entend pas avec les oreilles : une pression derrière le front, comme avant un orage.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Éclairer la galerie avec la Lampe torche",
           "to": "c04-9",
           "if": {
@@ -247,6 +266,7 @@
           }
         },
         {
+          "kind": "aller",
           "text": "Avancer dans le noir",
           "to": "c04-28"
         }
@@ -264,6 +284,7 @@
       "text": "Vous passez à côté. Un arc bleu claque dans votre dos, assez près pour vous montrer la galerie une seconde : des tuyaux, une grille au loin, et devant elle, debout, une silhouette qui ne bouge pas. La pression derrière le front devient une main qui appuie.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Avancer vers la silhouette",
           "to": "c04-9"
         }
@@ -280,6 +301,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Avancer vers la silhouette",
           "to": "c04-9"
         }
@@ -294,6 +316,7 @@
       "text": "Il est là, au bout de la galerie, devant une porte ouverte sur une chambre carrée. Grand, voûté, le crâne gonflé comme une outre, les bras trop longs posés le long du corps. Un Contrôleur. Il ne vous regarde pas encore. La pression derrière votre front a un rythme, maintenant, et c'est le sien.",
       "choices": [
         {
+          "kind": "attaquer",
           "text": "Lancer la Grenade F1",
           "to": "c04-31",
           "if": {
@@ -309,10 +332,12 @@
           ]
         },
         {
+          "kind": "aller",
           "text": "Avancer sur lui",
           "to": "c04-16"
         },
         {
+          "kind": "aller",
           "text": "Reculer sans bruit vers la salle des pompes",
           "to": "c04-6"
         }
@@ -322,6 +347,7 @@
       "text": "Vous dégoupillez la Grenade F1 et la faites rouler. Il tourne la tête au bruit, et c'est à ce moment-là que ça explose. Le souffle vous plaque au mur. Quand vous rouvrez les yeux, la pression derrière le front a disparu, et avec elle quelque chose que vous ne saviez pas porter. Ce qui reste de lui est en travers de la porte.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Enjamber le corps jusqu'à la chambre",
           "to": "c04-7"
         }
@@ -339,6 +365,7 @@
       "text": "Vous baissez le canon avant que le doigt n'appuie. Le double tremble, se déchire, et il n'y a plus qu'une galerie, un Contrôleur, et son pas lourd qui vient vers vous, les bras levés. Il a perdu votre tête. Il lui reste ses mains.",
       "choices": [
         {
+          "kind": "parler",
           "text": "Lui faire face, Makarov au poing",
           "to": "c04-2"
         }
@@ -355,6 +382,7 @@
       ],
       "choices": [
         {
+          "kind": "parler",
           "text": "Lui faire face, Makarov au poing",
           "to": "c04-2"
         }
@@ -377,6 +405,7 @@
       "text": "Il tombe à genoux, puis sur le côté, et la pression s'éteint comme une ampoule. Le silence qui suit a une épaisseur. Vous restez debout le temps que vos mains cessent de trembler. Sur le mur, près de la porte, une inscription au couteau : S. ÉTAIT ICI. TROIS FOIS.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Entrer dans la chambre",
           "to": "c04-7"
         }
@@ -393,10 +422,12 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Plonger sous la cloison",
           "to": "c04-29"
         },
         {
+          "kind": "aller",
           "text": "Revenir à la salle des pompes",
           "to": "c04-6"
         }
@@ -413,6 +444,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Monter l'échelle vers la chambre",
           "to": "c04-7"
         }
@@ -427,6 +459,7 @@
       "text": "Une chambre carrée, un sol de dalles, et sur le mur du fond une grille de fer scellée, derrière laquelle on devine une pièce : un matelas, des caisses, une lampe à pétrole. Pas de serrure. Pas de gonds visibles. Quelqu'un a voulu que ça ressemble à un mur. Près de l'échelle, une porte à barre poussoir, de celles qui ne s'ouvrent que d'un côté.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Chercher la brique descellée, comme on vous l'a dit",
           "to": "c04-10",
           "if": {
@@ -435,10 +468,12 @@
           }
         },
         {
+          "kind": "agir",
           "text": "Fouiller la chambre",
           "to": "c04-21"
         },
         {
+          "kind": "agir",
           "text": "Poser le bandage",
           "to": "c04-23",
           "if": {
@@ -459,6 +494,7 @@
           ]
         },
         {
+          "kind": "aller",
           "text": "Pousser la porte de service",
           "to": "c04-37"
         }
@@ -468,6 +504,7 @@
       "text": "Vous déroulez le Bandage autour du bras et serrez avec les dents. Le sang s'arrête de couler, et avec lui une partie du froid. Vous regagnez 3 points d'Endurance. La grille n'a pas bougé. La lampe à pétrole, derrière, non plus.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Revenir devant la grille",
           "to": "c04-7"
         }
@@ -485,6 +522,7 @@
       "text": "Votre pouce accroche un joint plus mou que les autres. La brique sort sans bruit. Derrière, un levier de fer, froid, avec une marque de main dedans à force de servir. Vous tirez. Quelque chose cède dans le mur avec un bruit de serrure, et la grille s'écarte d'un doigt.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Pousser la grille",
           "to": "c04-10"
         }
@@ -494,10 +532,12 @@
       "text": "Rien. Les briques tiennent, les dalles tiennent, vos ongles cassent. Vous restez accroupi au pied de la grille à regarder le matelas de l'autre côté, à deux mètres, aussi loin que la lune. Le mortier est vieux, la ferraille aussi. Il y a un bout de tuyau par terre, de la bonne longueur.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Forcer la grille au tuyau",
           "to": "c04-4"
         },
         {
+          "kind": "aller",
           "text": "Pousser la porte de service",
           "to": "c04-37"
         }
@@ -517,6 +557,7 @@
       "text": "Le barreau cède d'un coup, et le suivant avec lui. Vous passez de côté entre les deux, en laissant un bout de veste à la ferraille. De l'autre côté, la lampe à pétrole a encore du pétrole. Vous l'allumez. La flamme tremble, puis tient.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Entrer dans la cache",
           "to": "c04-10"
         }
@@ -533,10 +574,12 @@
       ],
       "choices": [
         {
+          "kind": "agir",
           "text": "Forcer encore la grille",
           "to": "c04-4"
         },
         {
+          "kind": "aller",
           "text": "Pousser la porte de service",
           "to": "c04-37"
         }
@@ -562,10 +605,12 @@
       ],
       "choices": [
         {
+          "kind": "agir",
           "text": "Lire le mur",
           "to": "c04-32"
         },
         {
+          "kind": "aller",
           "text": "Repartir par la porte de service",
           "to": "c04-37"
         }
@@ -575,6 +620,7 @@
       "text": "Des dates. Des noms de lieux, barrés. Des phrases, de plus en plus courtes vers le bas : Le centre ne donne rien, il prend. Ce qui exauce n'est pas une pierre. Puis, à hauteur du matelas, d'une écriture plus large : Si tu lis ça, c'est que je t'ai envoyé. Tu ne t'en souviens pas. C'est normal. Vous restez longtemps devant le mur. Vous ne vous souvenez de rien.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Repartir par la porte de service",
           "to": "c04-37"
         }
@@ -584,6 +630,7 @@
       "text": "La porte de service claque derrière vous et ne se rouvrira pas de ce côté. Un couloir de maintenance, des câbles, le bruit de la pompe qui grossit. Vous rejoignez la salle par une trappe basse, derrière les moteurs. L'ampoule jaune bat toujours. Au plafond, l'escalier de fer, la trappe, et derrière, le jour.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Entrer dans la salle des pompes",
           "to": "c04-6"
         }

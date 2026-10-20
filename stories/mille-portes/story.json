@@ -120,14 +120,17 @@
       ],
       "choices": [
         {
+          "kind": "parler",
           "text": "Lui demander ce que fait ce Dé",
           "to": "60"
         },
         {
+          "kind": "aller",
           "text": "Sortir par la porte de l'échoppe",
           "to": "85"
         },
         {
+          "kind": "aller",
           "text": "Quitter les lieux par l'arrière-boutique",
           "to": "28"
         }
@@ -144,6 +147,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Monter l'escalier",
           "to": "70"
         }
@@ -173,6 +177,7 @@
       "text": "La carte des égouts de Fifrelin est exacte : trois embranchements, et un quatrième marqué d'une tête de mort barrée. Mais il fait noir comme dans une bourse fermée, et l'eau vous monte aux chevilles. Si vous possédez une lanterne sourde, vous pouvez l'allumer. Sinon, il vous faudra avancer à tâtons le long du mur.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Allumer la lanterne sourde",
           "to": "83",
           "if": {
@@ -181,6 +186,7 @@
           }
         },
         {
+          "kind": "aller",
           "text": "Avancer à tâtons le long du mur",
           "to": "32"
         }
@@ -190,6 +196,7 @@
       "text": "Le cabinet du Prévôt est une pièce austère : une table d'écriture, des cartes de la cité couvertes de croix rouges, et, dans un coffre ouvert, une cassette de fer munie d'une petite serrure. Si vous possédez des rossignols, vous pouvez la crocheter. Si vous avez une dague, vous pouvez tenter de forcer le couvercle. Vous pouvez aussi repartir sans rien.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Crocheter la cassette avec vos rossignols",
           "to": "49",
           "if": {
@@ -198,6 +205,7 @@
           }
         },
         {
+          "kind": "agir",
           "text": "Forcer le couvercle avec votre dague",
           "to": "25",
           "if": {
@@ -206,6 +214,7 @@
           }
         },
         {
+          "kind": "aller",
           "text": "Repartir sans rien",
           "to": "35"
         }
@@ -230,6 +239,7 @@
       ],
       "choices": [
         {
+          "kind": "agir",
           "text": "Chercher une issue",
           "to": "22"
         }
@@ -249,6 +259,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Revenir au carrefour des trois boyaux",
           "to": "81"
         }
@@ -265,6 +276,7 @@
       ],
       "choices": [
         {
+          "kind": "agir",
           "text": "Vous relever dans le couloir",
           "to": "79"
         }
@@ -274,6 +286,7 @@
       "text": "La porte basse débouche sur la Cour des Miracles. Lorsque vous vous retournez, le dédale s'est refermé derrière vous sans un bruit, comme s'il n'avait jamais existé.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Entrer dans la Cour des Miracles",
           "to": "15"
         }
@@ -283,10 +296,12 @@
       "text": "La Mère Aiguille vous attend, sa balance repoussée sur le côté, les dogues couchés à ses pieds. « Vous l'avez, dit-elle. Je le sens d'ici : la chance s'en va de la pièce. » Elle tend la main, paume ouverte, et pour une fois elle ne sourit pas. Allez-vous lui remettre le Dé, ou refuser et tourner les talons ?",
       "choices": [
         {
+          "kind": "parler",
           "text": "Lui remettre le Dé",
           "to": "77"
         },
         {
+          "kind": "parler",
           "text": "Refuser et tourner les talons",
           "to": "36"
         }
@@ -320,14 +335,17 @@
       "text": "La Cour des Miracles est le domaine de la Guilde des Doigts Longs. Au fond de la cour se dresse une porte de bronze gardée par deux portiers masqués : c'est le contrôle de la Guilde. Sur le côté, un soupirail descend vers les caves, qui passent, dit-on, sous la Chambre des Serrures. Une ruelle ramène à la Place des Gueux pour ceux qui auraient oublié quelque chose. Si vous possédez une eau-de-vie du Chirurgien, vous pouvez la boire ici. Qu'allez-vous faire ?",
       "choices": [
         {
+          "kind": "parler",
           "text": "Vous présenter au contrôle de la Guilde",
           "to": "65"
         },
         {
+          "kind": "aller",
           "text": "Descendre dans les caves par le soupirail",
           "to": "53"
         },
         {
+          "kind": "agir",
           "text": "Boire l'eau-de-vie du Chirurgien",
           "to": "15",
           "if": {
@@ -348,6 +366,7 @@
           ]
         },
         {
+          "kind": "aller",
           "text": "Retourner sur la Place des Gueux",
           "to": "85"
         }
@@ -368,6 +387,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Retourner au milieu de la Place",
           "to": "85"
         }
@@ -377,6 +397,7 @@
       "text": "Les Bains de la Prophétesse, un vaste bâtiment de pierre grise d'où s'échappe une vapeur blanche, sont fermés au public depuis que le public ne paie plus. Une grille de fer forgé en barre l'entrée. Derrière, une gardienne tricote sans lever les yeux. « Trois pièces, dit-elle, ou passe ton chemin. » Si vous possédez des rossignols, vous pouvez crocheter la grille. Vous pouvez aussi payer 3 Pièces d'Or, ou renoncer.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Crocheter la grille avec vos rossignols",
           "to": "38",
           "if": {
@@ -385,6 +406,7 @@
           }
         },
         {
+          "kind": "payer",
           "text": "Payer la gardienne (3 Pièces d'Or)",
           "to": "38",
           "if": {
@@ -402,6 +424,7 @@
           ]
         },
         {
+          "kind": "agir",
           "text": "Renoncer et remonter sur la Place",
           "to": "85"
         }
@@ -411,6 +434,7 @@
       "text": "Fifrelin surgit d'un tas de détritus et vous tire par la manche. « Pas par là, m'sieur. Les sbires du Prévôt tiennent la grande porte, et ils cherchent quelqu'un qui a votre tête. » Il vous fait passer par la lucarne d'une boulangerie, et vous débouchez sur le Carrefour des Lanternes, les épaules couvertes de farine.",
       "choices": [
         {
+          "kind": "parler",
           "text": "Remercier Fifrelin et regarder autour de vous",
           "to": "69"
         }
@@ -441,6 +465,7 @@
       ],
       "choices": [
         {
+          "kind": "payer",
           "text": "Miser 3 Pièces d'Or à la table de dés",
           "to": "57",
           "if": {
@@ -458,6 +483,7 @@
           ]
         },
         {
+          "kind": "aller",
           "text": "Ressortir sur la Place",
           "to": "85"
         }
@@ -474,6 +500,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Traverser la Place",
           "to": "85"
         }
@@ -543,6 +570,7 @@
       "text": "L'arrière-boutique donne sur la ruelle des Chiffonniers, un passage étroit et sombre où le sol est jonché d'étoffes pourries. Alors que vous avancez avec précaution, un tas de chiffons remue à vos pieds et une main décharnée en sort, paume ouverte. Une voix rauque s'élève : « Une pièce, et je te dirai une chose que la Mère Aiguille ne t'a pas dite. » Si vous désirez donner 1 Pièce d'Or au mendiant, vous pouvez le faire. Sinon, vous poursuivez votre chemin vers la Place des Gueux.",
       "choices": [
         {
+          "kind": "payer",
           "text": "Donner 1 Pièce d'Or au mendiant",
           "to": "40",
           "if": {
@@ -560,6 +588,7 @@
           ]
         },
         {
+          "kind": "aller",
           "text": "Poursuivre votre chemin sans vous arrêter",
           "to": "85"
         }
@@ -588,6 +617,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Revenir dans la salle des Bains",
           "to": "38"
         }
@@ -604,10 +634,12 @@
       ],
       "choices": [
         {
+          "kind": "agir",
           "text": "Briser le cachet et lire la lettre",
           "to": "56"
         },
         {
+          "kind": "agir",
           "text": "Garder la lettre cachetée",
           "to": "43"
         }
@@ -624,6 +656,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Remonter dans la Cour des Miracles",
           "to": "15"
         }
@@ -633,10 +666,12 @@
       "text": "Dans la cour, un vieil homme borgne, vêtu d'un manteau rapiécé, tient un énorme molosse à distance avec un parapluie cassé. Sa main gauche saigne abondamment. « Il veut ma jambe, dit-il sans se retourner. Il en a déjà eu une. » Le molosse hésite entre vous deux. Si vous désirez chasser l'animal, vous devrez le combattre. Si vous possédez une eau-de-vie du Chirurgien, vous pouvez la lancer au vieil homme pour qu'il reprenne des forces. Vous pouvez aussi passer votre chemin.",
       "choices": [
         {
+          "kind": "attaquer",
           "text": "Chasser le molosse",
           "to": "46"
         },
         {
+          "kind": "agir",
           "text": "Lancer votre eau-de-vie au vieil homme",
           "to": "68",
           "if": {
@@ -652,6 +687,7 @@
           ]
         },
         {
+          "kind": "aller",
           "text": "Passer votre chemin vers la porte basse",
           "to": "11"
         }
@@ -669,10 +705,12 @@
       "text": "Le quartier du Prévôt est propre et silencieux, ce qui, à Mille-Portes, le rend suspect. L'hôtel du Prévôt Carcasse, une haute bâtisse à la porte ornée d'un heurtoir de bronze, se dresse au bout d'une allée pavée ; sur le côté, une entrée de cuisines est mal fermée. Le long du quartier coule un canal qui mène à la Cour des Miracles, et un passeur y attend des clients. Qu'allez-vous faire ?",
       "choices": [
         {
+          "kind": "aller",
           "text": "Entrer dans l'hôtel par les cuisines",
           "to": "27"
         },
         {
+          "kind": "parler",
           "text": "Vous présenter à la porte avec la lettre cachetée",
           "to": "45",
           "if": {
@@ -693,10 +731,12 @@
           }
         },
         {
+          "kind": "aller",
           "text": "Longer le canal",
           "to": "67"
         },
         {
+          "kind": "aller",
           "text": "Repasser le pont vers la Place",
           "to": "85"
         }
@@ -728,14 +768,17 @@
       "text": "À l'intérieur, la vapeur sent le soufre et l'encens. Une porte tendue d'un rideau rouge mène aux appartements de la Prophétesse. Sur votre droite, un comptoir chargé de fioles et de bocaux signale l'officine de l'apothicaire, qui dort sur sa chaise, la tête renversée en arrière. Qu'allez-vous faire ?",
       "choices": [
         {
+          "kind": "agir",
           "text": "Consulter la Prophétesse",
           "to": "84"
         },
         {
+          "kind": "aller",
           "text": "Vous approcher du comptoir de l'apothicaire",
           "to": "42"
         },
         {
+          "kind": "aller",
           "text": "Ressortir sur la Place",
           "to": "85"
         }
@@ -763,6 +806,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Rejoindre la Place des Gueux",
           "to": "85"
         }
@@ -772,6 +816,7 @@
       "text": "Le dédale des Tanneurs commence là où s'arrête le pavé. Les ruelles s'y croisent sans ordre, des escaliers de pierre montent vers des portes murées et une odeur de cuir trempé et de chair pourrie prend à la gorge. À vos pieds, une bouche d'égout bâille au milieu de la ruelle ; au-dessus de votre tête, les toits se touchent presque. Si vous possédez un grappin, vous pouvez tenter de gagner les toits. Si vous avez la carte des égouts, vous pouvez descendre sous la ville. Sinon, il vous faut vous enfoncer dans les ruelles.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Lancer le grappin vers les toits",
           "to": "72",
           "if": {
@@ -780,6 +825,7 @@
           }
         },
         {
+          "kind": "aller",
           "text": "Descendre dans les égouts en suivant la carte",
           "to": "5",
           "if": {
@@ -788,6 +834,7 @@
           }
         },
         {
+          "kind": "aller",
           "text": "Vous enfoncer dans les ruelles",
           "to": "81"
         }
@@ -797,10 +844,12 @@
       "text": "L'apothicaire ronfle, la joue posée sur son registre. Sur l'étagère derrière lui, entre un bocal de sangsues et une bouteille de vinaigre, vous apercevez une fiole de sommeil au bouchon de cire bleue. Sous la table, quelque chose respire lourdement. Qu'allez-vous faire ?",
       "choices": [
         {
+          "kind": "agir",
           "text": "Voler la fiole de sommeil",
           "to": "4"
         },
         {
+          "kind": "agir",
           "text": "Ne pas tenter le diable et repartir",
           "to": "38"
         }
@@ -810,6 +859,7 @@
       "text": "Le Pont des Pendus porte bien son nom : un homme s'y balance au bout d'une corde, un coursier à en juger par la sacoche qu'il porte encore en bandoulière. À l'autre extrémité du pont, un péagier armé d'une hallebarde barre le passage. « Deux pièces pour passer, annonce-t-il. Les gens du Prévôt passent gratuitement, mais tu n'en as pas la tête. » Si vous possédez la chevalière du Prévôt, vous pouvez la lui montrer. Si vous avez une dague, vous pouvez couper la corde du pendu pour fouiller sa sacoche. Vous pouvez aussi payer le péage, ou rebrousser chemin.",
       "choices": [
         {
+          "kind": "payer",
           "text": "Payer le péage (2 Pièces d'Or)",
           "to": "35",
           "if": {
@@ -827,6 +877,7 @@
           ]
         },
         {
+          "kind": "parler",
           "text": "Montrer la chevalière du Prévôt",
           "to": "35",
           "if": {
@@ -835,6 +886,7 @@
           }
         },
         {
+          "kind": "agir",
           "text": "Couper la corde du pendu avec votre dague",
           "to": "31",
           "if": {
@@ -843,6 +895,7 @@
           }
         },
         {
+          "kind": "aller",
           "text": "Rebrousser chemin vers la Place",
           "to": "85"
         }
@@ -852,14 +905,17 @@
       "text": "L'escalier débouche sur une coursive de bois qui longe les toits des tanneries. D'une cour en contrebas monte un bruit de lutte : un homme et un chien. Plus loin, une porte basse ouvre sur la lumière grise de la Cour des Miracles. L'escalier redescend aussi vers les ruelles, si vous souhaitez revenir sur vos pas. Qu'allez-vous faire ?",
       "choices": [
         {
+          "kind": "aller",
           "text": "Descendre dans la cour pour voir qui se bat",
           "to": "33"
         },
         {
+          "kind": "aller",
           "text": "Suivre la coursive jusqu'à la porte basse",
           "to": "11"
         },
         {
+          "kind": "aller",
           "text": "Redescendre dans les ruelles",
           "to": "81"
         }
@@ -885,6 +941,7 @@
       ],
       "choices": [
         {
+          "kind": "agir",
           "text": "Prendre congé",
           "to": "35"
         }
@@ -906,6 +963,7 @@
       "text": "La Taverne du Chat Pendu est une salle basse et enfumée où l'on boit debout, car les chaises ont été vendues depuis longtemps. Accoudé au comptoir, un homme en pourpoint de cuir dort à moitié, la tête entre les bras ; un masque de cuir noir pend à sa ceinture, à côté d'une bourse mal fermée. Au fond de la salle, autour d'une table de dés, des joueurs crient plus qu'ils ne jouent. Qu'allez-vous faire ?",
       "choices": [
         {
+          "kind": "payer",
           "text": "Payer une tournée à l'homme endormi (2 Pièces d'Or)",
           "to": "48",
           "if": {
@@ -923,10 +981,12 @@
           ]
         },
         {
+          "kind": "agir",
           "text": "Tenter de lui faire les poches",
           "to": "37"
         },
         {
+          "kind": "payer",
           "text": "Miser 3 Pièces d'Or à la table de dés",
           "to": "57",
           "if": {
@@ -944,6 +1004,7 @@
           ]
         },
         {
+          "kind": "aller",
           "text": "Ressortir sur la Place",
           "to": "85"
         }
@@ -959,10 +1020,12 @@
       ],
       "choices": [
         {
+          "kind": "agir",
           "text": "Tenter de lui faire les poches",
           "to": "37"
         },
         {
+          "kind": "payer",
           "text": "Miser 3 Pièces d'Or à la table de dés",
           "to": "57",
           "if": {
@@ -980,6 +1043,7 @@
           ]
         },
         {
+          "kind": "aller",
           "text": "Ressortir sur la Place",
           "to": "85"
         }
@@ -1001,6 +1065,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Redescendre et quitter l'hôtel",
           "to": "35"
         }
@@ -1017,6 +1082,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Monter l'escalier",
           "to": "70"
         }
@@ -1026,6 +1092,7 @@
       "text": "La crypte est une salle basse où brûlent des centaines de bougies volées. L'autel de Saint-Larron est un simple bloc de pierre noire, creusé en son centre d'une empreinte en forme de dé. Tout autour, des coupelles d'offrandes débordent de pièces laissées par des voleurs reconnaissants ou inquiets. Dans votre poche, le Dé est brûlant. Qu'allez-vous faire ?",
       "choices": [
         {
+          "kind": "agir",
           "text": "Poser le Dé dans l'empreinte et dire : Rends-moi ce que tu as pris",
           "to": "66",
           "if": {
@@ -1043,10 +1110,12 @@
           }
         },
         {
+          "kind": "agir",
           "text": "Prier Saint-Larron, garder le Dé et quitter la cité",
           "to": "74"
         },
         {
+          "kind": "agir",
           "text": "Rafler les offrandes",
           "to": "63",
           "if": {
@@ -1075,6 +1144,7 @@
       "text": "Le soupirail donne sur des caves voûtées et noires, où l'eau goutte sans rythme. Quelque part dans cette obscurité, un escalier remonte vers l'antichambre de la Chambre des Serrures. Si vous possédez une lanterne sourde, vous pouvez l'allumer. Sinon, il vous faudra avancer dans le noir.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Allumer la lanterne sourde",
           "to": "2",
           "if": {
@@ -1083,6 +1153,7 @@
           }
         },
         {
+          "kind": "aller",
           "text": "Avancer dans le noir",
           "to": "50"
         }
@@ -1099,10 +1170,12 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Monter l'escalier",
           "to": "44"
         },
         {
+          "kind": "aller",
           "text": "Repartir dans les ruelles",
           "to": "81"
         }
@@ -1134,6 +1207,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Revenir sur le pont",
           "to": "43"
         }
@@ -1151,6 +1225,7 @@
       "text": "La galerie de la Guilde est un long couloir dont les murs sont entièrement tapissés de serrures clouées, des milliers de serrures, trophées de toutes les portes vaincues par les Doigts Longs. Au bout de la galerie s'ouvre une antichambre, où un homme est assis devant une porte sans poignée.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Avancer vers l'antichambre",
           "to": "70"
         }
@@ -1179,10 +1254,12 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Sortir par la porte de l'échoppe",
           "to": "85"
         },
         {
+          "kind": "aller",
           "text": "Quitter les lieux par l'arrière-boutique",
           "to": "28"
         }
@@ -1199,6 +1276,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Vous hisser sur les marches",
           "to": "15"
         }
@@ -1227,6 +1305,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Remonter sur le Carrefour des Lanternes",
           "to": "69"
         }
@@ -1245,6 +1324,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Quitter la Prophétesse",
           "to": "38"
         }
@@ -1254,6 +1334,7 @@
       "text": "Les deux portiers ne bougent que les yeux. « Le mot », dit le premier. Ils tiennent des gourdins cloutés et ont l'air d'hommes que les mots ennuient. Si vous connaissez le mot de passe, vous pouvez le prononcer. Si vous possédez le masque de la Guilde ou l'œil de verre du Borgne, vous pouvez le montrer. Vous pouvez aussi tenter de bluffer, ou faire demi-tour.",
       "choices": [
         {
+          "kind": "parler",
           "text": "Prononcer le mot de passe",
           "to": "58",
           "if": {
@@ -1262,6 +1343,7 @@
           }
         },
         {
+          "kind": "agir",
           "text": "Mettre le masque de la Guilde",
           "to": "58",
           "if": {
@@ -1270,6 +1352,7 @@
           }
         },
         {
+          "kind": "parler",
           "text": "Montrer l'œil de verre du Borgne",
           "to": "58",
           "if": {
@@ -1278,10 +1361,12 @@
           }
         },
         {
+          "kind": "parler",
           "text": "Bluffer",
           "to": "3"
         },
         {
+          "kind": "aller",
           "text": "Faire demi-tour",
           "to": "15"
         }
@@ -1304,6 +1389,7 @@
       "text": "Le passeur est un vieil homme borgne lui aussi, assis dans une barque plate amarrée au quai. « Deux pièces jusqu'à la Cour des Miracles, dit-il. Sinon, tu nages, et l'eau du canal n'est pas de l'eau. » Vous pouvez payer 2 Pièces d'Or, ou tenter la traversée à la nage.",
       "choices": [
         {
+          "kind": "payer",
           "text": "Payer le passeur (2 Pièces d'Or)",
           "to": "15",
           "if": {
@@ -1321,6 +1407,7 @@
           ]
         },
         {
+          "kind": "aller",
           "text": "Traverser à la nage",
           "to": "76"
         }
@@ -1344,6 +1431,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Gagner la porte basse",
           "to": "11"
         }
@@ -1356,14 +1444,17 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Retourner chez la Mère Aiguille",
           "to": "12"
         },
         {
+          "kind": "aller",
           "text": "Gagner la chapelle de Saint-Larron",
           "to": "73"
         },
         {
+          "kind": "aller",
           "text": "Aller trouver le Prévôt",
           "to": "87",
           "if": {
@@ -1385,10 +1476,12 @@
           }
         },
         {
+          "kind": "aller",
           "text": "Fuir par la Porte des Suppliciés",
           "to": "74"
         },
         {
+          "kind": "agir",
           "text": "Boire l'eau-de-vie du Chirurgien",
           "to": "69",
           "if": {
@@ -1414,6 +1507,7 @@
       "text": "Le Serrurier Muet garde la Chambre des Serrures depuis plus longtemps que quiconque ne s'en souvient. C'est un homme énorme et placide, qui boit à petites gorgées à une cruche posée près de lui. Il ne parle pas. Il regardait la porte, et maintenant il vous regarde. Si vous possédez une fiole de sommeil, vous pouvez tenter d'en verser le contenu dans sa cruche. Si le Borgne vous a confié son secret, vous pouvez siffler Le Pendu Amoureux. Vous pouvez aussi l'attaquer, ou reculer vers la Cour.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Verser la fiole de sommeil dans sa cruche",
           "to": "7",
           "if": {
@@ -1429,6 +1523,7 @@
           ]
         },
         {
+          "kind": "parler",
           "text": "Siffler Le Pendu Amoureux",
           "to": "7",
           "if": {
@@ -1437,10 +1532,12 @@
           }
         },
         {
+          "kind": "attaquer",
           "text": "L'attaquer",
           "to": "24"
         },
         {
+          "kind": "aller",
           "text": "Reculer vers la Cour",
           "to": "15"
         }
@@ -1457,6 +1554,7 @@
       ],
       "choices": [
         {
+          "kind": "agir",
           "text": "Vous relever et chercher votre chemin",
           "to": "81"
         }
@@ -1476,6 +1574,7 @@
       "text": "La chapelle de Saint-Larron n'a pas de porte : les voleurs n'en ont jamais eu besoin. La crypte, elle, en possède une, et un gardien est assis devant, un ancien de la Guilde à qui il manque une main. « On ne descend pas sans le mot, dit-il, ou sans quelqu'un qui réponde de toi. » Si vous connaissez le mot de passe, vous pouvez le prononcer. Si vous possédez l'œil de verre du Borgne, vous pouvez le montrer. Vous pouvez aussi forcer le passage, ou ressortir sur le Carrefour.",
       "choices": [
         {
+          "kind": "parler",
           "text": "Prononcer le mot de passe",
           "to": "51",
           "if": {
@@ -1484,6 +1583,7 @@
           }
         },
         {
+          "kind": "parler",
           "text": "Montrer l'œil de verre du Borgne",
           "to": "51",
           "if": {
@@ -1492,10 +1592,12 @@
           }
         },
         {
+          "kind": "agir",
           "text": "Forcer le passage",
           "to": "39"
         },
         {
+          "kind": "aller",
           "text": "Ressortir sur le Carrefour",
           "to": "69"
         }
@@ -1544,6 +1646,7 @@
       },
       "choices": [
         {
+          "kind": "aller",
           "text": "Retourner sur la Place des Gueux",
           "to": "85"
         }
@@ -1581,6 +1684,7 @@
       ],
       "choices": [
         {
+          "kind": "payer",
           "text": "Miser de nouveau 3 Pièces d'Or",
           "to": "57",
           "if": {
@@ -1598,6 +1702,7 @@
           ]
         },
         {
+          "kind": "agir",
           "text": "Empocher vos gains et ressortir",
           "to": "85"
         }
@@ -1607,6 +1712,7 @@
       "text": "Le couloir aboutit à une porte derrière laquelle vous entendez la rumeur du Carrefour des Lanternes. Le Dé pèse dans votre poche comme un œil qui vous observe. Vous poussez la porte.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Pousser la porte",
           "to": "55",
           "if": {
@@ -1615,6 +1721,7 @@
           }
         },
         {
+          "kind": "aller",
           "text": "Pousser la porte",
           "to": "18",
           "if": {
@@ -1623,6 +1730,7 @@
           }
         },
         {
+          "kind": "aller",
           "text": "Pousser la porte",
           "to": "69",
           "if": {
@@ -1651,6 +1759,7 @@
       "text": "Le gamin s'appelle Fifrelin. Il a une dizaine d'années, trois dents de moins qu'il ne devrait et une sacoche pleine de cartes dessinées au charbon. « Les égouts, m'sieur. La vraie carte, pas celle qu'on vend aux étrangers. Deux pièces. » Il vous observe avec méfiance, prêt à s'enfuir au moindre geste. Vous pouvez acheter la carte pour 2 Pièces d'Or, tirer votre dague pour la lui prendre, ou le laisser à son commerce.",
       "choices": [
         {
+          "kind": "payer",
           "text": "Acheter la carte des égouts (2 Pièces d'Or)",
           "to": "86",
           "if": {
@@ -1677,6 +1786,7 @@
           ]
         },
         {
+          "kind": "agir",
           "text": "Tirer votre dague et tendre la main",
           "to": "16",
           "if": {
@@ -1685,6 +1795,7 @@
           }
         },
         {
+          "kind": "aller",
           "text": "Le laisser à son commerce",
           "to": "85"
         }
@@ -1694,14 +1805,17 @@
       "text": "Vous arrivez à un carrefour de trois boyaux. À gauche, une impasse au fond de laquelle brille une faible lueur. À droite, des rires s'arrêtent net lorsque vous approchez. Devant vous, un escalier de pierre grimpe vers une coursive de bois. Vous avez l'impression désagréable d'avoir déjà vu ce mur, ou son jumeau. Quelle direction prenez-vous ?",
       "choices": [
         {
+          "kind": "aller",
           "text": "Prendre à gauche vers la lueur",
           "to": "34"
         },
         {
+          "kind": "aller",
           "text": "Prendre à droite vers les rires",
           "to": "14"
         },
         {
+          "kind": "aller",
           "text": "Monter l'escalier de pierre",
           "to": "44"
         }
@@ -1718,6 +1832,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Descendre dans la Cour des Miracles",
           "to": "15"
         }
@@ -1734,6 +1849,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Remonter dans la Cour des Miracles",
           "to": "15"
         }
@@ -1743,6 +1859,7 @@
       "text": "La Prophétesse est une femme sans âge, aux yeux pâles, assise dans la vapeur qu'elle semble lire comme un livre. « Tu cherches le Dé, dit-elle avant que vous n'ayez ouvert la bouche. Je sais ce qu'il fait à ceux qui le portent. Cela vaut trois pièces, ou une lettre que tu n'as pas lue, ou un sourire, si Saint-Larron t'aime. » Vous pouvez payer 3 Pièces d'Or, lui remettre une lettre cachetée si vous en possédez une, tenter votre chance pour l'attendrir, ou partir.",
       "choices": [
         {
+          "kind": "payer",
           "text": "Payer la consultation (3 Pièces d'Or)",
           "to": "64",
           "if": {
@@ -1760,6 +1877,7 @@
           ]
         },
         {
+          "kind": "parler",
           "text": "Lui remettre la lettre cachetée",
           "to": "64",
           "if": {
@@ -1775,10 +1893,12 @@
           ]
         },
         {
+          "kind": "agir",
           "text": "Tenter votre chance pour l'attendrir",
           "to": "23"
         },
         {
+          "kind": "aller",
           "text": "Partir",
           "to": "38"
         }
@@ -1791,26 +1911,32 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Entrer chez le brocanteur",
           "to": "75"
         },
         {
+          "kind": "aller",
           "text": "Entrer dans la Taverne du Chat Pendu",
           "to": "47"
         },
         {
+          "kind": "parler",
           "text": "Aborder le gamin à la sacoche",
           "to": "80"
         },
         {
+          "kind": "aller",
           "text": "Prendre la rue de l'ouest vers le dédale des Tanneurs",
           "to": "41"
         },
         {
+          "kind": "aller",
           "text": "Prendre la rue du sud vers les Bains",
           "to": "17"
         },
         {
+          "kind": "aller",
           "text": "Prendre la rue de l'est vers le Pont des Pendus",
           "to": "43"
         }
@@ -1820,6 +1946,7 @@
       "text": "Fifrelin mord la pièce, hoche la tête et vous tend la carte des égouts. « Vous êtes réglo, m'sieur. Les gens réglos, je les ai à l'œil. Si des sbires vous cherchent, vous le saurez avant eux. » Il siffle entre ses dents et disparaît dans la foule.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Retourner au milieu de la Place",
           "to": "85"
         }
@@ -1829,10 +1956,12 @@
       "text": "Le Prévôt Carcasse vous reçoit dans son cabinet, et il connaît la valeur d'un silence. « Quinze Pièces d'Or, dit-il enfin. Ni la Guilde ni l'autel ne vous en donneront autant. Avec ce Dé, je gagnerai toutes les parties, et Mille-Portes redeviendra une ville honnête. » Il pousse une bourse sur la table. Elle est lourde. Allez-vous vendre le Dé, ou le reprendre et repartir ?",
       "choices": [
         {
+          "kind": "payer",
           "text": "Vendre le Dé au Prévôt",
           "to": "26"
         },
         {
+          "kind": "aller",
           "text": "Reprendre le Dé et repartir",
           "to": "69"
         }

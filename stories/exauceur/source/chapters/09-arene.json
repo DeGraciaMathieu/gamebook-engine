@@ -32,14 +32,17 @@
       "text": "L'escalier descend derrière la cuisine du Bar. Les marches sont humides, le mur suinte. En bas, une cave plus grande que le Bar lui-même : des projecteurs de chantier, une fosse de béton entourée de grilles, des hommes agglutinés contre le fer. Ça crie. Ça sent la sueur et le sang sec. Un type en costume trop petit, cigare éteint au coin de la bouche, vous regarde arriver sans bouger.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Aller trouver l'homme au cigare",
           "to": "c09-17"
         },
         {
+          "kind": "aller",
           "text": "Se glisser parmi les parieurs",
           "to": "c09-9"
         },
         {
+          "kind": "aller",
           "text": "Remonter au Bar",
           "to": "c08-2"
         }
@@ -49,14 +52,17 @@
       "text": "Arnie ne tend pas la main. Il vous mesure comme on pèse une bête. Trois rounds, dit-il. Un homme, des chiens, et ce qu'on a trouvé dans la Forêt rouge. Tu vis, tu touches. Trois cents, cinq cents, mille. Pas de droit d'entrée, la mise, c'est ta peau. Tu peux arrêter entre deux rounds, personne ne t'en voudra. Il rallume son cigare. La fumée monte vers les projecteurs.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Descendre dans la fosse",
           "to": "c09-4"
         },
         {
+          "kind": "aller",
           "text": "Aller d'abord voir les parieurs",
           "to": "c09-9"
         },
         {
+          "kind": "aller",
           "text": "Remonter au Bar",
           "to": "c08-2"
         }
@@ -66,10 +72,12 @@
       "text": "Contre la grille, les parieurs ne vous regardent pas. En bas, deux hommes tirent un troisième par les pieds. Il laisse une traînée sur le béton. Un gros à la veste de pluie compte des billets sur son genou. Il parle sans lever la tête. Si tu gagnes un round, reviens me voir. J'ai une table, et un bras. Derrière lui, quelqu'un lave la fosse à grande eau.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Aller trouver l'homme au cigare",
           "to": "c09-17"
         },
         {
+          "kind": "aller",
           "text": "Remonter au Bar",
           "to": "c08-2"
         }
@@ -100,10 +108,12 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Passer au vestiaire",
           "to": "c09-11"
         },
         {
+          "kind": "aller",
           "text": "Remonter au Bar avec les roubles",
           "to": "c08-2"
         }
@@ -118,10 +128,12 @@
       "text": "Le vestiaire est une cellule de béton avec un banc, une ampoule nue et un seau. Les cris de la fosse arrivent assourdis par le couloir. Le gros à la veste de pluie est assis là, une table pliante devant lui, le coude posé. Il tape du doigt sur le bois. Cent roubles, et on voit lequel des deux lâche. Au mur, quelqu'un a gravé des bâtons. Beaucoup de bâtons.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Descendre pour le deuxième round",
           "to": "c09-26"
         },
         {
+          "kind": "payer",
           "text": "Jouer au bras de fer (100 roubles)",
           "to": "c09-21",
           "if": {
@@ -139,6 +151,7 @@
           ]
         },
         {
+          "kind": "agir",
           "text": "Poser le bandage",
           "to": "c09-12",
           "if": {
@@ -159,6 +172,7 @@
           ]
         },
         {
+          "kind": "agir",
           "text": "Ouvrir la trousse de soins",
           "to": "c09-18",
           "if": {
@@ -179,6 +193,7 @@
           ]
         },
         {
+          "kind": "aller",
           "text": "Remonter au Bar",
           "to": "c08-2"
         }
@@ -209,6 +224,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Retourner s'asseoir sur le banc",
           "to": "c09-11"
         }
@@ -218,6 +234,7 @@
       "text": "Vous lâchez. Votre bras pend le long du corps et ne répond plus tout de suite. Vous perdez 2 points d'Endurance. Le gros ramasse la mise, la glisse dans sa veste de pluie et pose de nouveau le coude sur la table, pour le suivant. Il ne vous regarde plus. Le seau, dans le coin, est plein d'eau rouge.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Retourner s'asseoir sur le banc",
           "to": "c09-11"
         }
@@ -227,6 +244,7 @@
       "text": "Vous serrez le bandage autour de l'entaille, avec les dents. Le tissu boit vite et devient brun. Vous regagnez 3 points d'Endurance. Dans le couloir, quelqu'un fait rouler une cage à roulettes sur le béton. Derrière les barreaux, ça gronde à deux voix, et une griffe racle le fer.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Retourner s'asseoir sur le banc",
           "to": "c09-11"
         }
@@ -236,6 +254,7 @@
       "text": "Vous videz la trousse de soins sur le banc : compresses, aiguille, une ampoule jaune que vous cassez et buvez. La douleur recule derrière un mur de coton. Vous regagnez 6 points d'Endurance. L'ampoule du plafond cligne une fois. Vous jetez le reste dans le seau.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Retourner s'asseoir sur le banc",
           "to": "c09-11"
         }
@@ -245,10 +264,12 @@
       "text": "La fosse a été lavée. Dans le mur d'en face, une trappe de fer, et derrière, un grondement à deux voix. Pseudo-chiens, dit quelqu'un en haut, et des billets changent de mains. Sur le côté, la grille présente des barreaux horizontaux, assez larges pour un pied. Arnie lève sa clef. Il vous laisse trois secondes.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Grimper sur la grille avant le lâcher",
           "to": "c09-6"
         },
         {
+          "kind": "agir",
           "text": "Rester au centre, couteau bas",
           "to": "c09-19"
         }
@@ -312,6 +333,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Passer au vestiaire",
           "to": "c09-8"
         }
@@ -321,10 +343,12 @@
       "text": "Le vestiaire, de nouveau. Le gros à la veste de pluie est parti, sa table aussi. Il reste le banc, l'ampoule, le seau. Au mur, parmi les bâtons gravés, trois sont entourés d'un cercle. Trois seulement. Par le couloir, on entend quelque chose respirer, lent, trop grave pour un chien. Les parieurs se sont tus.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Descendre pour le troisième round",
           "to": "c09-15"
         },
         {
+          "kind": "agir",
           "text": "Poser le bandage",
           "to": "c09-5",
           "if": {
@@ -345,6 +369,7 @@
           ]
         },
         {
+          "kind": "agir",
           "text": "Ouvrir la trousse de soins",
           "to": "c09-23",
           "if": {
@@ -365,6 +390,7 @@
           ]
         },
         {
+          "kind": "aller",
           "text": "Remonter au Bar avec les roubles",
           "to": "c08-2"
         }
@@ -374,6 +400,7 @@
       "text": "Vous nouez le bandage sur la morsure la plus large, à la cuisse. Le tissu colle tout de suite à la plaie. Vous regagnez 3 points d'Endurance. Dans le couloir, la respiration lente s'arrête, puis reprend, comme si la chose avait écouté le bruit du nœud.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Retourner s'asseoir sur le banc",
           "to": "c09-8"
         }
@@ -383,6 +410,7 @@
       "text": "Vous videz la trousse de soins : compresses sur les morsures, l'aiguille dans la cuisse, sans regarder. La douleur s'éloigne derrière une vitre. Vous regagnez 6 points d'Endurance. Vous jetez l'emballage dans le seau. L'eau rouge le recouvre lentement, puis il coule.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Retourner s'asseoir sur le banc",
           "to": "c09-8"
         }
@@ -397,14 +425,17 @@
       "text": "Ils ont ouvert le mur. Derrière, une cage de camion-citerne, et dedans, une « Chimère » : deux têtes, ou une tête et une bosse qui respire, des pattes trop longues, un cuir noir qui luit sous les projecteurs. Elle ne grogne pas. Elle vous regarde et calcule la distance. Les parieurs reculent de la grille. Arnie lève sa clef, et sa main tremble un peu.",
       "choices": [
         {
+          "kind": "attaquer",
           "text": "L'affronter au couteau, au centre",
           "to": "c09-10"
         },
         {
+          "kind": "agir",
           "text": "Attendre son saut, dos à la grille",
           "to": "c09-28"
         },
         {
+          "kind": "agir",
           "text": "Vider l'AK-74 dans la cage",
           "to": "c09-7",
           "if": {
@@ -463,6 +494,7 @@
       "text": "Vous épaulez l'AK-74 et vous videz le chargeur dans la cage. La Chimère hurle, enfin, et s'affaisse contre les barreaux. Le silence dure une seconde. Puis les parieurs sifflent. Arnie ne compte rien. Il crache son cigare dans la fosse. Pas d'armes, dit-il. Les mille restent dans ma poche, et toi, tu ne redescends plus. Deux hommes vous poussent vers l'escalier.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Remonter au Bar sous les sifflets",
           "to": "c08-2"
         }
@@ -483,10 +515,12 @@
       ],
       "choices": [
         {
+          "kind": "agir",
           "text": "Rester un moment avec les parieurs",
           "to": "c09-20"
         },
         {
+          "kind": "aller",
           "text": "Remonter au Bar",
           "to": "c08-2"
         }
@@ -496,6 +530,7 @@
       "text": "On vous tend des verres que vous ne buvez pas. Le gros à la veste de pluie est revenu, il vous serre le bras, celui qu'il a tordu. Arnie fume à l'écart, le regard sur la Chimère qu'on hisse avec un treuil. Il dit, sans se tourner vers vous : là d'où elle vient, il y en a d'autres. Et pire que ça. Garde tes roubles pour là-haut. L'escalier vous attend.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Remonter au Bar",
           "to": "c08-2"
         }

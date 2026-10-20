@@ -40,6 +40,7 @@
       "text": "Le hall de l'hôpital. Des brancards renversés, un comptoir d'accueil sous la poussière, un tableau des services dont les lettres sont tombées. Au fond, derrière une porte battante, un escalier descend vers le sous-sol. Il fait noir dès la troisième marche. Un courant d'air monte de là, froid, qui sent le carrelage mouillé et l'éther. Quelque chose goutte, en bas, à intervalles réguliers.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Descendre avec la lampe torche",
           "to": "c21-4",
           "if": {
@@ -48,10 +49,12 @@
           }
         },
         {
+          "kind": "aller",
           "text": "Descendre à tâtons",
           "to": "c21-14"
         },
         {
+          "kind": "aller",
           "text": "Ressortir sur la place",
           "to": "c18-3"
         }
@@ -61,6 +64,7 @@
       "text": "La porte d'acier porte la même tôle que le couloir : ZONE CONTAMINÉE, et dessous, à la peinture, un trèfle noir sur fond jaune. Elle n'est pas verrouillée. Quand vous la tirez, un souffle sort, tiède, avec un goût de métal sur la langue. Le détecteur crépite. Une odeur d'ammoniaque et de quelque chose de brûlé. À l'intérieur, pas un bruit.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Mettre le masque à gaz et entrer",
           "to": "c21-22",
           "if": {
@@ -69,10 +73,12 @@
           }
         },
         {
+          "kind": "aller",
           "text": "Entrer en retenant votre souffle",
           "to": "c21-7"
         },
         {
+          "kind": "aller",
           "text": "Revenir au couloir central",
           "to": "c21-4"
         }
@@ -100,14 +106,17 @@
       },
       "choices": [
         {
+          "kind": "aller",
           "text": "Pousser la porte de la morgue",
           "to": "c21-6"
         },
         {
+          "kind": "aller",
           "text": "Suivre le couloir vers le panneau militaire",
           "to": "c21-10"
         },
         {
+          "kind": "agir",
           "text": "Vider la trousse de soins",
           "to": "c21-23",
           "if": {
@@ -128,6 +137,7 @@
           ]
         },
         {
+          "kind": "agir",
           "text": "Poser un bandage",
           "to": "c21-11",
           "if": {
@@ -148,6 +158,7 @@
           ]
         },
         {
+          "kind": "aller",
           "text": "Remonter sur la place",
           "to": "c18-3"
         }
@@ -164,14 +175,17 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Reprendre le cadenas",
           "to": "c21-25"
         },
         {
+          "kind": "agir",
           "text": "Laisser l'armoire et fouiller les paillasses",
           "to": "c21-20"
         },
         {
+          "kind": "aller",
           "text": "Ressortir vers le couloir central",
           "to": "c21-4"
         }
@@ -181,6 +195,7 @@
       "text": "La double porte s'ouvre sur un froid qui n'a pas de raison d'être là : le courant est coupé depuis vingt ans. Derrière le hublot, le noir est complet. Ça sent le formol et, dessous, autre chose, plus doux. Une roulette grince quelque part à l'intérieur, pas longtemps, comme si on venait de lâcher un chariot.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Entrer avec la lampe torche",
           "to": "c21-29",
           "if": {
@@ -189,10 +204,12 @@
           }
         },
         {
+          "kind": "aller",
           "text": "Entrer à tâtons",
           "to": "c21-21"
         },
         {
+          "kind": "aller",
           "text": "Revenir au couloir central",
           "to": "c21-4"
         }
@@ -209,6 +226,7 @@
       ],
       "choices": [
         {
+          "kind": "agir",
           "text": "Forcer le cadenas de l'armoire",
           "to": "c21-25",
           "if": {
@@ -218,10 +236,12 @@
           }
         },
         {
+          "kind": "agir",
           "text": "Fouiller les paillasses",
           "to": "c21-20"
         },
         {
+          "kind": "aller",
           "text": "Ressortir vers le couloir central",
           "to": "c21-4"
         }
@@ -238,10 +258,12 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Suivre le couloir",
           "to": "c21-4"
         },
         {
+          "kind": "aller",
           "text": "Remonter sur la place",
           "to": "c18-3"
         }
@@ -258,10 +280,12 @@
       ],
       "choices": [
         {
+          "kind": "agir",
           "text": "Ouvrir un des tiroirs froids",
           "to": "c21-18"
         },
         {
+          "kind": "aller",
           "text": "Revenir au couloir central",
           "to": "c21-4"
         }
@@ -271,6 +295,7 @@
       "text": "Le couloir se rétrécit. Les conduites descendent le long des murs, rejointes par des câbles militaires, neufs, fixés par des colliers. Un panneau de tôle : ZONE CONTAMINÉE, ACCÈS RÉGLEMENTÉ, et un numéro d'unité. L'eau est plus profonde ici, elle monte au-dessus de la cheville. Au fond, l'obscurité a une épaisseur différente, comme si le couloir s'arrêtait avant le mur.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Avancer la lampe torche devant vous",
           "to": "c21-19",
           "if": {
@@ -279,10 +304,12 @@
           }
         },
         {
+          "kind": "aller",
           "text": "Avancer dans le noir",
           "to": "c21-30"
         },
         {
+          "kind": "aller",
           "text": "Revenir au couloir central",
           "to": "c21-4"
         }
@@ -292,6 +319,7 @@
       "text": "Vous serrez le bandage autour de ce qui saigne le plus. Le tissu boit tout de suite. Vous regagnez 3 points d'Endurance. Vous attendez que le battement dans vos oreilles ralentisse. Il ralentit. Dans le couloir, l'eau clapote, une fois, loin, comme si quelque chose y avait posé un pied. Puis plus rien.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Reprendre le couloir",
           "to": "c21-4"
         }
@@ -308,10 +336,12 @@
       ],
       "choices": [
         {
+          "kind": "attaquer",
           "text": "Tirer vers l'odeur",
           "to": "c21-3"
         },
         {
+          "kind": "aller",
           "text": "Fuir vers le couloir",
           "to": "c21-4"
         }
@@ -328,10 +358,12 @@
       ],
       "choices": [
         {
+          "kind": "agir",
           "text": "Fouiller les paillasses",
           "to": "c21-20"
         },
         {
+          "kind": "aller",
           "text": "Ressortir vers le couloir central",
           "to": "c21-4"
         }
@@ -349,10 +381,12 @@
       "text": "Vous avez tiré là où l'eau s'est fendue. Un cri, pas humain, et l'eau qui gicle en reculant. Vous ne l'avez pas tuée. Elle est quelque part devant, et elle sait où vous êtes maintenant. Entre vous, dix mètres d'eau noire et une porte d'acier dont vous devinez le cadre à la poussière de lumière qui passe dessous.",
       "choices": [
         {
+          "kind": "attaquer",
           "text": "Tirer encore vers le bruit",
           "to": "c21-17"
         },
         {
+          "kind": "attaquer",
           "text": "Lancer une grenade F1 dans le couloir",
           "to": "c21-28",
           "if": {
@@ -368,6 +402,7 @@
           ]
         },
         {
+          "kind": "aller",
           "text": "Reculer vers le couloir central",
           "to": "c21-4"
         }
@@ -377,6 +412,7 @@
       "text": "Vos mains trouvent le chariot sans rien renverser. Des manches d'instruments, le bord d'un tiroir. La respiration, à droite, n'a pas changé. Vous vous tenez immobile dans le noir, le pouls dans la gorge, entre une chose qui dort et un tiroir que vous ne pouvez pas voir.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Fouiller le tiroir du chariot",
           "to": "c21-9",
           "if": {
@@ -386,10 +422,12 @@
           }
         },
         {
+          "kind": "attaquer",
           "text": "Tirer vers la respiration",
           "to": "c21-3"
         },
         {
+          "kind": "aller",
           "text": "Reculer vers le couloir",
           "to": "c21-4"
         }
@@ -412,6 +450,7 @@
       "text": "Le tiroir glisse sur ses rails sans un bruit. Un homme en combinaison grise, les yeux ouverts, blancs. Un masque du Monolithe est posé sur sa poitrine, replié. L'étiquette au gros orteil porte une date de l'an dernier et une mention au crayon : sujet 11, conforme. Vous refermez. Les deux tiroirs voisins portent des étiquettes identiques, sans la mention.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Revenir au couloir central",
           "to": "c21-4"
         }
@@ -421,10 +460,12 @@
       "text": "Le faisceau s'arrête sur une porte d'acier, dix mètres plus loin. Entre vous et elle, l'air tremble. Une silhouette debout, découpée dans l'eau et le carrelage, qui respire. Ses pieds font deux creux dans la surface. Elle tourne ce qui doit être sa tête vers la lumière, lentement, comme on se réveille.",
       "choices": [
         {
+          "kind": "attaquer",
           "text": "Tirer sur la silhouette",
           "to": "c21-17"
         },
         {
+          "kind": "attaquer",
           "text": "Lancer une grenade F1 dans le couloir",
           "to": "c21-28",
           "if": {
@@ -440,6 +481,7 @@
           ]
         },
         {
+          "kind": "aller",
           "text": "Reculer vers le couloir central",
           "to": "c21-4"
         }
@@ -449,6 +491,7 @@
       "text": "Les paillasses sont couvertes de verrerie cassée et de cahiers gonflés par l'eau. Un seul reste lisible, sous une cloche de verre : des colonnes de numéros, des dates de l'an dernier, et un mot répété en face de chaque numéro, conforme, conforme, non conforme. Le dernier numéro est le 11. Au fond du cahier, un schéma à main levée : une cuve, un corps dedans, des fils.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Forcer le cadenas de l'armoire",
           "to": "c21-25",
           "if": {
@@ -458,6 +501,7 @@
           }
         },
         {
+          "kind": "aller",
           "text": "Ressortir vers le couloir central",
           "to": "c21-4"
         }
@@ -475,6 +519,7 @@
       "text": "Le masque sent le caoutchouc et la vieille sueur. À travers les verres, le laboratoire : des paillasses, une rangée de cuves vides aux parois jaunies, des blouses pendues qui ont gardé la forme des bras. Une armoire métallique, fermée par un cadenas, avec un pochoir militaire. Ce que vous respirez est filtré. Ce que vous voyez, non.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Forcer le cadenas de l'armoire",
           "to": "c21-25",
           "if": {
@@ -484,10 +529,12 @@
           }
         },
         {
+          "kind": "agir",
           "text": "Fouiller les paillasses",
           "to": "c21-20"
         },
         {
+          "kind": "aller",
           "text": "Ressortir vers le couloir central",
           "to": "c21-4"
         }
@@ -497,6 +544,7 @@
       "text": "Vous vous adossez au carrelage, hors de l'eau, sur la dernière marche de l'escalier. Vous videz la trousse : compresses, agrafes, une seringue que vous plantez sans regarder. Vous regagnez 6 points d'Endurance. Le goutte-à-goutte continue. Vous laissez la boîte vide sur la marche, à côté d'une autre, plus ancienne, que quelqu'un a laissée là avant vous.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Reprendre le couloir",
           "to": "c21-4"
         }
@@ -524,6 +572,7 @@
       "text": "Elle tombe et reste visible. Un corps gris, nu, le crâne allongé, les tentacules de la bouche qui se recroquevillent. Vous attendez qu'elle cesse de bouger. Elle cesse. La morgue est à vous, pour ce que ça vaut : deux tables d'acier, un mur de tiroirs froids, un chariot d'instruments contre la table de droite.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Fouiller le tiroir du chariot",
           "to": "c21-9",
           "if": {
@@ -533,10 +582,12 @@
           }
         },
         {
+          "kind": "agir",
           "text": "Ouvrir un des tiroirs froids",
           "to": "c21-18"
         },
         {
+          "kind": "aller",
           "text": "Revenir au couloir central",
           "to": "c21-4"
         }
@@ -566,10 +617,12 @@
       "text": "Vous dégoupillez la Grenade F1 et la lancez dans l'eau, devant la silhouette. Vous plongez. L'explosion remplit le couloir et vous rend sourd. Quand l'eau retombe, la Sangsue est allongée contre la porte d'acier, visible, en deux morceaux qui ne bougent plus. Vous n'avez plus de grenade. Vos oreilles sifflent. La porte a tenu.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Pousser la porte d'acier",
           "to": "c21-2"
         },
         {
+          "kind": "aller",
           "text": "Revenir au couloir central",
           "to": "c21-4"
         }
@@ -584,14 +637,17 @@
       "text": "Le faisceau balaie la salle. Deux tables d'acier, une rigole, un mur de tiroirs froids dont trois sont ouverts. Un chariot d'instruments contre la table de droite. Dans l'angle, près des tiroirs, l'air tremble. Une silhouette d'homme, accroupie, à travers laquelle on voit le carrelage. Elle respire. Elle ne vous a pas encore senti.",
       "choices": [
         {
+          "kind": "attaquer",
           "text": "Tirer sur la forme dans l'angle",
           "to": "c21-3"
         },
         {
+          "kind": "aller",
           "text": "Gagner le chariot sans bruit",
           "to": "c21-24"
         },
         {
+          "kind": "aller",
           "text": "Reculer dans le couloir",
           "to": "c21-4"
         }

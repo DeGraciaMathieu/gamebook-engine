@@ -35,10 +35,12 @@
       "text": "Le hall de l'hôtel Polissya sent le plâtre mouillé et la cave. Le comptoir de la réception est couché sur le flanc, les casiers à clefs vides. Au fond, l'escalier monte dans la pénombre, large, avec sa rampe de cuivre vert-de-gris. Huit étages au-dessus de vous. Quelque part là-haut, une porte claque toute seule, puis plus rien. Le détecteur crépite une fois et se tait.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Monter l'escalier",
           "to": "c19-17"
         },
         {
+          "kind": "aller",
           "text": "Ressortir sur la place",
           "to": "c18-3"
         }
@@ -53,6 +55,7 @@
       "text": "Le premier étage, le deuxième. Les marches sont couvertes de verre et de gravats qui crissent. Au troisième, l'escalier s'arrête. Une volée entière manque, tombée dans la cage avec le palier. Il reste quatre mètres de vide et, de l'autre côté, les marches qui reprennent vers le quatrième. En bas, dans le trou, un matelas et un casque. Vous mesurez le saut avec les yeux.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Tendre la Corde et traverser",
           "to": "c19-9",
           "if": {
@@ -61,10 +64,12 @@
           }
         },
         {
+          "kind": "aller",
           "text": "Sauter par-dessus le vide",
           "to": "c19-23"
         },
         {
+          "kind": "aller",
           "text": "Redescendre dans le hall",
           "to": "c19-1"
         }
@@ -74,6 +79,7 @@
       "text": "Vous nouez la corde à la rampe et lancez l'autre bout autour d'un fer à béton qui dépasse en face. Trois essais. Le nœud tient. Vous passez pendu, les pieds dans le vide, le sac qui tire vers le trou. Le fer grince mais ne plie pas. De l'autre côté, vous laissez la corde en place pour le retour.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Monter au palier du quatrième",
           "to": "c19-5"
         }
@@ -93,6 +99,7 @@
       "text": "Vous atterrissez sur la marche cassée, une main sur la rampe, l'autre dans le vide. Le béton tient. Vous restez une seconde accroupi, le cœur dans la gorge, à écouter le silence au-dessus. Rien ne descend, pas même la poussière. Vous montez, une main sur le mur, vers la lumière grise du quatrième.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Monter au palier du quatrième",
           "to": "c19-5"
         }
@@ -109,6 +116,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Monter au palier du quatrième",
           "to": "c19-5"
         }
@@ -123,14 +131,17 @@
       },
       "choices": [
         {
+          "kind": "aller",
           "text": "Monter l'escalier principal",
           "to": "c19-20"
         },
         {
+          "kind": "aller",
           "text": "Longer le couloir du quatrième",
           "to": "c19-15"
         },
         {
+          "kind": "agir",
           "text": "Vider la Trousse de soins",
           "to": "c19-13",
           "if": {
@@ -151,6 +162,7 @@
           ]
         },
         {
+          "kind": "aller",
           "text": "Redescendre sur la place",
           "to": "c18-3"
         }
@@ -160,6 +172,7 @@
       "text": "Vous videz la trousse de soins assis sous la fenêtre, dos au mur. Désinfectant, compresse, le pansement serré sur ce qui saigne. Vous regagnez 6 points d'Endurance. Dehors, sur un toit d'en face, quelque chose a bougé, un reflet, puis plus rien. Vous jetez l'emballage et vous vous relevez.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Revenir sur le palier",
           "to": "c19-5"
         }
@@ -169,6 +182,7 @@
       "text": "Au-dessus du quatrième, les fenêtres ont été murées de parpaings. Le noir commence à mi-volée, complet, épais comme de l'eau. Vous posez la main sur la rampe. Elle est tiède. Il y a des rats, vous les entendez sans les voir, et plus haut un goutte-à-goutte régulier. Les marches sont là. Peut-être.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Allumer la Lampe torche",
           "to": "c19-7",
           "if": {
@@ -177,6 +191,7 @@
           }
         },
         {
+          "kind": "aller",
           "text": "Monter à tâtons",
           "to": "c19-26"
         }
@@ -186,6 +201,7 @@
       "text": "Le faisceau de la lampe torche découpe l'escalier. Deux marches manquent au cinquième, une plaque de béton pend par ses ferrailles au-dessus de la volée suivante. Vous enjambez, vous vous baissez. Des traces dans la poussière : des bottes, récentes, qui montent et ne redescendent pas. Au sixième, un peu de jour filtre sous une porte.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Pousser la porte du sixième",
           "to": "c19-12"
         }
@@ -205,6 +221,7 @@
       "text": "Vous posez le pied sur le vide, le sentez à temps, reculez, enjambez. Deux marches manquent, puis quelque chose pend du plafond et vous frôle l'épaule, du béton, des fers, vous passez dessous courbé. Au sixième, un peu de jour filtre sous une porte. Vous l'avez trouvée avec les mains.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Pousser la porte du sixième",
           "to": "c19-12"
         }
@@ -221,6 +238,7 @@
       ],
       "choices": [
         {
+          "kind": "agir",
           "text": "Se relever",
           "to": "c19-5"
         }
@@ -230,10 +248,12 @@
       "text": "Le couloir du quatrième. Une moquette rouge qui colle, des portes ouvertes sur des lits nus. Au milieu, l'air tremble à hauteur d'homme, et vous entendez respirer, un souffle mouillé. Le détecteur ne dit rien : ce n'est pas une anomalie. Une Sangsue. Elle a senti le sang, ou la sueur, ou simplement vous.",
       "choices": [
         {
+          "kind": "attaquer",
           "text": "Tirer dans ce qui tremble",
           "to": "c19-30"
         },
         {
+          "kind": "attaquer",
           "text": "Lancer la Grenade F1 dans le couloir",
           "to": "c19-22",
           "if": {
@@ -249,6 +269,7 @@
           ]
         },
         {
+          "kind": "aller",
           "text": "Reculer sur le palier",
           "to": "c19-5"
         }
@@ -271,6 +292,7 @@
       "text": "La Sangsue tombe et cesse de disparaître. Elle est là, sur la moquette, la bouche ouverte, plus petite qu'elle ne semblait. Vous rechargez. Au bout du couloir, derrière une porte au pictogramme effacé, un escalier de service monte, étroit, avec de vraies fenêtres.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Prendre l'escalier de service",
           "to": "c19-18"
         }
@@ -280,6 +302,7 @@
       "text": "Vous dégoupillez, comptez, lancez la grenade F1 dans le couloir. L'explosion fait tomber le plâtre du plafond et vous bouche les oreilles. Quand la poussière retombe, la Sangsue est visible pour de bon, en deux morceaux contre le mur. Au bout du couloir, une porte de service est sortie de ses gonds. Derrière, un escalier étroit monte vers les étages.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Prendre l'escalier de service",
           "to": "c19-18"
         }
@@ -289,6 +312,7 @@
       "text": "L'escalier de service. Des marches de fer, des fenêtres étroites qui donnent sur l'arrière de l'hôtel, les cuisines, un camion sans roues. Vous montez. Cinquième. Les murs sont couverts d'inscriptions au charbon, des noms de stalkers, des dates, et un seul mot répété jusqu'au plafond. Au sixième, la porte est ouverte.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Entrer au sixième",
           "to": "c19-12"
         }
@@ -298,6 +322,7 @@
       "text": "Le palier du sixième. Un couloir dans chaque direction, des portes dont les plaques ont été arrachées, une par une, et jetées en tas près de l'ascenseur. Les portes sont fermées. Toutes. Quelqu'un a pris la peine. Au fond, une fenêtre donne sur la Centrale, la cheminée, et le Sarcophage qu'on voit d'ici comme une falaise.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Consulter le PDA de Fantôme",
           "to": "c19-27",
           "if": {
@@ -306,10 +331,12 @@
           }
         },
         {
+          "kind": "agir",
           "text": "Fouiller les chambres au hasard",
           "to": "c19-14"
         },
         {
+          "kind": "aller",
           "text": "Redescendre au quatrième",
           "to": "c19-5"
         }
@@ -319,6 +346,7 @@
       "text": "L'écran du PDA de Fantôme s'allume au ralenti. Son dernier message, celui que vous connaissez : Polissya, 26. Et dessous, une ligne que vous n'aviez pas ouverte. Sixième, en face de l'ascenseur, la plaque est par terre. La grille de la salle de bain. Ne reste pas. Vous levez les yeux. En face de l'ascenseur, une porte comme les autres.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Aller à la chambre 26",
           "to": "c19-3"
         }
@@ -328,10 +356,12 @@
       "text": "Dix pas jusqu'à la porte. Entre vous et elle, le couloir se brouille, deux fois, à deux hauteurs différentes. Deux Sangsues. L'une respire, l'autre non, ou plus doucement. Elles ne pressent pas. C'est leur hôtel. Le tas de plaques près de l'ascenseur, c'est peut-être elles aussi, ou ceux qu'elles ont mangés.",
       "choices": [
         {
+          "kind": "attaquer",
           "text": "Tirer sur la première qui se montre",
           "to": "c19-19"
         },
         {
+          "kind": "attaquer",
           "text": "Lancer la Grenade F1 entre les deux",
           "to": "c19-10",
           "if": {
@@ -347,6 +377,7 @@
           ]
         },
         {
+          "kind": "aller",
           "text": "Reculer vers le palier",
           "to": "c19-12"
         }
@@ -369,6 +400,7 @@
       "text": "La seconde Sangsue glisse le long du mur et ne se relève pas. Le couloir cesse de trembler. Vous saignez, vous ne savez pas d'où. La porte en face de l'ascenseur est là, et par terre, dans la poussière, une plaque de plastique brun : 26.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Pousser la porte",
           "to": "c19-31"
         }
@@ -378,6 +410,7 @@
       "text": "La grenade F1 roule entre les deux ombres. Vous vous jetez dans l'embrasure d'une porte. Le souffle arrache les dernières plaques des murs et éteint la fenêtre du fond. Quand vous ressortez, les Sangsues sont visibles, immobiles, l'une sur l'autre. Il reste la porte en face de l'ascenseur, et par terre, une plaque de plastique brun : 26.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Pousser la porte",
           "to": "c19-31"
         }
@@ -392,6 +425,7 @@
       "text": "La chambre 26. Un lit, une armoire ouverte, une valise de stalker sous la fenêtre avec le nom de Fantôme au feutre sur la toile. Vide. Un sac de couchage, une boîte de conserve propre, un livre ouvert à l'envers. Il a dormi ici. Il est reparti sans rien. La salle de bain est au fond, porte entrouverte, carrelage bleu.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Entrer dans la salle de bain",
           "to": "c19-6"
         }
@@ -408,10 +442,12 @@
       ],
       "choices": [
         {
+          "kind": "agir",
           "text": "Dévisser la grille d'aération",
           "to": "c19-16"
         },
         {
+          "kind": "aller",
           "text": "Redescendre sans y toucher",
           "to": "c19-24"
         }
@@ -428,6 +464,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Redescendre",
           "to": "c19-24"
         }
@@ -437,6 +474,7 @@
       "text": "Vous redescendez les six étages sans allumer, sans vous arrêter aux paliers. Au troisième, le vide. Vous le passez comme à la montée, ou autrement. Le hall sent toujours le plâtre mouillé. Dehors, la lumière a baissé. Sur la place, la grande roue n'a pas bougé, et rien d'autre non plus, ce qui ne veut rien dire.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Sortir sur la place",
           "to": "c18-3"
         }
@@ -461,10 +499,12 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Revenir sur le palier du sixième",
           "to": "c19-12"
         },
         {
+          "kind": "aller",
           "text": "Redescendre",
           "to": "c19-24"
         }
@@ -481,10 +521,12 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Remonter au sixième",
           "to": "c19-12"
         },
         {
+          "kind": "aller",
           "text": "Redescendre au quatrième",
           "to": "c19-5"
         }

@@ -41,10 +41,12 @@
       "text": "La route du nord descend de Rostok entre deux rangées de pylônes. Devant vous, le village des Entrepôts militaires : des datchas de bois, des hangars de tôle, un château d'eau rouillé au-dessus des toits. Des coups de feu, au loin, espacés comme une horloge. Sur le bas-côté, un drapeau vert planté dans un tas de sable. Au bout de la route, un barrage. À gauche, les jardins et leurs clôtures couchées.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Descendre la route jusqu'au barrage",
           "to": "c13-17"
         },
         {
+          "kind": "aller",
           "text": "Contourner par les jardins",
           "to": "c13-34"
         }
@@ -54,6 +56,7 @@
       "text": "Deux hommes couchés derrière une mitrailleuse, un sac de sable, un drapeau vert percé. Celui qui parle a une cigarette éteinte au coin de la bouche. Il ne la rallume pas. D'où tu viens. Ce n'est pas une question. Derrière lui, dans la cour de l'ancienne ferme, on charge des caisses sur une civière qui a servi à autre chose.",
       "choices": [
         {
+          "kind": "parler",
           "text": "Rappeler la Vallée sombre au sergent",
           "to": "c13-29",
           "if": {
@@ -62,6 +65,7 @@
           }
         },
         {
+          "kind": "parler",
           "text": "Répondre : Agroprom, avec le Devoir",
           "to": "c13-8",
           "if": {
@@ -70,6 +74,7 @@
           }
         },
         {
+          "kind": "parler",
           "text": "Dire que vous venez du Bar",
           "to": "c13-22"
         }
@@ -86,6 +91,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Entrer dans le village",
           "to": "c13-5"
         }
@@ -102,6 +108,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Entrer dans le village",
           "to": "c13-5"
         }
@@ -111,6 +118,7 @@
       "text": "Le Bar. Il hausse une épaule, la cigarette bouge avec. Tout le monde vient du Bar. Il vous laisse passer sans vous fouiller, ce qui veut dire qu'il a mieux à faire. Reste à couvert sur la place. Il y en a un sur le château d'eau qui ne rate pas. Derrière lui, un homme sans jambes fume sur une civière et regarde le ciel.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Entrer dans le village",
           "to": "c13-5"
         }
@@ -127,6 +135,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Déboucher sur la place",
           "to": "c13-5"
         }
@@ -141,6 +150,7 @@
       },
       "choices": [
         {
+          "kind": "aller",
           "text": "Aller vers le château d'eau",
           "to": "c13-3",
           "if": {
@@ -150,6 +160,7 @@
           }
         },
         {
+          "kind": "agir",
           "text": "Fouiller la datcha au toit crevé",
           "to": "c13-21",
           "if": {
@@ -159,6 +170,7 @@
           }
         },
         {
+          "kind": "agir",
           "text": "Lire l'affiche clouée au poteau",
           "to": "c13-12",
           "if": {
@@ -167,14 +179,17 @@
           }
         },
         {
+          "kind": "aller",
           "text": "Prendre la route de l'est",
           "to": "c13-4"
         },
         {
+          "kind": "aller",
           "text": "Remonter la route de Rostok",
           "to": "c13-19"
         },
         {
+          "kind": "agir",
           "text": "Boire l'anti-rad",
           "to": "c13-25",
           "if": {
@@ -195,6 +210,7 @@
           ]
         },
         {
+          "kind": "agir",
           "text": "Vider la trousse de soins",
           "to": "c13-39",
           "if": {
@@ -220,6 +236,7 @@
       "text": "Vous buvez l'Anti-rad assis dans le bus sans roues, à l'abri de la lunette. Goût de craie, puis le compteur qui ralentit, puis presque rien. Vous perdez 5 rads. Par la vitre cassée, le château d'eau n'a pas bougé. Le reflet de la lunette non plus.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Ressortir sur la place",
           "to": "c13-5"
         }
@@ -229,6 +246,7 @@
       "text": "Vous videz la Trousse de soins sur un siège du bus sans roues : compresse, bande, la seringue dans la cuisse. Le corps se tait un moment. Vous regagnez 6 points d'Endurance. La boîte vide reste sur le siège, à côté d'un journal de 1986.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Ressortir sur la place",
           "to": "c13-5"
         }
@@ -258,6 +276,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Revenir au milieu de la place",
           "to": "c13-5"
         }
@@ -267,6 +286,7 @@
       "text": "La route de Rostok remonte entre les pylônes. Le barrage de la Liberté vous laisse sortir sans un mot ; sortir n'intéresse personne. Derrière vous, un coup de feu, un seul, depuis le village. Vous ne vous retournez pas. Devant, la cheminée de l'usine de Rostok, et sous elle, le Bar.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Revenir au Bar",
           "to": "c08-4"
         }
@@ -276,14 +296,17 @@
       "text": "Le château d'eau est à cent mètres, de l'autre côté d'un terrain nu. Une échelle de fer monte le long de la cuve. Derrière un hangar de tôle, vous reprenez votre souffle. Une balle a claqué dans le gravier à un pas de vous, pour dire bonjour. Le toit du hangar touche presque la passerelle de la cuve. Sur le terrain, trois corps de la Liberté, et un chien qui en mange un.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Monter l'échelle sous le feu",
           "to": "c13-31"
         },
         {
+          "kind": "aller",
           "text": "Passer par les toits des hangars",
           "to": "c13-14"
         },
         {
+          "kind": "agir",
           "text": "Arroser la plateforme à l'AK-74",
           "to": "c13-37",
           "if": {
@@ -320,6 +343,7 @@
       "text": "Réussi. Vous retombez sur la passerelle sans un son. Il est couché derrière sa lunette, le masque relevé sur le front, une bouteille d'eau à portée de main. Il parle tout bas au Monolithe. Le Couteau fait le reste. Il ne se retourne même pas.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Fouiller le corps",
           "to": "c13-2"
         }
@@ -369,6 +393,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Redescendre sur la place",
           "to": "c13-5"
         }
@@ -378,10 +403,12 @@
       "text": "La datcha au toit crevé a un jardin de planches et de ronces. Entre le portail et la porte, l'air tremble au-dessus de l'allée comme au-dessus d'un capot chaud : un « Trampoline ». Vous lancez un boulon. Il monte, ne redescend pas. Derrière la maison, une fenêtre sans vitre, à hauteur d'épaule, avec des dents de verre.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Passer par la fenêtre arrière",
           "to": "c13-16"
         },
         {
+          "kind": "aller",
           "text": "Traverser l'allée au boulon",
           "to": "c13-33"
         }
@@ -399,6 +426,7 @@
       "text": "Réussi. Vous passez au moment où l'allée redevient une allée. Derrière vous, le dernier boulon part vers le ciel et ne revient pas. La porte de la datcha est ouverte. Ça sent le bois mouillé et autre chose, de plus ancien.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Entrer dans la datcha",
           "to": "c13-7"
         }
@@ -415,6 +443,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Entrer dans la datcha",
           "to": "c13-7"
         }
@@ -431,6 +460,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Pousser la porte",
           "to": "c13-7"
         }
@@ -445,10 +475,12 @@
       "text": "Il est assis contre le mur, sous le trou du toit, un long manteau sur une combinaison, la capuche baissée. Un trou net dans la poitrine, pas de sortie. La pluie l'a lavé et séché cent fois. Sa main droite tient encore un PDA contre sa cuisse, comme on tient un livre qu'on a fini. Sur la planche d'en face, quelqu'un a gravé un nom : Fantôme.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Fouiller le corps",
           "to": "c13-30"
         },
         {
+          "kind": "aller",
           "text": "Ressortir sans le toucher",
           "to": "c13-5"
         }
@@ -470,10 +502,12 @@
       ],
       "choices": [
         {
+          "kind": "agir",
           "text": "Lire le PDA",
           "to": "c13-13"
         },
         {
+          "kind": "aller",
           "text": "Repartir vers la place",
           "to": "c13-5"
         }
@@ -483,6 +517,7 @@
       "text": "Un seul message, jamais envoyé. Strelok. Ils m'ont eu aux Entrepôts, je ne monterai pas. Le Décodeur est à l'hôtel Polissya, chambre 26, derrière le radiateur. Tu sais ce qu'il ouvre. Ne souhaite rien. Une lettre en guise de signature. Vous refermez le PDA. Dehors, la pluie reprend sur ce qui reste du toit.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Repartir vers la place",
           "to": "c13-5"
         }
@@ -492,10 +527,12 @@
       "text": "La route de l'est sort du village entre deux hangars. Au dernier, la Liberté a dressé des sacs et une mitrailleuse qui regarde le nord. Ils sont quatre. Quand vous arrivez, la colonne grise sort des arbres : des hommes en combinaison, masque baissé, qui avancent en ligne et chantent. La mitrailleuse part. Deux d'entre eux tombent, les autres ne ralentissent pas. L'un vous a vu.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Tenir la position avec la Liberté",
           "to": "c13-20"
         },
         {
+          "kind": "attaquer",
           "text": "Lancer la Grenade F1",
           "to": "c13-35",
           "if": {
@@ -511,6 +548,7 @@
           ]
         },
         {
+          "kind": "aller",
           "text": "Ramper dans le fossé jusqu'à la route",
           "to": "c13-28"
         }
@@ -533,6 +571,7 @@
       "text": "Vous dégoupillez, comptez deux, lancez. La Grenade F1 roule entre les jambes du premier et le chant s'arrête net. Quand la fumée se couche, il reste trois corps en travers de la route et un masque qui a roulé jusqu'à vos pieds. La mitrailleuse achève le reste. Vous n'avez plus de grenade.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Avancer sur la route",
           "to": "c13-10"
         }
@@ -542,6 +581,7 @@
       "text": "Le silence revient par morceaux. Les hommes de la Liberté rechargent sans parler. Sur la route, les morts du Monolithe ont les yeux ouverts et blancs, et des visages de gens ordinaires. L'un porte une alliance. Plus loin, la route continue vers l'est entre des panneaux rouges à tête de mort, jusqu'aux premiers pins, qui sont rouges aussi.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Continuer vers l'est",
           "to": "c13-6"
         }
@@ -558,10 +598,12 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Continuer vers l'est",
           "to": "c13-6"
         },
         {
+          "kind": "agir",
           "text": "Boire l'anti-rad",
           "to": "c13-38",
           "if": {
@@ -587,6 +629,7 @@
       "text": "Vous buvez l'Anti-rad assis dans le fossé, le dos aux panneaux rouges. Le goût de craie, puis le compteur qui ralentit, puis presque rien. Vous perdez 5 rads. Vous jetez le flacon dans l'eau sans couleur, où il flotte un moment, puis non.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Continuer vers l'est",
           "to": "c13-6"
         }
@@ -601,6 +644,7 @@
       "text": "La route de l'est est barrée de chevaux de frise et de panneaux : un crâne, un éclair, un mot en russe que la rouille a mangé. Au-delà, un champ d'herbe haute jusqu'aux pins rouges, et dedans, des traces, de pas et d'autre chose. Un soulier au milieu, seul. Les mines ne crépitent pas ; le détecteur ne sert à rien ici.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Suivre la Carte des champs de mines",
           "to": "c13-23",
           "if": {
@@ -609,10 +653,12 @@
           }
         },
         {
+          "kind": "aller",
           "text": "Traverser en suivant les traces",
           "to": "c13-15"
         },
         {
+          "kind": "aller",
           "text": "Revenir vers la place",
           "to": "c13-5"
         }
@@ -622,6 +668,7 @@
       "text": "Sur la Carte des champs de mines, l'officier d'Agroprom a tracé un couloir au crayon rouge, deux mètres de large, en zigzag, avec des repères : la borne, le pommier mort, le soulier. Vous suivez le crayon pas à pas. Le soulier est bien là. De l'autre côté, la route reprend et les pins commencent. Vous ne vous retournez pas sur l'herbe.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Continuer vers la Forêt rouge",
           "to": "c14-2"
         }
@@ -639,6 +686,7 @@
       "text": "Réussi. L'herbe ne dit rien. Vous traversez les vingt derniers mètres sans respirer et touchez le bitume de l'autre côté comme on touche un mur après une course. Derrière vous, le soulier est toujours au milieu du champ. Devant, les pins rouges.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Continuer vers la Forêt rouge",
           "to": "c14-2"
         }
@@ -655,10 +703,12 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Continuer vers la Forêt rouge",
           "to": "c14-2"
         },
         {
+          "kind": "agir",
           "text": "Vider la trousse de soins",
           "to": "c13-36",
           "if": {
@@ -684,6 +734,7 @@
       "text": "Vous videz la Trousse de soins sur le bitume : compresse, garrot, la seringue dans la cuisse. La jambe cesse de couler. Vous regagnez 6 points d'Endurance. Vous laissez la boîte vide au bord du champ, à côté du panneau à tête de mort, pour le suivant.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Continuer vers la Forêt rouge",
           "to": "c14-2"
         }

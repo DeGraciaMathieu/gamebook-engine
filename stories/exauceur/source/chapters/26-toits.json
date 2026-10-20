@@ -34,10 +34,12 @@
       "text": "Le vent vous trouve au pied de l'échelle. Il descend de la cheminée en sifflant dans les barreaux, et il sent la rouille et une neige qui n'est pas tombée. L'échelle monte le long du mur de la salle des machines, trente mètres de fer peint en rouge, écaillé à moitié. Plus loin, une porte de service bat sur un escalier noir. En haut, quelque chose claque dans le vent, régulier, comme un drapeau. Ou comme une bâche sur un corps.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Grimper l'échelle rouge",
           "to": "c26-17"
         },
         {
+          "kind": "aller",
           "text": "Prendre l'escalier de service",
           "to": "c26-24"
         }
@@ -64,6 +66,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Vous hisser sur le toit",
           "to": "c26-12"
         }
@@ -80,6 +83,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Sortir sur le toit",
           "to": "c26-12"
         }
@@ -94,18 +98,22 @@
       "text": "Le toit de la salle des machines est un champ de gravier et de bitume fendu, long comme une rue. La cheminée se dresse à l'autre bout, rayée de rouge et de blanc, haubanée de câbles qui chantent. Derrière elle, le Sarcophage, son béton gris, et une passerelle qui pend entre les deux. Au milieu du toit, une cabine de ventilation, porte ouverte. Des bouches de conduits s'ouvrent dans le sol. Le vent ne s'arrête jamais ici.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Longer le toit vers la cheminée",
           "to": "c26-19"
         },
         {
+          "kind": "aller",
           "text": "Ramper dans les conduits de ventilation",
           "to": "c26-22"
         },
         {
+          "kind": "aller",
           "text": "Entrer dans la cabine de ventilation",
           "to": "c26-15"
         },
         {
+          "kind": "agir",
           "text": "Se pencher au bord du toit",
           "to": "c26-30"
         }
@@ -123,6 +131,7 @@
       "text": "La balle passe. Elle mord le rebord à côté de votre main et le béton vous pique la joue. Vous êtes déjà à plat ventre dans le gravier. Au moins, vous savez où ils sont : deux, peut-être trois, dans une hutte de briques sur le toit d'en face, à hauteur de la cheminée. Vous rampez en arrière, le vent couvre votre souffle.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Revenir au milieu du toit",
           "to": "c26-12"
         }
@@ -139,6 +148,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Revenir au milieu du toit",
           "to": "c26-12"
         }
@@ -148,10 +158,12 @@
       "text": "La cabine sent le fer chaud et le vieux sang. Un monolithien est assis contre le ventilateur, les jambes droites, le masque relevé sur un visage de vingt ans. Deux balles dans la poitrine. Ses mains tiennent encore un chapelet de douilles. Sur son gilet, une Grenade F1, la goupille en place. Le vent n'entre pas ici. C'est le premier endroit calme depuis le pont.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Prendre la grenade sur le gilet",
           "to": "c26-27"
         },
         {
+          "kind": "agir",
           "text": "Poser un bandage",
           "to": "c26-3",
           "if": {
@@ -172,6 +184,7 @@
           ]
         },
         {
+          "kind": "aller",
           "text": "Ressortir sur le toit",
           "to": "c26-12"
         }
@@ -188,6 +201,7 @@
       ],
       "choices": [
         {
+          "kind": "agir",
           "text": "Poser un bandage",
           "to": "c26-3",
           "if": {
@@ -208,6 +222,7 @@
           ]
         },
         {
+          "kind": "aller",
           "text": "Ressortir sur le toit",
           "to": "c26-12"
         }
@@ -217,6 +232,7 @@
       "text": "Vous déroulez le bandage et vous serrez. Vous regagnez 3 points d'Endurance. Le mort vous regarde faire, ou c'est le vent qui tourne sa tête. Dehors, la lumière a baissé d'un ton, comme si le ciel se souvenait de l'Émission. Vous reprenez votre souffle une dernière fois. Après la porte, il n'y aura plus d'endroit pour ça.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Ressortir sur le toit",
           "to": "c26-12"
         }
@@ -226,6 +242,7 @@
       "text": "Vous longez le toit en vous tenant aux câbles. À mi-chemin, le gravier devient blanc : des éclats de brique, tombés d'une hutte sur le toit d'en face, de l'autre côté d'une faille de dix mètres où pendent des tuyaux. Deux lunettes brillent dans la hutte. Devant vous, trente mètres à découvert jusqu'au pied de la cheminée, et pas un muret plus haut qu'un genou.",
       "choices": [
         {
+          "kind": "attaquer",
           "text": "Tirer au Vintorez sur la hutte",
           "to": "c26-8",
           "if": {
@@ -234,6 +251,7 @@
           }
         },
         {
+          "kind": "attaquer",
           "text": "Lancer la grenade dans la hutte",
           "to": "c26-31",
           "if": {
@@ -249,6 +267,7 @@
           ]
         },
         {
+          "kind": "aller",
           "text": "Courir à découvert jusqu'à la cheminée",
           "to": "c26-14"
         }
@@ -268,6 +287,7 @@
       "text": "La deuxième lunette s'éteint. Plus rien ne bouge dans la hutte, sauf un bout de toile qui bat. Vous attendez dix respirations, le Vintorez contre la joue, puis vous traversez les trente mètres en marchant. Le gravier blanc craque. Au pied de la cheminée, les haubans vibrent si fort qu'on les entend dans les dents.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Gagner le pied de la cheminée",
           "to": "c26-7"
         }
@@ -277,6 +297,7 @@
       "text": "Vous dégoupillez et vous comptez. La Grenade F1 part en cloche au-dessus de la faille, rebondit sur le toit de la hutte, roule. Le souffle arrive avant le bruit. Des briques, un masque, une botte, tout monte et retombe. Il ne reste de la hutte qu'un angle et une fumée que le vent emporte. Vous traversez sans vous presser. Votre poche est vide.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Gagner le pied de la cheminée",
           "to": "c26-7"
         }
@@ -296,6 +317,7 @@
       "text": "Vous roulez derrière le socle de béton. Les balles le frappent de l'autre côté, trois coups secs, puis le silence. Ils n'ont plus d'angle. Vous êtes couché dans l'ombre de la cheminée, le cœur dans la gorge, et vous riez une seconde, sans bruit. Au-dessus, les haubans chantent. Quelque chose a bougé dans les câbles.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Vous relever au pied de la cheminée",
           "to": "c26-7"
         }
@@ -312,6 +334,7 @@
       ],
       "choices": [
         {
+          "kind": "agir",
           "text": "Vous relever au pied de la cheminée",
           "to": "c26-7"
         }
@@ -343,6 +366,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Avancer au pied de la cheminée",
           "to": "c26-7"
         }
@@ -352,6 +376,7 @@
       "text": "Vous passez entre deux pales, l'une vous frôle le dos. Le conduit descend, tourne deux fois, et s'ouvre sur un rebord de gravier dans l'ombre de la cheminée. Vous ressortez au pied du socle, de la poussière grise jusqu'aux yeux, sans que personne vous ait vu. De l'autre côté du toit, une hutte de briques, deux lunettes qui cherchent ailleurs. Au-dessus, les haubans vibrent.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Avancer au pied de la cheminée",
           "to": "c26-7"
         }
@@ -366,14 +391,17 @@
       "text": "La Chimère est sur la cheminée, à dix mètres, accrochée aux haubans par ses quatre pattes. Deux têtes, deux paires d'yeux qui ne clignent pas en même temps. Elle vous a senti avant que vous l'ayez vue, c'est à ça qu'on les reconnaît. Son poil est gris de poussière. Entre elle et vous, le socle, et au-delà, la passerelle qui commence. Elle ne bouge pas. Ça ne veut rien dire.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Attendre qu'elle se détourne",
           "to": "c26-28"
         },
         {
+          "kind": "agir",
           "text": "Tirer la première",
           "to": "c26-20"
         },
         {
+          "kind": "attaquer",
           "text": "Lancer la grenade sous la cheminée",
           "to": "c26-5",
           "if": {
@@ -402,6 +430,7 @@
       "text": "Le vent tient. La Chimère se détend d'un coup, comme un ressort, et saute sur le toit de la salle des turbines, du côté de la hutte. Vous entendez un cri là-bas, puis un coup de feu, puis plus rien. Vous ne cherchez pas à savoir. Vous passez le socle et vous avancez vers la passerelle, plié sous les haubans, vite.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Gagner la passerelle",
           "to": "c26-4"
         }
@@ -424,6 +453,7 @@
       "text": "La Chimère tombe du socle et ne se relève pas. Une des têtes vous regarde encore, l'autre déjà rien. Vous rechargez avec des doigts qui n'obéissent pas bien. Son sang fume sur le gravier froid. De l'autre côté du socle, la passerelle commence, deux câbles et des caillebotis, qui s'en vont vers le Sarcophage en se balançant.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Gagner la passerelle",
           "to": "c26-4"
         }
@@ -433,6 +463,7 @@
       "text": "Vous dégoupillez et vous lancez la Grenade F1 sous la cheminée, entre les haubans. Le souffle décroche la Chimère comme un fruit. Elle tombe sur le socle, se relève sur trois pattes, et file en boitant vers l'autre toit, sans un cri. Un hauban coupé fouette le vide au-dessus de vous. Votre poche est vide. La passerelle commence juste après le socle.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Gagner la passerelle",
           "to": "c26-4"
         }
@@ -449,6 +480,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Gagner la passerelle",
           "to": "c26-4"
         }
@@ -463,6 +495,7 @@
       },
       "choices": [
         {
+          "kind": "agir",
           "text": "Vous assurer avec la corde et traverser",
           "to": "c26-18",
           "if": {
@@ -471,10 +504,12 @@
           }
         },
         {
+          "kind": "aller",
           "text": "Traverser sans assurance",
           "to": "c26-10"
         },
         {
+          "kind": "agir",
           "text": "Vider la trousse de soins",
           "to": "c26-26",
           "if": {
@@ -500,6 +535,7 @@
       "text": "Vous videz la trousse de soins, assis contre le socle, dos au vent. Vous regagnez 6 points d'Endurance. Les compresses s'envolent une à une vers le parvis. Vous regardez la passerelle battre contre le béton, et vous comptez : elle revient toutes les sept secondes. La porte, à l'autre bout, s'entrouvre et se referme au même rythme. Rien ne la pousse de l'intérieur. Vous l'espérez.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Revenir au départ de la passerelle",
           "to": "c26-4"
         }
@@ -509,6 +545,7 @@
       "text": "Vous passez la Corde en double autour du câble qui tient et vous nouez l'autre bout à votre ceinture. Les premiers mètres sont faciles. Au milieu, la passerelle bascule sous vous et vous restez pendu au câble, les pieds dans le vide, le temps qu'elle revienne. La corde tient. Vous avancez ainsi, pendu et marchant, jusqu'à ce que le béton gris soit assez près pour le toucher. La porte de fer est entrouverte.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Entrer dans le Sarcophage par la passerelle du haut",
           "to": "c27-2"
         }
@@ -526,6 +563,7 @@
       "text": "La passerelle revient sous vos pieds au bon moment. Vous courez trois pas sur le caillebotis penché, le quatrième dans le vide, le cinquième sur le fer. Le câble du haut est de nouveau dans votre main. Derrière vous, la passerelle repart en battant, et le bruit reprend, régulier. Le béton gris est devant, et la porte de fer, entrouverte, qui respire avec le vent.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Entrer dans le Sarcophage par la passerelle du haut",
           "to": "c27-2"
         }
@@ -542,6 +580,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Entrer dans le Sarcophage par la passerelle du haut",
           "to": "c27-2"
         }

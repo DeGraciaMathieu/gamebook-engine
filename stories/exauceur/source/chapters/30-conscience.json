@@ -37,14 +37,17 @@
       ],
       "choices": [
         {
+          "kind": "parler",
           "text": "Écouter ce qu'elles ont à dire",
           "to": "c30-14"
         },
         {
+          "kind": "aller",
           "text": "Avancer entre les cuves sans répondre",
           "to": "c30-22"
         },
         {
+          "kind": "parler",
           "text": "Demander pourquoi elles vous ont appelé",
           "to": "c30-8",
           "if": {
@@ -62,10 +65,12 @@
       ],
       "choices": [
         {
+          "kind": "agir",
           "text": "Les laisser finir",
           "to": "c30-27"
         },
         {
+          "kind": "aller",
           "text": "Avancer vers la cuve vide",
           "to": "c30-5"
         }
@@ -79,10 +84,12 @@
       ],
       "choices": [
         {
+          "kind": "agir",
           "text": "S'arrêter devant la cuve vide",
           "to": "c30-5"
         },
         {
+          "kind": "aller",
           "text": "Revenir écouter ce qu'elles disent",
           "to": "c30-14"
         }
@@ -97,10 +104,12 @@
       ],
       "choices": [
         {
+          "kind": "parler",
           "text": "Demander quand vous êtes passé",
           "to": "c30-3"
         },
         {
+          "kind": "agir",
           "text": "Ne pas répondre et avancer",
           "to": "c30-5"
         }
@@ -114,10 +123,12 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Avancer vers la cuve vide",
           "to": "c30-5"
         },
         {
+          "kind": "aller",
           "text": "Revenir vers l'entrée et les écouter",
           "to": "c30-14"
         }
@@ -132,10 +143,12 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Aller voir la cuve vide",
           "to": "c30-5"
         },
         {
+          "kind": "agir",
           "text": "Chercher ce qui alimente les cuves",
           "to": "c30-2"
         }
@@ -154,18 +167,22 @@
       },
       "choices": [
         {
+          "kind": "aller",
           "text": "Entrer dans la cuve vide",
           "to": "c30-19"
         },
         {
+          "kind": "agir",
           "text": "Regarder les autres cuves de plus près",
           "to": "c30-25"
         },
         {
+          "kind": "agir",
           "text": "Chercher ce qui alimente les cuves",
           "to": "c30-2"
         },
         {
+          "kind": "parler",
           "text": "Leur parler de la pierre peinte du palais",
           "to": "c30-24",
           "if": {
@@ -174,6 +191,7 @@
           }
         },
         {
+          "kind": "parler",
           "text": "Dire ce que vous êtes",
           "to": "c30-12",
           "if": {
@@ -200,10 +218,12 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Descendre dans la cuve",
           "to": "c30-11"
         },
         {
+          "kind": "aller",
           "text": "Ressortir de la cuve",
           "to": "c30-5"
         }
@@ -235,10 +255,12 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Revenir devant la cuve vide",
           "to": "c30-5"
         },
         {
+          "kind": "agir",
           "text": "Chercher ce qui alimente les cuves",
           "to": "c30-2"
         }
@@ -258,10 +280,12 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Revenir devant la cuve vide",
           "to": "c30-5"
         },
         {
+          "kind": "agir",
           "text": "S'essuyer et aller voir l'armoire grise",
           "to": "c30-2"
         }
@@ -279,6 +303,7 @@
       ],
       "choices": [
         {
+          "kind": "agir",
           "text": "Baisser la grande poignée, en sachant",
           "to": "c30-20",
           "if": {
@@ -296,14 +321,17 @@
           }
         },
         {
+          "kind": "agir",
           "text": "Arracher les câbles des cuves",
           "to": "c30-9"
         },
         {
+          "kind": "agir",
           "text": "Baisser les disjoncteurs un par un",
           "to": "c30-28"
         },
         {
+          "kind": "aller",
           "text": "Revenir devant la cuve vide",
           "to": "c30-5"
         }
@@ -317,10 +345,12 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Revenir devant la cuve vide",
           "to": "c30-5"
         },
         {
+          "kind": "agir",
           "text": "Chercher ce qui alimente les cuves",
           "to": "c30-2"
         }
@@ -334,10 +364,12 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Aller à l'armoire grise",
           "to": "c30-20"
         },
         {
+          "kind": "aller",
           "text": "Entrer dans la cuve quand même",
           "to": "c30-26"
         }
@@ -372,10 +404,12 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Reprendre la poignée",
           "to": "c30-20"
         },
         {
+          "kind": "agir",
           "text": "Lâcher et entrer dans la cuve",
           "to": "c30-26"
         }
@@ -389,10 +423,12 @@
       ],
       "choices": [
         {
+          "kind": "agir",
           "text": "Rester jusqu'à la dernière voix",
           "to": "c30-10"
         },
         {
+          "kind": "aller",
           "text": "Sortir sans regarder",
           "to": "c30-18"
         }
@@ -427,14 +463,17 @@
       ],
       "choices": [
         {
+          "kind": "parler",
           "text": "Dire oui aux voix",
           "to": "c30-15"
         },
         {
+          "kind": "agir",
           "text": "Se relever et se battre",
           "to": "c30-4"
         },
         {
+          "kind": "aller",
           "text": "Ramper jusqu'à la grande poignée",
           "to": "c30-20",
           "if": {
@@ -467,14 +506,17 @@
       ],
       "choices": [
         {
+          "kind": "parler",
           "text": "Dire oui aux voix",
           "to": "c30-15"
         },
         {
+          "kind": "agir",
           "text": "Lui prendre le fusil",
           "to": "c30-4"
         },
         {
+          "kind": "aller",
           "text": "Rouler jusqu'à la grande poignée",
           "to": "c30-20",
           "if": {
@@ -521,14 +563,17 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Entrer dans la cuve",
           "to": "c30-15"
         },
         {
+          "kind": "agir",
           "text": "Attendre le suivant",
           "to": "c30-17"
         },
         {
+          "kind": "aller",
           "text": "Courir à la grande poignée",
           "to": "c30-20",
           "if": {

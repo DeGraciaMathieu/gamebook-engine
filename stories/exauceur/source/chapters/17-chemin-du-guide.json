@@ -41,6 +41,7 @@
       "text": "Le transformateur est couché sur le flanc, le ventre ouvert, ses bobines pleines d'aiguilles de pin. Dessous, une trappe de fonte, celle que le Guide a dessinée d'un trait sur sa carte, avec une croix tous les cinquante mètres jusqu'à Pripyat. Vous dépliez la Carte du Guide une dernière fois. L'antenne du Radar gronde quelque part à l'est, au-dessus de la crête. Ici, rien ne gronde. La trappe sent l'eau froide.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Soulever la trappe et descendre",
           "to": "c17-9"
         }
@@ -50,6 +51,7 @@
       "text": "Les barreaux s'arrêtent au bout de six mètres. Vos bottes touchent l'eau. Au-dessus, le carré gris de la trappe ; devant, rien. Le noir du tunnel est complet, un noir qui a du poids. Le détecteur se tait. Quelque chose court sur le béton, petit, vite, puis plus rien. L'air sent la rouille et le rat.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Allumer la Lampe torche",
           "to": "c17-12",
           "if": {
@@ -58,6 +60,7 @@
           }
         },
         {
+          "kind": "aller",
           "text": "Avancer à tâtons le long de la paroi",
           "to": "c17-17"
         }
@@ -84,6 +87,7 @@
       ],
       "choices": [
         {
+          "kind": "agir",
           "text": "Se relever et continuer",
           "to": "c17-12"
         }
@@ -98,6 +102,7 @@
       "text": "Le tunnel est droit, bas, voûté. L'eau coule vers le nord, lente. À cinquante mètres, l'air tremble au-dessus du canal comme au-dessus d'une tôle au soleil : un « Trampoline ». Vous ne le verriez pas si vous ne saviez pas. Les rats l'évitent, leurs traces grimpent sur le tuyau de droite. Sur la paroi, à hauteur d'épaule, des traits de craie blanche, presque effacés.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Suivre les marques du Guide sur la paroi",
           "to": "c17-15",
           "if": {
@@ -106,6 +111,7 @@
           }
         },
         {
+          "kind": "agir",
           "text": "Lancer un boulon et passer",
           "to": "c17-21"
         }
@@ -130,6 +136,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Continuer vers le nord",
           "to": "c17-15"
         }
@@ -148,6 +155,7 @@
       "text": "Le tunnel s'ouvre sur un puits. L'eau s'y verse en filet et met longtemps à toucher le fond. Des barreaux de fer descendent le long de la paroi, mangés de rouille, un sur trois manquant. Un anneau d'acier scellé dans le béton, à hauteur de main, poli par des cordes qui ne sont plus là. Le Guide est passé par ici. Il n'a pas dit comment.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Descendre à la Corde",
           "to": "c17-4",
           "if": {
@@ -156,6 +164,7 @@
           }
         },
         {
+          "kind": "aller",
           "text": "Descendre par les barreaux rouillés",
           "to": "c17-19"
         }
@@ -182,6 +191,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Pousser la porte de fer",
           "to": "c17-4"
         }
@@ -196,14 +206,17 @@
       },
       "choices": [
         {
+          "kind": "aller",
           "text": "Prendre la galerie où l'eau coule",
           "to": "c17-8"
         },
         {
+          "kind": "aller",
           "text": "Prendre la galerie sèche",
           "to": "c17-18"
         },
         {
+          "kind": "agir",
           "text": "Boire l'Anti-rad",
           "to": "c17-23",
           "if": {
@@ -229,6 +242,7 @@
       "text": "Vous videz l'Anti-rad d'un trait, assis sur le caillebotis. Le goût de fer, puis le froid qui descend dans la poitrine. Vous perdez 5 rads. Le compteur se calme. L'aiguille du cadran, elle, ne se calme pas. Vous rangez le flacon vide dans une poche, par habitude : dans la Zone, on ne laisse rien derrière soi qui porte votre odeur.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Choisir une galerie",
           "to": "c17-4"
         }
@@ -238,6 +252,7 @@
       "text": "L'eau vous arrive aux genoux et tire vers le nord. La galerie descend, puis remonte. Au bout de cinquante mètres, l'air tremble au-dessus du canal, exactement là où il faudrait passer. Un deuxième Trampoline. Dans le courant, une bouteille flotte sans avancer, tenue par rien. Le courant, lui, passe sous le tremblement comme s'il ne le voyait pas.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Marcher dans le courant, comme dit le Forestier",
           "to": "c17-10",
           "if": {
@@ -246,6 +261,7 @@
           }
         },
         {
+          "kind": "agir",
           "text": "Lancer un boulon et passer",
           "to": "c17-14"
         }
@@ -270,6 +286,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Continuer dans l'eau",
           "to": "c17-10"
         }
@@ -286,10 +303,12 @@
       ],
       "choices": [
         {
+          "kind": "agir",
           "text": "Fouiller le corps",
           "to": "c17-5"
         },
         {
+          "kind": "aller",
           "text": "Revenir à la salle des vannes",
           "to": "c17-4"
         }
@@ -306,6 +325,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Revenir à la salle des vannes",
           "to": "c17-4"
         }
@@ -328,6 +348,7 @@
       "text": "La Sangsue flotte sur le dos, visible enfin, la bouche fermée. L'eau autour d'elle devient noire. Vous rechargez sans vous presser, les mains lourdes. Le tunnel remonte, et au fond, pour la première fois, il y a de l'air qui bouge : un courant froid qui descend d'en haut, avec une odeur de cave et de plâtre.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Remonter vers l'air froid",
           "to": "c17-16"
         }
@@ -337,6 +358,7 @@
       "text": "Vous courez, l'eau aux cuisses, sans vous retourner. Elle ne suit pas. Elle a ce qu'elle voulait, ou elle attend le prochain. Le tunnel remonte, l'eau redescend aux chevilles, et un courant d'air froid vient d'en haut, avec une odeur de cave et de plâtre. Vous vous arrêtez quand vous ne l'entendez plus respirer.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Remonter vers l'air froid",
           "to": "c17-16"
         }
@@ -346,6 +368,7 @@
       "text": "Un escalier de béton monte vers une porte de tôle. Entre vous et la première marche, cinquante mètres de tunnel sec, et au milieu, l'air qui tremble une dernière fois. Le dernier Trampoline. Sur la Carte du Guide, cette croix-là a quelque chose en plus : un petit trait oblique, du côté gauche, là où le béton de la paroi est noirci.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Suivre le trait de la Carte du Guide",
           "to": "c17-20",
           "if": {
@@ -354,6 +377,7 @@
           }
         },
         {
+          "kind": "agir",
           "text": "Lancer un boulon et passer",
           "to": "c17-24"
         }
@@ -378,6 +402,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Pousser la porte de tôle",
           "to": "c17-20"
         }
@@ -393,6 +418,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Pousser la porte de la cave",
           "to": "c18-2"
         }

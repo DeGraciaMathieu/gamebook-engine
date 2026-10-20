@@ -37,6 +37,7 @@
       "text": "La porte est au fond de l'usine, derrière une grille que quelqu'un a découpée au chalumeau. Du fer, deux battants, une serrure grosse comme un poing. Au-dessus, peint au pochoir : X-18. La Clef du X-18 pèse dans votre main. Derrière le fer, un escalier descend, et l'air qui monte est plus froid que la vallée. Votre détecteur ne dit rien. C'est ce qui vous gêne.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Tourner la Clef du X-18 dans la serrure",
           "to": "c06-17",
           "if": {
@@ -45,6 +46,7 @@
           }
         },
         {
+          "kind": "agir",
           "text": "Renoncer et remonter dans la Vallée sombre",
           "to": "c05-2"
         }
@@ -54,6 +56,7 @@
       "text": "La clef tourne en trois tours. Le battant s'ouvre sur un palier de béton et un escalier qui se perd. Une ampoule morte pend au bout de son fil. Sur le mur, des traces de mains, à hauteur d'homme, puis plus bas, puis au ras du sol. Vous refermez derrière vous. Le bruit de la vallée s'arrête net.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Allumer la Lampe torche et descendre",
           "to": "c06-11",
           "if": {
@@ -62,6 +65,7 @@
           }
         },
         {
+          "kind": "aller",
           "text": "Descendre à tâtons dans le noir",
           "to": "c06-4"
         }
@@ -88,6 +92,7 @@
       ],
       "choices": [
         {
+          "kind": "agir",
           "text": "Vous relever et suivre le couloir",
           "to": "c06-11"
         }
@@ -102,14 +107,17 @@
       "text": "Le premier niveau est un couloir de portes de fer, numérotées à la peinture. Une lampe de secours clignote au fond, verte, et s'éteint quand vous la regardez. Un extincteur traverse le couloir à hauteur de tête et s'écrase contre le mur. Rien ne l'a lancé. Trois portes : ARCHIVES, un vestiaire, et au bout, l'escalier qui continue.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Pousser la porte des archives",
           "to": "c06-25"
         },
         {
+          "kind": "aller",
           "text": "Entrer dans le vestiaire",
           "to": "c06-30"
         },
         {
+          "kind": "aller",
           "text": "Descendre l'escalier du fond",
           "to": "c06-9"
         }
@@ -119,10 +127,12 @@
       "text": "Des casiers de tôle, ouverts pour la plupart, des blouses pendues qui n'ont plus de forme. Au sol, un stalker assis contre le mur, le menton sur la poitrine, mort depuis longtemps. Son PDA est en miettes. Un seul casier est fermé, marqué d'une croix au couteau. Sur la porte, on a gratté : pas le trois.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Ouvrir le casier marqué d'une croix",
           "to": "c06-6"
         },
         {
+          "kind": "aller",
           "text": "Retourner dans le couloir",
           "to": "c06-11"
         }
@@ -144,6 +154,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Retourner dans le couloir",
           "to": "c06-11"
         }
@@ -168,6 +179,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Ramper jusqu'au coffre",
           "to": "c06-2"
         }
@@ -194,6 +206,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Descendre par l'escalier du fond",
           "to": "c06-9"
         }
@@ -210,10 +223,12 @@
       ],
       "choices": [
         {
+          "kind": "agir",
           "text": "Forcer encore la poignée du coffre",
           "to": "c06-2"
         },
         {
+          "kind": "agir",
           "text": "Laisser le coffre et descendre",
           "to": "c06-9"
         }
@@ -228,18 +243,22 @@
       },
       "choices": [
         {
+          "kind": "aller",
           "text": "Entrer dans la salle des cuves",
           "to": "c06-14"
         },
         {
+          "kind": "aller",
           "text": "Pousser la porte de l'infirmerie",
           "to": "c06-16"
         },
         {
+          "kind": "aller",
           "text": "Descendre au troisième niveau",
           "to": "c06-10"
         },
         {
+          "kind": "aller",
           "text": "Remonter jusqu'à l'usine",
           "to": "c06-32"
         }
@@ -249,6 +268,7 @@
       "text": "La salle des cuves est plus grande que ce que l'usine laisse croire. Des cylindres de verre hauts comme deux hommes, vides, l'un fendu. Il fait noir sauf au fond, où l'air tourne sur lui-même en soulevant des éclats de verre. Votre détecteur se met à chanter, par saccades. Il y a quelque chose là-dedans, et ça vaut le voyage.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Éclairer la salle avec la Lampe torche",
           "to": "c06-31",
           "if": {
@@ -257,6 +277,7 @@
           }
         },
         {
+          "kind": "aller",
           "text": "Avancer dans le noir vers le bruit",
           "to": "c06-7"
         }
@@ -266,10 +287,12 @@
       "text": "Le faisceau de la Lampe torche balaie les cuves. Dans le fond, l'anomalie « Carrousel » tourne lentement, invisible sauf pour la poussière qu'elle fait monter en spirale. Au centre, posée comme une bille au fond d'un bol, une pierre bleue qui bat. L'Âme. Vous repérez le bord du Carrousel : trois mètres. Un boulon le dira.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Lancer un boulon et aller chercher l'Âme",
           "to": "c06-20"
         },
         {
+          "kind": "aller",
           "text": "Revenir sur le palier",
           "to": "c06-9"
         }
@@ -286,10 +309,12 @@
       ],
       "choices": [
         {
+          "kind": "agir",
           "text": "Lancer un boulon et aller chercher l'Âme",
           "to": "c06-20"
         },
         {
+          "kind": "aller",
           "text": "Revenir sur le palier",
           "to": "c06-9"
         }
@@ -314,6 +339,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Revenir sur le palier",
           "to": "c06-9"
         }
@@ -330,10 +356,12 @@
       ],
       "choices": [
         {
+          "kind": "agir",
           "text": "Retenter votre chance vers l'Âme",
           "to": "c06-20"
         },
         {
+          "kind": "agir",
           "text": "Renoncer et revenir sur le palier",
           "to": "c06-9"
         }
@@ -350,6 +378,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Revenir sur le palier",
           "to": "c06-9"
         }
@@ -359,6 +388,7 @@
       "text": "L'escalier du troisième niveau descend dans le vert. Le gaz tient au sol comme une eau, épais, et monte à chaque marche. Ça sent la pomme pourrie et le cuivre. Les traces de pas s'y enfoncent et disparaissent. Votre compteur tique une fois, puis deux. Tout en bas, un bruit lourd, régulier, qui ressemble à quelqu'un qui dort.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Mettre le Masque à gaz et descendre",
           "to": "c06-33",
           "if": {
@@ -367,6 +397,7 @@
           }
         },
         {
+          "kind": "aller",
           "text": "Descendre en retenant votre souffle",
           "to": "c06-5"
         }
@@ -376,6 +407,7 @@
       "text": "Le Masque à gaz colle au visage et le monde se met à sentir le caoutchouc. Le vert monte jusqu'à la poitrine, puis au-dessus de la tête. Vous descendez dans un aquarium. Le compteur tique mais reste sage. En bas, une antichambre, une porte de fer entrouverte, et le bruit lourd derrière, qui s'est arrêté quand vous avez posé le pied.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Entrer dans l'antichambre",
           "to": "c06-23"
         }
@@ -397,6 +429,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Entrer dans l'antichambre",
           "to": "c06-23"
         }
@@ -406,6 +439,7 @@
       "text": "L'antichambre est un sas : deux portes, un lavabo arraché, un rideau de plastique. Derrière la porte du fond, quelque chose respire, et à chaque souffle le béton tremble sous vos bottes. Sur le mur, un panneau d'affichage, des photos de patients. Le dernier, c'est un homme très grand. Sur la photo d'après, il n'est plus un homme.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Boire l'anti-rad",
           "to": "c06-12",
           "if": {
@@ -426,6 +460,7 @@
           ]
         },
         {
+          "kind": "agir",
           "text": "Vider la Trousse de soins",
           "to": "c06-29",
           "if": {
@@ -446,6 +481,7 @@
           ]
         },
         {
+          "kind": "aller",
           "text": "Pousser la porte de fer",
           "to": "c06-8"
         }
@@ -455,6 +491,7 @@
       "text": "Vous buvez l'Anti-rad d'un trait. C'est amer, puis froid, et ça descend jusque dans les jambes. Le compteur se calme : vous perdez 5 rads. Vos mains tremblent un peu moins. Vous laissez tomber la fiole dans le lavabo arraché. Derrière la porte, la respiration reprend, plus courte. Il sait que vous êtes là.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Vider la Trousse de soins",
           "to": "c06-29",
           "if": {
@@ -475,6 +512,7 @@
           ]
         },
         {
+          "kind": "aller",
           "text": "Pousser la porte de fer",
           "to": "c06-8"
         }
@@ -484,6 +522,7 @@
       "text": "Vous videz la Trousse de soins. Deux bandes serrées, une seringue dans la cuisse, la plaie du genou refermée avec du fil. Vous regagnez 6 points d'Endurance. Vous jetez la boîte vide. Elle rebondit sur le carrelage, et derrière la porte, la respiration s'arrête. Puis quelque chose se lève.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Boire l'anti-rad",
           "to": "c06-12",
           "if": {
@@ -504,6 +543,7 @@
           ]
         },
         {
+          "kind": "aller",
           "text": "Pousser la porte de fer",
           "to": "c06-8"
         }
@@ -518,6 +558,7 @@
       "text": "La porte s'ouvre sur une salle de machines, des cuves couchées, un plafond perdu dans le vert. Au milieu, le Pseudo-géant. Trois mètres, une tête trop petite, des bras qui touchent le sol, et des sangles encore nouées aux poignets. Il vous regarde avec des yeux d'homme. Il fait un pas et le sol se fend. Dans ce vert, sans lumière, vous ne retrouveriez pas la poignée de la porte. Vous avez le temps d'une seule chose.",
       "choices": [
         {
+          "kind": "attaquer",
           "text": "Lancer la Grenade F1 et se plaquer au sol",
           "to": "c06-18",
           "if": {
@@ -533,6 +574,7 @@
           ]
         },
         {
+          "kind": "agir",
           "text": "Refermer la porte de fer sur lui",
           "to": "c06-27",
           "if": {
@@ -541,6 +583,7 @@
           }
         },
         {
+          "kind": "attaquer",
           "text": "Tirer et tenir devant lui",
           "to": "c06-21"
         }
@@ -550,6 +593,7 @@
       "text": "La Grenade F1 roule entre ses pieds. Vous vous plaquez derrière une cuve. L'explosion mange le gaz d'un coup et la pièce devient blanche. Quand vous rouvrez les yeux, le Pseudo-géant est couché sur le flanc, une jambe tordue sous lui, et il respire encore, lentement. Il ne se relèvera pas avant longtemps. Vous passez à côté de lui. Il vous suit des yeux.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Traverser la salle",
           "to": "c06-24"
         }
@@ -569,10 +613,12 @@
       "text": "La porte de fer claque avant lui. Il frappe, une fois, deux fois, et le fer se bombe vers vous, mais tient. Puis plus rien. Vous entendez son souffle revenir derrière la porte, lent, patient. Il a le temps. Vous, non. L'escalier remonte derrière vous dans le vert.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Remonter au palier du deuxième niveau",
           "to": "c06-9"
         },
         {
+          "kind": "aller",
           "text": "Remonter jusqu'à l'usine",
           "to": "c06-32"
         }
@@ -602,10 +648,12 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Remonter au palier du deuxième niveau",
           "to": "c06-9"
         },
         {
+          "kind": "aller",
           "text": "Remonter jusqu'à l'usine",
           "to": "c06-32"
         }
@@ -615,6 +663,7 @@
       "text": "Vous remontez. Le vert vous lâche au deuxième niveau, le noir au premier. Dans le couloir, un classeur tombe derrière vous, seul, sans conviction. L'escalier, la porte de fer, la clef qui tourne dans l'autre sens. Dehors, c'est encore la Vallée sombre, la brume, le jour qu'il reste. Vous respirez par la bouche pendant un long moment.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Sortir dans la Vallée sombre",
           "to": "c05-2"
         }

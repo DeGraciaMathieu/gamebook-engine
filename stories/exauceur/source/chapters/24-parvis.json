@@ -45,6 +45,7 @@
       "text": "Le parvis de la Centrale est une dalle de béton grande comme un champ. Au bout, le Sarcophage : un bloc gris qui mange la moitié du ciel, et la cheminée rayée de rouge plantée à côté comme une aiguille. Pas un oiseau. Le vent apporte une odeur de fer et de poussière chaude. Entre vous et le béton, des camions renversés, une cour de transformateurs où l'air tremble, et la dalle nue.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Traverser le parvis en Combinaison SEVA",
           "to": "c24-17",
           "if": {
@@ -53,6 +54,7 @@
           }
         },
         {
+          "kind": "aller",
           "text": "Traverser le parvis à découvert",
           "to": "c24-9"
         }
@@ -62,10 +64,12 @@
       "text": "La Combinaison SEVA siffle à chaque pas. L'air filtré a un goût de caoutchouc. Le compteur reste muet, ce qui ne veut pas dire que la dalle est propre. Vous avancez entre deux camions dont les pneus ont fondu dans le béton. Devant, la cheminée. À gauche, la cour des transformateurs, où quelque chose claque à intervalles réguliers.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Couper droit par la dalle",
           "to": "c24-26"
         },
         {
+          "kind": "aller",
           "text": "Passer par la cour des transformateurs",
           "to": "c24-20"
         }
@@ -82,10 +86,12 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Couper droit par la dalle",
           "to": "c24-26"
         },
         {
+          "kind": "aller",
           "text": "Passer par la cour des transformateurs",
           "to": "c24-20"
         }
@@ -95,6 +101,7 @@
       "text": "Deux silhouettes grises sortent de derrière le dernier camion. Masques, fusils bas, pas lents. Ils marchent côte à côte sans se parler, et vous entendez pourtant leurs voix : une prière, les mêmes mots en boucle. Ils ne vous ont pas encore vu. Le camion renversé est à trois pas, sa cabine ouverte comme une bouche.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Marcher vers eux en Tenue du Monolithe",
           "to": "c24-12",
           "if": {
@@ -103,10 +110,12 @@
           }
         },
         {
+          "kind": "agir",
           "text": "Se plaquer dans la cabine du camion",
           "to": "c24-31"
         },
         {
+          "kind": "attaquer",
           "text": "Tirer le premier",
           "to": "c24-14"
         }
@@ -116,6 +125,7 @@
       "text": "Vous marchez vers eux, la Tenue du Monolithe sur le dos et les mains loin des armes. Ils s'arrêtent. Le plus grand regarde votre masque, puis le ciel. Il appelle, dit-il. Il n'attend pas de réponse. Ils repartent vers le pont, et leur prière s'éloigne avec eux. Vous ne tremblez qu'après.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Continuer vers la cheminée",
           "to": "c24-3"
         }
@@ -133,6 +143,7 @@
       "text": "Ils passent. La crosse ne frappe pas une deuxième fois. La prière descend le long du camion, tourne, se perd dans le vent du côté du pont. Vous restez dans la mousse noire le temps de compter jusqu'à cent. Quand vous sortez, la dalle est vide et la cheminée n'a pas bougé.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Rejoindre la cheminée",
           "to": "c24-3"
         }
@@ -168,6 +179,7 @@
       "text": "Ils sont tombés l'un sur l'autre, au milieu de la dalle. Vous retournez le plus grand. Sous le masque, des yeux blancs, ouverts, sans surprise. Ses lèvres bougent encore. Vous ne restez pas pour écouter. La cheminée est là, et le vent vient de tomber d'un coup.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Continuer vers la cheminée",
           "to": "c24-3"
         }
@@ -177,6 +189,7 @@
       "text": "Vous courez. Les balles sifflent, l'une vous entame l'épaule, vous ne vous retournez pas. Le béton défile, un camion, un autre, et la cheminée qui grandit. Derrière, la prière reprend, plus lente : ils ne vous poursuivent pas. Ils savent que la dalle finit sur le Sarcophage, et qu'on n'en revient pas.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Continuer vers la cheminée",
           "to": "c24-3"
         }
@@ -186,10 +199,12 @@
       "text": "La cour des transformateurs. Des cuves rouillées, des isolateurs de porcelaine, des câbles qui pendent jusqu'au sol. Entre deux pylônes, l'air est bleu. Une « Électro » : un claquement, une lueur, et le sol noir en cercle. Le détecteur crépite. Il y a un passage sous le câble, à droite, entre deux claquements.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Lancer un boulon et passer sous le câble",
           "to": "c24-33"
         },
         {
+          "kind": "aller",
           "text": "Revenir vers la dalle",
           "to": "c24-26"
         }
@@ -209,6 +224,7 @@
       "text": "Le boulon tombe où il faut. L'arc claque, bleu, et le sol fume. Vous passez sous le câble pendant qu'il recharge, le dos courbé, les cheveux dressés sur la nuque. De l'autre côté, la cour s'ouvre sur le pied de la cheminée. Derrière vous, l'anomalie claque encore, pour personne.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Continuer vers la cheminée",
           "to": "c24-3"
         }
@@ -225,6 +241,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Continuer vers la cheminée",
           "to": "c24-3"
         }
@@ -239,6 +256,7 @@
       },
       "choices": [
         {
+          "kind": "agir",
           "text": "Chercher un abri sous l'escalier de fer",
           "to": "c24-28",
           "if": {
@@ -248,6 +266,7 @@
           }
         },
         {
+          "kind": "agir",
           "text": "Faire face à ceux qui vous traquent",
           "to": "c24-16",
           "if": {
@@ -271,6 +290,7 @@
       "text": "Le dernier tombe à genoux, et ne prie plus. Le bourdonnement est dans vos dents maintenant. Le ciel au-dessus de la cheminée a la couleur du sang chaud, et les corps sur la dalle commencent à fumer. Vous n'avez plus le temps de les regarder.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Chercher un abri sous l'escalier de fer",
           "to": "c24-28"
         }
@@ -299,6 +319,7 @@
       ],
       "choices": [
         {
+          "kind": "agir",
           "text": "Attendre que le bourdon s'éteigne",
           "to": "c24-13"
         }
@@ -320,6 +341,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Ramper sous l'escalier",
           "to": "c24-13"
         }
@@ -334,6 +356,7 @@
       "text": "Sous l'escalier de la cheminée. Le ciel est redevenu gris, le sol s'est tu. Le réduit sent la bougie et le vieux matelas. Par la porte de tôle, vous voyez la dalle, les camions, et le Sarcophage de nouveau à sa place. En bas, à gauche, une porte de fer dans le flanc de la Centrale. Au-dessus, l'échelle qui monte dans le vent.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Boire l'anti-rad maintenant",
           "to": "c24-30",
           "if": {
@@ -354,6 +377,7 @@
           ]
         },
         {
+          "kind": "agir",
           "text": "Vider la trousse de soins",
           "to": "c24-8",
           "if": {
@@ -374,6 +398,7 @@
           ]
         },
         {
+          "kind": "agir",
           "text": "Poser un bandage",
           "to": "c24-24",
           "if": {
@@ -394,6 +419,7 @@
           ]
         },
         {
+          "kind": "agir",
           "text": "Attendre dans le réduit que le corps revienne",
           "to": "c24-36",
           "if": {
@@ -403,14 +429,17 @@
           }
         },
         {
+          "kind": "agir",
           "text": "Fouiller le réduit",
           "to": "c24-21"
         },
         {
+          "kind": "aller",
           "text": "Descendre vers la porte de fer",
           "to": "c24-34"
         },
         {
+          "kind": "aller",
           "text": "Monter vers l'échelle des toits",
           "to": "c24-23"
         }
@@ -420,6 +449,7 @@
       "text": "Vous plantez l'Anti-rad dans la cuisse, à travers le tissu. Le froid monte jusqu'au ventre, et le goût de métal quitte votre bouche. Vous perdez 5 rads. La seringue vide roule sous le matelas, avec d'autres, qui étaient là avant vous.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Revenir à la porte de tôle",
           "to": "c24-13"
         }
@@ -429,6 +459,7 @@
       "text": "Vous videz la Trousse de soins sur le matelas. Compresses, agrafes, deux ampoules. Vous faites ce que vous savez faire, et ça tient. Vous regagnez 6 points d'Endurance. Dehors, le vent a repris, et quelque chose grince en haut de l'escalier.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Revenir à la porte de tôle",
           "to": "c24-13"
         }
@@ -438,6 +469,7 @@
       "text": "Vous serrez le Bandage là où ça saigne le plus. Le tissu boit, puis tient. Vous regagnez 3 points d'Endurance. Ça ne suffira pas pour ce qui vient, mais ça suffit pour marcher droit jusqu'à la porte. Le réduit sent le sang et la cire.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Revenir à la porte de tôle",
           "to": "c24-13"
         }
@@ -447,10 +479,12 @@
       "text": "Le réduit a été habité. Sur le mur, des marques au charbon, une par jour, puis une par heure, puis plus rien. Sous le matelas, un carnet gonflé d'eau et une radio de l'armée dont un voyant vit encore. Dans le carnet, une seule phrase lisible : je l'entends mieux d'ici.",
       "choices": [
         {
+          "kind": "parler",
           "text": "Écouter la radio",
           "to": "c24-2"
         },
         {
+          "kind": "agir",
           "text": "Laisser ça et revenir à la tôle",
           "to": "c24-13"
         }
@@ -460,6 +494,7 @@
       "text": "La radio ne parle pas. Elle chante : une seule note, longue, sous un grésillement. Puis une voix, plusieurs voix, les mêmes mots que la patrouille. Il appelle. Vous coupez. La note continue une seconde dans votre tête avant de s'éteindre. Vous remettez la radio sous le matelas, et vous ne retouchez pas au carnet.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Revenir à la porte de tôle",
           "to": "c24-13"
         }
@@ -469,14 +504,17 @@
       "text": "La porte de fer de la salle des machines. Une chaîne, un cadenas gros comme un poing, de la rouille par-dessus. À côté, au ras du sol, un soupirail dont la grille a été pliée vers l'intérieur. De la poussière y luit, faiblement, comme un tapis de braises. Derrière la porte, un silence de grande salle.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Forcer la chaîne",
           "to": "c24-15"
         },
         {
+          "kind": "aller",
           "text": "Ramper par le soupirail",
           "to": "c24-6"
         },
         {
+          "kind": "aller",
           "text": "Remonter sous l'escalier",
           "to": "c24-13"
         }
@@ -496,6 +534,7 @@
       "text": "La chaîne cède sans bruit. Vous la retenez à deux mains et vous la posez sur le béton, maillon par maillon. La porte s'ouvre sur un noir qui sent l'huile et la poussière froide. Quelque part dedans, une goutte tombe à intervalles réguliers, sur quelque chose de creux.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Entrer dans la salle des machines",
           "to": "c25-1"
         }
@@ -517,6 +556,7 @@
       "text": "Il tombe en travers du seuil. Vous l'enjambez. Personne d'autre ne vient : la dalle est de nouveau vide, et la porte est ouverte sur un noir qui sent l'huile et la poussière froide. Une goutte tombe quelque part dedans, sur quelque chose de creux.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Entrer dans la salle des machines",
           "to": "c25-1"
         }
@@ -533,6 +573,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Entrer dans la salle des machines",
           "to": "c25-1"
         }
@@ -542,10 +583,12 @@
       "text": "L'échelle des toits est scellée dans le flanc de la cheminée, à côté de l'escalier. Elle monte droit, cinquante mètres de barreaux rouillés, et le vent la fait chanter. En haut, un bord de béton, et rien d'autre à voir d'en bas. Un gant pend à un barreau, à hauteur d'homme, sans main dedans.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Grimper l'échelle des toits",
           "to": "c24-18"
         },
         {
+          "kind": "aller",
           "text": "Redescendre sous l'escalier",
           "to": "c24-13"
         }
@@ -555,6 +598,7 @@
       "text": "Vous grimpez. Le vent prend votre dos, puis vos mains, et la rouille vous reste dans les paumes. À mi-hauteur, vous voyez la Zone entière : la dalle, le pont, Pripyat et sa roue, la Forêt rouge jusqu'au sud. Vous ne regardez pas longtemps. En haut, le bord de béton, et le bruit du vent change.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Monter sur les toits",
           "to": "c26-1"
         }
@@ -575,6 +619,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Sortir du réduit",
           "to": "c24-13"
         }

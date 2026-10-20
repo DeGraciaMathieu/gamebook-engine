@@ -43,10 +43,12 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Avancer entre les blocs de béton",
           "to": "c23-2"
         },
         {
+          "kind": "aller",
           "text": "Descendre le remblai sous le pont",
           "to": "c23-14"
         }
@@ -64,6 +66,7 @@
       },
       "choices": [
         {
+          "kind": "aller",
           "text": "Marcher vers eux en Tenue du Monolithe",
           "to": "c23-17",
           "if": {
@@ -72,6 +75,7 @@
           }
         },
         {
+          "kind": "attaquer",
           "text": "Viser le premier garde au Vintorez",
           "to": "c23-11",
           "if": {
@@ -80,6 +84,7 @@
           }
         },
         {
+          "kind": "attaquer",
           "text": "Lancer la Grenade F1 dans le poste",
           "to": "c23-15",
           "if": {
@@ -95,10 +100,12 @@
           ]
         },
         {
+          "kind": "attaquer",
           "text": "Charger le poste avant la fin de la prière",
           "to": "c23-3"
         },
         {
+          "kind": "aller",
           "text": "Redescendre vers le remblai",
           "to": "c23-14"
         }
@@ -111,6 +118,7 @@
       ],
       "choices": [
         {
+          "kind": "parler",
           "text": "Répondre la fin de la prière",
           "to": "c23-25",
           "if": {
@@ -119,10 +127,12 @@
           }
         },
         {
+          "kind": "agir",
           "text": "Baisser la tête et murmurer n'importe quoi",
           "to": "c23-9"
         },
         {
+          "kind": "attaquer",
           "text": "Tirer le premier, sous la tenue",
           "to": "c23-3"
         }
@@ -143,6 +153,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Descendre vers le parvis de la Centrale",
           "to": "c24-1"
         }
@@ -176,6 +187,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Descendre vers le parvis de la Centrale",
           "to": "c24-1"
         }
@@ -188,6 +200,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Descendre vers le parvis de la Centrale",
           "to": "c24-1"
         }
@@ -210,6 +223,7 @@
       "text": "Le second tombe à côté du premier. Rien n'a fait de bruit, pas même eux. Le brasero continue de fumer entre les deux corps. Vous rechargez, vous attendez, personne ne sort du poste. Sur le pont, le vent pousse une feuille de tôle qui racle le béton, et c'est tout.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Avancer jusqu'au poste de garde",
           "to": "c23-19"
         }
@@ -238,6 +252,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Avancer jusqu'au poste de garde",
           "to": "c23-19"
         }
@@ -272,6 +287,7 @@
       ],
       "choices": [
         {
+          "kind": "agir",
           "text": "Vider la Trousse de soins",
           "to": "c23-8",
           "if": {
@@ -292,6 +308,7 @@
           ]
         },
         {
+          "kind": "aller",
           "text": "Traverser le viaduc vers la Centrale",
           "to": "c23-24"
         }
@@ -301,6 +318,7 @@
       "text": "Vous videz la trousse, assis contre les parpaings, le dos aux morts. Les compresses, l'ampoule, tout. Vous regagnez 6 points d'Endurance. La radio continue d'appeler le poste trois. Vous la retournez face contre la table. Ça ne change rien à la voix.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Traverser le viaduc vers la Centrale",
           "to": "c23-24"
         }
@@ -313,6 +331,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Descendre vers le parvis de la Centrale",
           "to": "c24-1"
         }
@@ -325,6 +344,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Longer la voie jusqu'à la pile",
           "to": "c23-6"
         }
@@ -337,10 +357,12 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Aller jusqu'à la pile",
           "to": "c23-6"
         },
         {
+          "kind": "aller",
           "text": "Remonter vers les blocs de béton",
           "to": "c23-2"
         }
@@ -358,18 +380,22 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Grimper l'échelle jusqu'aux poutres",
           "to": "c23-21"
         },
         {
+          "kind": "aller",
           "text": "Entrer dans la cabane de l'éclusier",
           "to": "c23-12"
         },
         {
+          "kind": "aller",
           "text": "Suivre la voie sous les arches",
           "to": "c23-4"
         },
         {
+          "kind": "agir",
           "text": "Vider la Trousse de soins",
           "to": "c23-26",
           "if": {
@@ -411,6 +437,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Redescendre de l'autre côté",
           "to": "c23-23"
         }
@@ -435,10 +462,12 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Remonter à l'échelle",
           "to": "c23-6"
         },
         {
+          "kind": "aller",
           "text": "Suivre la voie sous les arches",
           "to": "c23-4"
         }
@@ -458,6 +487,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Remonter le remblai vers la Centrale",
           "to": "c23-23"
         }
@@ -470,6 +500,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Descendre vers le parvis de la Centrale",
           "to": "c24-1"
         }
@@ -489,6 +520,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Ressortir vers la pile",
           "to": "c23-6"
         }
@@ -498,6 +530,7 @@
       "text": "Vous videz la trousse, assis contre la pile, la tête sous le béton. Les compresses, l'ampoule, tout. Vous regagnez 6 points d'Endurance. Le pas, là-haut, continue d'aller et venir. Il ne sait pas que vous êtes dessous. Il ne saura pas.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Revenir au pied de l'échelle",
           "to": "c23-6"
         }

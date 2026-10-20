@@ -28,14 +28,17 @@
       "text": "La route du sud descend entre deux rangées de pylônes. Au bout, le poste militaire : une barrière rayée, un mirador, des barbelés qui luisent sous la pluie fine. Derrière, le monde d'avant, qui ressemble au même champ gris. Ici, il n'y a plus rien à trouver. Un camion bâché attend devant la barrière, moteur coupé. Personne n'en descend.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Avancer sur la route vers le poste",
           "to": "c15-3"
         },
         {
+          "kind": "aller",
           "text": "Couper par les bois sur la gauche",
           "to": "c15-8"
         },
         {
+          "kind": "aller",
           "text": "Rebrousser chemin vers le Bar",
           "to": "c08-5"
         }
@@ -50,14 +53,17 @@
       },
       "choices": [
         {
+          "kind": "parler",
           "text": "Se présenter à la barrière",
           "to": "c15-11"
         },
         {
+          "kind": "agir",
           "text": "Attendre la nuit dans le fossé",
           "to": "c15-9"
         },
         {
+          "kind": "agir",
           "text": "Chercher le passeur du Barman au village",
           "to": "c15-14",
           "if": {
@@ -66,6 +72,7 @@
           }
         },
         {
+          "kind": "aller",
           "text": "Rebrousser chemin vers le Bar",
           "to": "c08-5"
         }
@@ -75,6 +82,7 @@
       "text": "Le soldat jette sa cigarette dans la flaque. Un lieutenant sort de la guérite, gilet ouvert, une liste à la main qu'il ne lit pas. Papiers. Vous n'en avez pas. Il le sait avant de demander. Il regarde votre sac, puis la route derrière vous, puis vous. Trois mille. Ce n'est pas une question. Le camion bâché, devant, a payé. Le chauffeur attend toujours qu'on lève la barrière.",
       "choices": [
         {
+          "kind": "payer",
           "text": "Payer le lieutenant (3 000 roubles)",
           "to": "c15-7",
           "if": {
@@ -92,10 +100,12 @@
           ]
         },
         {
+          "kind": "parler",
           "text": "Insister pour passer sans payer",
           "to": "c15-16"
         },
         {
+          "kind": "aller",
           "text": "Repartir sans un mot",
           "to": "c15-3"
         }
@@ -121,10 +131,12 @@
       "text": "La balle passe. Elle claque dans l'eau du fossé, à un mètre de votre botte. Le soldat rabaisse son arme ; c'était l'avertissement, et il n'y en aura pas deux. Vous remontez la route sans courir. Dans votre dos, la barrière reste baissée. Le camion bâché a toujours son moteur coupé. Vous avez compris le prix.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Revenir devant le poste",
           "to": "c15-3"
         },
         {
+          "kind": "aller",
           "text": "Rebrousser chemin vers le Bar",
           "to": "c08-5"
         }
@@ -141,10 +153,12 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Revenir devant le poste",
           "to": "c15-3"
         },
         {
+          "kind": "aller",
           "text": "Rebrousser chemin vers le Bar",
           "to": "c08-5"
         }
@@ -154,10 +168,12 @@
       "text": "Vous attendez dans l'eau jusqu'à ce que le projecteur s'allume. Il balaie la route, les barbelés, le village, revient. Trente secondes de noir entre deux passages. Vous les comptez dix fois. Un chien aboie derrière la barrière, puis se tait. Les grenouilles, elles, ne se taisent pas. Vos jambes ne sentent plus rien.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Ramper vers les barbelés dans le noir",
           "to": "c15-2"
         },
         {
+          "kind": "agir",
           "text": "Renoncer et remonter sur la route",
           "to": "c15-3"
         }
@@ -190,10 +206,12 @@
       "text": "Vous passez sans un bruit. Derrière le premier rang, dix mètres de boue. Puis une seconde clôture, plus haute, avec un panneau. Mines. Et derrière encore une troisième, un fossé, le mirador suivant, un blindé qui dort à l'angle. Ce n'est pas une frontière, c'est une épaisseur. Vous ne la traverserez pas en rampant. Vous revenez par le trou que vous avez fait, avant le retour du projecteur.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Revenir devant le poste",
           "to": "c15-3"
         },
         {
+          "kind": "aller",
           "text": "Rebrousser chemin vers le Bar",
           "to": "c08-5"
         }
@@ -210,10 +228,12 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Revenir devant le poste",
           "to": "c15-3"
         },
         {
+          "kind": "aller",
           "text": "Rebrousser chemin vers le Bar",
           "to": "c08-5"
         }
@@ -223,6 +243,7 @@
       "text": "Le village est à cinq cents mètres de la barrière, hors de portée du projecteur. Dans la troisième maison, la seule avec un toit, un homme fait du thé sur un réchaud. Il vous regarde comme s'il vous attendait, et c'est le cas : le Barman envoie, il reçoit. Il y a un collecteur sous les barbelés, dit-il. Il connaît les mines. Deux mille. Il ne négocie pas plus que le lieutenant, mais lui, au moins, sert le thé.",
       "choices": [
         {
+          "kind": "payer",
           "text": "Payer le passeur (2 000 roubles)",
           "to": "c15-4",
           "if": {
@@ -240,6 +261,7 @@
           ]
         },
         {
+          "kind": "parler",
           "text": "Refuser et retourner devant le poste",
           "to": "c15-3"
         }
@@ -261,6 +283,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Monter l'échelle derrière lui",
           "to": "c15-10"
         }
@@ -281,10 +304,12 @@
       "text": "L'anomalie vous laisse passer. Vous sentez seulement le sol se tendre sous vos semelles, comme une toile. Vous sortez des pins au-dessus du poste, sur la gauche, à l'abri du mirador. D'ici on voit tout : la barrière, la guérite, le fossé, le village sans croix, et derrière les barbelés une deuxième clôture, puis une troisième. Vous descendez vers la route.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Descendre vers la route devant le poste",
           "to": "c15-3"
         },
         {
+          "kind": "aller",
           "text": "Rebrousser chemin vers le Bar",
           "to": "c08-5"
         }
@@ -301,10 +326,12 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Descendre vers la route devant le poste",
           "to": "c15-3"
         },
         {
+          "kind": "aller",
           "text": "Rebrousser chemin vers le Bar",
           "to": "c08-5"
         }

@@ -41,10 +41,12 @@
       "text": "Le tunnel du remblai vous recrache à l'ouest de l'usine. Derrière vous, le Cordon. Devant, une clôture couchée, des herbes hautes jusqu'à la poitrine, et les silos d'Agroprom, gris contre le ciel. Un tank d'eau fuit quelque part, un filet continu sur la tôle. Le détecteur reste calme. Dans les herbes, quelque chose a tracé un sillon, large, récent. Le fossé qui longe la clôture est à sec, et luit d'une rouille qui n'est pas de la rouille.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Couper à travers les herbes hautes",
           "to": "c03-17"
         },
         {
+          "kind": "aller",
           "text": "Longer la clôture par le fossé",
           "to": "c03-29"
         }
@@ -74,6 +76,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Gagner l'angle du portail",
           "to": "c03-19"
         }
@@ -83,6 +86,7 @@
       "text": "Le pseudo-chien ne bouge plus. Vous restez un moment à genoux dans les herbes, à écouter votre propre souffle. Le sang sur vos mains sèche vite. Au-delà, la clôture est à terre, et une brèche dans le mur ouest donne sur la cour. Des hommes en gris et rouge s'y déploient en courant. De la route, à l'est, montent des moteurs, et des ordres criés dans un porte-voix.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Passer la brèche vers la cour",
           "to": "c03-19"
         }
@@ -92,10 +96,12 @@
       "text": "La voie ferrée vient du Dépotoir et s'arrête ici, contre un butoir rouillé. Au nord de l'usine, les silos vous dominent, percés de trous ronds. Un quai de chargement longe les rails jusqu'au premier bâtiment. À droite, trois tanks d'eau sur pilotis, et entre eux l'air qui tremble. Quelque part dans les herbes, un pseudo-chien hurle, puis se tait. De la route, à l'est, des moteurs.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Suivre le quai de chargement",
           "to": "c03-22"
         },
         {
+          "kind": "aller",
           "text": "Passer entre les tanks d'eau",
           "to": "c03-27"
         }
@@ -122,6 +128,7 @@
       "text": "Vous passez. Le wagon vous couvre jusqu'au bout, et le tireur regarde ailleurs, vers la cour, où ça commence. Vous vous glissez entre deux silos. En bas, des hommes en gris et rouge s'abritent derrière des sacs de sable, face au portail est. Les militaires arrivent par là. Vous êtes à la lisière de la cour, à l'angle d'un tank d'eau, invisible.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Avancer jusqu'à la cour",
           "to": "c03-19"
         }
@@ -138,6 +145,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Avancer jusqu'à la cour",
           "to": "c03-19"
         }
@@ -155,6 +163,7 @@
       "text": "Le passage tient. Vous suivez les pilotis sans que l'air bouge, et le détecteur se calme derrière vous. Au bout des tanks, la cour de l'usine s'ouvre entre les silos. Des hommes en gris et rouge s'abritent derrière des sacs de sable. De l'autre côté, au portail est, les militaires descendent de la route. Vous êtes à l'angle du dernier tank, invisible.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Avancer jusqu'à la cour",
           "to": "c03-19"
         }
@@ -171,6 +180,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Avancer jusqu'à la cour",
           "to": "c03-19"
         }
@@ -185,10 +195,12 @@
       "text": "La cour s'étend entre les silos, et ça commence. Les militaires entrent par le portail est en tirant, casques baissés, par bonds de cinq mètres. Le Devoir répond depuis les sacs de sable, sans crier. Un officier tombe le premier, à découvert, dans la boue du portail, et personne ne va le chercher. Vous êtes à l'angle d'un tank d'eau, hors de tout. La tôle vibre à chaque impact. L'herbe, derrière vous, sent la poudre.",
       "choices": [
         {
+          "kind": "attaquer",
           "text": "Tirer sur les militaires avec le Devoir",
           "to": "c03-31"
         },
         {
+          "kind": "agir",
           "text": "Arroser la colonne depuis le silo avec l'AK-74",
           "to": "c03-6",
           "if": {
@@ -197,10 +209,12 @@
           }
         },
         {
+          "kind": "agir",
           "text": "Attendre derrière le tank d'eau",
           "to": "c03-36"
         },
         {
+          "kind": "aller",
           "text": "Ramper jusqu'à l'officier tombé",
           "to": "c03-21"
         }
@@ -244,6 +258,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Descendre dans la cour",
           "to": "c03-4"
         }
@@ -253,6 +268,7 @@
       "text": "Vous reculez dans l'herbe, plié en deux, et les balles passent au-dessus. Derrière vous, la fusillade dure encore un moment, puis se défait. Quand vous relevez la tête, les militaires remontent vers la route en traînant leurs blessés. Le Devoir tient la cour. Un homme en gris et rouge vous regarde sortir des herbes, longtemps, et ne dit rien.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Entrer dans la cour",
           "to": "c03-4"
         }
@@ -270,6 +286,7 @@
       "text": "Ça ne tombe pas de votre côté. Le fracas s'éloigne vers le portail est, puis vers la route. Quand vous sortez de derrière le tank, les militaires remontent le talus en traînant leurs blessés. Le Devoir tient la cour. Personne ne vous a vu, ou personne ne s'en soucie. L'eau continue de fuir sur la tôle, indifférente.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Entrer dans la cour",
           "to": "c03-4"
         }
@@ -286,6 +303,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Entrer dans la cour",
           "to": "c03-4"
         }
@@ -312,6 +330,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Entrer dans la cour",
           "to": "c03-4"
         }
@@ -341,6 +360,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Entrer dans la cour",
           "to": "c03-4"
         }
@@ -350,6 +370,7 @@
       "text": "Vous roulez dans l'herbe sans la sacoche. Le militaire ne vous suit pas. Sa colonne reflue et il part avec elle, à reculons, le fusil sur les herbes. Vous restez couché jusqu'à ce que les moteurs remontent le talus. Le Devoir tient la cour. L'officier est toujours là-bas, dans la boue du portail, et plus personne ne tire au-dessus de lui.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Entrer dans la cour",
           "to": "c03-4"
         }
@@ -364,18 +385,22 @@
       },
       "choices": [
         {
+          "kind": "aller",
           "text": "Entrer dans l'infirmerie",
           "to": "c03-12"
         },
         {
+          "kind": "parler",
           "text": "Parler au lieutenant du Devoir",
           "to": "c03-15"
         },
         {
+          "kind": "agir",
           "text": "S'asseoir au feu",
           "to": "c03-10"
         },
         {
+          "kind": "agir",
           "text": "Fouiller l'officier au portail",
           "to": "c03-18",
           "if": {
@@ -385,10 +410,12 @@
           }
         },
         {
+          "kind": "aller",
           "text": "Entrer dans la salle des pompes",
           "to": "c03-32"
         },
         {
+          "kind": "aller",
           "text": "Aller au portail nord",
           "to": "c03-5"
         }
@@ -398,6 +425,7 @@
       "text": "L'infirmerie. Une porte de fer, un cadenas neuf sur une chaîne neuve, posés par le Devoir. Par la vitre sale, des lits de camp, une armoire blanche, une bouteille vide. Personne ne vous regarde. Le lieutenant tourne le dos. La chaîne est bonne, la porte moins : le cadre a rouillé autour des gonds.",
       "choices": [
         {
+          "kind": "attaquer",
           "text": "Tirer dans la serrure avec le Makarov",
           "to": "c03-37",
           "if": {
@@ -406,10 +434,12 @@
           }
         },
         {
+          "kind": "agir",
           "text": "Forcer la porte à l'épaule",
           "to": "c03-23"
         },
         {
+          "kind": "agir",
           "text": "Laisser la porte",
           "to": "c03-4"
         }
@@ -426,6 +456,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Revenir dans la cour",
           "to": "c03-4"
         }
@@ -452,6 +483,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Revenir dans la cour",
           "to": "c03-4"
         }
@@ -468,6 +500,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Revenir dans la cour",
           "to": "c03-4"
         }
@@ -477,6 +510,7 @@
       "text": "Le lieutenant finit de remonter son fusil avant de lever les yeux. Tempes grises, gilet gris et rouge, une brûlure ancienne sur le cou. Il connaît l'usine. Il connaît ce qu'il y a dessous, aussi, et il dit « dessous » comme on parle d'un vivant. Il a vu passer des stalkers qui cherchaient quelqu'un ici. Il ne demande pas qui vous cherchez.",
       "choices": [
         {
+          "kind": "parler",
           "text": "Lui demander ce qu'il sait de Strelok",
           "to": "c03-34",
           "if": {
@@ -485,6 +519,7 @@
           }
         },
         {
+          "kind": "payer",
           "text": "Payer ce qu'il sait (100 roubles)",
           "to": "c03-20",
           "if": {
@@ -517,6 +552,7 @@
           ]
         },
         {
+          "kind": "aller",
           "text": "Le laisser à son fusil",
           "to": "c03-4"
         }
@@ -532,6 +568,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Revenir dans la cour",
           "to": "c03-4"
         }
@@ -547,6 +584,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Revenir dans la cour",
           "to": "c03-4"
         }
@@ -556,6 +594,7 @@
       "text": "Le feu brûle dans un bidon percé, entre deux sacs de sable. Un homme du Devoir y fait chauffer de l'eau et ne vous parle pas. Il vous laisse la place. La chaleur vient d'un seul côté, le reste du corps reste froid. Les morts du portail ont cessé de sentir quoi que ce soit. Pas vous.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Manger la conserve",
           "to": "c03-39",
           "if": {
@@ -576,6 +615,7 @@
           ]
         },
         {
+          "kind": "agir",
           "text": "Poser le bandage",
           "to": "c03-25",
           "if": {
@@ -596,6 +636,7 @@
           ]
         },
         {
+          "kind": "aller",
           "text": "Retourner dans la cour",
           "to": "c03-4"
         }
@@ -605,6 +646,7 @@
       "text": "Vous ouvrez la conserve et la mangez froide, avec les doigts. Du poisson, ou quelque chose qui a été du poisson. Vous regagnez 2 points d'Endurance. L'homme du Devoir regarde la boîte vide, puis le feu. Il la pousse dans le bidon du bout de sa botte. Le métal noircit et se tord.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Retourner dans la cour",
           "to": "c03-4"
         }
@@ -614,6 +656,7 @@
       "text": "Vous défaites le bandage et le posez serré sur ce qui saigne. Le tissu boit vite, puis s'arrête. Vous regagnez 3 points d'Endurance. L'homme du Devoir ne lève pas les yeux. L'eau bout dans sa gamelle. Il la retire du feu, attend, et la boit sans rien mettre dedans.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Retourner dans la cour",
           "to": "c03-4"
         }
@@ -635,6 +678,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Revenir dans la cour",
           "to": "c03-4"
         }
@@ -649,10 +693,12 @@
       "text": "La salle des pompes. Trois pompes mortes, grosses comme des voitures, et de l'eau noire à mi-cheville qui ne vient de nulle part. Au centre, une trappe de fonte ouverte sur une échelle. Il en monte un froid qui n'a rien à voir avec la saison, et une odeur de cave et de fer. Quelqu'un a gravé une flèche dans la rouille, vers le bas. Pas de date.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Descendre dans les souterrains d'Agroprom",
           "to": "c04-1"
         },
         {
+          "kind": "aller",
           "text": "Ressortir dans la cour",
           "to": "c03-4"
         }
@@ -662,6 +708,7 @@
       "text": "Vous remontez par la trappe de la salle des pompes. La lumière du jour, après les galeries, fait mal. Les trois pompes mortes n'ont pas bougé, l'eau noire non plus. Vous restez assis au bord de la trappe, les bottes qui dégouttent, à attendre que vos mains s'arrêtent de trembler. Dehors, la cour. Le feu du Devoir fume toujours entre les silos.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Regagner la cour entre les silos",
           "to": "c03-4"
         }
@@ -671,10 +718,12 @@
       "text": "La route du nord part du portail entre deux rangées de barbelés couchés. L'homme du Devoir qui la garde vous regarde passer et ne dit qu'un mot, Kouznetsov, comme un avertissement ou une adresse. Au-delà, l'asphalte craquelé monte vers une crête, et derrière la crête, une fumée. Le vent vient de là. Il sent le chlore, de très loin.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Prendre la route du nord",
           "to": "c07-1"
         },
         {
+          "kind": "aller",
           "text": "Revenir dans la cour",
           "to": "c03-4"
         }

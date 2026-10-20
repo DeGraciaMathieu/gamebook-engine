@@ -90,14 +90,17 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Marcher droit vers la porte de la crypte",
           "to": "2"
         },
         {
+          "kind": "agir",
           "text": "Fouiller les ruines alentour avant d'entrer",
           "to": "3"
         },
         {
+          "kind": "aller",
           "text": "S'approcher du colporteur installé contre les ruines",
           "to": "22"
         }
@@ -134,10 +137,12 @@
       },
       "choices": [
         {
+          "kind": "aller",
           "text": "Marcher vers la porte de la crypte",
           "to": "2"
         },
         {
+          "kind": "agir",
           "text": "Fouiller les ruines alentour",
           "to": "3"
         }
@@ -154,10 +159,12 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Rejoindre la porte de la crypte",
           "to": "2"
         },
         {
+          "kind": "aller",
           "text": "Retourner voir le colporteur",
           "to": "22"
         }
@@ -172,10 +179,12 @@
       "text": "Une lourde porte de pierre barre le passage, gravée d'un roi couronné dont le visage a été martelé. Une serrure de bronze vert-de-gris en marque le centre.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Pousser la porte de toutes vos forces",
           "to": "4"
         },
         {
+          "kind": "agir",
           "text": "Utiliser la clef rouillée",
           "to": "5",
           "if": {
@@ -196,6 +205,7 @@
       ],
       "choices": [
         {
+          "kind": "agir",
           "text": "Vous relever et avancer",
           "to": "6"
         }
@@ -211,6 +221,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Descendre prudemment",
           "to": "6"
         }
@@ -228,14 +239,17 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Prendre le couloir de gauche",
           "to": "7"
         },
         {
+          "kind": "aller",
           "text": "Prendre le couloir de droite",
           "to": "8"
         },
         {
+          "kind": "aller",
           "text": "Avancer vers le portail de bronze",
           "to": "9"
         }
@@ -274,10 +288,12 @@
       ],
       "choices": [
         {
+          "kind": "agir",
           "text": "Fouiller le reste de la salle",
           "to": "11"
         },
         {
+          "kind": "aller",
           "text": "Retourner au carrefour",
           "to": "6"
         }
@@ -294,6 +310,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Retourner au carrefour",
           "to": "6"
         }
@@ -323,6 +340,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Retraverser et retourner au carrefour",
           "to": "6"
         }
@@ -339,10 +357,12 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Rejoindre le carrefour",
           "to": "6"
         },
         {
+          "kind": "agir",
           "text": "Lancer votre corde de chanvre et retraverser vers la chapelle",
           "to": "12",
           "if": {
@@ -356,6 +376,7 @@
       "text": "Le portail de bronze est scellé. En son centre, une empreinte creuse a la forme d'un petit os sculpté. Les battants sont épais, mais le métal est ancien et travaillé par les siècles.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Poser l'amulette dans l'empreinte",
           "to": "15",
           "if": {
@@ -364,10 +385,12 @@
           }
         },
         {
+          "kind": "agir",
           "text": "Forcer le portail",
           "to": "16"
         },
         {
+          "kind": "aller",
           "text": "Retourner au carrefour",
           "to": "6"
         }
@@ -394,6 +417,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Reprendre votre souffle devant le portail",
           "to": "9"
         }
@@ -411,10 +435,12 @@
       ],
       "choices": [
         {
+          "kind": "attaquer",
           "text": "Dégainer et charger",
           "to": "18"
         },
         {
+          "kind": "agir",
           "text": "Lire les mots du rouleau",
           "to": "19",
           "if": {
@@ -423,6 +449,7 @@
           }
         },
         {
+          "kind": "agir",
           "text": "Boire la potion de vigueur avant d'agir",
           "to": "20",
           "if": {
@@ -448,10 +475,12 @@
       ],
       "choices": [
         {
+          "kind": "attaquer",
           "text": "Dégainer et charger",
           "to": "18"
         },
         {
+          "kind": "agir",
           "text": "Lire les mots du rouleau",
           "to": "19",
           "if": {

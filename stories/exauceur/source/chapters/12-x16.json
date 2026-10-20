@@ -44,6 +44,7 @@
       "text": "La porte de l'usine se referme derrière vous. Un escalier de fer descend dans le noir, et l'odeur monte : chlore, rouille, quelque chose de sucré. Au mur, un panneau à moitié décollé, X-16, et une flèche vers le bas. Une lumière rouge clignote très loin, s'éteint, revient. Le détecteur se tait. Ici, il n'y a rien à détecter.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Descendre à la Lampe torche",
           "to": "c12-19",
           "if": {
@@ -52,6 +53,7 @@
           }
         },
         {
+          "kind": "aller",
           "text": "Descendre à tâtons le long de la rampe",
           "to": "c12-8"
         }
@@ -61,6 +63,7 @@
       "text": "Le faisceau de la Lampe torche prend la poussière en suspens et les marches une à une. Des traces de bottes dans la rouille, qui descendent. Aucune ne remonte. Au bas de l'escalier, un couloir de béton, des tuyaux au plafond, et ce ronronnement qu'on entend avec les dents plus qu'avec les oreilles.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Avancer vers le premier palier",
           "to": "c12-27"
         }
@@ -77,6 +80,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Avancer vers le premier palier",
           "to": "c12-27"
         }
@@ -94,10 +98,12 @@
       "text": "Ça passe. Le sang s'arrête, la pression retombe comme une main qu'on retire. Deux couloirs partent du palier : à gauche, une double porte à hublots marquée d'une croix rouge, et derrière, des voix basses qui répètent la même chose. À droite, une gaine de ventilation éventrée, assez large pour un homme, d'où vient une odeur de chien mouillé.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Passer par l'infirmerie",
           "to": "c12-4"
         },
         {
+          "kind": "aller",
           "text": "Ramper dans la gaine de ventilation",
           "to": "c12-10"
         }
@@ -118,10 +124,12 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Passer par l'infirmerie",
           "to": "c12-4"
         },
         {
+          "kind": "aller",
           "text": "Ramper dans la gaine de ventilation",
           "to": "c12-10"
         }
@@ -131,6 +139,7 @@
       "text": "L'infirmerie. Des lits de fer, des draps bruns, un chariot renversé. Six hommes debout entre les lits, en vestes de stalkers, le dos voûté, les bras pendants. Ils marmonnent ensemble, un seul mot que vous n'arrivez pas à comprendre. L'un d'eux tient encore son fusil à l'envers. Ils ne vous ont pas vu. Pas encore. La porte du fond est à vingt pas.",
       "choices": [
         {
+          "kind": "attaquer",
           "text": "Lancer une Grenade F1 entre les lits",
           "to": "c12-22",
           "if": {
@@ -146,6 +155,7 @@
           ]
         },
         {
+          "kind": "attaquer",
           "text": "Tirer dans le tas",
           "to": "c12-15"
         }
@@ -165,6 +175,7 @@
       "text": "Le dernier tombe en travers d'un lit et le drap boit lentement. Le silence revient, moins le ronronnement. Vous ramassez vos douilles sans savoir pourquoi. Dans la poche d'un des corps, un PDA mort. Dans sa bouche, encore ce mot, comme un bruit de gorge. La porte du fond donne sur un escalier qui descend.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Descendre vers le second palier",
           "to": "c12-20"
         }
@@ -174,6 +185,7 @@
       "text": "Vous dégoupillez la Grenade F1, vous comptez deux, vous la faites rouler entre les lits. L'explosion remplit la pièce et vos oreilles. Quand la poussière retombe, il n'y a plus que des draps qui brûlent et des formes qui ne marmonnent plus. Vous traversez sans regarder. La porte du fond donne sur un escalier qui descend.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Descendre vers le second palier",
           "to": "c12-20"
         }
@@ -183,6 +195,7 @@
       "text": "La gaine descend en pente douce, en tôle, et chaque mouvement sonne. Dix mètres plus bas, elle s'ouvre sur une salle de machines. Trois Snorks sont là, à quatre pattes sur les filtres, masques à gaz greffés aux visages, qui reniflent le sol. L'un d'eux lève la tête vers la gaine. Les crocs dépassent du caoutchouc. Ils sautent plus loin que vous ne courez.",
       "choices": [
         {
+          "kind": "attaquer",
           "text": "Lancer une Grenade F1 dans la salle",
           "to": "c12-35",
           "if": {
@@ -198,10 +211,12 @@
           ]
         },
         {
+          "kind": "aller",
           "text": "Sauter et les affronter",
           "to": "c12-3"
         },
         {
+          "kind": "agir",
           "text": "Rester immobile dans la gaine",
           "to": "c12-17"
         }
@@ -221,6 +236,7 @@
       "text": "Le dernier Snork rampe encore sur un mètre, puis se couche. Son masque siffle. Vous respirez. La salle des machines est une forêt de filtres morts et de moteurs couverts de gras ; au fond, une porte coupe-feu entrouverte sur un escalier, et le ronronnement qui vient d'en bas.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Descendre vers le second palier",
           "to": "c12-20"
         }
@@ -230,6 +246,7 @@
       "text": "La Grenade F1 roule sur la tôle, tombe entre les filtres. Deux secondes. Le souffle remonte dans la gaine et vous plaque contre la paroi. En bas, les Snorks ne bougent plus ; l'un d'eux fume. Vous vous laissez glisser. Au fond de la salle des machines, une porte coupe-feu entrouverte, un escalier qui descend.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Descendre vers le second palier",
           "to": "c12-20"
         }
@@ -247,6 +264,7 @@
       "text": "Il se détourne. Un bruit plus loin dans la salle, une tôle qui tombe, et les trois partent d'un bond vers l'autre côté. Vous attendez encore, le temps de compter jusqu'à cent. Puis vous descendez de la gaine sans un son, entre les filtres morts, jusqu'à une porte coupe-feu et un escalier qui descend.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Descendre vers le second palier",
           "to": "c12-20"
         }
@@ -274,6 +292,7 @@
       "text": "Le sang s'arrête vite, cette fois. Vous essuyez votre lèvre du dos de la main et vous continuez. Au bout d'un couloir de portes grises, une baie vitrée brisée donne sur le vide, et en dessous, loin, des formes rondes comme des silos couchés. Un palier de fer surplombe tout ça.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Avancer jusqu'au palier des cuves",
           "to": "c12-6"
         }
@@ -294,6 +313,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Avancer jusqu'au palier des cuves",
           "to": "c12-6"
         }
@@ -308,14 +328,17 @@
       },
       "choices": [
         {
+          "kind": "aller",
           "text": "Descendre dans la salle des cuves",
           "to": "c12-11"
         },
         {
+          "kind": "aller",
           "text": "Monter à la coursive",
           "to": "c12-14"
         },
         {
+          "kind": "agir",
           "text": "Boire l'Anti-rad avant de descendre",
           "to": "c12-31",
           "if": {
@@ -336,6 +359,7 @@
           ]
         },
         {
+          "kind": "agir",
           "text": "Poser un Bandage sur la plaie",
           "to": "c12-25",
           "if": {
@@ -368,6 +392,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Redescendre au palier des cuves",
           "to": "c12-6"
         }
@@ -377,6 +402,7 @@
       "text": "L'Anti-rad a un goût de fer et de pomme. Vous gardez la seringue vide dans la main sans savoir quoi en faire, puis vous la laissez tomber à travers la grille. Elle met longtemps à toucher le sol. Le compteur hésite, puis recule. Vous perdez 5 rads. La brume verte, en bas, n'a pas bougé.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Revenir au palier des cuves",
           "to": "c12-6"
         }
@@ -386,6 +412,7 @@
       "text": "Vous serrez le Bandage sur ce qui saigne le plus, les dents dans le tissu pour faire le nœud. Ça tient. La douleur se cale quelque part où elle ne gêne pas. Vous regagnez 3 points d'Endurance. En bas, la brume dort toujours sur le sol de la salle des cuves, et le ronronnement attend.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Revenir au palier des cuves",
           "to": "c12-6"
         }
@@ -395,6 +422,7 @@
       "text": "Au bas de l'escalier, la brume vous arrive aux cuisses. Elle n'a pas d'odeur, et c'est ça qui inquiète. Vos yeux piquent. Entre les cuves, un chemin de caillebotis traverse la salle sur cinquante mètres jusqu'à une porte blindée, ouverte, avec de la lumière blanche derrière. Sur la cuve la plus proche, à hauteur d'homme, une main a laissé cinq traînées dans la rouille.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Mettre le Masque à gaz et traverser",
           "to": "c12-37",
           "if": {
@@ -403,6 +431,7 @@
           }
         },
         {
+          "kind": "aller",
           "text": "Traverser en retenant votre souffle",
           "to": "c12-5"
         }
@@ -412,6 +441,7 @@
       "text": "Le caoutchouc du Masque à gaz colle à vos joues et le monde se réduit à deux ronds de verre. Vous traversez en comptant vos pas. Entre la troisième et la quatrième cuve, un homme est couché sur le caillebotis, sans masque, la peau du visage comme du papier. Vous l'enjambez. La porte blindée, la lumière blanche, un escalier qui descend encore.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Descendre vers le troisième palier",
           "to": "c12-23"
         }
@@ -428,6 +458,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Descendre vers le troisième palier",
           "to": "c12-23"
         }
@@ -445,10 +476,12 @@
       "text": "Vous tenez. Le sang s'arrête quand vous atteignez la porte, comme si la chose derrière avait décidé de vous laisser entrer. La salle de contrôle. Au centre, une colonne de métal entourée d'anneaux de cuivre, qui tourne lentement et chauffe l'air. Un pupitre de cadrans. Un gros levier rouge sous une plaque gravée. Sur une console, à côté, une chemise cartonnée et un terminal allumé.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Abaisser le levier de l'émetteur",
           "to": "c12-7"
         },
         {
+          "kind": "aller",
           "text": "Aller d'abord à la console",
           "to": "c12-28"
         }
@@ -469,10 +502,12 @@
       ],
       "choices": [
         {
+          "kind": "agir",
           "text": "Abaisser le levier de l'émetteur",
           "to": "c12-7"
         },
         {
+          "kind": "aller",
           "text": "Aller d'abord à la console",
           "to": "c12-28"
         }
@@ -493,6 +528,7 @@
       ],
       "choices": [
         {
+          "kind": "agir",
           "text": "Fouiller la console",
           "to": "c12-13",
           "if": {
@@ -502,6 +538,7 @@
           }
         },
         {
+          "kind": "agir",
           "text": "Brancher la Clé USB de Strelok au terminal",
           "to": "c12-21",
           "if": {
@@ -519,6 +556,7 @@
           }
         },
         {
+          "kind": "aller",
           "text": "Remonter vers la surface",
           "to": "c12-34"
         }
@@ -540,10 +578,12 @@
       ],
       "choices": [
         {
+          "kind": "agir",
           "text": "Abaisser le levier de l'émetteur",
           "to": "c12-7"
         },
         {
+          "kind": "aller",
           "text": "Remonter sans toucher à l'émetteur",
           "to": "c12-18"
         }
@@ -560,6 +600,7 @@
       ],
       "choices": [
         {
+          "kind": "agir",
           "text": "Brancher la Clé USB de Strelok",
           "to": "c12-21",
           "if": {
@@ -568,6 +609,7 @@
           }
         },
         {
+          "kind": "aller",
           "text": "Remonter vers la surface",
           "to": "c12-34"
         }
@@ -583,6 +625,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Remonter avec ce que vous savez",
           "to": "c12-34"
         }
@@ -592,6 +635,7 @@
       "text": "Le chemin du retour est le même, à l'envers, et il est silencieux. La brume des cuves s'est couchée plus bas. Sur la coursive, rien ne vole. Derrière les hublots de l'infirmerie, des hommes sont assis contre les lits, les mains sur les genoux, la bouche fermée, et l'un d'eux vous suit des yeux sans tourner la tête. Vous ne lui dites rien. L'escalier de fer, la porte de l'usine, le jour gris de Yantar.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Pousser la porte de l'usine",
           "to": "c11-2"
         }
@@ -611,6 +655,7 @@
       "text": "Le troisième glisse le long de la rampe et reste assis, la bouche ouverte sur son mot. Vous enjambez. Vos mains sur la rampe de fer, vos pieds qui comptent les marches, et le ronronnement qui diminue à chaque palier sans jamais tout à fait partir. La porte de l'usine. Le jour gris de Yantar. Dans le sac, les Documents du X-16 pèsent, et derrière vous l'émetteur tourne toujours.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Pousser la porte de l'usine",
           "to": "c11-2"
         }

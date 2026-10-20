@@ -66,6 +66,7 @@
       "text": "Rostok commence par un mur. Des hangars de tôle, des rails qui ne mènent plus nulle part, un canon braqué sur le nord. Les hommes du Devoir patrouillent en gris et rouge, et personne ne vous regarde plus de deux secondes. Au fond de la cour, un escalier de béton descend sous l'usine. Sur la porte, à la peinture blanche : 100 Rads. Ça sent la saucisse et le chlore avant même d'avoir poussé le battant.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Descendre l'escalier du Bar",
           "to": "c08-23",
           "if": {
@@ -75,6 +76,7 @@
           }
         },
         {
+          "kind": "aller",
           "text": "Descendre l'escalier du Bar",
           "to": "c08-11",
           "if": {
@@ -93,10 +95,12 @@
       },
       "choices": [
         {
+          "kind": "aller",
           "text": "Retourner dans la salle",
           "to": "c08-17"
         },
         {
+          "kind": "agir",
           "text": "S'asseoir pour reprendre son souffle",
           "to": "c08-20"
         }
@@ -106,10 +110,12 @@
       "text": "Vous revenez par la porte des Terres sauvages, le vent dans le dos. Les deux hommes du Devoir comptent un de plus, et c'est vous. La cave vous reprend avec son odeur de saucisse et de chlore, comme si vous n'étiez jamais parti. Le Barman essuie un verre. Il ne demande pas d'où vous venez. Il le sait à la poussière sur vos bottes.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Retourner dans la salle",
           "to": "c08-17"
         },
         {
+          "kind": "agir",
           "text": "S'asseoir pour reprendre son souffle",
           "to": "c08-20"
         }
@@ -119,10 +125,12 @@
       "text": "Vous redescendez de la route du nord, par la cour, entre les pylônes. Le canon antiaérien n'a pas bougé. En bas, la cave est pleine comme à chaque tombée du jour : ceux qui rentrent, ceux qui ne partiront pas. Vous posez le sac contre le comptoir. La radio grésille la même chanson que l'autre fois. Elle n'en connaît peut-être qu'une.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Retourner dans la salle",
           "to": "c08-17"
         },
         {
+          "kind": "agir",
           "text": "S'asseoir pour reprendre son souffle",
           "to": "c08-20"
         }
@@ -132,10 +140,12 @@
       "text": "Vous n'êtes pas parti. La route du sud vous a ramené, les barbelés sont restés derrière, et le Bar vous accueille sans un mot, parce qu'il a déjà vu ça. Le Barman pousse un verre vers vous sans qu'on le lui ait demandé. Le vieux, dans son coin, a peut-être souri. Vous ne le saurez pas.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Retourner dans la salle",
           "to": "c08-17"
         },
         {
+          "kind": "agir",
           "text": "S'asseoir pour reprendre son souffle",
           "to": "c08-20"
         }
@@ -152,6 +162,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Rentrer au Bar",
           "to": "c08-17"
         }
@@ -168,6 +179,7 @@
       ],
       "choices": [
         {
+          "kind": "agir",
           "text": "Plier la carte et retourner dans la salle",
           "to": "c08-17"
         }
@@ -177,6 +189,7 @@
       "text": "Vous passez sous son bras et une crosse vous rattrape dans les côtes. Vous traversez la cave plié en deux, jusqu'au mur du fond, là où le Barman a déjà levé le fusil. Ça suffit. Le sergent crache par terre et retourne s'asseoir. Vous restez un moment contre la pierre froide, à compter vos côtes. Elles y sont toutes. Pas toutes à leur place.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Regarder la salle",
           "to": "c08-17"
         }
@@ -186,6 +199,7 @@
       "text": "La chaise grince. Il attend. Ses yeux sont clairs, délavés, de la couleur d'un ciel au-dessus du Dépotoir. Il ne pose pas de question : c'est vous qui êtes venu. Le poêle craque. Vous avez l'impression qu'il connaît déjà la fin de ce que vous n'avez pas encore dit.",
       "choices": [
         {
+          "kind": "parler",
           "text": "Dire que le Barman vous envoie",
           "to": "c08-25",
           "if": {
@@ -204,6 +218,7 @@
           }
         },
         {
+          "kind": "parler",
           "text": "Parler de la cache sous Agroprom",
           "to": "c08-16",
           "if": {
@@ -222,6 +237,7 @@
           }
         },
         {
+          "kind": "parler",
           "text": "Lui redemander le chemin du nord",
           "to": "c08-42",
           "if": {
@@ -230,6 +246,7 @@
           }
         },
         {
+          "kind": "agir",
           "text": "Attendre qu'il parle le premier",
           "to": "c08-33"
         }
@@ -239,10 +256,12 @@
       "text": "Vous ouvrez la conserve au couteau. Du poisson, ou quelque chose qui l'a été. Vous mangez froid, à la lame. Vous regagnez 2 points d'Endurance. La boîte vide rejoint le tas près du poêle. Un chien qui n'est pas aveugle, pour une fois, vient lécher ce qui reste et repart sans vous avoir demandé la permission.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Fouiller encore le sac",
           "to": "c08-20"
         },
         {
+          "kind": "agir",
           "text": "Refermer le sac",
           "to": "c08-17"
         }
@@ -252,10 +271,12 @@
       "text": "Trois hommes en gris et rouge se lèvent quand vous passez la porte. Le plus grand a un pansement frais sur l'arcade, et la radio du poste a parlé avant vous. Le Barman ne bouge pas, mais sa main est descendue sous le comptoir. Toute la cave regarde ailleurs avec application. Le sergent vous barre l'escalier. On ne force pas un poste du Devoir pour venir boire chez nous ensuite.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Sortir le couteau et faire face",
           "to": "c08-41"
         },
         {
+          "kind": "payer",
           "text": "Payer pour qu'ils oublient (200 roubles)",
           "to": "c08-35",
           "if": {
@@ -273,6 +294,7 @@
           ]
         },
         {
+          "kind": "agir",
           "text": "Lever les mains et parler",
           "to": "c08-30"
         }
@@ -298,10 +320,12 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Aller voir le Guide",
           "to": "c08-21"
         },
         {
+          "kind": "aller",
           "text": "Retourner dans la salle",
           "to": "c08-17"
         }
@@ -311,10 +335,12 @@
       "text": "La vodka brûle et ne sent rien. Vous perdez 2 rads et 1 point de Chance : ce qu'elle lave dans le corps, elle le prend ailleurs, dans la main qui lance le boulon. La bouteille vide roule sous la table. À côté, un stalker lève son verre sans vous regarder. Ici, on trinque avec les morts aussi bien qu'avec les vivants.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Fouiller encore le sac",
           "to": "c08-20"
         },
         {
+          "kind": "agir",
           "text": "Refermer le sac",
           "to": "c08-17"
         }
@@ -337,10 +363,12 @@
       "text": "La cour de l'usine, entre les hangars. Le ciel est bas, de la couleur du béton. Le canon antiaérien du Devoir pointe vers le nord, servi par deux hommes qui fument sans parler. Au fond, un réservoir d'eau sur pilotis, et sous l'échelle, une forme allongée que personne ne ramasse. L'air tremble au-dessus des gravats, à mi-chemin, comme au-dessus d'un capot chaud.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Traverser la cour vers le réservoir",
           "to": "c08-28"
         },
         {
+          "kind": "aller",
           "text": "Rentrer au Bar",
           "to": "c08-17"
         }
@@ -356,10 +384,12 @@
       ],
       "choices": [
         {
+          "kind": "parler",
           "text": "Lui montrer ce que vous avez",
           "to": "c08-42"
         },
         {
+          "kind": "aller",
           "text": "Retourner dans la salle",
           "to": "c08-17"
         }
@@ -369,22 +399,27 @@
       "text": "La salle du Bar. Le comptoir sous les ampoules, le poêle, les tables de ferraille. Dans le coin, le vieux en veste grise n'a pas bougé. Au fond, une grille s'ouvre sur un escalier d'où montent des cris et une odeur de chien : l'Arène. La porte de gauche donne sur les Terres sauvages, la cour remonte vers la route du nord. Au sud, la route par où vous êtes venu. Tout le monde finit par passer ici. Personne ne reste.",
       "choices": [
         {
+          "kind": "parler",
           "text": "Parler au Barman",
           "to": "c08-29"
         },
         {
+          "kind": "aller",
           "text": "Aller vers le coin du Guide",
           "to": "c08-21"
         },
         {
+          "kind": "agir",
           "text": "Poser le sac sur une table",
           "to": "c08-20"
         },
         {
+          "kind": "parler",
           "text": "Écouter les stalkers autour du poêle",
           "to": "c08-22"
         },
         {
+          "kind": "payer",
           "text": "Louer un lit chez le Barman (100 roubles)",
           "to": "c08-45",
           "if": {
@@ -402,22 +437,27 @@
           ]
         },
         {
+          "kind": "aller",
           "text": "Sortir dans la cour de l'usine",
           "to": "c08-15"
         },
         {
+          "kind": "aller",
           "text": "Descendre vers l'Arène",
           "to": "c08-32"
         },
         {
+          "kind": "aller",
           "text": "Gagner la porte des Terres sauvages",
           "to": "c08-18"
         },
         {
+          "kind": "aller",
           "text": "Remonter vers la route du nord",
           "to": "c08-36"
         },
         {
+          "kind": "aller",
           "text": "Reprendre la route du sud",
           "to": "c08-24"
         }
@@ -427,10 +467,12 @@
       "text": "La porte de gauche donne sur un couloir de béton, puis sur une porte de tôle que deux hommes du Devoir tiennent fermée par habitude. Derrière, le vent. Les Terres sauvages : des entrepôts, des ponts de fer, et sur les toits, dit-on, des mercenaires qui ne manquent jamais ce qui court. La sentinelle vous regarde, hausse les épaules. On ne retient personne vers Yantar. On compte ceux qui reviennent.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Sortir vers les Terres sauvages, en direction de Yantar",
           "to": "c10-1"
         },
         {
+          "kind": "aller",
           "text": "Revenir au Bar",
           "to": "c08-17"
         }
@@ -440,6 +482,7 @@
       "text": "Le Barman gagne. Pas ici, dit-il, et le sergent recule d'un pas, puis d'un autre. Ses deux hommes se rassoient. Il vous laisse passer en vous frôlant l'épaule, assez fort pour que vous sentiez le canon de son fusil sous la veste. Ce n'est pas fini. C'est reporté. La radio reprend sa chanson. Vous allez jusqu'au comptoir sans vous retourner.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Regarder la salle",
           "to": "c08-17"
         }
@@ -449,6 +492,7 @@
       "text": "Vous choisissez une table contre le mur et posez le sac dessus. Le Bar est le seul endroit entre ici et le nord où l'on peut vider un sac sans qu'on vous tire dessus. Vous étalez ce que vous avez sur la ferraille rayée. Le Barman note tout de loin, par habitude, sans rien dire. Le poêle chauffe un côté de votre visage.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Boire l'anti-rad",
           "to": "c08-38",
           "if": {
@@ -469,6 +513,7 @@
           ]
         },
         {
+          "kind": "agir",
           "text": "Boire la vodka",
           "to": "c08-13",
           "if": {
@@ -494,6 +539,7 @@
           ]
         },
         {
+          "kind": "agir",
           "text": "Poser le bandage",
           "to": "c08-44",
           "if": {
@@ -514,6 +560,7 @@
           ]
         },
         {
+          "kind": "agir",
           "text": "Vider la trousse de soins",
           "to": "c08-26",
           "if": {
@@ -534,6 +581,7 @@
           ]
         },
         {
+          "kind": "agir",
           "text": "Ouvrir la conserve",
           "to": "c08-10",
           "if": {
@@ -554,6 +602,7 @@
           ]
         },
         {
+          "kind": "agir",
           "text": "Changer les piles du détecteur",
           "to": "c08-34",
           "if": {
@@ -574,6 +623,7 @@
           ]
         },
         {
+          "kind": "agir",
           "text": "Refermer le sac",
           "to": "c08-17"
         }
@@ -588,10 +638,12 @@
       "text": "Vous traversez la salle. Le vieux ne lève pas la tête, mais il vous a vu avant que vous décidiez de venir. Veste grise, mains posées à plat sur la table, un verre d'eau qu'il n'a pas touché. Autour de lui, une table de vide : les stalkers laissent de la place à ceux qui reviennent du nord, comme on laisse de la place aux morts.",
       "choices": [
         {
+          "kind": "agir",
           "text": "S'asseoir en face de lui",
           "to": "c08-9"
         },
         {
+          "kind": "agir",
           "text": "Changer d'avis et retourner dans la salle",
           "to": "c08-17"
         }
@@ -601,6 +653,7 @@
       "text": "Trois stalkers autour du poêle, une guitare qui n'a plus que quatre cordes. Ils parlent de Yantar : des hommes qui marchent et marmonnent, des stalkers vidés, et un savant sous une bâche qui échange des combinaisons contre ce qu'on rapporte du lac. Un autre parle des Entrepôts, d'un sniper sur le château d'eau qui ne rate jamais. Personne ne parle du Radar. Ils regardent le coin du vieux, et se taisent.",
       "choices": [
         {
+          "kind": "payer",
           "text": "Payer une tournée (50 roubles)",
           "to": "c08-39",
           "if": {
@@ -618,6 +671,7 @@
           ]
         },
         {
+          "kind": "aller",
           "text": "Retourner dans la salle",
           "to": "c08-17"
         }
@@ -627,6 +681,7 @@
       "text": "La cave est basse, voûtée, éclairée par des ampoules nues. Des tables, un poêle, une radio qui grésille une chanson d'avant. Derrière le comptoir, un homme en tablier, des bras comme des cuisses, essuie un verre qui est déjà propre. Il ne vous demande pas votre nom. Qu'est-ce que tu as, qu'est-ce que tu veux. Dans le coin le plus sombre, un vieux en veste grise, dos au mur, ne boit rien.",
       "choices": [
         {
+          "kind": "parler",
           "text": "Dire que vous venez de la part du Devoir",
           "to": "c08-37",
           "if": {
@@ -635,6 +690,7 @@
           }
         },
         {
+          "kind": "agir",
           "text": "Regarder la salle avant de répondre",
           "to": "c08-17"
         }
@@ -644,10 +700,12 @@
       "text": "La route du sud. Par là, le poste du Devoir, puis le Dépotoir, puis le Cordon, puis les barbelés et un monde où les chiens ont des yeux. On y va avec assez de roubles, dit-on, et surtout on y va pour ne pas aller plus loin. Vous regardez vos mains. Elles ne tremblent pas encore. La porte du Bar, derrière vous, bat une fois dans le vent.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Reprendre la route du sud pour quitter la Zone",
           "to": "c15-1"
         },
         {
+          "kind": "aller",
           "text": "Revenir au Bar",
           "to": "c08-17"
         }
@@ -663,10 +721,12 @@
       ],
       "choices": [
         {
+          "kind": "parler",
           "text": "Lui montrer ce que vous avez",
           "to": "c08-42"
         },
         {
+          "kind": "aller",
           "text": "Retourner dans la salle",
           "to": "c08-17"
         }
@@ -676,10 +736,12 @@
       "text": "Vous videz la trousse de soins : seringue, compresses, une pince, un comprimé blanc que vous avalez sans lire. Vous regagnez 6 points d'Endurance. Le corps se remet en place comme une porte qu'on referme. La boîte métallique, vide, fait un bon cendrier. Le Barman la prendra avant que vous soyez sorti.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Fouiller encore le sac",
           "to": "c08-20"
         },
         {
+          "kind": "agir",
           "text": "Refermer le sac",
           "to": "c08-17"
         }
@@ -689,6 +751,7 @@
       "text": "Le sergent tombe contre le comptoir et n'y revient pas. Ses hommes le relèvent par les aisselles, sans un regard pour vous, et le traînent vers l'escalier. Le Barman range le fusil. Lui, dehors. Toi, tu paies ton verre comme les autres. Du sang sèche déjà sur le béton. La radio n'a pas cessé sa chanson. Personne ne vous regarde plus, et ce n'est pas du respect.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Regarder la salle",
           "to": "c08-17"
         }
@@ -749,6 +812,7 @@
       },
       "choices": [
         {
+          "kind": "agir",
           "text": "Poser les Documents du X-18 sur le zinc",
           "to": "c08-12",
           "if": {
@@ -757,10 +821,12 @@
           }
         },
         {
+          "kind": "parler",
           "text": "Demander des nouvelles du nord",
           "to": "c08-40"
         },
         {
+          "kind": "aller",
           "text": "Retourner dans la salle",
           "to": "c08-17"
         }
@@ -785,6 +851,7 @@
       ],
       "choices": [
         {
+          "kind": "agir",
           "text": "Plier la carte et retourner dans la salle",
           "to": "c08-17"
         }
@@ -794,10 +861,12 @@
       "text": "La grille du fond s'ouvre sur un escalier de fer. En bas, des cris, des paris, une odeur de chien mouillé et de sang qu'on a arrosé d'eau. Un homme en costume trop petit monte à votre rencontre, cigare éteint au coin de la bouche. Arnie. Trois rounds. Tu vis, tu touches. Il ne dit pas combien. Il ne dit pas contre quoi.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Descendre dans l'Arène",
           "to": "c09-1"
         },
         {
+          "kind": "aller",
           "text": "Remonter dans la salle",
           "to": "c08-17"
         }
@@ -807,6 +876,7 @@
       "text": "Il ne parle pas. Vous attendez une minute, puis deux. Il boit une gorgée d'eau. Tu ne sais rien, dit-il enfin. Reviens quand tu sauras. Il regarde de nouveau le mur derrière vous, et la conversation est finie comme on ferme une porte. Vous vous levez. Le grincement de la chaise est le seul bruit que vous laissez.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Retourner dans la salle",
           "to": "c08-17"
         }
@@ -816,10 +886,12 @@
       "text": "Vous ouvrez le dos du Détecteur Ours, chassez les vieilles piles du pouce, glissez les neuves. Il revient à la vie avec un crépitement, puis se tait : il n'y a rien à trouver dans cette cave, et c'est ce qu'il dit. La batterie remonte à 60. L'aiguille tremble un peu, comme une main qui a eu froid.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Fouiller encore le sac",
           "to": "c08-20"
         },
         {
+          "kind": "agir",
           "text": "Refermer le sac",
           "to": "c08-17"
         }
@@ -829,6 +901,7 @@
       "text": "Les 200 roubles disparaissent dans une poche de la veste gris-rouge avant que vous ayez fini de les compter. Le sergent se rassoit, ses hommes aussi, et la cave reprend son souffle. Le Devoir a de la mémoire, mais il a aussi des comptes à tenir. Le Barman hausse une épaule : ici, tout s'achète, même la paix. Surtout la paix.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Regarder la salle",
           "to": "c08-17"
         }
@@ -838,10 +911,12 @@
       "text": "La route du nord sort de Rostok entre deux rangées de pylônes. Des camions morts, des herbes hautes, des datchas au loin, et plus loin encore une colonne de fumée que personne ne commente. Les Entrepôts militaires. La Liberté y tient encore, paraît-il, et le Monolithe descend chaque nuit un peu plus bas. Vous serrez la bretelle du sac. Le détecteur se tait, pour l'instant.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Prendre la route du nord vers les Entrepôts militaires",
           "to": "c13-1"
         },
         {
+          "kind": "aller",
           "text": "Revenir au Bar",
           "to": "c08-17"
         }
@@ -858,6 +933,7 @@
       ],
       "choices": [
         {
+          "kind": "parler",
           "text": "Remercier et regarder la salle",
           "to": "c08-17"
         }
@@ -867,10 +943,12 @@
       "text": "Le goût de l'anti-rad est celui du métal et de l'amande. Vous perdez 5 rads. Le compteur du détecteur se calme, sa petite aiguille revient vers la gauche, et la nausée qui vous suivait depuis la route s'assoit à côté de vous sans partir tout à fait. Le blister vide rejoint les autres sous la table. Personne ne balaie, ici.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Fouiller encore le sac",
           "to": "c08-20"
         },
         {
+          "kind": "agir",
           "text": "Refermer le sac",
           "to": "c08-17"
         }
@@ -880,6 +958,7 @@
       "text": "La tournée délie ce qui restait noué. Les mercenaires tiennent les toits des Terres sauvages ; ils tirent sur ce qui court, moins sur ce qui rampe. Un camion de savants est resté en travers de la route, et ceux qui l'ont sorti ont eu un lit à Yantar. Aux Entrepôts, la Liberté manque de tout sauf de musique. Le plus jeune, à voix basse : au nord de la Forêt rouge, les pensées viennent de l'extérieur. Les 50 roubles sont partis. Ils en valaient la moitié.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Retourner dans la salle",
           "to": "c08-17"
         }
@@ -889,10 +968,12 @@
       "text": "Il parle en essuyant. Yantar : les savants de Sakharov sont enterrés sous une bâche de plomb et leurs camions ne rentrent pas tous. Les Entrepôts : la Liberté tient encore, le Monolithe descend du nord chaque nuit, un peu plus bas. Le Radar, il n'en dit rien ; il désigne le coin sombre du menton. Lui, il y est allé. Il ne parle qu'à ceux que je connais.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Aller vers le coin du Guide",
           "to": "c08-21"
         },
         {
+          "kind": "aller",
           "text": "Retourner dans la salle",
           "to": "c08-17"
         }
@@ -915,6 +996,7 @@
       "text": "Il attend. Il n'a pas de hâte, il a tout le temps que la Zone lui a laissé. Sur la table, entre vous, il y a la place d'un objet. Le poêle craque. Les parieurs remontent de l'Arène en comptant leurs billets, et aucun ne s'approche de cette table. Ses yeux ne quittent pas vos mains.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Poser la Clé USB de Strelok sur la table",
           "to": "c08-7",
           "if": {
@@ -933,6 +1015,7 @@
           }
         },
         {
+          "kind": "parler",
           "text": "Dire que vous êtes le champion de l'Arène",
           "to": "c08-31",
           "if": {
@@ -951,6 +1034,7 @@
           }
         },
         {
+          "kind": "agir",
           "text": "Se lever sans rien montrer",
           "to": "c08-17"
         }
@@ -967,6 +1051,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Rentrer au Bar",
           "to": "c08-17"
         }
@@ -976,10 +1061,12 @@
       "text": "Vous défaites le bandage, serrez la plaie, nouez. Vous regagnez 3 points d'Endurance. Le tissu rougit, puis cesse de rougir. Vos mains ont appris à faire ça sans que vous les regardiez. Dans la Zone, c'est le genre de chose qu'on apprend avant son propre nom, et qu'on oublie après.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Fouiller encore le sac",
           "to": "c08-20"
         },
         {
+          "kind": "agir",
           "text": "Refermer le sac",
           "to": "c08-17"
         }
@@ -996,6 +1083,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Retourner dans la salle",
           "to": "c08-17"
         }

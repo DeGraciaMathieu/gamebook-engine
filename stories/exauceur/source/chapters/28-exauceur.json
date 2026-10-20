@@ -33,18 +33,22 @@
       "text": "La salle est plus petite que vous ne pensiez. Au milieu, la pierre : grande comme une voiture, noire, et elle luit par en dessous, comme une braise qu'on a couverte. Elle bourdonne. Le son est dans vos dents avant d'être dans vos oreilles. Le détecteur, lui, ne dit rien. Le long des murs, des sacs, des fusils debout contre le béton, des gamelles. Ceux qui sont venus ont laissé leurs affaires. Ils ne sont pas repartis les chercher.",
       "choices": [
         {
+          "kind": "aller",
           "text": "S'approcher de la pierre",
           "to": "c28-3"
         },
         {
+          "kind": "aller",
           "text": "Faire le tour de la salle",
           "to": "c28-12"
         },
         {
+          "kind": "agir",
           "text": "Rester sur le seuil et écouter",
           "to": "c28-19"
         },
         {
+          "kind": "agir",
           "text": "Se retourner vers le puits",
           "to": "c28-9",
           "if": {
@@ -58,10 +62,12 @@
       "text": "Derrière vous, le couloir orange redescend vers le puits. Vous l'avez longé, ce puits, avec le corium qui luisait au fond comme un œil fermé. D'ici, on l'entend encore : un tic-tac mou, du béton qui travaille. Entre le puits et la pierre, il n'y a rien. Pas de porte, pas de garde. Le Monolithe ne monte pas jusqu'ici. Il n'en a pas besoin. Ce qui est là se garde seul.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Revenir vers la pierre",
           "to": "c28-3"
         },
         {
+          "kind": "aller",
           "text": "Faire le tour de la salle",
           "to": "c28-12"
         }
@@ -71,10 +77,12 @@
       "text": "Vous longez le mur. Du béton coulé à la hâte, des armatures qui en sortent comme des côtes. Sur le sol, des traces : des pas qui vont vers la pierre, aucun qui en revient. Un carnet ouvert, l'encre délavée. Une bouteille pleine. Quelqu'un a gravé une date dans le béton, 2006, et sous la date un mot que vous ne lisez pas. Le bourdonnement vous suit, comme un chien suit de l'œil.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Lire le carnet",
           "to": "c28-22"
         },
         {
+          "kind": "agir",
           "text": "Lever les yeux vers la brèche",
           "to": "c28-15",
           "if": {
@@ -83,6 +91,7 @@
           }
         },
         {
+          "kind": "aller",
           "text": "Rejoindre la pierre",
           "to": "c28-3"
         }
@@ -92,10 +101,12 @@
       "text": "Le carnet est celui d'un stalker. Une écriture serrée, puis de plus en plus large. Les dernières lignes tiennent sur une page : Elle m'a demandé ce que je voulais. J'ai dit : rentrer. Il n'y a pas de suite. Le propriétaire est contre le mur, deux mètres plus loin, assis, la tête sur les genoux. Il est sec comme du bois. Il a l'air d'attendre encore.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Reposer le carnet et aller à la pierre",
           "to": "c28-3"
         },
         {
+          "kind": "aller",
           "text": "Retourner vers le seuil",
           "to": "c28-19"
         }
@@ -105,10 +116,12 @@
       "text": "Au-dessus de la pierre, le béton s'est fendu. Par la brèche, un morceau de ciel. Il est encore rouge, du rouge de l'Émission, comme un bleu sur une peau. Vous l'avez vue venir depuis le parvis, le sol qui bourdonnait sous vos bottes. Vous comprenez seulement maintenant : le bourdonnement du sol et celui de la pierre, c'était le même. Elle n'a jamais cessé. Elle respire ici.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Revenir vers la pierre",
           "to": "c28-3"
         },
         {
+          "kind": "aller",
           "text": "Reculer vers le couloir",
           "to": "c28-2"
         }
@@ -118,14 +131,17 @@
       "text": "Vous restez sur le seuil. Le bourdonnement change, se fait plus bas, comme quelqu'un qui baisse la voix pour qu'on s'approche. Puis il y a un mot. Pas dans l'air : dans la tête, derrière les yeux. Viens. Vous n'avez pas de nom, vous n'en avez jamais eu, et c'est pourtant vous qu'elle appelle. Elle ne se trompe pas de personne. Elle attendait.",
       "choices": [
         {
+          "kind": "aller",
           "text": "S'approcher de la pierre",
           "to": "c28-3"
         },
         {
+          "kind": "parler",
           "text": "Répondre sans bouger",
           "to": "c28-28"
         },
         {
+          "kind": "aller",
           "text": "Faire le tour de la salle",
           "to": "c28-12"
         }
@@ -135,10 +151,12 @@
       "text": "Vous dites : qu'est-ce que tu es. Elle ne répond pas à ça. Elle dit : qu'est-ce que tu veux. Sa voix est calme, polie, un peu lasse, la voix de quelqu'un qui a posé la question beaucoup de fois. Le sol vibre sous vos bottes. Vous sentez, très nettement, qu'elle peut vous donner ce que vous direz. Mot pour mot. C'est cela qui fait peur, pas le reste.",
       "choices": [
         {
+          "kind": "aller",
           "text": "S'avancer jusqu'à la pierre",
           "to": "c28-3"
         },
         {
+          "kind": "aller",
           "text": "Reculer vers le couloir",
           "to": "c28-2"
         }
@@ -153,22 +171,27 @@
       },
       "choices": [
         {
+          "kind": "agir",
           "text": "Souhaiter la richesse",
           "to": "c28-4"
         },
         {
+          "kind": "agir",
           "text": "Souhaiter de ne jamais mourir",
           "to": "c28-16"
         },
         {
+          "kind": "agir",
           "text": "Souhaiter que la Zone disparaisse",
           "to": "c28-10"
         },
         {
+          "kind": "agir",
           "text": "Ne rien souhaiter et reculer",
           "to": "c28-2"
         },
         {
+          "kind": "agir",
           "text": "Chercher d'où vient la voix",
           "to": "c28-25",
           "if": {
@@ -182,10 +205,12 @@
       "text": "Vous connaissez cette voix. Vous l'avez comprise dans le X-16, sur les documents de Strelok : sept cerveaux dans une cuve, quelque part sous vos pieds, qui parlent d'une seule bouche. Vous posez la main à plat sur le sol. Il vibre, et la vibration a une direction. Elle vient du côté, de la porte au clavier. La pierre n'est qu'un haut-parleur. Un très beau haut-parleur. Ce qui écoute est ailleurs, et ce qui écoute a besoin de bras.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Revenir devant la pierre",
           "to": "c28-3"
         },
         {
+          "kind": "aller",
           "text": "Reculer vers le couloir",
           "to": "c28-2"
         }
@@ -195,10 +220,12 @@
       "text": "Vous dites : la richesse. Le mot sort plus petit que vous ne l'aviez pensé. La pierre ne bouge pas. Mais au-dessus, quelque chose répond : un craquement long, le bruit d'une poutre qui cède en hiver. Une poussière fine tombe sur vos épaules. Elle brille. Vous regardez votre manche : ce n'est pas de la poussière. Ce sont des éclats de métal jaune. Le plafond travaille. Elle a entendu.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Rester et tendre les mains",
           "to": "c28-13"
         },
         {
+          "kind": "agir",
           "text": "Retirer le vœu et reculer",
           "to": "c28-2"
         }
@@ -229,10 +256,12 @@
       "text": "Vous dites : ne jamais mourir. Vous le dites la main posée sur la pierre, parce qu'il faut bien la toucher pour ça, vous ne savez pas d'où vous vient cette idée. Elle est tiède. Puis elle ne l'est plus. Le froid monte dans les doigts, calme, méthodique, un froid de cave. Vous voulez retirer la main. Les doigts ne reçoivent plus l'ordre. Ils sont déjà un peu gris.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Laisser le froid monter",
           "to": "c28-27"
         },
         {
+          "kind": "agir",
           "text": "Arracher la main de la pierre",
           "to": "c28-6"
         }
@@ -259,10 +288,12 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Reculer vers le couloir",
           "to": "c28-2"
         },
         {
+          "kind": "aller",
           "text": "Revenir devant la pierre",
           "to": "c28-3"
         }
@@ -272,6 +303,7 @@
       "text": "Le froid passe le coude. Vous ne sentez plus le bras ; vous le voyez, gris, lisse, avec les mêmes veines lentes que la pierre. Ce n'est pas douloureux. C'est l'inverse de la douleur. L'épaule, le cou. Vous pensez : c'est donc ça. Vous pensez que vous ne penserez plus de phrases, bientôt, seulement des choses longues, sans mots, à la vitesse où le béton vieillit.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Fermer les yeux",
           "to": "c28-20"
         }
@@ -289,14 +321,17 @@
       "text": "Vous dites : que la Zone disparaisse. Vous l'avez dit pour les autres, pour les types du Cordon avec leur guitare, pour les morts contre le mur. Peut-être un peu pour vous. La pierre ne bourdonne plus : elle brille. La lumière monte de ses veines comme une marée, blanche, et la salle perd ses ombres une à une. Vous avez encore le temps de vous taire. Elle n'a pas fini d'écouter.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Fermer les yeux",
           "to": "c28-24"
         },
         {
+          "kind": "agir",
           "text": "Regarder la pierre en face",
           "to": "c28-17"
         },
         {
+          "kind": "agir",
           "text": "Se taire et reculer",
           "to": "c28-2"
         }
@@ -306,6 +341,7 @@
       "text": "Vous fermez les yeux. La lumière passe quand même, rouge à travers les paupières, puis blanche, puis sans couleur. Il y a un moment où vous ne savez plus si vos yeux sont fermés. Le bourdonnement est revenu, très loin, comme une mouche dans une autre pièce. Le détecteur crépite contre votre poitrine. Il crépite normalement. Rien n'a changé pour lui.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Ouvrir les yeux",
           "to": "c28-5"
         }
@@ -329,10 +365,12 @@
       "text": "Vous reculez d'un pas. Puis d'un autre. La pierre ne vous retient pas. Le bourdonnement reprend, plus bas, et il y a dedans quelque chose qui ressemble à de la surprise, ou à de l'ennui. Elle n'insiste pas. Les sacs contre le mur restent où ils sont. Vous avez les mains vides, et pour la première fois depuis le Cordon, vous savez ce qu'elles contiennent.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Repartir par le couloir",
           "to": "c28-18"
         },
         {
+          "kind": "aller",
           "text": "Revenir devant la pierre",
           "to": "c28-3"
         }
@@ -349,6 +387,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Remonter vers le parvis",
           "to": "c28-23"
         }
@@ -358,6 +397,7 @@
       "text": "Le parvis. Le ciel est bas, couleur de tôle, et il n'y a plus de rouge dedans. Le Monolithe est sur les toits, vous le savez, et il ne tire pas. Un homme qui sort du Sarcophage sans rien dans les mains n'est pas un ennemi : c'est un rebut. Vous traversez à découvert. Personne ne prie. Le vent vous pousse vers le sud, et pour une fois vous allez dans son sens.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Prendre la route du sud",
           "to": "c28-7"
         }
@@ -367,6 +407,7 @@
       "text": "Il faut des semaines. Le pont, Pripyat vide, la crête du Radar que vous passez de nuit, sans rien dans la tête que vous n'y ayez mis vous-même. La Forêt rouge, Rostok. Vous ne vous rappelez pas tout. Vous vous rappelez le feu, la nuit, les chiens qui gardaient leurs distances, et le bruit du détecteur, qui ne vous a jamais menti.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Pousser la porte du Bar",
           "to": "c28-26"
         }

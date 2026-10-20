@@ -144,14 +144,17 @@
       ],
       "choices": [
         {
+          "kind": "agir",
           "text": "Fouiller la maison avant de partir",
           "to": "6"
         },
         {
+          "kind": "parler",
           "text": "Parler au petit",
           "to": "72"
         },
         {
+          "kind": "agir",
           "text": "Charger le sac et partir",
           "to": "15"
         }
@@ -176,6 +179,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Continuer jusqu'au soir",
           "to": "145"
         }
@@ -192,6 +196,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Ressortir sur la rue",
           "to": "30"
         }
@@ -208,6 +213,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Ressortir sur la rue",
           "to": "30"
         }
@@ -217,14 +223,17 @@
       "text": "La maison a déjà été fouillée, par vous et par d'autres avant vous. Il reste un grenier dont la trappe pend, et une commode dans la chambre du fond, les tiroirs à moitié ouverts.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Monter au grenier",
           "to": "43"
         },
         {
+          "kind": "agir",
           "text": "Ouvrir les tiroirs de la commode",
           "to": "57"
         },
         {
+          "kind": "aller",
           "text": "Partir",
           "to": "15"
         }
@@ -241,6 +250,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Revenir sur la rue principale",
           "to": "30"
         }
@@ -262,6 +272,7 @@
       ],
       "choices": [
         {
+          "kind": "agir",
           "text": "Attendre le matin",
           "to": "105"
         }
@@ -271,6 +282,7 @@
       "text": "Vous fermez les yeux. Quand vous les rouvrez, il fait plus sombre, et le petit est toujours là, et il y a quelqu'un sur la plage, ou personne.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Quelqu'un vient",
           "to": "127",
           "if": {
@@ -291,6 +303,7 @@
           }
         },
         {
+          "kind": "agir",
           "text": "Personne ne vient",
           "to": "133",
           "if": {
@@ -319,6 +332,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Descendre sur la plage",
           "to": "48"
         }
@@ -335,6 +349,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Revenir sur la plage",
           "to": "48"
         }
@@ -344,10 +359,12 @@
       "text": "Le petit dit qu'il y avait un enfant, de son âge, qui le regardait, et qu'il s'est enfui. Il veut qu'on le cherche. Il dit qu'on ne peut pas le laisser tout seul. Il le dit comme s'il parlait de lui.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Chercher l'enfant dans les ruelles",
           "to": "18"
         },
         {
+          "kind": "parler",
           "text": "Dire qu'il n'y avait personne",
           "to": "7"
         }
@@ -364,6 +381,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Continuer vers la rivière",
           "to": "39"
         }
@@ -386,18 +404,22 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Monter vers la tour de guet",
           "to": "107"
         },
         {
+          "kind": "aller",
           "text": "Suivre la voie ferrée jusqu'au wagon",
           "to": "131"
         },
         {
+          "kind": "aller",
           "text": "Aller voir la cabane de chasse",
           "to": "138"
         },
         {
+          "kind": "agir",
           "text": "Rester sur la route",
           "to": "75"
         }
@@ -407,6 +429,7 @@
       "text": "De l'autre côté, vous vous asseyez tous les deux au bord du vide et vous regardez la poutre, longtemps. Puis le petit rit. Vous ne savez plus quand il a ri pour la dernière fois.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Reprendre la route",
           "to": "40"
         }
@@ -416,6 +439,7 @@
       "text": "La flèche passe dans votre manteau sans vous toucher. Vous reculez en tenant le petit devant vous comme un bouclier, et vous avez honte de ça tout l'après-midi. L'homme ne tire pas une seconde fois. Il n'a peut-être qu'une flèche.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Revenir sur la plage",
           "to": "48"
         }
@@ -436,6 +460,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Revenir sur la rue principale",
           "to": "30"
         }
@@ -457,6 +482,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Suivre la route",
           "to": "40"
         }
@@ -478,6 +504,7 @@
       ],
       "choices": [
         {
+          "kind": "agir",
           "text": "Attendre le matin",
           "to": "80"
         }
@@ -499,6 +526,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Redescendre sur la plage",
           "to": "48"
         }
@@ -520,6 +548,7 @@
       ],
       "choices": [
         {
+          "kind": "agir",
           "text": "Dormir",
           "to": "132"
         }
@@ -529,6 +558,7 @@
       "text": "La caisse pèse dans le chariot comme un enfant de plus. Vous la recouvrez de la bâche de plastique du rayon, pour que personne ne voie. Le petit pousse avec vous jusqu'à la rue.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Ressortir sur la rue",
           "to": "30"
         }
@@ -538,6 +568,7 @@
       "text": "Derrière une maison brûlée, dans le jardin, une trappe de métal au ras du sol, fermée par un cadenas, et une adresse peinte sur le battant. La même que sur la clef, si vous l'avez. Sinon, le cadenas est gros, mais le fer est vieux.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Ouvrir avec la clef du bunker",
           "to": "70",
           "if": {
@@ -546,6 +577,7 @@
           }
         },
         {
+          "kind": "agir",
           "text": "Forcer le cadenas à la hachette",
           "to": "70",
           "if": {
@@ -554,6 +586,7 @@
           }
         },
         {
+          "kind": "agir",
           "text": "Chercher ailleurs",
           "to": "25"
         }
@@ -563,14 +596,17 @@
       "text": "Sur le bord de la route, une voiture, portes fermées, vitres opaques de cendre. Dedans, des formes. Une famille, assise, qui a attendu quelque chose qui n'est pas venu. Un peu plus loin, une cabine téléphonique, la porte ouverte.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Ouvrir la portière et fouiller",
           "to": "86"
         },
         {
+          "kind": "aller",
           "text": "Entrer dans la cabine",
           "to": "155"
         },
         {
+          "kind": "aller",
           "text": "Continuer vers la rivière",
           "to": "39"
         }
@@ -587,6 +623,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Revenir sur la plage en boitant",
           "to": "48"
         }
@@ -603,6 +640,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Revenir sur la plage",
           "to": "48"
         }
@@ -619,6 +657,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Redescendre",
           "to": "6"
         }
@@ -640,6 +679,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Ressortir sur la rue",
           "to": "30"
         }
@@ -652,34 +692,42 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Le supermarché",
           "to": "49"
         },
         {
+          "kind": "aller",
           "text": "La pharmacie",
           "to": "130"
         },
         {
+          "kind": "aller",
           "text": "La station-service",
           "to": "156"
         },
         {
+          "kind": "aller",
           "text": "La maison aux volets",
           "to": "58"
         },
         {
+          "kind": "aller",
           "text": "L'église",
           "to": "41"
         },
         {
+          "kind": "aller",
           "text": "La bibliothèque",
           "to": "29"
         },
         {
+          "kind": "agir",
           "text": "Chercher l'enfant que le petit a vu",
           "to": "12"
         },
         {
+          "kind": "aller",
           "text": "Quitter la ville",
           "to": "128"
         }
@@ -689,10 +737,12 @@
       "text": "Dans le verger, un homme pendu à une branche, depuis longtemps. Il porte encore ses vêtements et une clef au cou, sur un lacet. Une clef de cadenas, grosse, du genre qui ferme quelque chose qui vaut la peine.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Grimper le décrocher",
           "to": "79"
         },
         {
+          "kind": "agir",
           "text": "Ne pas le toucher",
           "to": "62"
         }
@@ -702,6 +752,7 @@
       "text": "L'autre rive. Vous vous déshabillez, vous tordez les vêtements, vous les remettez mouillés. Le petit vous regarde faire et il fait pareil, sérieux comme un petit soldat.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Continuer",
           "to": "46"
         }
@@ -720,6 +771,7 @@
       "text": "L'homme pisse dans le fossé à deux mètres de vous, remonte, et le camion repart. Vous restez couchés jusqu'à ne plus rien entendre. Le petit a les yeux fermés, très fort. Vous lui dites que c'est fini.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Continuer",
           "to": "115"
         }
@@ -739,10 +791,12 @@
       "text": "Un chien aboie, loin, derrière les arbres. Un vrai chien. Le petit s'arrête net. Il veut y aller. Il dit qu'un chien, c'est quelqu'un.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Suivre l'aboiement",
           "to": "93"
         },
         {
+          "kind": "parler",
           "text": "Dire qu'il n'y a pas de chien",
           "to": "103"
         }
@@ -796,6 +850,7 @@
       },
       "choices": [
         {
+          "kind": "aller",
           "text": "Reprendre la route",
           "to": "110"
         }
@@ -805,6 +860,7 @@
       "text": "La rivière coupe la route là où le pont a été dynamité, depuis longtemps. Elle est large et basse, grise, rapide au milieu. On la passe à gué, peut-être. Ou on remonte le long de la berge, un jour de marche, vers un autre pont qui existe sur la carte.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Traverser à gué en poussant le chariot",
           "to": "35",
           "if": {
@@ -813,6 +869,7 @@
           }
         },
         {
+          "kind": "aller",
           "text": "Traverser à gué",
           "to": "139",
           "if": {
@@ -824,6 +881,7 @@
           }
         },
         {
+          "kind": "aller",
           "text": "Remonter la berge vers l'amont",
           "to": "144"
         }
@@ -836,6 +894,7 @@
       ],
       "choices": [
         {
+          "kind": "parler",
           "text": "Partager un repas avec le vieux (1 ration)",
           "to": "92",
           "if": {
@@ -862,6 +921,7 @@
           ]
         },
         {
+          "kind": "aller",
           "text": "Continuer sans s'arrêter",
           "to": "38"
         }
@@ -878,6 +938,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Ressortir sur la rue",
           "to": "30"
         }
@@ -887,10 +948,12 @@
       "text": "À l'intérieur, les rayons sont vides jusqu'à l'os. Même les étiquettes ont été prises. Au fond, derrière une porte battante, la réserve. Le plafond y pend par plaques.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Fouiller la réserve",
           "to": "60"
         },
         {
+          "kind": "aller",
           "text": "Ressortir",
           "to": "30"
         }
@@ -917,6 +980,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Revenir sur la plage",
           "to": "48"
         }
@@ -926,10 +990,12 @@
       "text": "L'épave est à deux cents mètres, un bateau de pêche couché, la coque ouverte. Il y a peut-être quelque chose dedans. L'eau est grise et elle est froide à voir. Le petit restera sur le sable avec le sac et le reste.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Nager",
           "to": "112"
         },
         {
+          "kind": "agir",
           "text": "Rester sur le sable",
           "to": "48"
         }
@@ -939,6 +1005,7 @@
       "text": "La route s'enfonce dans une forêt de troncs noirs. Il y a des traces de pas dans la cendre, fraîches. Beaucoup.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Continuer",
           "to": "51",
           "if": {
@@ -947,6 +1014,7 @@
           }
         },
         {
+          "kind": "aller",
           "text": "Continuer",
           "to": "89",
           "if": {
@@ -971,22 +1039,27 @@
       "text": "La plage s'étend des deux côtés, à perte de vue. Au large, une épave couchée sur un banc de sable. Sur la dune, un phare éteint. Plus loin, une cabane de pêcheur, et une maison avec une fenêtre qui n'est pas cassée. Et le sable, où l'on peut s'asseoir.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Nager jusqu'à l'épave",
           "to": "45"
         },
         {
+          "kind": "aller",
           "text": "La cabane du pêcheur",
           "to": "61"
         },
         {
+          "kind": "aller",
           "text": "Le phare",
           "to": "78"
         },
         {
+          "kind": "aller",
           "text": "La maison à la fenêtre intacte",
           "to": "81"
         },
         {
+          "kind": "agir",
           "text": "S'asseoir sur le sable",
           "to": "88"
         }
@@ -996,6 +1069,7 @@
       "text": "Sur le parking, des voitures aux vitres blanches de cendre, et entre elles un chariot à roulettes couché sur le côté, les roues en l'air. Il roule encore. Avec un chariot on porte plus qu'avec un sac.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Prendre le chariot",
           "to": "42",
           "effects": [
@@ -1007,6 +1081,7 @@
           ]
         },
         {
+          "kind": "aller",
           "text": "Entrer sans",
           "to": "42"
         }
@@ -1050,6 +1125,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Ressortir sur la rue",
           "to": "30"
         }
@@ -1066,6 +1142,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Revenir sur la plage",
           "to": "84"
         }
@@ -1078,6 +1155,7 @@
       "text": "Au matin le vent est tombé. Tout est là, sous la cendre que la nuit a déposée. Le petit dort encore, la bouche ouverte.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Attendre le réveil",
           "to": "69"
         }
@@ -1094,6 +1172,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Redescendre",
           "to": "6"
         }
@@ -1103,6 +1182,7 @@
       "text": "Dans le tiroir du bas, sous des chemises que personne ne portera plus, une photographie. Une femme sur une plage, qui rit, la main levée contre le soleil. Ce n'est pas elle. Ça pourrait être n'importe qui. Le petit ne l'a pas vue.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Prendre la photographie",
           "to": "15",
           "effects": [
@@ -1114,6 +1194,7 @@
           ]
         },
         {
+          "kind": "agir",
           "text": "La laisser dans le tiroir",
           "to": "15"
         }
@@ -1123,6 +1204,7 @@
       "text": "La maison aux volets fermés est la seule de la rue à avoir l'air habitée. Pas de fumée, mais l'herbe du jardin est piétinée et la porte de la cave, sur le côté, a un cadenas neuf.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Observer avec les jumelles depuis le bout de la rue",
           "to": "85",
           "if": {
@@ -1131,10 +1213,12 @@
           }
         },
         {
+          "kind": "agir",
           "text": "Forcer la porte de la cave",
           "to": "68"
         },
         {
+          "kind": "aller",
           "text": "Passer au large",
           "to": "30"
         }
@@ -1151,6 +1235,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Revenir dans la cour",
           "to": "62"
         }
@@ -1168,10 +1253,12 @@
       "text": "La cabane du pêcheur est à moitié ensablée. Des filets pendent à l'intérieur, et des casiers vides. Au fond, sous un filet, quelque chose qui a une forme.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Soulever le filet",
           "to": "65"
         },
         {
+          "kind": "aller",
           "text": "Revenir sur la plage",
           "to": "48"
         }
@@ -1181,22 +1268,27 @@
       "text": "La ferme est un corps de bâtiments autour d'une cour. Une citerne sur pieds, une grange aux portes béantes, un verger de pommiers morts, et la maison elle-même, dont la cuisine donne sur la cour.",
       "choices": [
         {
+          "kind": "aller",
           "text": "La citerne",
           "to": "141"
         },
         {
+          "kind": "aller",
           "text": "La grange",
           "to": "74"
         },
         {
+          "kind": "aller",
           "text": "Le verger",
           "to": "31"
         },
         {
+          "kind": "aller",
           "text": "La cuisine",
           "to": "102"
         },
         {
+          "kind": "aller",
           "text": "Reprendre la route",
           "to": "108"
         }
@@ -1218,6 +1310,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Continuer",
           "to": "46"
         }
@@ -1239,6 +1332,7 @@
       ],
       "choices": [
         {
+          "kind": "agir",
           "text": "Attendre le matin",
           "to": "80"
         }
@@ -1268,6 +1362,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Revenir au bus",
           "to": "69"
         }
@@ -1284,6 +1379,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Sortir à la lumière",
           "to": "50"
         }
@@ -1293,6 +1389,7 @@
       "text": "Le cadenas cède au deuxième coup. L'escalier descend dans le noir et l'odeur monte à votre rencontre. En bas, sur des matelas, des gens. Vivants. Ils vous regardent sans parler. L'un d'eux n'a plus de jambes. Vous comprenez à quoi sert cette cave.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Remonter",
           "to": "47"
         }
@@ -1302,6 +1399,7 @@
       "text": "Le matin ne vient pas, il s'installe. Gris sur gris. Vous écoutez avant d'ouvrir les yeux : la respiration du petit.",
       "choices": [
         {
+          "kind": "parler",
           "text": "Le réveiller",
           "to": "24"
         }
@@ -1331,10 +1429,12 @@
       ],
       "choices": [
         {
+          "kind": "agir",
           "text": "Rester ici",
           "to": "37"
         },
         {
+          "kind": "aller",
           "text": "Repartir au bout de trois jours",
           "to": "25"
         }
@@ -1347,6 +1447,7 @@
       ],
       "choices": [
         {
+          "kind": "agir",
           "text": "Manger (1 ration)",
           "to": "71",
           "if": {
@@ -1374,6 +1475,7 @@
           ]
         },
         {
+          "kind": "agir",
           "text": "Ouvrir la boîte de pêches au sirop",
           "to": "71",
           "if": {
@@ -1399,6 +1501,7 @@
           ]
         },
         {
+          "kind": "parler",
           "text": "Lui donner les antibiotiques",
           "to": "71",
           "if": {
@@ -1419,6 +1522,7 @@
           ]
         },
         {
+          "kind": "agir",
           "text": "Faire un feu avec le briquet",
           "to": "64",
           "if": {
@@ -1427,6 +1531,7 @@
           }
         },
         {
+          "kind": "agir",
           "text": "Vous enrouler tous les deux dans la couverture de survie",
           "to": "80",
           "if": {
@@ -1435,6 +1540,7 @@
           }
         },
         {
+          "kind": "agir",
           "text": "Prendre le revolver",
           "to": "116",
           "if": {
@@ -1454,6 +1560,7 @@
           }
         },
         {
+          "kind": "agir",
           "text": "Le serrer contre vous et attendre",
           "to": "20"
         }
@@ -1470,6 +1577,7 @@
       ],
       "choices": [
         {
+          "kind": "agir",
           "text": "Charger le sac et partir",
           "to": "15"
         }
@@ -1479,6 +1587,7 @@
       "text": "Un bruit de moteur. Le premier depuis des mois. Un camion monte la côte derrière vous, lentement, un camion bâché avec des hommes sur le toit. Vous avez dix secondes. Le fossé est à droite, plein de ronces mortes.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Tirer avec le revolver sur le premier qui descend",
           "to": "106",
           "if": {
@@ -1494,6 +1603,7 @@
           ]
         },
         {
+          "kind": "agir",
           "text": "Vous jeter dans le fossé avec le petit",
           "to": "82"
         }
@@ -1518,6 +1628,7 @@
       ],
       "choices": [
         {
+          "kind": "parler",
           "text": "Lui laisser à manger (1 ration)",
           "to": "3",
           "if": {
@@ -1539,6 +1650,7 @@
           ]
         },
         {
+          "kind": "aller",
           "text": "Passer sans s'arrêter",
           "to": "77"
         }
@@ -1555,6 +1667,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Sortir à la lumière",
           "to": "50"
         }
@@ -1571,6 +1684,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Continuer jusqu'au soir",
           "to": "145"
         }
@@ -1580,10 +1694,12 @@
       "text": "Le phare est ouvert. L'escalier tourne jusqu'en haut, et en haut la lampe est morte, mais la vue tient encore : la mer, le sable, et au sud, très loin, quelque chose qui pourrait être de la fumée.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Fouiller la chambre du gardien",
           "to": "117"
         },
         {
+          "kind": "aller",
           "text": "Redescendre sur la plage",
           "to": "48"
         }
@@ -1601,6 +1717,7 @@
       "text": "Le matin ne vient pas, il s'installe. Gris sur gris. Vous écoutez avant d'ouvrir les yeux : la respiration du petit.",
       "choices": [
         {
+          "kind": "parler",
           "text": "Le réveiller",
           "to": "10"
         }
@@ -1610,10 +1727,12 @@
       "text": "La maison avec la fenêtre intacte est en retrait de la plage, derrière une haie morte. Il y a quelqu'un dedans. Vous le savez à la façon dont la fenêtre est propre. Vous pourriez passer au large.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Approcher de la maison",
           "to": "101"
         },
         {
+          "kind": "aller",
           "text": "Passer au large",
           "to": "48"
         }
@@ -1644,10 +1763,12 @@
       "text": "Un homme, maigre, avec un couteau, tient le petit par le bras et le sac dans l'autre main. Quand il vous voit arriver il lâche le petit et il part en courant avec le sac vers les dunes. Le petit n'a rien. Le sac a tout.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Le poursuivre",
           "to": "94"
         },
         {
+          "kind": "agir",
           "text": "Rester avec le petit et le laisser partir",
           "to": "27"
         }
@@ -1657,6 +1778,7 @@
       "text": "Dans les jumelles, derrière la maison, un camion bâché, et des hommes autour, quatre ou cinq, qui chargent quelque chose. Un d'eux lève la tête, comme s'il sentait le regard. Vous rangez les jumelles et vous prenez le petit par la main. Vous ne saurez jamais ce qu'il y avait dans la cave. C'est mieux.",
       "choices": [
         {
+          "kind": "aller",
           "text": "S'éloigner sans bruit",
           "to": "30"
         }
@@ -1681,6 +1803,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Revenir dans la cour",
           "to": "62"
         }
@@ -1690,6 +1813,7 @@
       "text": "Vous vous asseyez sur le sable, là où la route finit, parce qu'il n'y a plus de route. Vous ne pouvez plus marcher. Vous le savez depuis la rivière, peut-être depuis avant. Le petit s'assoit contre vous.",
       "choices": [
         {
+          "kind": "parler",
           "text": "Lui parler",
           "to": "114"
         }
@@ -1699,6 +1823,7 @@
       "text": "La forêt morte craque sous le vent. Il y a du bois, du bois sec, des arbres entiers tombés que personne n'a brûlés parce que personne n'est resté.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Fendre du bois avec la hachette",
           "to": "98",
           "if": {
@@ -1707,6 +1832,7 @@
           }
         },
         {
+          "kind": "aller",
           "text": "Continuer",
           "to": "36"
         }
@@ -1723,6 +1849,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Rejoindre la route",
           "to": "75"
         }
@@ -1744,6 +1871,7 @@
       ],
       "choices": [
         {
+          "kind": "agir",
           "text": "Dormir",
           "to": "150"
         }
@@ -1753,6 +1881,7 @@
       "text": "Vous mangez tous les trois, au bord de la route. Le vieux mange lentement, par petites bouchées. Il dit qu'il n'y a plus de Dieu et que le petit en est un. Il dit ça en mâchant, sans vous regarder. Le petit regagne 1 point de Souffle. Le lendemain, le vieux a disparu.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Continuer vers le sud",
           "to": "38"
         }
@@ -1774,6 +1903,7 @@
       ],
       "choices": [
         {
+          "kind": "agir",
           "text": "Chercher un endroit pour la nuit",
           "to": "71"
         }
@@ -1800,6 +1930,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Continuer jusqu'au sable",
           "to": "54"
         }
@@ -1819,6 +1950,7 @@
       "text": "Le matin ne vient pas, il s'installe. Gris sur gris. Vous écoutez avant d'ouvrir les yeux : la respiration du petit.",
       "choices": [
         {
+          "kind": "parler",
           "text": "Le réveiller",
           "to": "99"
         }
@@ -1840,6 +1972,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Continuer",
           "to": "36"
         }
@@ -1852,10 +1985,12 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "La route des ponts",
           "to": "73"
         },
         {
+          "kind": "aller",
           "text": "La plaine de cendres, en suivant la carte",
           "to": "124",
           "if": {
@@ -1864,6 +1999,7 @@
           }
         },
         {
+          "kind": "aller",
           "text": "Le détour par la ferme",
           "to": "62"
         }
@@ -1885,6 +2021,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Ressortir sur la rue",
           "to": "30"
         }
@@ -1902,10 +2039,12 @@
       "text": "La cuisine est propre, ce qui vous arrête. Une table, deux chaises, des assiettes dans l'évier. Quelqu'un a vécu ici jusqu'à récemment. Un garde-manger au fond, la porte fermée.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Ouvrir le garde-manger",
           "to": "126"
         },
         {
+          "kind": "aller",
           "text": "Revenir dans la cour",
           "to": "62"
         }
@@ -1922,6 +2061,7 @@
       ],
       "choices": [
         {
+          "kind": "agir",
           "text": "Chercher un endroit pour la nuit",
           "to": "71"
         }
@@ -1938,6 +2078,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Revenir dans la cour",
           "to": "62"
         }
@@ -1947,6 +2088,7 @@
       "text": "Le matin ne vient pas, il s'installe. Gris sur gris. Vous écoutez avant d'ouvrir les yeux : la respiration du petit.",
       "choices": [
         {
+          "kind": "parler",
           "text": "Le réveiller",
           "to": "30"
         }
@@ -1967,6 +2109,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Continuer, loin de la route",
           "to": "115"
         }
@@ -1976,10 +2119,12 @@
       "text": "De la colline on voit la route jusqu'au tournant, et au-delà la ville, un amas gris plus foncé que le reste. La tour de guet est en bois, à demi pourrie, mais elle tient encore. Là-haut il y aurait de quoi voir loin.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Grimper à la tour",
           "to": "109"
         },
         {
+          "kind": "aller",
           "text": "Redescendre vers la route",
           "to": "75"
         }
@@ -1989,10 +2134,12 @@
       "text": "Le chemin de terre continue derrière la ferme et rejoint la grande route plus loin, après les ponts, à travers champs. Il revient aussi vers la bifurcation, si vous avez oublié quelque chose, ou si la plaine vous tente maintenant.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Couper à travers champs vers le sud",
           "to": "40"
         },
         {
+          "kind": "aller",
           "text": "Revenir à la bifurcation",
           "to": "99"
         }
@@ -2012,6 +2159,7 @@
       "text": "Vous campez dans une carcasse de bus, les vitres cassées, mais les sièges sont secs. Le vent se lève vers le soir et il ne fait que monter.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Manger (1 ration)",
           "to": "110",
           "if": {
@@ -2039,6 +2187,7 @@
           ]
         },
         {
+          "kind": "agir",
           "text": "Ouvrir la boîte de pêches au sirop",
           "to": "110",
           "if": {
@@ -2064,6 +2213,7 @@
           ]
         },
         {
+          "kind": "parler",
           "text": "Lui donner les antibiotiques",
           "to": "110",
           "if": {
@@ -2084,6 +2234,7 @@
           ]
         },
         {
+          "kind": "agir",
           "text": "Faire un feu avec le briquet",
           "to": "91",
           "if": {
@@ -2092,6 +2243,7 @@
           }
         },
         {
+          "kind": "agir",
           "text": "Dormir",
           "to": "150"
         }
@@ -2108,6 +2260,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Revenir dans la cour",
           "to": "62"
         }
@@ -2136,6 +2289,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Revenir vers la rue principale par les jardins",
           "to": "30"
         }
@@ -2145,6 +2299,7 @@
       "text": "Vous lui dites qu'il va devoir continuer sans vous. Qu'il faut aller au sud, le long de la côte. Que les gentils sont là, quelque part. Qu'il porte le feu. Il dit qu'il ne sait pas comment. Vous dites : si, tu sais. Il pleure comme on respire.",
       "choices": [
         {
+          "kind": "parler",
           "text": "Lui donner la photographie",
           "to": "9",
           "if": {
@@ -2165,6 +2320,7 @@
           ]
         },
         {
+          "kind": "parler",
           "text": "Lui dire de garder le feu",
           "to": "9"
         }
@@ -2174,10 +2330,12 @@
       "text": "La route entre dans un tunnel. Dedans, le noir complet et le bruit de l'eau qui goutte. Dehors, la montagne à contourner par les éboulis, une journée de plus.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Traverser le tunnel",
           "to": "157"
         },
         {
+          "kind": "aller",
           "text": "Contourner par les éboulis",
           "to": "50"
         }
@@ -2215,6 +2373,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Reprendre la route",
           "to": "75"
         }
@@ -2231,6 +2390,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Revenir sur la plage",
           "to": "48"
         }
@@ -2252,6 +2412,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Remonter sur la route",
           "to": "40"
         }
@@ -2268,6 +2429,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Continuer vers la rivière",
           "to": "39"
         }
@@ -2289,6 +2451,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Le rejoindre dans la cour",
           "to": "62"
         }
@@ -2306,6 +2469,7 @@
       "text": "La plaine de cendres n'a pas de bord. La carte dit sud-sud-ouest, trente kilomètres, et le vent efface vos traces derrière vous. Il n'y a pas d'eau. Il n'y a rien.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Boire au bidon et marcher",
           "to": "129",
           "if": {
@@ -2314,6 +2478,7 @@
           }
         },
         {
+          "kind": "aller",
           "text": "Marcher sans eau",
           "to": "19"
         }
@@ -2335,6 +2500,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Courir vers le petit",
           "to": "84"
         }
@@ -2358,6 +2524,7 @@
       "text": "La route reprend derrière la dernière maison, et la ville se referme derrière vous sans un bruit. Le petit se retourne une fois. Vous ne lui demandez pas ce qu'il regarde.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Marcher jusqu'au soir",
           "to": "147"
         }
@@ -2367,6 +2534,7 @@
       "text": "Le bidon se vide en deux jours et la plaine finit le troisième matin, d'un coup, sur une route. Vous vous asseyez sur le goudron. Le petit s'endort la tête sur vos genoux. Vous n'avez vu personne, et personne ne vous a vus.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Suivre la route",
           "to": "40"
         }
@@ -2376,10 +2544,12 @@
       "text": "La grille de la pharmacie est baissée, mais tordue en bas, à hauteur d'enfant. Derrière, les rayons ont été renversés, pas vidés. Il y a peut-être encore quelque chose derrière le comptoir.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Passer sous la grille",
           "to": "14"
         },
         {
+          "kind": "agir",
           "text": "Laisser tomber",
           "to": "30"
         }
@@ -2389,10 +2559,12 @@
       "text": "Le wagon est couché sur le flanc, les portes ouvertes sur le ciel. À l'intérieur, des sièges, des valises éventrées, et au fond quelque chose qui a été une cantine. On entend bouger. Des rats, probablement.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Entrer dans le wagon",
           "to": "154"
         },
         {
+          "kind": "aller",
           "text": "Continuer vers la route",
           "to": "75"
         }
@@ -2402,6 +2574,7 @@
       "text": "Le gel tombe vers trois heures et la cendre devient dure sous vous. Vos doigts ne sentent plus rien. Le petit ne tremble plus, ce qui est pire.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Se rouler dans la couverture de survie",
           "to": "97",
           "if": {
@@ -2410,6 +2583,7 @@
           }
         },
         {
+          "kind": "agir",
           "text": "Le serrer contre vous et attendre",
           "to": "136"
         }
@@ -2425,6 +2599,7 @@
       "text": "Le petit ne se réveille pas. Vous le savez avant de le toucher. Vous restez à côté de lui jusqu'à ce qu'il fasse jour, puis vous creusez dans la cendre avec les mains, et vous ne mettez rien dessus que de la cendre, parce qu'il n'y a rien d'autre.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Marcher",
           "to": "95"
         }
@@ -2434,6 +2609,7 @@
       "text": "Vous le rattrapez dans la dune. Il tombe et il lâche le couteau. Il n'a rien d'autre que ce qu'il porte, et ce qu'il vous a pris. Il vous regarde comme vous regardiez l'homme foudroyé. Le petit arrive derrière vous, à bout de souffle.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Lui prendre tout, le manteau, les chaussures, tout",
           "to": "152",
           "effects": [
@@ -2449,6 +2625,7 @@
           ]
         },
         {
+          "kind": "aller",
           "text": "Reprendre le sac et le laisser partir",
           "to": "119",
           "effects": [
@@ -2476,6 +2653,7 @@
       ],
       "choices": [
         {
+          "kind": "agir",
           "text": "Attendre que ça passe",
           "to": "97"
         }
@@ -2497,6 +2675,7 @@
       ],
       "choices": [
         {
+          "kind": "agir",
           "text": "Charger la caisse de conserves dans le chariot",
           "to": "23",
           "if": {
@@ -2512,6 +2691,7 @@
           ]
         },
         {
+          "kind": "aller",
           "text": "Ressortir avec ce qu'on peut porter",
           "to": "30"
         }
@@ -2521,10 +2701,12 @@
       "text": "La cabane de chasse est à cent mètres de la route, entre des troncs noirs. La porte est fermée par un fil de fer. Il y a des traces devant, mais vieilles, remplies de cendre.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Entrer dans la cabane",
           "to": "2"
         },
         {
+          "kind": "aller",
           "text": "Revenir sur la route",
           "to": "75"
         }
@@ -2554,6 +2736,7 @@
       ],
       "choices": [
         {
+          "kind": "agir",
           "text": "Dormir",
           "to": "151"
         }
@@ -2570,6 +2753,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Revenir dans la cour",
           "to": "62"
         }
@@ -2591,6 +2775,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Revenir sur la route",
           "to": "75"
         }
@@ -2612,6 +2797,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Continuer",
           "to": "46"
         }
@@ -2633,6 +2819,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Continuer",
           "to": "46"
         }
@@ -2642,6 +2829,7 @@
       "text": "Vous campez sous un pont de béton, à l'abri du vent. Le petit s'assoit contre le pilier, les genoux remontés. Il fait trop sombre pour voir la cendre tomber, mais on l'entend, comme une pluie très fine.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Manger (1 ration)",
           "to": "145",
           "if": {
@@ -2669,6 +2857,7 @@
           ]
         },
         {
+          "kind": "agir",
           "text": "Faire un feu avec le briquet",
           "to": "140",
           "if": {
@@ -2677,6 +2866,7 @@
           }
         },
         {
+          "kind": "agir",
           "text": "Dormir",
           "to": "151"
         }
@@ -2693,6 +2883,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Redescendre et rejoindre la route",
           "to": "75"
         }
@@ -2702,6 +2893,7 @@
       "text": "Vous campez dans un fossé profond, sous un pin mort dont les branches font un toit. Le ciel est clair pour une fois, ce qui veut dire qu'il va geler.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Manger (1 ration)",
           "to": "147",
           "if": {
@@ -2729,6 +2921,7 @@
           ]
         },
         {
+          "kind": "agir",
           "text": "Ouvrir la boîte de pêches au sirop",
           "to": "147",
           "if": {
@@ -2754,6 +2947,7 @@
           ]
         },
         {
+          "kind": "parler",
           "text": "Lui donner les antibiotiques",
           "to": "147",
           "if": {
@@ -2774,6 +2968,7 @@
           ]
         },
         {
+          "kind": "agir",
           "text": "Faire un feu avec le briquet",
           "to": "22",
           "if": {
@@ -2782,6 +2977,7 @@
           }
         },
         {
+          "kind": "agir",
           "text": "Dormir",
           "to": "132"
         }
@@ -2798,6 +2994,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Redescendre sur la plage",
           "to": "48"
         }
@@ -2819,6 +3016,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Sortir et reprendre la route",
           "to": "75"
         }
@@ -2836,6 +3034,7 @@
       "text": "La pluie vient vers minuit, noire, et le vent la pousse sous le pont. Elle ne s'arrêtera pas avant l'aube.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Tendre la bâche",
           "to": "105",
           "if": {
@@ -2844,6 +3043,7 @@
           }
         },
         {
+          "kind": "agir",
           "text": "Dormir sous les arbres",
           "to": "8"
         }
@@ -2860,6 +3060,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Revenir sur la plage",
           "to": "48"
         }
@@ -2876,6 +3077,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Revenir sur la route",
           "to": "75"
         }
@@ -2893,6 +3095,7 @@
       "text": "Vous décrochez le combiné. Vous composez un numéro que vos doigts connaissent encore. Il n'y a rien, pas même le silence d'une ligne. Vous restez l'écouteur contre l'oreille jusqu'à ce que le petit frappe à la vitre.",
       "choices": [
         {
+          "kind": "parler",
           "text": "Raccrocher et continuer",
           "to": "39"
         }
@@ -2909,10 +3112,12 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Descendre dans la fosse",
           "to": "123"
         },
         {
+          "kind": "aller",
           "text": "Ressortir sur la rue",
           "to": "30"
         }

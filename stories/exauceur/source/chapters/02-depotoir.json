@@ -46,14 +46,17 @@
       "text": "La route sort du Cordon entre deux talus et s'arrête devant les collines. Ce ne sont pas des collines. Des camions empilés, des bennes, des carcasses de bus à perte de vue, et par-dessus une couleur de rouille que la lumière n'arrange pas. L'air sent le fer chaud. Au loin, un cube de béton gris : le hangar. Le détecteur cliquette sans se presser. À gauche de la route, un bus couché sur le flanc.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Suivre la route vers le hangar",
           "to": "c02-9"
         },
         {
+          "kind": "aller",
           "text": "Couper par les collines de ferraille",
           "to": "c02-11"
         },
         {
+          "kind": "aller",
           "text": "Entrer dans le bus couché",
           "to": "c02-17"
         }
@@ -75,10 +78,12 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Suivre la route vers le hangar",
           "to": "c02-9"
         },
         {
+          "kind": "aller",
           "text": "Couper par les collines de ferraille",
           "to": "c02-11"
         }
@@ -95,10 +100,12 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "S'abriter sous le camion renversé",
           "to": "c02-14"
         },
         {
+          "kind": "aller",
           "text": "Courir jusqu'au pylône",
           "to": "c02-26"
         }
@@ -108,10 +115,12 @@
       "text": "Vous vous collez au pied du pylône. Le béton est frais. Le compteur se calme. De là, le hangar est à deux cents mètres, porte ouverte, un fil de fumée qui en sort. Deux silhouettes devant. Elles ne bougent pas. Derrière vous, le camion renversé, les roues en l'air, et le soleil qui tape dessus.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Revenir au camion renversé",
           "to": "c02-14"
         },
         {
+          "kind": "aller",
           "text": "Continuer jusqu'au hangar",
           "to": "c02-3"
         }
@@ -121,14 +130,17 @@
       "text": "Le camion est couché sur le flanc, la cabine en l'air, le pare-brise étoilé. Sous la remorque, l'ombre est épaisse et le compteur se tait presque. Par la portière ouverte, là-haut, une manche pend. La remorque est fendue sur toute la longueur. Dedans, des bâches, et quelque chose de rond qui ne bouge pas.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Grimper jusqu'à la cabine",
           "to": "c02-31"
         },
         {
+          "kind": "agir",
           "text": "Fouiller la remorque éventrée",
           "to": "c02-38"
         },
         {
+          "kind": "aller",
           "text": "Repartir vers le hangar",
           "to": "c02-3"
         }
@@ -155,10 +167,12 @@
       ],
       "choices": [
         {
+          "kind": "agir",
           "text": "Fouiller la remorque éventrée",
           "to": "c02-38"
         },
         {
+          "kind": "aller",
           "text": "Repartir vers le hangar",
           "to": "c02-3"
         }
@@ -175,14 +189,17 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Grimper de nouveau",
           "to": "c02-31"
         },
         {
+          "kind": "agir",
           "text": "Fouiller la remorque éventrée",
           "to": "c02-38"
         },
         {
+          "kind": "aller",
           "text": "Repartir vers le hangar",
           "to": "c02-3"
         }
@@ -199,6 +216,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Grimper jusqu'à la cabine",
           "to": "c02-31",
           "if": {
@@ -208,6 +226,7 @@
           }
         },
         {
+          "kind": "aller",
           "text": "Repartir vers le hangar",
           "to": "c02-3"
         }
@@ -224,10 +243,12 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Descendre dans le couloir de rouille",
           "to": "c02-29"
         },
         {
+          "kind": "aller",
           "text": "Rebrousser chemin vers la route",
           "to": "c02-9"
         }
@@ -237,6 +258,7 @@
       "text": "Ils sont cinq. Des chiens aveugles, la peau sur les côtes, les yeux comme des croûtes. Ils ne grognent pas. Ils lèvent le museau, ils vous prennent au vent, et ils viennent. Le premier a les crocs jaunes et une oreille en moins. C'est lui qui mène les autres.",
       "choices": [
         {
+          "kind": "attaquer",
           "text": "Abattre le chien de tête au Makarov",
           "to": "c02-19",
           "if": {
@@ -245,10 +267,12 @@
           }
         },
         {
+          "kind": "attaquer",
           "text": "Les recevoir au couteau",
           "to": "c02-35"
         },
         {
+          "kind": "aller",
           "text": "Courir vers le hangar",
           "to": "c02-8",
           "effects": [
@@ -265,6 +289,7 @@
       "text": "Vous tirez. Le chien de tête tombe sans un bruit, les pattes encore en mouvement. Les autres s'arrêtent. Ils sentent le sang, ils hésitent, puis ils se jettent sur lui. Vous reculez pendant qu'ils mangent. Le coup de feu roule entre les carcasses et va s'écraser contre le hangar. Là-bas, quelqu'un a entendu.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Continuer vers le hangar",
           "to": "c02-3"
         }
@@ -293,6 +318,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Continuer jusqu'au hangar",
           "to": "c02-3"
         }
@@ -302,6 +328,7 @@
       "text": "Le dernier chien se traîne vers les carcasses, une patte en l'air. Les autres sont là, sur la tôle, et déjà la ferraille a l'air de les absorber. Vous essuyez le couteau sur votre pantalon. Vos mains tremblent. Pas la peur : le fer. Le couloir débouche au pied du hangar.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Continuer jusqu'au hangar",
           "to": "c02-3"
         }
@@ -316,14 +343,17 @@
       },
       "choices": [
         {
+          "kind": "aller",
           "text": "Aller à la porte du hangar",
           "to": "c02-21"
         },
         {
+          "kind": "aller",
           "text": "Contourner le hangar par la ferraille",
           "to": "c02-12"
         },
         {
+          "kind": "aller",
           "text": "Descendre vers le fossé avec le détecteur",
           "to": "c02-16",
           "if": {
@@ -352,10 +382,12 @@
       "text": "Le fossé est bleu. Pas l'eau : l'air. Des arcs courent d'une carcasse à l'autre, claquent, meurent, repartent. Une « Électro ». Au milieu, dans l'herbe brûlée, quelque chose rougeoie, gros comme un poing. Le Détecteur Ours crépite comme une friture. Il crépite avant vous. Un boulon avant chaque pas, disait le Loup.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Lancer un boulon et avancer",
           "to": "c02-33"
         },
         {
+          "kind": "aller",
           "text": "Remonter vers le hangar",
           "to": "c02-3"
         }
@@ -380,6 +412,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Remonter vers le hangar",
           "to": "c02-3"
         }
@@ -396,6 +429,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Remonter vers le hangar",
           "to": "c02-3"
         }
@@ -412,6 +446,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Rejoindre le wagon au nord du hangar",
           "to": "c02-13"
         }
@@ -421,6 +456,7 @@
       "text": "Le plus grand a une dent en or et un fusil d'assaut qu'il porte comme un sac de pain. Il ne le lève pas. Cent roubles pour passer, dit-il. Ou tu repars par où tu es venu, et là-bas il y a les chiens. Derrière lui, l'autre a déjà la main sur sa crosse. Dedans, quelqu'un rit.",
       "choices": [
         {
+          "kind": "payer",
           "text": "Payer le péage (100 roubles)",
           "to": "c02-37",
           "if": {
@@ -438,14 +474,17 @@
           ]
         },
         {
+          "kind": "attaquer",
           "text": "Attaquer le grand à la dent d'or",
           "to": "c02-7"
         },
         {
+          "kind": "agir",
           "text": "Attendre la nuit derrière les carcasses",
           "to": "c02-25"
         },
         {
+          "kind": "aller",
           "text": "Faire demi-tour vers la ferraille",
           "to": "c02-3"
         }
@@ -455,10 +494,12 @@
       "text": "Il compte les billets deux fois. Passe, dit-il. Le hangar sent le feu de pneus. Cinq hommes autour des flammes, des caisses vertes contre le mur, une ouverte, pleine de grenades luisantes de graisse. Personne ne vous regarde. Au fond, une porte donne sur le nord.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Traverser sans regarder",
           "to": "c02-13"
         },
         {
+          "kind": "agir",
           "text": "Prendre une grenade dans la caisse au passage",
           "to": "c02-20"
         }
@@ -483,6 +524,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Sortir au nord",
           "to": "c02-13"
         }
@@ -499,6 +541,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Rejoindre le wagon au nord",
           "to": "c02-13"
         }
@@ -532,10 +575,12 @@
       ],
       "choices": [
         {
+          "kind": "agir",
           "text": "Fouiller le hangar",
           "to": "c02-40"
         },
         {
+          "kind": "aller",
           "text": "Sortir par le nord",
           "to": "c02-13"
         }
@@ -552,6 +597,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Sortir par la porte du nord",
           "to": "c02-13"
         }
@@ -561,6 +607,7 @@
       "text": "Vous lâchez prise et vous courez. Ils tirent dans votre dos : les balles claquent sur la tôle, pas sur vous, pas cette fois. Vous plongez derrière une carcasse de bus au pied du hangar. Une balle vous a mordu l'épaule. Le sifflement reprend derrière la porte. Ils ne vous suivent pas. Ils vous attendent.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Reprendre votre souffle au pied du hangar",
           "to": "c02-3"
         }
@@ -590,6 +637,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Sortir par la porte du nord",
           "to": "c02-13"
         }
@@ -623,6 +671,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Rejoindre le wagon au nord",
           "to": "c02-13"
         }
@@ -632,6 +681,7 @@
       "text": "Au nord du hangar, un wagon de marchandises est posé dans l'herbe, sans rails, sans roues. La porte est ouverte. Dedans, de la paille, deux boîtes vides, un rond de cendres là où quelqu'un a fait du feu. Le compteur se tait. Par la porte, trois chemins : la voie ferrée qui part vers l'ouest, un ravin plein de brume à l'est, et la route, au nord, droite, entre les pylônes.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Boire l'anti-rad d'un trait",
           "to": "c02-28",
           "if": {
@@ -652,6 +702,7 @@
           ]
         },
         {
+          "kind": "agir",
           "text": "Poser le bandage",
           "to": "c02-39",
           "if": {
@@ -672,14 +723,17 @@
           ]
         },
         {
+          "kind": "aller",
           "text": "Suivre la voie ferrée vers l'ouest",
           "to": "c02-32"
         },
         {
+          "kind": "aller",
           "text": "Descendre dans le ravin",
           "to": "c02-2"
         },
         {
+          "kind": "aller",
           "text": "Prendre la route du nord",
           "to": "c02-23"
         }
@@ -689,6 +743,7 @@
       "text": "L'Anti-rad a le goût de l'eau de Javel. Vous le buvez d'un trait, assis dans la paille. Vous perdez 5 rads. Le compteur descend lentement, comme un homme qui ne veut pas. Vos mains cessent de trembler. Le flacon vide, vous le laissez dans le wagon avec les boîtes.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Revenir à la porte du wagon",
           "to": "c02-13"
         }
@@ -698,6 +753,7 @@
       "text": "Vous déroulez le Bandage autour de l'avant-bras, serré, par-dessus la rouille et le sang. Ça tient. Vous regagnez 3 points d'Endurance. La paille sent le moisi et le chien. Dehors, le vent passe entre les pylônes sans les faire bouger.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Revenir à la porte du wagon",
           "to": "c02-13"
         }
@@ -714,6 +770,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Suivre la voie jusqu'à l'usine",
           "to": "c03-2"
         }
@@ -723,6 +780,7 @@
       "text": "Le ravin descend vers l'est et la brume monte à sa rencontre. Au bout de cinquante mètres, vous ne voyez plus le wagon derrière vous, ni vos pieds. Ça sent la terre mouillée et la fumée d'herbe. En bas, une musique, très loin, une radio. Et, par-dessous, quelque chose de lourd qui marche et qu'on n'entend que dans les côtes.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Descendre dans la brume",
           "to": "c05-1"
         }
@@ -739,6 +797,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Marcher vers la barricade",
           "to": "c07-1"
         }

@@ -40,14 +40,17 @@
       "text": "Sous le porche du palais de la Culture, les colonnes tiennent encore. Les vitres, non. Une mosaïque de travailleurs souriants court au-dessus des portes, les visages crevés à coups de balles. À l'intérieur, quelque chose chante. Pas une chanson : une phrase, reprise, toujours la même, par des voix qui ne respirent pas au même endroit. Sur les marches, des bougies éteintes dans des boîtes de conserve, alignées comme pour une fête.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Entrer par le grand hall",
           "to": "c20-6"
         },
         {
+          "kind": "aller",
           "text": "Contourner par la porte de service",
           "to": "c20-21"
         },
         {
+          "kind": "aller",
           "text": "Redescendre sur la place",
           "to": "c18-3"
         }
@@ -62,22 +65,27 @@
       },
       "choices": [
         {
+          "kind": "aller",
           "text": "Monter au balcon",
           "to": "c20-9"
         },
         {
+          "kind": "aller",
           "text": "Pousser les portes de la salle",
           "to": "c20-20"
         },
         {
+          "kind": "agir",
           "text": "Fouiller derrière le vestiaire",
           "to": "c20-10"
         },
         {
+          "kind": "aller",
           "text": "Passer par la porte de la scène",
           "to": "c20-7"
         },
         {
+          "kind": "agir",
           "text": "Boire l'anti-rad",
           "to": "c20-14",
           "if": {
@@ -98,6 +106,7 @@
           ]
         },
         {
+          "kind": "agir",
           "text": "Poser le bandage",
           "to": "c20-22",
           "if": {
@@ -118,6 +127,7 @@
           ]
         },
         {
+          "kind": "aller",
           "text": "Redescendre sur la place",
           "to": "c18-3"
         }
@@ -127,6 +137,7 @@
       "text": "L'Anti-rad a un goût de craie et de fer. Vous le videz debout contre un pilier, les yeux sur les doubles portes. Vous perdez 5 rads. Le chant n'a pas bougé. Dans le buisson du lustre, une bougie fume encore, toute seule, comme oubliée par quelqu'un qui reviendra.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Revenir au milieu du hall",
           "to": "c20-6"
         }
@@ -136,6 +147,7 @@
       "text": "Vous déroulez le Bandage sur ce qui saigne et vous serrez avec les dents. Vous regagnez 3 points d'Endurance. Dans le vestiaire, des manteaux pendent encore à leurs numéros, vingt ans de poussière sur les épaules. Un ticket de vestiaire traîne au sol, le 26. Vous le laissez.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Revenir au milieu du hall",
           "to": "c20-6"
         }
@@ -158,10 +170,12 @@
       "text": "Personne n'a levé la tête. Vous êtes à plat ventre derrière la rambarde, et la salle est sous vous. Sur la scène, un bloc de béton de deux mètres, peint en gris et or, un cercle au centre. Trois hommes en combinaison grise lui font face, masques relevés sur le front. Ils psalmodient, et chaque phrase finit sur le même mot. Entre eux, un quatrième ne chante pas. Il écoute.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Rester jusqu'au bout",
           "to": "c20-11"
         },
         {
+          "kind": "attaquer",
           "text": "Tirer dans le tas depuis le balcon",
           "to": "c20-5",
           "if": {
@@ -170,6 +184,7 @@
           }
         },
         {
+          "kind": "aller",
           "text": "Redescendre sans bruit",
           "to": "c20-6"
         }
@@ -191,10 +206,12 @@
       "text": "Il tombe entre deux rangées, et le chant, en bas, ne s'est pas arrêté. Pas une seconde. Vous restez à genoux le temps de comprendre que personne ne monte. Vous tirez le corps sous un fauteuil. Sur son front, sous le masque, une marque ronde, comme une brûlure ancienne. En bas, les dos gris n'ont pas bougé.",
       "choices": [
         {
+          "kind": "agir",
           "text": "Rester regarder depuis la rambarde",
           "to": "c20-11"
         },
         {
+          "kind": "aller",
           "text": "Redescendre dans le hall",
           "to": "c20-6"
         }
@@ -210,10 +227,12 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Redescendre dans le hall",
           "to": "c20-6"
         },
         {
+          "kind": "aller",
           "text": "Sortir par l'issue de secours du balcon",
           "to": "c20-30"
         }
@@ -230,6 +249,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Redescendre sur la place",
           "to": "c18-3"
         }
@@ -252,6 +272,7 @@
       "text": "Les doubles portes s'ouvrent sur la salle de cinéma. Trois cents fauteuils rouges, et devant la scène, trois dos gris à genoux, un quatrième debout, face à un bloc de béton peint. Ils ne se retournent pas tout de suite. Le chant d'abord se termine, phrase entière. Puis ils se lèvent, tous ensemble, et vous regardez trois paires d'yeux blancs et trois fusils. Le quatrième n'a pas bougé.",
       "choices": [
         {
+          "kind": "attaquer",
           "text": "Lancer la Grenade F1 entre les fauteuils",
           "to": "c20-8",
           "if": {
@@ -267,10 +288,12 @@
           ]
         },
         {
+          "kind": "attaquer",
           "text": "Tirer le premier",
           "to": "c20-25"
         },
         {
+          "kind": "agir",
           "text": "Refermer les portes et courir",
           "to": "c20-13"
         }
@@ -280,10 +303,12 @@
       "text": "Vous dégoupillez la Grenade F1 et la lancez par-dessus les fauteuils. Elle roule jusqu'à la scène. Ils la regardent. Aucun ne bouge. La salle blanchit, et le bruit vous rentre dans les dents. Quand la poussière retombe, les premiers rangs sont noirs, et sur la scène, trois formes grises ne bougent plus. Le quatrième non plus. Le bloc de béton n'a pas une égratignure.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Avancer vers la scène",
           "to": "c20-16"
         },
         {
+          "kind": "aller",
           "text": "Repartir vers le hall",
           "to": "c20-6"
         }
@@ -313,6 +338,7 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Revenir au milieu du hall",
           "to": "c20-6"
         }
@@ -322,6 +348,7 @@
       "text": "Vous reculez en tirant, à travers les portes, et vous les refermez du dos. Les balles s'arrêtent dans le bois. Personne ne vous suit. Derrière les portes, le chant repart. Il y manque une voix, un corps que vous ne verrez pas se vider sur le tapis rouge. Le hall sent toujours la cire.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Revenir au milieu du hall",
           "to": "c20-6"
         }
@@ -331,10 +358,12 @@
       "text": "C'est fini. La salle sent la poudre et le béton chaud. Vous montez sur la scène. Le bloc est du béton, peint à la main, gris et or, le cercle au centre tracé au compas. Derrière, un fil électrique sort du socle et file dans le mur, vers le nord. Un des hommes gris respire encore, sur le dos, le masque de travers. Il vous regarde avec ses yeux blancs et il sourit.",
       "choices": [
         {
+          "kind": "parler",
           "text": "Écouter ce qu'il dit",
           "to": "c20-2"
         },
         {
+          "kind": "attaquer",
           "text": "L'achever et fouiller la salle",
           "to": "c20-24"
         }
@@ -350,10 +379,12 @@
       ],
       "choices": [
         {
+          "kind": "agir",
           "text": "Fouiller la salle",
           "to": "c20-24"
         },
         {
+          "kind": "aller",
           "text": "Revenir dans le hall",
           "to": "c20-6"
         }
@@ -363,10 +394,12 @@
       "text": "Dans les poches des combinaisons grises, des papiers pliés, des prières, le même mot écrit cent fois. Pas de nourriture. Pas de roubles. Des hommes qui n'avaient plus besoin de rien. Au fond de la scène, le fil du bloc passe sous un rideau et descend vers les coulisses. De là vous arrive un courant d'air froid, et une odeur sucrée, écœurante, comme de la viande oubliée.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Suivre le fil dans les coulisses",
           "to": "c20-7"
         },
         {
+          "kind": "aller",
           "text": "Revenir dans le hall",
           "to": "c20-6"
         }
@@ -398,10 +431,12 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Revenir dans le hall",
           "to": "c20-6"
         },
         {
+          "kind": "aller",
           "text": "Continuer vers la scène",
           "to": "c20-7"
         }
@@ -418,10 +453,12 @@
       ],
       "choices": [
         {
+          "kind": "agir",
           "text": "Forcer encore la porte",
           "to": "c20-19"
         },
         {
+          "kind": "agir",
           "text": "Renoncer et revenir dans le hall",
           "to": "c20-6"
         }
@@ -451,10 +488,12 @@
       "text": "Les coulisses. Des toiles peintes pendent des cintres, une forêt de bouleaux, une place de village, trouées. Il fait noir, et froid comme dans une cave. Ça sent le sucre pourri. Quelque chose respire, au fond, lentement, gros. Vous voyez double. Les bouleaux peints se dédoublent, votre main aussi, et pendant une seconde elle semble appartenir à quelqu'un d'autre.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Avancer vers la respiration",
           "to": "c20-23"
         },
         {
+          "kind": "attaquer",
           "text": "Lancer la Grenade F1 dans le noir",
           "to": "c20-17",
           "if": {
@@ -470,6 +509,7 @@
           ]
         },
         {
+          "kind": "aller",
           "text": "Reculer sans bruit",
           "to": "c20-12"
         }
@@ -500,10 +540,12 @@
       "text": "Il tombe en avant, et le monde redevient simple : une salle, une main. Le crâne sonne creux sur les planches. Le silence, après, est tel que vous entendez vos oreilles. Sous le fauteuil, le fil du bloc de béton aboutit à un haut-parleur de kolkhoze, débranché depuis vingt ans. Ce n'était pas lui qui parlait. Ce qui parlait était assis dessus, et regardait vers le nord.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Sortir par la porte de service",
           "to": "c18-3"
         },
         {
+          "kind": "aller",
           "text": "Revenir dans le hall",
           "to": "c20-6"
         }
@@ -513,10 +555,12 @@
       "text": "Vous dégoupillez la Grenade F1 et la lancez vers la respiration. La lumière, une seconde, montre tout : un fauteuil de velours, une tête énorme, deux yeux qui vous regardent sans surprise. Puis le bruit. Les toiles tombent des cintres comme des draps. Quand vous rouvrez les yeux, vous ne voyez plus qu'une seule salle. La chose, dans le fauteuil, n'a plus de tête. Ça sent le sucre brûlé.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Sortir par la porte de service",
           "to": "c18-3"
         },
         {
+          "kind": "aller",
           "text": "Revenir dans le hall",
           "to": "c20-6"
         }
@@ -526,6 +570,7 @@
       "text": "Vous courez sans regarder, ce qui est la seule façon. Une porte de fer, une barre, le jour. Vous êtes dehors, derrière le palais, dans un parking de bouleaux, et vous vomissez contre un mur. Derrière la porte, la respiration a repris son rythme. Elle ne suit pas. Elle n'a jamais eu besoin de suivre personne.",
       "choices": [
         {
+          "kind": "aller",
           "text": "Redescendre sur la place",
           "to": "c18-3"
         }
@@ -542,10 +587,12 @@
       ],
       "choices": [
         {
+          "kind": "aller",
           "text": "Entrer dans les coulisses",
           "to": "c20-7"
         },
         {
+          "kind": "aller",
           "text": "Suivre le couloir jusqu'au hall",
           "to": "c20-6"
         }
