@@ -2,6 +2,7 @@
   "id": "la-cendre",
   "title": "La Cendre",
   "summary": "Il fait froid, il fera plus froid. Vous avez promis au petit la mer, au sud, avant l'hiver. Vous ne savez pas ce qu'il y a à la mer. Il faut marcher.",
+  "difficulty": "rude",
   "start": "1",
   "death": "mort",
   "hero": {

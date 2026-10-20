@@ -2,6 +2,7 @@
   "id": "mille-portes",
   "title": "Les Mille Portes de Saint-Larron",
   "summary": "Vous devez 200 Pièces d'Or à la Mère Aiguille, une somme que vous ne réunirez jamais, et à Mille-Portes les dettes impayées finissent aux galères ou dans le canal. Elle n'accepte qu'une monnaie : le Dé Faussé de Saint-Larron, qui dort au cœur de la cité des voleurs.",
+  "difficulty": "douce",
   "start": "1",
   "death": "mort",
   "hero": {

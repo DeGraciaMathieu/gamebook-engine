@@ -2,6 +2,7 @@
   "id": "nublar",
   "title": "La Nuit d'Isla Nublar",
   "summary": "Les clôtures de Jurassic Park viennent de s'éteindre, la tempête frappe l'île, et le cargo de ravitaillement largue les amarres dans deux heures au quai Est. Vous êtes technicien de maintenance, et il n'y aura pas d'autre bateau.",
+  "difficulty": "standard",
   "art": {
     "style": "Illustration de livre-jeu des années 1980 : gravure à la plume en noir et blanc, encre sur papier, hachures serrées, forts contrastes, cadrage pleine page, ambiance de nuit. La pluie tropicale n'apparaît qu'en extérieur, jamais dans une pièce fermée. Aucun texte, aucune lettre, aucun cadre décoratif. Le héros n'est jamais montré de face : de dos, de loin ou en silhouette."
   },

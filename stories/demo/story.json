@@ -2,6 +2,7 @@
   "id": "demo",
   "title": "La Crypte du Roi Oublié",
   "summary": "Les champs de Valdorne dépérissent. Les villageois accusent la crypte scellée au-delà des ruines. Vous êtes la dernière lame qu'ils peuvent payer.",
+  "difficulty": "douce",
   "art": {
     "style": "Illustration de livre-jeu des années 1980 : gravure à la plume en noir et blanc, encre sur papier, hachures serrées, forts contrastes, cadrage pleine page, fantasy médiévale, souterrains éclairés à la lanterne. Aucun texte, aucune lettre, aucun cadre décoratif. Le héros n'est jamais montré de face : de dos, de loin ou en silhouette."
   },
