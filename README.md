@@ -103,6 +103,7 @@ Une histoire invalide (cible manquante, objet inconnu…) est refusée au charge
   "id": "demo",
   "title": "Titre affiché",
   "summary": "Résumé affiché sur l'accueil.",
+  "difficulty": "standard",
   "start": "1",
   "death": "mort",
   "hero": {
@@ -121,6 +122,7 @@ Une histoire invalide (cible manquante, objet inconnu…) est refusée au charge
 }
 ```
 
+- `difficulty` (optionnel) : `douce`, `standard` ou `rude`, affiché sur l'accueil avec le nombre de paragraphes (cibles de létalité dans `.claude/skills/new-story/references/coverage.md`).
 - `start` : paragraphe de départ. `death` (optionnel) : paragraphe affiché quand l'endurance tombe à 0.
 - `hero.stats` : chaque caractéristique a un `label`, une `description` optionnelle en quelques mots (affichée sur l'écran de création), et sa valeur de départ selon l'un des deux modèles ci-dessous. Les règles de combat utilisent `habilete` et `endurance`, le test de chance utilise `chance`. Une caractéristique ne dépasse jamais sa valeur de départ.
   - **Tirage aux dés** : `roll` (formule de dés) ou `value` (fixe). La partie commence directement.

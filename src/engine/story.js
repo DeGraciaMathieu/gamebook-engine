@@ -1,3 +1,5 @@
+export const DIFFICULTIES = ['douce', 'standard', 'rude'];
+
 export function getParagraph(story, id) {
   const paragraph = story.paragraphs[id];
   if (!paragraph) {
@@ -56,6 +58,7 @@ export function validateStory(story) {
 
   if (!story.id) errors.push('Champ "id" manquant');
   if (!story.title) errors.push('Champ "title" manquant');
+  if (story.difficulty !== undefined && !DIFFICULTIES.includes(story.difficulty)) errors.push(`difficulty : valeur attendue parmi ${DIFFICULTIES.join(', ')}`);
   if (!story.start) errors.push('Champ "start" manquant');
   if (story.art !== undefined && typeof story.art?.style !== 'string') errors.push('art.style : chaîne attendue');
   else checkTarget(story.start, 'start');

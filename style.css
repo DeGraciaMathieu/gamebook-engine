@@ -135,6 +135,13 @@ body {
   font-size: 1.35rem;
   font-weight: 500;
 }
+.story-card-meta {
+  margin: 0 0 8px;
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
 .story-card-summary {
   margin: 0 0 16px;
   color: var(--ink-soft);

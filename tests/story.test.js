@@ -116,3 +116,9 @@ test('une illustration exige un fichier et un texte alternatif', () => {
     assert.ok(errors.some((error) => error.includes(needle)), `erreur attendue pour ${needle} :\n${errors.join('\n')}`);
   }
 });
+
+test('la difficulté se déclare parmi douce, standard et rude', () => {
+  assert.deepEqual(validateStory({ ...makeStory({ '1': { text: 'Fin' } }), difficulty: 'rude' }), []);
+  const errors = validateStory({ ...makeStory({ '1': { text: 'Fin' } }), difficulty: 'extrême' });
+  assert.ok(errors.some((error) => error.includes('difficulty')));
+});

@@ -22,7 +22,15 @@ function renderStoryCard(story, { hasSave, onStart, onContinue, onRestart }) {
 
   return el('li', { class: 'story-card' }, [
     el('h2', { class: 'story-card-title' }, story.title),
+    el('p', { class: 'story-card-meta' }, describeStory(story)),
     el('p', { class: 'story-card-summary' }, story.summary),
     el('div', { class: 'story-card-actions' }, actions),
   ]);
+}
+
+function describeStory(story) {
+  const count = Object.keys(story.paragraphs).length;
+  const parts = [`${count} paragraphes`];
+  if (story.difficulty) parts.unshift(`Difficulté ${story.difficulty}`);
+  return parts.join(' · ');
 }
