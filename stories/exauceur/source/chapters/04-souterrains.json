@@ -36,7 +36,7 @@
   ],
   "paragraphs": {
     "c04-1": {
-      "text": "La trappe retombe au-dessus de vous. Le bruit roule dans la galerie et ne revient pas. Vous êtes dans l'égout d'Agroprom, sur une margelle de béton, de l'eau noire à vos pieds. Ça sent la rouille et le gaz de marais. Le détecteur crépite une fois, puis se tait. Devant, le noir est complet, de celui qu'on touche.",
+      "text": "La trappe retombe au-dessus de vous, et le bruit roule dans la galerie sans revenir. Au-dessus de la tôle, des bottes, puis une voix étouffée qui ne s'adresse pas à vous : « Il est descendu. Laisse. » Les bottes s'éloignent. Vous êtes dans l'égout d'Agroprom, sur une margelle de béton large comme une semelle, et sous la margelle, de l'eau noire qui ne coule pas. Ça sent la rouille et le gaz de marais. Devant, le noir est complet, de celui qu'on touche de la main avant de l'avoir vu.",
       "choices": [
         {
           "kind": "agir",
@@ -55,7 +55,7 @@
       ]
     },
     "c04-19": {
-      "text": "Le faisceau de la Lampe torche découpe un tunnel voûté, des câbles qui pendent, des traces de mains à hauteur d'épaule, noires de graisse. Quelqu'un a marché ici, souvent, sans lumière. Un caillebotis manque au milieu de la margelle ; vous l'enjambez. Au bout, la galerie se sépare, et une flèche peinte descend.",
+      "text": "Le faisceau de la Lampe torche découpe un tunnel voûté, des câbles sous gaine de toile qui pendent de leurs étriers, et, à hauteur d'épaule, des traces de mains noires de graisse, les unes sur les autres, jusqu'à faire une bande continue le long du mur. Des hommes ont marché ici souvent, sans lumière, en se guidant à la paume. Un caillebotis manque au milieu de la margelle ; vous l'enjambez, et le faisceau tombe au fond d'une fosse où des fers à béton dépassent de la vase. Au bout, la galerie se sépare, et sur la paroi une flèche peinte au minium descend.",
       "choices": [
         {
           "kind": "aller",
@@ -65,7 +65,7 @@
       ]
     },
     "c04-8": {
-      "text": "Vous avancez la main sur le mur. Le béton est gras, froid, strié de rigoles. Vos bottes trouvent la margelle pas à pas. Quelque chose cède sous le talon gauche, un caillebotis qui chante. Vous ne voyez rien. Tentez votre Chance.",
+      "text": "Le béton sous la paume est gras, froid, strié de rigoles qui vont toutes vers le bas, et vous avancez ainsi, la main dessus, les bottes trouvant la margelle pas à pas. Sous le talon gauche, le béton s'arrête et une tôle chante : un caillebotis que vous ne voyez pas, et qui plie. Tentez votre Chance.",
       "test": {
         "type": "luck",
         "success": "c04-27",
@@ -73,7 +73,7 @@
       }
     },
     "c04-27": {
-      "text": "Le caillebotis tient. Vous passez le pied, puis l'autre, et le sol redevient du béton. Plus loin, un filet de jour tombe d'une grille au plafond, assez pour deviner que la galerie se sépare. Sous la grille, une flèche peinte descend.",
+      "text": "Le caillebotis tient. Vous passez un pied, puis l'autre, et sous la semelle le sol redevient du béton. Plus loin, une grille au plafond laisse tomber assez de jour pour compter vos doigts, et pour lire sur la paroi une flèche peinte qui descend, là où la galerie se sépare.",
       "choices": [
         {
           "kind": "aller",
@@ -83,7 +83,7 @@
       ]
     },
     "c04-14": {
-      "text": "Le caillebotis se dérobe. Vous tombez d'une hauteur d'homme dans une fosse de vase et de ferraille, et une barre vous ouvre la cuisse. Vous perdez 3 points d'Endurance. Vous remontez par les tuyaux, à l'aveugle, en laissant du sang sur chaque prise. Au-dessus, un filet de jour tombe d'une grille et montre la galerie qui se sépare.",
+      "text": "Le caillebotis se dérobe. Vous tombez de toute votre hauteur dans une fosse de vase et de ferraille, et un fer à béton vous entaille la cuisse de haut en bas. Vous perdez 3 points d'Endurance. La remontée se fait par les tuyaux, à l'aveugle, une prise après l'autre, et chaque prise garde un peu de votre sang. Quand vous retrouvez la margelle, un peu de jour tombe d'une grille au plafond, et deux galeries s'ouvrent en face de vous sous une flèche peinte.",
       "effects": [
         {
           "type": "stat",
@@ -100,7 +100,7 @@
       ]
     },
     "c04-33": {
-      "text": "Une plaque émaillée, à moitié mangée, une flèche vers le bas. À gauche, le puits de maintenance : un trou rond, des barreaux scellés dans la paroi, dont trois manquent. À droite, le collecteur s'enfonce en pente douce sous une eau immobile qui fait tiquer le détecteur à travers la poche.",
+      "text": "Sous la grille, une plaque émaillée du service des eaux, mangée aux bords, et la flèche au minium qui pointe vers le bas. À gauche, le puits de maintenance : un trou rond d'un mètre, des barreaux scellés dans la paroi, dont trois manquent à mi-hauteur. À droite, le collecteur s'enfonce en pente douce sous une eau immobile, couverte d'une pellicule grise que rien ne ride, et qui fait tiquer le détecteur à travers la poche dès que vous vous en approchez.",
       "choices": [
         {
           "kind": "aller",
@@ -115,7 +115,7 @@
       ]
     },
     "c04-11": {
-      "text": "Vous vous penchez. Le puits est profond, dix mètres peut-être, les barreaux rouillés jusqu'au cœur. Les trois manquants laissent un vide en plein milieu, trop large pour une enjambée. Tout en bas, un reflet jaune, et un bruit de moteur qui tourne sans personne.",
+      "text": "Le trou fait dix mètres, peut-être, les barreaux rouillés jusqu'au cœur, et le vide des trois manquants en plein milieu, trop large pour une enjambée et trop long pour un bras. Tout en bas, un reflet jaune sur de l'eau, et un moteur qui tourne, régulier, avec un cognement toutes les quatre secondes.",
       "choices": [
         {
           "kind": "aller",
@@ -134,7 +134,7 @@
       ]
     },
     "c04-24": {
-      "text": "Vous prenez le premier barreau. Il tient. Le deuxième aussi. Au vide des trois manquants, il faut se laisser pendre à bout de bras, chercher le suivant du pied, et le trouver du premier coup. Le béton transpire. Testez votre Habileté.",
+      "text": "Le premier barreau tient. Le deuxième aussi, et le troisième, puis vient le vide, où il faut se laisser pendre à bout de bras, chercher du pied le barreau suivant sans le voir, et le trouver du premier coup, parce que le béton transpire et que vos doigts glissent déjà. Testez votre Habileté.",
       "test": {
         "type": "stat",
         "stat": "habilete",
@@ -144,7 +144,7 @@
       }
     },
     "c04-3": {
-      "text": "Vos pieds touchent le fond. Au-dessus, le rond du puits est déjà une pièce de monnaie grise. Une porte de fer entrebâillée laisse passer le bruit du moteur et une lumière jaune, basse, qui bat comme un pouls. Sur la porte, une main peinte, doigts écartés.",
+      "text": "Vos pieds touchent le fond, et le rond du puits, là-haut, n'est plus qu'une pièce de monnaie grise. Une porte de fer entrebâillée laisse passer le moteur, plus fort, et une lumière jaune, basse, qui bat au même rythme que lui. Sur le battant, une main peinte, doigts écartés, paume vers vous.",
       "choices": [
         {
           "kind": "aller",
@@ -154,7 +154,7 @@
       ]
     },
     "c04-30": {
-      "text": "Votre pied cherche le barreau et trouve l'air. Vous tombez le reste du puits et atterrissez sur un lit de câbles et de tuyaux. Quelque chose craque dans votre côté. Vous perdez 3 points d'Endurance. Vous restez un moment sur le dos, à regarder le rond gris tout en haut. Une porte de fer, à côté de vous, laisse passer un bruit de moteur.",
+      "text": "Votre pied cherche le barreau et trouve l'air. Vous tombez le reste du puits et atterrissez sur un lit de câbles et de tuyaux, et une côte craque sous le choc, à gauche, là où le sac n'a rien amorti. Vous perdez 3 points d'Endurance. Le temps de trois respirations, vous restez sur le dos à regarder le rond gris tout en haut. Puis la lumière, à côté de vous, jaune, qui tremble entre un battant de fer et son cadre, et derrière, le moteur qui tape dans la tôle.",
       "effects": [
         {
           "type": "stat",
@@ -171,7 +171,7 @@
       ]
     },
     "c04-17": {
-      "text": "L'eau vous monte aux genoux, puis aux cuisses. Elle est tiède. Le détecteur se met à crépiter sans s'arrêter et vous le rangez au fond du sac pour ne plus l'entendre. Le compteur grimpe. Vous prenez 2 rads. Au plafond, des stalactites de calcaire ; sur l'eau, une pellicule grise qui s'ouvre devant vous et se referme derrière.",
+      "text": "L'eau vous monte aux genoux, puis aux cuisses, et elle est tiède, ce qui est pire que froide. Le détecteur crépite sans s'arrêter et vous le rangez au fond du sac pour ne plus l'entendre. Vous prenez 2 rads. Au plafond, des stalactites de calcaire longues comme des doigts ; sur l'eau, la pellicule grise s'ouvre devant vos jambes et se referme derrière vous, sans un bruit.",
       "effects": [
         {
           "type": "stat",
@@ -188,7 +188,7 @@
       ]
     },
     "c04-22": {
-      "text": "Un homme est assis contre la paroi, l'eau à la poitrine, la tête penchée comme s'il écoutait. Mort depuis des mois. Son fusil pointe encore sur sa propre tempe. Son sac est vide, quelqu'un est passé avant vous. Au-dessus de lui, gravé au couteau dans le calcaire : NE LE REGARDE PAS. Plus loin, le collecteur remonte vers une lumière jaune et un bruit de pompe.",
+      "text": "Un homme est assis contre la paroi, l'eau à la poitrine, la tête penchée sur l'épaule, l'air d'écouter. Il est là depuis des mois ; la vase lui a fait un col. Le fusil, un AKM dont le bois a gonflé, pointe encore sur sa tempe, et le doigt est resté dans le pontet. Son sac est ouvert et vide : un autre est passé avant vous et a pris ce qui se vendait. Au-dessus de sa tête, gravé au couteau dans le calcaire, en lettres hautes comme la main : « NE LE REGARDE PAS. » Vous attendez un moment avec lui, parce qu'on attend toujours un moment avec ceux-là, puis vous passez en le frôlant, et l'eau que vous déplacez retombe sur ses épaules. Plus loin, le collecteur remonte, et au bout, une ampoule et le bruit régulier d'une pompe.",
       "choices": [
         {
           "kind": "aller",
@@ -198,7 +198,7 @@
       ]
     },
     "c04-6": {
-      "text": "La salle des pompes. Trois moteurs sous des capots de tôle, dont un tourne encore, pour personne, avec un bruit de cœur fatigué. Une ampoule jaune au bout d'un fil. Au plafond, un escalier de fer monte à une trappe : l'usine, l'air. Deux galeries partent du fond : une sèche, fermée par une porte de fer marquée d'un triangle, et un canal où l'eau luit d'un vert qui n'est pas celui de l'ampoule.",
+      "text": "La salle des pompes tient dans la lumière d'une ampoule de quarante watts au bout d'un fil. Trois moteurs sous des capots de tôle verte, dont un tourne encore, pour personne, par à-coups, et l'ampoule bat à chacun. Un escalier de fer monte au plafond jusqu'à une trappe, et derrière la trappe il y a l'usine, et l'air. Du fond de la salle partent deux galeries : une sèche, fermée par une porte de fer marquée d'un triangle au pochoir, et un canal où l'eau luit d'un vert qui ne vient pas de l'ampoule.",
       "image": {
         "src": "images/c04-6.webp",
         "alt": "La salle des pompes sous Agroprom, trois moteurs sous des capots de tôle, une ampoule nue, un escalier de fer vers une trappe",
@@ -244,7 +244,7 @@
       ]
     },
     "c04-35": {
-      "text": "Vous cassez le col de l'ampoule d'Anti-rad et avalez. Un goût de fer et de pomme pourrie. Les tremblements passent, le détecteur se calme au fond du sac. Vous perdez 5 rads. La pompe tourne toujours. La salle n'a pas bougé.",
+      "text": "Le col de l'ampoule d'Anti-rad casse entre deux doigts, l'étiquette dit « Usage unique. Ne pas conserver. », et vous avalez un goût de fer et de pomme pourrie. Les tremblements passent, le goût reste. Vous perdez 5 rads. La pompe n'a pas changé de rythme.",
       "choices": [
         {
           "kind": "aller",
@@ -254,7 +254,7 @@
       ]
     },
     "c04-13": {
-      "text": "Passé la porte au triangle, la galerie est sèche et le noir revient d'un coup, comme une main sur les yeux. Il y a une odeur nouvelle, de bête et de vieux pansement. Et quelque chose d'autre, qu'on n'entend pas avec les oreilles : une pression derrière le front, comme avant un orage.",
+      "text": "Passé la porte au triangle, la galerie est sèche et le noir revient d'un coup, posé sur les yeux. L'air sent la bête et le vieux pansement. Et, sous l'os du front, une pression que les oreilles n'entendent pas, celle qui vient avant l'orage, et qui monte d'un cran à chaque pas.",
       "choices": [
         {
           "kind": "agir",
@@ -273,7 +273,7 @@
       ]
     },
     "c04-28": {
-      "text": "Vous avancez, une main sur le mur, l'autre sur le Makarov. Le sol monte. À mi-chemin, l'air se met à sentir l'ozone et les poils de vos bras se dressent. Une « Électro » quelque part devant, invisible dans le noir, qui attend un boulon que vous ne pouvez pas viser. Tentez votre Chance.",
+      "text": "Une main sur le mur, l'autre sur le Makarov, vous suivez la pente qui monte. À mi-chemin, l'air se met à sentir l'ozone, les poils de vos bras se dressent, et devant vous grésille une « Électro », à dix pas ou à trois, impossible à dire, qui attend un boulon que vous ne pouvez pas viser sans lumière. Tentez votre Chance.",
       "test": {
         "type": "luck",
         "success": "c04-5",
@@ -281,7 +281,7 @@
       }
     },
     "c04-5": {
-      "text": "Vous passez à côté. Un arc bleu claque dans votre dos, assez près pour vous montrer la galerie une seconde : des tuyaux, une grille au loin, et devant elle, debout, une silhouette qui ne bouge pas. La pression derrière le front devient une main qui appuie.",
+      "text": "Vous passez à côté. Un arc bleu claque dans votre dos, assez près pour vous montrer la galerie une seconde : des tuyaux, une grille au loin, et devant elle, debout, une silhouette qui n'a pas cillé à la lumière. Derrière le front, la pression devient une main qui appuie.",
       "choices": [
         {
           "kind": "aller",
@@ -291,7 +291,7 @@
       ]
     },
     "c04-20": {
-      "text": "L'arc vous prend à l'épaule. Le monde devient blanc, puis noir, et vous vous retrouvez à genoux, la manche fumante, la bouche pleine de cuivre. Vous perdez 3 points d'Endurance. Dans la lueur qui s'éteint, vous avez vu la galerie : des tuyaux, une grille au loin, et devant elle une silhouette debout qui ne bouge pas.",
+      "text": "L'arc vous prend à l'épaule. Le monde devient blanc, puis noir, et vous vous retrouvez à genoux, la manche fumante, la bouche pleine de cuivre. Vous perdez 3 points d'Endurance. L'éclair a laissé une image sur vos yeux, qui s'efface lentement : au bout de la galerie, une grille, et devant la grille une forme debout, qui n'a pas bougé pendant que vous tombiez.",
       "effects": [
         {
           "type": "stat",
@@ -313,7 +313,7 @@
         "alt": "Le Contrôleur debout au bout de la galerie, devant la porte ouverte d'une chambre carrée",
         "prompt": "Une galerie d'égout voûtée, des tuyaux le long des parois, éclairée seulement par la lueur jaune d'une porte ouverte au fond. Devant la porte, immobile, un Contrôleur : grand, voûté, le crâne gonflé et difforme, les bras trop longs pendant le long du corps, l'air ondulant autour de sa tête. Au premier plan, le stalker de dos, en silhouette, une main sur le mur et un pistolet dans l'autre. Noir profond, hachures serrées, la créature à contre-jour."
       },
-      "text": "Il est là, au bout de la galerie, devant une porte ouverte sur une chambre carrée. Grand, voûté, le crâne gonflé comme une outre, les bras trop longs posés le long du corps. Un Contrôleur. Il ne vous regarde pas encore. La pression derrière votre front a un rythme, maintenant, et c'est le sien.",
+      "text": "Il est là, au bout de la galerie, devant une porte ouverte sur une chambre carrée, et une lueur au-delà. Grand, voûté, le crâne gonflé comme une outre, les bras trop longs posés le long du corps, les mains ouvertes. Un Contrôleur. Il ne vous regarde pas encore ; il regarde le sol entre vous, et c'est pendant qu'il regarde le sol que la pression dans votre crâne prend un rythme, lent, à deux temps, qui n'est pas celui de votre cœur et qui est le sien.",
       "choices": [
         {
           "kind": "attaquer",
@@ -344,7 +344,7 @@
       ]
     },
     "c04-31": {
-      "text": "Vous dégoupillez la Grenade F1 et la faites rouler. Il tourne la tête au bruit, et c'est à ce moment-là que ça explose. Le souffle vous plaque au mur. Quand vous rouvrez les yeux, la pression derrière le front a disparu, et avec elle quelque chose que vous ne saviez pas porter. Ce qui reste de lui est en travers de la porte.",
+      "text": "La Grenade F1 roule sur le béton, dégoupillée, et il tourne la tête au bruit de la cuillère : c'est à ce moment-là que ça explose. Le souffle vous plaque au mur et la galerie se remplit de poussière de brique. Quand vous rouvrez les yeux, la pression a quitté votre crâne. Ce qui reste de lui est en travers du seuil, et la lumière de la chambre passe par-dessus.",
       "choices": [
         {
           "kind": "aller",
@@ -354,7 +354,7 @@
       ]
     },
     "c04-16": {
-      "text": "Il lève la tête. Ses yeux sont deux trous sans fond. Le monde se dédouble, lentement : deux galeries, deux portes, deux de vous. Votre main lève le Makarov et vous ne savez plus si c'est vers lui. Tentez votre Chance.",
+      "text": "Il lève la tête. Ses yeux sont deux trous. Le monde se dédouble, lentement, comme une image qu'on décolle : deux galeries, deux portes, et dans l'une d'elles un homme en veste, un Makarov à la main, qui vous ressemble. Une voix dans votre crâne, qui a votre timbre et votre accent, dit : « Lui. Là. Tire. » Votre main lève le Makarov et vous ne savez plus vers lequel des deux. Tentez votre Chance.",
       "test": {
         "type": "luck",
         "success": "c04-38",
@@ -362,7 +362,7 @@
       }
     },
     "c04-38": {
-      "text": "Vous baissez le canon avant que le doigt n'appuie. Le double tremble, se déchire, et il n'y a plus qu'une galerie, un Contrôleur, et son pas lourd qui vient vers vous, les bras levés. Il a perdu votre tête. Il lui reste ses mains.",
+      "text": "Le canon redescend avant que le doigt n'appuie. « Non », dites-vous, à voix haute, et le double tremble, se déchire, et il n'y a plus qu'une galerie, un Contrôleur, et son pas lourd qui vient vers vous, les bras levés. Il a perdu votre tête. Il lui reste ses mains.",
       "choices": [
         {
           "kind": "parler",
@@ -372,7 +372,7 @@
       ]
     },
     "c04-25": {
-      "text": "Vous tirez, et la douleur vient de votre propre bras. La balle est entrée au-dessus du coude et ressortie. Vous perdez 3 points d'Endurance. Le double s'efface. Il n'y a plus qu'une galerie, et lui qui avance, les bras levés, sans se presser.",
+      "text": "Vous tirez, et la douleur vient de votre propre bras. La balle est entrée au-dessus du coude et ressortie, et la voix qui avait votre timbre ne dit plus rien. Vous perdez 3 points d'Endurance. Le double s'efface, et lui avance dans la seule galerie qui reste, les bras levés, sans se presser.",
       "effects": [
         {
           "type": "stat",
@@ -389,7 +389,7 @@
       ]
     },
     "c04-2": {
-      "text": "Ses mains cherchent votre crâne. Chaque fois qu'il approche, la pression revient et vos tirs partent de travers ; chaque fois qu'il recule, vous le voyez net, et il saigne. Ses coups tombent lourds, à casser des os. Derrière vous, le noir, et la salle des pompes loin au bout, si vous courez.",
+      "text": "Ses mains cherchent votre crâne. Chaque fois qu'il approche, la pression revient et vos balles partent dans le mur ; chaque fois qu'il recule, vous le voyez net, et il saigne par trois trous. Ses coups tombent lourds, à pleines mains, de haut en bas, et chacun vous laisse une oreille qui siffle. Derrière vous, le noir de la galerie, et tout au bout la salle des pompes, si vous courez.",
       "combat": {
         "name": "Contrôleur",
         "habilete": 7,
@@ -402,7 +402,7 @@
       }
     },
     "c04-36": {
-      "text": "Il tombe à genoux, puis sur le côté, et la pression s'éteint comme une ampoule. Le silence qui suit a une épaisseur. Vous restez debout le temps que vos mains cessent de trembler. Sur le mur, près de la porte, une inscription au couteau : S. ÉTAIT ICI. TROIS FOIS.",
+      "text": "Il tombe à genoux, puis sur le côté, et la pression s'éteint d'un coup, une ampoule qu'on dévisse. Vous restez debout le temps que vos mains cessent de trembler, et c'est long. Sur le mur, près de la porte, une inscription au couteau, en lettres penchées : « S. ÉTAIT ICI. TROIS FOIS. » Le trois a été repassé plusieurs fois.",
       "choices": [
         {
           "kind": "aller",
@@ -412,7 +412,7 @@
       ]
     },
     "c04-12": {
-      "text": "L'eau du canal est tiède et luit d'un vert sans source. Vous entrez. Elle vous monte à la taille. Le détecteur, dans le sac, crépite à travers la toile. Le compteur grimpe. Vous prenez 3 rads. Le canal tourne et s'arrête sur une cloison de béton qui descend jusque dans l'eau. Le courant passe dessous. Il y a de l'air de l'autre côté, vous l'entendez.",
+      "text": "L'eau du canal luit d'un vert sans source. Vous entrez. Elle vous monte à la taille, et une chaleur sans flamme vous entre par les jambes. Vous prenez 3 rads. Le canal tourne, puis s'arrête sur une cloison de béton qui descend jusque dans l'eau et plus bas ; le courant passe dessous, vous le sentez tirer sur vos mollets, et derrière la cloison il y a de l'air, puisqu'un écho de goutte vous revient.",
       "effects": [
         {
           "type": "stat",
@@ -434,7 +434,7 @@
       ]
     },
     "c04-29": {
-      "text": "Vous prenez votre souffle et passez sous le béton. L'eau est noire, épaisse, et elle a un goût. Deux mètres, trois. Vos doigts trouvent un bord et vous remontez dans une poche d'air qui sent le métal chaud. Vous prenez 2 rads. Une échelle. En haut, une chambre sèche. La pression derrière le front est là, mais lointaine, de l'autre côté d'un mur.",
+      "text": "Le souffle pris, vous passez sous le béton. L'eau est noire, épaisse, et elle a un goût de pile. Deux mètres, trois ; vos doigts trouvent un bord et vous remontez dans une poche d'air qui sent le métal chaud. Vous prenez 2 rads. Une échelle de fer, douze échelons, mène à une chambre sèche. La pression est là aussi, mais lointaine, de l'autre côté d'un mur, le pas d'un voisin.",
       "effects": [
         {
           "type": "stat",
@@ -456,7 +456,7 @@
         "alt": "La chambre carrée des souterrains, une grille de fer scellée et la cache de Strelok derrière",
         "prompt": "Une petite chambre souterraine au sol dallé, les murs de briques suintants, éclairée par une lampe torche. Sur le mur du fond, une grille de fer scellée dans la brique sans serrure ni gonds, et derrière, dans la pénombre, une pièce cachée : un matelas, des caisses empilées, une lampe à pétrole éteinte. Près d'une échelle de fer, une porte à barre poussoir. La silhouette du stalker de dos, les mains sur les barreaux de la grille."
       },
-      "text": "Une chambre carrée, un sol de dalles, et sur le mur du fond une grille de fer scellée, derrière laquelle on devine une pièce : un matelas, des caisses, une lampe à pétrole. Pas de serrure. Pas de gonds visibles. Quelqu'un a voulu que ça ressemble à un mur. Près de l'échelle, une porte à barre poussoir, de celles qui ne s'ouvrent que d'un côté.",
+      "text": "Une chambre carrée, un sol de dalles de ciment, des murs de brique qui suintent, et sur le mur du fond une grille de fer scellée, derrière laquelle on devine une pièce : un matelas, des caisses, une lampe à pétrole. Ni serrure ni gonds visibles : celui qui a monté ça voulait un mur, et y a passé du temps. Près de l'échelle, une porte à barre poussoir, de celles qui ne s'ouvrent que d'un côté, et ce côté-ci est le vôtre.",
       "choices": [
         {
           "kind": "agir",
@@ -501,7 +501,7 @@
       ]
     },
     "c04-23": {
-      "text": "Vous déroulez le Bandage autour du bras et serrez avec les dents. Le sang s'arrête de couler, et avec lui une partie du froid. Vous regagnez 3 points d'Endurance. La grille n'a pas bougé. La lampe à pétrole, derrière, non plus.",
+      "text": "Le Bandage se déroule autour de la plaie qui saigne le plus, et vous nouez avec les dents. Le sang s'arrête, et avec lui une partie du froid. Vous regagnez 3 points d'Endurance. La grille est toujours scellée, et la lampe à pétrole derrière elle toujours éteinte.",
       "choices": [
         {
           "kind": "aller",
@@ -511,7 +511,7 @@
       ]
     },
     "c04-21": {
-      "text": "Vous passez les mains sur les dalles, les joints, les briques du mur. Tout est pareil. Tout a été fait pour être pareil. Quelque part il y a une brique qui n'est pas prise dans le mortier, un fil, une tige, et vous avez les mains qui tremblent et pas le temps. Tentez votre Chance.",
+      "text": "Les dalles, les joints, chaque brique du mur à hauteur d'homme, puis à hauteur de genou : tout passe sous vos mains, et tout est pareil, et tout a été fait pour être pareil. Il y a dans ce mur une brique qui n'est pas prise dans le mortier, un fil, une tige, et vous avez les mains qui tremblent, les ongles noirs, et pas le temps. Tentez votre Chance.",
       "test": {
         "type": "luck",
         "success": "c04-34",
@@ -519,7 +519,7 @@
       }
     },
     "c04-34": {
-      "text": "Votre pouce accroche un joint plus mou que les autres. La brique sort sans bruit. Derrière, un levier de fer, froid, avec une marque de main dedans à force de servir. Vous tirez. Quelque chose cède dans le mur avec un bruit de serrure, et la grille s'écarte d'un doigt.",
+      "text": "Votre pouce accroche un joint plus mou que les autres, à gauche, troisième rangée. La brique sort sans effort. Derrière, un levier de fer, froid, avec une marque de main polie dedans à force de servir. Vous tirez, et au fond du mur une serrure décroche avec un claquement de culasse, et la grille s'écarte d'un doigt.",
       "choices": [
         {
           "kind": "aller",
@@ -529,7 +529,7 @@
       ]
     },
     "c04-15": {
-      "text": "Rien. Les briques tiennent, les dalles tiennent, vos ongles cassent. Vous restez accroupi au pied de la grille à regarder le matelas de l'autre côté, à deux mètres, aussi loin que la lune. Le mortier est vieux, la ferraille aussi. Il y a un bout de tuyau par terre, de la bonne longueur.",
+      "text": "Rien ne vient. Les briques tiennent, les dalles tiennent, et vos ongles cassent. Vous restez accroupi au pied de la grille, le matelas à deux mètres derrière les barreaux, aussi loin que la lune. Le mortier est vieux, la ferraille aussi, et par terre, contre l'échelle, il y a un bout de tuyau d'un pouce, soixante centimètres, de la bonne longueur pour un levier.",
       "choices": [
         {
           "kind": "agir",
@@ -544,7 +544,7 @@
       ]
     },
     "c04-4": {
-      "text": "Vous engagez le tuyau entre deux barreaux et pesez dessus de tout votre poids. Le fer gémit. Le mortier se fend en poussière rousse. Il faut que le barreau cède avant le tuyau, ou avant votre épaule. Testez votre Habileté.",
+      "text": "Le tuyau s'engage entre deux barreaux et vous pesez dessus de tout votre poids. Le fer gémit, et le mortier se fend en poussière rousse qui vous tombe sur les mains. Il faut que le barreau cède avant le tuyau, ou avant votre épaule, et pour l'instant les trois tiennent. Testez votre Habileté.",
       "test": {
         "type": "stat",
         "stat": "habilete",
@@ -554,7 +554,7 @@
       }
     },
     "c04-26": {
-      "text": "Le barreau cède d'un coup, et le suivant avec lui. Vous passez de côté entre les deux, en laissant un bout de veste à la ferraille. De l'autre côté, la lampe à pétrole a encore du pétrole. Vous l'allumez. La flamme tremble, puis tient.",
+      "text": "Le barreau cède d'un coup, et le suivant avec lui. Vous passez de côté entre les deux, en laissant un pan de veste à la ferraille. Derrière la grille, la lampe à pétrole a encore du pétrole, et une boîte d'allumettes posée dessus. Vous l'allumez. La flamme tremble, puis tient.",
       "choices": [
         {
           "kind": "aller",
@@ -564,7 +564,7 @@
       ]
     },
     "c04-18": {
-      "text": "Le tuyau casse et vous partez avec lui. Votre tête touche la dalle, et le bout de fer vous ouvre la paume d'un bord à l'autre. Vous perdez 3 points d'Endurance. La grille n'a pas bougé d'un millimètre. Vous restez assis à regarder le matelas de l'autre côté. Il reste la moitié du tuyau.",
+      "text": "Le tuyau casse et vous partez avec lui. Votre tête touche la dalle, et le bout de fer vous ouvre la paume d'un bord à l'autre. Vous perdez 3 points d'Endurance. La grille n'a pas cédé d'un millimètre. Vous vous asseyez, la main fermée sur la plaie. La moitié du tuyau qui n'a pas cassé est encore par terre.",
       "effects": [
         {
           "type": "stat",
@@ -586,7 +586,7 @@
       ]
     },
     "c04-10": {
-      "text": "La cache de Strelok. Un matelas, trois caisses, un réchaud, une lampe à pétrole. Sur une étagère, des boîtes vides et, dans l'une d'elles, une Clé USB de Strelok dans un sachet plastique, et une ampoule d'Anti-rad encore scellée. Le reste est de la poussière et du papier. Tout le mur du fond est couvert d'écriture au crayon, serrée, qui descend jusqu'au matelas.",
+      "text": "La cache de Strelok tient en trois pas. Un matelas, trois caisses de munitions vides, un réchaud à alcool, la lampe à pétrole. Sur une étagère de planches, des boîtes de conserve ouvertes, et dans l'une d'elles, sous un chiffon, une Clé USB de Strelok dans un sachet plastique et une ampoule d'Anti-rad encore scellée. Le reste est de la poussière et du papier. Tout le mur du fond est couvert d'écriture au crayon, serrée, en lignes qui descendent jusqu'au matelas, et les dernières lignes ont été écrites couché.",
       "effects": [
         {
           "type": "item",
@@ -617,7 +617,7 @@
       ]
     },
     "c04-32": {
-      "text": "Des dates. Des noms de lieux, barrés. Des phrases, de plus en plus courtes vers le bas : Le centre ne donne rien, il prend. Ce qui exauce n'est pas une pierre. Puis, à hauteur du matelas, d'une écriture plus large : Si tu lis ça, c'est que je t'ai envoyé. Tu ne t'en souviens pas. C'est normal. Vous restez longtemps devant le mur. Vous ne vous souvenez de rien.",
+      "text": "Des dates, en haut, d'une écriture droite, la première d'il y a deux hivers, la dernière de ce printemps. Des noms de lieux, barrés un à un : Yantar, le Radar, Pripyat, et le dernier barré trois fois. Puis des phrases, de plus en plus courtes vers le bas : « Le centre ne donne rien. Il prend. » « Ce qui exauce n'est pas une pierre. » Et à hauteur du matelas, d'une écriture plus large, appuyée jusqu'à casser la mine : « Si tu lis ça, c'est que je t'ai envoyé. Tu ne t'en souviens pas. C'est normal. » Vous relisez la dernière ligne jusqu'à ce que les lettres se brouillent. Vous cherchez derrière le mot « envoyé » un visage, une route, un feu de camp, n'importe quoi d'avant la Zone, et il n'y a derrière que la galerie par où vous êtes venu.",
       "choices": [
         {
           "kind": "aller",
@@ -627,7 +627,7 @@
       ]
     },
     "c04-37": {
-      "text": "La porte de service claque derrière vous et ne se rouvrira pas de ce côté. Un couloir de maintenance, des câbles, le bruit de la pompe qui grossit. Vous rejoignez la salle par une trappe basse, derrière les moteurs. L'ampoule jaune bat toujours. Au plafond, l'escalier de fer, la trappe, et derrière, le jour.",
+      "text": "La porte de service claque derrière vous, et de ce côté-ci il n'y a pas de poignée. Un couloir de maintenance, des câbles sous gaine, et le bruit de la pompe qui grossit à mesure. Vous rejoignez la salle par une trappe basse, derrière les moteurs, à quatre pattes. L'ampoule bat toujours au-dessus des capots, et au plafond, l'escalier de fer, la trappe, et derrière, le jour.",
       "choices": [
         {
           "kind": "aller",

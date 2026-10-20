@@ -31,7 +31,7 @@
   ],
   "paragraphs": {
     "c25-1": {
-      "text": "La porte de la salle des machines est ouverte sur le noir. Derrière, quelque chose de très grand se tait : les turbines, couchées sur des centaines de mètres, et l'air qui sent le métal et l'huile froide. Le compteur crépite à intervalles réguliers, comme une horloge. Un escalier de fer descend sous le niveau du sol. Vous ne voyez pas sa troisième marche.",
+      "text": "La porte de la salle des machines est restée ouverte, un battant de tôle rabattu contre le mur, et l'Émission a laissé sur le seuil une poussière rouge que le vent ne pousse pas plus loin. Derrière, les turbines dorment dans l'obscurité : on ne les voit pas, on les devine à l'écho de vos pas, qui revient de très loin et un peu en retard. L'air sent l'huile froide et le fer. Votre détecteur crépite à intervalles réguliers, une horloge oubliée là par l'équipe de nuit. Un escalier de fer plonge sous le niveau du sol, et vous ne distinguez déjà plus sa troisième marche.",
       "choices": [
         {
           "kind": "agir",
@@ -50,7 +50,7 @@
       ]
     },
     "c25-17": {
-      "text": "Le faisceau de la Lampe torche accroche des rampes, des câbles pendus, une marche manquante que vous enjambez. En bas, un sol de béton couvert d'une poussière grise, intacte, sans une trace de pas. Au fond, la salle des turbines s'ouvre, et le compteur accélère dès que vous tendez la main vers elle. Quarante rads par mètre, disait quelqu'un au Bar. Vous le croyez.",
+      "text": "Le faisceau de la Lampe torche accroche une rampe, des câbles pendus en guirlandes, une marche manquante que vous enjambez. En bas, le béton est couvert d'une poussière grise aussi lisse qu'une nappe, où aucune semelle ne s'est posée depuis 1986. Au fond s'ouvre la nef des turbines, et quand vous tendez la lampe vers elle, l'aiguille du compteur se couche vers la droite. Un stalker du Bar vous l'avait dit en tapotant son verre vide contre le zinc : « Quarante rads au mètre, là-dessous. Sans combinaison, tu fais dix mètres et tu deviens une histoire. » Il n'avait pas ri en le disant.",
       "choices": [
         {
           "kind": "agir",
@@ -69,7 +69,7 @@
       ]
     },
     "c25-9": {
-      "text": "Vous descendez une main sur la rampe, l'autre devant vous. La rampe est froide et grasse. Les marches sonnent creux. Quelque part en dessous, de l'eau goutte sur de la tôle, une fois toutes les deux secondes. Vous comptez les marches pour ne pas penser au reste. À la vingtième, la rampe s'arrête, et pas l'escalier. Testez votre Habileté.",
+      "text": "La rampe est froide et grasse sous la paume, couverte d'une graisse qui a eu vingt ans pour durcir et n'y est pas arrivée. Vous descendez l'autre main tendue dans le vide. Les marches sonnent creux sous les bottes. Plus bas, de l'eau goutte sur une tôle, une fois toutes les deux secondes, et vous comptez les marches en même temps que les gouttes pour ne pas penser à ce qui attend peut-être au fond. À la vingtième, la rampe s'arrête net sous votre paume, alors que l'escalier, lui, continue. Testez votre Habileté.",
       "test": {
         "type": "stat",
         "stat": "habilete",
@@ -79,7 +79,7 @@
       }
     },
     "c25-23": {
-      "text": "Vous atteignez le bas sans tomber. Vos semelles trouvent un sol plat, une poussière épaisse qui étouffe les pas. Vous restez une seconde immobile, à écouter. Rien que l'eau, et le compteur. Devant vous, l'obscurité est différente : plus grande, plus froide. La salle des turbines. Le compteur accélère quand vous avancez d'un pas.",
+      "text": "La vingt et unième marche est la dernière, et vous la trouvez du talon, sans tomber. Vos semelles s'enfoncent dans une poussière épaisse qui avale le bruit des pas. Devant, l'obscurité change de nature, plus haute et plus froide, celle d'une nef où tiendrait une gare, et l'air qui en descend vous sèche la bouche.",
       "choices": [
         {
           "kind": "agir",
@@ -98,7 +98,7 @@
       ]
     },
     "c25-12": {
-      "text": "Une marche manque. Vous tombez de tout votre poids, l'épaule la première, sur le béton. La rampe que vous cherchez n'est pas là. Vous restez au sol le temps que le noir arrête de tourner. Vous perdez 3 points d'Endurance. Quand vous vous relevez, le compteur a changé de rythme. Devant, l'air est plus froid, plus vaste : la salle des turbines.",
+      "text": "La chute vient à la vingt et unième marche, celle qui manque, et l'épaule touche le béton la première, avec tout votre poids derrière elle. Vous restez allongé dans la poussière le temps que l'obscurité cesse de tourner, la joue contre un sol qui sent la graisse et le plâtre. Vous perdez 3 points d'Endurance. Quand vous vous relevez en vous tenant le bras, l'air qui arrive de devant est plus froid et plus vaste, celui de la nef des turbines.",
       "effects": [
         {
           "type": "stat",
@@ -124,7 +124,7 @@
       ]
     },
     "c25-28": {
-      "text": "Le joint de la Combinaison SEVA siffle en se fermant. Dedans, votre respiration fait plus de bruit que la salle. Vous traversez entre les carters des turbines, des cylindres gros comme des maisons, à la peinture cloquée. Le compteur grimpe, puis se calme. Vous prenez 1 rad. Une passerelle de fer court au-dessus des machines. Un escalier y monte.",
+      "text": "Le joint de la Combinaison SEVA siffle en se refermant, et dedans votre respiration fait plus de bruit que toute la centrale. Vous traversez entre les carters, des cylindres gros comme des maisons dont la peinture verte s'est soulevée en écailles. L'aiguille du compteur monte, hésite, retombe. Vous prenez 1 rad. Au-dessus des machines court une passerelle de fer, et un escalier à claire-voie y monte.",
       "effects": [
         {
           "type": "stat",
@@ -141,7 +141,7 @@
       ]
     },
     "c25-3": {
-      "text": "Vous entrez à découvert. Le compteur ne crépite plus, il siffle. Entre les carters des turbines, l'air a un goût de cuivre, et vos dents vous font mal. Vous marchez vite, sans courir, les yeux sur l'escalier de fer qui monte vers une passerelle. Vous prenez 4 rads. Quand vous posez le pied sur la première marche, vous avez envie de vomir.",
+      "text": "Dès les premiers carters, le compteur cesse de crépiter pour siffler sur une seule note. L'air a un goût de cuivre, vos plombages vous lancent, et vous marchez vite sans courir, les yeux fixés sur l'escalier qui monte vers une passerelle, parce que courir ferait respirer davantage. Vous prenez 4 rads. Quand votre botte se pose sur la première marche, la nausée vous plie en deux.",
       "effects": [
         {
           "type": "stat",
@@ -158,7 +158,7 @@
       ]
     },
     "c25-5": {
-      "text": "La passerelle des turbines. Du fer ajouré, des rambardes, et sous vos pieds les huit turbines mortes alignées jusqu'à la nuit. Des toiles de câbles pendent des ponts roulants. Loin devant, une porte haute, avec un cadre de lumière grise : la salle de contrôle. En bas, dans la fosse entre les machines, quelque chose respire dans un masque. Plusieurs choses.",
+      "text": "Du fer ajouré sous les semelles, des rambardes à hauteur de hanche, et en contrebas les huit turbines mortes alignées jusqu'à ce que l'obscurité les avale : vous êtes sur la passerelle. Des écheveaux de câbles pendent des ponts roulants. Loin devant, une porte haute découpe un cadre de lumière grise, la seule de toute la nef. En bas, dans la fosse entre les machines, on respire à travers un masque, plusieurs souffles décalés qui ne s'accordent jamais.",
       "image": {
         "src": "images/c25-5.webp",
         "alt": "Une passerelle de fer suspendue au-dessus des turbines mortes d'une centrale, dans l'obscurité",
@@ -220,7 +220,7 @@
       ]
     },
     "c25-19": {
-      "text": "La seringue de l'Anti-rad entre dans la cuisse à travers le tissu. Le liquide est froid, puis chaud. Le compteur ne change pas, c'est vous qui changez : le goût de cuivre recule, les dents cessent de faire mal. Vous perdez 5 rads. Vous jetez la seringue vide dans la fosse. Elle met longtemps à toucher le fond.",
+      "text": "La seringue de l'Anti-rad traverse le tissu et entre dans la cuisse. Le liquide est froid, puis chaud, et ce n'est pas le compteur qui change mais vous : la nausée recule, la langue cesse de sentir le métal. Vous perdez 5 rads. Vous lâchez la seringue vide par-dessus la rambarde et vous attendez le bruit qu'elle fera au fond de la fosse, qui vient tard, et pas d'où vous l'attendiez.",
       "choices": [
         {
           "kind": "aller",
@@ -230,7 +230,7 @@
       ]
     },
     "c25-7": {
-      "text": "Vous vous asseyez le dos à la rambarde et vous videz la Trousse de soins : la compresse, le fil, l'ampoule qu'on casse avec les dents. Les mains tremblent, mais elles savent faire. Vous regagnez 6 points d'Endurance. En bas, la respiration de masque s'est rapprochée. Vous rangez le reste, ce qui ne sert plus à rien, par habitude.",
+      "text": "Le dos contre la rambarde, vous videz la Trousse de soins sur vos genoux : une compresse sous plastique, une bobine de fil, l'ampoule de verre qu'on casse avec les dents. Vos mains tremblent, mais elles savent faire, mieux que vous, et elles ont dû l'apprendre avant la Zone, dans une vie dont vous n'avez rien gardé. Vous regagnez 6 points d'Endurance. En bas, les souffles masqués se sont rapprochés de l'échelle. Vous fourrez l'emballage vide dans votre poche, par habitude, puisqu'un stalker ne laisse rien derrière lui.",
       "choices": [
         {
           "kind": "aller",
@@ -240,7 +240,7 @@
       ]
     },
     "c25-14": {
-      "text": "Vous descendez l'échelle dans la fosse. Ils sortent de sous les carters avant que vous ayez touché le sol : trois Snorks, à quatre pattes, les masques à gaz incrustés dans la chair, les tuyaux qui battent. Ils sautent plus loin qu'un homme ne court. Leurs griffes ouvrent le tissu comme du papier. L'échelle est derrière vous, si vous tenez jusqu'à elle.",
+      "text": "L'échelle de la fosse a dix-huit barreaux, et ils sortent de sous les carters avant que vos bottes aient touché le sol. Trois Snorks, à quatre pattes, des hommes autrefois, à en juger par les lambeaux de treillis qui leur collent aux côtes. Leurs masques à gaz ont fini par entrer dans la chair, et les tuyaux annelés battent contre leur poitrine à chaque inspiration, ce souffle décalé que vous entendiez d'en haut. Le premier saute et franchit d'un bond plus de distance qu'un homme n'en court en trois pas ; ses griffes ouvrent votre manche jusqu'au coude. Ils frappent vite et souvent, sans jamais peser bien lourd. L'échelle est derrière vous, à quatre mètres, si vous tenez jusqu'à elle.",
       "combat": {
         "name": "Les Snorks",
         "habilete": 6,
@@ -253,7 +253,7 @@
       }
     },
     "c25-26": {
-      "text": "Le dernier Snork retombe sur le dos et ne bouge plus. Dans la fosse, derrière les corps, une trappe de fer ouverte sur un escalier. En dessous, le silence lourd de pompes qui ne tournent plus depuis vingt ans, et une odeur qui pique les yeux dès la première marche : un gaz jaune, épais, qui dort au ras du sol de la salle des pompes.",
+      "text": "Le dernier Snork retombe sur le dos, les griffes encore crochées dans l'air, et ses tuyaux cessent de battre. Derrière les trois corps, une trappe de fer est ouverte sur un escalier. En dessous dorment les pompes de refroidissement, arrêtées depuis vingt ans, et un gaz jaune, épais comme de la crème, posé au ras du sol, qui vous pique les yeux avant même que vous ayez quitté le haut des marches.",
       "choices": [
         {
           "kind": "agir",
@@ -272,7 +272,7 @@
       ]
     },
     "c25-11": {
-      "text": "Le Masque à gaz colle au visage, et le monde se réduit à deux hublots embués. Vous traversez la salle des pompes dans un gaz qui tourbillonne à vos genoux, entre des cuves cerclées de rouille. Les manomètres marquent zéro. De l'autre côté, un couloir descend encore, et le jaune s'arrête à son seuil, comme s'il avait peur d'aller plus bas.",
+      "text": "Le Masque à gaz colle au visage, et le monde se réduit à deux hublots qui s'embuent à chaque expiration. Vous traversez la salle des pompes dans un jaune qui tourbillonne à hauteur de genou, entre des cuves cerclées de rouille dont les manomètres marquent tous zéro. Au fond, un couloir descend encore, et le gaz s'arrête à son seuil en bord net, sans y entrer.",
       "choices": [
         {
           "kind": "aller",
@@ -282,7 +282,7 @@
       ]
     },
     "c25-21": {
-      "text": "Vous traversez la salle des pompes en retenant votre souffle. Dix pas, quinze, les cuves, les tuyaux, le gaz qui monte en volutes lentes à chaque enjambée. À vingt, vos poumons gagnent. Vous respirez une fois, et c'est comme avaler du verre pilé. Vous prenez 3 rads. Vous atteignez le couloir plié en deux, en toussant quelque chose de clair.",
+      "text": "L'air pris en haut des marches doit suffire pour la salle entière. Dix pas, quinze, les cuves, les tuyaux, le gaz qui se lève en volutes lentes à chaque enjambée et vient vous lécher les cuisses. À vingt, vos poumons l'emportent sur vous ; vous respirez une fois, et c'est du verre pilé qui descend. Vous prenez 3 rads. Vous atteignez le couloir plié en deux, en crachant dans l'eau une salive claire et tiède.",
       "effects": [
         {
           "type": "stat",
@@ -299,7 +299,7 @@
       ]
     },
     "c25-2": {
-      "text": "Près de la porte de la salle de contrôle, un homme est à genoux, le front contre le fer. Combinaison grise, masque relevé, un fusil posé en travers des cuisses. Il parle au Monolithe, tout bas, des mots qui reviennent. Il ne vous a pas entendu. La passerelle entre vous et lui fait vingt mètres, et chaque plaque sonne.",
+      "text": "Près de la porte haute, un homme est à genoux, le front appuyé contre le fer. Combinaison grise, masque relevé sur le crâne, un fusil d'assaut posé en travers des cuisses. Il prie à voix basse, et la nef vous renvoie chaque mot, net, malgré les vingt mètres de passerelle : « Nous sommes descendus. Nous avons entendu. Il est sous nous, il nous attend, nous sommes descendus. » Il recommence, au même mot, avec la même pause avant « attend ». Il ne vous a pas entendu arriver, ou bien vous ne comptez pas. Entre vous et lui, la passerelle est faite de plaques de tôle boulonnées, une par mètre, et chacune, quand on y pose le poids, résonne comme un couvercle de marmite.",
       "choices": [
         {
           "kind": "parler",
@@ -314,7 +314,7 @@
       ]
     },
     "c25-16": {
-      "text": "La première balle le touche à l'épaule, et il se lève comme si elle ne l'avait pas touché. Ses yeux sont blancs. Il tire au jugé, puis il vient. Le fusil cogne à la rambarde, il le lâche, et il a un couteau. Il ne crie pas. Il prie encore pendant qu'il frappe, à casser des os.",
+      "text": "La première balle le touche à l'épaule. Il se relève sans hâte, la prière à peine coupée, et ses yeux sont blancs d'un bord à l'autre. Sa rafale part au jugé et fait chanter les rambardes ; la culasse claque à vide, et il jette le fusil dans la fosse sans le regarder tomber. « … nous attend. Nous sommes descendus. Reçois-le. » Il avance sur la passerelle un couteau de tranchée tenu bas, au pas de la prière, une plaque par mot.",
       "combat": {
         "name": "Monolithien en prière",
         "habilete": 7,
@@ -324,7 +324,7 @@
       }
     },
     "c25-30": {
-      "text": "Vous posez le pied sur la plaque suivante, lentement, le poids sur le bord. Elle tient. La suivante aussi. Il prie toujours, le front contre la porte, et sa voix couvre la vôtre, votre souffle, le fer. Dix mètres. Cinq. La dernière plaque est déboulonnée d'un côté. Testez votre Habileté.",
+      "text": "Le premier pas se pose sur le bord boulonné de la plaque, lentement, et elle tient. La suivante aussi. Il prie toujours, le front contre la porte, « reçois-le, reçois-le », et sa voix couvre votre souffle et le grincement du fer. Dix mètres, puis cinq. La dernière plaque, celle qui touche presque ses semelles, ne tient plus que par deux boulons sur quatre. Testez votre Habileté.",
       "test": {
         "type": "stat",
         "stat": "habilete",
@@ -334,7 +334,7 @@
       }
     },
     "c25-8": {
-      "text": "Vous passez. La plaque ne bouge pas, et lui non plus. Vous contournez son dos courbé à moins d'un mètre, assez près pour sentir l'odeur de sa combinaison, laine mouillée et poudre. Il dit un mot que vous ne comprenez pas, puis le même. La porte de la salle de contrôle est entrouverte derrière lui, et la lumière grise vient de là.",
+      "text": "Vous passez. La plaque tient sous votre poids, et l'homme garde le front contre le fer. Vous contournez son dos courbé à moins d'un mètre, assez près pour sentir sa combinaison, de la laine mouillée et de la poudre, et pour entendre le mot qu'il répète entre deux respirations : « Dessous. Dessous. Il est dessous. » La porte est entrouverte derrière lui, et c'est de là que vient la lumière grise.",
       "choices": [
         {
           "kind": "aller",
@@ -344,7 +344,7 @@
       ]
     },
     "c25-24": {
-      "text": "La plaque bascule et sonne comme une cloche. Il se retourne d'un bloc, le fusil déjà levé, et la première balle vous prend au flanc avant que vous ayez compris qu'il avait tiré. Vous perdez 2 points d'Endurance. Il vient vers vous en priant, les yeux blancs, le couteau sorti. Il frappe à casser des os.",
+      "text": "La plaque bascule et sonne comme une cloche dans toute la nef. Il se retourne d'un bloc, le fusil déjà à l'épaule, et la première balle vous prend au flanc avant que vous ayez entendu le coup. Vous perdez 2 points d'Endurance. « Il voit celui qui marche. Il n'a pas besoin de nous. » Au deuxième coup, le fusil s'enraye. Il ne cherche pas à le dégager : il tire de sa botte un couteau de tranchée et se jette sur vous, les yeux blancs, la prière reprise au mot où le tir l'avait coupée.",
       "effects": [
         {
           "type": "stat",
@@ -361,7 +361,7 @@
       }
     },
     "c25-13": {
-      "text": "La porte de la salle de contrôle. Vous laissez le monolithien derrière vous, à genoux ou couché, vous ne le regardez plus. La porte tient par un gond. Une lumière grise filtre, celle de néons de secours qui n'auraient pas dû survivre à vingt ans. Le compteur hurle quand vous passez la main dans l'entrebâillement. C'est ici que ça s'est passé. C'est ici que ça se passe encore.",
+      "text": "Derrière vous, la prière s'est arrêtée ou continue, et vous ne vous retournez pas pour le savoir. La porte ne tient plus que par un gond. Par l'entrebâillement filtre la lumière de néons de secours qui n'auraient pas dû survivre à vingt hivers, et quand vous glissez la main dans l'ouverture, le compteur part en crécelle. C'est ici que ça s'est passé, la nuit du 26 avril, et c'est ici que ça se passe encore.",
       "choices": [
         {
           "kind": "agir",
@@ -380,7 +380,7 @@
       ]
     },
     "c25-4": {
-      "text": "La Combinaison SEVA siffle, bouclée. Vous passez la porte. Le compteur grimpe d'un coup, se stabilise, et dans la combinaison vous entendez votre cœur. Vous prenez 1 rad. La salle de contrôle du réacteur 4 est intacte, comme si l'équipe était sortie fumer. Des pupitres en arc de cercle, des centaines de cadrans, des chaises renversées.",
+      "text": "Le poste de commande du réacteur 4 est intact, et l'équipe semble sortie fumer : des consoles en arc de cercle, des centaines de cadrans, deux chaises à roulettes renversées et un cendrier plein. Vous y entrez la Combinaison SEVA bouclée jusqu'au menton, et dans le casque vous n'entendez plus que votre cœur. Vous prenez 1 rad, pas davantage.",
       "effects": [
         {
           "type": "stat",
@@ -397,7 +397,7 @@
       ]
     },
     "c25-20": {
-      "text": "Vous passez la porte à découvert. Le compteur ne grimpe pas, il saute, et vous sentez une chaleur sur le visage, une chaleur qui ne vient de nulle part. Vous prenez 4 rads. La salle de contrôle du réacteur 4 est intacte : des pupitres en arc de cercle, des centaines de cadrans, des chaises renversées. Vous saignez du nez, sans douleur.",
+      "text": "Une chaleur vous effleure le visage dès le seuil, alors qu'aucune source n'en donne, ni lampe ni radiateur. Vous prenez 4 rads. La salle de contrôle du réacteur 4 est restée telle qu'on l'a quittée, consoles en arc de cercle, centaines de cadrans, chaises renversées, et vous ne vous apercevez que vous saignez du nez qu'au moment où une goutte tombe sur le verre d'un cadran.",
       "effects": [
         {
           "type": "stat",
@@ -419,7 +419,7 @@
         "alt": "La salle de contrôle d'un réacteur, pupitres en arc de cercle, des centaines de cadrans à zéro, un seul voyant rouge.",
         "prompt": "La salle de contrôle du réacteur 4, intacte sous la poussière : des pupitres en arc de cercle, des centaines de cadrans dont chaque aiguille repose sur sa butée, des rangées de voyants éteints sauf un, rouge, au-dessus du pupitre central, des chaises renversées au sol. Lumière grise de néons de secours, le héros vu de dos, la main tendue au-dessus d'un cadran sans le toucher. Les cadrans sont lisses, sans chiffres ni lettres."
       },
-      "text": "Les cadrans sont tous à zéro. Chaque aiguille repose sur sa butée, des centaines d'aiguilles, et les voyants sont éteints, sauf un, rouge, au-dessus du pupitre central, qui ne clignote pas. Vous passez la main sur un cadran sans le toucher. Vous êtes au-dessus de ce qui a brûlé. Vous l'avez vu. Un escalier de service s'ouvre derrière le dernier pupitre.",
+      "text": "Les cadrans sont tous à zéro. Des centaines d'aiguilles reposent chacune sur sa butée, et tous les voyants sont éteints sauf un, rouge, au-dessus du pupitre central, qui ne clignote pas et n'a sans doute jamais clignoté. Sur la console, un registre de quart est resté ouvert à la page du 25 avril, rempli au crayon d'une main qui appuie de plus en plus fort à mesure que les lignes descendent ; la dernière s'arrête au milieu d'un mot. Vous tendez la main au-dessus d'un cadran sans le toucher. Sous vos pieds, à quelques dizaines de mètres de béton, il y a ce qui a brûlé. Derrière le dernier pupitre s'ouvre un escalier de service.",
       "effects": [
         {
           "type": "flag",
@@ -435,7 +435,7 @@
       ]
     },
     "c25-10": {
-      "text": "L'escalier de service tourne sur lui-même dans un puits de béton, sans rampe. Les néons s'arrêtent après deux étages ; ensuite, c'est une lueur orange, très faible, qui monte d'en bas. Les murs sont tièdes. Vous comptez huit paliers. Au dernier, l'escalier s'ouvre sur des couloirs noyés jusqu'aux chevilles, et l'orange est plus net.",
+      "text": "L'escalier de service tourne sur lui-même dans un puits de béton tiède, sans rampe. Les néons cessent après deux étages, et au huitième palier une lueur orange monte d'en bas, sur des couloirs noyés jusqu'aux chevilles.",
       "choices": [
         {
           "kind": "aller",
@@ -450,7 +450,7 @@
         "alt": "Un couloir bas noyé jusqu'aux chevilles, câbles pendants, et au fond une lueur orange qui ne vient d'aucune lampe.",
         "prompt": "Les couloirs du bas de la Centrale : un plafond bas de béton, de l'eau noire jusqu'aux chevilles qui reflète des câbles pendants, des tuyaux courant le long des murs et disparaissant dans l'obscurité, des traces de doigts dans la suie à hauteur de main. Au fond, une lueur orange diffuse qui ne vient d'aucune lampe, et à sa lumière la surface de l'eau trahit un regard ouvert, sans grille. Le héros de dos, en silhouette contre la lueur."
       },
-      "text": "Les couloirs du bas. De l'eau jusqu'aux chevilles, un plafond bas, des câbles qui pendent au-dessus de l'eau, et quelque part devant, une lumière orange qui ne vient d'aucune lampe. Des tuyaux courent le long des murs et disparaissent dans le noir. Le sol, sous l'eau, n'est pas plat. Il y a des trous. Vous ne savez pas où.",
+      "text": "Les couloirs du bas commencent là où finit le sec : une eau noire jusqu'aux chevilles, un plafond si bas que vous rentrez la tête, des câbles qui pendent jusqu'à effleurer la surface. Des tuyaux courent le long des murs et s'enfoncent dans l'obscurité. Loin devant brûle une lumière orange qu'aucune lampe ne donne. Sous l'eau, votre botte rencontre un rebord, puis le vide, puis du béton : le sol est troué, et l'eau qui le recouvre ne montre pas où.",
       "choices": [
         {
           "kind": "aller",
@@ -469,7 +469,7 @@
       ]
     },
     "c25-22": {
-      "text": "Le faisceau de la Lampe torche fait de l'eau un miroir noir, et sous ce miroir, les trous apparaissent : des regards sans grille, des fosses de câbles, une tous les dix mètres. Vous les contournez. Sur les murs, à hauteur de main, des traces de doigts dans la suie, tournées dans votre sens. Devant, l'orange grandit, et la chaleur avec.",
+      "text": "Le faisceau de la Lampe torche fait de l'eau un miroir noir, et sous ce miroir les trous apparaissent : des regards sans grille, des fosses à câbles, un tous les dix mètres environ. Vous les contournez. Sur les murs, à hauteur de main, la suie porte des traces de doigts, cinq par cinq, toutes tournées dans votre sens de marche, et vous vous demandez combien d'hommes sont arrivés jusqu'ici avant vous. Devant, l'orange grandit, et la chaleur avec lui.",
       "choices": [
         {
           "kind": "aller",
@@ -479,7 +479,7 @@
       ]
     },
     "c25-15": {
-      "text": "Vous avancez la main sur le mur, le pied qui tâte avant chaque pas. Le mur est tiède, et l'eau aussi. Le compteur crépite au rythme du cœur. À un moment, la main trouve, dans la suie, des traces de doigts, tournées dans votre sens. À un autre, le pied ne trouve rien. Tentez votre Chance.",
+      "text": "La paume sur le mur, la pointe du pied devant, vous tâtez l'eau avant chaque pas. Le mur est tiède, l'eau aussi, à la température d'un bain qu'on aurait oublié de vider. Sous la main passent un interrupteur de bakélite, puis une plaque émaillée dont vous suivez du doigt les lettres en relief sans parvenir à les lire. Puis votre pied avance et ne rencontre plus de fond. Tentez votre Chance.",
       "test": {
         "type": "luck",
         "success": "c25-29",
@@ -487,7 +487,7 @@
       }
     },
     "c25-29": {
-      "text": "Vous ne tombez pas. Le pied reste suspendu une seconde au-dessus de rien, puis vous le ramenez, lentement, sur le bord. Un regard ouvert, sans grille, et l'eau qui tourne lentement dedans. Vous le contournez le dos au mur. Après ça, il y en a d'autres, et vous les trouvez tous, un par un, à la pointe du pied.",
+      "text": "Vous ne tombez pas. Le pied reste une seconde suspendu au-dessus du vide, puis vous le ramenez lentement sur le bord : un regard ouvert, sans grille, où l'eau tourne sur elle-même. Vous le contournez le dos au mur. Il y en a d'autres ensuite, et vous les trouvez tous, un par un, à la pointe de la botte, en marchant vers l'orange.",
       "choices": [
         {
           "kind": "aller",
@@ -497,7 +497,7 @@
       ]
     },
     "c25-18": {
-      "text": "Vous tombez. L'eau vous ferme la bouche, puis le fond, du béton et de la ferraille, vous prend le genou. Vous ressortez en vous hissant aux câbles. La flaque où vous êtes tombé est chaude, et le compteur hurle. Vous perdez 3 points d'Endurance. Vous prenez 2 rads. Vous repartez en boitant vers la lumière orange.",
+      "text": "Vous tombez. L'eau vous ferme la bouche, puis le fond, béton et ferraille mêlés, vous cueille le genou. Vous remontez en vous hissant aux câbles qui pendent, et la flaque d'où vous sortez est chaude comme une soupe, tandis que le compteur hurle contre votre hanche. Vous perdez 3 points d'Endurance. Vous prenez 2 rads. Vous repartez en boitant vers la lumière orange, en laissant derrière vous des cercles sur l'eau.",
       "effects": [
         {
           "type": "stat",
@@ -519,7 +519,7 @@
       ]
     },
     "c25-25": {
-      "text": "La lumière orange vient d'un couloir qui n'est plus en béton gris mais en béton coulé, grumeleux, jeté à la hâte, avec des traînées de rouille comme des coulées de sang sec. Le mur est chaud. Au bout, une grille arrachée, et derrière, la lueur qui monte d'un puits. Vous entrez dans le Sarcophage par en dessous, là où personne n'est censé entrer.",
+      "text": "La lumière orange vient d'un couloir qui n'est plus en béton lisse mais en béton coulé à la hâte, grumeleux, déversé en 1986 depuis des bennes par des hommes qui n'avaient droit qu'à quelques minutes chacun, et sur lequel des traînées de rouille ont séché en coulées sombres. Le mur est chaud sous la main. Au bout, une grille a été arrachée de ses gonds, de l'intérieur, et derrière elle une lueur monte d'un puits. Vous entrez dans le Sarcophage par le dessous, par un passage que ses bâtisseurs avaient noyé de béton pour qu'on n'y passe plus jamais.",
       "choices": [
         {
           "kind": "aller",

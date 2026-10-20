@@ -30,7 +30,7 @@
         "alt": "La salle de l'Exauceur : une grande pierre noire qui luit par en dessous, des sacs et des fusils abandonnés le long des murs.",
         "prompt": "Une salle de béton nu, plus petite qu'une chapelle. Au centre, une pierre noire grande comme une voiture, posée sur le sol, dont une lueur chaude sort par en dessous comme d'une braise couverte. Le long des murs, des sacs à dos affaissés, des fusils debout contre le béton, des gamelles, abandonnés en rangs. Une silhouette de stalker sur le seuil, de dos, le détecteur pendu à la poitrine, seule source d'échelle."
       },
-      "text": "La salle est plus petite que vous ne pensiez. Au milieu, la pierre : grande comme une voiture, noire, et elle luit par en dessous, comme une braise qu'on a couverte. Elle bourdonne. Le son est dans vos dents avant d'être dans vos oreilles. Le détecteur, lui, ne dit rien. Le long des murs, des sacs, des fusils debout contre le béton, des gamelles. Ceux qui sont venus ont laissé leurs affaires. Ils ne sont pas repartis les chercher.",
+      "text": "La salle est plus petite que vous ne l'imaginiez, à peine la nef d'une chapelle de village, et le béton y a été coulé si vite qu'on voit encore dans les murs l'empreinte des planches de coffrage. Au centre, posée à même la dalle, la pierre : noire, grande comme une voiture, elle luit par en dessous à la façon d'une braise qu'on a couverte de cendre pour la nuit. Elle bourdonne, et le son vous entre dans les dents avant d'atteindre les oreilles. Le détecteur, sur votre poitrine, ne réagit pas. Le long des murs s'alignent des sacs à dos affaissés, des fusils debout, des gamelles en fer-blanc que leurs propriétaires ne sont jamais revenus chercher.",
       "choices": [
         {
           "kind": "aller",
@@ -59,7 +59,7 @@
       ]
     },
     "c28-9": {
-      "text": "Derrière vous, le couloir orange redescend vers le puits. Vous l'avez longé, ce puits, avec le corium qui luisait au fond comme un œil fermé. D'ici, on l'entend encore : un tic-tac mou, du béton qui travaille. Entre le puits et la pierre, il n'y a rien. Pas de porte, pas de garde. Le Monolithe ne monte pas jusqu'ici. Il n'en a pas besoin. Ce qui est là se garde seul.",
+      "text": "Derrière vous, le couloir orange redescend vers le puits que vous avez longé tout à l'heure, avec au fond le corium qui luisait comme un œil mi-clos. D'ici on l'entend encore, un tic-tac mou de béton qui travaille sous la chaleur. Entre le puits et la pierre, ni porte ni sentinelle, pas même un fil tendu en travers du passage. Les hommes du Monolithe ne montent pas jusqu'ici, et vous devinez pourquoi : ce qui habite cette salle se garde très bien sans eux.",
       "choices": [
         {
           "kind": "aller",
@@ -74,7 +74,7 @@
       ]
     },
     "c28-12": {
-      "text": "Vous longez le mur. Du béton coulé à la hâte, des armatures qui en sortent comme des côtes. Sur le sol, des traces : des pas qui vont vers la pierre, aucun qui en revient. Un carnet ouvert, l'encre délavée. Une bouteille pleine. Quelqu'un a gravé une date dans le béton, 2006, et sous la date un mot que vous ne lisez pas. Le bourdonnement vous suit, comme un chien suit de l'œil.",
+      "text": "La paroi est froide et rugueuse sous les doigts. Le béton a été coulé à la hâte en 1986, et les fers d'armature en sortent par endroits, rongés jusqu'au fil. Dans la poussière du sol, des empreintes de bottes vont vers la pierre, des dizaines, mais aucune n'en revient. Près d'un sac éventré traînent un carnet ouvert dont l'encre a pâli et une bouteille de vodka encore capsulée. Quelqu'un a gravé une date au couteau, 2006, et sous la date un mot que la lueur de la pierre ne suffit pas à éclairer. La note grave de la pierre vous suit d'un mur à l'autre, pareille à un chien couché qui vous suit des yeux sans se lever.",
       "choices": [
         {
           "kind": "agir",
@@ -98,7 +98,7 @@
       ]
     },
     "c28-22": {
-      "text": "Le carnet est celui d'un stalker. Une écriture serrée, puis de plus en plus large. Les dernières lignes tiennent sur une page : Elle m'a demandé ce que je voulais. J'ai dit : rentrer. Il n'y a pas de suite. Le propriétaire est contre le mur, deux mètres plus loin, assis, la tête sur les genoux. Il est sec comme du bois. Il a l'air d'attendre encore.",
+      "text": "Le carnet appartenait à un stalker qui notait tout, les rads, les boulons lancés, les noms des anomalies, d'une écriture serrée qui s'élargit page après page jusqu'à ne plus tenir que trois mots par ligne. La dernière entrée occupe une page entière : « Elle m'a demandé ce que je voulais. J'ai dit : rentrer. » Il n'y a rien après. Le propriétaire est assis deux mètres plus loin, adossé au béton, la tête sur les genoux, sec comme une bûche de l'hiver dernier, et il a gardé ses bottes lacées, en homme qui compte repartir dès qu'on l'appellera.",
       "choices": [
         {
           "kind": "agir",
@@ -113,7 +113,7 @@
       ]
     },
     "c28-15": {
-      "text": "Au-dessus de la pierre, le béton s'est fendu. Par la brèche, un morceau de ciel. Il est encore rouge, du rouge de l'Émission, comme un bleu sur une peau. Vous l'avez vue venir depuis le parvis, le sol qui bourdonnait sous vos bottes. Vous comprenez seulement maintenant : le bourdonnement du sol et celui de la pierre, c'était le même. Elle n'a jamais cessé. Elle respire ici.",
+      "text": "Au-dessus de la pierre, la dalle s'est fendue sur deux mètres, et par la brèche passe un lambeau de ciel encore rouge, du rouge de l'Émission, pareil à un bleu qui jaunit sur une peau. Vous l'avez vue se lever depuis le parvis, quand le sol bourdonnait sous vos bottes. Ce bourdonnement-là et celui de la pierre ont la même note, exactement, et vous tenez enfin la raison : l'Émission ne s'est jamais arrêtée, elle a seulement regagné sa source, et c'est ici qu'elle respire.",
       "choices": [
         {
           "kind": "aller",
@@ -128,7 +128,7 @@
       ]
     },
     "c28-19": {
-      "text": "Vous restez sur le seuil. Le bourdonnement change, se fait plus bas, comme quelqu'un qui baisse la voix pour qu'on s'approche. Puis il y a un mot. Pas dans l'air : dans la tête, derrière les yeux. Viens. Vous n'avez pas de nom, vous n'en avez jamais eu, et c'est pourtant vous qu'elle appelle. Elle ne se trompe pas de personne. Elle attendait.",
+      "text": "Vous restez sur le seuil, la main sur le chambranle d'acier. Le bourdonnement descend d'un ton, comme une voix qui baisse pour qu'on se penche vers elle, puis un mot se forme, non dans l'air de la salle mais derrière vos yeux, à l'endroit où l'on entend ses propres pensées. « Viens. » Vous n'avez pas de nom, vous n'en avez jamais eu depuis le Cordon, et c'est pourtant vous qu'elle appelle, sans la moindre hésitation. « Viens. Je t'attends depuis que tu as passé le pont. »",
       "choices": [
         {
           "kind": "aller",
@@ -148,7 +148,7 @@
       ]
     },
     "c28-28": {
-      "text": "Vous dites : qu'est-ce que tu es. Elle ne répond pas à ça. Elle dit : qu'est-ce que tu veux. Sa voix est calme, polie, un peu lasse, la voix de quelqu'un qui a posé la question beaucoup de fois. Le sol vibre sous vos bottes. Vous sentez, très nettement, qu'elle peut vous donner ce que vous direz. Mot pour mot. C'est cela qui fait peur, pas le reste.",
+      "text": "« Qu'est-ce que tu es ? » Votre voix sonne mince contre le béton. Elle ne relève pas la question. « Qu'est-ce que tu veux ? » Elle parle calmement, poliment, avec la lassitude d'un guichetier qui a posé la même question à des centaines d'hommes avant vous et qui la posera à des centaines d'autres. Sous vos bottes, la dalle vibre. Vous sentez très nettement qu'elle peut vous donner ce que vous direz, mot pour mot, et c'est cette exactitude qui vous glace, bien plus que la lumière ou la voix.",
       "choices": [
         {
           "kind": "aller",
@@ -163,7 +163,7 @@
       ]
     },
     "c28-3": {
-      "text": "Vous êtes devant elle. De près, la pierre n'est pas noire : elle est traversée de veines qui bougent, lentes, comme sous une peau. La chaleur vous arrive au visage. Le bourdonnement s'arrête net. Dans le silence, un seul mot, patient : Dis. Vous savez ce que les autres ont demandé. Leurs sacs sont contre le mur. Il faut dire quelque chose, ou ne rien dire, et les deux sont une réponse.",
+      "text": "De près, la pierre n'est pas noire. Des veines ambrées la traversent et se déplacent sous la surface avec la lenteur de muscles sous une peau, et la chaleur qu'elle dégage vous cuit les joues à un pas de distance. Le bourdonnement cesse d'un coup. Dans le calme qui suit, un seul mot, patient : « Dis. » Ce qu'ont demandé ceux qui sont venus avant vous, leurs sacs alignés au pied des murs le racontent assez. Parler ou vous taire, ici, c'est répondre de toute façon.",
       "image": {
         "src": "images/c28-3.webp",
         "alt": "La pierre de l'Exauceur au centre d'une salle de béton, des sacs abandonnés contre les murs",
@@ -202,7 +202,7 @@
       ]
     },
     "c28-25": {
-      "text": "Vous connaissez cette voix. Vous l'avez comprise dans le X-16, sur les documents de Strelok : sept cerveaux dans une cuve, quelque part sous vos pieds, qui parlent d'une seule bouche. Vous posez la main à plat sur le sol. Il vibre, et la vibration a une direction. Elle vient du côté, de la porte au clavier. La pierre n'est qu'un haut-parleur. Un très beau haut-parleur. Ce qui écoute est ailleurs, et ce qui écoute a besoin de bras.",
+      "text": "Cette voix, vous la connaissez sans l'avoir jamais entendue : dans le X-16, puis dans les documents de Strelok, il était question de sept cerveaux dans une cuve, enterrés sous la Centrale, qui parlent d'une seule bouche. Vous vous accroupissez et posez la main à plat sur la dalle. Elle vibre, et la vibration a un sens, elle monte de votre gauche, du côté de la porte au clavier. La pierre n'est qu'un haut-parleur, un très beau haut-parleur taillé dans la roche, et ce qui écoute derrière elle a besoin de bras.",
       "choices": [
         {
           "kind": "aller",
@@ -217,7 +217,7 @@
       ]
     },
     "c28-4": {
-      "text": "Vous dites : la richesse. Le mot sort plus petit que vous ne l'aviez pensé. La pierre ne bouge pas. Mais au-dessus, quelque chose répond : un craquement long, le bruit d'une poutre qui cède en hiver. Une poussière fine tombe sur vos épaules. Elle brille. Vous regardez votre manche : ce n'est pas de la poussière. Ce sont des éclats de métal jaune. Le plafond travaille. Elle a entendu.",
+      "text": "« La richesse. » Le mot sort plus petit que vous ne l'aviez préparé, presque honteux. La pierre reste inerte, mais au-dessus d'elle le plafond répond par un craquement long, celui d'une poutre de grange qui cède sous la neige en février. Une poussière fine se pose sur vos épaules et accroche la lumière. Vous regardez votre manche : ce sont des copeaux de métal jaune, tièdes, qui sentent le fer. Au-dessus de votre tête, la dalle se gonfle déjà vers le bas, et une fissure en étoile s'y ouvre sans bruit.",
       "choices": [
         {
           "kind": "agir",
@@ -232,7 +232,7 @@
       ]
     },
     "c28-13": {
-      "text": "Vous restez. Le craquement devient un grondement. Le béton s'ouvre au-dessus de la pierre et ce qui en sort n'est pas du béton : des pièces. Des milliers. Elles tombent d'abord une à une, lourdes, et chacune sonne sur le sol comme une cloche. Puis le flot. Elles ne tombent que sur vous. Un mètre plus loin, le sol est nu. Tentez votre Chance.",
+      "text": "Les paumes ouvertes, vous restez. Le craquement devient un grondement, la dalle s'ouvre au-dessus de la pierre, et ce qui en tombe n'est pas du béton mais des pièces, épaisses comme des jetons de métro, frappées d'un profil que vous ne reconnaissez pas. Elles tombent d'abord une à une et chacune sonne sur le sol avec la voix grave d'une cloche, puis vient le flot, qui ne tombe que sur vous : un mètre plus loin, la dalle reste nue. Tentez votre Chance.",
       "test": {
         "type": "luck",
         "success": "c28-21",
@@ -240,7 +240,7 @@
       }
     },
     "c28-21": {
-      "text": "Vous roulez sur le côté, la mitraille jaune vous rate d'une main. Le tas monte, couvre la pierre, l'éteint. Vous rampez jusqu'au couloir, les poches pleines, les ongles arrachés. Le compteur grimpe. Vous prenez 4 rads. Derrière vous, le Sarcophage est plein jusqu'au plafond. Vous êtes riche. Vous le resterez : aucun marchand, au sud, ne voudra de ces pièces. Elles brûlent dans les poches. Elles brûleront toujours.",
+      "text": "La mitraille jaune vous manque d'une main : vous avez roulé sur le côté juste à temps. Le tas grossit derrière vous, recouvre la pierre, l'éteint sous son poids, et vous rampez jusqu'au couloir, les poches pleines, deux ongles arrachés sur le béton. Vous prenez 4 rads. Quand vous vous retournez, la salle est comblée jusqu'au plafond d'un métal qui tinte encore en refroidissant. Ce que vous emportez, Sidorovitch le posera sur sa balance sans lever les yeux, en offrira cent roubles, puis répétera « cent », plus bas, pour lui-même.",
       "effects": [
         {
           "type": "stat",
@@ -250,10 +250,10 @@
       ]
     },
     "c28-8": {
-      "text": "La première pièce vous ouvre l'arcade. La deuxième casse un doigt. Puis il n'y a plus de pièces séparées, seulement le poids. Vous tombez à genoux, puis à plat, le visage sur le métal froid, et le métal monte autour de vous comme de l'eau. Il est chaud, maintenant. Il sent le fer. Vous avez demandé la richesse. Vous l'avez, jusque dans la bouche."
+      "text": "La première pièce vous ouvre l'arcade, la deuxième vous casse un doigt, et ensuite il n'y a plus de pièces séparées, seulement un poids qui vous plie les genoux puis vous couche à plat, le visage contre le métal. Il monte autour de vous, lourd, sans hâte. Il est chaud maintenant, il a le goût du sang et du fer. Quand le flot s'arrête enfin, une dernière pièce roule sur la pente du tas, tinte contre la pierre éteinte et se couche, côté face, au-dessus de l'endroit où vous étiez."
     },
     "c28-16": {
-      "text": "Vous dites : ne jamais mourir. Vous le dites la main posée sur la pierre, parce qu'il faut bien la toucher pour ça, vous ne savez pas d'où vous vient cette idée. Elle est tiède. Puis elle ne l'est plus. Le froid monte dans les doigts, calme, méthodique, un froid de cave. Vous voulez retirer la main. Les doigts ne reçoivent plus l'ordre. Ils sont déjà un peu gris.",
+      "text": "« Ne jamais mourir. » Vous le dites la main posée à plat sur la pierre, parce qu'il vous a semblé qu'un vœu pareil se scellait au contact, sans savoir d'où vous vient cette certitude. Elle est tiède sous la paume. Puis elle cesse de l'être. Un froid de cave monte dans les doigts, calme, méthodique, phalange après phalange, et quand vous voulez retirer la main, les doigts ne reçoivent plus l'ordre. Le bout des ongles a déjà pris la couleur du ciment frais.",
       "choices": [
         {
           "kind": "agir",
@@ -268,7 +268,7 @@
       ]
     },
     "c28-6": {
-      "text": "Vous tirez. La peau tient à la pierre comme une langue à une grille gelée. Le gris est au poignet. Il faut tirer d'un coup, sans réfléchir, avec tout le corps, avant que le coude ne prenne. Testez votre Habileté.",
+      "text": "Vous tirez. La peau tient à la pierre comme une langue à une grille gelée, et le gris a déjà gagné le poignet. Il faut arracher d'un coup, de tout le corps, avant que le coude ne se prenne à son tour. Testez votre Habileté.",
       "test": {
         "type": "stat",
         "stat": "habilete",
@@ -278,7 +278,7 @@
       }
     },
     "c28-11": {
-      "text": "La main vient. Pas toute : la paume reste sur la pierre, un gant de peau grise qui fume. Vous perdez 3 points d'Endurance. Vous tombez en arrière, la main contre la poitrine. Les doigts bougent. Ils sont à vous. La pierre bourdonne de nouveau, sans colère. Elle a le temps. Elle a tout le temps du monde, c'est précisément ce qu'elle vendait.",
+      "text": "La main vient, mais pas entière : la peau de la paume reste collée à la pierre, un gant gris qui fume dans la chaleur. Vous perdez 3 points d'Endurance. Vous tombez en arrière, le poing serré contre la poitrine, et vous regardez les doigts plier un à un, rouges, vivants, à vous. La pierre se remet à vibrer, sans la moindre colère. « Reviens quand tu voudras. » Elle a le temps, tout le temps du monde, et c'était précisément la marchandise qu'elle vous proposait.",
       "effects": [
         {
           "type": "stat",
@@ -300,7 +300,7 @@
       ]
     },
     "c28-27": {
-      "text": "Le froid passe le coude. Vous ne sentez plus le bras ; vous le voyez, gris, lisse, avec les mêmes veines lentes que la pierre. Ce n'est pas douloureux. C'est l'inverse de la douleur. L'épaule, le cou. Vous pensez : c'est donc ça. Vous pensez que vous ne penserez plus de phrases, bientôt, seulement des choses longues, sans mots, à la vitesse où le béton vieillit.",
+      "text": "Le froid passe le coude. Vous ne sentez plus votre bras, vous le voyez seulement, gris et lisse, parcouru des mêmes veines lentes que la pierre, et cela ne fait aucun mal, cela ressemble plutôt à l'envers d'une douleur. L'épaule suit, puis le cou. Une pensée vous traverse, nette : voilà donc ce qu'elle entendait par jamais. Bientôt vous n'aurez plus de phrases, seulement des pensées longues et sans mots, qui avanceront à la vitesse où le béton vieillit.",
       "choices": [
         {
           "kind": "agir",
@@ -310,7 +310,7 @@
       ]
     },
     "c28-20": {
-      "text": "Vous ne mourrez pas. Vous êtes debout à côté d'elle, la main encore posée, et vous le resterez. Un jour quelqu'un entrera, verra les sacs contre le mur, et deux pierres au lieu d'une. Il s'approchera de la plus grande. Vous aurez le temps de le voir faire, et le temps d'après, et tout le temps. On vous avait dit : à la lettre."
+      "text": "Vous ne mourrez pas. Vous restez debout à côté d'elle, la main encore posée, et un jour un autre stalker entrera, verra les fusils debout contre le béton et deux pierres au lieu d'une, puis s'approchera de la plus grande sans un regard pour vous. Vous le regarderez faire, et le suivant après lui, pendant que la poussière s'amassera sur votre épaule au même rythme que sur les gamelles."
     },
     "c28-10": {
       "image": {
@@ -318,7 +318,7 @@
         "alt": "La pierre de l'Exauceur s'embrase d'une lumière blanche qui efface les ombres de la salle.",
         "prompt": "La grande pierre noire de l'Exauceur, veinée de lignes lentes comme sous une peau, rayonne d'une lumière blanche qui monte de ses veines comme une marée et noie la salle de béton : les ombres disparaissent, les sacs contre les murs se dissolvent dans le blanc, les armatures du plafond se découpent en fils noirs. Au premier plan, une silhouette de stalker de dos, bras levé devant le visage, réduite à un contour. Gravure presque entièrement blanche, hachures qui s'effacent vers le centre."
       },
-      "text": "Vous dites : que la Zone disparaisse. Vous l'avez dit pour les autres, pour les types du Cordon avec leur guitare, pour les morts contre le mur. Peut-être un peu pour vous. La pierre ne bourdonne plus : elle brille. La lumière monte de ses veines comme une marée, blanche, et la salle perd ses ombres une à une. Vous avez encore le temps de vous taire. Elle n'a pas fini d'écouter.",
+      "text": "« Que la Zone disparaisse. » Vous l'avez dit pour les autres, pour les gars du Cordon et leur guitare désaccordée, pour les morts adossés au béton de cette salle, et peut-être aussi un peu pour vous. La pierre cesse de bourdonner et se met à briller. Une lumière blanche monte de ses veines comme une marée d'équinoxe, et la salle perd ses ombres une à une, les sacs d'abord, puis les fusils, puis les fers du plafond. Vous avez encore le temps de vous taire, puisqu'elle n'a pas fini d'écouter.",
       "choices": [
         {
           "kind": "agir",
@@ -338,7 +338,7 @@
       ]
     },
     "c28-24": {
-      "text": "Vous fermez les yeux. La lumière passe quand même, rouge à travers les paupières, puis blanche, puis sans couleur. Il y a un moment où vous ne savez plus si vos yeux sont fermés. Le bourdonnement est revenu, très loin, comme une mouche dans une autre pièce. Le détecteur crépite contre votre poitrine. Il crépite normalement. Rien n'a changé pour lui.",
+      "text": "Les paupières n'y font rien. La lumière passe quand même, rouge à travers la peau, puis blanche, puis d'aucune couleur, et vient un moment où vous ne savez plus dire si vos yeux sont ouverts ou fermés. Le son de la pierre revient de très loin, mince comme une mouche dans la pièce d'à côté. Sous vos semelles, le grain du béton n'a pas bougé, et la sangle du fusil vous scie toujours l'épaule.",
       "choices": [
         {
           "kind": "agir",
@@ -348,7 +348,7 @@
       ]
     },
     "c28-17": {
-      "text": "Vous la regardez. Il faut bien que quelqu'un voie ce qu'elle fait quand elle exauce. La lumière est un mur qui avance. Au cœur des veines, juste avant qu'elles ne se noient, une forme : des fils, des fils de cuivre qui descendent dans le sol comme des racines. Puis plus rien que du blanc. Tentez votre Chance.",
+      "text": "Il faut bien qu'un homme voie ce qu'elle fait quand elle exauce, et vous la regardez en face. La lumière avance sur vous. Au cœur des veines, juste avant qu'elles ne se noient dans le blanc, une forme apparaît : des fils de cuivre, des centaines, qui plongent dans la dalle à la façon de racines. Ensuite il n'y a que le blanc. Tentez votre Chance.",
       "test": {
         "type": "luck",
         "success": "c28-14",
@@ -356,13 +356,13 @@
       }
     },
     "c28-14": {
-      "text": "Vous avez vu. Avant que le blanc ne prenne tout, vous avez vu les fils, le sol fendu sous la pierre, un câble qui part vers la porte au clavier. Puis le blanc, et derrière le blanc, le noir. Vous êtes aveugle. Le détecteur crépite, régulier, fidèle. La Zone est là. Elle a disparu pour vous seul, c'est ce que vous aviez demandé, à la lettre. Vous sortirez à tâtons. Quelqu'un vous entendra, peut-être."
+      "text": "Vous avez vu, et vous garderez ce que vous avez vu : les fils de cuivre, la dalle fendue sous la pierre, un câble gainé de plomb qui file vers la porte au clavier. Puis le blanc a tout pris, et derrière le blanc est venu le noir. Vous êtes aveugle. Par la brèche du plafond, le vent apporte la rouille et l'ozone qu'il portait déjà au Cordon, et rien de ce qu'il charrie n'a bougé. À genoux, vous cherchez le câble à tâtons, le trouvez sous la poussière, et vous le suivez main sur main vers la porte au clavier, derrière laquelle attend celui qui a exaucé votre vœu."
     },
     "c28-5": {
-      "text": "Vous ouvrez les yeux. Il n'y a rien à ouvrir. Le noir est complet, sans bord, et il ne s'agit pas de la salle : vous passez la main devant votre visage et vous ne la voyez pas. Le détecteur crépite. Il entend ce que vous ne pouvez plus voir : la Zone, intacte, tout autour. Vous avez demandé qu'elle disparaisse. Elle a disparu. Pour vous."
+      "text": "Le noir est complet, que vos yeux soient ouverts ou non, sans bord ni grain, et la salle n'y est pour rien : vous passez la main devant votre visage sans la voir. Sur votre poitrine, le détecteur égrène ses clics. Il perçoit ce que vous ne verrez plus, la Zone intacte tout autour, ses anomalies, ses chiens, ses morts. Vous tâtonnez jusqu'au mur, trouvez la toile d'un sac, puis celle d'un autre, et vous vous asseyez entre eux pour attendre qu'une botte, un jour, passe le seuil."
     },
     "c28-2": {
-      "text": "Vous reculez d'un pas. Puis d'un autre. La pierre ne vous retient pas. Le bourdonnement reprend, plus bas, et il y a dedans quelque chose qui ressemble à de la surprise, ou à de l'ennui. Elle n'insiste pas. Les sacs contre le mur restent où ils sont. Vous avez les mains vides, et pour la première fois depuis le Cordon, vous savez ce qu'elles contiennent.",
+      "text": "La pierre ne vous retient pas. Vous reculez d'un pas, puis d'un autre, et la note reprend, plus basse, avec dedans une inflexion qui tient de la surprise ou de l'ennui. « Comme tu voudras. Ils reviennent tous. » Les sacs des autres restent où ils sont. Vous regardez vos mains, vides, sales, écorchées aux jointures, et vous savez exactement ce qu'elles tiennent, ce qui ne vous était pas arrivé depuis le Cordon.",
       "choices": [
         {
           "kind": "aller",
@@ -377,7 +377,7 @@
       ]
     },
     "c28-18": {
-      "text": "Le couloir orange. Vous le prenez à l'envers, et à l'envers il est plus long. Le puits, le corium au fond qui vous regarde passer. Le compteur grimpe. Vous prenez 3 rads. Derrière vous, la pierre bourdonne encore, et vous comprenez qu'elle bourdonne pour quelqu'un d'autre, quelqu'un qui n'est pas encore arrivé. Elle n'a pas besoin de vous. Elle n'a jamais eu besoin de personne en particulier.",
+      "text": "Le couloir orange, pris à l'envers, est plus long qu'à l'aller. Vous repassez au bord du puits, où le corium luit toujours au fond, et la chaleur vous picote les gencives. Vous prenez 3 rads. Derrière vous, la pierre bourdonne encore, pour celui qui montera après vous, et pour celui d'après.",
       "effects": [
         {
           "type": "stat",
@@ -394,7 +394,7 @@
       ]
     },
     "c28-23": {
-      "text": "Le parvis. Le ciel est bas, couleur de tôle, et il n'y a plus de rouge dedans. Le Monolithe est sur les toits, vous le savez, et il ne tire pas. Un homme qui sort du Sarcophage sans rien dans les mains n'est pas un ennemi : c'est un rebut. Vous traversez à découvert. Personne ne prie. Le vent vous pousse vers le sud, et pour une fois vous allez dans son sens.",
+      "text": "Sur le parvis, le ciel est bas, couleur de tôle, et le rouge en a disparu. Les hommes du Monolithe sont sur les toits, leurs combinaisons grises tassées au pied de la cheminée, et aucun canon ne se tourne vers vous. Vous traversez à découvert. Une prière descend de là-haut, « Reçois-le, reçois-le », puis s'arrête au milieu du troisième mot sans qu'un coup parte. Le vent souffle vers le sud, et pour une fois vous marchez dans son sens.",
       "choices": [
         {
           "kind": "aller",
@@ -404,7 +404,7 @@
       ]
     },
     "c28-7": {
-      "text": "Il faut des semaines. Le pont, Pripyat vide, la crête du Radar que vous passez de nuit, sans rien dans la tête que vous n'y ayez mis vous-même. La Forêt rouge, Rostok. Vous ne vous rappelez pas tout. Vous vous rappelez le feu, la nuit, les chiens qui gardaient leurs distances, et le bruit du détecteur, qui ne vous a jamais menti.",
+      "text": "Il vous faut trois semaines. Le pont, Pripyat vide, la crête du Radar que vous franchissez de nuit sans rien dans la tête que vous n'y ayez mis vous-même, puis la Forêt rouge et Rostok. De tout cela vous retiendrez peu : un feu, les chiens qui gardaient leurs distances, et à Rostok un marchand qui vous a vendu du pain sans demander d'où vous veniez.",
       "choices": [
         {
           "kind": "aller",
@@ -414,7 +414,7 @@
       ]
     },
     "c28-26": {
-      "text": "Le Bar « 100 Rads » sent la saucisse et le chlore. Le Barman lève les yeux, ne dit rien, pose un verre. Dans le coin, dos au mur, le Guide. Il vous regarde venir, puis il regarde vos mains. Il dit : tu n'as rien demandé. Ce n'est pas une question. Il pousse une chaise du pied. Vous vous asseyez. Vous êtes deux, maintenant, à être revenus."
+      "text": "Le Bar « 100 Rads » sent la saucisse grillée et le chlore. Le Barman lève les yeux, range un verre à l'envers sur la planche avec les autres, puis en remplit un second de vodka et le pose devant vous sur le zinc. « Celui-là, c'est la maison. Le reste, tu paieras quand tu auras de quoi. » Au fond, dos au mur, le Guide vous regarde traverser la salle, puis il regarde vos mains, l'une après l'autre, sans hâte. « Tu n'as rien demandé. » Ce n'est pas une question, et vous ne répondez pas. Il repousse une chaise du bout de sa botte. « Moi non plus. Assieds-toi. » Vous vous asseyez en face de lui, et il compte sur ses doigts, à voix basse, le pont, le Radar, la Forêt rouge, Rostok, le chemin que vous venez de faire et qu'il a fait avant vous."
     }
   }
 }

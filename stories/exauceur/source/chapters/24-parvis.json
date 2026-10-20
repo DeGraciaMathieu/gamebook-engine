@@ -42,7 +42,7 @@
         "alt": "Le parvis immense de la Centrale, camions renversés, le Sarcophage de béton et la cheminée rayée contre un ciel bas.",
         "prompt": "Une dalle de béton grande comme un champ, jonchée de camions renversés aux pneus fondus, une cour de transformateurs sur la gauche où l'air tremble à peine. Au bout, le Sarcophage : un bloc gris qui mange la moitié du ciel, et à côté la haute cheminée rayée de la Centrale plantée comme une aiguille. Pas un oiseau, ciel bas et lourd, poussière. Le héros en minuscule silhouette de dos au bord de la dalle."
       },
-      "text": "Le parvis de la Centrale est une dalle de béton grande comme un champ. Au bout, le Sarcophage : un bloc gris qui mange la moitié du ciel, et la cheminée rayée de rouge plantée à côté comme une aiguille. Pas un oiseau. Le vent apporte une odeur de fer et de poussière chaude. Entre vous et le béton, des camions renversés, une cour de transformateurs où l'air tremble, et la dalle nue.",
+      "text": "Le viaduc vous dépose au bord d'une dalle de béton grande comme un champ de betteraves, et le parvis de la Centrale s'étend devant vous jusqu'au Sarcophage, ce bloc gris coulé à la hâte qui mange la moitié du ciel, avec à côté la cheminée rayée de rouge et de blanc, plantée droite. Pas un oiseau, pas une mouche. Le vent apporte un goût de fer et de poussière chaude qui se dépose au fond de la gorge. Entre vous et le béton du réacteur, il y a une douzaine de camions KrAZ couchés sur le flanc, une cour de transformateurs où l'air tremble au-dessus des cuves, puis la dalle nue, sans un abri sur trois cents mètres.",
       "choices": [
         {
           "kind": "aller",
@@ -61,7 +61,7 @@
       ]
     },
     "c24-17": {
-      "text": "La Combinaison SEVA siffle à chaque pas. L'air filtré a un goût de caoutchouc. Le compteur reste muet, ce qui ne veut pas dire que la dalle est propre. Vous avancez entre deux camions dont les pneus ont fondu dans le béton. Devant, la cheminée. À gauche, la cour des transformateurs, où quelque chose claque à intervalles réguliers.",
+      "text": "La Combinaison SEVA siffle à chaque pas, et l'air filtré a le goût d'une vieille chambre à air. Le compteur, dans la poche de poitrine, reste muet, ce qui veut seulement dire que le scaphandre fait son travail, pas que la dalle est propre. Vous avancez entre deux camions dont les pneus ont fondu dans le béton en galettes noires. À gauche, derrière une clôture effondrée, un arc bleu saute entre deux pylônes de la cour des transformateurs, avec la régularité d'un balancier.",
       "choices": [
         {
           "kind": "aller",
@@ -76,7 +76,7 @@
       ]
     },
     "c24-9": {
-      "text": "Le compteur grimpe dès le premier pas. Vous prenez 3 rads. Le béton est poudreux sous les semelles, et la poussière qui se lève colle aux lèvres. Vous avancez entre deux camions dont les pneus ont fondu dans la dalle. Devant, la cheminée. À gauche, la cour des transformateurs, où quelque chose claque à intervalles réguliers.",
+      "text": "Le dosimètre se met à cliqueter dès le premier pas hors du viaduc. Vous prenez 3 rads. Le béton est poudreux sous les semelles, chaque pas soulève une fumée grise qui colle aux lèvres et crisse sous les dents, et vous avancez en respirant par le nez, ce qui ne sert à rien, le long d'un KrAZ dont la benne s'est vidée de son gravier sur la dalle il y a vingt ans. Sur votre gauche, la cour des transformateurs claque à intervalles réguliers, un bruit sec de fouet.",
       "effects": [
         {
           "type": "stat",
@@ -98,7 +98,7 @@
       ]
     },
     "c24-26": {
-      "text": "Deux silhouettes grises sortent de derrière le dernier camion. Masques, fusils bas, pas lents. Ils marchent côte à côte sans se parler, et vous entendez pourtant leurs voix : une prière, les mêmes mots en boucle. Ils ne vous ont pas encore vu. Le camion renversé est à trois pas, sa cabine ouverte comme une bouche.",
+      "text": "Deux silhouettes grises sortent de derrière le dernier camion, masques à gaz sur le visage, fusils tenus bas, et elles marchent côte à côte du même pas lent, sans tourner la tête. Vous entendez leurs voix avant de comprendre les mots, parce qu'ils parlent ensemble, sur une seule note : « Il nous a appelés. Nous avons marché. Nous marchons encore vers lui qui nous a appelés. » L'un reprend quand l'autre inspire, de sorte que la prière ne s'arrête jamais. Ils ne vous ont pas encore vu. Le camion renversé est à trois pas sur votre droite, un vieux ZIL dont la cabine ouverte bâille au ras du béton.",
       "choices": [
         {
           "kind": "aller",
@@ -122,7 +122,7 @@
       ]
     },
     "c24-12": {
-      "text": "Vous marchez vers eux, la Tenue du Monolithe sur le dos et les mains loin des armes. Ils s'arrêtent. Le plus grand regarde votre masque, puis le ciel. Il appelle, dit-il. Il n'attend pas de réponse. Ils repartent vers le pont, et leur prière s'éloigne avec eux. Vous ne tremblez qu'après.",
+      "text": "Les mains écartées loin de la crosse, vous marchez droit sur eux dans la Tenue du Monolithe. Ils s'arrêtent à deux mètres. Le plus grand regarde votre masque le temps de trois respirations, puis lève le visage vers le ciel bas. « Il en appelle un autre. Il appelle, et celui qui est appelé marche, et nous le laissons marcher. » Il n'attend pas de réponse et vous n'en donnez pas. Ils repartent vers le pont, épaule contre épaule, et c'est seulement quand leur prière s'est perdue dans le vent que vos genoux se mettent à trembler.",
       "choices": [
         {
           "kind": "aller",
@@ -132,7 +132,7 @@
       ]
     },
     "c24-31": {
-      "text": "Vous vous glissez dans la cabine. Le siège est un bloc de mousse noire, le pare-brise un trou. Les pas approchent, et avec eux les mots de la prière. Une crosse frappe la tôle au-dessus de votre tête, une fois, pour rien. Vous ne respirez plus. Tentez votre Chance.",
+      "text": "Dans la cabine du ZIL, vous vous couchez sur le côté, la joue contre le levier de vitesse. Le siège n'est plus qu'un bloc de mousse noircie et le pare-brise un trou aux bords en dents de scie. Les pas approchent avec la prière, « … marché, nous marchons encore… », et une crosse frappe la tôle au-dessus de votre tête, une fois, le geste d'un homme qui tape sur une barrière en passant. Vous retenez votre souffle. Tentez votre Chance.",
       "test": {
         "type": "luck",
         "success": "c24-5",
@@ -140,7 +140,7 @@
       }
     },
     "c24-5": {
-      "text": "Ils passent. La crosse ne frappe pas une deuxième fois. La prière descend le long du camion, tourne, se perd dans le vent du côté du pont. Vous restez dans la mousse noire le temps de compter jusqu'à cent. Quand vous sortez, la dalle est vide et la cheminée n'a pas bougé.",
+      "text": "Ils passent sans vous voir, et la crosse ne frappe pas une deuxième fois. Les pas longent le camion, la prière descend le long du châssis, tourne au coin et s'en va vers le pont jusqu'à ce que le vent la recouvre. Vous restez couché dans la mousse noire en comptant jusqu'à cent, puis jusqu'à deux cents par prudence, avant de sortir sur une dalle vide où la cheminée vous attend à la même place.",
       "choices": [
         {
           "kind": "aller",
@@ -150,7 +150,7 @@
       ]
     },
     "c24-22": {
-      "text": "Ils vous ont vu. Un masque se penche dans le trou du pare-brise, et la prière s'arrête net. Vous sortez de la cabine en tirant. Ils tirent aussi, sans se mettre à couvert, comme si le béton n'était pas pour eux. Ils frappent à casser des os.",
+      "text": "Ils vous ont vu. Un masque se penche dans le trou du pare-brise, si près que vous voyez la buée sur le verre, et la prière s'arrête au milieu d'un mot. Vous sortez par l'autre portière en tirant, et ils tirent aussi, debout au milieu de la dalle, sans même faire un pas vers l'abri du camion. Leurs balles frappent lourd.",
       "combat": {
         "name": "Patrouille du Monolithe",
         "habilete": 7,
@@ -163,7 +163,7 @@
       }
     },
     "c24-14": {
-      "text": "Vous tirez le premier. Le plus proche tombe sur un genou et ne lâche pas son fusil. L'autre ne cherche même pas d'abri : il avance en priant plus fort. Leurs balles arrachent des éclats au camion. Ils frappent à casser des os, et ils ne reculent pas.",
+      "text": "Vous tirez le premier. Le plus proche tombe sur un genou et ne lâche pas son fusil ; il le relève au contraire, sans hâte. L'autre ne cherche pas d'abri et avance droit sur vous en priant plus fort, d'une voix qui ne tremble pas : « Reçois-le. Reçois celui qui tire. Reçois-le aussi. » Leurs balles arrachent des éclats de peinture verte à la portière, et chacune qui porte frappe à casser des os, sans qu'aucun des deux recule d'un pas.",
       "combat": {
         "name": "Patrouille du Monolithe",
         "habilete": 7,
@@ -176,7 +176,7 @@
       }
     },
     "c24-29": {
-      "text": "Ils sont tombés l'un sur l'autre, au milieu de la dalle. Vous retournez le plus grand. Sous le masque, des yeux blancs, ouverts, sans surprise. Ses lèvres bougent encore. Vous ne restez pas pour écouter. La cheminée est là, et le vent vient de tomber d'un coup.",
+      "text": "Ils sont tombés l'un sur l'autre au milieu de la dalle, les fusils en croix. Vous retournez le plus grand du bout de la botte et vous soulevez son masque : dessous, des yeux blancs, ouverts, sans surprise, et des lèvres qui remuent encore sur la fin de la prière, « … reçois-le, reçois… », sans souffle pour la porter. Vous laissez retomber le masque sur ce visage. Devant, la cheminée n'est plus qu'à cent mètres, et ses rayures rouges sont noires de suie jusqu'à mi-hauteur.",
       "choices": [
         {
           "kind": "aller",
@@ -186,7 +186,7 @@
       ]
     },
     "c24-7": {
-      "text": "Vous courez. Les balles sifflent, l'une vous entame l'épaule, vous ne vous retournez pas. Le béton défile, un camion, un autre, et la cheminée qui grandit. Derrière, la prière reprend, plus lente : ils ne vous poursuivent pas. Ils savent que la dalle finit sur le Sarcophage, et qu'on n'en revient pas.",
+      "text": "Une balle vous entame l'épaule pendant que vous courez, une brûlure plate, et vous ne vous retournez pas : le béton défile, un camion, un autre, une flaque de verre fondu, et la cheminée grandit à chaque foulée. Derrière, la prière reprend, plus lente, au mot exact où le tir l'avait coupée. « … nous restons. Il voit celui qui court. Nous restons. » Quand vous osez enfin regarder par-dessus l'épaule, les deux silhouettes grises sont restées où elles étaient, tournées vers vous, les fusils baissés.",
       "choices": [
         {
           "kind": "aller",
@@ -196,7 +196,7 @@
       ]
     },
     "c24-20": {
-      "text": "La cour des transformateurs. Des cuves rouillées, des isolateurs de porcelaine, des câbles qui pendent jusqu'au sol. Entre deux pylônes, l'air est bleu. Une « Électro » : un claquement, une lueur, et le sol noir en cercle. Le détecteur crépite. Il y a un passage sous le câble, à droite, entre deux claquements.",
+      "text": "La cour des transformateurs est un cimetière de cuves rouillées, d'isolateurs de porcelaine brune et de câbles qui pendent des pylônes jusqu'au sol. Entre les deux pylônes du fond, l'air est bleu. Une « Électro » : un claquement sec, quatre secondes de rien, un autre claquement, chaque fois une lueur qui vous laisse une tache dans l'œil, et autour un cercle de terre noire où l'herbe n'a jamais repoussé. Le détecteur crépite contre votre hanche. À droite, sous un câble tombé, il reste un passage d'un mètre, à prendre entre deux décharges.",
       "choices": [
         {
           "kind": "agir",
@@ -211,7 +211,7 @@
       ]
     },
     "c24-33": {
-      "text": "Vous pesez le boulon dans la main, froid, lourd. Il faut le lancer juste : entre les pylônes, là où le sol est noir, pour que l'arc réponde, puis passer avant qu'il recharge. L'odeur d'ozone pique les yeux. Testez votre Habileté.",
+      "text": "Le boulon pèse dans votre paume, un M12 encore gras ramassé sous un camion du parvis. Il faut le lancer juste, entre les pylônes, sur la terre noire, pour que l'arc parte sur lui, puis plonger sous le câble avant que l'anomalie ait rechargé. L'ozone vous pique les yeux jusqu'aux larmes. Testez votre Habileté.",
       "test": {
         "type": "stat",
         "stat": "habilete",
@@ -221,7 +221,7 @@
       }
     },
     "c24-11": {
-      "text": "Le boulon tombe où il faut. L'arc claque, bleu, et le sol fume. Vous passez sous le câble pendant qu'il recharge, le dos courbé, les cheveux dressés sur la nuque. De l'autre côté, la cour s'ouvre sur le pied de la cheminée. Derrière vous, l'anomalie claque encore, pour personne.",
+      "text": "Le boulon tombe où il faut. L'arc part sur lui avec un claquement de drap mouillé, la terre fume, et vous passez sous le câble pendant que l'Électro recharge, le dos courbé, les cheveux dressés sur la nuque. De l'autre côté, la cour s'ouvre sur le pied de la tour rayée, et derrière vous l'anomalie claque encore pour des boulons qui ne viendront plus.",
       "choices": [
         {
           "kind": "aller",
@@ -231,7 +231,7 @@
       ]
     },
     "c24-25": {
-      "text": "Le boulon tombe trop court. L'arc vous prend au bras avant que vous ayez compris. Une odeur de chair brûlée, la vôtre. Vous perdez 3 points d'Endurance. Vous roulez hors du cercle noir, la manche fondue sur la peau. La cour s'ouvre sur le pied de la cheminée. L'anomalie claque encore derrière vous.",
+      "text": "Le boulon tombe trop court. L'arc vous prend au bras avant que vous ayez compris ce qui se passait, vos dents se serrent toutes seules, et une puanteur de chair brûlée vous monte au nez, la vôtre. Vous perdez 3 points d'Endurance. Vous roulez hors du cercle noir, la manche fondue collée à la peau, et vous vous relevez de l'autre côté du câble, au pied de la tour rayée, en serrant contre vous un bras qui ne vous obéit plus qu'à moitié.",
       "effects": [
         {
           "type": "stat",
@@ -248,7 +248,7 @@
       ]
     },
     "c24-3": {
-      "text": "Au pied de la cheminée. L'escalier de fer monte en colimaçon autour du béton rayé, et sous sa première volée il y a un creux, une porte de tôle, un abri. Le vent est tombé d'un coup. Le ciel vire au rouge, et le Sarcophage devient une masse noire. Le sol bourdonne sous vos pieds. Derrière vous, sur la dalle, des voix.",
+      "text": "Un escalier de fer monte en colimaçon autour du fût rayé de la cheminée, et sous sa première volée, dans un creux du béton, une porte de tôle ferme un abri. Le vent est tombé. Le ciel, au-dessus du Sarcophage, vire au rouge par le bas, une couleur de plaque électrique qui chauffe, et le Sarcophage devient une masse noire découpée dedans. Le sol se met à bourdonner sous vos semelles, une vibration qui monte par les tibias jusqu'aux genoux. Derrière vous, sur la dalle, des voix approchent.",
       "image": {
         "src": "images/c24-3.webp",
         "alt": "Le pied de la cheminée rayée de la Centrale, son escalier de fer en colimaçon, et le Sarcophage en masse noire sous un ciel rouge.",
@@ -277,7 +277,7 @@
       ]
     },
     "c24-16": {
-      "text": "Ils savent pour le pont. Trois hommes gris courent sur la dalle vers vous, et cette fois ils ne prient pas. Le ciel rouge éclaire leurs masques. Vous n'avez nulle part où aller : derrière, le béton de la cheminée. Ils frappent à casser des os, et ils sont pressés, comme vous.",
+      "text": "Ils savent pour le pont. Trois hommes gris traversent la dalle au pas de course, et pour une fois aucun ne prie : ils gardent leur souffle pour courir. Le ciel rouge brille sur les vitres de leurs masques. Derrière vous il n'y a que le béton du fût et la porte de tôle fermée, nulle part où reculer. Ils tirent en courant, pour en finir vite, parce que l'Émission arrive pour eux aussi.",
       "combat": {
         "name": "Chasseurs du Monolithe",
         "habilete": 7,
@@ -287,7 +287,7 @@
       }
     },
     "c24-35": {
-      "text": "Le dernier tombe à genoux, et ne prie plus. Le bourdonnement est dans vos dents maintenant. Le ciel au-dessus de la cheminée a la couleur du sang chaud, et les corps sur la dalle commencent à fumer. Vous n'avez plus le temps de les regarder.",
+      "text": "Le dernier tombe à genoux, la bouche ouverte sur une prière qu'il ne finit pas. Le bourdonnement vous est entré dans les dents, maintenant, et vos plombages vibrent. Au-dessus du fût, le ciel est passé du rouge au brun, et les corps sur la dalle commencent à fumer par les coutures de leurs combinaisons.",
       "choices": [
         {
           "kind": "agir",
@@ -297,7 +297,7 @@
       ]
     },
     "c24-28": {
-      "text": "Le ciel rougit jusqu'au noir. Le sol bourdonne, puis hurle. Vous avez vu ça de loin, depuis le sud, derrière des murs : ici, il n'y a pas de mur. L'air se charge, vos oreilles sifflent, votre nez saigne. La porte de tôle sous l'escalier est coincée. Vous tirez dessus. Tentez votre Chance.",
+      "text": "Le ciel rougit jusqu'au noir. Le bourdonnement du sol devient un hurlement qui sort de partout à la fois, du béton, des marches de fer, de vos propres os. Vous avez déjà vu une Émission, de loin, depuis le sud, à l'abri d'un mur de briques avec d'autres stalkers qui comptaient les secondes à voix basse ; ici, au pied du réacteur, aucun mur ne vous sépare d'elle, rien que cette porte de tôle sous l'escalier. L'air se charge au point que vos cheveux se lèvent, vos oreilles sifflent, et un filet de sang tiède vous coule du nez sur la lèvre. Vous attrapez la poignée. La porte est coincée, gondolée dans son cadre par vingt hivers, et vous tirez dessus des deux mains, un pied contre le béton. Tentez votre Chance.",
       "test": {
         "type": "luck",
         "success": "c24-4",
@@ -305,7 +305,7 @@
       }
     },
     "c24-4": {
-      "text": "Vous êtes dessous quand ça passe. La tôle vibre, le béton gémit, et pendant une minute le monde n'est que lumière et bourdon. Puis rien. Vous ouvrez les yeux dans un réduit de deux mètres : une caisse de bois, un matelas, des bougies. Dans la caisse, un Anti-rad, encore sous plastique. Vous le prenez.",
+      "text": "La porte cède, et vous êtes dessous quand l'Émission passe. La tôle vibre, le béton gémit, et pendant une minute le monde n'est que lumière blanche et bourdon, puis le bruit retombe d'un coup. Vous ouvrez les yeux dans un réduit de deux mètres sur un : une caisse de bois, un matelas taché, des bougies fondues à même le sol. Dans la caisse, sous une couverture militaire, un Anti-rad encore dans son plastique. Vous le glissez dans votre poche de poitrine, en pensant que celui qui l'a laissé ne reviendra pas le chercher.",
       "effects": [
         {
           "type": "flag",
@@ -326,7 +326,7 @@
       ]
     },
     "c24-19": {
-      "text": "La porte ne cède pas à temps. L'Émission vous prend à découvert. La lumière traverse les paupières, les os, et le bourdon vous couche sur le béton. Vous perdez 3 points d'Endurance. Vous prenez 4 rads. Quand vous rouvrez les yeux, la tôle est ouverte et vous saignez du nez sur la dalle.",
+      "text": "La porte ne cède pas à temps, et l'Émission vous prend à découvert. La lumière traverse les paupières, puis les os, et le bourdon vous couche à plat ventre sur le béton, les mains sur la nuque, pour rien. Vous perdez 3 points d'Endurance. Vous prenez 4 rads. Quand vous rouvrez les yeux, la tôle a sauté toute seule sur ses gonds, l'abri bâille à un mètre de vous, et vous saignez du nez dans la poussière.",
       "effects": [
         {
           "type": "stat",
@@ -353,7 +353,7 @@
         "alt": "Un réduit sous un escalier de fer, matelas, bougies et caisse de bois, la porte de tôle ouverte sur le parvis et le Sarcophage.",
         "prompt": "L'intérieur d'un réduit de deux mètres sous la première volée d'un escalier de fer : un vieux matelas, des bougies fondues, une caisse de bois, des marques au charbon sur le mur de béton. La porte de tôle est ouverte et cadre le parvis dehors : la dalle, les camions renversés et, au loin, la masse grise du Sarcophage sous un ciel redevenu gris. Vue depuis le fond du réduit, le héros absent."
       },
-      "text": "Sous l'escalier de la cheminée. Le ciel est redevenu gris, le sol s'est tu. Le réduit sent la bougie et le vieux matelas. Par la porte de tôle, vous voyez la dalle, les camions, et le Sarcophage de nouveau à sa place. En bas, à gauche, une porte de fer dans le flanc de la Centrale. Au-dessus, l'échelle qui monte dans le vent.",
+      "text": "Au-dessus du réduit sous l'escalier de fer, le ciel est redevenu gris et le sol a cessé de bourdonner. L'abri sent la cire et le crin du vieux matelas, et par la porte de tôle entrouverte vous voyez la dalle, les camions, le Sarcophage revenu à sa place sous les nuages. En bas, sur la gauche, une porte de fer perce le flanc de la salle des machines ; au-dessus, l'échelle des toits monte le long du fût jusqu'au rebord de béton.",
       "choices": [
         {
           "kind": "agir",
@@ -446,7 +446,7 @@
       ]
     },
     "c24-30": {
-      "text": "Vous plantez l'Anti-rad dans la cuisse, à travers le tissu. Le froid monte jusqu'au ventre, et le goût de métal quitte votre bouche. Vous perdez 5 rads. La seringue vide roule sous le matelas, avec d'autres, qui étaient là avant vous.",
+      "text": "L'aiguille de l'Anti-rad traverse le pantalon et entre dans la cuisse, et le goût de pièce de monnaie quitte votre bouche. Vous perdez 5 rads. La seringue vide roule sous le matelas, contre une demi-douzaine d'autres.",
       "choices": [
         {
           "kind": "aller",
@@ -456,7 +456,7 @@
       ]
     },
     "c24-8": {
-      "text": "Vous videz la Trousse de soins sur le matelas. Compresses, agrafes, deux ampoules. Vous faites ce que vous savez faire, et ça tient. Vous regagnez 6 points d'Endurance. Dehors, le vent a repris, et quelque chose grince en haut de l'escalier.",
+      "text": "Vous videz la Trousse de soins sur le matelas : des compresses, une agrafeuse chirurgicale, deux ampoules sans étiquette. Vous faites ce que vous savez faire, les agrafes d'abord, les compresses par-dessus, en mordant la sangle de votre sac, et ça tient. Vous regagnez 6 points d'Endurance. Dehors, le vent a repris, et en haut de l'escalier une tôle mal fixée grince à chaque rafale.",
       "choices": [
         {
           "kind": "aller",
@@ -466,7 +466,7 @@
       ]
     },
     "c24-24": {
-      "text": "Vous serrez le Bandage là où ça saigne le plus. Le tissu boit, puis tient. Vous regagnez 3 points d'Endurance. Ça ne suffira pas pour ce qui vient, mais ça suffit pour marcher droit jusqu'à la porte. Le réduit sent le sang et la cire.",
+      "text": "Le Bandage fait deux tours là où ça saigne le plus, avec un nœud tiré entre les dents. Le coton boit, rougit, puis tient. Vous regagnez 3 points d'Endurance. Ça ne suffira pas pour ce qui attend dans la Centrale, mais ça suffit pour marcher droit jusqu'à la porte, et le réduit sent maintenant la cire et le sang.",
       "choices": [
         {
           "kind": "aller",
@@ -476,7 +476,7 @@
       ]
     },
     "c24-21": {
-      "text": "Le réduit a été habité. Sur le mur, des marques au charbon, une par jour, puis une par heure, puis plus rien. Sous le matelas, un carnet gonflé d'eau et une radio de l'armée dont un voyant vit encore. Dans le carnet, une seule phrase lisible : je l'entends mieux d'ici.",
+      "text": "Le réduit a été habité, et pas pour une nuit. Sur le béton du mur, une main a tracé des bâtons au charbon, un par jour d'abord, en rangées de sept bien droites, puis plus serrés, un par heure peut-être, puis des traits qui ne finissent plus et descendent jusqu'au sol. Sous le matelas, vous trouvez un carnet d'écolier gonflé d'eau, aux pages collées en bloc, et une radio militaire R-159 dont un voyant vert brille encore. Vous décollez les pages avec l'ongle. L'encre a coulé partout sauf sur une ligne, au milieu du carnet, écrite plus gros que les autres et soulignée deux fois : « Je l'entends mieux d'ici. »",
       "choices": [
         {
           "kind": "parler",
@@ -491,7 +491,7 @@
       ]
     },
     "c24-2": {
-      "text": "La radio ne parle pas. Elle chante : une seule note, longue, sous un grésillement. Puis une voix, plusieurs voix, les mêmes mots que la patrouille. Il appelle. Vous coupez. La note continue une seconde dans votre tête avant de s'éteindre. Vous remettez la radio sous le matelas, et vous ne retouchez pas au carnet.",
+      "text": "La radio ne parle pas, elle chante : une seule note, longue, tenue sous le grésillement, et puis des voix posées dessus, plusieurs, qui psalmodient ensemble. « Il appelle. Il appelle celui qui écoute. Celui qui écoute est venu. » Vous coupez. La note continue une seconde dans votre crâne avant de s'éteindre. Vous remettez la radio sous le matelas, le voyant contre le sol, et vous ne rouvrez pas le carnet.",
       "choices": [
         {
           "kind": "aller",
@@ -501,7 +501,7 @@
       ]
     },
     "c24-34": {
-      "text": "La porte de fer de la salle des machines. Une chaîne, un cadenas gros comme un poing, de la rouille par-dessus. À côté, au ras du sol, un soupirail dont la grille a été pliée vers l'intérieur. De la poussière y luit, faiblement, comme un tapis de braises. Derrière la porte, un silence de grande salle.",
+      "text": "La porte de fer de la salle des machines est fermée par une chaîne de camion et un cadenas gros comme un poing, rongé de rouille. À côté, au ras du sol, un soupirail dont la grille a été pliée vers l'intérieur, par des mains à en juger par les traces de doigts dans la rouille, laisse voir une poussière orange qui luit faiblement, un tapis de braises qui ne chauffe pas. Derrière la porte, vous entendez ce que font les très grandes salles vides : un écho qui attend le premier bruit.",
       "choices": [
         {
           "kind": "agir",
@@ -521,7 +521,7 @@
       ]
     },
     "c24-15": {
-      "text": "Vous glissez une barre de fer dans la chaîne et vous pesez dessus. Le métal grince. Il faut casser net, sans que le cadenas aille rebondir sur le béton et réveiller toute la dalle. Vos paumes brûlent sur la rouille. Testez votre Habileté.",
+      "text": "Une barre de fer ramassée près des transformateurs entre juste dans un maillon de la chaîne, et vous pesez dessus de tout votre poids. Le métal grince. Il faut casser net et retenir la chaîne avant qu'elle tombe, parce que le moindre choc du cadenas contre la dalle courrait d'un bout à l'autre du parvis. La rouille vous brûle les paumes. Testez votre Habileté.",
       "test": {
         "type": "stat",
         "stat": "habilete",
@@ -531,7 +531,7 @@
       }
     },
     "c24-27": {
-      "text": "La chaîne cède sans bruit. Vous la retenez à deux mains et vous la posez sur le béton, maillon par maillon. La porte s'ouvre sur un noir qui sent l'huile et la poussière froide. Quelque part dedans, une goutte tombe à intervalles réguliers, sur quelque chose de creux.",
+      "text": "La chaîne cède sans bruit. Vous la retenez à deux mains et la couchez par terre maillon par maillon, et la porte s'ouvre sur un noir qui sent l'huile de turbine et la poussière froide. Au fond, une goutte tombe toutes les trois secondes sur une tôle creuse, et l'écho la répète loin, plus loin que le bâtiment ne paraît long vu de dehors.",
       "choices": [
         {
           "kind": "aller",
@@ -541,7 +541,7 @@
       ]
     },
     "c24-10": {
-      "text": "La chaîne claque sur le béton et le bruit court tout le parvis. Un homme en gris sort de derrière le transformateur le plus proche, le fusil déjà levé. Il ne prie pas, il n'a pas le temps. Vous non plus.",
+      "text": "La chaîne claque contre la dalle et le bruit court sur tout le parvis. Un homme en gris sort de derrière le transformateur le plus proche, le fusil déjà à l'épaule, et la prière lui vient aux lèvres en même temps que le geste : « Reçois-le, reçois… » Il est seul, il tire en priant, et vous n'avez pas le temps d'épauler.",
       "combat": {
         "name": "Gardien du Monolithe",
         "habilete": 6,
@@ -553,7 +553,7 @@
       }
     },
     "c24-32": {
-      "text": "Il tombe en travers du seuil. Vous l'enjambez. Personne d'autre ne vient : la dalle est de nouveau vide, et la porte est ouverte sur un noir qui sent l'huile et la poussière froide. Une goutte tombe quelque part dedans, sur quelque chose de creux.",
+      "text": "Il tombe en travers du seuil, et vous l'enjambez. Aucun autre masque ne sort des transformateurs. Le cadenas a sauté avec la chaîne, et derrière la porte entrebâillée la salle des machines vous renvoie l'écho de vos pas, multiplié, avec une seconde de retard.",
       "choices": [
         {
           "kind": "aller",
@@ -563,7 +563,7 @@
       ]
     },
     "c24-6": {
-      "text": "Vous rampez sur les coudes. La poussière luisante colle aux manches, entre dans le col. Vous prenez 2 rads. La grille pliée vous arrache un bout de peau au passage, puis vous tombez d'un mètre sur un sol de métal. Au-dessus, dans le noir, des formes rondes et immobiles : les turbines.",
+      "text": "Le soupirail ne se passe qu'à plat ventre, sur les coudes. La poussière luisante colle aux manches et vous entre dans le col, tiède contre la peau. Vous prenez 2 rads. La grille pliée vous arrache un bout de peau au passage, puis le conduit s'arrête et vous tombez d'un mètre sur un caillebotis de métal qui sonne sous vous. Au-dessus, dans la pénombre, de grandes formes rondes et immobiles attendent, et il vous faut une seconde pour y reconnaître les turbines.",
       "effects": [
         {
           "type": "stat",
@@ -580,7 +580,7 @@
       ]
     },
     "c24-23": {
-      "text": "L'échelle des toits est scellée dans le flanc de la cheminée, à côté de l'escalier. Elle monte droit, cinquante mètres de barreaux rouillés, et le vent la fait chanter. En haut, un bord de béton, et rien d'autre à voir d'en bas. Un gant pend à un barreau, à hauteur d'homme, sans main dedans.",
+      "text": "L'échelle des toits est scellée dans le flanc du fût, à côté de l'escalier, et monte droit sur cinquante mètres de barreaux rouillés que le vent fait chanter, une note grave qui change avec les rafales. D'en bas, vous ne voyez au sommet qu'un rebord de béton et le ciel. Un gant de cuir pend à un barreau, à hauteur d'homme, accroché par un doigt, sans main dedans.",
       "choices": [
         {
           "kind": "aller",
@@ -595,7 +595,7 @@
       ]
     },
     "c24-18": {
-      "text": "Vous grimpez. Le vent prend votre dos, puis vos mains, et la rouille vous reste dans les paumes. À mi-hauteur, vous voyez la Zone entière : la dalle, le pont, Pripyat et sa roue, la Forêt rouge jusqu'au sud. Vous ne regardez pas longtemps. En haut, le bord de béton, et le bruit du vent change.",
+      "text": "Le vent vous prend le dos dès les premiers barreaux, puis les mains, et la rouille vous reste dans les paumes en écailles orange. À mi-hauteur, vous vous arrêtez pour souffler et la Zone entière s'étale sous vous : la dalle et ses camions, le pont, Pripyat et sa grande roue, la Forêt rouge qui descend jusqu'au sud, là d'où vous venez. Vous ne regardez pas plus de dix secondes. En haut, quand votre main trouve le rebord de béton, le vent change de ton.",
       "choices": [
         {
           "kind": "aller",
@@ -605,7 +605,7 @@
       ]
     },
     "c24-36": {
-      "text": "Vous vous allongez sur le vieux matelas et vous regardez la tôle. Le sol bourdonne encore, de loin en loin, comme une machine qui refroidit. Vous ne dormez pas, vous attendez, et c'est presque pareil. Quand vous vous relevez, vos mains ne tremblent plus. Vous regagnez 6 points d'Endurance.",
+      "text": "Le vieux matelas cède sous votre poids avec un soupir de crin, et vous restez allongé, les yeux sur la tôle de la porte. Le sol bourdonne encore de loin en loin, un moteur qui refroidit, et chaque fois les bougies tremblent dans leur cire. Vous ne dormez pas : vous comptez les secondes entre deux tremblements, et l'écart grandit. Quand vous vous relevez, une heure plus tard à votre montre, vos mains ne tremblent plus. Vous regagnez 6 points d'Endurance.",
       "effects": [
         {
           "type": "stat",

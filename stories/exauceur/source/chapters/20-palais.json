@@ -37,7 +37,7 @@
         "alt": "Le porche à colonnes du palais de la Culture, mosaïque criblée de balles et bougies sur les marches",
         "prompt": "Le porche d'un palais de la Culture soviétique : des colonnes carrées qui tiennent encore, des portes sans vitres, et au-dessus une mosaïque de travailleurs souriants aux visages crevés par les balles. Sur les marches, des bougies éteintes dans des boîtes de conserve, alignées en rangs. De l'intérieur, une pénombre. Le héros de dos, au pied des marches."
       },
-      "text": "Sous le porche du palais de la Culture, les colonnes tiennent encore. Les vitres, non. Une mosaïque de travailleurs souriants court au-dessus des portes, les visages crevés à coups de balles. À l'intérieur, quelque chose chante. Pas une chanson : une phrase, reprise, toujours la même, par des voix qui ne respirent pas au même endroit. Sur les marches, des bougies éteintes dans des boîtes de conserve, alignées comme pour une fête.",
+      "text": "Sous le porche du palais de la Culture, les colonnes carrées tiennent encore, mais aucune des portes n'a gardé sa vitre, et au-dessus d'elles une mosaïque de travailleurs en bleu de chauffe sourit à la place vide avec des visages crevés par les balles. Sur les marches, des bougies éteintes attendent dans des boîtes de conserve, rangée après rangée, alignées au cordeau comme des pots de semis sur un rebord de fenêtre. De l'intérieur monte un chant. C'est une seule phrase, reprise sans fin par des voix qui ne respirent pas au même endroit : « Vous qui écoutez, nous vous écoutons, vous qui écoutez. »",
       "choices": [
         {
           "kind": "aller",
@@ -57,7 +57,7 @@
       ]
     },
     "c20-6": {
-      "text": "Le grand hall. Le lustre est tombé au milieu, un buisson de verre et de laiton que personne n'a balayé. Des affiches de mai 1986 pèlent sur les piliers. Ça sent la cire : des centaines de bougies ont brûlé ici, et récemment. Le chant vient de la salle de cinéma, derrière les doubles portes. À gauche, l'escalier du balcon. À droite, le vestiaire, et derrière, un couloir. Au fond, une porte marquée SCÈNE.",
+      "text": "Le grand hall est haut de deux étages, et le lustre est tombé au milieu, un buisson de verre et de laiton que nul n'a pris la peine de balayer depuis qu'il s'est écrasé sur le dallage. Des affiches de mai 1986 pèlent sur les piliers, un concert d'accordéon, une soirée dansante pour les ouvriers du bloc 4. La cire a coulé partout en plaques jaunes, encore molles sous la semelle : des centaines de bougies ont brûlé ici cette semaine. Le chant passe sous les doubles portes de la salle de cinéma. L'escalier du balcon monte à gauche, le vestiaire ouvre à droite sur un couloir, et au fond une porte de bois est marquée SCÈNE en lettres rouges.",
       "image": {
         "src": "images/c20-6.webp",
         "alt": "Le grand hall du palais de la Culture, un lustre effondré au centre, des affiches qui pèlent, des bougies partout.",
@@ -134,7 +134,7 @@
       ]
     },
     "c20-14": {
-      "text": "L'Anti-rad a un goût de craie et de fer. Vous le videz debout contre un pilier, les yeux sur les doubles portes. Vous perdez 5 rads. Le chant n'a pas bougé. Dans le buisson du lustre, une bougie fume encore, toute seule, comme oubliée par quelqu'un qui reviendra.",
+      "text": "L'Anti-rad a un goût de craie et de fer, et vous le videz debout contre un pilier sans quitter des yeux les doubles portes. Vous perdez 5 rads. Dans le buisson du lustre, une bougie que vous n'aviez pas vue fume encore, la mèche rouge, posée là par une main qui reviendra la moucher.",
       "choices": [
         {
           "kind": "aller",
@@ -144,7 +144,7 @@
       ]
     },
     "c20-22": {
-      "text": "Vous déroulez le Bandage sur ce qui saigne et vous serrez avec les dents. Vous regagnez 3 points d'Endurance. Dans le vestiaire, des manteaux pendent encore à leurs numéros, vingt ans de poussière sur les épaules. Un ticket de vestiaire traîne au sol, le 26. Vous le laissez.",
+      "text": "Adossé au comptoir du vestiaire, vous déroulez le Bandage sur l'entaille et serrez le nœud avec les dents. Vous regagnez 3 points d'Endurance. Derrière vous, des manteaux pendent encore à leurs crochets numérotés, avec vingt ans de poussière grise sur les épaules. Un ticket de carton traîne au sol, le numéro 26, et vous le laissez où il est tombé.",
       "choices": [
         {
           "kind": "aller",
@@ -154,7 +154,7 @@
       ]
     },
     "c20-9": {
-      "text": "L'escalier du balcon tourne deux fois. Les marches sont jonchées de douilles et de petits papiers pliés, des prières écrites serré. En haut, le balcon surplombe la salle : des rangées de fauteuils rouges, et en bas, des dos gris agenouillés. Une marche grince sous vous. Le chant hésite, puis reprend. Vous vous allongez entre deux rangées. Tentez votre Chance.",
+      "text": "L'escalier du balcon tourne deux fois sur lui-même, et ses marches sont jonchées de douilles de 5,45 et de petits papiers pliés en quatre, couverts d'une écriture serrée que vous ne prenez pas le temps de lire. En haut, le balcon surplombe trois cents fauteuils rouges, et devant la scène, des dos gris sont agenouillés. Une marche s'enfonce sous votre botte avec un craquement sec. Le chant bute sur un mot, puis repart. Vous vous laissez glisser à plat ventre entre deux rangées. Tentez votre Chance.",
       "test": {
         "type": "luck",
         "success": "c20-27",
@@ -167,7 +167,7 @@
         "alt": "Depuis le balcon, la salle de cinéma et trois hommes gris agenouillés devant un bloc de béton peint",
         "prompt": "Vu d'en haut depuis un balcon de théâtre, par-dessus une rambarde : des rangées de fauteuils rouges déchirés descendent vers une scène où se dresse un bloc de béton de deux mètres, peint en gris et or avec un cercle au centre. Trois hommes en combinaison grise à genoux lui font face, masques relevés sur le front ; un quatrième se tient debout entre eux, tête penchée, écoutant. Des bougies brûlent au pied de la scène. Le héros absent du cadre."
       },
-      "text": "Personne n'a levé la tête. Vous êtes à plat ventre derrière la rambarde, et la salle est sous vous. Sur la scène, un bloc de béton de deux mètres, peint en gris et or, un cercle au centre. Trois hommes en combinaison grise lui font face, masques relevés sur le front. Ils psalmodient, et chaque phrase finit sur le même mot. Entre eux, un quatrième ne chante pas. Il écoute.",
+      "text": "Aucune tête ne s'est levée vers le balcon. Couché derrière la rambarde de contreplaqué, vous avez la joue sur la moquette, et la salle s'ouvre sous vous en pente de velours rouge. Sur la scène se dresse un bloc de béton de deux mètres, peint à la main en gris et or, avec un cercle au centre. Trois hommes en combinaison grise lui font face à genoux, les masques relevés sur le front, et chaque phrase de leur prière retombe sur le même mot : « Nous vous écoutons, nous écoutons, écoutez. » Entre eux, un quatrième se tient debout, la tête penchée sur l'épaule, et lui ne chante pas parce qu'il écoute.",
       "choices": [
         {
           "kind": "agir",
@@ -191,7 +191,7 @@
       ]
     },
     "c20-3": {
-      "text": "Une tête s'est tournée. Puis le chant continue sans elle. Vous entendez les pas dans l'escalier, lents, pas pressés : il sait qu'il n'y a qu'une sortie. Il apparaît entre les fauteuils, masque baissé, le fusil déjà à l'épaule. Ses yeux sont blancs derrière le verre. Il n'appelle pas les autres. Il prie, à voix basse, et il tire.",
+      "text": "Une des têtes grises s'est tournée vers le balcon, et le chant a continué sans elle. Puis des pas montent l'escalier, lents, réguliers, sans hâte, parce qu'il sait aussi bien que vous qu'il n'y a qu'une sortie là-haut. Il apparaît entre les fauteuils, masque baissé, le fusil déjà à l'épaule, et derrière le verre ses yeux sont blancs comme du lait caillé. Il n'appelle pas les autres. Il prie à voix basse, sur le ton d'un homme qui compte ses pas : « Recevez celui-là, recevez celui-là. » Il tire au milieu du mot, et la prière reprend après la détonation à la syllabe où il l'avait laissée.",
       "combat": {
         "name": "Garde du Monolithe",
         "habilete": 6,
@@ -203,7 +203,7 @@
       }
     },
     "c20-18": {
-      "text": "Il tombe entre deux rangées, et le chant, en bas, ne s'est pas arrêté. Pas une seconde. Vous restez à genoux le temps de comprendre que personne ne monte. Vous tirez le corps sous un fauteuil. Sur son front, sous le masque, une marque ronde, comme une brûlure ancienne. En bas, les dos gris n'ont pas bougé.",
+      "text": "Il tombe entre deux rangées, et en bas le chant ne s'est pas interrompu une seconde. Vous restez à genoux le temps d'être sûr que l'escalier reste vide, puis vous tirez le corps sous un fauteuil par les sangles de son harnais. Sous le masque, au milieu du front, il porte une marque ronde et lisse, une vieille brûlure de la taille d'une pièce de cinq kopecks. En bas, les dos gris sont toujours tournés vers la pierre.",
       "choices": [
         {
           "kind": "agir",
@@ -218,7 +218,7 @@
       ]
     },
     "c20-11": {
-      "text": "Le chant finit. Pas de dernier mot : il s'arrête, comme coupé. Les trois restent à genoux. Le quatrième lève la tête, et tous les quatre, en même temps, tournent le visage vers le nord. Vers la Centrale. Pas vers la pierre. Ils écoutent quelque chose que vous n'entendez pas. Puis vous l'entendez. Pas des mots. Une pression derrière les yeux, une main posée sur la nuque. La pierre ne parle pas. Quelqu'un d'autre parle.",
+      "text": "Le chant s'arrête au milieu d'une phrase, coupé net, sans dernier mot. Les trois hommes restent à genoux. Le quatrième relève la tête, et tous les quatre, d'un même mouvement, tournent le visage non pas vers la pierre peinte qu'ils priaient depuis une heure, mais vers le mur de gauche, vers le nord, là où à trois kilomètres la cheminée de la Centrale découpe le ciel. Ils écoutent. Vous tendez l'oreille avec eux et vous n'entendez d'abord que la gouttière qui fuit dans la cage d'escalier. Ensuite ça vient, sans un seul mot : une pression derrière les yeux, une paume tiède posée sur la nuque, patiente, qui attend que vous ayez fini de résister. La pierre peinte reste du ciment coulé, muette. La voix qui pousse contre votre crâne arrive de la Centrale, et les hommes, en bas, les yeux mi-clos, hochent la tête à ce qu'elle leur dit.",
       "effects": [
         {
           "type": "flag",
@@ -239,7 +239,7 @@
       ]
     },
     "c20-30": {
-      "text": "L'issue de secours donne sur un escalier de fer collé à la façade. Il grince à chaque marche et ne tombe pas. En bas, un parking envahi de bouleaux, les voitures sans roues. Le compteur grimpe en passant la flaque sous les dernières marches. Vous prenez 2 rads. La main sur la nuque vous lâche à mesure que vous vous éloignez. La place est derrière les arbres.",
+      "text": "L'issue de secours donne sur un escalier de fer boulonné à la façade, qui gémit à chaque marche et tient quand même. En bas, un parking où les bouleaux ont poussé entre des Jigouli sans roues. La dernière volée frôle une gouttière de zinc couverte d'une mousse rousse, et le détecteur crépite quand votre manche la touche. Vous prenez 2 rads. La paume sur votre nuque desserre ses doigts à chaque pas que vous faites vers la place, derrière les arbres.",
       "effects": [
         {
           "type": "stat",
@@ -256,7 +256,7 @@
       ]
     },
     "c20-5": {
-      "text": "Le Vintorez ne fait pas de bruit, et le premier s'affaisse sans que les autres cessent de chanter. Le deuxième se retourne. Alors ils comprennent, tous ensemble, comme une seule tête, et le chant devient autre chose. Ils tirent vers le balcon sans vous voir, en priant. Le bois des fauteuils éclate autour de vous, et le quatrième, en bas, n'a toujours pas bougé.",
+      "text": "Le Vintorez tousse plus qu'il ne tonne, et le premier homme s'affaisse sur le côté sans que les autres cessent de chanter. Le deuxième se retourne, voit son voisin couché, et alors ils comprennent tous ensemble, d'un seul mouvement de nuque, et leur prière change de mesure : « Il voit celui qui tire, nous tirons, il voit celui qui tire. » Ils lâchent des rafales vers le balcon sans vous avoir repéré, au jugé, et le bois des fauteuils éclate en échardes autour de votre tête. Ils tirent à hauteur d'homme, et chaque balle qui passe le dossier arrache de la chair. Le quatrième, en bas, ne s'est pas retourné.",
       "combat": {
         "name": "Les hommes du Monolithe",
         "habilete": 7,
@@ -269,7 +269,7 @@
       }
     },
     "c20-20": {
-      "text": "Les doubles portes s'ouvrent sur la salle de cinéma. Trois cents fauteuils rouges, et devant la scène, trois dos gris à genoux, un quatrième debout, face à un bloc de béton peint. Ils ne se retournent pas tout de suite. Le chant d'abord se termine, phrase entière. Puis ils se lèvent, tous ensemble, et vous regardez trois paires d'yeux blancs et trois fusils. Le quatrième n'a pas bougé.",
+      "text": "Les doubles portes s'ouvrent sur la salle de cinéma, trois cents fauteuils de velours rouge en pente douce vers une scène où se dresse un bloc de béton peint. Devant lui, trois dos gris agenouillés, et un quatrième homme debout, les mains ouvertes le long du corps. Aucun ne se retourne tout de suite. Ils finissent d'abord leur phrase, jusqu'au bout, « et nous restons, et nous restons », puis les trois se lèvent ensemble et vous faites face à trois paires d'yeux blancs et à trois canons de fusil. Le quatrième garde la tête penchée vers le mur nord.",
       "choices": [
         {
           "kind": "attaquer",
@@ -300,7 +300,7 @@
       ]
     },
     "c20-8": {
-      "text": "Vous dégoupillez la Grenade F1 et la lancez par-dessus les fauteuils. Elle roule jusqu'à la scène. Ils la regardent. Aucun ne bouge. La salle blanchit, et le bruit vous rentre dans les dents. Quand la poussière retombe, les premiers rangs sont noirs, et sur la scène, trois formes grises ne bougent plus. Le quatrième non plus. Le bloc de béton n'a pas une égratignure.",
+      "text": "Vous dégoupillez la Grenade F1 et la lancez en cloche par-dessus les fauteuils. Elle rebondit sur le plancher et roule jusqu'au pied de la scène, et ils la regardent arriver sans qu'aucun fasse un pas pour s'écarter. La salle devient blanche, le souffle vous rentre dans les dents. Quand la poussière de plâtre retombe, les trois premiers rangs sont noircis et, sur la scène, quatre formes grises gisent en travers des planches. Le bloc peint n'a pas une égratignure, pas même un éclat dans son or.",
       "choices": [
         {
           "kind": "aller",
@@ -315,7 +315,7 @@
       ]
     },
     "c20-25": {
-      "text": "Vous tirez le premier et le premier tombe. Les deux autres avancent entre les rangées, sans se baisser, sans courir, par rafales courtes. Ils frappent à casser des os. Le quatrième, resté debout devant le bloc, a repris le chant tout seul. Derrière vous, les portes battent encore, et l'odeur de cire vous suit jusque dans la poudre.",
+      "text": "Vous tirez le premier, et le premier tombe en travers d'un accoudoir. Les deux autres descendent vers vous entre les rangées sans se baisser ni courir, par rafales courtes, en priant entre deux tirs : « Recevez-le, nous vous l'envoyons, recevez-le. » Leurs balles arrivent à casser des os. Le quatrième, resté seul devant le bloc, a repris le chant à voix basse, et derrière vous les portes battent encore sur le hall qui sent la cire.",
       "combat": {
         "name": "Les hommes du Monolithe",
         "habilete": 7,
@@ -328,7 +328,7 @@
       }
     },
     "c20-13": {
-      "text": "Vous refermez les portes sur les premières balles. Une a traversé le bois, et votre bras avec. Vous perdez 2 points d'Endurance. Vous courez jusqu'au lustre et vous vous jetez derrière. Les portes ne s'ouvrent pas. De l'autre côté, après un silence, le chant reprend, à la même phrase, comme si on l'avait seulement mis en pause.",
+      "text": "Les premières balles arrivent pendant que les battants se rejoignent, et l'une traverse le chêne, puis votre avant-bras. Vous perdez 2 points d'Endurance. Vous courez jusqu'au lustre effondré et vous plongez derrière les bras de laiton, l'arme sur les portes, qui restent fermées. Au bout d'une minute, de l'autre côté du bois, le chant revient sur le même souffle, à la phrase exacte que vous aviez coupée, et ne s'occupe plus de vous.",
       "effects": [
         {
           "type": "stat",
@@ -345,7 +345,7 @@
       ]
     },
     "c20-29": {
-      "text": "Vous reculez en tirant, à travers les portes, et vous les refermez du dos. Les balles s'arrêtent dans le bois. Personne ne vous suit. Derrière les portes, le chant repart. Il y manque une voix, un corps que vous ne verrez pas se vider sur le tapis rouge. Le hall sent toujours la cire.",
+      "text": "Le hall vous reçoit à reculons, l'arme encore pointée sur la salle ; vous poussez un battant de l'épaule, et deux balles se plantent dans le bois sans qu'aucun pas vienne derrière. De l'autre côté, le chant repart avec une voix de moins, celle de l'homme qui se vide sur la moquette rouge.",
       "choices": [
         {
           "kind": "aller",
@@ -355,7 +355,7 @@
       ]
     },
     "c20-16": {
-      "text": "C'est fini. La salle sent la poudre et le béton chaud. Vous montez sur la scène. Le bloc est du béton, peint à la main, gris et or, le cercle au centre tracé au compas. Derrière, un fil électrique sort du socle et file dans le mur, vers le nord. Un des hommes gris respire encore, sur le dos, le masque de travers. Il vous regarde avec ses yeux blancs et il sourit.",
+      "text": "Le dernier coup de feu roule encore sous la coupole quand vous vous apercevez qu'en face les fusils ont cessé de répondre. La salle sent la poudre et le béton chauffé. Vous montez sur la scène par l'escalier de côté. De près, le bloc n'est que du béton coulé dans un coffrage, peint à la main au pinceau large, gris puis or, et le cercle du centre a été tracé au compas, avec le trou de la pointe encore visible. Derrière, un fil électrique gainé de toile sort du socle et file dans le mur, vers le nord. Un des hommes gris respire encore, couché sur le dos, le masque de travers. Il vous regarde avec ses yeux blancs, et il sourit à un visiteur qui se tiendrait derrière votre épaule.",
       "choices": [
         {
           "kind": "parler",
@@ -370,7 +370,7 @@
       ]
     },
     "c20-2": {
-      "text": "Tu ne l'entends pas, dit-il. Il faut rester longtemps. Il parle doucement, comme à quelqu'un qu'on aime. Ce n'est pas la pierre, dit-il. Ça n'a jamais été la pierre. Il tourne la tête vers le nord et se tait, et dans le silence qu'il laisse, vous l'entendez. Pas des mots. Une pression derrière les yeux, une main sur la nuque. Elle vient de la Centrale. Quand vous baissez les yeux, il est mort.",
+      "text": "Ses lèvres remuent avant que le son vienne. « Nous ne l'entendions pas, au début. Il faut rester. Nous sommes restés, nous sommes restés, et il a parlé. » Sa voix est douce, avec le ton d'un homme qui raconte un pays où il a été heureux. Il cherche votre manche du bout des doigts et ne la trouve pas. « Pas la pierre. La pierre, c'est pour les yeux. Ça n'a jamais été la pierre. » Puis il tourne la tête vers le mur nord, et dans la salle vidée de sa prière vous l'entendez à votre tour : aucun mot, un bourdonnement dans les plombages et l'envie, que vous n'avez pas décidée, de tourner la tête vers la Centrale. Quand vous baissez de nouveau les yeux vers lui, ses pupilles blanches ne suivent plus rien.",
       "effects": [
         {
           "type": "flag",
@@ -391,7 +391,7 @@
       ]
     },
     "c20-24": {
-      "text": "Dans les poches des combinaisons grises, des papiers pliés, des prières, le même mot écrit cent fois. Pas de nourriture. Pas de roubles. Des hommes qui n'avaient plus besoin de rien. Au fond de la scène, le fil du bloc passe sous un rideau et descend vers les coulisses. De là vous arrive un courant d'air froid, et une odeur sucrée, écœurante, comme de la viande oubliée.",
+      "text": "Dans les poches des combinaisons grises, vous ne trouvez que des papiers pliés en quatre, et sur chacun le même mot, écoutez, recopié cent fois d'une écriture qui se serre vers le bas de la page. Pas une conserve, pas un rouble : ces hommes ne mangeaient plus, ou presque plus. Au fond de la scène, le fil du bloc passe sous le rideau de velours et descend vers les coulisses, d'où remonte un courant d'air de cave chargé d'une puanteur sucrée de viande oubliée au soleil.",
       "choices": [
         {
           "kind": "aller",
@@ -406,7 +406,7 @@
       ]
     },
     "c20-10": {
-      "text": "Derrière le vestiaire, le couloir est noir et sent le chou. Au bout, une porte de fer avec un cadenas neuf, le seul objet neuf du bâtiment. Des traces de pas dans la poussière, beaucoup, toutes de la même pointure. Sur la porte, à la craie, un cercle. La chaîne tient à un anneau vissé dans un chambranle pourri. Vous pesez dessus. Testez votre Habileté.",
+      "text": "Derrière le vestiaire, le couloir sent le chou bouilli et la moisissure. Au bout, une porte de fer tient fermée par une chaîne et un cadenas de laiton brillant, le seul objet neuf que vous ayez vu dans le bâtiment. La poussière du sol est piétinée de traces de bottes, des dizaines, toutes de la même pointure, et sur la tôle une main a tracé un cercle à la craie. La chaîne passe dans un anneau vissé au chambranle, et le bois du chambranle est pourri jusqu'au cœur. Vous calez une botte contre le mur et vous tirez. Testez votre Habileté.",
       "test": {
         "type": "stat",
         "stat": "habilete",
@@ -416,7 +416,7 @@
       }
     },
     "c20-28": {
-      "text": "La porte cède. La réserve est une loge d'artiste, miroir cassé, ampoules mortes autour du cadre. Sur la coiffeuse, des boîtes alignées au cordeau : cartouches, bougies, et une seringue d'Anti-rad dans son étui orange, que vous glissez dans votre veste. Dans un coin, un sac de sable fait crépiter le détecteur. Vous prenez 2 rads le temps de ressortir. Le couloir continue vers une seconde porte, marquée SCÈNE elle aussi.",
+      "text": "L'anneau sort du chambranle dans un nuage de bois pourri, et la porte s'ouvre. La réserve est une ancienne loge d'artiste, un miroir fendu entouré d'ampoules mortes, une coiffeuse où les monolithiens ont rangé leurs boîtes par taille : cartouches, bougies, pansements jaunis, et une seringue d'Anti-rad dans son étui orange, que vous glissez dans votre veste. Dans le coin, un sac de sable ramassé près de la Centrale tiédit l'air autour de lui. Vous prenez 2 rads le temps de ressortir. Le couloir mène plus loin à une seconde porte, marquée SCÈNE elle aussi.",
       "effects": [
         {
           "type": "item",
@@ -443,7 +443,7 @@
       ]
     },
     "c20-4": {
-      "text": "La porte ne bouge pas, et l'arête du fer vous ouvre la paume. Vous perdez 2 points d'Endurance. Le bruit est parti dans le couloir comme une pierre dans un puits. Vous attendez, la main contre la bouche, le sang qui goutte sur la poussière. Le chant, loin, continue. Il y manque peut-être une voix. Vous n'en êtes pas sûr.",
+      "text": "La chaîne ne cède pas, et l'arête de l'anneau vous ouvre la paume en glissant. Vous perdez 2 points d'Endurance. Le fer a claqué contre la porte, un coup sourd qui court le long du couloir et va mourir sous la coupole du hall. Vous attendez, la main serrée contre la bouche, le sang qui goutte sur les traces de bottes. Loin, le chant continue, et vous n'arrivez pas à savoir s'il lui manque une voix.",
       "effects": [
         {
           "type": "stat",
@@ -465,7 +465,7 @@
       ]
     },
     "c20-19": {
-      "text": "Vous reprenez la chaîne à deux mains, la paume ouverte. Elle grince. Le cadenas tient, mais l'anneau vissé dans le bois commence à venir. Quelqu'un marche dans le hall. Un pas seul, lent, qui s'arrête devant le vestiaire. Vous ne bougez plus. Le sang de votre main fait un bruit de goutte sur le ciment. Tentez votre Chance.",
+      "text": "La paume ouverte colle au fer quand vous reprenez la chaîne à deux mains. L'anneau grince et commence à venir hors du bois. Dans le hall, un pas résonne, un seul, lent, qui s'arrête devant le comptoir du vestiaire. Vous retenez votre souffle, et le sang de votre main tombe goutte après goutte sur le ciment avec un bruit qui vous paraît énorme. Tentez votre Chance.",
       "test": {
         "type": "luck",
         "success": "c20-28",
@@ -473,7 +473,7 @@
       }
     },
     "c20-15": {
-      "text": "Le pas reprend, vers vous. Une lampe s'allume dans le couloir et vous trouve. Derrière elle, un homme gris, masque baissé, et sa voix qui prie déjà, pressée, comme s'il récitait avant d'avoir fini. Il a le couloir pour lui. Vous avez la porte de fer dans le dos. Il tire sans épauler.",
+      "text": "Le pas reprend et vient vers vous. Une lampe frontale s'allume au bout du couloir et vous trouve, et derrière elle avance un homme gris au masque baissé, qui prie déjà d'une voix pressée, pour finir avant le coup : « Il voit, il voit celui qui force, il voit. » Il a tout le couloir pour lui, et vous avez dans le dos une porte cadenassée. Il tire sans épauler, à la hanche, en marchant.",
       "combat": {
         "name": "Garde du Monolithe",
         "habilete": 6,
@@ -485,7 +485,7 @@
       }
     },
     "c20-7": {
-      "text": "Les coulisses. Des toiles peintes pendent des cintres, une forêt de bouleaux, une place de village, trouées. Il fait noir, et froid comme dans une cave. Ça sent le sucre pourri. Quelque chose respire, au fond, lentement, gros. Vous voyez double. Les bouleaux peints se dédoublent, votre main aussi, et pendant une seconde elle semble appartenir à quelqu'un d'autre.",
+      "text": "Les coulisses sont froides comme une cave, et des toiles peintes pendent des cintres, trouées, une forêt de bouleaux, une place de village avec son kiosque à musique. L'air est épais de sucre tourné. Au fond, derrière les toiles, une respiration lente et lourde soulève un pan de tissu à chaque souffle. Votre vue se dédouble : les bouleaux peints deviennent deux forêts, votre main gauche deux mains, et pendant une seconde celle de devant obéit à un autre que vous.",
       "choices": [
         {
           "kind": "aller",
@@ -516,7 +516,7 @@
       ]
     },
     "c20-23": {
-      "text": "Il est assis dans un fauteuil de velours, entre les toiles, un crâne trop grand sur un corps d'homme. Un Contrôleur. Quand il vous regarde, vous voyez deux salles, deux fauteuils, et votre propre main qui tourne le canon vers votre tempe. Vous la ramenez de force. Il ne se lève pas. Il n'en a pas besoin. Chaque fois qu'il vous regarde, quelque chose casse.",
+      "text": "Il est assis entre les toiles dans un fauteuil de velours vert, un crâne trop grand sur un corps d'homme maigre, la peau tendue et veinée de bleu : un Contrôleur, le premier que vous voyez ailleurs que dans les récits du feu. Quand il pose les yeux sur vous, vous voyez deux coulisses, deux fauteuils, et votre propre main qui retourne le canon vers votre tempe, et vous la ramenez de force, les tendons tirés à rompre. Il ne se lève pas, il n'en a aucun besoin : chaque regard qu'il vous donne fait plus mal qu'une balle, et il en a autant qu'il veut.",
       "combat": {
         "name": "Contrôleur",
         "habilete": 8,
@@ -529,7 +529,7 @@
       }
     },
     "c20-12": {
-      "text": "Vous reculez un pied après l'autre, sans quitter le fond du regard. La respiration ralentit. Elle vous écoute. Un câble pend d'un cintre à hauteur de visage, et vous le voyez deux fois. Vous choisissez l'un des deux. Tentez votre Chance.",
+      "text": "Un pied après l'autre, le talon d'abord, vous reculez sans quitter le fond des yeux. La respiration ralentit, attentive à vos semelles. Un câble pend d'un cintre à hauteur de visage et vous le voyez en double, l'un à gauche, l'autre au milieu, et il faut bien en choisir un. Tentez votre Chance.",
       "test": {
         "type": "luck",
         "success": "c20-6",
@@ -537,7 +537,7 @@
       }
     },
     "c20-31": {
-      "text": "Il tombe en avant, et le monde redevient simple : une salle, une main. Le crâne sonne creux sur les planches. Le silence, après, est tel que vous entendez vos oreilles. Sous le fauteuil, le fil du bloc de béton aboutit à un haut-parleur de kolkhoze, débranché depuis vingt ans. Ce n'était pas lui qui parlait. Ce qui parlait était assis dessus, et regardait vers le nord.",
+      "text": "Il bascule en avant, et le monde se recolle d'un coup : une salle, un fauteuil, une seule main au bout de votre bras. Son crâne sonne creux en heurtant les planches, et dans les cintres une toile de bouleaux finit de se balancer. Sous le fauteuil, le fil qui sort du socle peint aboutit à un haut-parleur de kolkhoze en tôle cabossée, débranché depuis vingt ans. Les hommes gris priaient un appareil muet, et celui qui trônait au-dessus gardait la tête tournée vers le nord.",
       "choices": [
         {
           "kind": "aller",
@@ -552,7 +552,7 @@
       ]
     },
     "c20-17": {
-      "text": "Vous dégoupillez la Grenade F1 et la lancez vers la respiration. La lumière, une seconde, montre tout : un fauteuil de velours, une tête énorme, deux yeux qui vous regardent sans surprise. Puis le bruit. Les toiles tombent des cintres comme des draps. Quand vous rouvrez les yeux, vous ne voyez plus qu'une seule salle. La chose, dans le fauteuil, n'a plus de tête. Ça sent le sucre brûlé.",
+      "text": "La Grenade F1 part en roulant sous les toiles, vers la respiration. Pendant une seconde, l'éclair montre tout : un fauteuil de velours vert, une tête énorme, deux yeux qui vous regardent arriver sans surprise, puis le souffle vous plaque contre un portant. Les toiles décrochées tombent des cintres en draps mouillés, et quand vous rouvrez les yeux, il n'y a plus qu'une seule coulisse devant vous. L'homme au grand crâne n'a plus de tête, et l'air sent le sucre brûlé.",
       "choices": [
         {
           "kind": "aller",
@@ -567,7 +567,7 @@
       ]
     },
     "c20-26": {
-      "text": "Vous courez sans regarder, ce qui est la seule façon. Une porte de fer, une barre, le jour. Vous êtes dehors, derrière le palais, dans un parking de bouleaux, et vous vomissez contre un mur. Derrière la porte, la respiration a repris son rythme. Elle ne suit pas. Elle n'a jamais eu besoin de suivre personne.",
+      "text": "Ne pas se retourner : c'est ce que disent tous ceux qui en ont croisé un, au bar, et vous courez les yeux sur vos bottes jusqu'à ce qu'une barre de panique cède sous vos mains et que le jour gris vous tombe dessus. Vous êtes dehors, derrière le palais, dans le parking envahi de bouleaux, et vous vomissez de la bile contre le mur de briques. De l'autre côté de la porte, la respiration a repris son rythme lent , aussi régulière qu'un soufflet de forge, et rien ne pousse la porte.",
       "choices": [
         {
           "kind": "aller",
@@ -577,7 +577,7 @@
       ]
     },
     "c20-21": {
-      "text": "La porte de service est derrière, côté parking, sous une rampe de béton où les bouleaux ont poussé. Une flaque luit sous la rampe, d'un vert qu'une flaque ne devrait pas avoir. Le compteur grimpe. Vous prenez 2 rads. La porte de fer est entrouverte, calée par une brique. À l'intérieur, noir, froid, une odeur sucrée. Un couloir part à droite, vers une lueur de bougies.",
+      "text": "La porte de service est à l'arrière, côté parking, sous une rampe de béton fendue où des bouleaux ont pris racine. Une flaque luit sous la rampe, d'un vert de cadran phosphorescent qu'aucune eau de pluie ne devrait avoir, et il faut bien la traverser. Vous prenez 2 rads. La porte, une tôle peinte en vert d'hôpital, est entrouverte et calée par une brique rouge. Dedans il fait froid, une odeur de confiture gâtée monte des profondeurs, et un couloir part sur la droite vers une lueur jaune de bougies.",
       "effects": [
         {
           "type": "stat",

@@ -1,0 +1,40 @@
+# Expressions à éviter dans la prose (une par ligne, expression régulière, insensible à la casse).
+# Relevées sur les histoires générées : chacune est tolérée une fois pour 50 paragraphes, au-delà c'est un tic.
+# Lues par scripts/story-prose.mjs ; une ligne vide ou commençant par # est ignorée.
+
+# Le vague qui remplace le concret
+\bquelque chose\b
+\bquelque part\b
+\bune sorte d[e']\b
+\ble genre d[e']\b
+\bon dirait\b
+
+# La comparaison réflexe
+\bcomme si\b
+\bcomme on\b
+
+# Les négations qui font du silence un effet
+\bpersonne ne\b
+\brien ne bouge\b
+\bne bouge(nt)? pas\b
+\bse tai(t|sent)\b
+\bpuis plus rien\b
+\brien d'autre\b
+\bsans un mot\b
+\ble silence\b
+
+# Le narrateur qui souligne
+\bvous (ne )?savez (que|sans|déjà|pas pourquoi)\b
+\bvous ne (le )?saurez jamais\b
+\bvous comprenez\b
+\bpour la première fois\b
+\bune dernière fois\b
+\bc'est tout\.
+\bce n'est (pas|plus) [^.]{2,40}, c'est\b
+\bpas de [^.]{2,30}, (juste|seulement)\b
+\btout simplement\b
+
+# L'atmosphère prête à l'emploi
+\bdans le noir\b
+\blongtemps\b
+\bl'odeur d[e']\b

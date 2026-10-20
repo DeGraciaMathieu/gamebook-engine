@@ -32,7 +32,7 @@
   ],
   "paragraphs": {
     "c19-1": {
-      "text": "Le hall de l'hôtel Polissya sent le plâtre mouillé et la cave. Le comptoir de la réception est couché sur le flanc, les casiers à clefs vides. Au fond, l'escalier monte dans la pénombre, large, avec sa rampe de cuivre vert-de-gris. Huit étages au-dessus de vous. Quelque part là-haut, une porte claque toute seule, puis plus rien. Le détecteur crépite une fois et se tait.",
+      "text": "Le hall de l'hôtel Polissya sent le plâtre mouillé et la moisissure de moquette, et au-dessus de la porte tournante, sur la marquise, il ne reste que quatre lettres de tôle peinte : « POLI ». Le comptoir de la réception est couché sur le flanc, les quarante casiers à clefs vides, un registre gonflé d'eau ouvert par terre à une date de 1986. Au fond, l'escalier monte dans la pénombre, large, avec sa rampe de cuivre vert-de-gris qui tourne autour de la cage jusqu'au huitième. Une porte claque très haut, une seule fois, et le bruit descend les étages en se cognant aux paliers avant de s'éteindre. Le détecteur crépite contre votre hanche, une fois, et reste sur zéro.",
       "choices": [
         {
           "kind": "aller",
@@ -52,7 +52,7 @@
         "alt": "L'escalier éventré de l'hôtel, une volée manquante au-dessus du vide",
         "prompt": "La cage d'escalier d'un hôtel en ruine : une large volée s'arrête net au troisième étage, quatre mètres de vide, et les marches reprennent de l'autre côté, rampe de cuivre tordue. Au fond du trou, dans les gravats, un matelas et un casque. Verre et plâtre sur les marches, lumière grise tombant d'en haut. Le héros de dos au bord du vide, mesurant le saut."
       },
-      "text": "Le premier étage, le deuxième. Les marches sont couvertes de verre et de gravats qui crissent. Au troisième, l'escalier s'arrête. Une volée entière manque, tombée dans la cage avec le palier. Il reste quatre mètres de vide et, de l'autre côté, les marches qui reprennent vers le quatrième. En bas, dans le trou, un matelas et un casque. Vous mesurez le saut avec les yeux.",
+      "text": "Premier étage, deuxième, les marches couvertes de verre et de gravats qui crissent sous les semelles à chaque pas. Au troisième, l'escalier s'arrête net : une volée entière est tombée dans la cage avec son palier, il reste quatre mètres de vide et, de l'autre côté, les marches qui reprennent vers le quatrième, derrière une rampe tordue en col de cygne. En bas, dans le trou, sur les blocs de béton, il y a un matelas à rayures bleues et un casque de chantier orange, posés trop près l'un de l'autre pour que ce soit un hasard. Vous mesurez le saut des yeux, puis la distance jusqu'à la rampe, puis de nouveau le saut.",
       "choices": [
         {
           "kind": "agir",
@@ -76,7 +76,7 @@
       ]
     },
     "c19-9": {
-      "text": "Vous nouez la corde à la rampe et lancez l'autre bout autour d'un fer à béton qui dépasse en face. Trois essais. Le nœud tient. Vous passez pendu, les pieds dans le vide, le sac qui tire vers le trou. Le fer grince mais ne plie pas. De l'autre côté, vous laissez la corde en place pour le retour.",
+      "text": "La corde se noue mal sur le cuivre lisse de la rampe, il faut deux tours morts avant qu'elle tienne, et vous lancez l'autre bout, lesté d'un boulon, vers un fer à béton qui dépasse du palier d'en face ; il faut trois essais avant que la boucle accroche et que le nœud morde. Vous passez pendu par les mains, les pieds dans le vide au-dessus du matelas, le sac qui tire vers le bas pendant que le fer grince sans plier. De l'autre côté, vous laissez la corde tendue pour le retour.",
       "choices": [
         {
           "kind": "aller",
@@ -86,7 +86,7 @@
       ]
     },
     "c19-23": {
-      "text": "Vous reculez jusqu'au mur. Les gravats bougent sous vos semelles. Le bord d'en face est une marche cassée, pas plus large qu'une main, et derrière elle la rampe tordue, seule prise possible. Vous ne regardez pas en bas, vers le matelas et le casque. Testez votre Habileté.",
+      "text": "Dos au mur, trois pas d'élan, pas un de plus : les gravats roulent sous les semelles et le palier n'en donne pas davantage. Le bord d'en face n'est qu'une marche cassée, pas plus large qu'une main, et derrière elle la rampe tordue, seule prise si le béton lâche. Vous gardez les yeux sur cette marche, et pas sur le matelas en bas, ni sur le casque orange à côté. Testez votre Habileté.",
       "test": {
         "type": "stat",
         "stat": "habilete",
@@ -96,7 +96,7 @@
       }
     },
     "c19-4": {
-      "text": "Vous atterrissez sur la marche cassée, une main sur la rampe, l'autre dans le vide. Le béton tient. Vous restez une seconde accroupi, le cœur dans la gorge, à écouter le silence au-dessus. Rien ne descend, pas même la poussière. Vous montez, une main sur le mur, vers la lumière grise du quatrième.",
+      "text": "Vous atterrissez sur la marche cassée, une main refermée sur la rampe, l'autre qui brasse l'air au-dessus du trou. Le béton tient, et vous restez accroupi le temps que votre cœur redescende de la gorge, l'oreille tendue vers les étages, avant de monter les dernières marches vers le quatrième.",
       "choices": [
         {
           "kind": "aller",
@@ -106,7 +106,7 @@
       ]
     },
     "c19-28": {
-      "text": "Votre pied rate la marche. Vous tombez de côté, les côtes sur l'arête du palier, et vous vous rattrapez à un fer à béton qui vous ouvre la paume. Vous vous hissez. Vous perdez 3 points d'Endurance. Vous restez allongé sur les marches le temps de respirer. Le sang goutte dans la cage d'escalier, loin.",
+      "text": "La semelle accroche le bord de la marche et glisse dessus. Vous tombez de côté, les côtes sur l'arête du palier, et votre main droite se referme sur un fer à béton rouillé qui vous ouvre la paume pendant que vous vous hissez par-dessus le bord. Vous perdez 3 points d'Endurance. Vous restez allongé sur les marches à reprendre votre souffle, et le sang de votre main tombe goutte à goutte dans la cage, si loin que vous n'entendez pas les gouttes arriver sur le matelas.",
       "effects": [
         {
           "type": "stat",
@@ -123,7 +123,7 @@
       ]
     },
     "c19-5": {
-      "text": "Le palier du quatrième. Une fenêtre sans vitre donne sur la place et la grande roue, immobile, avec ses nacelles jaunes. Au mur, un plan d'évacuation sous plexiglas, flèches vers un escalier qui n'existe plus. À gauche, le couloir du quatrième, portes ouvertes sur des chambres grises. En haut, l'escalier principal continue, et à partir du cinquième il n'y a plus de fenêtres.",
+      "text": "Le palier du quatrième est le dernier où le jour entre. Par une fenêtre sans vitre, vous voyez la place et la grande roue, arrêtée depuis vingt ans avec ses nacelles jaunes, dont une penche. Au mur, sous un plexiglas fendu, un plan d'évacuation trilingue dit « Sortie de secours » en russe, en ukrainien et en anglais, avec des flèches rouges vers un escalier qui n'existe plus depuis que la façade est s'est effondrée. À gauche, le couloir du quatrième aligne ses portes ouvertes sur des chambres grises. En face, l'escalier principal continue, et à partir du cinquième, quelqu'un a muré les fenêtres.",
       "image": {
         "src": "images/c19-5.webp",
         "alt": "Le palier du quatrième étage de l'hôtel Polissya, fenêtre sans vitre sur la grande roue de Pripyat, escalier qui monte dans le noir.",
@@ -169,7 +169,7 @@
       ]
     },
     "c19-13": {
-      "text": "Vous videz la trousse de soins assis sous la fenêtre, dos au mur. Désinfectant, compresse, le pansement serré sur ce qui saigne. Vous regagnez 6 points d'Endurance. Dehors, sur un toit d'en face, quelque chose a bougé, un reflet, puis plus rien. Vous jetez l'emballage et vous vous relevez.",
+      "text": "Assis sous la fenêtre, vous videz la Trousse de soins, dos au mur, le désinfectant qui brûle et la compresse serrée sur ce qui saigne encore. Vous regagnez 6 points d'Endurance. Sur un toit d'en face, un éclat de verre ou d'optique s'allume une seconde et s'éteint, et vous restez immobile, les yeux sur ce toit, jusqu'à ce que le soleil passe derrière un nuage. Vous jetez l'emballage dans la cage d'escalier.",
       "choices": [
         {
           "kind": "aller",
@@ -179,7 +179,7 @@
       ]
     },
     "c19-20": {
-      "text": "Au-dessus du quatrième, les fenêtres ont été murées de parpaings. Le noir commence à mi-volée, complet, épais comme de l'eau. Vous posez la main sur la rampe. Elle est tiède. Il y a des rats, vous les entendez sans les voir, et plus haut un goutte-à-goutte régulier. Les marches sont là. Peut-être.",
+      "text": "Au-dessus du quatrième, les fenêtres ont été murées de parpaings gris, et le noir commence à mi-volée, assez épais pour que vous ne voyiez plus votre propre main. Vous posez la main sur la rampe : le cuivre est tiède, alors que tout l'hôtel est froid. Des rats courent sur les marches plus haut, vous les entendez sans les voir, et au-dessus d'eux un goutte-à-goutte régulier tombe dans une flaque que vous ne voyez pas. Vous comptez sur la mémoire de la volée d'en dessous pour savoir où tombent les marches.",
       "choices": [
         {
           "kind": "agir",
@@ -198,7 +198,7 @@
       ]
     },
     "c19-7": {
-      "text": "Le faisceau de la lampe torche découpe l'escalier. Deux marches manquent au cinquième, une plaque de béton pend par ses ferrailles au-dessus de la volée suivante. Vous enjambez, vous vous baissez. Des traces dans la poussière : des bottes, récentes, qui montent et ne redescendent pas. Au sixième, un peu de jour filtre sous une porte.",
+      "text": "Le faisceau de la Lampe torche découpe l'escalier par tranches. Au cinquième, deux marches manquent, et une dalle de béton pend par ses ferrailles au-dessus de la volée suivante, assez bas pour qu'il faille passer plié en deux. Vous enjambez, vous vous baissez, et sur la poussière que la lampe rase vous voyez des empreintes de bottes à semelle crantée, récentes, qui montent toutes et dont aucune ne redescend. Au sixième, sous la porte palière, le faisceau devient inutile : un trait de jour passe par en dessous.",
       "choices": [
         {
           "kind": "aller",
@@ -208,7 +208,7 @@
       ]
     },
     "c19-26": {
-      "text": "Vous montez le pied en avant, une main sur la rampe, l'autre devant le visage. Chaque marche est une question. Un rat passe sur votre botte. Au-dessus, le goutte-à-goutte change de rythme, comme si quelque chose s'était mis en travers. Testez votre Habileté.",
+      "text": "Vous montez le pied en avant, une main sur la rampe tiède, l'autre levée devant le visage, et chaque marche se cherche du bout de la semelle avant que vous lui confiiez votre poids. Un rat passe sur votre botte. Plus haut, le goutte-à-goutte change de rythme, ralentit, reprend plus vite, au point qu'on croirait qu'une main s'est mise sous la fuite puis l'a retirée. Testez votre Habileté.",
       "test": {
         "type": "stat",
         "stat": "habilete",
@@ -218,7 +218,7 @@
       }
     },
     "c19-11": {
-      "text": "Vous posez le pied sur le vide, le sentez à temps, reculez, enjambez. Deux marches manquent, puis quelque chose pend du plafond et vous frôle l'épaule, du béton, des fers, vous passez dessous courbé. Au sixième, un peu de jour filtre sous une porte. Vous l'avez trouvée avec les mains.",
+      "text": "La semelle ne trouve rien, et vous reculez à temps, puis enjambez au jugé les deux marches qui manquent. Plus haut, des fers à béton vous frôlent l'épaule, et vous passez courbé sous leur dalle, les mains à plat sur le béton froid. Au sixième, vos doigts trouvent un chambranle, puis une poignée, et sous la porte filtre un peu de gris.",
       "choices": [
         {
           "kind": "aller",
@@ -228,7 +228,7 @@
       ]
     },
     "c19-2": {
-      "text": "Votre pied trouve le vide. Vous tombez en arrière, une volée entière, le dos sur les arêtes des marches, le sac qui amortit ce qu'il peut. Vous vous arrêtez contre le mur du palier, dans la lumière grise du quatrième. Vous perdez 3 points d'Endurance. Le goutte-à-goutte, en haut, a repris.",
+      "text": "Il n'y a pas de marche là où vous posez le pied. Vous basculez en arrière et descendez une volée entière sur le dos, les arêtes des marches dans les reins, le sac qui amortit ce qu'il peut, jusqu'à ce que le mur du palier vous arrête dans le jour du quatrième. Vous perdez 3 points d'Endurance. En haut, le goutte-à-goutte a repris son rythme d'avant, régulier, patient.",
       "effects": [
         {
           "type": "stat",
@@ -245,7 +245,7 @@
       ]
     },
     "c19-15": {
-      "text": "Le couloir du quatrième. Une moquette rouge qui colle, des portes ouvertes sur des lits nus. Au milieu, l'air tremble à hauteur d'homme, et vous entendez respirer, un souffle mouillé. Le détecteur ne dit rien : ce n'est pas une anomalie. Une Sangsue. Elle a senti le sang, ou la sueur, ou simplement vous.",
+      "text": "Le couloir du quatrième a gardé sa moquette rouge, qui colle aux semelles, et ses portes ouvertes sur des lits sans draps. À mi-chemin, l'air tremble à hauteur d'homme, sur une largeur d'épaules, et vous entendez respirer, un souffle mouillé qui ne vient de nulle part. Le détecteur reste sur zéro, parce que ce n'est pas une anomalie qui respire comme ça : c'est une Sangsue, tapie dans son camouflage, qui a senti le sang, la sueur, ou seulement le bruit de vos pas.",
       "choices": [
         {
           "kind": "attaquer",
@@ -276,7 +276,7 @@
       ]
     },
     "c19-30": {
-      "text": "Elle se montre à l'instant où elle frappe : une peau grise, une bouche en tube, des mains trop longues. Elle disparaît, reparaît ailleurs, derrière, à côté. Vous tirez sur ce qui bouge. Ses mains ouvrent la chair large, et la moquette boit.",
+      "text": "Elle se montre à l'instant où elle frappe, une peau grise et nue, une bouche en tube garnie de tentacules, des mains trop longues aux griffes de corne, puis elle s'efface et reparaît à côté, derrière, toujours là où vous ne regardiez pas. Vous tirez sur ce qui bouge. Chaque coup de ses mains ouvre la chair large, et la moquette boit tout.",
       "combat": {
         "name": "Sangsue",
         "habilete": 6,
@@ -289,7 +289,7 @@
       }
     },
     "c19-8": {
-      "text": "La Sangsue tombe et cesse de disparaître. Elle est là, sur la moquette, la bouche ouverte, plus petite qu'elle ne semblait. Vous rechargez. Au bout du couloir, derrière une porte au pictogramme effacé, un escalier de service monte, étroit, avec de vraies fenêtres.",
+      "text": "La Sangsue tombe et cesse de disparaître. Couchée sur la moquette, la bouche ouverte, elle paraît plus petite qu'elle ne l'était debout, et vous rechargez le Makarov en la regardant pour être sûr qu'elle ne se relève pas. Au bout du couloir, derrière une porte au pictogramme effacé, un escalier de service monte, étroit, éclairé par de vraies fenêtres.",
       "choices": [
         {
           "kind": "aller",
@@ -299,7 +299,7 @@
       ]
     },
     "c19-22": {
-      "text": "Vous dégoupillez, comptez, lancez la grenade F1 dans le couloir. L'explosion fait tomber le plâtre du plafond et vous bouche les oreilles. Quand la poussière retombe, la Sangsue est visible pour de bon, en deux morceaux contre le mur. Au bout du couloir, une porte de service est sortie de ses gonds. Derrière, un escalier étroit monte vers les étages.",
+      "text": "Goupille, deux secondes comptées à voix basse, et vous lancez la Grenade F1 au ras de la moquette vers la tache de couloir qui ondule. L'explosion fait pleuvoir le plâtre du plafond et vous bouche les oreilles pour une bonne minute. Quand la poussière retombe, la Sangsue est visible pour de bon, en deux morceaux contre le mur, et au bout du couloir le souffle a sorti de ses gonds une porte de service derrière laquelle monte un escalier étroit.",
       "choices": [
         {
           "kind": "aller",
@@ -309,7 +309,7 @@
       ]
     },
     "c19-18": {
-      "text": "L'escalier de service. Des marches de fer, des fenêtres étroites qui donnent sur l'arrière de l'hôtel, les cuisines, un camion sans roues. Vous montez. Cinquième. Les murs sont couverts d'inscriptions au charbon, des noms de stalkers, des dates, et un seul mot répété jusqu'au plafond. Au sixième, la porte est ouverte.",
+      "text": "L'escalier de service a des marches de fer et des fenêtres étroites sur l'arrière de l'hôtel, les cuisines, un camion GAZ sans roues posé sur ses essieux. Au cinquième, les murs sont couverts d'inscriptions au charbon, des noms de stalkers et des dates, « Kroukh 2009 », « Sémione, 11.03 », et par-dessus, en lettres de plus en plus grandes jusqu'au plafond, un seul mot qui revient : « MONTE ». Au sixième, la porte est ouverte.",
       "choices": [
         {
           "kind": "aller",
@@ -319,7 +319,7 @@
       ]
     },
     "c19-12": {
-      "text": "Le palier du sixième. Un couloir dans chaque direction, des portes dont les plaques ont été arrachées, une par une, et jetées en tas près de l'ascenseur. Les portes sont fermées. Toutes. Quelqu'un a pris la peine. Au fond, une fenêtre donne sur la Centrale, la cheminée, et le Sarcophage qu'on voit d'ici comme une falaise.",
+      "text": "Au sixième, un couloir part de chaque côté de l'ascenseur, et quelqu'un a arraché les plaques de toutes les portes, une par une, pour les jeter en tas devant la grille de la cabine. Les portes, elles, ont été refermées, toutes, avec un soin qui demande du temps. Au fond du couloir de droite, une fenêtre donne sur la Centrale : la cheminée rayée de rouge et de blanc, et le Sarcophage, qu'on voit d'ici comme une falaise grise posée sur la plaine.",
       "choices": [
         {
           "kind": "agir",
@@ -343,7 +343,7 @@
       ]
     },
     "c19-27": {
-      "text": "L'écran du PDA de Fantôme s'allume au ralenti. Son dernier message, celui que vous connaissez : Polissya, 26. Et dessous, une ligne que vous n'aviez pas ouverte. Sixième, en face de l'ascenseur, la plaque est par terre. La grille de la salle de bain. Ne reste pas. Vous levez les yeux. En face de l'ascenseur, une porte comme les autres.",
+      "text": "Le PDA de Fantôme s'allume au ralenti, l'écran fendu en diagonale, la batterie à un trait. Vous connaissez son dernier message, celui que vous avez lu aux Entrepôts : « 14.09. Strelok est passé. Le décodeur au Polissya, 26, dans la grille d'aération. Si tu lis ça, Guêpe, ne monte pas. » En faisant défiler, vous trouvez dessous une note que vous n'aviez pas ouverte, tapée plus vite, avec les fautes d'un homme qui écrit en marchant : « 15.09. 6e etage, en face de l'ascenseur. la plaque est par terre, elles les arrachent toutes. grille de la salle de bain, 4 vis. prends la trousse. Ne reste pas la-haut la nuit. » Vous levez les yeux de l'écran vers le tas de plaques, puis vers la porte qui fait face à l'ascenseur, une porte brune pareille aux trente-neuf autres.",
       "choices": [
         {
           "kind": "aller",
@@ -353,7 +353,7 @@
       ]
     },
     "c19-3": {
-      "text": "Dix pas jusqu'à la porte. Entre vous et elle, le couloir se brouille, deux fois, à deux hauteurs différentes. Deux Sangsues. L'une respire, l'autre non, ou plus doucement. Elles ne pressent pas. C'est leur hôtel. Le tas de plaques près de l'ascenseur, c'est peut-être elles aussi, ou ceux qu'elles ont mangés.",
+      "text": "Dix pas vous séparent de la porte. Entre elle et vous, le couloir se brouille deux fois, à deux hauteurs différentes, deux Sangsues dont l'une respire fort et l'autre si doucement que vous la devinez plus que vous ne l'entendez. Elles ne se pressent pas, parce que l'hôtel est à elles. Le tas de plaques près de l'ascenseur, c'est peut-être leur œuvre, ou celle de ceux qu'elles ont mangés avant vous.",
       "choices": [
         {
           "kind": "attaquer",
@@ -384,7 +384,7 @@
       ]
     },
     "c19-19": {
-      "text": "Les Sangsues attaquent ensemble, l'une devant, l'autre dans votre dos. Vous vous collez au mur pour n'en avoir qu'une à la fois, et ça ne marche qu'à moitié. Elles frappent à ouvrir la chair. Le couloir sent le sang chaud, le vôtre.",
+      "text": "Les deux Sangsues attaquent ensemble, l'une de face, l'autre dans votre dos, et vous vous collez au mur pour n'en avoir qu'une à la fois, ce qui ne marche qu'à moitié. Leurs griffes frappent à ouvrir la chair jusqu'à l'os. Le couloir sent le sang chaud, et c'est le vôtre.",
       "combat": {
         "name": "Deux Sangsues",
         "habilete": 7,
@@ -397,7 +397,7 @@
       }
     },
     "c19-25": {
-      "text": "La seconde Sangsue glisse le long du mur et ne se relève pas. Le couloir cesse de trembler. Vous saignez, vous ne savez pas d'où. La porte en face de l'ascenseur est là, et par terre, dans la poussière, une plaque de plastique brun : 26.",
+      "text": "La seconde Sangsue glisse le long du mur et ne se relève pas. Le couloir cesse de trembler, et vous saignez sans savoir d'où, une chaleur qui descend sous la veste pendant que vous avancez jusqu'à la porte d'en face. Par terre, devant le seuil, une plaque de plastique brun porte deux chiffres dorés : 26.",
       "choices": [
         {
           "kind": "aller",
@@ -407,7 +407,7 @@
       ]
     },
     "c19-10": {
-      "text": "La grenade F1 roule entre les deux ombres. Vous vous jetez dans l'embrasure d'une porte. Le souffle arrache les dernières plaques des murs et éteint la fenêtre du fond. Quand vous ressortez, les Sangsues sont visibles, immobiles, l'une sur l'autre. Il reste la porte en face de l'ascenseur, et par terre, une plaque de plastique brun : 26.",
+      "text": "La Grenade F1 roule entre les deux ombres et vous plongez dans l'embrasure d'une porte. Le souffle arrache des murs les dernières vis, éparpille les plaques du tas jusque dans la cage d'ascenseur et souffle les restes de vitre de la fenêtre du fond. Quand vous ressortez, les Sangsues sont visibles, immobiles, l'une couchée sur l'autre. La plaque arrachée qui a glissé jusqu'à vos bottes est brune, tordue par le souffle, et ses chiffres dorés disent 26 : la porte d'en face.",
       "choices": [
         {
           "kind": "aller",
@@ -422,7 +422,7 @@
         "alt": "La chambre 26 de l'hôtel, une valise de stalker vide sous la fenêtre et un sac de couchage",
         "prompt": "Une chambre d'hôtel soviétique défraîchie : un lit nu, une armoire ouverte, et sous la fenêtre sans vitre une valise de stalker ouverte et vide. Par terre, un sac de couchage, une boîte de conserve propre, un livre ouvert à l'envers. Au fond, la porte entrouverte d'une salle de bain au carrelage bleu. Lumière grise de la fenêtre, le héros absent."
       },
-      "text": "La chambre 26. Un lit, une armoire ouverte, une valise de stalker sous la fenêtre avec le nom de Fantôme au feutre sur la toile. Vide. Un sac de couchage, une boîte de conserve propre, un livre ouvert à l'envers. Il a dormi ici. Il est reparti sans rien. La salle de bain est au fond, porte entrouverte, carrelage bleu.",
+      "text": "La chambre 26 a gardé son lit et son armoire ouverte, vide sur ses cintres de fil de fer. Sous la fenêtre, une valise de stalker en toile kaki, ouverte et vide, porte au feutre noir, sur le rabat, un mot en capitales : « FANTÔME ». Par terre, un sac de couchage roulé, une boîte de conserve de bœuf léchée jusqu'au fer, un livre de poche ouvert à l'envers sur sa page. Il a dormi ici, une nuit au moins, et il est reparti sans rien emporter. Au fond, la porte de la salle de bain est entrouverte sur un carrelage bleu.",
       "choices": [
         {
           "kind": "aller",
@@ -432,7 +432,7 @@
       ]
     },
     "c19-6": {
-      "text": "Un lavabo arraché, une baignoire pleine de plâtre, un miroir qui ne vous montre pas tout entier. Sur l'étagère, une trousse de soins militaire, fermée, avec une bande de ruban rouge : Fantôme l'a laissée pour celui qui viendrait. Vous la prenez. Au-dessus de la baignoire, une grille d'aération, quatre vis, dont une neuve.",
+      "text": "La salle de bain sent le moisi et le fer. Le lavabo est arraché, la baignoire pleine de plâtre, et le miroir fendu ne vous rend que la moitié du visage. Sur l'étagère de verre, une Trousse de soins militaire attend, fermée, entourée d'un ruban d'adhésif rouge sur lequel Fantôme a écrit au feutre : « Pour qui monte. » Vous la prenez. Au-dessus de la baignoire, une grille d'aération est tenue par quatre vis, trois rouillées et une neuve, qui brille.",
       "effects": [
         {
           "type": "item",
@@ -454,7 +454,7 @@
       ]
     },
     "c19-16": {
-      "text": "Les vis viennent avec la pointe du couteau. Derrière la grille, dans la poussière du conduit, un boîtier noir de la taille d'une main, avec un clavier à douze touches et un câble enroulé : le Décodeur. Vous le glissez contre votre poitrine. Dans le conduit, de l'air monte de quelque part, et avec lui une voix, très loin, qui chante ou qui prie.",
+      "text": "Les vis viennent une à une avec la pointe du couteau, la neuve en dernier, et la grille vous tombe dans la main avec sa poussière. Derrière, couché dans le conduit, il y a un boîtier noir de la taille d'une main, avec un clavier à douze touches et un câble enroulé serré autour : le Décodeur. Vous le glissez sous la veste, contre la poitrine. Dans le conduit, un air froid monte des étages inférieurs, et il apporte avec lui, très loin, une voix d'homme qui psalmodie sans reprendre son souffle : « Reçois-le, reçois-le, reçois-le. » Vous revissez la grille, une vis sur quatre.",
       "effects": [
         {
           "type": "item",
@@ -471,7 +471,7 @@
       ]
     },
     "c19-24": {
-      "text": "Vous redescendez les six étages sans allumer, sans vous arrêter aux paliers. Au troisième, le vide. Vous le passez comme à la montée, ou autrement. Le hall sent toujours le plâtre mouillé. Dehors, la lumière a baissé. Sur la place, la grande roue n'a pas bougé, et rien d'autre non plus, ce qui ne veut rien dire.",
+      "text": "Six étages à redescendre, et vous les faites sans allumer ni vous arrêter aux paliers, la main sur la rampe tiède, puis froide. Au troisième, il y a le vide, que vous repassez comme à la montée, ou autrement, sans y penser. Le hall sent toujours le plâtre mouillé, et dehors la lumière a baissé d'un cran sur la place. La grande roue est à la même place, ses nacelles jaunes aussi, ce qui, à Pripyat, ne prouve pas qu'on ne vous regarde pas depuis l'une d'elles.",
       "choices": [
         {
           "kind": "aller",
@@ -481,7 +481,7 @@
       ]
     },
     "c19-14": {
-      "text": "Vous commencez par la porte la plus proche. Fermée à clef. La suivante aussi. Vous forcez la troisième de l'épaule et elle cède. Le sixième a quarante chambres, et derrière chacune il peut y avoir ce que vous cherchez, ou ce qui vous cherche. Tentez votre Chance.",
+      "text": "La porte la plus proche est fermée à clef. La suivante aussi, et celle d'après cède à la troisième poussée d'épaule, dans un craquement de bois gonflé. Le sixième compte quarante chambres, et derrière chacune peut se trouver ce que vous cherchez ou ce qui vous cherche, sans plaque pour les distinguer. Tentez votre Chance.",
       "test": {
         "type": "luck",
         "success": "c19-29",
@@ -489,7 +489,7 @@
       }
     },
     "c19-29": {
-      "text": "La chambre est vide et propre, un lit fait, une bible en russe sur la table de nuit. Dans la salle de bain, sur le rebord de la baignoire, une trousse de soins presque neuve, oubliée ou laissée. Vous la prenez. Rien d'autre. Pas de nom, pas de signe que Fantôme soit passé par là. Les plaques manquent toujours à toutes les portes.",
+      "text": "La chambre est vide et propre, le lit fait au carré, une bible en russe sur la table de nuit. Dans la salle de bain, sur le rebord de la baignoire, il y a une Trousse de soins presque neuve, oubliée ou laissée exprès, que vous prenez. Ni nom sur les murs ni valise, aucun signe que Fantôme soit passé par cette chambre, et dans le couloir les plaques manquent toujours à toutes les portes.",
       "effects": [
         {
           "type": "item",
@@ -511,7 +511,7 @@
       ]
     },
     "c19-21": {
-      "text": "La chambre n'a plus de plancher. Vous le comprenez en tombant. Le cinquième vous reçoit sur une armoire couchée, puis sur le sol. Vous perdez 3 points d'Endurance. Au-dessus, le trou que vous avez fait montre le plafond du sixième et sa lampe sans ampoule. Dans le noir du cinquième, quelque chose respire, loin, et s'arrête quand vous bougez.",
+      "text": "La chambre n'a plus de plancher, et vous le découvrez en tombant. Le cinquième vous reçoit sur une armoire couchée qui éclate sous votre poids, puis sur le sol. Vous perdez 3 points d'Endurance. Au-dessus de vous, le trou que vous avez fait découpe le plafond du sixième et sa douille sans ampoule. Ici, aucune fenêtre n'a gardé son jour, et au fond, une respiration lente s'interrompt chaque fois que vous bougez.",
       "effects": [
         {
           "type": "stat",

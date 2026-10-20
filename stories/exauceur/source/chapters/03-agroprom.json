@@ -38,7 +38,7 @@
   ],
   "paragraphs": {
     "c03-1": {
-      "text": "Le tunnel du remblai vous recrache à l'ouest de l'usine. Derrière vous, le Cordon. Devant, une clôture couchée, des herbes hautes jusqu'à la poitrine, et les silos d'Agroprom, gris contre le ciel. Un tank d'eau fuit quelque part, un filet continu sur la tôle. Le détecteur reste calme. Dans les herbes, quelque chose a tracé un sillon, large, récent. Le fossé qui longe la clôture est à sec, et luit d'une rouille qui n'est pas de la rouille.",
+      "text": "Le tunnel du remblai vous rend au jour à l'ouest de l'usine, et le Cordon est derrière, sous la colline. Devant, une clôture couchée, des herbes jusqu'à la poitrine, et les silos d'Agroprom, six tours de béton percées de trous ronds, gris sur un ciel gris. Un tank d'eau fuit sur ses pilotis, un filet continu qui sonne sur la tôle. Dans les herbes, un sillon large comme une porte, les tiges couchées encore humides. Le fossé qui suit la clôture est à sec, et la boue du fond luit d'une couleur de rouille qui n'en est pas.",
       "choices": [
         {
           "kind": "aller",
@@ -53,7 +53,7 @@
       ]
     },
     "c03-17": {
-      "text": "Les herbes se referment au-dessus de vous. Vous avancez au bruit de l'eau. Puis le bruit s'arrête, et vous comprenez que ce n'était pas l'eau. Le pseudo-chien se dresse à trois mètres, plus haut qu'un loup, la gueule ouverte sur trop de dents. Il ne gronde pas. Il mord à casser des os. Derrière vous, le fossé n'est pas loin.",
+      "text": "Les herbes se referment par-dessus votre tête et vous avancez au bruit de l'eau, une main devant le visage. Le bruit s'arrête. Ce n'était pas l'eau : à trois mètres, le pseudo-chien se dresse sur le sillon, plus haut qu'un loup, le poil ras et gris, la gueule ouverte sur trop de dents, et il ne gronde pas, parce qu'il n'a jamais eu besoin de prévenir. Il mord à casser des os. Le fossé est à dix pas derrière vous, à gauche, de l'autre côté de la clôture.",
       "combat": {
         "name": "Pseudo-chien",
         "habilete": 6,
@@ -66,7 +66,7 @@
       }
     },
     "c03-29": {
-      "text": "Le fossé court le long de la clôture, à sec, tapissé d'une boue craquelée qui brille par plaques. Le compteur grimpe dès les premiers pas et ne s'arrête plus. Vous prenez 3 rads. Au bout, un portail de tôle arraché ouvre sur la cour de l'usine. Des hommes en gris et rouge courent entre les silos. De la route, à l'est, montent des moteurs.",
+      "text": "Le fossé suit la clôture sur deux cents mètres, à sec, tapissé d'une boue craquelée dont les plaques brillent au soleil. Le compteur grimpe dès les premiers pas et ne redescend plus. Vous prenez 3 rads. Au bout, un portail de tôle arraché de ses gonds penche sur l'entrée de l'usine, et par l'ouverture vous voyez des hommes en gilets gris et rouges traverser la cour en courant, ployés sous leurs fusils, vers une ligne de sacs de sable. À l'est, des moteurs montent le talus au ralenti, en première.",
       "effects": [
         {
           "type": "stat",
@@ -83,7 +83,7 @@
       ]
     },
     "c03-8": {
-      "text": "Le pseudo-chien ne bouge plus. Vous restez un moment à genoux dans les herbes, à écouter votre propre souffle. Le sang sur vos mains sèche vite. Au-delà, la clôture est à terre, et une brèche dans le mur ouest donne sur la cour. Des hommes en gris et rouge s'y déploient en courant. De la route, à l'est, montent des moteurs, et des ordres criés dans un porte-voix.",
+      "text": "Le pseudo-chien est mort, la gueule dans le sillon qu'il a creusé lui-même. Vous restez à genoux dans les herbes à écouter votre souffle redescendre, et le sang sur vos mains, le sien, sèche plus vite que du sang d'homme. Au-delà, la clôture est à terre, et une brèche dans le mur ouest, large d'un camion, donne sur la cour. On y crie des ordres courts, on y traîne des caisses, et de l'est monte un porte-voix dont les mots n'arrivent pas encore.",
       "choices": [
         {
           "kind": "aller",
@@ -93,7 +93,7 @@
       ]
     },
     "c03-2": {
-      "text": "La voie ferrée vient du Dépotoir et s'arrête ici, contre un butoir rouillé. Au nord de l'usine, les silos vous dominent, percés de trous ronds. Un quai de chargement longe les rails jusqu'au premier bâtiment. À droite, trois tanks d'eau sur pilotis, et entre eux l'air qui tremble. Quelque part dans les herbes, un pseudo-chien hurle, puis se tait. De la route, à l'est, des moteurs.",
+      "text": "La voie du Dépotoir finit ici, contre un butoir rouillé où quelqu'un a peint un crâne au pochoir. Vous êtes au nord de l'usine, et les silos vous dominent, percés de trous ronds par où le vent entre et ressort en sifflant. Un quai de chargement en béton longe les rails jusqu'au premier bâtiment. À droite, trois tanks d'eau sur pilotis, et entre les pilotis, l'air tremble. Un pseudo-chien hurle dans les herbes, du côté ouest, et s'arrête au milieu du hurlement. De la route, à l'est, montent des moteurs au ralenti.",
       "choices": [
         {
           "kind": "aller",
@@ -108,7 +108,7 @@
       ]
     },
     "c03-22": {
-      "text": "Le quai est long, nu, bordé de rails qui chauffent sous le compteur. Vous prenez 2 rads. À mi-chemin, vous les voyez : une colonne de militaires, casques et gilets, qui descend de la route vers le portail est. Un tireur reste sur le talus et balaie le quai avec sa lunette. Il reste trente mètres, à couvert d'un seul wagon-citerne. Testez votre Habileté.",
+      "text": "Le quai est long, nu, sans un abri sur cent mètres, et les rails chauffent sous le compteur. Vous prenez 2 rads. À mi-chemin, vous les voyez : une colonne de militaires, casques et gilets, qui descend du talus est vers le portail en file indienne, et sur la crête, resté en arrière, un tireur couché qui balaie le quai avec sa lunette. Un wagon-citerne, à trente mètres, est le seul couvert avant les silos. Testez votre Habileté.",
       "effects": [
         {
           "type": "stat",
@@ -125,7 +125,7 @@
       }
     },
     "c03-35": {
-      "text": "Vous passez. Le wagon vous couvre jusqu'au bout, et le tireur regarde ailleurs, vers la cour, où ça commence. Vous vous glissez entre deux silos. En bas, des hommes en gris et rouge s'abritent derrière des sacs de sable, face au portail est. Les militaires arrivent par là. Vous êtes à la lisière de la cour, à l'angle d'un tank d'eau, invisible.",
+      "text": "Vous passez. Le wagon vous couvre jusqu'au bout et le tireur regarde ailleurs, vers la cour, d'où partent les premiers coups : vous vous glissez entre deux silos et vous arrivez à l'angle d'un tank d'eau, au-dessus des sacs du Devoir, sans qu'une seule tête se soit levée.",
       "choices": [
         {
           "kind": "aller",
@@ -135,7 +135,7 @@
       ]
     },
     "c03-11": {
-      "text": "Le tireur vous a vu. La première balle fait sonner la citerne, la seconde vous ouvre le bras. Vous perdez 3 points d'Endurance. Vous courez les derniers mètres plié en deux et tombez entre deux silos, dans l'ombre. Personne ne vous suit. En bas, dans la cour, ça commence, et vous ne valez pas une balle de plus.",
+      "text": "Le tireur vous a vu. La première balle fait sonner la citerne comme une cloche, la seconde vous ouvre le bras au-dessus du coude. Vous perdez 3 points d'Endurance. Vous courez les derniers mètres plié en deux, le bras contre le ventre, et vous tombez entre deux silos, dans l'ombre, où il ne vous suit pas : en bas, dans la cour, les premières rafales partent, et vous ne valez pas une balle de plus.",
       "effects": [
         {
           "type": "stat",
@@ -152,7 +152,7 @@
       ]
     },
     "c03-27": {
-      "text": "Entre les tanks, l'air tremble comme au-dessus d'un capot chaud. Le détecteur crépite, régulier. Vous lancez un boulon. Il part de côté, tourne, et retombe deux fois plus loin : un « Carrousel ». Il y a un passage le long des pilotis, large comme un pied, peut-être. L'eau qui fuit des tanks a creusé la terre, et on ne voit pas où l'anomalie finit. Tentez votre Chance.",
+      "text": "Entre les tanks, l'air tremble au-dessus de la terre nue, et les pilotis du fond, vus à travers, ondulent sans que rien les touche. Le détecteur crépite, régulier, à trois temps. Vous lancez un boulon : il part de côté, tourne sur lui-même et retombe deux fois plus loin, dans le sens contraire, un « Carrousel ». Le long des pilotis, il y a un passage large comme un pied, peut-être, là où l'eau des tanks a creusé la terre, et on ne voit pas où l'anomalie finit. Tentez votre Chance.",
       "test": {
         "type": "luck",
         "success": "c03-14",
@@ -160,7 +160,7 @@
       }
     },
     "c03-14": {
-      "text": "Le passage tient. Vous suivez les pilotis sans que l'air bouge, et le détecteur se calme derrière vous. Au bout des tanks, la cour de l'usine s'ouvre entre les silos. Des hommes en gris et rouge s'abritent derrière des sacs de sable. De l'autre côté, au portail est, les militaires descendent de la route. Vous êtes à l'angle du dernier tank, invisible.",
+      "text": "Le passage tient. Vous suivez les pilotis un pied devant l'autre, le dos contre la tôle mouillée, sans que l'air bouge, et au bout du dernier tank vous retrouvez la terre ferme, et la cour est en contrebas : les sacs du Devoir en bas, et au portail est les premiers casques qui descendent du talus.",
       "choices": [
         {
           "kind": "aller",
@@ -170,7 +170,7 @@
       ]
     },
     "c03-38": {
-      "text": "Le Carrousel vous prend par la jambe. Le monde tourne deux fois et vous jette contre un pilotis, le dos le premier. Vous perdez 3 points d'Endurance. Vous rampez hors de l'air qui tremble, et vous restez un moment face contre terre. Puis vous entendez les moteurs, plus près, et des ordres dans un porte-voix. Au bout des tanks, la cour s'ouvre entre les silos.",
+      "text": "Le Carrousel vous prend par la jambe. Le monde tourne deux fois, le ciel en bas, et vous jette contre un pilotis, le dos le premier. Vous perdez 3 points d'Endurance. Vous rampez hors de l'air qui tremble et vous restez face contre terre, la bouche pleine de boue, jusqu'à ce que les moteurs se rapprochent et qu'un porte-voix, du côté du talus, se mette à crier. Au bout des tanks, la cour s'ouvre en contrebas.",
       "effects": [
         {
           "type": "stat",
@@ -192,7 +192,7 @@
         "alt": "La fusillade dans la cour d'Agroprom entre les silos, militaires au portail et Devoir derrière les sacs de sable",
         "prompt": "La cour d'une usine agricole en ruine entre de hauts silos de béton percés. Des militaires casqués entrent par un portail de tôle en tirant, par bonds, et des hommes du Devoir répondent depuis des sacs de sable ; un officier gît à découvert dans la boue du portail. Fumée de poudre, douilles, éclats sur la tôle. Au premier plan, le stalker est caché de dos à l'angle d'un tank d'eau sur pilotis qui fuit, hors du combat."
       },
-      "text": "La cour s'étend entre les silos, et ça commence. Les militaires entrent par le portail est en tirant, casques baissés, par bonds de cinq mètres. Le Devoir répond depuis les sacs de sable, sans crier. Un officier tombe le premier, à découvert, dans la boue du portail, et personne ne va le chercher. Vous êtes à l'angle d'un tank d'eau, hors de tout. La tôle vibre à chaque impact. L'herbe, derrière vous, sent la poudre.",
+      "text": "La cour s'étend sous les silos, et ça commence. Les militaires entrent par le portail est en tirant, casques baissés, par bonds de cinq mètres, et le Devoir leur répond depuis les sacs de sable, sans crier, un coup à la fois. Le porte-voix couvre tout : « Devoir ! Déposez les armes et sortez par le portail. Vous avez une minute. » Pas un gilet gris ne se lève. Un officier tombe le premier, à découvert, dans la boue du portail, la sacoche sous lui, et ni les siens ni les autres ne vont le chercher. Vous êtes à l'angle d'un tank d'eau, hors de tout, et la tôle vibre contre votre épaule à chaque impact. L'herbe derrière vous sent la poudre et l'eau croupie.",
       "choices": [
         {
           "kind": "attaquer",
@@ -221,7 +221,7 @@
       ]
     },
     "c03-31": {
-      "text": "Le Devoir a compris d'où ça vient. Le sergent des militaires aussi. Il laisse sa colonne et vient vers vous le long du mur, par bonds, sans se presser, le fusil à l'épaule. Il tire à casser des os. Vous n'avez plus de couvert que la tôle, et la tôle ne vaut rien. Derrière, l'herbe haute.",
+      "text": "Le Devoir sait d'où venaient vos coups. Le sergent des militaires aussi. Il laisse sa colonne et vient vers vous le long du mur ouest, par bonds, sans se presser, le fusil à l'épaule, et il crie à ses hommes sans tourner la tête : « Le civil ! Du côté des tanks, le civil ! » Il tire dans tout ce qui peut vous cacher, et la tôle des tanks ne retient rien de ce qu'on lui envoie. L'herbe haute commence au mur ouest, à vingt pas derrière vous.",
       "combat": {
         "name": "Le sergent des militaires",
         "habilete": 7,
@@ -234,7 +234,7 @@
       }
     },
     "c03-6": {
-      "text": "Vous montez l'échelle du silo avec l'AK-74 dans le dos. D'en haut, la colonne est une ligne de casques le long du mur est. Avec ça, on tire avant eux. Vous posez le canon sur le rebord. Il faut arroser juste, un chargeur, avant que le tireur du talus comprenne d'où ça vient. Testez votre Habileté.",
+      "text": "Vous montez l'échelle du silo avec l'AK-74 dans le dos, vingt barreaux qui plient sous la botte. D'en haut, la colonne est une ligne de casques verts collée au mur est, et le tireur du talus n'est qu'une tache couchée dans l'herbe. Avec ça, on tire avant eux. Vous posez le canon sur le rebord. Il faut arroser juste, un chargeur, du premier casque au dernier, avant que le tireur comprenne d'où ça vient. Testez votre Habileté.",
       "test": {
         "type": "stat",
         "stat": "habilete",
@@ -244,7 +244,7 @@
       }
     },
     "c03-24": {
-      "text": "Les militaires refluent. Ils remontent vers la route en traînant leurs blessés, et le tireur du talus part le dernier. Dans la cour, le Devoir ne crie pas victoire. Un lieutenant aux tempes grises vient vers vous, regarde votre arme, puis votre visage. Il sort de sa poche un papier plié, tamponné de rouge. Un Laissez-passer du Devoir. Kouznetsov te laissera passer avec ça, il dit. Puis il retourne compter ses morts.",
+      "text": "Les militaires refluent. Ils remontent le talus en traînant leurs blessés par le col, et le tireur part le dernier, à reculons. Dans la cour, le Devoir ne crie pas victoire : les hommes rechargent, comptent, et un lieutenant aux tempes grises monte vers vous le long du mur, regarde votre arme, puis votre visage, le temps de décider. Il sort de sa poche un papier plié en quatre, tamponné de rouge, et il vous le tend sans le lâcher tout de suite. « Laissez-passer du Devoir. Kouznetsov, au poste, sur la route de Rostok. Vous lui montrez ça, il vous laisse passer. » Vous le prenez, et il lâche. « Vous avez tiré sur l'armée. Ils ne l'oublieront pas. Nous non plus. » Puis il redescend compter ses morts.",
       "effects": [
         {
           "type": "item",
@@ -265,7 +265,7 @@
       ]
     },
     "c03-13": {
-      "text": "Vous reculez dans l'herbe, plié en deux, et les balles passent au-dessus. Derrière vous, la fusillade dure encore un moment, puis se défait. Quand vous relevez la tête, les militaires remontent vers la route en traînant leurs blessés. Le Devoir tient la cour. Un homme en gris et rouge vous regarde sortir des herbes, longtemps, et ne dit rien.",
+      "text": "Vous reculez dans l'herbe, plié en deux, et les balles passent plus haut que vous en fauchant les tiges. La fusillade dure encore, par à-coups, puis s'espace. Quand vous relevez la tête, la colonne verte est de nouveau sur le talus, et dans la cour on entend recharger. Un homme du Devoir, debout sur les sacs, vous suit du canon pendant que vous sortez des herbes. « Deux coups, et parti. On a compté. » Il ne vous barre pas le passage.",
       "choices": [
         {
           "kind": "aller",
@@ -275,7 +275,7 @@
       ]
     },
     "c03-36": {
-      "text": "Vous vous aplatissez derrière le tank. L'eau fuit sur votre nuque. La fusillade dure, par vagues, et les grenades font sonner la tôle comme une cloche. Vous ne voyez rien. Vous comptez les coups. Un objet roule contre le pilotis, à portée de main, et vous ne regardez pas ce que c'est. Tentez votre Chance.",
+      "text": "Vous vous aplatissez derrière le tank, et l'eau de la fuite vous coule dans le col. La fusillade dure par vagues, avec des trous où l'on entend recharger, et les grenades font sonner la tôle contre votre crâne. Vous ne voyez rien. Vous comptez les coups, faute de mieux. Un objet roule contre le pilotis, à portée de main, lourd, et vous ne regardez pas ce que c'est. Tentez votre Chance.",
       "test": {
         "type": "luck",
         "success": "c03-9",
@@ -283,7 +283,7 @@
       }
     },
     "c03-9": {
-      "text": "Ça ne tombe pas de votre côté. Le fracas s'éloigne vers le portail est, puis vers la route. Quand vous sortez de derrière le tank, les militaires remontent le talus en traînant leurs blessés. Le Devoir tient la cour. Personne ne vous a vu, ou personne ne s'en soucie. L'eau continue de fuir sur la tôle, indifférente.",
+      "text": "Ça ne tombe pas de votre côté. La grenade éclate derrière le tank voisin, et le fracas s'éloigne vers le portail est, puis vers le talus. Quand vous sortez de derrière la tôle, il ne reste des militaires qu'une file de dos sur la crête et deux casques dans la boue du portail. Depuis les sacs, un homme du Devoir vous met en joue, le temps de voir vos mains vides, puis baisse son canon. « Tu as attendu que ça passe. Pas bête. Pas brave non plus. » L'eau continue de fuir sur la tôle.",
       "choices": [
         {
           "kind": "aller",
@@ -293,7 +293,7 @@
       ]
     },
     "c03-30": {
-      "text": "La grenade éclate contre le pilotis. Le souffle vous couche, et la tôle vous rend des éclats dans l'épaule et dans le dos. Vous perdez 3 points d'Endurance. Vous restez sourd un long moment. Quand le son revient, la fusillade est finie. Les militaires remontent vers la route. Le Devoir tient la cour, et un homme en gris et rouge vous regarde ramper hors de l'eau.",
+      "text": "La grenade éclate contre le pilotis. Le souffle vous couche dans l'eau, et la tôle vous rend des éclats dans l'épaule et dans le dos. Vous perdez 3 points d'Endurance. Vous restez sourd un bon moment, le nez dans l'eau, à regarder des bottes passer sans les entendre. Quand le son revient, il ne reste de la fusillade que des ordres criés au portail, du côté du Devoir, et des moteurs qui s'éloignent sur la route. Un homme en gilet gris et rouge vous regarde ramper hors de l'eau. « Tu es blessé ou tu es mort ? » Vous ne répondez pas, et il prend ça pour une réponse.",
       "effects": [
         {
           "type": "stat",
@@ -310,7 +310,7 @@
       ]
     },
     "c03-21": {
-      "text": "L'officier est tombé à vingt mètres, à découvert, dans la boue du portail. Sa sacoche est restée sous lui. Vous rampez. L'herbe vous couvre dix mètres, puis plus rien que le béton et les balles qui passent dans les deux sens au-dessus. Il faut aller vite, et rester bas. Testez votre Habileté.",
+      "text": "L'officier est tombé à vingt mètres, à découvert, dans la boue du portail, et sa sacoche est restée sous lui. Vous rampez. L'herbe vous couvre dix mètres, puis il n'y a plus que le béton nu et les balles qui passent au-dessus, dans les deux sens, assez bas pour qu'on les entende siffler. Il faut aller vite, et rester plus bas qu'elles. Testez votre Habileté.",
       "test": {
         "type": "stat",
         "stat": "habilete",
@@ -320,7 +320,7 @@
       }
     },
     "c03-40": {
-      "text": "Vous l'atteignez sans une balle. L'officier regarde le ciel, la bouche ouverte sur une pluie qui ne vient pas. Dans la sacoche, un calque plié en huit, annoté au crayon rouge : une Carte des champs de mines, de la route de Rostok jusqu'aux Entrepôts. Vous la prenez et vous rampez en arrière. Derrière vous, la fusillade se défait. Les militaires refluent. Le Devoir tient la cour.",
+      "text": "Vous l'atteignez sans une balle. L'officier regarde le ciel, la bouche ouverte sur une pluie qui ne vient pas, et ses doigts sont encore serrés sur la courroie. Dans la sacoche, un calque plié en huit, annoté au crayon rouge : une Carte des champs de mines, de la route de Rostok jusqu'aux Entrepôts, avec les dates des relevés. Vous la prenez et vous rampez en arrière, la carte dans la chemise, et pendant que vous rampez le feu s'espace sur votre dos, puis cesse du côté du talus avant de cesser du côté des sacs.",
       "effects": [
         {
           "type": "item",
@@ -337,7 +337,7 @@
       ]
     },
     "c03-16": {
-      "text": "Un militaire vous a vu. Il arrive de côté, à deux mètres, le casque de travers et le fusil déjà levé. Vous n'avez pas le temps de reculer. Ses coups partent trop vite pour viser, et les vôtres glissent sur le gilet pare-balles. Derrière vous, l'herbe haute, si vous arrivez à la rejoindre.",
+      "text": "Un militaire vous a vu. Il arrive de côté, à deux mètres, le casque de travers et le fusil déjà levé, et il crie « À terre ! À terre ! » d'une voix qui mue encore. Vous n'avez pas le temps de reculer. Ses coups partent trop vite pour viser, et les vôtres glissent sur le gilet pare-balles comme sur une plaque de four. Les herbes sont à dix mètres dans votre dos, si vous arrivez à les rejoindre.",
       "combat": {
         "name": "Un militaire",
         "habilete": 6,
@@ -350,7 +350,7 @@
       }
     },
     "c03-26": {
-      "text": "Le militaire tombe sur l'officier. Vous les séparez. Dans la sacoche de l'officier, un calque plié en huit, annoté au crayon rouge : une Carte des champs de mines, de la route de Rostok jusqu'aux Entrepôts. Vous la prenez. Autour de vous, la fusillade se défait. Les militaires refluent vers la route. Le Devoir tient la cour, et un homme en gris et rouge vous regarde vous relever entre deux morts.",
+      "text": "Le militaire tombe en travers de l'officier. Vous les séparez, le jeune par les épaules, et son casque roule jusqu'au portail. Dans la sacoche de l'officier, sous une gourde, une Carte des champs de mines, de Rostok aux Entrepôts, crayonnée en rouge sur un calque, chaque champ daté. Vous la glissez dans la chemise. Autour de vous, les rafales s'espacent, puis un sifflet rappelle la colonne vers le talus, et un des hommes du Devoir, debout sur les sacs, vous regarde vous relever entre deux morts sans rien dire ni rien faire.",
       "effects": [
         {
           "type": "item",
@@ -367,7 +367,7 @@
       ]
     },
     "c03-33": {
-      "text": "Vous roulez dans l'herbe sans la sacoche. Le militaire ne vous suit pas. Sa colonne reflue et il part avec elle, à reculons, le fusil sur les herbes. Vous restez couché jusqu'à ce que les moteurs remontent le talus. Le Devoir tient la cour. L'officier est toujours là-bas, dans la boue du portail, et plus personne ne tire au-dessus de lui.",
+      "text": "Vous roulez dans l'herbe sans la sacoche. Le militaire ne vous suit pas : sa colonne décroche et il part avec elle, à reculons, le fusil pointé sur les herbes jusqu'au portail. Vous restez couché, la joue sur la terre, jusqu'à ce que les moteurs remontent le talus et que les voix du Devoir reprennent dans la cour. L'officier est toujours là-bas, dans la boue, la sacoche sous lui, et plus un coup ne part dans sa direction.",
       "choices": [
         {
           "kind": "aller",
@@ -377,7 +377,7 @@
       ]
     },
     "c03-4": {
-      "text": "La cour entre les silos. Le Devoir traîne ses morts à l'ombre et ceux des militaires au portail, en tas, sans leurs armes. Un feu brûle dans un bidon. Un lieutenant aux tempes grises remonte son fusil pièce par pièce sur un sac de sable. Au fond, un bâtiment bas avec une croix rouge délavée, porte fermée. À côté, la salle des pompes, d'où monte une odeur d'eau morte. Au nord, la route, et un homme en gris et rouge qui la surveille.",
+      "text": "La cour est au Devoir. Ils traînent leurs morts à l'ombre du silo ouest et ceux des militaires au portail, en tas, sans leurs armes ni leurs casques, et ils ne se parlent que pour ça. Un feu brûle dans un bidon de deux cents litres, percé à la hache. Sur un sac de sable, un lieutenant aux tempes grises remonte son fusil pièce par pièce, l'huile à côté de lui. Au fond, un bâtiment bas porte une croix rouge délavée au-dessus d'une porte de fer fermée. À côté, le bâtiment des pompes, d'où monte une odeur d'eau morte. Au nord, le portail ouvre sur une route, et une sentinelle du Devoir la surveille, assise sur un pneu.",
       "image": {
         "src": "images/c03-4.webp",
         "alt": "La cour de l'usine Agroprom entre les silos après l'assaut : sacs de sable, un bidon qui brûle, des corps empilés au portail.",
@@ -422,7 +422,7 @@
       ]
     },
     "c03-12": {
-      "text": "L'infirmerie. Une porte de fer, un cadenas neuf sur une chaîne neuve, posés par le Devoir. Par la vitre sale, des lits de camp, une armoire blanche, une bouteille vide. Personne ne vous regarde. Le lieutenant tourne le dos. La chaîne est bonne, la porte moins : le cadre a rouillé autour des gonds.",
+      "text": "Le cadenas sur la porte de l'infirmerie est neuf, et la chaîne aussi, posés là par le Devoir. Par la vitre sale, vous voyez des lits de camp, une armoire blanche, une bouteille vide sur le sol. Derrière vous, le lieutenant tourne le dos et les autres sont à leurs morts. La chaîne est bonne, la porte moins : le cadre a rouillé autour des gonds, et il s'effrite sous l'ongle.",
       "choices": [
         {
           "kind": "attaquer",
@@ -446,7 +446,7 @@
       ]
     },
     "c03-37": {
-      "text": "Le coup claque entre les silos. Le cadenas saute, la chaîne glisse. Dans la cour, quelques têtes se tournent, puis se détournent. Dedans, ça sent l'alcool et la poussière. L'armoire blanche est vide, sauf un tiroir du bas : une Trousse de soins, sous scellé militaire, intacte. Vous la glissez dans le sac. Un lit de camp garde l'empreinte de quelqu'un.",
+      "text": "Le coup du Makarov claque sous les silos et revient en écho. Le cadenas saute, la chaîne glisse par terre, et quelques têtes se tournent au feu, puis se détournent : un coup de feu de plus, ici, ne vaut pas qu'on se lève. Dedans, ça sent l'alcool à brûler et la poussière. L'armoire blanche est vide, sauf le tiroir du bas : une Trousse de soins sous scellé militaire, intacte, le plomb encore sur la ficelle. Vous la glissez dans le sac. Un lit de camp garde l'empreinte de quelqu'un.",
       "effects": [
         {
           "type": "item",
@@ -463,7 +463,7 @@
       ]
     },
     "c03-23": {
-      "text": "Vous prenez du recul. Le cadre a rouillé, les gonds tiennent à peine : il faut frapper au bon endroit, une fois, sans faire plus de bruit que les gonds. La vitre sale vous renvoie une silhouette penchée. Dans la cour, personne ne regarde encore. Testez votre Habileté.",
+      "text": "Vous prenez du recul. Le cadre a rouillé, les gonds tiennent à peine : il faut frapper au bon endroit, une fois, de l'épaule, et ne pas faire plus de bruit que les gonds eux-mêmes. La vitre sale vous renvoie une silhouette penchée, et derrière elle, au feu, un homme qui ne regarde pas encore. Testez votre Habileté.",
       "test": {
         "type": "stat",
         "stat": "habilete",
@@ -473,7 +473,7 @@
       }
     },
     "c03-7": {
-      "text": "La porte cède d'un coup, gonds arrachés, et vous entrez avec elle. Personne ne vient. Dedans, ça sent l'alcool et la poussière. L'armoire blanche est vide, sauf un tiroir du bas : une Trousse de soins, sous scellé militaire, intacte. Vous la glissez dans le sac. Un lit de camp garde l'empreinte de quelqu'un.",
+      "text": "La porte cède d'un coup, gonds arrachés, et vous entrez avec elle dans un bruit de tôle qui dure moins qu'une rafale. Au feu, une tête se tourne, puis revient au bidon. L'armoire blanche n'a gardé qu'un tiroir plein, celui du bas, et dedans une Trousse de soins sous scellé militaire, le plomb encore sur la ficelle ; vous la glissez dans le sac. Sur le lit de camp le plus proche, une couverture pliée au carré, à la manière de l'armée. Vous redressez la porte contre son cadre avant de sortir.",
       "effects": [
         {
           "type": "item",
@@ -490,7 +490,7 @@
       ]
     },
     "c03-28": {
-      "text": "La porte tient. Votre épaule, moins. Vous perdez 2 points d'Endurance. Le bruit a fait lever deux têtes dans la cour, et le lieutenant vous regarde sans bouger, le fusil à moitié remonté. Vous vous écartez de la porte en vous frottant le bras. Le cadenas pend, neuf, intact.",
+      "text": "La porte tient. Votre épaule, moins. Vous perdez 2 points d'Endurance. Le bruit a fait lever deux têtes au feu, et le lieutenant vous regarde depuis son sac de sable, le fusil à moitié remonté, la culasse dans une main. « La porte vous a répondu. » Il se remet à son fusil. Vous vous écartez en vous frottant le bras, et le cadenas pend sur sa chaîne, neuf, intact.",
       "effects": [
         {
           "type": "stat",
@@ -507,7 +507,7 @@
       ]
     },
     "c03-15": {
-      "text": "Le lieutenant finit de remonter son fusil avant de lever les yeux. Tempes grises, gilet gris et rouge, une brûlure ancienne sur le cou. Il connaît l'usine. Il connaît ce qu'il y a dessous, aussi, et il dit « dessous » comme on parle d'un vivant. Il a vu passer des stalkers qui cherchaient quelqu'un ici. Il ne demande pas qui vous cherchez.",
+      "text": "Le lieutenant finit de remonter son fusil avant de lever les yeux, et il contrôle la culasse deux fois, à l'oreille. Tempes grises, gilet gris et rouge, une brûlure ancienne sur le cou qui descend sous le col. « Vous n'êtes pas du Devoir. Vous n'êtes pas de l'armée. Vous cherchez quelqu'un. » Vous ne dites rien. « Ils cherchent tous quelqu'un, ici. Et ils finissent tous dessous. » Il dit « dessous » les yeux sur le béton entre ses bottes, du ton qu'on garde pour un nom propre. Il ne demande pas qui vous cherchez.",
       "choices": [
         {
           "kind": "parler",
@@ -559,7 +559,7 @@
       ]
     },
     "c03-34": {
-      "text": "Strelok, il dit. Tout le monde le cherche, personne ne l'a vu. Il est passé ici deux fois. La seconde, il est descendu par la salle des pompes et n'est pas remonté par là. Le Devoir a trouvé sa cache plus tard, derrière une grille, dans la galerie des égouts, sans arriver à l'ouvrir. Ce qu'il y a dedans, personne ne sait. Ce qu'il y a devant, si : un Contrôleur. Il vous regarde comme on regarde un homme qui va descendre.",
+      "text": "« Strelok. » Il pose le fusil en travers de ses genoux et regarde le bâtiment des pompes, pas vous. « Tout le monde le cherche. Pas un ne l'a vu. Il est passé ici deux fois. La seconde, il est descendu par la trappe, là, et il n'est pas remonté par là. » Il attend que le vent retombe entre les silos avant de reprendre, plus bas. « On a trouvé sa cache après. Galerie des égouts, derrière une grille. On n'a pas su l'ouvrir. » Vous demandez pourquoi. « Un Contrôleur. Il regarde, et on voit double, et on tire sur son frère. » Il reprend son fusil, et la culasse claque. « Vous avez tiré pour nous, alors je vous le dis : en bas, ne regardez pas ce qui vous regarde. » Puis il vous mesure, des bottes au visage, et il n'ajoute rien.",
       "effects": [
         {
           "type": "flag",
@@ -575,7 +575,7 @@
       ]
     },
     "c03-20": {
-      "text": "Il empoche les 100 roubles sans les compter. Strelok, il dit. Tout le monde le cherche, personne ne l'a vu. Il est passé ici deux fois. La seconde, il est descendu par la salle des pompes et n'est pas remonté par là. Sa cache est derrière une grille, dans la galerie des égouts. Le Devoir n'a pas su l'ouvrir. Devant, il y a un Contrôleur. Pour cent roubles, c'est tout ce qu'il a. Il reprend son fusil.",
+      "text": "Il empoche les 100 roubles sans les compter et les fait disparaître sous le gilet. « Strelok. Deux passages. Le second, par la trappe des pompes, et pas de retour par là. » Il recharge son fusil pendant qu'il parle, par habitude, une cartouche par phrase. « Sa cache est dans les égouts, derrière une grille qu'on n'a pas su ouvrir. Devant la grille, un Contrôleur. » Vous attendez la suite. « Pour cent roubles, c'est ce que vous avez. » Il reprend son fusil et il ne vous regarde plus.",
       "effects": [
         {
           "type": "flag",
@@ -591,7 +591,7 @@
       ]
     },
     "c03-10": {
-      "text": "Le feu brûle dans un bidon percé, entre deux sacs de sable. Un homme du Devoir y fait chauffer de l'eau et ne vous parle pas. Il vous laisse la place. La chaleur vient d'un seul côté, le reste du corps reste froid. Les morts du portail ont cessé de sentir quoi que ce soit. Pas vous.",
+      "text": "Un homme du Devoir fait chauffer de l'eau dans une gamelle cabossée, sur le bidon percé, entre deux sacs, et il se pousse pour vous laisser la place. « L'eau est pour moi. Le feu, tu peux. » La chaleur vient d'un seul côté, et le reste du corps reste froid. Au portail, le tas des militaires a déjà attiré un corbeau, que la sentinelle chasse d'un caillou sans se lever.",
       "choices": [
         {
           "kind": "agir",
@@ -643,7 +643,7 @@
       ]
     },
     "c03-39": {
-      "text": "Vous ouvrez la conserve et la mangez froide, avec les doigts. Du poisson, ou quelque chose qui a été du poisson. Vous regagnez 2 points d'Endurance. L'homme du Devoir regarde la boîte vide, puis le feu. Il la pousse dans le bidon du bout de sa botte. Le métal noircit et se tord.",
+      "text": "Vous ouvrez la conserve au couteau et vous la mangez froide, avec les doigts, du poisson qui a été du poisson il y a des années. Vous regagnez 2 points d'Endurance. L'homme regarde la boîte vide, puis le feu, et la pousse dans le bidon du bout de sa botte. « Ils en mettaient dans nos rations, les mêmes. On les échangeait contre des clopes. » Le métal noircit et se tord dans les flammes.",
       "choices": [
         {
           "kind": "aller",
@@ -653,7 +653,7 @@
       ]
     },
     "c03-25": {
-      "text": "Vous défaites le bandage et le posez serré sur ce qui saigne. Le tissu boit vite, puis s'arrête. Vous regagnez 3 points d'Endurance. L'homme du Devoir ne lève pas les yeux. L'eau bout dans sa gamelle. Il la retire du feu, attend, et la boit sans rien mettre dedans.",
+      "text": "Vous défaites le bandage et vous le serrez sur ce qui saigne, d'un tour, puis d'un second quand le tissu a bu. Vous regagnez 3 points d'Endurance. Votre voisin ne lève pas les yeux : l'eau bout dans sa gamelle, il la retire du feu avec sa manche, attend qu'elle cesse de fumer, et la boit sans rien mettre dedans.",
       "choices": [
         {
           "kind": "aller",
@@ -663,7 +663,7 @@
       ]
     },
     "c03-18": {
-      "text": "Les militaires sont empilés au portail, sans armes ni casques. Le Devoir a laissé le reste. L'officier est dessous, reconnaissable à ses épaulettes. La boue du portail brille, et le compteur grimpe pendant que vous le retournez. Vous prenez 2 rads. Dans sa sacoche, un calque plié en huit, annoté au crayon rouge : une Carte des champs de mines, de la route de Rostok jusqu'aux Entrepôts. Personne ne vous en empêche.",
+      "text": "Les militaires sont empilés au portail, sans armes ni casques, mais avec le reste : les bottes, les montres, les photos. L'officier est dessous, reconnaissable à ses épaulettes. La boue brille autour du tas, et le compteur grimpe pendant que vous le retournez par le ceinturon. Vous prenez 2 rads. Dans sa sacoche, une Carte des champs de mines au crayon rouge, pliée en huit, qui va de la route de Rostok jusqu'aux Entrepôts. L'homme qui garde le portail vous a vu faire. « Les papiers, c'est pour toi. Les armes, tu les laisses où elles sont. »",
       "effects": [
         {
           "type": "stat",
@@ -690,7 +690,7 @@
         "alt": "La salle des pompes d'Agroprom, trois pompes mortes et une trappe ouverte sur une échelle",
         "prompt": "Une salle industrielle sombre avec trois grosses pompes mortes, de la taille de voitures, et de l'eau noire sur le sol qui reflète la lumière grise d'une lucarne. Au centre, une trappe de fonte ouverte sur une échelle de fer qui descend dans le noir, une flèche grossière gravée dans la rouille pointant vers le bas. Tuyaux, vannes, volants rouillés. Une silhouette de stalker, de dos, penchée au bord de la trappe."
       },
-      "text": "La salle des pompes. Trois pompes mortes, grosses comme des voitures, et de l'eau noire à mi-cheville qui ne vient de nulle part. Au centre, une trappe de fonte ouverte sur une échelle. Il en monte un froid qui n'a rien à voir avec la saison, et une odeur de cave et de fer. Quelqu'un a gravé une flèche dans la rouille, vers le bas. Pas de date.",
+      "text": "Le bâtiment des pompes est une halle sans fenêtres, éclairée par une lucarne crevée. Trois pompes mortes, grosses comme des voitures, et de l'eau noire à mi-cheville qui ne vient d'aucun tuyau. Au centre, une trappe de fonte ouverte sur une échelle de fer, et il en monte un froid qui n'a rien à voir avec la saison, avec une odeur de cave et de métal mouillé. Quelqu'un a gravé une flèche dans la rouille du couvercle, vers le bas, et pas de date, pas de nom, rien pour dire s'il est remonté.",
       "choices": [
         {
           "kind": "aller",
@@ -705,7 +705,7 @@
       ]
     },
     "c03-3": {
-      "text": "Vous remontez par la trappe de la salle des pompes. La lumière du jour, après les galeries, fait mal. Les trois pompes mortes n'ont pas bougé, l'eau noire non plus. Vous restez assis au bord de la trappe, les bottes qui dégouttent, à attendre que vos mains s'arrêtent de trembler. Dehors, la cour. Le feu du Devoir fume toujours entre les silos.",
+      "text": "Vous remontez par la trappe des pompes, et la lumière du jour, après les galeries, fait mal aux yeux comme du sel. Les trois pompes mortes n'ont pas bougé, l'eau noire non plus. Vous restez assis au bord de la fonte, les bottes qui dégouttent dans l'eau, à attendre que vos mains s'arrêtent de trembler, et elles mettent le temps. Dehors, le feu du Devoir fume toujours au pied des silos.",
       "choices": [
         {
           "kind": "aller",
@@ -715,7 +715,7 @@
       ]
     },
     "c03-5": {
-      "text": "La route du nord part du portail entre deux rangées de barbelés couchés. L'homme du Devoir qui la garde vous regarde passer et ne dit qu'un mot, Kouznetsov, comme un avertissement ou une adresse. Au-delà, l'asphalte craquelé monte vers une crête, et derrière la crête, une fumée. Le vent vient de là. Il sent le chlore, de très loin.",
+      "text": "La route du nord part du portail entre deux rangées de barbelés couchés, que nul n'a relevés depuis l'hiver. La sentinelle se lève de son pneu pour vous regarder passer. « Kouznetsov. Au bout, derrière la crête. Il ouvre les sacs. » Il se rassoit sur son pneu. Au-delà, l'asphalte craquelé monte vers la crête, et derrière la crête une fumée se couche sous le vent, qui vient de là et qui sent le chlore de très loin.",
       "choices": [
         {
           "kind": "aller",

@@ -38,7 +38,7 @@
         "alt": "Un transformateur couché sous des pins morts, une trappe de fonte ouverte dessous",
         "prompt": "Dans une forêt de pins rougis, un transformateur électrique couché sur le flanc, le ventre ouvert, ses bobines pleines d'aiguilles de pin. Dessous, une trappe de fonte ronde, entrouverte sur le noir. Au loin, au-dessus de la crête, la masse d'une antenne couchée. Le héros accroupi de dos près de la trappe, une carte dépliée à la main."
       },
-      "text": "Le transformateur est couché sur le flanc, le ventre ouvert, ses bobines pleines d'aiguilles de pin. Dessous, une trappe de fonte, celle que le Guide a dessinée d'un trait sur sa carte, avec une croix tous les cinquante mètres jusqu'à Pripyat. Vous dépliez la Carte du Guide une dernière fois. L'antenne du Radar gronde quelque part à l'est, au-dessus de la crête. Ici, rien ne gronde. La trappe sent l'eau froide.",
+      "text": "Le transformateur est couché sur le flanc sous les pins rouges, le ventre ouvert, ses bobines de cuivre bourrées d'aiguilles mortes, et dessous, à moitié enterrée, la trappe de fonte que le Guide a dessinée d'un seul trait sur sa carte. Vous dépliez la Carte du Guide sur votre genou. Du transformateur jusqu'à Pripyat, il a tiré une ligne au crayon gras et posé une croix tous les cinquante mètres, sans légende, sauf en marge, de son écriture penchée qui ne dépasse jamais cinq mots : « Suivre la craie. Ne pas courir. » À l'est, derrière la crête, l'antenne du Radar gronde d'un bourdonnement de ligne haute tension qui vous serre les dents. Ici, sous les pins, on n'entend que l'eau qui goutte dans le trou. La trappe souffle un air froid de cave inondée.",
       "choices": [
         {
           "kind": "agir",
@@ -48,7 +48,7 @@
       ]
     },
     "c17-9": {
-      "text": "Les barreaux s'arrêtent au bout de six mètres. Vos bottes touchent l'eau. Au-dessus, le carré gris de la trappe ; devant, rien. Le noir du tunnel est complet, un noir qui a du poids. Le détecteur se tait. Quelque chose court sur le béton, petit, vite, puis plus rien. L'air sent la rouille et le rat.",
+      "text": "Les barreaux s'arrêtent au bout de six mètres et vos bottes entrent dans l'eau jusqu'au mollet. Au-dessus, le carré gris de la trappe ; devant, un noir si épais que vous ne voyez plus votre main levée à hauteur du visage. Le détecteur reste muet. Sur le béton, de petites griffes détalent, puis le clapotis se referme. L'air a le goût de la rouille et de la crotte de rat.",
       "choices": [
         {
           "kind": "agir",
@@ -67,7 +67,7 @@
       ]
     },
     "c17-17": {
-      "text": "Vous posez la main sur la paroi. Elle est froide et suinte. Vous avancez un pied après l'autre, l'eau au mollet, sans savoir ce qu'elle cache : un rail, une grille, un trou. Vos doigts suivent un câble, puis le perdent. Testez votre Habileté.",
+      "text": "La paroi est froide et grasse sous la paume. Vous avancez un pied après l'autre en tâtant le fond sous l'eau, où peut se cacher un rail, une grille arrachée ou une bouche d'égout sans couvercle. Vos doigts trouvent un câble gainé de caoutchouc, le suivent sur dix pas, puis le perdent. Testez votre Habileté.",
       "test": {
         "type": "stat",
         "stat": "habilete",
@@ -77,7 +77,7 @@
       }
     },
     "c17-3": {
-      "text": "Votre pied passe dans un vide. Vous tombez en avant, le genou sur un rail, la tempe contre une vanne de fonte. Vous perdez 3 points d'Endurance. Vous restez un moment à quatre pattes dans l'eau, le goût du sang dans la bouche. Puis vous vous relevez. Devant, loin, une tache grise : de la lumière qui vient de quelque part.",
+      "text": "Votre pied passe dans un vide. Vous tombez en avant, le genou sur un rail, la tempe contre le volant d'une vanne de fonte. Vous perdez 3 points d'Endurance. Vous restez à quatre pattes dans l'eau, le goût du sang sur la langue, jusqu'à ce que le tunnel cesse de tourner autour de vous. Devant, très loin, une tache grise pâlit le béton, le jour d'une grille de surface qui tombe en biais dans le tunnel.",
       "effects": [
         {
           "type": "stat",
@@ -99,7 +99,7 @@
         "alt": "Un tunnel de service voûté inondé, l'air qui tremble au-dessus du canal, des traits de craie au mur",
         "prompt": "Un tunnel de béton bas et voûté, eau noire jusqu'aux mollets coulant vers le fond, un gros tuyau le long de la paroi droite. À cinquante mètres, l'air se déforme au-dessus du canal comme au-dessus d'une tôle chaude : une anomalie à peine visible. Des traces de rats grimpent sur le tuyau. Sur la paroi, à hauteur d'épaule, des traits de craie blanche presque effacés. Le héros en silhouette, de dos, au premier plan."
       },
-      "text": "Le tunnel est droit, bas, voûté. L'eau coule vers le nord, lente. À cinquante mètres, l'air tremble au-dessus du canal comme au-dessus d'une tôle au soleil : un « Trampoline ». Vous ne le verriez pas si vous ne saviez pas. Les rats l'évitent, leurs traces grimpent sur le tuyau de droite. Sur la paroi, à hauteur d'épaule, des traits de craie blanche, presque effacés.",
+      "text": "Le fond reste ferme sous les bottes jusqu'à un coude, après lequel le tunnel se redresse, droit, bas, voûté, avec un tuyau de fonte gros comme un tronc le long de la paroi droite et l'eau qui coule lentement vers le nord. À cinquante mètres, au-dessus du canal, l'air ondule sans chaleur, en vagues lentes qui déforment la voûte : un « Trampoline ». Les rats le connaissent, puisque leurs traces quittent l'eau et grimpent sur le tuyau juste avant. À hauteur d'épaule, sur le béton, des traits de craie blanche presque effacés vont par groupes de trois.",
       "choices": [
         {
           "kind": "aller",
@@ -118,7 +118,7 @@
       ]
     },
     "c17-21": {
-      "text": "Vous lancez un boulon. Il monte, s'arrête à mi-hauteur, retombe à plat dans l'eau une seconde trop tard. Vous comptez l'endroit. Trois pas à droite, le dos contre le tuyau, et vous passez. Il y a une place où le tremblement s'arrête. Il n'y en a qu'une. Tentez votre Chance.",
+      "text": "Vous lancez un boulon. Il monte, s'arrête à mi-hauteur et retombe à plat dans l'eau avec une seconde de retard, juste à gauche du tuyau. Vous repérez l'endroit où il est resté suspendu, puis celui où il n'a pas hésité : trois pas à droite, le dos contre la fonte, une seule place où l'air ne bouge plus, de la largeur d'une botte. Tentez votre Chance.",
       "test": {
         "type": "luck",
         "success": "c17-15",
@@ -126,7 +126,7 @@
       }
     },
     "c17-6": {
-      "text": "Le sol vous jette contre la voûte. Il n'y a pas de bruit, juste le béton qui arrive trop vite. Vous retombez dans l'eau, le souffle coupé, l'épaule qui ne répond pas tout de suite. Vous perdez 3 points d'Endurance. Le tremblement est derrière vous, maintenant. Il attend le suivant.",
+      "text": "Le sol vous jette contre la voûte. Le béton arrive trop vite, sans un bruit d'avertissement, et vous retombez à plat dans le canal, le souffle coupé, l'épaule gauche morte pendant de longues secondes. Vous perdez 3 points d'Endurance. Derrière vous, l'air a repris son tremblement au-dessus de l'eau, prêt pour le suivant.",
       "effects": [
         {
           "type": "stat",
@@ -143,7 +143,7 @@
       ]
     },
     "c17-15": {
-      "text": "Les rats n'attendent pas que vous passiez. Ils descendent du tuyau en grappe, gros comme des chats, le poil ras, les yeux sans couleur. Ils ne font pas de bruit en mordant. Vous frappez avec ce que vous avez, à genoux dans l'eau, et ils reviennent entre deux coups. Ce n'est pas un combat, c'est un nettoyage.",
+      "text": "Le Trampoline est derrière vous quand les rats descendent du tuyau. Ils viennent en grappe, gros comme des chats, le poil ras et collé, les yeux sans couleur, et ils mordent sans un cri, ce qui est pire que s'ils hurlaient. Vous frappez à genoux dans l'eau, avec la crosse, avec la botte, avec ce qui vous tombe sous la main, et ils remontent entre deux coups. Aucun ne vous tuera, mais il faut les écraser jusqu'au dernier pour avancer.",
       "combat": {
         "name": "Les rats",
         "habilete": 5,
@@ -152,7 +152,7 @@
       }
     },
     "c17-2": {
-      "text": "Le tunnel s'ouvre sur un puits. L'eau s'y verse en filet et met longtemps à toucher le fond. Des barreaux de fer descendent le long de la paroi, mangés de rouille, un sur trois manquant. Un anneau d'acier scellé dans le béton, à hauteur de main, poli par des cordes qui ne sont plus là. Le Guide est passé par ici. Il n'a pas dit comment.",
+      "text": "Le dernier rat cesse de se débattre sous votre botte, et les autres ne reviennent pas. Vingt pas plus loin, le tunnel s'ouvre sur un puits. L'eau s'y verse en filet et vous comptez jusqu'à quatre avant d'entendre le fond. Des barreaux de fer descendent le long de la paroi, mangés de rouille, un sur trois arraché. À hauteur de main, un anneau d'acier scellé dans le béton est poli d'un côté, usé par des cordes qu'on a remportées. Sur la carte, le Guide a seulement écrit « Puits » à côté de la croix, et rien sur la façon de le descendre.",
       "choices": [
         {
           "kind": "aller",
@@ -171,7 +171,7 @@
       ]
     },
     "c17-19": {
-      "text": "Vous passez la jambe. Le premier barreau tient. Le deuxième plie sous la botte avec un bruit de biscuit. Vous descendez collé au béton, les mains pleines d'écailles de rouille, sans regarder sous vous. Il y a quinze mètres de puits et peut-être dix barreaux. Testez votre Habileté.",
+      "text": "Vous passez la jambe par-dessus le bord. Le premier barreau tient. Le deuxième plie sous la botte avec un craquement de biscuit sec, et vous descendez collé au béton, les mains pleines d'écailles orange, sans regarder sous vous. Il reste quinze mètres de puits, une dizaine de barreaux pour les franchir et des paumes qui glissent : testez votre Habileté.",
       "test": {
         "type": "stat",
         "stat": "habilete",
@@ -181,7 +181,7 @@
       }
     },
     "c17-11": {
-      "text": "Un barreau cède. Vous tombez les quatre derniers mètres, et le fond du puits vous reçoit dans l'eau et sur la ferraille. Vous perdez 3 points d'Endurance. Vous vous relevez en boitant. Au-dessus, le barreau se balance encore au bout de son scellement, comme une dent. Devant, une porte de fer sans serrure, entrouverte sur une lueur verte.",
+      "text": "Un barreau cède sous votre main. Vous tombez les quatre derniers mètres, et le fond du puits vous reçoit dans l'eau, sur un lit de ferraille et de tuyaux tombés. Vous perdez 3 points d'Endurance. Le barreau se balance encore au-dessus de vous, pendu à son scellement par un seul côté, pendant que vous vous relevez en boitant. En face, une porte de fer sans serrure est entrouverte sur une lueur verte.",
       "effects": [
         {
           "type": "stat",
@@ -198,7 +198,7 @@
       ]
     },
     "c17-4": {
-      "text": "La salle des vannes. Six volants de fonte en rang, hauts comme vous, une passerelle de caillebotis, et sous le caillebotis l'eau qui se partage en deux. À gauche, elle s'en va en courant dans une galerie. À droite, une galerie sèche, un peu plus haute, avec une lueur verte au fond. Sur le mur, un cadran de pression dont l'aiguille tremble encore. Vous pouvez souffler ici. Rien ne vient.",
+      "text": "La salle des vannes est au pied du puits, derrière une porte de fer qui tient debout par habitude. Six volants de fonte s'y alignent, hauts comme vous, peints d'un rouge que l'humidité a changé en brun, chacun avec son numéro au pochoir, de 1 à 6. Une passerelle de caillebotis traverse la salle, et sous elle l'eau se partage en deux bras. Celui de gauche file en courant dans une galerie basse, vers le nord. À droite s'ouvre une galerie sèche, plus haute, au fond de laquelle luit une clarté verte qui ne vient d'aucune lampe. Sur le mur du fond, un cadran de pression au verre fêlé garde son aiguille en tremblement continu, et c'est la seule chose qui s'agite ici. Vous vous asseyez sur le caillebotis, le dos contre le volant numéro 4, et vous laissez vos jambes cesser de trembler.",
       "image": {
         "src": "images/c17-4.webp",
         "alt": "Une salle souterraine aux six grands volants de fonte, une passerelle de caillebotis au-dessus d'une eau qui se divise en deux galeries.",
@@ -239,7 +239,7 @@
       ]
     },
     "c17-23": {
-      "text": "Vous videz l'Anti-rad d'un trait, assis sur le caillebotis. Le goût de fer, puis le froid qui descend dans la poitrine. Vous perdez 5 rads. Le compteur se calme. L'aiguille du cadran, elle, ne se calme pas. Vous rangez le flacon vide dans une poche, par habitude : dans la Zone, on ne laisse rien derrière soi qui porte votre odeur.",
+      "text": "D'un trait, vous videz l'Anti-rad, assis sur le caillebotis ; le froid descend dans la poitrine et le goût de fer reste sur la langue. Vous perdez 5 rads. Sur l'étiquette, on lit encore « Radioprotecteur. Une ampoule par jour. » Vous glissez le flacon vide dans votre poche, parce qu'ici on ne laisse rien derrière soi.",
       "choices": [
         {
           "kind": "agir",
@@ -249,7 +249,7 @@
       ]
     },
     "c17-8": {
-      "text": "L'eau vous arrive aux genoux et tire vers le nord. La galerie descend, puis remonte. Au bout de cinquante mètres, l'air tremble au-dessus du canal, exactement là où il faudrait passer. Un deuxième Trampoline. Dans le courant, une bouteille flotte sans avancer, tenue par rien. Le courant, lui, passe sous le tremblement comme s'il ne le voyait pas.",
+      "text": "L'eau vous monte aux genoux et tire vers le nord. La galerie descend, remonte, et après un coude l'air se plisse au-dessus du canal, exactement à l'endroit où il faudrait passer : un deuxième Trampoline. Une bouteille de kéfir en verre épais flotte au milieu, immobile, tenue par une main que vous ne voyez pas, pendant que le courant file dessous sans ralentir et sans dévier d'un pouce.",
       "choices": [
         {
           "kind": "aller",
@@ -268,7 +268,7 @@
       ]
     },
     "c17-14": {
-      "text": "Le boulon monte en tournant et se colle à la voûte. Il y reste. Vous cherchez le bord de la chose au bruit de l'eau, qui change de ton quand elle passe dessous. Vous passez à gauche, plaqué à la paroi, un pied dans le courant, l'autre sur le rebord. Tentez votre Chance.",
+      "text": "Contre la voûte, le boulon reste collé : vous l'avez lancé en tournant et il n'est pas redescendu. Vous cherchez alors le bord de l'anomalie à l'oreille, au bruit de l'eau qui change de ton quand elle passe dessous, plus grave, presque une note de tuyau d'orgue. Vous passez à gauche, plaqué contre la paroi, un pied dans le courant et l'autre sur un rebord large de deux doigts. Tentez votre Chance.",
       "test": {
         "type": "luck",
         "success": "c17-10",
@@ -276,7 +276,7 @@
       }
     },
     "c17-25": {
-      "text": "La galerie bascule. Vous êtes au plafond, puis dans l'eau, puis contre la paroi, et vous ne savez plus dans quel ordre. Vous perdez 3 points d'Endurance. Quand vous vous relevez, la bouteille flotte toujours au même endroit, intacte. Elle a plus de chance que vous. Plus loin, l'eau est plus profonde, et quelque chose y respire.",
+      "text": "La galerie bascule. Vous êtes au plafond, puis dans l'eau, puis contre la paroi, et vous ne sauriez plus dire dans quel ordre. Vous perdez 3 points d'Endurance. Debout de nouveau, ruisselant, vous retrouvez la bouteille de kéfir au même endroit, intacte, et vous lui en voulez d'une rancune absurde. Plus loin, l'eau devient profonde et noire, et à sa surface, régulièrement, des bulles crèvent au rythme d'une respiration.",
       "effects": [
         {
           "type": "stat",
@@ -293,7 +293,7 @@
       ]
     },
     "c17-18": {
-      "text": "La galerie sèche. Le sol est couvert d'une poussière qui crisse, et la lueur verte vient d'une flaque, au fond, qui n'est pas de l'eau. Le compteur grimpe dès les premiers pas. Vous prenez 3 rads. Contre la paroi, assis, un stalker en combinaison grise, le menton sur la poitrine, les mains sur les genoux. Il est là depuis longtemps. La galerie s'arrête derrière lui, murée.",
+      "text": "La galerie sèche est couverte d'une poussière grise qui crisse sous les semelles, et la lueur verte vient d'une flaque, au fond, qui a la surface lisse et épaisse d'une huile de vidange. Le détecteur crépite dès le troisième pas et ne s'arrête plus. Vous prenez 3 rads. Contre la paroi est assis un stalker en combinaison grise, le menton sur la poitrine, les mains à plat sur les genoux, la poussière sur ses épaules aussi épaisse que sur le sol. Derrière lui, la galerie finit sur un mur de parpaings.",
       "effects": [
         {
           "type": "stat",
@@ -315,7 +315,7 @@
       ]
     },
     "c17-5": {
-      "text": "Il n'a rien. Un sac vide, un PDA mort, une arme sans chargeur. Dans sa poche de poitrine, une feuille pliée en quatre : une carte du tunnel, dessinée de la même main que la vôtre, avec la galerie sèche barrée d'une croix. Il ne l'a pas regardée, ou pas à temps. Le compteur ne s'arrête pas. Vous prenez 2 rads. Vous lui laissez sa feuille.",
+      "text": "Le mort ne garde presque rien. Son sac est vide, la boucle encore fermée ; son PDA a l'écran fendu et la batterie gonflée, et son arme, un Makarov comme le vôtre, n'a plus de chargeur. Dans la poche de poitrine, sous le rabat boutonné, vous trouvez une feuille pliée en quatre : une carte du tunnel tracée de la même main que la vôtre, mêmes croix, même écriture penchée. La galerie sèche y est barrée d'une croix plus appuyée que les autres, et en marge, le Guide a écrit : « Sèche, non. L'eau, oui. » Il a dû la lire trop tard, ou ne pas la croire. Sous votre col, le compteur ne lâche pas. Vous prenez 2 rads. Vous repliez la feuille sur ses quatre plis et la remettez dans la poche du mort, sous le rabat, là où elle était.",
       "effects": [
         {
           "type": "stat",
@@ -332,7 +332,7 @@
       ]
     },
     "c17-10": {
-      "text": "La chose dans l'eau se redresse. Deux mètres, une peau de vase, un visage qui n'est qu'une bouche ouverte en étoile. Une Sangsue. Elle disparaît, et vous ne voyez plus que l'eau qui se creuse en venant vers vous. On ne la voit pas frapper. On la voit saigner, après. Elle frappe à casser des os. Vous tirez sur le creux dans l'eau.",
+      "text": "Passé le Trampoline, l'eau monte aux cuisses, et ce qui respirait dedans se redresse. Deux mètres de chair grise couverte de vase, un visage qui n'est plus qu'une bouche ouverte en étoile, des mains trop longues : une Sangsue. Elle s'efface dans l'air sombre, et vous ne voyez plus que l'eau qui se creuse en venant vers vous, un sillage sans bateau. Elle ne se montre qu'au moment de frapper, et elle frappe à casser des os. Vous tirez sur le creux de l'eau.",
       "combat": {
         "name": "Sangsue",
         "habilete": 6,
@@ -345,7 +345,7 @@
       }
     },
     "c17-22": {
-      "text": "La Sangsue flotte sur le dos, visible enfin, la bouche fermée. L'eau autour d'elle devient noire. Vous rechargez sans vous presser, les mains lourdes. Le tunnel remonte, et au fond, pour la première fois, il y a de l'air qui bouge : un courant froid qui descend d'en haut, avec une odeur de cave et de plâtre.",
+      "text": "La Sangsue flotte sur le dos, visible enfin, la bouche refermée sur elle-même. L'eau noircit autour d'elle. Vous rechargez sans vous presser, les mains lourdes, en comptant les cartouches qui restent, et c'est alors que vous le sentez sur la nuque : un courant d'air froid qui descend d'en haut, chargé de plâtre humide et de cave, le premier souffle d'air neuf depuis la trappe.",
       "choices": [
         {
           "kind": "aller",
@@ -355,7 +355,7 @@
       ]
     },
     "c17-7": {
-      "text": "Vous courez, l'eau aux cuisses, sans vous retourner. Elle ne suit pas. Elle a ce qu'elle voulait, ou elle attend le prochain. Le tunnel remonte, l'eau redescend aux chevilles, et un courant d'air froid vient d'en haut, avec une odeur de cave et de plâtre. Vous vous arrêtez quand vous ne l'entendez plus respirer.",
+      "text": "L'eau vous freine aux cuisses, vous courez quand même, sans vous retourner, et la Sangsue ne suit pas, soit qu'elle ait eu ce qu'elle voulait, soit qu'elle attende le prochain. Là où le canal redescend aux chevilles, une odeur de plâtre mouillé tombe d'en haut, le premier air depuis la trappe qui ne sente pas l'égout.",
       "choices": [
         {
           "kind": "aller",
@@ -365,7 +365,7 @@
       ]
     },
     "c17-16": {
-      "text": "Un escalier de béton monte vers une porte de tôle. Entre vous et la première marche, cinquante mètres de tunnel sec, et au milieu, l'air qui tremble une dernière fois. Le dernier Trampoline. Sur la Carte du Guide, cette croix-là a quelque chose en plus : un petit trait oblique, du côté gauche, là où le béton de la paroi est noirci.",
+      "text": "Un escalier de béton monte vers une porte de tôle grise. Entre vous et la première marche, il reste une trentaine de pas de tunnel sec et, au milieu, l'air qui se tord encore au-dessus de la poussière : le dernier Trampoline. Sur la Carte du Guide, cette croix-là porte un trait oblique de plus, côté gauche, et trois mots au crayon : « Gauche. Le noir. Passe. » Sur la paroi de gauche, le béton est noirci en une longue traînée de suie, de la hauteur d'un homme.",
       "choices": [
         {
           "kind": "aller",
@@ -384,7 +384,7 @@
       ]
     },
     "c17-24": {
-      "text": "Le boulon part, flotte, retombe. Vous passez au plus près, le long de la paroi noircie, en retenant votre souffle comme si ça changeait quelque chose. La porte de tôle est juste là, derrière le tremblement, avec un trait de lumière grise dessous. Tentez votre Chance.",
+      "text": "Votre boulon part, flotte une seconde et retombe au milieu de la poussière. Vous passez au plus près de la paroi qui n'est pas noircie en retenant votre souffle, par un réflexe idiot puisque l'air ne vous a jamais rien fait, les yeux sur la porte de tôle et le trait de lumière grise sous son battant : tentez votre Chance.",
       "test": {
         "type": "luck",
         "success": "c17-20",
@@ -392,7 +392,7 @@
       }
     },
     "c17-13": {
-      "text": "Le tunnel vous ramasse et vous jette sur les marches. Vous perdez 3 points d'Endurance. Vous restez couché sur le béton, la joue contre la poussière, à regarder le trait de lumière sous la porte. Il ne bouge pas. Vous non plus, pendant un moment. Puis vous montez, une marche à la fois, la main sur la rampe.",
+      "text": "L'anomalie vous soulève et vous repose de travers, la hanche sur l'arête de la première marche. Vous perdez 3 points d'Endurance. Vous restez couché sur le béton, la joue dans la poussière, à regarder le trait de lumière sous la porte, jusqu'à ce que vos bras acceptent de vous relever. Puis vous montez, une marche à la fois, la main sur la rampe froide.",
       "effects": [
         {
           "type": "stat",
@@ -409,7 +409,7 @@
       ]
     },
     "c17-20": {
-      "text": "La porte de tôle donne sur un escalier de bois, et en haut de l'escalier, une seconde porte, en bois celle-là, avec une poignée de porcelaine. Une porte de cave. Derrière, pas un bruit. Vous êtes sous Pripyat, derrière les lignes du Monolithe, par un chemin que personne ne connaît. Vous repliez la Carte du Guide. Le détecteur recommence à crépiter, doucement, comme s'il se réveillait.",
+      "text": "La porte de tôle cède à l'épaule. Derrière, un escalier de bois monte vers une seconde porte, peinte en vert, avec une poignée de porcelaine fêlée et, au pochoir, « Abri n°3. Rue Kourtchatov ». Par la fente du bas passe un air de bois humide et de linoléum, un air d'immeuble habité autrefois. Vous repliez la Carte du Guide en suivant ses plis usés. Sous Pripyat, derrière les lignes du Monolithe, vous voilà arrivé par un chemin qu'un seul homme avait pris avant vous, et qu'il gardait pour lui.",
       "effects": [
         {
           "type": "flag",

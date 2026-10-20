@@ -29,7 +29,7 @@
   ],
   "paragraphs": {
     "c09-1": {
-      "text": "L'escalier descend derrière la cuisine du Bar. Les marches sont humides, le mur suinte. En bas, une cave plus grande que le Bar lui-même : des projecteurs de chantier, une fosse de béton entourée de grilles, des hommes agglutinés contre le fer. Ça crie. Ça sent la sueur et le sang sec. Un type en costume trop petit, cigare éteint au coin de la bouche, vous regarde arriver sans bouger.",
+      "text": "L'escalier part derrière la cuisine du Bar, entre deux fûts de choucroute, et descend vingt-deux marches de béton où l'eau du mur a laissé une pellicule qui glisse sous la semelle. En bas, la cave est plus grande que le Bar lui-même : quatre projecteurs de chantier sur des pieds de fer, une fosse carrée cernée de grilles, et contre les grilles, trente hommes qui crient vers le fond. Il y règne une chaleur de sueur et de sang séché, et les bottes qui martèlent le fer font un bruit de sabots. Près de la grille, un homme en costume trop petit, un cigare éteint au coin des lèvres, vous suit des yeux depuis la dernière marche. « Un nouveau », dit une voix dans la foule, et quelqu'un rit.",
       "choices": [
         {
           "kind": "aller",
@@ -49,7 +49,7 @@
       ]
     },
     "c09-17": {
-      "text": "Arnie ne tend pas la main. Il vous mesure comme on pèse une bête. Trois rounds, dit-il. Un homme, des chiens, et ce qu'on a trouvé dans la Forêt rouge. Tu vis, tu touches. Trois cents, cinq cents, mille. Pas de droit d'entrée, la mise, c'est ta peau. Tu peux arrêter entre deux rounds, personne ne t'en voudra. Il rallume son cigare. La fumée monte vers les projecteurs.",
+      "text": "Arnie ne tend pas la main. Il vous regarde des bottes à la tête, fait rouler le cigare d'un coin de la bouche à l'autre, et quand il parle, c'est pour toute la cave. « Trois rounds. Un homme, des chiens, et ce qu'on a ramené de la Forêt rouge. Tu vis, tu touches : trois cents, cinq cents, mille. » Vous lui demandez ce qu'il prend là-dessus. « Pas de droit d'entrée, petit. La mise, c'est ta peau, et ma part, c'est le public. » Il craque une allumette sur la grille et tire deux fois avant que le cigare prenne. « Tu descends avec ton couteau et rien qui fait du bruit. Tu peux t'arrêter entre deux rounds et remonter avec tes billets. Tu redescends, tu signes avec ta tête, pas avec ta main. » La fumée monte droit vers les projecteurs, et en bas, dans la fosse, deux hommes raclent le béton avec un balai de rue.",
       "choices": [
         {
           "kind": "aller",
@@ -69,7 +69,7 @@
       ]
     },
     "c09-9": {
-      "text": "Contre la grille, les parieurs ne vous regardent pas. En bas, deux hommes tirent un troisième par les pieds. Il laisse une traînée sur le béton. Un gros à la veste de pluie compte des billets sur son genou. Il parle sans lever la tête. Si tu gagnes un round, reviens me voir. J'ai une table, et un bras. Derrière lui, quelqu'un lave la fosse à grande eau.",
+      "text": "Contre la grille, les parieurs ne se retournent pas pour vous. En bas, deux hommes tirent un troisième par les chevilles, et il laisse derrière lui une traînée large comme une roue de brouette, du centre jusqu'à l'échelle de fer. Assis sur une caisse de munitions vide, un gros en veste de pluie verte compte des billets sur son genou, les pouces mouillés, sans lever la tête. « Tu es le nouveau. Gagne un round et reviens me voir. J'ai une table, j'ai un bras, et j'ai cent roubles qui s'ennuient. » Il lèche son pouce et reprend le compte au début. Derrière lui, un gamin lave la fosse au tuyau, et l'eau qui file vers la bonde est rose.",
       "choices": [
         {
           "kind": "aller",
@@ -84,7 +84,7 @@
       ]
     },
     "c09-4": {
-      "text": "La grille se referme derrière vous. La fosse fait six mètres de large, le béton est encore mouillé. En face, un stalker en veste de toile, lame à la main, les yeux rouges de vodka. Il ne dit rien. Au-dessus, les visages s'écrasent contre le fer. Arnie frappe deux fois la grille avec une clef. C'est le signal.",
+      "text": "La grille se referme derrière vous avec un bruit de wagon, et quelqu'un passe un cadenas. La fosse fait six mètres de côté, le béton est encore mouillé du tuyau. En face, un stalker en veste de toile vous attend, une lame de chasse à la main, les yeux rouges de vodka, et il ne vous regarde pas au visage mais à la gorge. Au-dessus, les figures s'écrasent contre le fer. Arnie frappe deux coups sur la grille avec une clef de boîte aux lettres. « Premier round. » Le stalker avance, la lame basse, et ses bottes ne font aucun bruit sur le mouillé.",
       "image": {
         "src": "images/c09-4.webp",
         "alt": "Une fosse de béton sous des projecteurs de chantier, entourée de grilles où se pressent des silhouettes.",
@@ -98,7 +98,7 @@
       }
     },
     "c09-22": {
-      "text": "Le stalker est à terre et ne se relève pas. Les parieurs hurlent, pour ou contre, on ne sait plus. Arnie vous fait passer par une porte basse et vous compte les billets sur place, un par un, sans les regarder. Vous gagnez 300 roubles. Un round, dit-il. Il te reste deux marches. Il montre une pièce au fond du couloir, avec un banc et une ampoule.",
+      "text": "Le stalker est à terre et ne se relève pas ; sa lame a glissé jusqu'au pied du mur. Les parieurs hurlent, pour vous ou contre vous, on ne sait plus. Arnie vous fait passer par une porte basse dans le mur de la fosse et vous compte les billets sur place, un par un, le pouce sur le coin, sans les regarder. Vous gagnez 300 roubles. « Un round. Il te reste deux marches, et la deuxième a quatre pattes. » Le cigare passe à gauche. « Au fond, tu as un banc et une ampoule. Pose-toi, ou remonte, c'est ton billet. » Le couloir sent le chlore du tuyau.",
       "effects": [
         {
           "type": "stat",
@@ -125,7 +125,7 @@
         "alt": "Cellule de béton, un banc, une ampoule nue, un homme au coude posé sur une table pliante",
         "prompt": "Le vestiaire de l'Arène : une cellule de béton avec un banc, une ampoule nue et un seau dans un coin. Un homme gros en veste de pluie assis derrière une table pliante, le coude posé, la main ouverte pour un bras de fer. Au mur, des centaines d'entailles gravées dans le béton. Un couloir sombre d'où monte la lumière des projecteurs, le héros absent."
       },
-      "text": "Le vestiaire est une cellule de béton avec un banc, une ampoule nue et un seau. Les cris de la fosse arrivent assourdis par le couloir. Le gros à la veste de pluie est assis là, une table pliante devant lui, le coude posé. Il tape du doigt sur le bois. Cent roubles, et on voit lequel des deux lâche. Au mur, quelqu'un a gravé des bâtons. Beaucoup de bâtons.",
+      "text": "Le vestiaire est une cellule de béton de deux mètres sur trois : un banc de bois, une ampoule nue au bout d'un fil, un seau en zinc dans l'angle. Les cris de la fosse arrivent par le couloir, assourdis, comme ceux d'un match à la radio du voisin. Le gros de tout à l'heure est assis là, derrière une table pliante qu'il a dû descendre lui-même, le coude posé, la manche roulée sur un avant-bras blanc. Il tape deux fois du doigt sur le bois. « Cent roubles. On voit lequel des deux lâche. » Vous regardez le mur derrière lui : des bâtons gravés au clou dans le béton, par paquets de cinq, et il y en a jusqu'au plafond. « Ceux-là, c'est pas les miens », dit-il.",
       "choices": [
         {
           "kind": "aller",
@@ -200,7 +200,7 @@
       ]
     },
     "c09-21": {
-      "text": "Sa main est molle et chaude. Puis elle ne l'est plus. Ce n'est pas une question de force, c'est une question de celui qui tient le plus longtemps : ça se joue sur l'Endurance. Il a le souffle court, mais il a fait ça cent fois. L'ampoule grésille au-dessus de la table. Vous pouvez lâcher à tout moment. La mise, elle, ne reviendra pas.",
+      "text": "Sa main est molle et chaude. Puis elle ne l'est plus, et votre poignet s'en aperçoit avant vous. Il ne pousse pas, il pèse, et ce bras de fer-là se gagne en tenant une seconde de plus que l'autre : ça se joue sur l'Endurance. Il a le souffle court, mais il a fait ça cent fois, et les bâtons au mur ne sont pas tous à lui. L'ampoule grésille au-dessus de la table. « Tu lâches quand tu veux », dit-il sans desserrer les dents. « Les cent, eux, restent sur la table. »",
       "combat": {
         "name": "Le parieur",
         "stat": "endurance",
@@ -214,7 +214,7 @@
       }
     },
     "c09-3": {
-      "text": "Son poignet plie, le dos de sa main touche le bois. Il reste un moment comme ça, le regard sur la table. Puis il sort la liasse et paie sans un mot. Vous empochez 200 roubles. Il masse son bras, rit tout seul. Demain j'en trouverai un autre, dit-il. Le couloir ramène vers le banc et l'ampoule.",
+      "text": "Son poignet plie, et le dos de sa main touche le bois avec un bruit de viande. Il reste un moment comme ça, le regard sur la table, puis sort la liasse de sa veste et compte sur le bois, lentement, en mouillant son pouce. Vous empochez 200 roubles. Il masse son avant-bras et rit tout seul, un rire court, par le nez. « Demain j'en trouve un autre. Ils descendent tous, ils ont tous un bras. » Il remet son coude sur la table avant même que vous ayez tourné le dos.",
       "effects": [
         {
           "type": "stat",
@@ -231,7 +231,7 @@
       ]
     },
     "c09-25": {
-      "text": "Vous lâchez. Votre bras pend le long du corps et ne répond plus tout de suite. Vous perdez 2 points d'Endurance. Le gros ramasse la mise, la glisse dans sa veste de pluie et pose de nouveau le coude sur la table, pour le suivant. Il ne vous regarde plus. Le seau, dans le coin, est plein d'eau rouge.",
+      "text": "Vous lâchez. Votre bras pend le long du corps et ne répond pas tout de suite quand vous voulez le replier. Vous perdez 2 points d'Endurance. Le gros ramasse la mise, la glisse dans sa veste et pose de nouveau le coude sur la table, pour le suivant, déjà. « C'est pas une honte. C'est cent roubles. » Dans l'angle, le seau est plein d'une eau rouge où flotte un bout de gaze.",
       "choices": [
         {
           "kind": "aller",
@@ -241,7 +241,7 @@
       ]
     },
     "c09-12": {
-      "text": "Vous serrez le bandage autour de l'entaille, avec les dents. Le tissu boit vite et devient brun. Vous regagnez 3 points d'Endurance. Dans le couloir, quelqu'un fait rouler une cage à roulettes sur le béton. Derrière les barreaux, ça gronde à deux voix, et une griffe racle le fer.",
+      "text": "Le bandage fait deux tours autour de l'entaille, et vous serrez le nœud avec les dents. Le tissu boit vite et devient brun. Vous regagnez 3 points d'Endurance. Dans le couloir, on fait rouler une cage sur le béton, et derrière les barreaux ça gronde à deux voix pendant qu'une griffe cherche le fer.",
       "choices": [
         {
           "kind": "aller",
@@ -251,7 +251,7 @@
       ]
     },
     "c09-18": {
-      "text": "Vous videz la trousse de soins sur le banc : compresses, aiguille, une ampoule jaune que vous cassez et buvez. La douleur recule derrière un mur de coton. Vous regagnez 6 points d'Endurance. L'ampoule du plafond cligne une fois. Vous jetez le reste dans le seau.",
+      "text": "La trousse de soins se vide sur le banc : deux compresses, une aiguille sous blister, une ampoule jaune que vous cassez entre les doigts et buvez d'un coup. La douleur recule derrière un mur de coton. Vous regagnez 6 points d'Endurance. L'ampoule du plafond cligne une fois, à chaque cri d'en bas, et vous jetez l'emballage dans le seau.",
       "choices": [
         {
           "kind": "aller",
@@ -261,7 +261,7 @@
       ]
     },
     "c09-26": {
-      "text": "La fosse a été lavée. Dans le mur d'en face, une trappe de fer, et derrière, un grondement à deux voix. Pseudo-chiens, dit quelqu'un en haut, et des billets changent de mains. Sur le côté, la grille présente des barreaux horizontaux, assez larges pour un pied. Arnie lève sa clef. Il vous laisse trois secondes.",
+      "text": "La fosse a été lavée et l'eau n'a pas fini de couler vers la bonde. Le mur d'en face s'ouvre sur une trappe de fer peinte en gris, et derrière, deux grondements se répondent. « Pseudo-chiens », dit quelqu'un en haut, et des billets changent de mains. Sur le côté, la grille présente des barreaux horizontaux, assez larges pour poser un pied, et vous n'êtes pas le premier à le voir : il y a des traces de semelle sur la rouille. Arnie lève sa clef, le cigare calé à droite. « Deuxième round. Je compte trois, et la trappe s'ouvre au deux. »",
       "choices": [
         {
           "kind": "aller",
@@ -276,7 +276,7 @@
       ]
     },
     "c09-6": {
-      "text": "Vous sautez sur les barreaux. Le fer est gras, les parieurs tapent dessus pour vous faire tomber, une main attrape votre cheville et lâche. La trappe claque en bas. Il faut tenir, trouver l'appui, et ne pas retomber au mauvais moment. Testez votre Habileté.",
+      "text": "Vous sautez sur les barreaux. Le fer est gras, les parieurs tapent dessus à coups de bottes pour vous faire lâcher, une main attrape votre cheville et lâche quand vous frappez du talon. En bas, la trappe claque. Il faut tenir, trouver l'appui, et ne pas retomber avant d'avoir choisi où. Testez votre Habileté.",
       "test": {
         "type": "stat",
         "stat": "habilete",
@@ -286,7 +286,7 @@
       }
     },
     "c09-2": {
-      "text": "Vous tenez. Les deux pseudo-chiens passent sous vous, se cognent au mur, reviennent. Depuis la grille, vous frappez le premier à la nuque quand il saute, puis vous retombez sur le second. Ils ne viennent qu'un à la fois, maintenant. Leurs yeux sont blancs, leur peau pend. Ils sentent la carcasse.",
+      "text": "Vous tenez. Les deux pseudo-chiens passent sous vous, se cognent au mur, reviennent, et le premier saute : vous le frappez à la nuque au sommet de son bond, puis vous vous laissez tomber sur le second avant qu'il ait compris d'où vous venez. Ils ne viennent plus qu'un à la fois, maintenant. Leurs yeux sont blancs, leur peau pend par plaques, et leur haleine sent la carcasse de trois jours.",
       "combat": {
         "name": "Les pseudo-chiens, un par un",
         "habilete": 5,
@@ -296,7 +296,7 @@
       }
     },
     "c09-14": {
-      "text": "Vous tombez. Le béton vous prend l'épaule, puis les deux bêtes vous prennent le reste. Vous perdez 3 points d'Endurance avant d'être debout. Elles tournent ensemble, l'une attend que l'autre morde. Au-dessus, les parieurs rient. Leur haleine sent la carcasse, et elles mordent à arracher.",
+      "text": "Vous tombez. Le béton vous prend l'épaule, puis les deux bêtes vous prennent le reste. Vous perdez 3 points d'Endurance avant d'être debout. Elles tournent ensemble, l'une attend que l'autre morde, et au-dessus les parieurs rient de ce rire qui vient de la gorge, celui qu'on garde pour les chutes.",
       "effects": [
         {
           "type": "stat",
@@ -313,7 +313,7 @@
       }
     },
     "c09-19": {
-      "text": "La trappe claque. Deux pseudo-chiens sortent ensemble, bas sur pattes, les yeux blancs, la peau en lambeaux. Ils ne vous attaquent pas de front. L'un tourne, l'autre attend que vous le regardiez. Ils mordent à arracher. Au-dessus, personne ne parie plus sur vous.",
+      "text": "La trappe claque et deux pseudo-chiens sortent ensemble, bas sur pattes, les yeux blancs, la peau en lambeaux sur les côtes. Ils ne vous attaquent pas de front. L'un tourne, l'autre attend que vous le regardiez, et ils mordent à arracher. Au-dessus, les billets ont cessé de changer de mains : plus un seul n'est sur vous.",
       "combat": {
         "name": "Les pseudo-chiens",
         "habilete": 7,
@@ -323,7 +323,7 @@
       }
     },
     "c09-27": {
-      "text": "Les deux bêtes sont mortes, l'une sur l'autre. Vous avez du sang de chien jusqu'aux coudes. Arnie ouvre la porte basse et compte plus lentement, cette fois. Vous gagnez 500 roubles. Il regarde vos mains. Le troisième, dit-il, on l'a ramené de la Forêt rouge dans un camion-citerne. Personne n'a encore touché les mille. Puis il retourne à sa grille.",
+      "text": "Les deux bêtes sont mortes, l'une sur l'autre, et vous avez du sang de chien jusqu'aux coudes. Arnie ouvre la porte basse et compte plus lentement, cette fois. Vous gagnez 500 roubles. Il regarde vos mains, pas votre visage. « Deux rounds. Le troisième, on l'a ramené de la Forêt rouge dans un camion-citerne, à six, et on est revenus à quatre. » Le cigare passe de l'autre côté. « Les mille sont encore dans ma poche. Personne n'y a touché, et ça se voit, au mur. » Puis il retourne à sa grille, et la cave reprend son bruit.",
       "effects": [
         {
           "type": "stat",
@@ -340,7 +340,7 @@
       ]
     },
     "c09-8": {
-      "text": "Le vestiaire, de nouveau. Le gros à la veste de pluie est parti, sa table aussi. Il reste le banc, l'ampoule, le seau. Au mur, parmi les bâtons gravés, trois sont entourés d'un cercle. Trois seulement. Par le couloir, on entend quelque chose respirer, lent, trop grave pour un chien. Les parieurs se sont tus.",
+      "text": "Le vestiaire n'a pas changé, sauf que le gros est parti, et sa table avec lui ; il reste le banc, l'ampoule et le seau. Au mur, parmi les bâtons gravés, trois sont entourés d'un cercle au clou, trois seulement, espacés de plusieurs rangées. Par le couloir monte une respiration lente, trop grave pour un chien, et entre deux souffles on entend un cuir qui frotte des barreaux. En haut, les parieurs ne crient plus.",
       "choices": [
         {
           "kind": "aller",
@@ -397,7 +397,7 @@
       ]
     },
     "c09-5": {
-      "text": "Vous nouez le bandage sur la morsure la plus large, à la cuisse. Le tissu colle tout de suite à la plaie. Vous regagnez 3 points d'Endurance. Dans le couloir, la respiration lente s'arrête, puis reprend, comme si la chose avait écouté le bruit du nœud.",
+      "text": "Le bandage va sur la morsure la plus large, à la cuisse, et le tissu colle tout de suite à la plaie. Vous regagnez 3 points d'Endurance. Dans le couloir, la respiration lente s'arrête au bruit du nœud, puis reprend, un peu plus vite.",
       "choices": [
         {
           "kind": "aller",
@@ -407,7 +407,7 @@
       ]
     },
     "c09-23": {
-      "text": "Vous videz la trousse de soins : compresses sur les morsures, l'aiguille dans la cuisse, sans regarder. La douleur s'éloigne derrière une vitre. Vous regagnez 6 points d'Endurance. Vous jetez l'emballage dans le seau. L'eau rouge le recouvre lentement, puis il coule.",
+      "text": "La trousse de soins y passe entière : compresses sur les morsures, l'aiguille dans la cuisse, sans regarder le liquide. En dix secondes, la jambe ne pèse plus rien. Vous regagnez 6 points d'Endurance. L'emballage tombe dans le seau, où l'eau rouge le recouvre, et il coule.",
       "choices": [
         {
           "kind": "aller",
@@ -422,7 +422,7 @@
         "alt": "Une Chimère au cuir noir dans une cage ouverte sur la fosse de l'Arène",
         "prompt": "Dans la fosse de béton de l'Arène, sous les projecteurs de chantier, le mur d'en face s'est ouvert sur une cage de camion-citerne. Dedans, une Chimère : une tête et une bosse qui respire, des pattes trop longues, un cuir noir qui luit. Au-dessus, les parieurs reculent de la grille ; à l'écart, un homme en costume trop petit lève une clef. Le héros n'est pas visible."
       },
-      "text": "Ils ont ouvert le mur. Derrière, une cage de camion-citerne, et dedans, une « Chimère » : deux têtes, ou une tête et une bosse qui respire, des pattes trop longues, un cuir noir qui luit sous les projecteurs. Elle ne grogne pas. Elle vous regarde et calcule la distance. Les parieurs reculent de la grille. Arnie lève sa clef, et sa main tremble un peu.",
+      "text": "Ils ont ouvert le mur. Derrière, une cage découpée dans une citerne de camion, les soudures encore brillantes, et dedans, ce qu'Arnie appelle une « Chimère » : deux têtes, ou une tête et une bosse qui respire, des pattes trop longues pliées sous elle, un cuir noir qui luit sous les projecteurs comme un pneu mouillé. Elle ne grogne pas. Elle vous regarde, et sa tête fait deux fois le même mouvement, de vous à la grille, de la grille à vous, le temps d'une mesure. Les parieurs ont reculé d'un pas et plus aucun ne parle. Arnie lève sa clef, et sa main tremble un peu. « Troisième round », dit-il, moins fort que les deux autres.",
       "choices": [
         {
           "kind": "attaquer",
@@ -446,7 +446,7 @@
       ]
     },
     "c09-10": {
-      "text": "La Chimère sort de la cage en deux bonds. Elle frappe à casser des os, et elle frappe depuis des angles où rien ne devrait pouvoir frapper. Vous ne voyez que des pattes et des dents. Le béton tremble sous elle. Au-dessus, plus personne ne crie.",
+      "text": "La Chimère sort de la cage en deux bonds et le béton tremble sous le second. Elle frappe à casser des os, et elle frappe depuis des angles où une bête n'a pas de patte. Vous ne voyez que des dents, puis un flanc, puis des dents. Au-dessus, la cave entière retient sa voix.",
       "combat": {
         "name": "La Chimère",
         "habilete": 8,
@@ -456,7 +456,7 @@
       }
     },
     "c09-28": {
-      "text": "Vous collez le dos à la grille et vous attendez. Elle se ramasse, les pattes arrière tremblent, la bosse sur son dos respire plus vite. Il faut qu'elle saute, et qu'au dernier instant vous ne soyez plus là, pour que le fer la reçoive à votre place. Tentez votre Chance.",
+      "text": "Dos à la grille, vous attendez. Elle se ramasse, les pattes arrière tremblent, la bosse sur son dos respire plus vite, et les parieurs derrière vous s'écartent du fer sans que vous ayez besoin de le leur demander. Il faut qu'elle saute, et qu'au dernier instant vous ne soyez plus là, pour que la grille la reçoive à votre place. Tentez votre Chance.",
       "test": {
         "type": "luck",
         "success": "c09-24",
@@ -464,7 +464,7 @@
       }
     },
     "c09-24": {
-      "text": "Elle s'écrase dans la grille à l'endroit où vous étiez. Le fer plie, deux parieurs tombent en arrière. Quand elle se retourne, une de ses pattes avant traîne et le cuir est ouvert sur le flanc. Elle frappe toujours à casser des os. Mais elle est moins longue à tuer.",
+      "text": "Elle s'écrase dans la grille à l'endroit où vous étiez. Le fer plie, deux parieurs tombent en arrière sur les autres, et un barreau se détache avec le bruit d'un essieu. Quand elle se retourne, une de ses pattes avant traîne et le cuir est ouvert sur le flanc, d'où coule un liquide clair. Elle frappe toujours aussi fort, mais elle sera moins longue à tuer.",
       "combat": {
         "name": "La Chimère blessée",
         "habilete": 8,
@@ -474,7 +474,7 @@
       }
     },
     "c09-13": {
-      "text": "Elle ne saute pas. Elle vous cueille contre la grille, et le fer vous rentre dans le dos pendant qu'elle vous roule dessous. Vous perdez 3 points d'Endurance. Quand vous vous relevez, elle est déjà au centre, intacte, et elle attend. Elle frappe à casser des os.",
+      "text": "Elle ne saute pas. Elle vous cueille contre la grille, et le fer vous rentre dans le dos pendant qu'elle vous roule dessous. Vous perdez 3 points d'Endurance. Quand vous vous relevez, elle est déjà au centre, intacte, assise comme un chien de ferme, et elle attend que vous soyez debout pour frapper.",
       "effects": [
         {
           "type": "stat",
@@ -491,7 +491,7 @@
       }
     },
     "c09-7": {
-      "text": "Vous épaulez l'AK-74 et vous videz le chargeur dans la cage. La Chimère hurle, enfin, et s'affaisse contre les barreaux. Le silence dure une seconde. Puis les parieurs sifflent. Arnie ne compte rien. Il crache son cigare dans la fosse. Pas d'armes, dit-il. Les mille restent dans ma poche, et toi, tu ne redescends plus. Deux hommes vous poussent vers l'escalier.",
+      "text": "L'AK-74 vient à l'épaule et le chargeur part entier dans la cage. La Chimère hurle, enfin, et s'affaisse contre les barreaux dans une pluie d'étincelles. Pendant une seconde, on n'entend que la dernière douille qui roule. Puis les parieurs sifflent, tous, et les sifflets rebondissent sur le béton. Arnie ne compte rien. Il crache son cigare dans la fosse. « Pas d'armes. Le public aime le sang, pas le bruit. » Il sourit, mais à la fosse, pas à vous. « Les mille restent dans ma poche, et toi, tu ne redescends plus. » Deux hommes vous prennent par les coudes et vous poussent vers l'escalier.",
       "choices": [
         {
           "kind": "aller",
@@ -501,7 +501,7 @@
       ]
     },
     "c09-16": {
-      "text": "La Chimère est morte, la gueule ouverte sur le béton. Vous n'entendez plus que votre propre sang. Puis la cave explose. Arnie descend lui-même dans la fosse, ce qu'il ne fait jamais, et vous compte mille roubles sous les projecteurs, devant tout le monde. Vous gagnez 1 000 roubles. Il grave lui-même un bâton sur le mur, et l'entoure.",
+      "text": "La Chimère est morte, la gueule ouverte sur le béton, et sa bosse respire encore deux fois avant de s'arrêter. Pendant un instant, il n'y a que votre sang qui cogne dans vos oreilles. Puis la cave explose, trente voix d'un coup, et les grilles sonnent sous les bottes. Arnie descend lui-même dans la fosse par l'échelle de fer, et quelqu'un en haut dit « Il descend jamais, lui », et il vous compte mille roubles sous les projecteurs, billet après billet, devant tout le monde. Vous gagnez 1 000 roubles. « Trois rounds. Trois sur trois, et devant témoins. » Puis il passe par la porte basse, et vous l'entendez gratter le béton du vestiaire avec un clou : un bâton de plus, et un cercle autour.",
       "effects": [
         {
           "type": "stat",
@@ -527,7 +527,7 @@
       ]
     },
     "c09-20": {
-      "text": "On vous tend des verres que vous ne buvez pas. Le gros à la veste de pluie est revenu, il vous serre le bras, celui qu'il a tordu. Arnie fume à l'écart, le regard sur la Chimère qu'on hisse avec un treuil. Il dit, sans se tourner vers vous : là d'où elle vient, il y en a d'autres. Et pire que ça. Garde tes roubles pour là-haut. L'escalier vous attend.",
+      "text": "On vous tend des verres que vous ne buvez pas, et une main vous frappe l'épaule à chaque pas. Le gros à la veste de pluie est revenu, sans sa table, et il vous serre le bras droit, celui qu'il voulait sur son bois. « Quatre cercles. J'avais parié sur trois. » Arnie fume à l'écart, le regard sur la Chimère qu'on hisse au treuil par une patte arrière, et il parle sans se tourner vers vous. « Là d'où elle vient, il y en a d'autres. Et des pires, qui ne tiennent pas dans une citerne. » Le cigare roule d'un coin à l'autre. « Garde tes roubles pour là-haut. Ici, tu as tout pris. » L'escalier remonte vers la cuisine, et la Chimère, au bout de sa chaîne, tourne lentement sous les projecteurs, la tête vers le nord.",
       "choices": [
         {
           "kind": "aller",

@@ -6,17 +6,29 @@ La Zone d'exclusion de Tchernobyl a changé en 2006 : anomalies, mutants, artefa
 
 ## Style et ton
 
-Style « sobre » (`styles.md`). Deuxième personne, présent, phrases courtes, ellipses, une image concrète par paragraphe, 40 à 90 mots. Ton sombre et étrange : la Zone est silencieuse, les gens parlent peu et mentent un peu, les morts restent où ils tombent. Pas d'humour hormis celui, sec, des stalkers au feu. Jamais d'explication de ce que le joueur peut déduire.
+Style « sobre » (`styles.md`), section « Prose » de `writing.md` en entier. Deuxième personne, présent, phrases de longueur variée, ellipses rares, une image concrète par scène, 30 à 160 mots selon ce que la scène demande. Ton sombre et étrange : la Zone est silencieuse, les gens parlent peu et mentent un peu, les morts restent où ils tombent. Pas d'humour hormis celui, sec, des stalkers au feu. Jamais d'explication de ce que le joueur peut déduire. Les personnages parlent entre guillemets, à la voix de leur fiche ; le narrateur ne résume pas une réplique qu'il peut donner.
 
 Exemples de la voix :
 
-> Le détecteur crépite une fois, puis se tait. Devant vous, l'air tremble au-dessus de la route comme au-dessus d'un capot chaud. Vous lancez un boulon. Il ne retombe pas.
+> La route monte entre deux talus de ronces mortes, et au sommet, là où elle redescend vers le remblai, l'air tremble au-dessus du goudron comme au-dessus d'un capot laissé au soleil. Vous lancez un boulon. Il monte, s'arrête à hauteur d'homme, et reste là.
 
-> Sidorovitch ne lève pas les yeux de son carnet. Deux cents pour la veste. Vous n'avez pas deux cents. Il le sait.
+> Sidorovitch ne lève pas les yeux de son carnet. « Deux cents la veste. » Vous n'avez pas deux cents, et il le sait, puisque c'est lui qui vous a donné les cent cinquante.
+
+Refrains voulus : le détecteur qui crépite (une fois par chapitre au plus, jamais en clôture), la prière du Monolithe avant un tir, « Vous prenez N rads ».
 
 Règles dans le texte : en toutes lettres, sans capitales ni injonction. « Vous perdez 2 points d'Endurance. » « Vous prenez 3 rads. » « Il vous reste 150 roubles. » Un objet est montré, jamais expliqué : « avec ça, les balles font moins mal » suffit.
 
 Interdits : « rendez-vous au », conditionnelles annonçant les choix, « Testez votre » (dire : « Tentez votre Chance. » ou « Testez votre Habileté. » seulement, une fois, en fin de paragraphe de test), noms de marques modernes, références aux jeux vidéo. Vouvoiement du lecteur. Les personnages se tutoient entre eux.
+
+## Diapason
+
+Provisoire, écrit par l'orchestrateur : à remplacer par l'auteur quand il le souhaite. Trois paragraphes de longueurs différentes, dans la voix exacte de l'histoire.
+
+> Le Barman essuie le même verre depuis que vous êtes entré, et le bar « 100 Rads » sent la soupe, le tabac et le gasoil du générateur qui cogne derrière le mur. « Qu'est-ce que tu as. » Vous posez les Documents du X-18 sur le zinc. Il finit son verre, le range à l'envers sur la planche avec les autres, puis tire la liasse vers lui d'un doigt et la glisse sous le comptoir sans l'avoir ouverte. « Le X-18. Borov te laisse sortir, maintenant ? » Vous répondez que Borov ne laisse plus sortir personne. Il hoche la tête comme on hoche la tête à une météo. « Ça vaut un lit pour la nuit, et le repas. Le Guide, c'est autre chose : tu le mérites ou tu ne l'as pas. Il est au fond, dos au mur. Ne lui offre pas à boire. »
+
+> Vous redescendez par l'escalier de service. Douze marches, une porte de fer, la cour.
+
+> Le chien de tête s'arrête au milieu de la route et les deux autres s'arrêtent derrière lui, sans un grognement, les naseaux ouverts vers vous, et pendant que vous relevez le Makarov vous avez le temps de remarquer que ses paupières ont été cousues, proprement, avec du fil noir. Il charge au moment où vous tirez.
 
 ## Héros
 
@@ -105,31 +117,44 @@ Comment écrire la radiation : « Le compteur grimpe. Vous prenez 3 rads. » Com
 
 ## Personnages
 
-**Sidorovitch** (c01). Marchand du Cordon, gros, chemise tachée, carnet. Ne lève pas les yeux. Parle en chiffres. « Deux cents la veste. Cent cinquante l'anti-rad. Et tu me dois encore le dernier. » Veut des artefacts, achète tout, ne fait pas de cadeaux.
+Chaque fiche donne la voix : registre, trois répliques types, un tic, ce que le personnage ne dit jamais. Un rédacteur s'en sert comme modèle, il ne recopie pas les répliques.
 
-**Le Loup** (c01). Chef du village des débutants, veste kaki, calme. Explique une fois, pas deux. « Un boulon avant chaque pas. Le détecteur avant chaque boulon. » Sait où est le tunnel du remblai.
+**Sidorovitch** (c01). Marchand du Cordon, gros, chemise tachée, carnet. Ne lève pas les yeux. Veut des artefacts, achète tout, ne fait pas de cadeaux. Sait qui entre et sort du Cordon, tait ce que Strelok lui a laissé.
+Voix : tutoie, phrases courtes, tout en chiffres et en marchandises, jamais un mot sur la Zone elle-même. Répliques : « Deux cents la veste. Cent cinquante l'anti-rad. Et tu me dois encore le dernier. » / « Je n'achète pas les histoires. Pose l'artefact ou pose rien. » / « Tu reviens vivant, on reparle du prix. » Tic : répète le prix une seconde fois, plus bas, comme pour lui-même. Ne dit jamais : merci, s'il te plaît, un prénom.
 
-**Sergent-chef Kouznetsov** (c07). Devoir. Grand, gris, lunettes de visée relevées. « Papiers. Sac. Le nord n'est pas pour vous. » Laisse passer avec un laissez-passer, contre 500 roubles, ou pas du tout.
+**Le Loup** (c01). Chef du village des débutants, veste kaki, calme. Explique une fois, pas deux. Sait où est le tunnel du remblai et combien de débutants n'en sont pas revenus ; ne le dit pas en chiffres.
+Voix : tutoie, phrases d'instruction, verbes à l'infinitif, pas de question. Répliques : « Un boulon avant chaque pas. Le détecteur avant chaque boulon. » / « Le tunnel, c'est à droite après le remblai. Tu y vas de jour ou tu n'y vas pas. » / « Je ne te le redirai pas. » Tic : termine en désignant du menton la direction dont il parle. Ne dit jamais : bonne chance, fais attention, je ne sais pas.
 
-**Borov** (c05). Chef des bandits de la Vallée sombre, crâne rasé, gilet d'or sur un blouson de cuir. Parle à la troisième personne de lui-même. Garde la Clef du X-18 autour du cou.
+**Sergent-chef Kouznetsov** (c07). Devoir. Grand, gris, lunettes de visée relevées. Laisse passer avec un laissez-passer, contre 500 roubles, ou pas du tout. Sait ce qui se passe au nord depuis trois semaines et tait pourquoi le Devoir n'y monte plus.
+Voix : vouvoie, mots isolés, militaire, chaque phrase est un ordre ou un constat. Répliques : « Papiers. Sac. » / « Le nord n'est pas pour vous. Le nord n'est pour personne. » / « Cinq cents, et je ne vous ai pas vu. » Tic : relève ses lunettes de visée d'un doigt avant de répondre. Ne dit jamais : pourquoi, peut-être, une plaisanterie.
 
-**Le Barman** (c08). Tablier, bras épais, mémoire infinie. « Qu'est-ce que tu as, qu'est-ce que tu veux. » Achète les documents, vend tout ce qui se boit, dit où est le Guide quand on l'a mérité.
+**Borov** (c05). Chef des bandits de la Vallée sombre, crâne rasé, gilet d'or sur un blouson de cuir. Garde la Clef du X-18 autour du cou. Veut qu'on le respecte, sait que ses hommes ont peur du laboratoire.
+Voix : tutoie, parle de lui à la troisième personne, phrases larges, théâtrales, qui réclament un public. Répliques : « Borov ne tue pas les invités. Borov les laisse choisir. » / « Tu as vu la clef ? Tout le monde voit la clef. Personne ne la prend. » / « On dit que Borov est généreux. On dit ça quand on est mort. » Tic : touche la clef sous son col quand il ment. Ne dit jamais : je, j'ai peur, le X-18 par son nom.
 
-**Le Guide** (c08, c17). Un vieux stalker qui ne boit pas, veste grise, assis dos au mur. Le seul qui soit allé au nord et revenu. Parle par phrases de cinq mots. Donne sa carte à qui lui prouve qu'il sait pour Strelok.
+**Le Barman** (c08). Tablier, bras épais, mémoire infinie. Achète les documents, vend tout ce qui se boit, dit où est le Guide quand on l'a mérité. Sait tout ce qui s'est dit au bar depuis dix ans ; ne répète que ce qui se paie.
+Voix : tutoie, questions sans point d'interrogation, phrases plates, un verre toujours en main. Répliques : « Qu'est-ce que tu as, qu'est-ce que tu veux. » / « Ça vaut un lit pour la nuit. Pas plus. » / « Le Guide, tu le mérites ou tu ne l'as pas. » Tic : range un verre à l'envers sur la planche avant de donner un prix. Ne dit jamais : s'il te plaît, je crois, un nom de mort.
 
-**Arnie** (c09). Gérant de l'Arène, costume trop petit, cigare. « Trois rounds. Tu vis, tu touches. »
+**Le Guide** (c08, c17). Un vieux stalker qui ne boit pas, veste grise, assis dos au mur. Le seul qui soit allé au nord et revenu. Donne sa carte à qui lui prouve qu'il sait pour Strelok. Sait ce qu'il y a derrière le Brûleur ; le tait parce qu'on ne le croirait pas.
+Voix : tutoie, cinq mots par phrase, jamais plus, pas de description, des noms de lieux et des verbes. Répliques : « Le nord ne rend pas. » / « Strelok savait. Il est reparti. » / « Carte. Pas de questions. Marche. » Tic : compte sur ses doigts les étapes du chemin en les nommant. Ne dit jamais : une phrase de plus de cinq mots, pourquoi, j'ai vu.
 
-**Professeur Sakharov** (c11). Vieux, lunettes épaisses, blouse sous la combinaison. Parle vite, pose des questions sans attendre la réponse. Échange la Combinaison SEVA contre un artefact « Âme » ou 2 000 roubles, donne le Casque psi à qui éteint le X-16.
+**Arnie** (c09). Gérant de l'Arène, costume trop petit, cigare. Veut du spectacle et sa part. Sait quel combattant est drogué.
+Voix : tutoie, bonimenteur, phrases rythmées en deux temps, chiffres et promesses. Répliques : « Trois rounds. Tu vis, tu touches. » / « Le public aime le sang. Moi, j'aime le public. » / « Tu signes avec ta tête, pas avec ta main. » Tic : fait rouler son cigare d'un coin de la bouche à l'autre entre deux phrases. Ne dit jamais : désolé, trop dangereux, un prix sans sourire.
+
+**Professeur Sakharov** (c11). Vieux, lunettes épaisses, blouse sous la combinaison. Échange la Combinaison SEVA contre un artefact « Âme » ou 2 000 roubles, donne le Casque psi à qui éteint le X-16. Sait ce que l'émetteur fait aux hommes ; tait qu'il a aidé à le construire.
+Voix : vouvoie, parle vite, enchaîne les questions sans attendre, vocabulaire de laboratoire, digressions. Répliques : « Vous venez du sud ? Par Rostok ? Combien de rads, à peu près, vous avez un compteur, montrez. » / « L'Âme, oui, l'Âme ou deux mille, je ne fais pas de sentiment, je fais de la science. » / « Si vous éteignez le X-16, revenez, j'ai quelque chose pour votre tête. Si vous ne l'éteignez pas, ne revenez pas, ça ne servirait à rien. » Tic : essuie ses lunettes avec un pan de blouse pendant que l'autre parle. Ne dit jamais : je ne sais pas, c'est impossible, une phrase sans question.
 
 **Le Forestier** (c14). Un homme sans âge dans une cabane de la Forêt rouge, fusil sur les genoux. Sait tout de la forêt et rien d'ailleurs. Indique l'Oasis et le chemin du Radar.
+Voix : tutoie, lent, parle de la forêt comme d'une personne, images de bois et de bêtes, jamais de chiffres. Répliques : « La forêt ne te veut pas de mal. Elle ne te veut rien. » / « Le Radar, c'est par la clairière aux bouleaux morts. Tu passes au matin, quand elle dort. » / « L'Oasis, ça existe. Ce que les gens en racontent, non. » Tic : s'arrête au milieu d'une phrase pour écouter quelque chose dehors, puis reprend. Ne dit jamais : roubles, Rostok, Monolithe, un nom d'homme.
 
-**Fantôme** (mort, c13, c19). Compagnon de Strelok. Son corps est aux Entrepôts, son PDA dit où il a caché le Décodeur : hôtel Polissya, chambre 26.
+**Fantôme** (mort, c13, c19). Compagnon de Strelok. Son corps est aux Entrepôts, son PDA dit où il a caché le Décodeur : hôtel Polissya, chambre 26. Voix seulement par les notes du PDA : phrases datées, sèches, fautes de frappe, un homme pressé qui écrit pour un seul lecteur. « 14.09. Strelok est passé. Le décodeur au Polissya, 26, dans la grille d'aération. Si tu lis ça, Guêpe, ne monte pas. »
 
-**Strelok** (absent). Le stalker qui est allé au centre trois fois. Sa cache est sous Agroprom. Sa Clé USB contient ce qu'il a compris de la C-Conscience. Personne ne sait où il est. Vous ne savez pas qui vous êtes.
+**Strelok** (absent). Le stalker qui est allé au centre trois fois. Sa cache est sous Agroprom. Sa Clé USB contient ce qu'il a compris de la C-Conscience. Personne ne sait où il est. Vous ne savez pas qui vous êtes. Aucune réplique directe : on le cite, on ne l'entend pas.
 
 **Le Monolithe** (c13 à c30). Des hommes en combinaisons grises et masques, yeux blancs, qui parlent du Monolithe comme d'une personne. Ils ne négocient pas. Ils prient avant de tirer.
+Voix : vouvoient le Monolithe, ne s'adressent jamais au héros, psalmodie à la première personne du pluriel, phrases qui tournent sur elles-mêmes. Répliques : « Nous sommes venus. Nous avons entendu. Nous restons. » / « Il voit celui qui marche. Il n'a pas besoin de nous. Nous tirons quand même. » / « Reçois-le, reçois-le, reçois-le. » Tic : la prière reprend au mot où elle s'est interrompue, après le tir. Ne disent jamais : je, pourquoi, un nom de lieu du sud.
 
-**La C-Conscience** (c30). Sept voix qui parlent ensemble dans la tête. Calmes, raisonnables. « Nous avons essayé de réparer. Nous avons besoin de bras. »
+**La C-Conscience** (c30). Sept voix qui parlent ensemble dans la tête. Calmes, raisonnables. Savent ce qu'elles ont fait à la Zone ; le présentent comme une réparation.
+Voix : vouvoient, première personne du pluriel, phrases complètes, syntaxe de rapport, aucune émotion, aucune image. Répliques : « Nous avons essayé de réparer. Nous avons besoin de bras. » / « Vous êtes arrivé jusqu'ici. Cela constitue, selon nos critères, une qualification. » / « Le refus est une option. Elle a été prévue. » Tic : énoncent le nombre exact de ceux qui sont venus avant. Ne disent jamais : une métaphore, un juron, le mot Zone.
 
 ## Glossaire
 

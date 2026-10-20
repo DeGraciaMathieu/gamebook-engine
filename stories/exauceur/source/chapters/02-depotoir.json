@@ -43,7 +43,7 @@
         "alt": "L'entrée du Dépotoir, collines de camions empilés et le hangar de béton au loin",
         "prompt": "Une route sort d'entre deux talus et s'arrête devant des collines qui sont des camions empilés, des bennes et des carcasses de bus entassées jusqu'au ciel bas. L'air tremble de chaleur au-dessus de la ferraille. Au loin, un cube de béton gris sans fenêtre : le hangar. À gauche de la route, un bus couché sur le flanc. Une silhouette de stalker, de dos et de loin, regarde les collines depuis le bord de la route."
       },
-      "text": "La route sort du Cordon entre deux talus et s'arrête devant les collines. Ce ne sont pas des collines. Des camions empilés, des bennes, des carcasses de bus à perte de vue, et par-dessus une couleur de rouille que la lumière n'arrange pas. L'air sent le fer chaud. Au loin, un cube de béton gris : le hangar. Le détecteur cliquette sans se presser. À gauche de la route, un bus couché sur le flanc.",
+      "text": "La route sort d'entre les deux talus et s'arrête net, parce qu'au-delà il n'y a plus de route : des camions empilés sur trois hauteurs, des bennes, des carcasses de bus Ikarus couchées les unes sur les autres jusqu'au ciel bas, et sur tout cela une rouille que la lumière du matin n'arrange pas. L'air sent le fer chaud. Au fond, posé entre deux collines, un cube de béton gris sans fenêtre, le hangar dont on parlait au feu du Cordon. Le détecteur cliquette sans se presser, à la ceinture. À gauche de la chaussée, un bus est couché sur le flanc, les rideaux encore tirés derrière les vitres sales.",
       "choices": [
         {
           "kind": "aller",
@@ -63,7 +63,7 @@
       ]
     },
     "c02-17": {
-      "text": "Le bus a gardé ses rideaux. Dedans, un homme assis contre la dernière banquette, les mains sur les genoux, comme s'il attendait l'arrêt. Il est là depuis longtemps. Son sac est vide, sauf une poche cousue à l'intérieur de la veste : 60 roubles. Vous les prenez. Le compteur grimpe. Vous prenez 2 rads.",
+      "text": "Les rideaux ont gardé le bus dans une pénombre jaune. Sur la dernière banquette, un homme est assis les mains sur les genoux, la tête contre la vitre, la peau brune et tendue sur les os, et il attend l'arrêt depuis un hiver au moins. Son sac ne contient rien. Dans une poche cousue à l'intérieur de sa veste, en revanche, 60 roubles pliés en quatre, que vous prenez en évitant son visage. Le compteur grimpe. Vous prenez 2 rads. Vous refermez la veste sur lui avant de redescendre.",
       "effects": [
         {
           "type": "stat",
@@ -90,7 +90,7 @@
       ]
     },
     "c02-9": {
-      "text": "La route traverse à découvert. Pas d'arbre, pas de mur, des pylônes couchés et de la ferraille de chaque côté. Le compteur grimpe. Vous prenez 2 rads. Vous courez. À mi-chemin, un camion renversé barre la moitié de la chaussée, les roues en l'air, la remorque éventrée. Plus loin, un pylône encore debout fait une ombre étroite.",
+      "text": "La route traverse le Dépotoir à découvert, pas un arbre ni un mur, rien que des pylônes couchés et de la ferraille des deux côtés, et dès le premier pas le cliquetis à votre ceinture se resserre. Vous prenez 2 rads. Vous courez. À mi-chemin, un camion KamAZ renversé barre la moitié de la chaussée, les roues en l'air, la remorque éventrée sur toute sa longueur ; cent mètres plus loin, un pylône encore debout découpe sur le goudron une ombre étroite comme une planche.",
       "effects": [
         {
           "type": "stat",
@@ -112,7 +112,7 @@
       ]
     },
     "c02-26": {
-      "text": "Vous vous collez au pied du pylône. Le béton est frais. Le compteur se calme. De là, le hangar est à deux cents mètres, porte ouverte, un fil de fumée qui en sort. Deux silhouettes devant. Elles ne bougent pas. Derrière vous, le camion renversé, les roues en l'air, et le soleil qui tape dessus.",
+      "text": "Le béton du pylône est frais contre votre dos, dans la bande d'ombre, et le compteur ralentit. De là, le hangar est à deux cents mètres, porte ouverte sur un fil de fumée, et devant la porte deux silhouettes assises sur des caisses, qui ne se sont pas levées en vous voyant courir. Derrière vous, le KamAZ renversé prend le soleil sur ses roues.",
       "choices": [
         {
           "kind": "aller",
@@ -127,7 +127,7 @@
       ]
     },
     "c02-14": {
-      "text": "Le camion est couché sur le flanc, la cabine en l'air, le pare-brise étoilé. Sous la remorque, l'ombre est épaisse et le compteur se tait presque. Par la portière ouverte, là-haut, une manche pend. La remorque est fendue sur toute la longueur. Dedans, des bâches, et quelque chose de rond qui ne bouge pas.",
+      "text": "Le KamAZ est couché sur le flanc, la cabine à trois mètres du sol, le pare-brise étoilé d'un seul impact. Sous la remorque, l'ombre est épaisse et le compteur se calme presque. Par la portière restée ouverte, là-haut, une manche de veste pend et remue quand le vent la touche. La remorque est fendue sur toute sa longueur ; dedans, des bâches de toile cirée, et sous les bâches une forme ronde que vous ne distinguez pas d'ici.",
       "choices": [
         {
           "kind": "aller",
@@ -147,7 +147,7 @@
       ]
     },
     "c02-31": {
-      "text": "La tôle est lisse, chauffée, sans prise. Vous posez le pied sur le réservoir, la main sur le rétroviseur. Il grince. Trois mètres jusqu’à la portière, et la ferraille en dessous, qui attend. Dans la cabine, la manche ne bouge pas. Le compteur, lui, ne cliquette plus. Testez votre Habileté.",
+      "text": "La tôle est lisse, chauffée à blanc, pas la moindre prise. Vous posez le pied sur le réservoir, la main sur le rétroviseur, qui grince et plie sous votre poids pendant que vous cherchez la portière des yeux, trois mètres plus haut, avec en dessous la ferraille qui attend. Le rétroviseur grince une seconde fois. Testez votre Habileté.",
       "test": {
         "type": "stat",
         "stat": "habilete",
@@ -157,7 +157,7 @@
       }
     },
     "c02-6": {
-      "text": "Vous vous hissez dans la cabine. Le chauffeur est encore à sa place, la ceinture bouclée, le visage tourné vers la vitre. Sur ses genoux, un Masque à gaz, les sangles défaites, comme s'il n'avait pas eu le temps. Vous le prenez. L'odeur de caoutchouc vous suit en redescendant.",
+      "text": "Dans la cabine, le chauffeur est encore à sa place, la ceinture bouclée, le visage tourné vers la vitre, et c'est sa manche que vous avez vue d'en bas. Sur ses genoux, un Masque à gaz GP-5, les sangles défaites, le filtre encore vissé. Vous le prenez. Le caoutchouc sent le talc et le vieux, et cette odeur vous suit jusqu'en bas de la remorque.",
       "effects": [
         {
           "type": "item",
@@ -179,7 +179,7 @@
       ]
     },
     "c02-22": {
-      "text": "Le rétroviseur cède. Vous tombez sur la ferraille, le dos le premier. Une tôle vous ouvre l’avant-bras. Vous perdez 3 points d’Endurance. Là-haut, la manche pend toujours, tranquille. Le sang goutte sur la rouille, et la rouille le boit sans rien dire.",
+      "text": "Le rétroviseur cède. Vous tombez sur la ferraille, le dos le premier, et une tôle vous ouvre l'avant-bras du coude au poignet. Vous perdez 3 points d'Endurance. Là-haut, la manche pend toujours, tranquille, à la même portière. Le sang goutte sur la rouille.",
       "effects": [
         {
           "type": "stat",
@@ -206,7 +206,7 @@
       ]
     },
     "c02-38": {
-      "text": "Sous les bâches, une bobine de Corde, trente mètres de chanvre épais qui sent le gasoil. Quelqu'un l'a laissée là en partant vite. Vous l'enroulez sur votre épaule. Le reste de la remorque, c'est des bidons vides et une chaussure.",
+      "text": "Sous les bâches, une bobine de Corde, trente mètres de chanvre épais qui sent le gasoil, encore ficelée, que le chauffeur n'a jamais eu le temps de dérouler. Vous l'enroulez en huit sur votre épaule. Le reste de la remorque tient en trois bidons vides, un cric et une chaussure gauche.",
       "effects": [
         {
           "type": "item",
@@ -233,7 +233,7 @@
       ]
     },
     "c02-11": {
-      "text": "Vous quittez la route. Les collines sont des camions. Vous marchez sur des capots, des portières, des bennes retournées, et sous vos semelles la tôle sonne. Le compteur grimpe sans s'arrêter. Vous prenez 3 rads. En bas, entre deux carcasses, un couloir de rouille mène vers le hangar. Quelque chose y respire.",
+      "text": "Vous quittez la route et vous montez. Les collines sont des camions, et vous marchez sur des capots, des portières, des bennes retournées qui sonnent sous les semelles comme des cloches fêlées, et le compteur n'a plus de pause entre deux tics. Vous prenez 3 rads. En bas, entre deux carcasses, un couloir de rouille s'ouvre vers le hangar, et de ce couloir monte un souffle de bête, régulier, plusieurs poitrines à la fois.",
       "effects": [
         {
           "type": "stat",
@@ -255,7 +255,7 @@
       ]
     },
     "c02-29": {
-      "text": "Ils sont cinq. Des chiens aveugles, la peau sur les côtes, les yeux comme des croûtes. Ils ne grognent pas. Ils lèvent le museau, ils vous prennent au vent, et ils viennent. Le premier a les crocs jaunes et une oreille en moins. C'est lui qui mène les autres.",
+      "text": "Ils sont cinq. Des chiens aveugles, la peau sur les côtes, les orbites fermées par des croûtes, et ils ne grognent pas : ils lèvent le museau, vous prennent au vent, et viennent. Celui de tête a les crocs jaunes et une oreille arrachée ; il s'arrête à dix mètres de vos bottes, et les quatre autres s'arrêtent avec lui.",
       "choices": [
         {
           "kind": "attaquer",
@@ -286,7 +286,7 @@
       ]
     },
     "c02-19": {
-      "text": "Vous tirez. Le chien de tête tombe sans un bruit, les pattes encore en mouvement. Les autres s'arrêtent. Ils sentent le sang, ils hésitent, puis ils se jettent sur lui. Vous reculez pendant qu'ils mangent. Le coup de feu roule entre les carcasses et va s'écraser contre le hangar. Là-bas, quelqu'un a entendu.",
+      "text": "Vous tirez. Le chien de tête tombe sans un cri, les pattes encore en mouvement, et les autres s'arrêtent net ; ils sentent le sang, hésitent une seconde, puis se jettent sur lui plutôt que sur vous. Vous reculez pendant qu'ils mangent. Le coup de feu roule entre les carcasses, rebondit de tôle en tôle et va s'écraser contre le béton du hangar, et vous rechargez en marchant, le dos tourné aux chiens qui mangent.",
       "choices": [
         {
           "kind": "aller",
@@ -296,7 +296,7 @@
       ]
     },
     "c02-35": {
-      "text": "Vous sortez le couteau. Ils arrivent ensemble, bas, par les jambes. Pas un bruit, sauf les griffes sur la tôle et le souffle court des bêtes. Le premier saute. Vous sentez son haleine avant ses dents. Dans la ferraille, on ne recule pas. On se bat, ou on court.",
+      "text": "Le couteau sort. Ils arrivent ensemble, bas, par les jambes, rien que les griffes sur la tôle et le souffle court des bêtes. Le premier saute, et vous sentez son haleine avant ses dents. Cinq gueules pour une lame, et sous vos pieds la tôle qui sonne à chaque pas que vous perdez.",
       "combat": {
         "name": "Les chiens aveugles",
         "habilete": 5,
@@ -308,7 +308,7 @@
       }
     },
     "c02-8": {
-      "text": "Vous courez. La tôle cède sous vos pieds, se relève, vous rattrape. Un chien vous a pris le mollet, vous le laissez derrière. Vous perdez 2 points d'Endurance. Le couloir de rouille débouche sur le plat, en plein soleil. Le compteur grimpe. Vous prenez 2 rads. Devant vous, le hangar. Les chiens n'y vont pas.",
+      "text": "Vous courez. La tôle cède sous vos pieds, se relève, vous rattrape. Un chien vous a pris le mollet et vous le laissez derrière, avec un morceau de pantalon dans la gueule. Vous perdez 2 points d'Endurance. Le couloir de rouille débouche sur le plat, en plein soleil, et l'aiguille du compteur repart. Vous prenez 2 rads. Devant vous, le hangar ; les chiens s'arrêtent à la limite de la ferraille, là où la tôle devient herbe, et n'en sortent pas.",
       "effects": [
         {
           "type": "stat",
@@ -325,7 +325,7 @@
       ]
     },
     "c02-24": {
-      "text": "Le dernier chien se traîne vers les carcasses, une patte en l'air. Les autres sont là, sur la tôle, et déjà la ferraille a l'air de les absorber. Vous essuyez le couteau sur votre pantalon. Vos mains tremblent. Pas la peur : le fer. Le couloir débouche au pied du hangar.",
+      "text": "Le dernier chien se traîne vers les carcasses, une patte arrière en l'air, et vous le laissez partir. Les quatre autres sont étalés sur la tôle, et déjà la rouille leur monte dessus. Vous essuyez le couteau sur votre pantalon, deux fois, parce que vos mains tremblent. Le couloir débouche au pied du hangar.",
       "choices": [
         {
           "kind": "aller",
@@ -335,7 +335,7 @@
       ]
     },
     "c02-3": {
-      "text": "Le hangar est un cube de béton sans fenêtre, la porte coulissante ouverte d'un mètre. Un feu brûle dedans, on voit la lueur sous la tôle. Devant la porte, deux hommes en survêtement et gilet pare-balles, un fusil en bandoulière, qui fument. Un sifflement vous arrive. Ils vous ont vu. À droite, les collines de ferraille contournent le bâtiment. À gauche, en contrebas, un fossé d'où l'air monte en tremblant.",
+      "text": "Le hangar est un cube de béton sans fenêtre, la porte coulissante ouverte d'un mètre, et par la fente on voit la lueur orange d'un feu. Devant la porte, deux hommes en survêtement à bandes et gilet pare-balles, un fusil en bandoulière, fument assis sur des caisses. L'un d'eux siffle entre ses doigts, deux notes, et la lueur bouge à l'intérieur : ils vous ont vu, et ils ont prévenu. À droite, les collines de ferraille contournent le bâtiment jusqu'à son mur nord. À gauche, en contrebas, un fossé d'où l'air monte en tremblant, et le détecteur à votre ceinture s'en inquiète déjà.",
       "image": {
         "src": "images/c02-3.webp",
         "alt": "Le hangar de béton du Dépotoir, entre les collines de ferraille",
@@ -379,7 +379,7 @@
         "alt": "Le fossé du Dépotoir traversé d'arcs électriques, un artefact qui rougeoie dans l'herbe brûlée",
         "prompt": "Un fossé encaissé entre des carcasses de voitures, où des arcs électriques courent d'une tôle à l'autre dans une anomalie Électro. Au milieu, dans l'herbe brûlée, une petite sphère rougeoyante grosse comme un poing : un artefact. Au bord du fossé, au premier plan, la silhouette d'un stalker accroupi de dos, un boulon dans la main tendue, le détecteur à la ceinture. Fortes lumières blanches des arcs sur la rouille noire."
       },
-      "text": "Le fossé est bleu. Pas l'eau : l'air. Des arcs courent d'une carcasse à l'autre, claquent, meurent, repartent. Une « Électro ». Au milieu, dans l'herbe brûlée, quelque chose rougeoie, gros comme un poing. Le Détecteur Ours crépite comme une friture. Il crépite avant vous. Un boulon avant chaque pas, disait le Loup.",
+      "text": "Le fossé est bleu, et ce n'est pas l'eau. Des arcs courent d'une carcasse de Lada à l'autre, claquent, meurent, repartent, avec un bruit de fouet mouillé : une « Électro ». Au milieu, dans l'herbe brûlée, une lueur rouge grosse comme un poing. Le Détecteur Ours crépite avant vous. « Un boulon avant chaque pas », disait le Loup, en désignant le nord du menton, et vous en avez trois dans la poche.",
       "choices": [
         {
           "kind": "agir",
@@ -394,7 +394,7 @@
       ]
     },
     "c02-33": {
-      "text": "Le boulon vole. Les arcs le happent au passage, il retombe fondu, en deux morceaux. Vous comptez. Trois secondes de noir entre deux claquements. Peut-être quatre. Vous avancez sur le compte, la main tendue vers la lueur. Tentez votre Chance.",
+      "text": "Le boulon vole. Les arcs le happent au passage et il retombe fondu, en deux morceaux qui fument dans l'herbe. Vous comptez : trois secondes de noir entre deux claquements, peut-être quatre, et vous avancez sur le compte, la main tendue vers la lueur, le reste du corps plié en deux. Tentez votre Chance.",
       "test": {
         "type": "luck",
         "success": "c02-5",
@@ -402,7 +402,7 @@
       }
     },
     "c02-5": {
-      "text": "Votre main se referme avant le claquement. Vous roulez hors du fossé avec la chose contre la poitrine. Elle est chaude, elle pèse, elle bat presque. Une Boule de feu. Sidorovitch paierait pour ça, et d'autres paieraient plus. Les arcs reprennent derrière vous, comme si de rien n'était.",
+      "text": "Votre main se referme avant le claquement et vous roulez hors du fossé, le poing serré contre la poitrine. Elle est chaude, elle pèse comme un pavé, et elle bat presque. Une Boule de feu. Sidorovitch paierait pour ça, et au nord d'autres paieraient plus, mais pour l'instant vous restez couché dans l'herbe à l'écouter battre pendant que les arcs reprennent derrière vous leur ronde.",
       "effects": [
         {
           "type": "item",
@@ -419,7 +419,7 @@
       ]
     },
     "c02-27": {
-      "text": "L'arc vous prend au poignet. Tout votre bras devient blanc, puis vos dents, puis vous êtes à plat dos dans l'herbe, hors du fossé, sans savoir comment. Vous perdez 3 points d'Endurance. L'odeur de cheveux brûlés, c'est les vôtres. La chose rougeoie toujours au fond, à sa place. Le détecteur s'est tu un instant. Il repart.",
+      "text": "L'arc vous prend au poignet. Tout votre bras devient blanc, puis vos dents, puis vous êtes à plat dos dans l'herbe, hors du fossé, et vous ne savez pas par quel chemin. Vous perdez 3 points d'Endurance. Ça sent le cheveu brûlé, et ce sont les vôtres. En bas, la lueur rouge n'a pas quitté sa place, et le détecteur, qui s'était arrêté le temps de l'éclair, reprend son compte.",
       "effects": [
         {
           "type": "stat",
@@ -436,7 +436,7 @@
       ]
     },
     "c02-12": {
-      "text": "Vous grimpez dans la ferraille à droite du hangar. Les carcasses sont tièdes. Le compteur grimpe, grimpe, et ne redescend pas. Vous prenez 3 rads. Par un trou dans la tôle, vous voyez l'intérieur du hangar : un feu, cinq hommes, des caisses vertes. Personne ne lève la tête. Vous redescendez de l'autre côté, dans l'ombre du mur nord.",
+      "text": "La ferraille à droite du hangar est tiède sous les mains, et vous grimpez, et le compteur monte d'un cran à chaque carcasse. Vous prenez 3 rads. Par un trou dans la tôle, à hauteur du toit, vous voyez l'intérieur : un feu de pneus, cinq hommes assis autour, des caisses vertes contre le mur, et une casserole qui fume. Aucun d'eux ne lève la tête. Vous redescendez de l'autre côté, dans l'ombre du mur nord, où l'herbe a repoussé entre les ressorts.",
       "effects": [
         {
           "type": "stat",
@@ -453,7 +453,7 @@
       ]
     },
     "c02-21": {
-      "text": "Le plus grand a une dent en or et un fusil d'assaut qu'il porte comme un sac de pain. Il ne le lève pas. Cent roubles pour passer, dit-il. Ou tu repars par où tu es venu, et là-bas il y a les chiens. Derrière lui, l'autre a déjà la main sur sa crosse. Dedans, quelqu'un rit.",
+      "text": "Le plus grand a une dent en or et un fusil d'assaut qu'il porte comme un sac de pain, canon vers le sol. Il ne le lève pas. « Cent roubles, et tu passes. » Vous demandez ce qu'il y a pour cent roubles. « Le hangar. La porte du fond. La route du nord, si tu aimes ça. » Il crache à côté de votre botte. « Ou tu repars par où tu es venu, et là-bas il y a les chiens. Tu les as entendus, les chiens. » Derrière lui, l'autre a déjà la main sur la crosse, et dedans, près du feu, quelqu'un rit d'une histoire que vous n'avez pas entendue.",
       "choices": [
         {
           "kind": "payer",
@@ -491,7 +491,7 @@
       ]
     },
     "c02-37": {
-      "text": "Il compte les billets deux fois. Passe, dit-il. Le hangar sent le feu de pneus. Cinq hommes autour des flammes, des caisses vertes contre le mur, une ouverte, pleine de grenades luisantes de graisse. Personne ne vous regarde. Au fond, une porte donne sur le nord.",
+      "text": "Il compte les billets deux fois, lentement, en mouillant son pouce. « Passe. Tu touches à rien. » Le hangar sent le pneu brûlé et la soupe. Cinq hommes autour des flammes, assis sur des pneus, et contre le mur des caisses vertes de l'armée, dont une ouverte, pleine de grenades luisantes de graisse. Celui qui parle au moment où vous entrez ne s'interrompt pas pour vous : « ... et le Contrôleur, il le regarde, juste il le regarde, et le gars se met à pleurer et il vide son chargeur dans son propre genou. » Les autres rient. Pas une tête ne se tourne. Au fond, une porte de fer donne sur le nord.",
       "choices": [
         {
           "kind": "aller",
@@ -506,7 +506,7 @@
       ]
     },
     "c02-20": {
-      "text": "Vous passez près de la caisse. Les grenades sont là, à portée, le fer quadrillé qui luit sous la graisse. Le feu crépite, quelqu’un raconte une histoire de Contrôleur, les autres écoutent, la bouche ouverte. Votre main descend. Vous ne regardez pas. Tentez votre Chance.",
+      "text": "La caisse est à portée quand vous passez, les grenades dedans, le fer quadrillé qui luit sous la graisse. « Et après, il a fait quoi, le Contrôleur ? » demande le plus jeune. « Il est parti. Ils partent toujours quand ils ont fini. » Les autres écoutent, la bouche ouverte vers le feu. Votre main descend le long de votre jambe, et vos yeux restent sur le conteur. Tentez votre Chance.",
       "test": {
         "type": "luck",
         "success": "c02-34",
@@ -514,7 +514,7 @@
       }
     },
     "c02-34": {
-      "text": "Elle est dans votre poche avant la fin de l'histoire. Une Grenade F1, lourde, froide, la goupille en place. Celui qui parle n'a rien vu, les autres non plus. Vous passez la porte du fond sans vous retourner, la main dans la poche, sur le fer quadrillé.",
+      "text": "Elle est dans votre poche avant la fin de l'histoire. Une Grenade F1, lourde, froide, la goupille en place, et elle accroche la doublure à chaque pas. Le conteur n'a rien vu, les autres non plus, et vous passez la porte de fer la main dans la poche, le pouce sur la goupille, jusqu'à ce que le gravier du nord vous arrive sous les semelles.",
       "effects": [
         {
           "type": "item",
@@ -531,7 +531,7 @@
       ]
     },
     "c02-10": {
-      "text": "Une main se referme sur votre poignet. Le grand à la dent d'or. Il reprend la grenade, il ne dit rien, il cogne. Une crosse dans les côtes, une autre dans le dos, et vous êtes dehors par la porte du fond, sur le gravier. Vous perdez 3 points d'Endurance. Derrière vous, la porte se referme. Ils rient.",
+      "text": "Une main se referme sur votre poignet. Le grand à la dent d'or. Il reprend la grenade, la repose dans la caisse, et il cogne : une crosse dans les côtes, une autre dans le dos, et vous êtes dehors par la porte de fer, à quatre pattes sur le gravier. Vous perdez 3 points d'Endurance. « Je t'avais dit : tu touches à rien. » La porte se referme sur les rires, et le gravier reste froid sous vos paumes.",
       "effects": [
         {
           "type": "stat",
@@ -548,7 +548,7 @@
       ]
     },
     "c02-7": {
-      "text": "Vous ne lui laissez pas le temps. Lui non plus. Il frappe à casser des os, le fusil tenu à deux mains comme une barre, et vous avez le couteau et vos poings. L'autre bandit recule vers le hangar en criant. Le béton est à votre dos.",
+      "text": "Vous ne lui laissez pas le temps, et lui non plus. Il frappe à casser des os, le fusil tenu à deux mains comme une barre de fer, et vous n'avez que le couteau et vos poings, et le béton dans le dos. L'autre bandit recule vers la porte en criant un nom, et dedans la casserole tombe du feu. Chaque coup de crosse qui passe vous coûte une côte.",
       "combat": {
         "name": "Le bandit à la dent d'or",
         "habilete": 6,
@@ -561,7 +561,7 @@
       }
     },
     "c02-30": {
-      "text": "Il tombe contre la porte et n'en bouge plus. L'autre a disparu dans la ferraille, avec ceux de dedans : des pas qui s'éloignent, des cris, puis rien. Vous décrochez l'AK-74 de son épaule. Avec ça, on tire avant eux. Ils reviendront. Pas aujourd'hui. Les bandits ont de la mémoire.",
+      "text": "Il glisse le long de la porte et reste assis là, le menton sur le gilet. L'autre a disparu dans la ferraille avec ceux de dedans : des pas qui s'éloignent entre les carcasses, un cri, un deuxième, puis le vent. Vous décrochez l'AK-74 de son épaule, et la bandoulière est encore chaude. Avec ça, on tire avant eux. Vous vérifiez le chargeur : plein, trente cartouches. Ils reviendront, pas aujourd'hui, et quand ils reviendront ils sauront votre visage, parce que les bandits ont de la mémoire et que la Vallée sombre n'est pas loin.",
       "effects": [
         {
           "type": "item",
@@ -587,7 +587,7 @@
       ]
     },
     "c02-40": {
-      "text": "Le hangar est vide, le feu encore haut. Des caisses vertes contre le mur, à moitié cassées. Dans l'une, des grenades, graisseuses, alignées comme des œufs. Vous en prenez une. Une Grenade F1, la goupille en place. Le reste, c'est des couvertures, des bouteilles vides, et le portrait d'une femme cloué au mur avec un couteau.",
+      "text": "Le hangar est vide, le feu encore haut, une casserole de soupe qui bout pour personne. Des caisses vertes contre le mur, à moitié cassées. Dans l'une, des grenades graisseuses, alignées comme des œufs dans un carton, et vous en prenez une, une Grenade F1, le pouce sur la goupille. Le reste tient en couvertures, bouteilles vides, et le portrait d'une femme, découpé dans un magazine, cloué au mur avec un couteau de cuisine.",
       "effects": [
         {
           "type": "item",
@@ -604,7 +604,7 @@
       ]
     },
     "c02-15": {
-      "text": "Vous lâchez prise et vous courez. Ils tirent dans votre dos : les balles claquent sur la tôle, pas sur vous, pas cette fois. Vous plongez derrière une carcasse de bus au pied du hangar. Une balle vous a mordu l'épaule. Le sifflement reprend derrière la porte. Ils ne vous suivent pas. Ils vous attendent.",
+      "text": "Ils tirent dans votre dos pendant que vous courez : les balles claquent sur la tôle, une seule vous mord l'épaule au passage, et vous plongez derrière une carcasse de bus au pied du hangar. Derrière la porte, le sifflement reprend, deux notes, puis la voix du grand : « Laisse. Il repassera par ici. Ils repassent tous. » Ils ne sortent pas vous chercher. Ils ont le feu, et le temps.",
       "choices": [
         {
           "kind": "aller",
@@ -614,7 +614,7 @@
       ]
     },
     "c02-25": {
-      "text": "Vous vous couchez entre deux carcasses et vous attendez. Le soleil tombe derrière la ferraille, le fer refroidit en craquant. La nuit, les bandits sortent tous autour du feu, devant la porte, et le hangar reste vide derrière eux. Un seul homme fait le tour du mur, de temps en temps, une lampe à la main. Vous comptez ses passages. Puis vous y allez. Tentez votre Chance.",
+      "text": "Vous vous couchez entre deux carcasses et vous attendez. Le soleil tombe derrière la ferraille, le fer refroidit en craquant, et une à une les tôles autour de vous cessent de sonner. À la nuit, les bandits sortent tous autour d'un feu, devant la porte, avec une bouteille qui tourne ; le hangar reste vide derrière eux, sa lueur sous la tôle. Un seul homme fait le tour du mur, de temps en temps, une lampe de poche à la main, et chaque fois qu'il passe près de vous, il parle tout seul. « Froid. Froid, froid, froid. » Puis, au tour suivant : « S'il en vient un, je le vois. S'il en vient deux, je les vois aussi. » Vous comptez ses passages : six minutes, puis cinq. Au cinquième tour, quand sa lampe s'éloigne vers l'est, vous vous levez. Tentez votre Chance.",
       "test": {
         "type": "luck",
         "success": "c02-4",
@@ -622,7 +622,7 @@
       }
     },
     "c02-4": {
-      "text": "Vous êtes dedans. Le feu fait des ombres sur le mur, les voix passent à travers la tôle. Sur un râtelier, trois fusils. Vous prenez l'AK-74 du milieu, la crosse encore tiède de quelqu'un. Avec ça, on tire avant eux. Dans une caisse verte, des grenades. Vous en glissez une dans la poche, une Grenade F1. La porte du fond donne sur le nord. Personne n'a tourné la tête.",
+      "text": "Vous êtes dedans. Le feu dehors fait des ombres sur le mur, et les voix traversent la tôle, mot pour mot. Sur un râtelier bricolé dans des tubes d'échafaudage, trois fusils. Vous prenez l'AK-74 du milieu, la crosse marquée de quatre encoches au couteau. Avec ça, les chiens restent à dix mètres. Dans une caisse verte, des grenades, et vous en glissez une dans la poche, une Grenade F1, dont le poids tire sur la cuisse. Dehors, la bouteille tourne toujours. La porte du fond donne sur le nord, et vous la poussez de l'épaule, un centimètre à la fois, pour que les gonds ne vous dénoncent pas.",
       "effects": [
         {
           "type": "item",
@@ -644,7 +644,7 @@
       ]
     },
     "c02-36": {
-      "text": "La lampe vous trouve en pleine figure. Le guetteur ne crie pas, il n'a pas le temps : il lâche la lampe et sort son couteau. Un petit homme vif qui frappe pour tuer. Vous roulez tous les deux dans la ferraille, hors de la lumière du feu. Ça ne dure jamais longtemps, un couteau.",
+      "text": "La lampe vous trouve en pleine figure. Le guetteur ne crie pas, il n'en a pas le temps : il lâche la lampe, qui roule sous une carcasse, et sort un couteau à cran d'arrêt. « Deux, je les vois aussi », souffle-t-il, pour lui. Il est petit, vif, il frappe pour tuer, et vous roulez ensemble dans la ferraille, hors de la lumière du feu, chaque lame cherchant le ventre de l'autre.",
       "combat": {
         "name": "Le guetteur",
         "habilete": 6,
@@ -657,7 +657,7 @@
       }
     },
     "c02-18": {
-      "text": "Il ne bouge plus. Vous restez un moment dans le noir à écouter : les voix continuent devant, personne n'a entendu. Vous lui prenez son AK-74. Avec ça, on tire avant eux. Puis vous longez le mur jusqu'au nord. Demain ils trouveront le corps, et ils sauront que ce n'était pas un chien. Les bandits ont de la mémoire.",
+      "text": "Il est mort sous vous, la lampe éteinte sous la carcasse. Vous restez un moment à écouter : les voix continuent devant, la bouteille tourne, aucun n'a entendu. Vous lui prenez son AK-74, dont la bretelle sent la sueur et le pneu. Avec ça, le prochain péage se discute autrement. Puis vous longez le mur jusqu'au nord, l'épaule contre le béton. Demain ils trouveront le corps, et ils sauront que ce n'était pas un chien, parce que les chiens ne prennent pas les fusils.",
       "effects": [
         {
           "type": "item",
@@ -678,7 +678,7 @@
       ]
     },
     "c02-13": {
-      "text": "Au nord du hangar, un wagon de marchandises est posé dans l'herbe, sans rails, sans roues. La porte est ouverte. Dedans, de la paille, deux boîtes vides, un rond de cendres là où quelqu'un a fait du feu. Le compteur se tait. Par la porte, trois chemins : la voie ferrée qui part vers l'ouest, un ravin plein de brume à l'est, et la route, au nord, droite, entre les pylônes.",
+      "text": "Au nord du hangar, un wagon de marchandises est posé dans l'herbe, pas de rails, pas de roues, la porte ouverte en grand. Dedans, de la paille, deux boîtes de conserve vides et un rond de cendres froides. Le compteur ralentit jusqu'au tic isolé. Depuis la porte, trois chemins : la voie ferrée qui part vers l'ouest entre deux talus, un ravin plein de brume à l'est, et la route du nord, droite, entre ses pylônes.",
       "choices": [
         {
           "kind": "agir",
@@ -740,7 +740,7 @@
       ]
     },
     "c02-28": {
-      "text": "L'Anti-rad a le goût de l'eau de Javel. Vous le buvez d'un trait, assis dans la paille. Vous perdez 5 rads. Le compteur descend lentement, comme un homme qui ne veut pas. Vos mains cessent de trembler. Le flacon vide, vous le laissez dans le wagon avec les boîtes.",
+      "text": "L'Anti-rad a le goût de l'eau de Javel, et vous le buvez d'un trait, assis dans la paille, la nuque contre la paroi du wagon. Vous perdez 5 rads. Le compteur descend à contrecœur, et vos mains cessent de trembler. Le flacon vide, vous le laissez avec les boîtes.",
       "choices": [
         {
           "kind": "aller",
@@ -750,7 +750,7 @@
       ]
     },
     "c02-39": {
-      "text": "Vous déroulez le Bandage autour de l'avant-bras, serré, par-dessus la rouille et le sang. Ça tient. Vous regagnez 3 points d'Endurance. La paille sent le moisi et le chien. Dehors, le vent passe entre les pylônes sans les faire bouger.",
+      "text": "Vous déroulez le Bandage, serré, là où ça saigne encore, par-dessus la rouille et le sang séché, et le nœud tient. Vous regagnez 3 points d'Endurance. La paille sent le moisi et le chien. Dehors, le vent passe entre les pylônes et ne tire pas un son des câbles.",
       "choices": [
         {
           "kind": "aller",
@@ -760,7 +760,7 @@
       ]
     },
     "c02-32": {
-      "text": "La voie ferrée file vers l'ouest entre deux talus de ferraille. Les traverses sont pourries, les rails brillent encore. Le compteur grimpe. Vous prenez 2 rads. Au bout, au-dessus des talus, des silos gris et un château d'eau : Agroprom. Un chien hurle quelque part, loin, puis plus rien.",
+      "text": "La voie ferrée file vers l'ouest entre deux talus de ferraille. Les traverses sont pourries et les rails brillent encore, polis par le vent et le sable. L'aiguille remonte. Vous prenez 2 rads. Au bout, au-dessus des talus, des silos gris et un château d'eau sur pattes : Agroprom. Un chien hurle, loin sur la gauche, et un deuxième lui répond de plus près que vous n'auriez voulu.",
       "effects": [
         {
           "type": "stat",
@@ -777,7 +777,7 @@
       ]
     },
     "c02-2": {
-      "text": "Le ravin descend vers l'est et la brume monte à sa rencontre. Au bout de cinquante mètres, vous ne voyez plus le wagon derrière vous, ni vos pieds. Ça sent la terre mouillée et la fumée d'herbe. En bas, une musique, très loin, une radio. Et, par-dessous, quelque chose de lourd qui marche et qu'on n'entend que dans les côtes.",
+      "text": "Le ravin descend vers l'est et la brume monte à sa rencontre. Au bout de cinquante mètres, vous ne voyez plus le wagon derrière vous, ni vos propres bottes. Ça sent la terre mouillée et la fumée d'herbe. En bas, très loin, une radio joue une vieille chanson à la guitare, et par-dessous la chanson, dans les côtes plus que dans les oreilles, un pas lent, trop lourd pour un homme, qui descend la même pente que vous.",
       "choices": [
         {
           "kind": "aller",
@@ -787,7 +787,7 @@
       ]
     },
     "c02-23": {
-      "text": "La route du nord est droite, bordée de pylônes, et il n'y a nulle part où se cacher. Le compteur grimpe. Vous prenez 2 rads. À l'horizon, une barricade de wagons en travers de la chaussée, un drapeau rouge et noir, et le canon d'une pièce antiaérienne qui regarde ailleurs. Des hommes en gris. Ils vous ont vu avant que vous les voyiez.",
+      "text": "La route du nord est droite, bordée de pylônes, et il n'y a nulle part où se cacher. Le compteur vous accompagne tout du long. Vous prenez 2 rads. À l'horizon, une barricade de wagons en travers de la chaussée, un drapeau rouge et noir, et le canon d'une pièce antiaérienne qui regarde ailleurs. Des hommes en gris, qui vous ont vu avant que vous les voyiez, et dont l'un vous parle dans un porte-voix, d'une voix de caserne : « Stalker. Les mains loin des armes, et vous avancez au pas, sans courir. »",
       "effects": [
         {
           "type": "stat",

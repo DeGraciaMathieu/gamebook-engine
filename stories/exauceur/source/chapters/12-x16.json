@@ -41,7 +41,7 @@
         "alt": "Un escalier de fer descend dans le noir sous un panneau à demi décollé, une lumière rouge très loin",
         "prompt": "Le haut d'un escalier de fer qui plonge dans le noir d'un laboratoire souterrain, vu de derrière la silhouette d'un stalker arrêté sur la première marche, lampe torche à la main. Au mur de brique, un panneau à demi décollé avec une flèche pointant vers le bas, des tuyaux rouillés, une porte d'usine refermée derrière. Tout au fond, minuscule, un point de lumière rouge."
       },
-      "text": "La porte de l'usine se referme derrière vous. Un escalier de fer descend dans le noir, et l'odeur monte : chlore, rouille, quelque chose de sucré. Au mur, un panneau à moitié décollé, X-16, et une flèche vers le bas. Une lumière rouge clignote très loin, s'éteint, revient. Le détecteur se tait. Ici, il n'y a rien à détecter.",
+      "text": "La porte de l'usine se referme derrière vous sur le jour gris de Yantar, et le premier bruit du X-16 est celui de votre propre respiration. Un escalier de fer plonge sous un panneau à demi décollé, X-16, une flèche vers le bas, et l'odeur qui monte des marches mêle le chlore, la rouille et un fond sucré de fruit tombé. Très loin en dessous, une lampe rouge clignote, s'éteint, revient. Le Détecteur Ours crépite deux fois contre votre hanche, puis renonce : ici, rien de ce qu'il sait compter ne pousse. Vous posez le pied sur la première marche, qui plie.",
       "choices": [
         {
           "kind": "aller",
@@ -60,7 +60,7 @@
       ]
     },
     "c12-19": {
-      "text": "Le faisceau de la Lampe torche prend la poussière en suspens et les marches une à une. Des traces de bottes dans la rouille, qui descendent. Aucune ne remonte. Au bas de l'escalier, un couloir de béton, des tuyaux au plafond, et ce ronronnement qu'on entend avec les dents plus qu'avec les oreilles.",
+      "text": "Le faisceau de la Lampe torche prend la poussière en suspens, puis les marches une à une, quarante-deux jusqu'au couloir de béton du bas, où des traces de bottes descendent dans la rouille sans qu'aucune remonte. Sous les tuyaux, un ronronnement s'entend avec les dents plus qu'avec les oreilles.",
       "choices": [
         {
           "kind": "aller",
@@ -70,7 +70,7 @@
       ]
     },
     "c12-8": {
-      "text": "Vos mains suivent la rampe. Vos pieds comptent les marches. Une marche manque. Vous tombez trois mètres plus bas sur une passerelle de métal, l'épaule la première. Vous perdez 3 points d'Endurance. Quand vous vous relevez, la lumière rouge revient le temps de vous montrer un couloir, des tuyaux, et ce ronronnement qu'on sent dans les dents.",
+      "text": "Vos mains suivent la rampe, grasse de vieux cambouis, et vos pieds comptent les marches jusqu'à la trente et unième, qui n'existe pas. Vous tombez trois mètres plus bas sur une passerelle de métal, l'épaule la première, et le bruit roule dans le couloir pendant que vous cherchez votre souffle. Vous perdez 3 points d'Endurance. Quand vous vous relevez, la lampe rouge revient le temps de vous montrer des tuyaux calorifugés, un couloir de béton, et sous vos paumes la passerelle qui vibre d'un bourdonnement sourd, régulier, monté de très loin.",
       "effects": [
         {
           "type": "stat",
@@ -87,7 +87,7 @@
       ]
     },
     "c12-27": {
-      "text": "Le premier palier. Une cage d'escalier qui descend encore, un néon rouge, une bouche de ventilation qui souffle tiède. Le ronronnement monte d'un cran et quelque chose se noue derrière vos yeux. Une goutte tombe sur le fer, puis une autre. Votre nez saigne. Vous le pincez, vous attendez que ça passe. Tentez votre Chance.",
+      "text": "Le premier palier est une cage d'escalier qui continue vers le bas, un néon rouge, une bouche de ventilation qui souffle un air tiède et sent la graisse chaude. Le ronronnement monte d'un cran et un nœud se forme derrière vos yeux, juste au-dessus du nez. Une goutte tombe sur le fer, puis une deuxième, et vous mettez une seconde à comprendre que c'est le vôtre, de sang. Vous pincez l'arête du nez et vous attendez. Tentez votre Chance.",
       "test": {
         "type": "luck",
         "success": "c12-12",
@@ -95,7 +95,7 @@
       }
     },
     "c12-12": {
-      "text": "Ça passe. Le sang s'arrête, la pression retombe comme une main qu'on retire. Deux couloirs partent du palier : à gauche, une double porte à hublots marquée d'une croix rouge, et derrière, des voix basses qui répètent la même chose. À droite, une gaine de ventilation éventrée, assez large pour un homme, d'où vient une odeur de chien mouillé.",
+      "text": "Ça passe. Le sang s'arrête, et la pression derrière vos yeux retombe d'un coup, comme une main qu'on retire de votre nuque. Deux couloirs partent du palier. À gauche, une double porte à hublots marquée d'une croix rouge, et derrière, des voix basses qui répètent la même syllabe en décalé, un chœur qui n'arrive jamais à se mettre ensemble. À droite, une gaine de ventilation éventrée, assez large pour un homme, d'où vient une odeur de chien mouillé et de caoutchouc.",
       "choices": [
         {
           "kind": "aller",
@@ -110,7 +110,7 @@
       ]
     },
     "c12-33": {
-      "text": "Ça ne passe pas. Le sang coule dans votre bouche et quelque chose entre dans votre tête, s'assoit, reste. Vous perdez 2 points d'Endurance. Depuis ce palier, il y a une voix de trop dans votre crâne. Deux couloirs partent de là : à gauche, une double porte à hublots marquée d'une croix rouge, des voix derrière. À droite, une gaine de ventilation éventrée qui sent le chien mouillé.",
+      "text": "Ça ne passe pas. Le sang coule dans votre bouche, chaud, et pendant que vous l'avalez quelqu'un entre dans votre tête, s'y assoit, et ne ressort pas. Vous perdez 2 points d'Endurance. « Te voilà », dit une voix qui se sert de la vôtre, à peine plus basse. Vous crachez rouge sur le fer du palier. À gauche, derrière une double porte marquée d'une croix rouge, d'autres voix lui répondent en décalé ; à droite, la tôle arrachée d'une gaine de ventilation pend sur un trou noir qui pue le caoutchouc et le chien mouillé.",
       "effects": [
         {
           "type": "flag",
@@ -136,7 +136,7 @@
       ]
     },
     "c12-4": {
-      "text": "L'infirmerie. Des lits de fer, des draps bruns, un chariot renversé. Six hommes debout entre les lits, en vestes de stalkers, le dos voûté, les bras pendants. Ils marmonnent ensemble, un seul mot que vous n'arrivez pas à comprendre. L'un d'eux tient encore son fusil à l'envers. Ils ne vous ont pas vu. Pas encore. La porte du fond est à vingt pas.",
+      "text": "L'infirmerie sent le lysol et l'urine. Des lits de fer, des draps bruns, un chariot renversé qui a répandu ses seringues en éventail. Six hommes sont debout entre les lits, en vestes de stalkers, le dos voûté, les bras pendants, et ils marmonnent ensemble un seul mot, mâché, que la distance vous empêche d'attraper. L'un d'eux tient encore son fusil, par le canon, la crosse qui traîne par terre. Ils ne vous ont pas vu. La porte du fond est à vingt pas, et il faudrait passer entre eux pour l'atteindre.",
       "choices": [
         {
           "kind": "attaquer",
@@ -162,7 +162,7 @@
       ]
     },
     "c12-15": {
-      "text": "Le premier coup de feu les réveille tous. Ils se tournent d'un bloc, lentement, et marchent. Ils ne courent pas. Ils ne tombent pas non plus, pas tout de suite : il faut vider le chargeur dans chaque tête, et pendant ce temps les autres arrivent, les mains ouvertes, en marmonnant. Ce qui se bat ici ne sent plus rien.",
+      "text": "Le premier coup de feu les réveille tous. Ils se tournent d'un bloc, lentement, et ils marchent vers vous sans hâte, parce qu'ils n'ont aucune raison d'en avoir. Ils ne tombent pas tout de suite : il faut vider le chargeur dans chaque tête, et pendant ce temps les autres arrivent, les mains ouvertes, en marmonnant leur mot. Celui qui tient le fusil le traîne toujours par le canon, la crosse raclant le carrelage derrière lui.",
       "combat": {
         "name": "Les zombies",
         "habilete": 5,
@@ -172,7 +172,7 @@
       }
     },
     "c12-30": {
-      "text": "Le dernier tombe en travers d'un lit et le drap boit lentement. Le silence revient, moins le ronronnement. Vous ramassez vos douilles sans savoir pourquoi. Dans la poche d'un des corps, un PDA mort. Dans sa bouche, encore ce mot, comme un bruit de gorge. La porte du fond donne sur un escalier qui descend.",
+      "text": "Le dernier tombe en travers d'un lit, et le drap boit le sang sans se presser. Il ne reste que le bourdonnement des tuyaux et votre respiration. Vous ramassez vos douilles une par une, par une habitude que vous ne vous connaissiez pas. Dans la poche de poitrine d'un des corps, un PDA mort, l'écran étoilé. Celui qui tenait le fusil respire encore, par à-coups, et sa bouche fait le mot, enfin net, parce qu'il n'y a plus les autres pour le couvrir : « Reste. » Il le dit trois fois et s'arrête. La porte du fond s'ouvre sur une cage d'escalier qui plonge vers le palier suivant.",
       "choices": [
         {
           "kind": "aller",
@@ -182,7 +182,7 @@
       ]
     },
     "c12-22": {
-      "text": "Vous dégoupillez la Grenade F1, vous comptez deux, vous la faites rouler entre les lits. L'explosion remplit la pièce et vos oreilles. Quand la poussière retombe, il n'y a plus que des draps qui brûlent et des formes qui ne marmonnent plus. Vous traversez sans regarder. La porte du fond donne sur un escalier qui descend.",
+      "text": "La goupille de la Grenade F1 tinte sur le carrelage ; vous comptez jusqu'à deux et vous faites rouler la grenade entre les pieds des lits. L'explosion remplit la pièce et vos oreilles d'un même coton. Quand la poussière retombe, il reste des draps qui brûlent, une odeur de laine roussie, et des formes couchées qui ne marmonnent plus. Vous traversez sans regarder où vous posez les pieds. Au fond, derrière la porte, les marches reprennent vers le bas.",
       "choices": [
         {
           "kind": "aller",
@@ -192,7 +192,7 @@
       ]
     },
     "c12-10": {
-      "text": "La gaine descend en pente douce, en tôle, et chaque mouvement sonne. Dix mètres plus bas, elle s'ouvre sur une salle de machines. Trois Snorks sont là, à quatre pattes sur les filtres, masques à gaz greffés aux visages, qui reniflent le sol. L'un d'eux lève la tête vers la gaine. Les crocs dépassent du caoutchouc. Ils sautent plus loin que vous ne courez.",
+      "text": "La gaine descend en pente douce, en tôle galvanisée, et chaque mouvement de genou résonne jusqu'au bout. Dix mètres plus bas, elle s'ouvre sur une salle des machines : des filtres gros comme des fûts, des moteurs sous une couche de graisse noire. Trois Snorks sont là, à quatre pattes sur les filtres, le masque à gaz greffé dans la chair du visage, et ils reniflent le sol par le tuyau pendant. L'un d'eux lève la tête vers la gaine, et sous le caoutchouc fendu de son masque dépassent des crocs jaunes, trop nombreux pour une seule mâchoire.",
       "choices": [
         {
           "kind": "attaquer",
@@ -223,7 +223,7 @@
       ]
     },
     "c12-3": {
-      "text": "Vous sautez. Le premier Snork est sur vous avant que vos pieds touchent le sol. Ils frappent en bondissant, griffes d'abord, tout le poids derrière, et chaque bond qui passe vous ouvre quelque chose. Ils frappent à casser des os.",
+      "text": "Le premier Snork est sur vous avant que vos bottes touchent le sol, et les deux autres arrivent par les côtés, en bonds plats, griffes devant, tout le poids derrière, chaque bond qui passe ouvrant un pan de veste et ce qu'il y a dessous.",
       "combat": {
         "name": "Les Snorks",
         "habilete": 7,
@@ -233,7 +233,7 @@
       }
     },
     "c12-24": {
-      "text": "Le dernier Snork rampe encore sur un mètre, puis se couche. Son masque siffle. Vous respirez. La salle des machines est une forêt de filtres morts et de moteurs couverts de gras ; au fond, une porte coupe-feu entrouverte sur un escalier, et le ronronnement qui vient d'en bas.",
+      "text": "Le dernier Snork rampe encore sur un mètre, puis se couche sur le flanc, et son masque siffle à chaque expiration jusqu'à la dernière. Vous reprenez votre souffle contre un moteur froid. La salle des machines est une forêt de filtres morts et de carters luisants de gras ; au fond, une porte coupe-feu entrouverte laisse passer un courant d'air tiède et le bruit d'en dessous, plus épais.",
       "choices": [
         {
           "kind": "aller",
@@ -243,7 +243,7 @@
       ]
     },
     "c12-35": {
-      "text": "La Grenade F1 roule sur la tôle, tombe entre les filtres. Deux secondes. Le souffle remonte dans la gaine et vous plaque contre la paroi. En bas, les Snorks ne bougent plus ; l'un d'eux fume. Vous vous laissez glisser. Au fond de la salle des machines, une porte coupe-feu entrouverte, un escalier qui descend.",
+      "text": "La Grenade F1 roule sur la tôle, rebondit au bord et tombe entre les filtres. Vous comptez deux secondes. Le souffle remonte dans la gaine et vous plaque contre la paroi, la bouche pleine de poussière de rouille. En bas, les Snorks sont couchés où l'explosion les a posés ; l'un d'eux fume par le masque. Vous vous laissez glisser jusqu'au sol, entre des filtres crevés par les éclats, et c'est derrière le plus gros que vous trouvez l'escalier, sous une porte coupe-feu tordue par le souffle.",
       "choices": [
         {
           "kind": "aller",
@@ -253,7 +253,7 @@
       ]
     },
     "c12-17": {
-      "text": "Vous ne respirez plus. La tôle tiède contre votre joue. Le Snork renifle encore vers la gaine, s'approche, pose une griffe sur le rebord. Son masque est à un mètre de votre visage, le verre rayé, quelque chose qui bouge derrière. Tentez votre Chance.",
+      "text": "La tôle est tiède contre votre joue et vous gardez l'air bloqué dans la poitrine, le goût du métal sur les lèvres. Le Snork renifle encore vers la gaine, s'approche en deux bonds courts et pose une griffe sur le rebord, à dix centimètres de votre main. Son masque est à un mètre de votre visage, le verre rayé, et derrière le verre deux yeux qui bougent trop vite pour des yeux d'homme. Tentez votre Chance.",
       "test": {
         "type": "luck",
         "success": "c12-29",
@@ -261,7 +261,7 @@
       }
     },
     "c12-29": {
-      "text": "Il se détourne. Un bruit plus loin dans la salle, une tôle qui tombe, et les trois partent d'un bond vers l'autre côté. Vous attendez encore, le temps de compter jusqu'à cent. Puis vous descendez de la gaine sans un son, entre les filtres morts, jusqu'à une porte coupe-feu et un escalier qui descend.",
+      "text": "Il se détourne. Une tôle tombe plus loin dans la salle, et les trois partent d'un même bond vers le bruit, le tuyau du masque battant contre leur poitrine. Vous attendez encore, le temps de compter jusqu'à cent, puis jusqu'à cent une deuxième fois. Ensuite vous descendez de la gaine, pas après pas entre les filtres morts, jusqu'à une porte coupe-feu et aux marches qu'elle cache.",
       "choices": [
         {
           "kind": "aller",
@@ -271,7 +271,7 @@
       ]
     },
     "c12-9": {
-      "text": "Il vous a senti. Le masque se tourne vers vous et le Snork hurle, un cri de chien et d'homme mélangés, et les deux autres bondissent déjà. Vous tombez de la gaine avec lui accroché à votre dos. Ils frappent à casser des os.",
+      "text": "Il vous a senti. Le masque pivote vers vous et le Snork hurle, un cri de chien et d'homme mélangés dans le même tuyau, et les deux autres sont déjà en l'air. Vous tombez de la gaine avec lui accroché à votre dos, ses griffes dans les sangles du sac, et vous roulez sur le béton pour l'écraser sous vous pendant que les deux autres retombent à un mètre.",
       "combat": {
         "name": "Les Snorks",
         "habilete": 7,
@@ -281,7 +281,7 @@
       }
     },
     "c12-20": {
-      "text": "Le second palier. Le béton suinte ici, et des câbles pendent du plafond comme des racines. Le ronronnement n'est plus un son : c'est une pression sur les tempes, régulière, patiente. Sur le mur, quelqu'un a écrit au charbon, en lettres hautes : ILS PARLENT. Votre nez se remet à saigner. Tentez votre Chance.",
+      "text": "Le second palier suinte. Des câbles pendent du plafond comme des racines, et l'eau qui court dessus goutte sur vos épaules. Ce qui ronronnait sous les tuyaux ne s'entend plus : ça appuie, régulier, patient, sur les deux tempes à la fois. Sur le mur, en lettres hautes de cinquante centimètres tracées au charbon, quelqu'un a écrit ILS PARLENT, et le S final descend en traînée jusqu'au sol. Votre nez se remet à saigner. Tentez votre Chance.",
       "test": {
         "type": "luck",
         "success": "c12-2",
@@ -289,7 +289,7 @@
       }
     },
     "c12-2": {
-      "text": "Le sang s'arrête vite, cette fois. Vous essuyez votre lèvre du dos de la main et vous continuez. Au bout d'un couloir de portes grises, une baie vitrée brisée donne sur le vide, et en dessous, loin, des formes rondes comme des silos couchés. Un palier de fer surplombe tout ça.",
+      "text": "Le sang s'arrête vite, cette fois. Vous essuyez votre lèvre du dos de la main et vous continuez par un couloir de portes grises, toutes fermées, numérotées à la peinture. Au bout, une baie vitrée brisée donne sur le vide, et dessous, loin, des formes rondes dorment en rang, couchées comme des silos qu'on aurait renversés. Un palier de fer surplombe tout ça, accroché au mur par quatre tiges.",
       "choices": [
         {
           "kind": "aller",
@@ -299,7 +299,7 @@
       ]
     },
     "c12-36": {
-      "text": "Le sang ne s'arrête pas. La pression entre d'un coup, comme une porte qu'on enfonce, et pendant une seconde vous entendez les lettres du mur à voix haute. Vous perdez 2 points d'Endurance. Il y a une voix de trop dans votre tête, et elle connaît votre nom mieux que vous. Au bout du couloir, une baie brisée, et dessous, des formes rondes comme des silos couchés.",
+      "text": "Le sang ne s'arrête pas. La pression entre d'un coup, comme une porte qu'on enfonce de l'épaule, et pendant une seconde vous entendez les lettres du mur lues à voix haute, à l'intérieur, avec une voix que vous reconnaissez parce que c'est la vôtre. Vous perdez 2 points d'Endurance. « Je sais comment tu t'appelles », dit-elle. Vous, non, et elle le sait aussi. Vous avancez en vous tenant aux portes grises du couloir, l'une après l'autre, jusqu'à une baie dont il ne reste que le cadre ; en bas, très loin sous les lampes rouges, de grandes masses rondes reposent en rang.",
       "effects": [
         {
           "type": "flag",
@@ -320,7 +320,7 @@
       ]
     },
     "c12-6": {
-      "text": "Le palier des cuves. Une grille de fer suspendue au-dessus d'une salle immense : six cuves de métal en rang, hautes comme des maisons, reliées par des tuyaux gros comme des troncs. Une brume verte dort au sol, à hauteur de genou. Au bout de la grille, un escalier descend dans la brume ; une échelle monte vers une coursive sous le plafond. Les lumières rouges battent au rythme de votre nez.",
+      "text": "Le palier des cuves est une grille de fer suspendue par des chaînes au-dessus d'une salle où tiendrait l'usine entière. Six cuves de métal en rang, hautes de trois étages, reliées entre elles par des tuyaux où un homme passerait debout, et au pied des cuves une brume verte qui dort à hauteur de genou, sans un pli. Au bout de la grille, un escalier s'enfonce dans la brume ; une échelle de fer monte vers une coursive sous le plafond, où un ventilateur tourne encore par à-coups, une pale sur trois. Les lampes rouges battent au rythme du sang dans votre nez, et vous mettez un moment à décider laquelle des deux donne le tempo à l'autre. La rambarde est tiède sous vos paumes, comme le dos d'une bête.",
       "image": {
         "src": "images/c12-6.webp",
         "alt": "Une passerelle de fer suspendue au-dessus de six cuves de métal noyées dans une brume basse, sous des lampes rouges.",
@@ -382,7 +382,7 @@
       ]
     },
     "c12-14": {
-      "text": "La coursive tangue. Tout au bout, assis contre un ventilateur arrêté, un homme en blouse blanche depuis longtemps. Une clé à molette passe à dix centimètres de votre tête et sonne contre la rambarde ; personne ne l'a lancée. Vous ne traînez pas. Dans la poche de la blouse, un carnet trempé et 150 roubles pliés en quatre. Sur la dernière page lisible : ils l'ont mise au-dessus. Pas en dessous. Au-dessus.",
+      "text": "La coursive tangue sous vos pas, et chaque pas la fait sonner jusqu'à l'autre bout. Là-bas, assis contre un ventilateur arrêté, un homme en blouse blanche qui a cessé depuis des mois d'être blanche, les mains sur les genoux, la tête penchée sur l'épaule. Une clé à molette passe à dix centimètres de votre tempe et sonne contre la rambarde, et la coursive est vide dans les deux sens. Vous ne traînez pas. Dans la poche de la blouse, un carnet trempé et 150 roubles pliés en quatre. Sur la dernière page lisible, au crayon, trois fois appuyé : « Ils l'ont mise au-dessus. Pas en dessous. Au-dessus. »",
       "effects": [
         {
           "type": "stat",
@@ -399,7 +399,7 @@
       ]
     },
     "c12-31": {
-      "text": "L'Anti-rad a un goût de fer et de pomme. Vous gardez la seringue vide dans la main sans savoir quoi en faire, puis vous la laissez tomber à travers la grille. Elle met longtemps à toucher le sol. Le compteur hésite, puis recule. Vous perdez 5 rads. La brume verte, en bas, n'a pas bougé.",
+      "text": "L'Anti-rad a un goût de fer et de pomme verte, et la seringue vide, lâchée à travers la grille, met quatre secondes à toucher le béton. Le compteur hésite, puis recule. Vous perdez 5 rads. En bas, la brume verte n'a pas frémi.",
       "choices": [
         {
           "kind": "aller",
@@ -409,7 +409,7 @@
       ]
     },
     "c12-25": {
-      "text": "Vous serrez le Bandage sur ce qui saigne le plus, les dents dans le tissu pour faire le nœud. Ça tient. La douleur se cale quelque part où elle ne gêne pas. Vous regagnez 3 points d'Endurance. En bas, la brume dort toujours sur le sol de la salle des cuves, et le ronronnement attend.",
+      "text": "Le Bandage se serre sur ce qui saigne le plus, le tissu entre vos dents pour faire le nœud d'une seule main. Ça tient. La douleur se range derrière l'épaule, à un endroit où elle ne gêne plus les gestes. Vous regagnez 3 points d'Endurance. En bas, au pied des cuves, la brume n'a pas bougé, et l'émetteur attend que vous descendiez.",
       "choices": [
         {
           "kind": "aller",
@@ -419,7 +419,7 @@
       ]
     },
     "c12-11": {
-      "text": "Au bas de l'escalier, la brume vous arrive aux cuisses. Elle n'a pas d'odeur, et c'est ça qui inquiète. Vos yeux piquent. Entre les cuves, un chemin de caillebotis traverse la salle sur cinquante mètres jusqu'à une porte blindée, ouverte, avec de la lumière blanche derrière. Sur la cuve la plus proche, à hauteur d'homme, une main a laissé cinq traînées dans la rouille.",
+      "text": "Au bas de l'escalier, la brume vous arrive aux cuisses, et elle n'a aucune odeur, ce qui est pire que n'importe laquelle. Vos yeux piquent. Entre les cuves, un chemin de caillebotis traverse la salle sur cinquante mètres jusqu'à une porte blindée, ouverte, avec de la lumière blanche derrière, la première lumière blanche depuis la surface. Sur la cuve la plus proche, à hauteur d'homme, une main a laissé cinq traînées dans la rouille, et elles descendent.",
       "choices": [
         {
           "kind": "agir",
@@ -438,7 +438,7 @@
       ]
     },
     "c12-37": {
-      "text": "Le caoutchouc du Masque à gaz colle à vos joues et le monde se réduit à deux ronds de verre. Vous traversez en comptant vos pas. Entre la troisième et la quatrième cuve, un homme est couché sur le caillebotis, sans masque, la peau du visage comme du papier. Vous l'enjambez. La porte blindée, la lumière blanche, un escalier qui descend encore.",
+      "text": "Le caoutchouc du Masque à gaz colle à vos joues et le monde se réduit à deux ronds de verre embués. Vous traversez en comptant vos pas sur le caillebotis, et chaque pas sonne. Entre la troisième et la quatrième cuve, un homme est couché en travers du chemin, sans masque, les ongles enfoncés dans le caillebotis, la bouche ouverte sur la dernière inspiration qu'il a prise ici. Vous l'enjambez et vous passez la porte blindée, dans la lumière blanche, où des marches descendent encore.",
       "choices": [
         {
           "kind": "aller",
@@ -448,7 +448,7 @@
       ]
     },
     "c12-5": {
-      "text": "Vous inspirez une fois, à fond, et vous courez. Le caillebotis sonne. À mi-chemin, vos poumons demandent, et vous ne donnez pas. Entre deux cuves, un homme couché sans masque, le visage comme du papier. Vous passez la porte blindée en crachant, la bouche pleine d'un goût de piles. Le compteur grimpe. Vous prenez 3 rads.",
+      "text": "Vous emplissez vos poumons à fond, et vous courez. Le caillebotis sonne sous vos bottes et la brume s'ouvre devant vos genoux. À mi-chemin, vos poumons demandent, et vous refusez. Entre deux cuves, un homme couché sans masque, le visage gris comme du papier à cigarette, et vous sautez par-dessus. Vous passez la porte blindée en crachant, la bouche pleine d'un goût de piles, et l'aiguille du compteur ne redescend pas. Vous prenez 3 rads.",
       "effects": [
         {
           "type": "stat",
@@ -465,7 +465,7 @@
       ]
     },
     "c12-23": {
-      "text": "Le troisième palier. Plus bas que ça, il n'y a plus d'escalier. Un couloir blanc, des néons qui tiennent encore, une porte au bout, grise, avec un hublot. Derrière, quelque chose tourne, et le ronronnement vous arrive maintenant par les os, par la mâchoire, par les dents. Votre nez saigne à flots. Tentez votre Chance.",
+      "text": "Le troisième palier est le dernier : en dessous, le plan peint sur le mur ne montre plus que de la terre. Un couloir blanc, des néons qui tiennent encore, et au bout une porte grise avec un hublot. Derrière le hublot, un éclat de cuivre passe et repasse, et la vibration vous arrive maintenant par les os, par la mâchoire, par les dents, comme une fraise de dentiste. Votre nez saigne à flots sur votre veste. Tentez votre Chance.",
       "test": {
         "type": "luck",
         "success": "c12-16",
@@ -473,7 +473,7 @@
       }
     },
     "c12-16": {
-      "text": "Vous tenez. Le sang s'arrête quand vous atteignez la porte, comme si la chose derrière avait décidé de vous laisser entrer. La salle de contrôle. Au centre, une colonne de métal entourée d'anneaux de cuivre, qui tourne lentement et chauffe l'air. Un pupitre de cadrans. Un gros levier rouge sous une plaque gravée. Sur une console, à côté, une chemise cartonnée et un terminal allumé.",
+      "text": "Le sang s'arrête au moment où votre main touche la poignée, net, à croire que la chose derrière la porte a décidé de vous laisser entrer propre. La salle de contrôle est carrelée de blanc jusqu'à mi-hauteur. Au centre, une colonne de métal entourée d'anneaux de cuivre tourne lentement sur elle-même et chauffe l'air, qui sent la poussière grillée. Contre le mur, un pupitre de cadrans à aiguilles et un gros levier rouge sous une plaque gravée en cyrillique, dont vous ne lisez que le chiffre 16. Sur une console à côté, une chemise cartonnée et un terminal allumé, le curseur qui bat.",
       "choices": [
         {
           "kind": "agir",
@@ -488,7 +488,7 @@
       ]
     },
     "c12-32": {
-      "text": "Vous ne tenez pas. Vos genoux touchent le carrelage et vous entendez, distinctement, quelqu'un rire avec votre voix. Vous perdez 2 points d'Endurance. Il y a une voix de trop dans votre tête, et elle ne partira plus. Vous vous relevez. La salle de contrôle : une colonne de métal entourée d'anneaux de cuivre, qui tourne lentement. Un gros levier rouge. Sur une console, une chemise cartonnée et un terminal allumé.",
+      "text": "Vos genoux touchent le carrelage avant que vous ayez compris que c'est raté, et vous entendez, distinctement, quelqu'un rire avec votre voix, un rire court, sans joie, à l'intérieur. Vous perdez 2 points d'Endurance. « Tu es descendu quand même », dit la voix, satisfaite. Vous vous relevez en vous tenant au chambranle, et la salle de contrôle tangue avant de se fixer : les anneaux de cuivre qui tournent autour de la colonne, l'air qui sent le fusible, le levier rouge sous sa plaque, et sur la console une chemise cartonnée posée près d'un terminal allumé.",
       "effects": [
         {
           "type": "flag",
@@ -519,7 +519,7 @@
         "alt": "La salle de l'émetteur psi, une colonne cerclée d'anneaux qui s'immobilisent, un levier abaissé",
         "prompt": "Une salle souterraine au carrelage blanc fissuré, sous des néons dont la moitié sont morts : au centre, une colonne de métal haute jusqu'au plafond, cerclée d'anneaux massifs qui viennent de s'immobiliser, reliée par des câbles à des armoires de contrôle à cadrans. Au premier plan, un gros levier abaissé sur un pupitre, une chemise cartonnée posée à côté, et la main d'un stalker encore sur la poignée, vu de dos. Une traînée de sang sur le carrelage."
       },
-      "text": "Le levier résiste, puis cède d'un coup. Les anneaux ralentissent. Le ronronnement descend, descend, et s'arrête, et le silence qui vient après est si grand que vous entendez votre sang. Votre nez ne saigne plus. Quelque part au-dessus, les voix qui marmonnaient se sont tues, et vous savez sans l'avoir vu que les hommes se sont assis. L'émetteur du X-16 est éteint.",
+      "text": "Le levier résiste, puis cède d'un coup, et la plaque gravée vibre sous vos doigts. Les anneaux ralentissent, un tour, un demi-tour, et s'immobilisent. Le ronronnement descend, descend, et s'arrête, et ce qui vient après est si grand que vous entendez votre propre sang dans vos oreilles. Votre nez ne saigne plus. Quatre paliers plus haut, les voix qui marmonnaient ont cessé en même temps, d'un seul coup, et vous vous représentez les hommes de l'infirmerie en train de s'asseoir. L'émetteur du X-16 est éteint.",
       "effects": [
         {
           "type": "flag",
@@ -563,7 +563,7 @@
       ]
     },
     "c12-28": {
-      "text": "Vous passez devant la colonne sans la toucher, et elle le sait : la pression redouble, votre vue se brouille, vous attrapez la chemise cartonnée à l'aveugle. Vous perdez 2 points d'Endurance. Les Documents du X-16 : des relevés, des courbes, des listes de noms barrés. Sur la couverture, un tampon mauve : Projet C-Conscience. Le levier rouge attend toujours. Et au-dessus, les hommes marchent toujours.",
+      "text": "La colonne, vous la contournez sans la toucher, et elle le sent : la pression redouble, votre vue se brouille par le centre, et vous attrapez la chemise cartonnée à l'aveugle, de la main qui tremble le moins. Vous perdez 2 points d'Endurance. Des Documents du X-16, vous ne voyez que des colonnes de chiffres qui dansent et un tampon mauve sur la couverture, « Projet C-Conscience », avant de les fourrer dans votre veste. Le levier rouge attend toujours sous sa plaque, et quatre paliers plus haut, l'émetteur fait encore marcher des hommes entre les lits.",
       "effects": [
         {
           "type": "item",
@@ -590,7 +590,7 @@
       ]
     },
     "c12-13": {
-      "text": "La chemise cartonnée est plus lourde qu'elle ne devrait. Les Documents du X-16 : des relevés d'émission, des courbes de rendement, une liste de noms, chacun suivi d'une date et d'un mot, intégré. Sur la couverture, un tampon mauve : Projet C-Conscience. Ça ne dit rien de plus que ça, à qui ne sait pas lire. Le terminal, à côté, affiche un curseur qui bat.",
+      "text": "La chemise cartonnée pèse plus lourd que du papier. Les Documents du X-16 : des relevés d'émission, des courbes de rendement, et une liste de noms, chacun suivi d'une date et d'un seul mot, intégré, tapé à la machine avec la même frappe. Sur la couverture, un tampon mauve, « Projet C-Conscience ». Le terminal, à côté, affiche un curseur qui bat et une invite qui attend une clé.",
       "effects": [
         {
           "type": "item",
@@ -616,7 +616,7 @@
       ]
     },
     "c12-21": {
-      "text": "La Clé USB de Strelok entre dans le terminal et l'écran se remplit sans que vous touchiez rien. Son écriture, pas la vôtre. Sept hommes dans une cuve sous le Sarcophage. Ils ont voulu réparer le monde et ils ont fait la Zone. Le X-16, le Radar, ce sont leurs mains. L'Exauceur est une porte, pas une pierre. Et en dessous, une ligne : ils ont besoin de bras. Les miens ne leur ont pas suffi. Vous retirez la clé. Vous savez maintenant ce qui parle.",
+      "text": "La Clé USB de Strelok entre dans le terminal et l'écran se remplit sans que vous touchiez une touche. Son écriture, pas la vôtre, des phrases courtes tapées sans accents. « Sept hommes dans une cuve sous le Sarcophage. Ils ont voulu réparer le monde et ils ont fait la Zone. Le X-16, le Radar, ce sont leurs mains. L'Exauceur est une porte, pas une pierre. » Une ligne plus bas, après un espace, ajoutée un autre jour à en juger par la frappe : « Ils ont besoin de bras. Les miens ne leur ont pas suffi. » Vous lisez deux fois, puis vous retirez la clé et la glissez dans la poche intérieure, contre la peau, là où on garde ce qu'on ne veut pas perdre.",
       "effects": [
         {
           "type": "flag",
@@ -632,7 +632,7 @@
       ]
     },
     "c12-34": {
-      "text": "Le chemin du retour est le même, à l'envers, et il est silencieux. La brume des cuves s'est couchée plus bas. Sur la coursive, rien ne vole. Derrière les hublots de l'infirmerie, des hommes sont assis contre les lits, les mains sur les genoux, la bouche fermée, et l'un d'eux vous suit des yeux sans tourner la tête. Vous ne lui dites rien. L'escalier de fer, la porte de l'usine, le jour gris de Yantar.",
+      "text": "Le chemin du retour est le même, à l'envers, et il est silencieux : vos bottes, le fer des marches, votre souffle. La brume des cuves s'est couchée plus bas, à hauteur de cheville, et laisse voir le caillebotis jusqu'à la porte blindée. Sur la coursive, rien ne vole plus, et la clé à molette est restée où elle est tombée. Derrière les hublots de l'infirmerie, les hommes sont assis contre les lits, les mains sur les genoux, la bouche fermée, et l'un d'eux vous suit des yeux sans tourner la tête, du début à la fin du couloir, sans que vous trouviez un mot à lui offrir. L'escalier de fer remonte jusqu'à la porte de l'usine, et derrière la porte le jour gris de Yantar vous paraît, pour une fois, assez clair.",
       "choices": [
         {
           "kind": "aller",
@@ -642,7 +642,7 @@
       ]
     },
     "c12-18": {
-      "text": "Le ronronnement vous accompagne à chaque marche, et il ne vous veut pas dehors. Derrière les hublots de l'infirmerie, les hommes se sont levés, et ils vous attendent sur le palier du haut, en rang, les bras ouverts, en marmonnant. Trois. Il faudra passer au travers, et ils ne tombent qu'une fois la tête vidée.",
+      "text": "Le ronronnement vous accompagne à chaque marche, et il ne vous veut pas dehors. Derrière la double porte à hublots, l'infirmerie est vide de voix. Elles vous attendent sur le palier du haut, trois hommes en veste de stalker, en rang, les bras ouverts, et cette fois le mot sort net de leurs trois bouches, ensemble, à chaque pas que vous faites vers eux : « Reste. Reste. Reste. » Il faudra passer au travers, et ils ne tombent qu'une fois la tête vidée.",
       "combat": {
         "name": "Les zombies du palier",
         "habilete": 5,
@@ -652,7 +652,7 @@
       }
     },
     "c12-26": {
-      "text": "Le troisième glisse le long de la rampe et reste assis, la bouche ouverte sur son mot. Vous enjambez. Vos mains sur la rampe de fer, vos pieds qui comptent les marches, et le ronronnement qui diminue à chaque palier sans jamais tout à fait partir. La porte de l'usine. Le jour gris de Yantar. Dans le sac, les Documents du X-16 pèsent, et derrière vous l'émetteur tourne toujours.",
+      "text": "Le troisième glisse le long de la rampe et reste assis sur la marche, la bouche ouverte sur son mot, sans plus le dire. Vous l'enjambez. Vous remontez les mains sur la rampe de fer, en comptant les marches, et la vibration baisse dans votre crâne à chaque palier sans jamais lâcher tout à fait. Vous poussez de l'épaule la porte de l'usine, et la lumière de Yantar vous tombe dessus d'un bloc. Dans le sac, les Documents du X-16 pèsent leur poids de papier, et sous vos pieds, à quatre paliers de là, l'émetteur tourne toujours.",
       "choices": [
         {
           "kind": "aller",

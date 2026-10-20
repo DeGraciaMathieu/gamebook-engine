@@ -24,6 +24,8 @@ Si l'argument ne le dit pas, pose au plus quatre questions en un seul appel : st
 4. **Modificateurs** : les règles qui pèsent sur les combats et les tests (arme, armure, blessure, faim, compagnon), avec leur condition et leur valeur. Au moins un bonus et un malus.
 5. **Déclencheurs** : les règles globales qui détournent le récit quand un seuil est franchi (compagnon qui meurt, faim, dette), avec leur condition et leur paragraphe cible. Zéro si l'histoire n'en a pas besoin, mais toute seconde jauge en appelle un.
 
+6. **Diapason** : propose à l'utilisateur d'écrire deux ou trois paragraphes dans la voix voulue (`references/bible.md`, section « Diapason ») ; s'il décline, écris-en un toi-même, de longueurs variées, et montre-le avec le pitch.
+
 Demande validation avant la phase 2.
 
 ## Phase 2 : squelette
@@ -49,6 +51,8 @@ Les identifiants sont mélangés (pas dans l'ordre de lecture). Demande validati
 
 Écris le JSON en une passe, paragraphe par paragraphe, dans `stories/<id>/story.json`, puis ajoute l'entrée dans `stories/index.json`. Applique le style choisi tel que `references/styles.md` le décrit (voix, longueur, formules, règles en capitales ou non, choix annoncés en prose ou non), et respecte `references/writing.md` à la lettre, en particulier : nommer les objets avec le nom du catalogue, chiffrer les variations avec leur unité, annoncer les tests dans le texte, dire le résultat dès la première phrase des paragraphes cibles.
 
+Puis relis-toi comme un correcteur d'édition : `node scripts/story-prose.mjs stories/<id>/story.json` mesure longueurs, rythme, dialogue, liste noire et tournures répétées (`references/writing.md`, section « Prose »). Corrige les tics dans les `text` jusqu'à ce que chaque avertissement restant soit justifié (une histoire sans personnage justifie l'absence de dialogue, rien ne justifie une tournure répétée hors refrain déclaré).
+
 Ne montre pas le JSON à l'utilisateur à ce stade : la phase 4 le contrôle d'abord.
 
 ## Phase 4 : contrôle et équilibrage
@@ -60,6 +64,7 @@ npm test
 node scripts/story-lint.mjs stories/<id>/story.json
 node scripts/story-simulate.mjs stories/<id>/story.json --runs 3000
 node scripts/story-simulate.mjs stories/<id>/story.json --runs 3000 --strategy prudent
+node scripts/story-prose.mjs stories/<id>/story.json
 ```
 
 - Le lint doit sortir sans erreur. Chaque avertissement est soit corrigé, soit justifié dans le rapport final (un objet purement narratif se justifie, un paragraphe inatteignable jamais).
@@ -73,7 +78,7 @@ Un message court pour l'utilisateur :
 1. Pitch en deux lignes, style retenu et chemin vers le fichier.
 2. Le graphe résumé : nombre de paragraphes, carrefours, fins et leurs conditions.
 3. Les chiffres de simulation (les deux stratégies) dans un petit tableau.
-4. Les choix de conception discutables et les avertissements du lint laissés volontairement.
+4. Les choix de conception discutables, les avertissements du lint et de `story-prose.mjs` laissés volontairement.
 5. La commande pour jouer : `npm start` puis http://localhost:8080.
 
 Ne commite pas sans qu'on te le demande.

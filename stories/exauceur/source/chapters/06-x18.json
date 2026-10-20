@@ -34,7 +34,7 @@
   ],
   "paragraphs": {
     "c06-1": {
-      "text": "La porte est au fond de l'usine, derrière une grille que quelqu'un a découpée au chalumeau. Du fer, deux battants, une serrure grosse comme un poing. Au-dessus, peint au pochoir : X-18. La Clef du X-18 pèse dans votre main. Derrière le fer, un escalier descend, et l'air qui monte est plus froid que la vallée. Votre détecteur ne dit rien. C'est ce qui vous gêne.",
+      "text": "La porte est au fond de l'usine, derrière une grille que quelqu'un a découpée au chalumeau. Deux battants de fer, une serrure grosse comme un poing, et au-dessus, au pochoir, X-18 en lettres de vingt centimètres. Entre les battants, un filet d'air monte d'en bas, plus froid que la vallée, chargé de cave et de métal mouillé, et vous restez un moment à le sentir sur le dos de la main qui tient la Clef du X-18. Derrière le fer, l'escalier descend. Votre détecteur ne donne rien, et vous tapez deux fois sur le boîtier pour vous en assurer.",
       "choices": [
         {
           "kind": "aller",
@@ -53,7 +53,7 @@
       ]
     },
     "c06-17": {
-      "text": "La clef tourne en trois tours. Le battant s'ouvre sur un palier de béton et un escalier qui se perd. Une ampoule morte pend au bout de son fil. Sur le mur, des traces de mains, à hauteur d'homme, puis plus bas, puis au ras du sol. Vous refermez derrière vous. Le bruit de la vallée s'arrête net.",
+      "text": "La clef tourne en trois tours, et le battant s'ouvre sur un palier de béton où une ampoule morte pend au bout de son fil, au-dessus de traces de mains qui descendent le long du mur, à hauteur d'homme, puis à hauteur de genou, puis au ras du sol. Vous refermez derrière vous, et le bruit de la vallée s'arrête net.",
       "choices": [
         {
           "kind": "agir",
@@ -72,7 +72,7 @@
       ]
     },
     "c06-4": {
-      "text": "Vous comptez les marches. Vingt, puis un palier, puis vingt encore. Le béton est humide et quelque chose a coulé le long des murs, qui colle aux doigts. À la trentième marche, votre pied ne trouve rien. L'escalier tourne, ou il manque une marche, vous ne le saurez qu'en tombant. Testez votre Habileté.",
+      "text": "Vous comptez les marches, une main sur le mur. Vingt, un palier, vingt encore ; le béton suinte, et ce qui a coulé le long des parois colle aux doigts, une résine brune qui ne part pas. À la trente et unième marche, votre pied ne trouve rien du tout. L'escalier tourne, ou bien il manque une marche, et la seule façon de le savoir est de poser le poids dessus. Testez votre Habileté.",
       "test": {
         "type": "stat",
         "stat": "habilete",
@@ -82,7 +82,7 @@
       }
     },
     "c06-22": {
-      "text": "Votre pied passe dans le vide. Vous roulez sur six marches et le béton vous reçoit sur l'épaule. Vous perdez 3 points d'Endurance. En bas, vous restez un moment sans bouger. Quelque part dans le noir, un objet en métal tombe, roule, s'arrête. Personne ne l'a fait tomber.",
+      "text": "Votre pied passe dans le vide. Vous roulez sur six marches, le béton vous reçoit sur l'épaule, et vous perdez 3 points d'Endurance. Vous restez couché le temps que la douleur se décide. En bas, dans le couloir, un objet en métal tombe, roule sur toute la longueur du passage et vient s'arrêter contre votre botte. C'est un extincteur, la goupille encore en place. Vous ne l'avez pas vu partir, et il n'y avait personne au bout du couloir pour le lancer.",
       "effects": [
         {
           "type": "stat",
@@ -104,7 +104,7 @@
         "alt": "Couloir de béton aux portes de fer, un extincteur en vol lancé par une main invisible",
         "prompt": "Un couloir souterrain de béton au premier niveau d'un laboratoire, bordé de portes de fer numérotées à la peinture, une lampe de secours verte qui clignote tout au fond. Un extincteur traverse le couloir en l'air, à hauteur de tête, lancé par rien, poussière et débris en suspension. Vu depuis le bas de l'escalier, aucune silhouette."
       },
-      "text": "Le premier niveau est un couloir de portes de fer, numérotées à la peinture. Une lampe de secours clignote au fond, verte, et s'éteint quand vous la regardez. Un extincteur traverse le couloir à hauteur de tête et s'écrase contre le mur. Rien ne l'a lancé. Trois portes : ARCHIVES, un vestiaire, et au bout, l'escalier qui continue.",
+      "text": "Le premier niveau est un couloir de portes de fer numérotées à la peinture, 1, 2, 3, jusqu'à 7, et au fond une lampe de secours verte qui clignote et s'éteint dès que vous la regardez. Vous faites trois pas. Un extincteur traverse le couloir à hauteur de tête, frappe le mur près de votre oreille et retombe en roulant, vide, sans aucune main au départ de sa trajectoire. Deux portes portent un nom, ARCHIVES et VESTIAIRE, et au bout du couloir l'escalier continue de descendre.",
       "choices": [
         {
           "kind": "aller",
@@ -124,7 +124,7 @@
       ]
     },
     "c06-30": {
-      "text": "Des casiers de tôle, ouverts pour la plupart, des blouses pendues qui n'ont plus de forme. Au sol, un stalker assis contre le mur, le menton sur la poitrine, mort depuis longtemps. Son PDA est en miettes. Un seul casier est fermé, marqué d'une croix au couteau. Sur la porte, on a gratté : pas le trois.",
+      "text": "Des casiers de tôle grise, ouverts pour la plupart, des blouses pendues qui n'ont plus de forme, et une odeur de laine mouillée qui tient malgré les années. Au pied du dernier rang, un stalker est assis contre le mur, le menton sur la poitrine, dans une veste de la Liberté dont le vert a tourné au gris ; son PDA est en miettes sur ses genoux, et il est là depuis assez de mois pour que les rats aient fini. Un seul casier est resté fermé, le numéro 3, une croix taillée au couteau dans la tôle, et sous la croix, gratté de la même lame par une main qui tremblait : « PAS LE TROIS ». Vous regardez le mort, puis le casier. Il avait le temps d'écrire, pas celui de sortir.",
       "choices": [
         {
           "kind": "agir",
@@ -139,7 +139,7 @@
       ]
     },
     "c06-6": {
-      "text": "La porte du casier s'ouvre seule avant que vous la touchiez, et vous frappe au visage. Vous perdez 2 points d'Endurance. Dedans, une liasse serrée par un élastique : 120 roubles. Et une photo de femme, dont vous ne prenez rien. Dans le couloir, quelque chose rit, ou tousse. Vous ne restez pas pour savoir.",
+      "text": "La porte du casier s'ouvre seule avant que vos doigts touchent la tôle, et elle vous frappe au visage. Vous perdez 2 points d'Endurance. Vous crachez, et vous regardez dedans. Une liasse serrée par un élastique, 120 roubles en billets de cinquante et de dix, et une photo de femme en manteau devant un bloc de Pripyat, que vous laissez où elle est. Dans le couloir, un rire, ou une toux, au ras du plafond. Vous ne restez pas pour trancher.",
       "effects": [
         {
           "type": "stat",
@@ -161,7 +161,7 @@
       ]
     },
     "c06-25": {
-      "text": "Les archives sont une salle longue, des rayonnages jusqu'au plafond, des classeurs gonflés d'eau. Au fond, un coffre de fer scellé dans le mur. Vous faites trois pas. Les classeurs se mettent à tomber, un par un, puis tous. Une chaise se lève, tourne et cherche votre tête. L'air sent l'ozone. Tentez votre Chance.",
+      "text": "Les archives sont une salle en longueur, des rayonnages jusqu'au plafond, des classeurs gonflés d'eau qui ont fait éclater leurs dos de carton, et sous les bottes une boue de papier où les mots se lisent encore par morceaux, dose, sujet, protocole. Au fond, un coffre de fer scellé dans le mur. À mi-chemin, le premier classeur tombe à votre gauche, un second à droite, puis une étagère entière se vide dans un bruit de grêle, et une chaise de bureau quitte le sol, pivote une fois sur sa tige et vient chercher votre tête. L'air pique les narines, chargé d'ozone. Vous baissez la tête. Tentez votre Chance.",
       "test": {
         "type": "luck",
         "success": "c06-2",
@@ -169,7 +169,7 @@
       }
     },
     "c06-13": {
-      "text": "La chaise vous trouve. Elle vous frappe aux côtes et vous perdez 3 points d'Endurance. Vous tombez entre deux rayonnages. Les classeurs continuent de pleuvoir, puis cessent, comme si ce qui jouait s'ennuyait. Le coffre est là, à six pas. Il n'a pas bougé. Lui, personne ne le jette.",
+      "text": "La chaise vous trouve à l'épaule et aux côtes, et vous perdez 3 points d'Endurance. Vous tombez entre deux rayonnages, le visage dans la boue de papier, et les classeurs continuent de pleuvoir sur votre dos, puis un par un, puis cessent, le temps que le Poltergeist se lasse de ce jeu-là. Vous relevez la tête. Le coffre est toujours au fond, à six pas, scellé dans son mur, et de tout ce que contient la salle, c'est le seul objet qu'il n'a pas réussi à soulever.",
       "effects": [
         {
           "type": "stat",
@@ -186,7 +186,7 @@
       ]
     },
     "c06-2": {
-      "text": "Le coffre est fermé par une poignée à barillet, rouillée dans son logement. Sur la porte, une plaque : DOCUMENTS, NE PAS SORTIR. Le détecteur se réveille et crépite une fois, puis rien. Vous calez votre épaule contre le fer et tirez. Derrière vous, les rayonnages grincent. Testez votre Habileté.",
+      "text": "Le coffre est fermé par une poignée à barillet, rouillée dans son logement, et une plaque d'émail vissée sur la porte dit « DOCUMENTS. NE PAS SORTIR. » Le détecteur se réveille, crépite une fois, un seul claquement sec, et retourne dormir. Vous calez l'épaule contre le fer, les deux mains sur la poignée, et vous tirez, tandis que derrière vous les rayonnages se remettent à grincer sur leurs boulons. Testez votre Habileté.",
       "test": {
         "type": "stat",
         "stat": "habilete",
@@ -196,7 +196,7 @@
       }
     },
     "c06-19": {
-      "text": "La poignée cède d'un coup. Dans le coffre, un dossier cartonné, épais, intact : les Documents du X-18. Des schémas de cuve, des courbes, des noms de patients rayés. Vous le glissez dans votre veste sans lire. Au fond des archives, une seconde porte donne sur l'escalier. Les classeurs ne bougent plus. Ils vous laissent partir avec ça.",
+      "text": "La poignée cède et vous reste dans les mains. Dans le coffre, un dossier cartonné, épais, sec, intact : les Documents du X-18. Vous l'ouvrez juste assez pour voir des schémas de cuve, des courbes de doses, une liste de noms dont la plupart sont rayés au crayon rouge, et vous le refermez, parce que ce n'est pas l'endroit pour lire. Il va contre votre poitrine, sous la veste. Au fond des archives, une seconde porte donne sur l'escalier. Les classeurs restent au sol, et vous traversez la salle jusqu'à cette porte sans qu'un seul se soulève.",
       "effects": [
         {
           "type": "item",
@@ -213,7 +213,7 @@
       ]
     },
     "c06-28": {
-      "text": "Le barillet ne bouge pas. Un classeur vous frappe à la tempe et vous perdez 2 points d'Endurance. Le sang coule dans l'œil. Le coffre est toujours là, muet. Au fond de la salle, une seconde porte donne sur l'escalier, pour ceux qui renoncent.",
+      "text": "Le barillet tient. Un classeur vous frappe à la tempe, de biais, et vous perdez 2 points d'Endurance. Le sang coule dans l'œil gauche et vous l'essuyez du pouce. Le coffre n'a pas bougé d'un millimètre dans son mur. Derrière le dernier rayonnage, une porte entrebâillée laisse voir des marches qui descendent.",
       "effects": [
         {
           "type": "stat",
@@ -235,7 +235,7 @@
       ]
     },
     "c06-9": {
-      "text": "Le palier du deuxième niveau est une pièce ronde, béton nu, trois portes et un escalier qui continue. CUVES, INFIRMERIE, et sur la troisième, rien qu'un chiffre : 3. De là-bas monte une lueur verte et une odeur de pomme pourrie. Au sol, des traces de pas dans la poussière, toutes dans le même sens. Vers le bas. Aucune ne revient.",
+      "text": "Le palier du deuxième niveau est une pièce ronde en béton nu, trois portes de fer et un escalier qui continue. CUVES, INFIRMERIE, et sur la troisième porte, rien qu'un chiffre, 3, à la peinture rouge. De l'escalier monte une lueur verte, et avec elle une odeur de pomme pourrie qui vous reste dans la gorge. Dans la poussière du sol, des traces de pas, des bottes et des pieds nus, toutes dans le même sens, vers le bas, et aucune ne remonte.",
       "image": {
         "src": "images/c06-9.webp",
         "alt": "Palier souterrain circulaire en béton nu, trois portes de fer, un escalier qui descend vers une lueur verte",
@@ -265,7 +265,7 @@
       ]
     },
     "c06-14": {
-      "text": "La salle des cuves est plus grande que ce que l'usine laisse croire. Des cylindres de verre hauts comme deux hommes, vides, l'un fendu. Il fait noir sauf au fond, où l'air tourne sur lui-même en soulevant des éclats de verre. Votre détecteur se met à chanter, par saccades. Il y a quelque chose là-dedans, et ça vaut le voyage.",
+      "text": "La salle des cuves est plus grande que l'usine ne le laisse croire, des cylindres de verre hauts comme deux hommes, vides, alignés sur un rail, et l'un d'eux fendu du haut en bas. Il fait noir, sauf au fond, où l'air tourne et soulève des éclats de verre qui tintent en retombant. Votre détecteur se met à chanter par saccades, de plus en plus serrées vers le fond. Il y a un artefact là-dedans, et il vaut le voyage.",
       "choices": [
         {
           "kind": "agir",
@@ -284,7 +284,7 @@
       ]
     },
     "c06-31": {
-      "text": "Le faisceau de la Lampe torche balaie les cuves. Dans le fond, l'anomalie « Carrousel » tourne lentement, invisible sauf pour la poussière qu'elle fait monter en spirale. Au centre, posée comme une bille au fond d'un bol, une pierre bleue qui bat. L'Âme. Vous repérez le bord du Carrousel : trois mètres. Un boulon le dira.",
+      "text": "Le faisceau de la Lampe torche balaie les cuves et s'arrête au fond, sur une colonne de poussière qui tourne sans bruit : l'anomalie « Carrousel », invisible sauf pour ce qu'elle soulève. Au centre, au creux du tourbillon, une pierre bleue de la taille d'un œuf, et elle bat : une Âme. Vous mesurez à l'œil le bord du tourbillon, deux bons mètres, guère plus, et vous sortez un boulon de votre poche pour qu'il le dise à votre place.",
       "choices": [
         {
           "kind": "agir",
@@ -299,7 +299,7 @@
       ]
     },
     "c06-7": {
-      "text": "Dans le noir, votre genou rencontre la cuve fendue. Le verre entre dans la peau et vous perdez 2 points d'Endurance. Vous suivez le détecteur à l'oreille. Au fond, l'air tourne et soulève la poussière, et dedans une lueur bleue bat comme un cœur : un artefact. Entre vous et lui, le « Carrousel ». Vous ne voyez pas où il commence.",
+      "text": "Votre genou rencontre la cuve fendue avant que vous l'ayez vue, et le verre entre dans la peau. Vous perdez 2 points d'Endurance. Vous suivez le détecteur à l'oreille, une main sur le rail, jusqu'au fond, où l'air tourne et soulève la poussière, et où une lueur bleue bat au ras du sol, régulière : un artefact. Entre vous et lui, le « Carrousel », dont vous ne voyez pas le bord dans ce noir.",
       "effects": [
         {
           "type": "stat",
@@ -321,7 +321,7 @@
       ]
     },
     "c06-20": {
-      "text": "Vous lancez un boulon. Il monte, tourne deux fois et retombe à vos pieds, tordu. Le bord est là. Vous avancez à plat ventre, le bras tendu vers la pierre. L'air vous tire la manche. Le détecteur hurle. Tentez votre Chance.",
+      "text": "Vous lancez un boulon. Il monte, fait deux tours et retombe à vos pieds, plié en équerre ; le bord est là, à la pointe de vos bottes. Vous vous couchez à plat ventre et vous avancez le bras vers la pierre, et l'air vous tire la manche, d'abord doucement, puis comme une main. Le détecteur hurle. Tentez votre Chance.",
       "test": {
         "type": "luck",
         "success": "c06-3",
@@ -329,7 +329,7 @@
       }
     },
     "c06-3": {
-      "text": "Vos doigts se referment sur la pierre, et le Carrousel vous lâche la manche, comme s'il n'en voulait plus. L'Âme est tiède, elle bat lentement contre la paume. Les stalkers disent que les savants de Yantar paient ça le prix d'une vie. Vous la rangez contre la poitrine. Les cuves vides vous regardent sortir.",
+      "text": "Vos doigts se referment sur la pierre, et le Carrousel lâche votre manche, sans rancune, et la poussière retombe autour de vous en pluie fine. L'Âme est tiède. Elle bat contre la paume, à peu près au rythme de votre propre pouls, et vous repensez à ce que disait le vieux, au feu de la Liberté, entre deux bouffées : « Une Âme, les savants de Yantar la paient le prix d'une vie. La tienne ou celle d'un autre, ils ne précisent pas. » Vous la rangez dans la poche intérieure et vous repartez entre les cuves vides, qui renvoient votre ombre d'un verre à l'autre.",
       "effects": [
         {
           "type": "item",
@@ -346,7 +346,7 @@
       ]
     },
     "c06-26": {
-      "text": "Le Carrousel vous prend par le bras. Il vous soulève, vous retourne et vous jette contre une cuve. Le verre tient, pas vos côtes. Vous perdez 3 points d'Endurance. Vous restez au sol le temps que la pièce arrête de tourner. La pierre bleue bat toujours au centre, à trois mètres, comme si de rien n'était.",
+      "text": "Le Carrousel vous prend par le bras. Il vous soulève du sol, vous retourne et vous jette contre la cuve la plus proche ; le verre tient, pas vos côtes, et vous perdez 3 points d'Endurance. Vous restez au sol jusqu'à ce que la salle arrête de tourner derrière vos paupières. Au centre du tourbillon, à deux pas, la pierre bleue bat toujours au même rythme, et la poussière reprend sa spirale au-dessus d'elle, sans vous avoir remarqué.",
       "effects": [
         {
           "type": "stat",
@@ -368,7 +368,7 @@
       ]
     },
     "c06-16": {
-      "text": "L'infirmerie a gardé son carrelage blanc et une table d'examen avec des sangles. Les sangles sont bouclées sur rien. Dans l'armoire vitrée, des fioles vides, des seringues, et une boîte à croix rouge que personne n'a ouverte : une Trousse de soins. Au mur, un tableau de doses, des noms, des dates. La dernière date est d'avant la Zone.",
+      "text": "L'infirmerie a gardé son carrelage blanc, ses plinthes vertes et une table d'examen à sangles de cuir, et les sangles sont bouclées sur rien. Dans l'armoire vitrée, des fioles vides, des seringues de verre à piston, et sur l'étagère du bas une boîte de tôle à croix rouge dont le plomb de scellé est intact : une Trousse de soins. Vous la glissez dans le sac. Au mur, un tableau noir, des colonnes à la craie, des noms, des doses en millilitres, des dates, et dans la dernière colonne un seul mot repris à chaque ligne, « stable », jusqu'à la dernière date, qui tombe deux semaines avant la Zone.",
       "effects": [
         {
           "type": "item",
@@ -385,7 +385,7 @@
       ]
     },
     "c06-10": {
-      "text": "L'escalier du troisième niveau descend dans le vert. Le gaz tient au sol comme une eau, épais, et monte à chaque marche. Ça sent la pomme pourrie et le cuivre. Les traces de pas s'y enfoncent et disparaissent. Votre compteur tique une fois, puis deux. Tout en bas, un bruit lourd, régulier, qui ressemble à quelqu'un qui dort.",
+      "text": "L'escalier du troisième niveau descend dans le vert. Le gaz tient au sol comme une eau lourde, épais, à peine remué par vos pas, et il monte d'une marche chaque fois que vous en descendez une. Le cuivre passe maintenant par-dessus la pomme. Les traces de pas s'y enfoncent et n'en ressortent pas. Votre compteur tique une fois, puis deux, puis cherche encore. Tout en bas, sous la surface verte, un bruit lourd et régulier, qui ressemble au souffle de quelqu'un de très grand qui dort.",
       "choices": [
         {
           "kind": "agir",
@@ -404,7 +404,7 @@
       ]
     },
     "c06-33": {
-      "text": "Le Masque à gaz colle au visage et le monde se met à sentir le caoutchouc. Le vert monte jusqu'à la poitrine, puis au-dessus de la tête. Vous descendez dans un aquarium. Le compteur tique mais reste sage. En bas, une antichambre, une porte de fer entrouverte, et le bruit lourd derrière, qui s'est arrêté quand vous avez posé le pied.",
+      "text": "Le Masque à gaz colle au visage, et le monde se met à sentir le caoutchouc. Le vert monte jusqu'à la poitrine, puis par-dessus la tête, et vous descendez les dernières marches dans un aquarium où votre propre respiration fait tout le bruit. Le compteur tique, mais reste sage. En bas, le souffle lourd s'interrompt à la seconde où votre botte touche le sol.",
       "choices": [
         {
           "kind": "aller",
@@ -414,7 +414,7 @@
       ]
     },
     "c06-5": {
-      "text": "Vous descendez en apnée. Le vert vous prend aux yeux, puis aux poumons quand il faut bien respirer. Ça brûle. Vous toussez du sang dans votre manche et vous perdez 3 points d'Endurance. Le compteur grimpe : vous prenez 3 rads. En bas, une antichambre, une porte de fer entrouverte, et le bruit lourd qui s'est arrêté quand vous avez posé le pied.",
+      "text": "Le vert vous prend aux yeux dès la cinquième marche, puis aux poumons, quand il faut bien respirer, et ça brûle comme une gorgée d'eau de Javel. Vous toussez du sang dans votre manche et vous perdez 3 points d'Endurance. Le compteur grimpe : vous prenez 3 rads. Vous trouvez le bas de l'escalier avec les mains, le long du mur, à travers les larmes, et quand vos genoux touchent le sol, le souffle lourd se coupe.",
       "effects": [
         {
           "type": "stat",
@@ -436,7 +436,7 @@
       ]
     },
     "c06-23": {
-      "text": "L'antichambre est un sas : deux portes, un lavabo arraché, un rideau de plastique. Derrière la porte du fond, quelque chose respire, et à chaque souffle le béton tremble sous vos bottes. Sur le mur, un panneau d'affichage, des photos de patients. Le dernier, c'est un homme très grand. Sur la photo d'après, il n'est plus un homme.",
+      "text": "L'antichambre est un sas : deux portes, un lavabo arraché du mur qui pend à son tuyau, un rideau de plastique en lanières. Derrière la porte du fond, une respiration, et à chaque expiration le béton tremble sous vos bottes. Sur le mur de gauche, un panneau de liège, des photos de patients punaisées en rang, numéro et date au feutre sous chacune. Le dernier est un homme très grand, en pyjama d'hôpital, qui sourit à l'objectif. Sur la photo d'après, même numéro, autre date, il ne tient plus dans le cadre, et ce qui en tient ne sourit plus.",
       "choices": [
         {
           "kind": "agir",
@@ -488,7 +488,7 @@
       ]
     },
     "c06-12": {
-      "text": "Vous buvez l'Anti-rad d'un trait. C'est amer, puis froid, et ça descend jusque dans les jambes. Le compteur se calme : vous perdez 5 rads. Vos mains tremblent un peu moins. Vous laissez tomber la fiole dans le lavabo arraché. Derrière la porte, la respiration reprend, plus courte. Il sait que vous êtes là.",
+      "text": "L'Anti-rad est amer, puis froid, et le froid descend jusque dans les jambes. Le compteur se calme : vous perdez 5 rads. Vos mains tremblent un peu moins quand vous reposez la fiole vide dans le lavabo arraché, où elle roule et tinte contre l'émail. Derrière la porte, la respiration reprend, plus courte qu'avant. Le tintement est arrivé jusqu'à lui.",
       "choices": [
         {
           "kind": "agir",
@@ -519,7 +519,7 @@
       ]
     },
     "c06-29": {
-      "text": "Vous videz la Trousse de soins. Deux bandes serrées, une seringue dans la cuisse, la plaie du genou refermée avec du fil. Vous regagnez 6 points d'Endurance. Vous jetez la boîte vide. Elle rebondit sur le carrelage, et derrière la porte, la respiration s'arrête. Puis quelque chose se lève.",
+      "text": "La Trousse de soins se vide sur le rebord du lavabo. Deux bandes serrées sur les côtes, une seringue de morphine dans la cuisse, les coupures refermées à quelques points de fil, et vous regagnez 6 points d'Endurance. Vous jetez la boîte vide. Elle rebondit sur le carrelage, deux fois, et au second rebond la respiration derrière la porte s'arrête, puis le sol tremble d'une autre façon, plus large : il vient de se lever.",
       "choices": [
         {
           "kind": "agir",
@@ -555,7 +555,7 @@
         "alt": "Un Pseudo-géant aux bras trop longs dans une salle de cuves noyée de gaz vert",
         "prompt": "Une salle de machines souterraine noyée dans un gaz épais, des cuves couchées, le plafond perdu dans la brume. Au centre, un Pseudo-géant de trois mètres, tête trop petite, bras qui touchent le sol, des sangles encore nouées aux poignets, le sol fendu sous son pied. Il est vu depuis le seuil d'une porte de fer entrouverte, le faisceau d'une lampe torche tremblant sur lui ; le héros n'apparaît pas."
       },
-      "text": "La porte s'ouvre sur une salle de machines, des cuves couchées, un plafond perdu dans le vert. Au milieu, le Pseudo-géant. Trois mètres, une tête trop petite, des bras qui touchent le sol, et des sangles encore nouées aux poignets. Il vous regarde avec des yeux d'homme. Il fait un pas et le sol se fend. Dans ce vert, sans lumière, vous ne retrouveriez pas la poignée de la porte. Vous avez le temps d'une seule chose.",
+      "text": "La porte s'ouvre sur une salle de machines, des cuves couchées sur le flanc, des gaines au plafond que le vert avale à mi-hauteur. Au milieu, le Pseudo-géant. Deux fois votre taille, une tête trop petite posée sans cou sur les épaules, des bras qui traînent au sol, et aux poignets des sangles de cuir encore bouclées, dont les bouts coupés pendent jusqu'à terre. Il vous regarde avec des yeux d'homme, deux petits yeux bleus perdus dans ce visage. Il fait un pas, et le béton se fend sous son pied dans un bruit de glace. Vous mesurez tout en même temps, la porte, le gaz, la poignée que vous ne retrouveriez pas sans lumière dans ce vert, et vous avez le temps d'une seule chose.",
       "choices": [
         {
           "kind": "attaquer",
@@ -590,7 +590,7 @@
       ]
     },
     "c06-18": {
-      "text": "La Grenade F1 roule entre ses pieds. Vous vous plaquez derrière une cuve. L'explosion mange le gaz d'un coup et la pièce devient blanche. Quand vous rouvrez les yeux, le Pseudo-géant est couché sur le flanc, une jambe tordue sous lui, et il respire encore, lentement. Il ne se relèvera pas avant longtemps. Vous passez à côté de lui. Il vous suit des yeux.",
+      "text": "La Grenade F1 roule entre ses pieds et vous vous plaquez derrière une cuve, les mains sur les oreilles. L'explosion avale le gaz, la pièce devient blanche, puis le vert retombe par nappes. Quand vous rouvrez les yeux, le Pseudo-géant est couché sur le flanc, une jambe tordue sous lui à un angle qui ne se répare pas, et il respire encore, par grandes vagues, les sangles coupées étalées autour de lui. Il ne se relèvera pas de sitôt. Vous passez à côté de sa tête, et ses petits yeux bleus vous suivent jusqu'au bout de la salle.",
       "choices": [
         {
           "kind": "aller",
@@ -600,7 +600,7 @@
       ]
     },
     "c06-27": {
-      "text": "Vous saisissez la poignée à deux mains. La porte est lourde, le gond rouillé crie, et derrière elle le Pseudo-géant a déjà traversé la moitié de la salle. Le faisceau de la Lampe torche tremble sur ses dents. Il reste trois pas. Testez votre Habileté.",
+      "text": "Les deux mains sur la poignée, vous tirez. La porte est lourde, le gond rouillé hurle, et derrière elle le géant a déjà traversé la moitié de la salle en deux enjambées, et le faisceau de la Lampe torche, coincée sous votre bras, tremble sur ses dents. Il en est à la dernière cuve. Testez votre Habileté.",
       "test": {
         "type": "stat",
         "stat": "habilete",
@@ -610,7 +610,7 @@
       }
     },
     "c06-15": {
-      "text": "La porte de fer claque avant lui. Il frappe, une fois, deux fois, et le fer se bombe vers vous, mais tient. Puis plus rien. Vous entendez son souffle revenir derrière la porte, lent, patient. Il a le temps. Vous, non. L'escalier remonte derrière vous dans le vert.",
+      "text": "Le battant claque avant lui. Il frappe, une fois, deux fois, et le fer se bombe vers vous de la largeur d'une main, mais tient dans ses gonds. Puis le souffle revient derrière la porte, patient, et vous l'entendez s'asseoir, ou se laisser tomber, de l'autre côté. Il a tout son temps, et vous n'avez que celui de l'escalier qui remonte derrière vous dans le vert.",
       "choices": [
         {
           "kind": "aller",
@@ -625,7 +625,7 @@
       ]
     },
     "c06-21": {
-      "text": "Il est sur vous. Chaque coup ferait éclater une porte de voiture, et vous n'êtes pas une porte. Vous tirez dans la tête trop petite, vous reculez entre les cuves, vous tirez encore. Il frappe à casser des os. Si vous reculez jusqu'à la porte, il ne vous suit pas : il garde la salle, pas les marches.",
+      "text": "Il est sur vous. Vous tirez dans la tête trop petite, vous reculez entre les cuves couchées, vous tirez encore, et les balles entrent dans cette peau comme dans de la terre, sans qu'il ralentisse. Sa main ouverte balaie l'air là où vous étiez, et il en faudra beaucoup pour le coucher, parce qu'il ne se presse pas. Mais il ne franchit pas le seuil, les sangles l'ont dressé à ça : il garde la salle, pas les marches.",
       "combat": {
         "name": "Pseudo-géant",
         "habilete": 8,
@@ -638,7 +638,7 @@
       }
     },
     "c06-24": {
-      "text": "Le Pseudo-géant ne bouge plus, ou plus assez. Au-delà, un bureau vitré, le poste de l'homme qui tenait les sangles. Son squelette est encore sur la chaise, blouse, lunettes. Dans le tiroir, une liasse d'avant la Zone, et une autre d'après : 300 roubles. Sur le bureau, une feuille, une seule phrase : ils n'ont pas besoin de nous pour rêver. Vous ne savez pas qui est « ils ».",
+      "text": "Le Pseudo-géant ne bouge plus, ou plus assez pour vous retenir. Au-delà, derrière une vitre étoilée, un bureau, le poste de celui qui tenait les sangles : son squelette est encore sur la chaise, dans une blouse, les lunettes tombées sur le clavier. Dans le tiroir, deux liasses, une d'avant la Zone, en roubles qui ne valent plus rien, et une d'après, 300 roubles en billets qui ont encore cours. Sur le sous-main, une feuille, une seule ligne au stylo, appuyée jusqu'à percer le papier : « Ils n'ont pas besoin de nous pour rêver. » Vous relisez la ligne, vous cherchez une suite au dos, il n'y en a pas, et vous laissez la feuille sous les lunettes.",
       "effects": [
         {
           "type": "stat",
@@ -660,7 +660,7 @@
       ]
     },
     "c06-32": {
-      "text": "Vous remontez. Le vert vous lâche au deuxième niveau, le noir au premier. Dans le couloir, un classeur tombe derrière vous, seul, sans conviction. L'escalier, la porte de fer, la clef qui tourne dans l'autre sens. Dehors, c'est encore la Vallée sombre, la brume, le jour qu'il reste. Vous respirez par la bouche pendant un long moment.",
+      "text": "Le vert vous lâche au deuxième niveau, le noir au premier, et dans le couloir un classeur tombe derrière vous, seul, sans conviction. L'escalier, le palier à l'ampoule morte, la clef qui tourne dans l'autre sens, trois tours. Dehors, c'est encore la Vallée sombre, la brume, ce qu'il reste de jour, et vous respirez par la bouche jusqu'à ce que le goût de pomme pourrie soit parti.",
       "choices": [
         {
           "kind": "aller",

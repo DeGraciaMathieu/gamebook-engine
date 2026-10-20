@@ -31,7 +31,7 @@
   ],
   "paragraphs": {
     "c26-1": {
-      "text": "Le vent vous trouve au pied de l'échelle. Il descend de la cheminée en sifflant dans les barreaux, et il sent la rouille et une neige qui n'est pas tombée. L'échelle monte le long du mur de la salle des machines, trente mètres de fer peint en rouge, écaillé à moitié. Plus loin, une porte de service bat sur un escalier noir. En haut, quelque chose claque dans le vent, régulier, comme un drapeau. Ou comme une bâche sur un corps.",
+      "text": "Au pied de l'échelle des toits, le vent vous trouve avant que vous ayez levé la tête. Il tombe du haut des toits en sifflant dans les barreaux et apporte une odeur de rouille et de neige qui n'est pas tombée. L'échelle grimpe le long du mur de la salle des machines, trente mètres de fer peint en rouge dont la moitié de la peinture est partie avec les hivers. À gauche, une porte de service bat sur un escalier sans lumière. Là-haut, un battement régulier claque contre du béton, et entre deux rafales vous entendez des voix qui récitent, très loin, à plusieurs : « Reçois-le, reçois-le, reçois-le. » Le vent les reprend aussitôt et les emporte vers le Sarcophage.",
       "choices": [
         {
           "kind": "aller",
@@ -46,7 +46,7 @@
       ]
     },
     "c26-17": {
-      "text": "À mi-hauteur, l'échelle bouge. Les pattes de scellement ont lâché sur deux mètres et le fer s'écarte du mur à chaque rafale, revient, cogne. Vous ne regardez pas en bas. Vos mains sont froides au point de ne plus sentir la peinture qui se détache en plaques sous vos doigts. Il faut passer vite, pendant que le vent retient son souffle. Testez votre Habileté.",
+      "text": "À mi-hauteur, l'échelle bouge sous vous. Les pattes de scellement ont lâché sur deux mètres, et à chaque rafale le fer s'écarte du mur d'une main, hésite, puis revient cogner le béton avec un bruit de cloche fêlée qui vous remonte dans les poignets. Vos doigts sont si froids qu'ils ne sentent plus la peinture rouge partir en plaques sous la paume. Vous gardez les yeux sur le barreau suivant et vous attendez la prochaine accalmie pour passer. Testez votre Habileté.",
       "test": {
         "type": "stat",
         "stat": "habilete",
@@ -56,7 +56,7 @@
       }
     },
     "c26-9": {
-      "text": "Le barreau cède sous votre pied. Vous restez pendu par les mains, le temps d'une rafale, le genou cogné contre le mur. Vous perdez 3 points d'Endurance. Puis le fer se remet d'aplomb et vous finissez la montée sans réfléchir, un barreau après l'autre, jusqu'à ce que vos coudes trouvent le rebord de gravier.",
+      "text": "Le barreau cède sous votre pied et vous restez pendu par les mains le temps d'une rafale, le genou ouvert contre le mur. Vous perdez 3 points d'Endurance. Le reste de la montée se fait sans une pensée, barreau après barreau, jusqu'à ce que vos coudes trouvent le gravier du rebord.",
       "effects": [
         {
           "type": "stat",
@@ -73,7 +73,7 @@
       ]
     },
     "c26-24": {
-      "text": "L'escalier monte dans le noir, entre deux murs de béton qui suintent. Le détecteur crépite, puis crépite encore. Il y a de la poussière sur les marches, une poussière fine et grise qui monte à chaque pas et que vous respirez. Vous prenez 3 rads. Au dernier palier, une porte de fer sans poignée. Vous la poussez de l'épaule et le vent entre d'un coup, avec la lumière.",
+      "text": "L'escalier monte sans lumière entre deux murs de béton qui suintent, et la poussière des marches, fine et grise, se soulève à chaque pas pour vous entrer dans la bouche. Le détecteur crépite à la sixième marche et ne s'arrête plus. Vous prenez 3 rads. Au dernier palier, un battant d'acier sans poignée résiste à la première poussée, cède à la deuxième, et le vent s'engouffre dans la cage avec toute la lumière blanche du ciel.",
       "effects": [
         {
           "type": "stat",
@@ -95,7 +95,7 @@
         "alt": "Le toit de gravier de la salle des machines, la cheminée rayée haubanée de câbles, le Sarcophage derrière.",
         "prompt": "Vue depuis le bord d'un immense toit de gravier et de bitume fendu, long comme une rue, balayé par le vent. À l'autre bout se dresse une haute cheminée industrielle rayée de bandes claires et sombres, haubanée de câbles tendus, et derrière elle la masse de béton gris du Sarcophage, reliée à la cheminée par une passerelle qui pend. Au milieu du toit, une cabine de ventilation en tôle à la porte ouverte et des bouches de conduits rouillées dans le sol ; une silhouette de stalker de dos, courbée contre le vent, au premier plan."
       },
-      "text": "Le toit de la salle des machines est un champ de gravier et de bitume fendu, long comme une rue. La cheminée se dresse à l'autre bout, rayée de rouge et de blanc, haubanée de câbles qui chantent. Derrière elle, le Sarcophage, son béton gris, et une passerelle qui pend entre les deux. Au milieu du toit, une cabine de ventilation, porte ouverte. Des bouches de conduits s'ouvrent dans le sol. Le vent ne s'arrête jamais ici.",
+      "text": "Le toit de la salle des machines s'étend devant vous, gravier et bitume fendu, long comme une rue de Pripyat et aussi vide. À l'autre bout se dresse la cheminée, rayée de rouge et de blanc, tenue par des haubans qui chantent chacun sur sa note dès que le vent force. Derrière elle, le béton gris du Sarcophage, et entre les deux un tablier de caillebotis suspendu dans le vide. Au milieu du toit, une cabine de ventilation en tôle a gardé sa porte ouverte ; autour, des bouches de conduits rouillées s'ouvrent à ras du gravier, et le vent, à cette hauteur, ne retombe jamais tout à fait.",
       "choices": [
         {
           "kind": "aller",
@@ -120,7 +120,7 @@
       ]
     },
     "c26-30": {
-      "text": "Vous avancez jusqu'au rebord. Le parvis est en bas, à trente mètres, avec les corps que l'Émission a laissés, petits, sans couleur. L'abri où vous l'avez attendue ressemble à une boîte d'allumettes. Un éclat de lumière, en face, sur le toit de la salle des turbines. Une lunette. Vous le comprenez une seconde avant le coup de feu. Tentez votre Chance.",
+      "text": "Le rebord monte à peine au genou, et vous vous en approchez accroupi. Trente mètres plus bas, le parvis garde les corps que l'Émission a couchés, petits, décolorés, et l'abri où vous l'avez attendue ne paraît pas plus grand qu'une boîte d'allumettes. En face, sur le toit des turbines, un éclat de verre s'allume au ras d'un muret de briques, s'éteint, revient, et vous mettez une seconde de trop à reconnaître le reflet d'une lunette. Tentez votre Chance.",
       "test": {
         "type": "luck",
         "success": "c26-6",
@@ -128,7 +128,7 @@
       }
     },
     "c26-6": {
-      "text": "La balle passe. Elle mord le rebord à côté de votre main et le béton vous pique la joue. Vous êtes déjà à plat ventre dans le gravier. Au moins, vous savez où ils sont : deux, peut-être trois, dans une hutte de briques sur le toit d'en face, à hauteur de la cheminée. Vous rampez en arrière, le vent couvre votre souffle.",
+      "text": "La balle vous manque et mord le rebord à un doigt de votre main ; un éclat de béton vous pique la joue. Vous êtes déjà à plat ventre dans le gravier quand le deuxième coup passe, haut. Au moins, maintenant, vous les avez situés : deux tireurs, peut-être trois, dans une hutte de briques posée en face, à hauteur des premiers haubans. Vous reculez sur les coudes pendant que le vent couvre le bruit de votre souffle.",
       "choices": [
         {
           "kind": "aller",
@@ -138,7 +138,7 @@
       ]
     },
     "c26-21": {
-      "text": "La balle vous prend dans l'épaule, en haut, là où il n'y a que de la chair. Vous tombez en arrière dans le gravier. Vous perdez 3 points d'Endurance. Un deuxième coup passe au-dessus de vous. Vous rampez vers la cabine, la main plaquée sur la plaie, le sang chaud entre les doigts. Ils sont en face, sur le toit de la salle des turbines, dans une hutte de briques.",
+      "text": "La balle vous prend en haut de l'épaule, là où il n'y a que de la chair, et vous tombez à la renverse dans le gravier. Vous perdez 3 points d'Endurance. Le coup suivant claque au-dessus de vous, trop haut. Vous rampez vers la cabine, une main plaquée sur la plaie et le sang chaud qui passe entre les doigts, en gardant en tête ce que vous avez vu juste avant : une hutte de briques, en face, sur le toit des turbines.",
       "effects": [
         {
           "type": "stat",
@@ -155,7 +155,7 @@
       ]
     },
     "c26-15": {
-      "text": "La cabine sent le fer chaud et le vieux sang. Un monolithien est assis contre le ventilateur, les jambes droites, le masque relevé sur un visage de vingt ans. Deux balles dans la poitrine. Ses mains tiennent encore un chapelet de douilles. Sur son gilet, une Grenade F1, la goupille en place. Le vent n'entre pas ici. C'est le premier endroit calme depuis le pont.",
+      "text": "La cabine sent le fer chaud et le sang caillé. Un monolithien est assis contre le carter du ventilateur, les jambes tendues devant lui, le masque relevé sur un visage qui n'a pas vingt-cinq ans. Il a deux trous dans la poitrine et, entre les doigts, un chapelet de douilles de 7,62 enfilées sur un fil de cuivre. Une radio est accrochée à son gilet, à côté d'une Grenade F1 dont la goupille est en place. La radio grésille, puis une voix en sort, posée, qui ne s'adresse à aucun vivant : « Nous sommes en haut. Nous voyons le toit. Il voit celui qui monte, il n'a pas besoin de nous, nous regardons quand même. » D'autres voix reprennent la dernière phrase, plus bas. Le vent n'entre pas ici, et c'est le premier endroit à l'abri depuis le pont.",
       "choices": [
         {
           "kind": "agir",
@@ -191,7 +191,7 @@
       ]
     },
     "c26-27": {
-      "text": "Vous décrochez la Grenade F1 du gilet. Elle est lourde, froide, quadrillée comme une pomme de pin. Le mort ne bouge pas. Vous la glissez dans votre poche et, en vous relevant, vous voyez ce qu'il regardait : par la fente de la porte, la cheminée, et la passerelle qui pend. Il a eu tout le temps de la regarder.",
+      "text": "La radio reprend pendant que vous décrochez la Grenade F1 du gilet, lourde et froide dans le gant, quadrillée comme une pomme de pin : « Le frère de la cabine ne répond plus. Il n'a pas besoin de répondre. Nous répondons pour lui. » Vous glissez la grenade dans votre poche et, en vous relevant, vous voyez par la fente de la porte ce que le mort a eu sous les yeux pendant des heures : la cheminée, ses haubans, et le tablier de la passerelle qui bat contre le Sarcophage.",
       "effects": [
         {
           "type": "item",
@@ -229,7 +229,7 @@
       ]
     },
     "c26-3": {
-      "text": "Vous déroulez le bandage et vous serrez. Vous regagnez 3 points d'Endurance. Le mort vous regarde faire, ou c'est le vent qui tourne sa tête. Dehors, la lumière a baissé d'un ton, comme si le ciel se souvenait de l'Émission. Vous reprenez votre souffle une dernière fois. Après la porte, il n'y aura plus d'endroit pour ça.",
+      "text": "Assis contre le carter, à côté du mort, vous déroulez le Bandage autour de la plaie et vous serrez avec les dents jusqu'à ce que le sang cesse de passer. Vous regagnez 3 points d'Endurance. Le mort a la tête tournée vers vous, à présent, et vous ignorez si c'est le vent ou votre épaule qui l'a déplacé. Sa radio murmure encore, presque éteinte : « Reçois-le, reçois-le. » Dehors, la lumière a baissé d'un ton depuis l'Émission, et vous restez assis une minute de plus, parce qu'au-delà de cette porte il n'y aura plus de murs pour s'adosser.",
       "choices": [
         {
           "kind": "aller",
@@ -239,7 +239,7 @@
       ]
     },
     "c26-19": {
-      "text": "Vous longez le toit en vous tenant aux câbles. À mi-chemin, le gravier devient blanc : des éclats de brique, tombés d'une hutte sur le toit d'en face, de l'autre côté d'une faille de dix mètres où pendent des tuyaux. Deux lunettes brillent dans la hutte. Devant vous, trente mètres à découvert jusqu'au pied de la cheminée, et pas un muret plus haut qu'un genou.",
+      "text": "Des câbles tendus courent le long du toit, et vous avancez en vous y tenant, le corps plié contre le vent. À mi-chemin, le gravier devient blanc sous vos semelles : des éclats de brique, tombés d'une hutte qui se dresse en face, sur le toit des turbines, séparée du vôtre par une faille de dix mètres où pendent des tuyaux. Deux lunettes brillent dans l'ouverture. Par-dessus le vide, une psalmodie vous arrive, régulière, à deux voix : « Il voit celui qui marche. Il n'a pas besoin de nous. Nous tirons quand même. » Entre vous et le pied de la cheminée s'étendent trente mètres à découvert, sans un muret qui monte plus haut que le genou.",
       "choices": [
         {
           "kind": "attaquer",
@@ -274,7 +274,7 @@
       ]
     },
     "c26-8": {
-      "text": "Vous vous couchez derrière le muret. Le Vintorez ne fait pas de bruit, et ce qu'il touche ne se relève pas. Dans la lunette, un masque gris, puis un autre. Ils vous ont vu aussi. Les briques éclatent au-dessus de votre tête. C'est un duel à distance : qui lève la tête au mauvais moment reste sur le gravier.",
+      "text": "Le muret ne monte qu'au genou ; couché derrière, vous calez le Vintorez sur le béton. L'arme ne fait presque pas de bruit, et ce qu'elle touche reste où il tombe. Dans la lunette, un masque gris, puis un second qui se penche pour voir. La prière s'arrête net sur « nous tirons », et les briques éclatent au-dessus de votre tête. Entre deux tirs vous gardez la tête sous le muret, et vous ne la relevez que l'œil déjà collé à la lunette.",
       "combat": {
         "name": "Snipers du Monolithe",
         "habilete": 7,
@@ -284,7 +284,7 @@
       }
     },
     "c26-34": {
-      "text": "La deuxième lunette s'éteint. Plus rien ne bouge dans la hutte, sauf un bout de toile qui bat. Vous attendez dix respirations, le Vintorez contre la joue, puis vous traversez les trente mètres en marchant. Le gravier blanc craque. Au pied de la cheminée, les haubans vibrent si fort qu'on les entend dans les dents.",
+      "text": "La deuxième lunette s'éteint, et la prière reprend d'une seule voix au mot où elle s'était arrêtée : « … quand même. » Puis la voix cesse, et seul un bout de toile bat encore dans l'ouverture de la hutte. Vous attendez dix respirations, la joue contre la crosse, avant de traverser les trente mètres en marchant sur le gravier blanc qui craque, jusqu'au socle où les haubans vibrent si fort qu'on les entend dans les dents.",
       "choices": [
         {
           "kind": "aller",
@@ -294,7 +294,7 @@
       ]
     },
     "c26-31": {
-      "text": "Vous dégoupillez et vous comptez. La Grenade F1 part en cloche au-dessus de la faille, rebondit sur le toit de la hutte, roule. Le souffle arrive avant le bruit. Des briques, un masque, une botte, tout monte et retombe. Il ne reste de la hutte qu'un angle et une fumée que le vent emporte. Vous traversez sans vous presser. Votre poche est vide.",
+      "text": "La goupille tinte sur le gravier et vous comptez jusqu'à trois. La Grenade F1 passe la faille en cloche, rebondit sur la hutte et roule dans l'ouverture ; le souffle vous arrive avant le bruit. Des briques, un masque, une botte montent ensemble et retombent dans les tuyaux. De la hutte il ne reste qu'un angle de mur et une fumée que les rafales couchent aussitôt vers le Sarcophage. Vous traversez sans vous presser, la poche vide contre la cuisse.",
       "choices": [
         {
           "kind": "aller",
@@ -304,7 +304,7 @@
       ]
     },
     "c26-14": {
-      "text": "Vous partez en courant, plié en deux, en zigzag entre les bouches d'aération. Le premier coup frappe le gravier à vos pieds. Le deuxième passe si près que vous entendez l'air se fendre. Le pied de la cheminée est devant, avec son socle de béton large comme un muret. Dix mètres. Cinq. Testez votre Habileté.",
+      "text": "Plié en deux, vous partez en zigzag entre les bouches d'aération, les bottes qui dérapent sur le gravier. Le premier coup frappe à vos pieds. Le deuxième passe si près que l'air se fend à votre oreille, et dans le creux entre les deux détonations vous entendez la prière reprendre là où le tir l'avait coupée : « … quand même, nous tirons quand même. » Le socle approche, large comme un muret, à dix mètres, puis à cinq. Testez votre Habileté.",
       "test": {
         "type": "stat",
         "stat": "habilete",
@@ -314,7 +314,7 @@
       }
     },
     "c26-2": {
-      "text": "Vous roulez derrière le socle de béton. Les balles le frappent de l'autre côté, trois coups secs, puis le silence. Ils n'ont plus d'angle. Vous êtes couché dans l'ombre de la cheminée, le cœur dans la gorge, et vous riez une seconde, sans bruit. Au-dessus, les haubans chantent. Quelque chose a bougé dans les câbles.",
+      "text": "Trois balles frappent la face opposée du socle, sèches comme des coups de marteau, au moment où vous roulez derrière. Ensuite les tirs s'arrêtent : depuis la hutte, le béton vous cache tout entier. Couché dans l'ombre de la cheminée, le cœur dans la gorge, vous riez une seconde sans bruit. Plus haut, les haubans chantent, et l'un d'eux, le plus proche, s'est mis à trembler à contretemps du vent.",
       "choices": [
         {
           "kind": "agir",
@@ -324,7 +324,7 @@
       ]
     },
     "c26-25": {
-      "text": "La balle vous prend dans la cuisse à deux mètres du socle. Vous tombez derrière le béton plus que vous ne vous y jetez. Vous perdez 3 points d'Endurance. La jambe tient encore, mais la botte se remplit. Vous serrez la ceinture au-dessus de la plaie. Les tirs cessent : ils n'ont plus d'angle. Au-dessus de vous, quelque chose descend le long de la cheminée.",
+      "text": "À deux mètres du socle, une balle vous traverse le gras de la cuisse, et vous tombez derrière le béton plus que vous ne vous y jetez. Vous perdez 3 points d'Endurance. La jambe tient encore, mais la botte se remplit, alors vous serrez votre ceinture en haut de la cuisse jusqu'à ne plus sentir le pied. Derrière le béton, vous êtes hors de leur vue, et les coups s'arrêtent. Plus haut, dans les haubans, une forme grise descend le long de la cheminée, tête en bas.",
       "effects": [
         {
           "type": "stat",
@@ -341,7 +341,7 @@
       ]
     },
     "c26-22": {
-      "text": "Le conduit est juste assez large pour vos épaules. La tôle garde la chaleur d'un soleil qui n'existe pas, et la poussière y est épaisse comme un tapis. Le détecteur crépite sans arrêt. Vous prenez 3 rads. Devant vous, dans le noir, un ventilateur tourne encore, lent, au gré du vent. Il faut passer entre deux pales, au jugé. Tentez votre Chance.",
+      "text": "Le conduit est juste assez large pour vos épaules, et vous avancez sur les coudes dans une poussière épaisse comme un feutre. La tôle a gardé la chaleur d'un soleil qu'on ne voit plus depuis l'Émission. Cette poussière, vous l'avez sur les dents et dans les cils. Vous prenez 3 rads. Devant vous, dans l'obscurité, un ventilateur tourne encore, lentement, poussé par le vent, et ses pales d'un mètre ne laissent entre elles qu'un passage qu'il faut prendre au jugé. Tentez votre Chance.",
       "effects": [
         {
           "type": "stat",
@@ -356,7 +356,7 @@
       }
     },
     "c26-11": {
-      "text": "La pale vous rattrape au milieu du passage. Elle vous frappe dans les côtes et vous plaque contre la grille. Vous perdez 3 points d'Endurance. Vous vous arrachez, un bout de veste reste dans le ventilateur. Le conduit descend, tourne, et vous crache sur un rebord de gravier à l'ombre de la cheminée, au pied de son socle. Le vent, enfin. Des câbles vibrent au-dessus.",
+      "text": "La pale vous rattrape au milieu du passage, vous frappe dans les côtes et vous plaque contre la grille. Vous perdez 3 points d'Endurance. Vous vous arrachez en laissant un pan de veste dans les pales, puis le conduit descend, tourne et vous dépose sur un rebord de gravier, au pied du socle, à l'ombre de la cheminée. Vous retrouvez le vent avec soulagement, et au-dessus de vous les câbles vibrent sous un poids qui n'est pas le leur.",
       "effects": [
         {
           "type": "stat",
@@ -373,7 +373,7 @@
       ]
     },
     "c26-33": {
-      "text": "Vous passez entre deux pales, l'une vous frôle le dos. Le conduit descend, tourne deux fois, et s'ouvre sur un rebord de gravier dans l'ombre de la cheminée. Vous ressortez au pied du socle, de la poussière grise jusqu'aux yeux, sans que personne vous ait vu. De l'autre côté du toit, une hutte de briques, deux lunettes qui cherchent ailleurs. Au-dessus, les haubans vibrent.",
+      "text": "Une pale vous frôle le dos, la suivante passe derrière vos talons, et vous êtes de l'autre côté. Trois mètres plus loin, une grille rongée cède sous votre épaule et vous sortez à quatre pattes au pied du socle, gris de poussière jusqu'aux yeux, sans que les tireurs vous aient vu. En face, dans la hutte de briques, les deux lunettes fouillent le milieu du toit, là où vous auriez dû être. Plus haut, un hauban grince, tiré vers le bas par un poids que vous ne voyez pas encore.",
       "choices": [
         {
           "kind": "aller",
@@ -388,7 +388,7 @@
         "alt": "Une Chimère à deux têtes accrochée aux haubans de la cheminée, au-dessus d'un socle de béton.",
         "prompt": "Au pied d'une cheminée industrielle rayée, une Chimère au poil gris de poussière est accrochée aux haubans par ses quatre pattes, deux têtes tournées vers le bas, quatre yeux fixes. En contrebas, un large socle de béton et le départ d'une passerelle de caillebotis suspendue vers le Sarcophage ; une silhouette de stalker aplatie derrière le socle, vue de dos, minuscule. Ciel bas, vent, câbles vibrants, hachures serrées."
       },
-      "text": "La Chimère est sur la cheminée, à dix mètres, accrochée aux haubans par ses quatre pattes. Deux têtes, deux paires d'yeux qui ne clignent pas en même temps. Elle vous a senti avant que vous l'ayez vue, c'est à ça qu'on les reconnaît. Son poil est gris de poussière. Entre elle et vous, le socle, et au-delà, la passerelle qui commence. Elle ne bouge pas. Ça ne veut rien dire.",
+      "text": "La Chimère est accrochée aux haubans, à dix mètres au-dessus du socle, les quatre pattes refermées sur les câbles. Elle a deux têtes, et les deux paires d'yeux ne clignent pas en même temps. Elle vous a senti avant que vous la voyiez, c'est à ça qu'on les reconnaît, disent les vieux du Bar. Son poil est gris de poussière. Entre elle et vous, il y a le socle, et au-delà commence la passerelle. Elle reste immobile, sauf les griffes, qui se resserrent sur le câble et font tomber la rouille en poudre.",
       "choices": [
         {
           "kind": "agir",
@@ -419,7 +419,7 @@
       ]
     },
     "c26-28": {
-      "text": "Vous vous aplatissez contre le socle, le visage dans le béton. Le vent tourne et retourne, et avec lui votre odeur. Une des têtes regarde le parvis, l'autre regarde la hutte des snipers, aucune ne vous regarde. Pas encore. Il suffirait que le vent se tienne du bon côté, le temps de trente respirations. Tentez votre Chance.",
+      "text": "Le béton du socle est froid contre votre joue. Le vent tourne, revient, tourne encore, et votre odeur part avec lui dans un sens puis dans l'autre. Une des têtes regarde le parvis, la seconde surveille la hutte des tireurs, et aucune des deux ne s'est encore posée sur vous. Il faudrait que le vent tienne du bon côté pendant trente respirations. Tentez votre Chance.",
       "test": {
         "type": "luck",
         "success": "c26-16",
@@ -427,7 +427,7 @@
       }
     },
     "c26-16": {
-      "text": "Le vent tient. La Chimère se détend d'un coup, comme un ressort, et saute sur le toit de la salle des turbines, du côté de la hutte. Vous entendez un cri là-bas, puis un coup de feu, puis plus rien. Vous ne cherchez pas à savoir. Vous passez le socle et vous avancez vers la passerelle, plié sous les haubans, vite.",
+      "text": "Le vent tient, et la Chimère se détend d'un coup vers la hutte des tireurs. Là-bas, une voix crie « Reçois-le, reç… », un coup de feu part, la prière ne reprend pas, et vous filez vers la passerelle, plié sous les haubans.",
       "choices": [
         {
           "kind": "aller",
@@ -437,7 +437,7 @@
       ]
     },
     "c26-20": {
-      "text": "Elle vous a vu. Les deux têtes se tournent ensemble, et elle tombe sur vous plus qu'elle ne saute, dix mètres en un battement. Vous tirez une fois avant qu'elle touche le gravier. Elle frappe à casser des os, et elle revient toujours par l'autre côté. Le vent emporte son odeur de chien mouillé et de fer.",
+      "text": "Elle vous a vu. Les deux têtes se tournent ensemble, et elle tombe sur vous plus qu'elle ne saute, dix mètres en un battement de cœur, si vite que vous n'avez le temps de tirer qu'une fois avant qu'elle touche le gravier. Elle frappe à casser des os et revient toujours par le côté où vous ne regardez pas. Le vent vous envoie son haleine de chien mouillé et de fer.",
       "combat": {
         "name": "Chimère",
         "habilete": 8,
@@ -450,7 +450,7 @@
       }
     },
     "c26-29": {
-      "text": "La Chimère tombe du socle et ne se relève pas. Une des têtes vous regarde encore, l'autre déjà rien. Vous rechargez avec des doigts qui n'obéissent pas bien. Son sang fume sur le gravier froid. De l'autre côté du socle, la passerelle commence, deux câbles et des caillebotis, qui s'en vont vers le Sarcophage en se balançant.",
+      "text": "La Chimère roule du socle et reste en bas, sur le flanc. Une des têtes vous regarde encore ; l'autre ne regarde plus rien. Vous rechargez avec des doigts qui obéissent mal, pendant que son sang fume sur le gravier froid. Derrière le socle, la passerelle commence, deux câbles et des caillebotis qui s'en vont vers le Sarcophage en se balançant au rythme des rafales.",
       "choices": [
         {
           "kind": "aller",
@@ -460,7 +460,7 @@
       ]
     },
     "c26-5": {
-      "text": "Vous dégoupillez et vous lancez la Grenade F1 sous la cheminée, entre les haubans. Le souffle décroche la Chimère comme un fruit. Elle tombe sur le socle, se relève sur trois pattes, et file en boitant vers l'autre toit, sans un cri. Un hauban coupé fouette le vide au-dessus de vous. Votre poche est vide. La passerelle commence juste après le socle.",
+      "text": "La goupille saute, et la Grenade F1 part entre les haubans, au ras du socle. Le souffle arrache la Chimère aux câbles ; elle tombe sur le béton, se relève sur trois pattes et file en boitant vers l'autre toit, les deux gueules fermées. Un hauban coupé fouette le vide à un mètre de votre tête. Quand le câble retombe, inerte, il n'y a plus que le socle entre vous et la passerelle.",
       "choices": [
         {
           "kind": "aller",
@@ -470,7 +470,7 @@
       ]
     },
     "c26-13": {
-      "text": "Vous fuyez le long de la corniche, du côté du vide, là où elle ne peut pas sauter sans tomber. Elle hurle, une tête après l'autre, et ne suit pas. Une gouttière de plomb vous mène sous la cheminée, dans un creux de béton où le détecteur crépite fort. Vous prenez 2 rads. Le creux débouche de l'autre côté du socle, au départ de la passerelle. Derrière, la Chimère gratte les câbles.",
+      "text": "La corniche longe le vide, et vous la prenez en courant, du côté où elle ne peut pas sauter sans tomber. Elle hurle d'une tête puis de l'autre, mais ne vous suit pas. Une gouttière de plomb vous conduit sous la cheminée, dans un creux de béton où la poussière est tiède et où vous respirez trop vite. Vous prenez 2 rads. Le creux débouche derrière le socle, au départ de la passerelle, et derrière vous les griffes de la Chimère raclent les câbles.",
       "effects": [
         {
           "type": "stat",
@@ -487,7 +487,7 @@
       ]
     },
     "c26-4": {
-      "text": "La passerelle pend entre la cheminée et le Sarcophage, cinquante mètres de caillebotis sur deux câbles, et le vide dessous jusqu'au parvis. Un des câbles a lâché à mi-chemin : la passerelle y bascule de côté et bat contre le béton. C'est ce bruit que vous entendiez d'en bas. À l'autre bout, une porte de fer dans le flanc gris du Sarcophage, entrouverte. Le vent vous pousse dans le dos, comme pour aider.",
+      "text": "Entre la cheminée et le Sarcophage, cinquante mètres de caillebotis pendent sur deux câbles, et dessous il n'y a que le vide jusqu'au parvis. Le câble de gauche a lâché à mi-chemin, si bien que le tablier bascule de ce côté et vient battre contre le béton à chaque rafale, avec ce claquement régulier que vous entendiez d'en bas, au pied de l'échelle, et que vous preniez pour un drapeau. Au bout, dans le flanc gris du Sarcophage, une porte d'acier est entrouverte. Une plaque rivetée sur le premier poteau porte encore un numéro de maintenance, 4-B-12, et une flèche peinte qui pointe vers l'intérieur. Le vent vous pousse dans le dos avec insistance, et vous n'aimez pas qu'il ait l'air de vouloir vous aider.",
       "image": {
         "src": "images/c26-4.webp",
         "alt": "Une passerelle de caillebotis suspendue à deux câbles entre une cheminée rayée et le mur gris du Sarcophage, au-dessus du vide.",
@@ -532,7 +532,7 @@
       ]
     },
     "c26-26": {
-      "text": "Vous videz la trousse de soins, assis contre le socle, dos au vent. Vous regagnez 6 points d'Endurance. Les compresses s'envolent une à une vers le parvis. Vous regardez la passerelle battre contre le béton, et vous comptez : elle revient toutes les sept secondes. La porte, à l'autre bout, s'entrouvre et se referme au même rythme. Rien ne la pousse de l'intérieur. Vous l'espérez.",
+      "text": "Assis contre le socle, dos au vent, vous videz la Trousse de soins, et les compresses dont vous n'avez pas l'usage s'envolent une à une vers le parvis. Vous regagnez 6 points d'Endurance. Pendant que l'antiseptique brûle, vous regardez le tablier battre contre le béton et vous comptez à voix basse : « Un, deux, trois… sept. » Il revient toutes les sept secondes, et la porte, au bout, s'entrouvre puis se referme au même rythme, poussée par le vent, du moins vous l'espérez.",
       "choices": [
         {
           "kind": "aller",
@@ -542,7 +542,7 @@
       ]
     },
     "c26-18": {
-      "text": "Vous passez la Corde en double autour du câble qui tient et vous nouez l'autre bout à votre ceinture. Les premiers mètres sont faciles. Au milieu, la passerelle bascule sous vous et vous restez pendu au câble, les pieds dans le vide, le temps qu'elle revienne. La corde tient. Vous avancez ainsi, pendu et marchant, jusqu'à ce que le béton gris soit assez près pour le toucher. La porte de fer est entrouverte.",
+      "text": "Vous passez la Corde en double autour du câble qui tient et vous nouez l'autre bout à votre ceinture. Les premiers mètres sont faciles. Au milieu, le tablier bascule sous vous, et vous restez suspendu au câble, les pieds dans le vide, le temps qu'il revienne. La corde tient. Vous avancez ainsi, tantôt pendu, tantôt marchant, jusqu'à ce que le béton du Sarcophage soit assez près pour poser la main dessus, à côté de la porte entrouverte d'où sort un air plus chaud que le vent.",
       "choices": [
         {
           "kind": "aller",
@@ -552,7 +552,7 @@
       ]
     },
     "c26-10": {
-      "text": "Vous avancez sur les caillebotis en tenant le câble du haut. Il vibre sous votre main comme une corde de guitare. Au milieu, là où l'autre câble a lâché, la passerelle penche et chaque rafale la fait battre. Il faut passer au moment où elle revient contre le mur et avant qu'elle reparte. Vous ne regardez pas en bas. Vous lâchez le câble. Tentez votre Chance.",
+      "text": "Sous la paume, le câble du haut vibre à chaque rafale, et c'est lui que vous tenez en avançant sur les caillebotis. Au milieu, là où l'autre câble a lâché, le tablier penche et chaque rafale le fait battre ; il faut le prendre quand il revient contre le mur et avoir quitté la partie basse avant qu'il reparte. Vous ne regardez pas en bas, vous comptez jusqu'à sept et vous lâchez le câble. Tentez votre Chance.",
       "test": {
         "type": "luck",
         "success": "c26-32",
@@ -560,7 +560,7 @@
       }
     },
     "c26-32": {
-      "text": "La passerelle revient sous vos pieds au bon moment. Vous courez trois pas sur le caillebotis penché, le quatrième dans le vide, le cinquième sur le fer. Le câble du haut est de nouveau dans votre main. Derrière vous, la passerelle repart en battant, et le bruit reprend, régulier. Le béton gris est devant, et la porte de fer, entrouverte, qui respire avec le vent.",
+      "text": "Le tablier revient sous vos pieds au bon moment. Vous courez trois pas sur le caillebotis penché, le quatrième dans le vide, le cinquième sur le fer, et le câble du haut retrouve votre main. Derrière vous, la passerelle repart et son battement reprend, régulier, pendant que devant vous, à trois pas, la porte du Sarcophage bâille et se referme au rythme des rafales.",
       "choices": [
         {
           "kind": "aller",
@@ -570,7 +570,7 @@
       ]
     },
     "c26-23": {
-      "text": "La passerelle repart avant que vous ayez fini. Vous tombez sur le caillebotis incliné, vous glissez, vos jambes partent dans le vide. Un genou accroche le bord, puis une main le câble. Le fer vous ouvre les paumes et le tibia. Vous perdez 3 points d'Endurance. Vous restez pendu le temps qu'elle revienne, puis vous rampez le reste. La porte de fer est là, entrouverte, et le béton est froid contre votre joue.",
+      "text": "Le tablier repart avant que vous ayez fini de passer. Vous tombez sur le caillebotis incliné, vous glissez, vos jambes partent dans le vide ; un genou accroche le bord, puis une main le câble, et le fer vous ouvre les paumes et le tibia. Vous perdez 3 points d'Endurance. Vous restez pendu le temps qu'il revienne, puis vous rampez jusqu'au bout et vous gardez un moment le front contre le mur du Sarcophage, à un mètre de la porte qui bat.",
       "effects": [
         {
           "type": "stat",

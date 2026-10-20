@@ -39,7 +39,7 @@
   ],
   "paragraphs": {
     "c14-1": {
-      "text": "Le lac mort reste derrière vous, avec ses marmonnements. Devant, les premiers pins. Leurs aiguilles ne sont pas mortes : elles sont rouges, comme passées à la rouille. Le détecteur crépite une fois, puis se tait. Une piste part droit entre les troncs. À l'est, un ruisseau descend vers la rivière dans un lit de galets pâles. Aucun oiseau. Vous ne vous souvenez pas de la dernière fois que vous en avez entendu un.",
+      "text": "Le lac mort reste derrière vous, avec ses zombies qui marmonnent sur la rive, et la piste du nord entre sous les premiers pins. Leurs aiguilles sont rouges, de la couleur d'un fer laissé sous la pluie, et elles ne tombent pas. Le détecteur claque deux fois contre votre hanche, puis reste muet. Devant, la piste file droit entre les troncs ; à l'est, un ruisseau descend vers la rivière dans un lit de galets pâles. Vous cherchez un oiseau dans les branches, par habitude, et vous n'en trouvez pas.",
       "choices": [
         {
           "kind": "aller",
@@ -54,7 +54,7 @@
       ]
     },
     "c14-23": {
-      "text": "Sous les pins, la lumière est rouge aussi. Le compteur monte dès le premier pas et ne redescend plus. Les aiguilles craquent sous vos bottes comme du verre fin. Au milieu de la piste, un sac à dos ouvert, vide, et pas de propriétaire. Il faut traverser vite, ou traverser fermé.",
+      "text": "Sous les pins, la lumière tourne au rouge à son tour, et l'aiguille du dosimètre décolle dès le premier pas pour ne plus redescendre. Les aiguilles des branches cassent sous vos bottes avec un bruit de verre fin. Au milieu de la piste, un sac à dos de toile verte est posé, ouvert, vide, et son propriétaire n'est nulle part autour. Il faut traverser vite, ou traverser fermé.",
       "choices": [
         {
           "kind": "aller",
@@ -73,7 +73,7 @@
       ]
     },
     "c14-11": {
-      "text": "La combinaison respire pour vous. Le compteur hurle contre la visière, et rien n'entre. Vous marchez au pas, au milieu des pins rouges, comme on marche dans une église. De l'autre côté, la piste en rejoint une seconde, plus large. Un panneau de pionniers, étoile rouge décolorée, pointe vers un camp qui n'existe plus.",
+      "text": "La combinaison respire à votre place, un sifflement de filtre à chaque inspiration, et contre la visière les chiffres du dosimètre défilent sans que rien n'entre. Vous marchez au pas entre les troncs rouges, parce que la forêt n'a pas l'air de vouloir qu'on y coure. Passé les pins, la piste en rejoint une seconde, plus large, au pied d'un poteau où une flèche peinte indique encore un camp de pionniers qui n'existe plus.",
       "choices": [
         {
           "kind": "aller",
@@ -83,7 +83,7 @@
       ]
     },
     "c14-37": {
-      "text": "Vous courez. Les branches basses vous fouettent le visage, le compteur grimpe à chaque enjambée. Un goût de cuivre dans la bouche. Vous prenez 3 rads. De l'autre côté, vous vous pliez en deux, les mains sur les genoux. La piste en rejoint une seconde, plus large. Un panneau de pionniers, étoile rouge décolorée, pointe vers le nord.",
+      "text": "Les branches basses vous fouettent le visage dès les premières foulées, les aiguilles giclent sous vos bottes, et à votre ceinture le Geiger cliquette plus serré à chaque enjambée. Un goût de cuivre vous emplit la bouche. Vous prenez 3 rads. Au bout de la piste, vous vous pliez en deux, les mains sur les genoux, devant un panneau de pionniers dont l'étoile décolorée pointe vers le nord, vers une piste plus large que la vôtre.",
       "effects": [
         {
           "type": "stat",
@@ -100,7 +100,7 @@
       ]
     },
     "c14-6": {
-      "text": "Le ruisseau n'a plus d'eau, juste des galets blancs et une odeur de pierre chauffée. À mi-pente, les galets sont rangés en cercle. Trop bien rangés. L'air tourne au-dessus, lentement, comme de l'eau dans une bonde. Un « Carrousel ». Vous lancez un boulon. Il part sur la gauche, sans tomber. Il faut passer par le bord, là où ça tourne moins. Tentez votre Chance.",
+      "text": "Le ruisseau n'a plus d'eau. Il reste des galets blancs, une odeur de pierre chauffée, et à mi-pente un cercle de galets rangés trop bien pour l'avoir été par l'eau. L'air tourne au-dessus, lentement, à la manière d'une bonde qui se vide : c'est un « Carrousel ». Vous lancez un boulon. Il part sur la gauche, monte, et ne retombe pas. Le passage est sur le bord, contre la berge, là où ça tourne moins. Tentez votre Chance.",
       "test": {
         "type": "luck",
         "success": "c14-30",
@@ -108,7 +108,7 @@
       }
     },
     "c14-30": {
-      "text": "Le boulon tombe du bon côté. Vous passez par le bord, à plat contre la berge, et l'air ne vous prend pas. Derrière vous, les galets se mettent à rouler tout seuls, puis s'arrêtent. Le ruisseau sec débouche sur une piste large, bordée de pins rouges. Un panneau de pionniers y pointe vers le nord.",
+      "text": "Le boulon suivant tombe du bon côté. Vous passez à plat contre la berge, les galets dans les côtes, et l'air vous frôle l'épaule sans vous prendre. Derrière vous, le cercle se met à rouler tout seul, puis se range. Le lit sec débouche sur une piste large, bordée de pins rouges, où une borne kilométrique couchée dans les aiguilles porte encore un numéro à demi effacé.",
       "choices": [
         {
           "kind": "aller",
@@ -118,7 +118,7 @@
       ]
     },
     "c14-18": {
-      "text": "L'air vous prend par l'épaule. Vous tournez une fois, deux fois, et la berge vous rattrape de plein fouet. Vous restez un moment face contre les galets, à compter vos côtes. Vous perdez 3 points d'Endurance. Quand vous vous relevez, le cercle s'est refermé derrière vous, et la piste large est là, bordée de pins rouges.",
+      "text": "L'air vous prend par l'épaule. Vous tournez une fois, deux fois, assez haut pour voir le cercle de galets sous vous, et la berge vous rattrape de plein fouet. Vous restez face contre les pierres le temps de compter vos côtes. Vous perdez 3 points d'Endurance. Quand vous vous relevez, le cercle tourne à vide derrière vous, et la piste large est là, à dix pas, plus près que vous ne l'auriez cru.",
       "effects": [
         {
           "type": "stat",
@@ -135,7 +135,7 @@
       ]
     },
     "c14-2": {
-      "text": "La route coupée s'arrête net : l'asphalte s'est ouvert sur deux mètres, et de la fissure monte une chaleur qui fait trembler les pins de l'autre côté. Un « Brûleur » en travers du chemin. Un camion militaire est couché dans le fossé, la peinture cloquée. Au-delà, la forêt est rouge. Entre les flammes invisibles, il y a un passage, peut-être. Ou le sous-bois, à droite, qui fait le tour.",
+      "text": "La route coupée s'arrête net. L'asphalte s'est ouvert sur deux mètres, et de la fissure monte une chaleur qui fait trembler les pins d'en face comme l'air au-dessus d'un capot. Un « Brûleur », en travers du chemin. Un camion militaire est couché dans le fossé, un Oural bâché dont la peinture a cloqué jusqu'au pare-chocs. Au-delà, la forêt est rouge jusqu'au ciel. Entre les flammes qu'on ne voit pas, il y a peut-être un passage, et à droite le sous-bois, qui fait le tour sans rien promettre.",
       "choices": [
         {
           "kind": "agir",
@@ -150,7 +150,7 @@
       ]
     },
     "c14-41": {
-      "text": "Le boulon s'enflamme en l'air et retombe, noir, à trente centimètres de la fissure. Vous en lancez un second, plus à gauche. Celui-là retombe froid. Un couloir d'un pas de large, entre deux chaleurs. Vous ôtez votre sac pour le tenir contre vous. Testez votre Habileté.",
+      "text": "Le premier boulon s'enflamme en l'air et retombe, noir, à trente centimètres de la fissure. Le second, lancé plus à gauche, retombe froid. Entre les deux, un couloir d'un pas de large, que vous mesurez des yeux en ôtant votre sac pour le serrer contre la poitrine, parce que la toile prend feu avant la peau. Testez votre Habileté.",
       "test": {
         "type": "stat",
         "stat": "habilete",
@@ -160,7 +160,7 @@
       }
     },
     "c14-15": {
-      "text": "Vous passez dans le couloir froid, un pied devant l'autre, sans toucher les bords. La chaleur vous lèche les deux joues et ne mord pas. De l'autre côté, l'asphalte reprend, puis se perd sous les aiguilles rouges. Le camion sent le caoutchouc brûlé. La route devient piste, et la piste descend vers un croisement.",
+      "text": "Vous passez dans le couloir froid, un pied devant l'autre, sans toucher les bords. La chaleur vous lèche les deux joues et ne mord pas. Derrière la fissure, l'asphalte reprend sur vingt mètres, puis se perd sous les aiguilles rouges, et la route devenue piste descend vers un croisement où une fumée monte entre les pins.",
       "choices": [
         {
           "kind": "aller",
@@ -170,7 +170,7 @@
       ]
     },
     "c14-27": {
-      "text": "Le feu vous attrape par le mollet. Pas de flamme, rien à voir : la peau noircit sous le pantalon comme sous un fer. Vous vous jetez de l'autre côté en roulant. Vous perdez 3 points d'Endurance. Le pantalon fume encore quand vous vous relevez. La route devient piste, et la piste descend vers un croisement, sous les pins rouges.",
+      "text": "Le feu vous attrape par le mollet. Il n'y a pas de flamme à voir : la peau noircit sous le pantalon comme sous un fer à repasser, et vous vous jetez en avant en roulant. Vous perdez 3 points d'Endurance. Le tissu fume encore quand vous vous relevez sur l'asphalte intact, et c'est en boitant que vous descendez la pente jusqu'à l'endroit où les pistes se rejoignent.",
       "effects": [
         {
           "type": "stat",
@@ -187,7 +187,7 @@
       ]
     },
     "c14-9": {
-      "text": "Le sous-bois est dense, fougères rousses et ronces sans feuilles. Le compteur monte dès que vous quittez l'asphalte. Les troncs sont tachés de blanc, comme de la chaux. Un chien est mort là, raide, le ventre gonflé. Le tour de la fissure fait deux cents mètres, pas plus. Deux cents mètres de compteur.",
+      "text": "Le sous-bois est dense, fougères rousses et ronces sans feuilles, et le cliquetis reprend à votre hanche dès que vous quittez l'asphalte. Les troncs portent des taches de chaux à hauteur d'homme, peintes par quelqu'un qui n'est jamais revenu les refaire. Un chien est mort là, raide, le ventre gonflé, les paupières cousues. Le tour de la fissure fait deux cents mètres, pas davantage, et il faudra les respirer.",
       "choices": [
         {
           "kind": "aller",
@@ -206,7 +206,7 @@
       ]
     },
     "c14-34": {
-      "text": "Le filtre de la combinaison siffle à chaque inspiration. Rien ne passe. Vous contournez la fissure en vous tenant aux troncs tachés, et les fougères s'ouvrent devant vous sans un bruit. De l'autre côté, la route reprend, puis se perd sous les aiguilles rouges, et descend vers un croisement de pistes.",
+      "text": "Le filtre siffle à chaque inspiration, et la poudre des fougères glisse sur la combinaison sans y rester. Vous contournez la fissure en vous tenant aux troncs chaulés. De l'autre côté, vous retrouvez l'asphalte et sa pente, qui vous mène sans effort jusqu'à un croisement de pistes.",
       "choices": [
         {
           "kind": "aller",
@@ -216,7 +216,7 @@
       ]
     },
     "c14-20": {
-      "text": "Vous retenez votre souffle le plus longtemps possible, puis vous respirez quand même. L'air a un goût de clou. Les fougères rousses vous arrivent à la taille et laissent une poudre sur vos manches. Vous prenez 3 rads. De l'autre côté, la route reprend, puis se perd sous les aiguilles, et descend vers un croisement de pistes.",
+      "text": "Vous retenez votre souffle aussi loin que vos poumons le permettent, puis vous respirez quand même, parce qu'il le faut. L'air a un goût de clou. Les fougères vous arrivent à la taille et laissent une poudre rousse sur vos manches. Vous prenez 3 rads. Quand vous ressortez sur la route, vous toussez encore, et c'est en toussant que vous descendez jusqu'au croisement.",
       "effects": [
         {
           "type": "stat",
@@ -233,7 +233,7 @@
       ]
     },
     "c14-13": {
-      "text": "Au croisement, les pistes font une clairière de terre battue. Au milieu, une carcasse de voiture sans roues. Derrière, cinq ou six chiens aveugles, couchés dans la poussière, la tête tournée vers vous. Ils ne voient pas. Ils sentent. Le plus gros se lève lentement, les yeux blancs, la lèvre déjà retroussée. Plus loin, entre les pins, la fumée d'une cheminée.",
+      "text": "Au croisement, les pistes font une clairière de terre battue, avec au milieu une Lada sans roues posée sur des parpaings. Derrière la carcasse, cinq ou six chiens aveugles sont couchés dans la poussière, la tête tournée vers vous. Ils ne voient pas, ils sentent, et le plus gros se lève sans se presser, les yeux blancs, la lèvre déjà retroussée sur des crocs jaunes. Plus loin, entre les pins, la fumée d'une cheminée monte droite.",
       "choices": [
         {
           "kind": "aller",
@@ -248,7 +248,7 @@
       ]
     },
     "c14-39": {
-      "text": "Vous longez la lisière, un pas à la fois, le vent dans le visage. Les chiens tournent la tête ensemble, comme une seule bête. Le gros renifle, la truffe haute. Il y a une pente de pierre entre vous et la fumée, et pas un bruit à faire. Tentez votre Chance.",
+      "text": "Vous longez la lisière, un pas à la fois, le vent dans le visage pour qu'il emporte votre odeur loin d'eux. Les chiens tournent la tête ensemble, comme une seule bête à six têtes. Le gros renifle, la truffe haute. Entre vous et la fumée, il y a une pente de pierre, et pas un bruit à faire. Tentez votre Chance.",
       "test": {
         "type": "luck",
         "success": "c14-4",
@@ -256,7 +256,7 @@
       }
     },
     "c14-4": {
-      "text": "Le vent tient. Les chiens vous perdent, ou vous laissent. Le gros se recouche dans la poussière, le museau sur les pattes, et ne lève plus la tête. Vous montez la pente de pierre sans vous retourner. En haut, les pistes se croisent devant une cabane de rondins. Le toit fume.",
+      "text": "Le vent tient. Les chiens vous perdent, ou vous laissent, et le gros se recouche dans la poussière, le museau sur les pattes, sans relever la tête quand vous entamez la pente de pierre. En haut, les pistes se croisent devant une cabane de rondins dont le toit fume.",
       "choices": [
         {
           "kind": "aller",
@@ -266,7 +266,7 @@
       ]
     },
     "c14-25": {
-      "text": "Les chiens viennent. Pas en meute : en vague, de tous les côtés à la fois, bas, silencieux, les crocs jaunes. Le gros vous arrive à la cuisse. Il n'y a pas d'arbre à grimper, pas de porte. Il y a la carcasse de voiture, pour se mettre dos à quelque chose.",
+      "text": "Les chiens viennent. Pas en meute : en vague, bas, de tous les côtés à la fois, sans un grognement, les dents en avant. Le gros vous arrive à la cuisse. Il n'y a ni arbre à grimper ni porte à fermer, seulement la Lada sans roues, pour se mettre dos à la tôle et n'avoir à tenir que trois côtés.",
       "combat": {
         "name": "Les chiens aveugles",
         "habilete": 6,
@@ -279,7 +279,7 @@
       }
     },
     "c14-31": {
-      "text": "Le dernier chien tombe sur le flanc et ne se relève pas. Les autres sont déjà morts ou déjà loin. Vous restez contre la voiture le temps de recharger, les mains pas tout à fait sûres. La poussière retombe. En haut de la pente de pierre, une cabane de rondins, et quelqu'un sur le seuil qui a tout regardé sans bouger.",
+      "text": "Le dernier chien tombe sur le flanc et ne se relève pas. Les autres sont déjà morts ou déjà loin entre les pins. Vous restez contre la tôle le temps de recharger, avec des mains qui ne sont pas tout à fait sûres, et la poussière retombe sur les corps. En haut de la pente de pierre, devant une cabane de rondins, un homme assis a regardé tout cela, le fusil sur les genoux. « Elle t'a goûté. Elle n'a pas aimé. » Il rentre et laisse la porte entrebâillée.",
       "choices": [
         {
           "kind": "aller",
@@ -289,7 +289,7 @@
       ]
     },
     "c14-17": {
-      "text": "Vous courez vers la pente de pierre, les chiens aux mollets. Un coup de fusil claque en haut, un seul. Le gros chien s'effondre, les autres s'éparpillent entre les pins. Sur le seuil d'une cabane de rondins, un homme rabaisse son fusil et rentre sans un mot. Vous arrivez au croisement des pistes, le souffle court.",
+      "text": "La fuite tourne court : les chiens vous suivent aux mollets jusqu'au pied de la pente de pierre, et un coup de fusil claque en haut, un seul. Le gros s'effondre en travers de vos jambes ; les autres s'éparpillent entre les pins comme de l'eau renversée. Sur le seuil d'une cabane de rondins, un homme rabaisse un vieux fusil de chasse à deux canons. « Elle ne te voulait pas. Moi non plus. » Il rentre. Vous montez vers la cabane avec le souffle court et le pantalon déchiré.",
       "choices": [
         {
           "kind": "aller",
@@ -304,7 +304,7 @@
         "alt": "La cabane du Forestier au croisement des pistes, une chaise et un fusil sur le seuil, l'antenne couchée au loin",
         "prompt": "Une cabane de rondins au milieu de pins aux aiguilles rouges, porte entrebâillée, une chaise et un fusil appuyé contre le mur sur le seuil, un vieil homme barbu assis sur la chaise, fusil sur les genoux. Devant, deux pistes se croisent : l'une descend vers un ravin aux pins plus sombres, l'autre monte vers le nord ; au-dessus de la crête, en travers du ciel, une antenne gigantesque couchée comme un pont de fer. Un stalker de dos, au croisement."
       },
-      "text": "Devant la cabane, les pistes se croisent. Une descend vers l'ouest, dans un ravin où les pins sont plus rouges encore. Une monte au nord, vers la rivière ; au-delà, sur la crête, une antenne couchée en travers du ciel, grande comme un pont. La porte de la cabane est entrebâillée. Sur le seuil, une chaise, un fusil appuyé contre le mur. Le détecteur se tait ici. C'est reposant.",
+      "text": "Devant la cabane, les pistes se croisent. L'une descend vers l'ouest, dans un ravin où les pins sont plus rouges encore ; l'autre monte au nord, vers la rivière, et au-delà, sur la crête, une antenne couchée en travers du ciel, grande comme un pont de chemin de fer. La porte de la cabane est entrebâillée. Sur le seuil, une chaise de cuisine, un fusil appuyé contre les rondins, une bûche fendue. Ici, le Geiger ne marque presque plus rien, et vos épaules redescendent d'un cran sans que vous l'ayez décidé.",
       "choices": [
         {
           "kind": "parler",
@@ -387,7 +387,7 @@
       ]
     },
     "c14-7": {
-      "text": "Il ne répond pas. Il est déjà assis, le fusil sur les genoux, un homme sans âge, la barbe de la couleur des pins. Il vous regarde comme on regarde la pluie. Tu vas au nord. Ce n'est pas une question. Dans le ravin, il y a une cave. On y boit une fois. Pas deux. Et sous la crête, il y a un trou que le Guide connaît. Le Guide et personne d'autre.",
+      "text": "Vous frappez. Il ne répond pas, et quand vous poussez la porte il est déjà assis au fond, le fusil en travers des genoux, un homme sans âge dont la barbe a pris la couleur des pins. Il vous regarde comme la pluie, sans curiosité. « Tu vas au nord. » Ce n'est pas une question, et vous ne répondez pas. « Ils y vont tous. La forêt les laisse passer, elle n'a rien contre eux. Elle a seulement faim, par endroits. » Il s'arrête au milieu du mot suivant, la tête tournée vers la fenêtre, le temps d'écouter dehors un craquement que vous n'entendez pas, puis il reprend. « Dans le ravin, à l'ouest, il y a une cave. On y boit le jour où on arrive. Après, c'est de l'eau. » Vous demandez ce qu'il y a sous la crête, puisque c'est là que vous allez. « Un trou. Un seul homme le prend, un vieux qui ne boit pas, et il en revient toujours par le même chemin. Le trou le connaît. Toi, il ne te connaît pas. »",
       "effects": [
         {
           "type": "flag",
@@ -408,7 +408,7 @@
       ]
     },
     "c14-35": {
-      "text": "Le pont, dit-il. Il y a quelque chose sur le pont. Il montre une main, les doigts écartés, puis les referme. Grand comme ça. Ou la rivière, si tu aimes l'eau. L'eau brûle, ici. Passé la rivière, la crête. Passé la crête, ce n'est plus toi qui penses. Il se tait. Il a dit tout ce qu'il savait d'ailleurs, et c'est peu.",
+      "text": "« Le pont. » Il lève une main, les doigts écartés, et les referme lentement, un doigt après l'autre. « Il y a une bête dessus. Grande comme ça, et plus. Elle ne dort pas, elle attend que le pont serve. » Il écoute dehors, une seconde, le fusil immobile sur ses genoux. « Ou la rivière, si tu aimes l'eau. L'eau brûle, ici. Elle brûle lentement, elle a le temps. » Vous demandez ce qu'il y a après la rivière. « La crête. Passé la crête, ce n'est plus toi qui penses. » Il n'ajoute rien, et ce qu'il vient de dire est tout ce qu'il sait d'ailleurs, parce que la forêt finit à la rivière et lui avec.",
       "choices": [
         {
           "kind": "aller",
@@ -418,7 +418,7 @@
       ]
     },
     "c14-42": {
-      "text": "Vous ouvrez la conserve et la mangez debout, sur le seuil, avec les doigts. Du poisson dans de l'huile, froid, qui sent la boîte. Vous regagnez 2 points d'Endurance. Le Forestier ne vous regarde pas manger. Il regarde la crête.",
+      "text": "Vous ouvrez la conserve en frottant le couvercle sur la pierre du seuil jusqu'à ce qu'il cède, et vous la mangez debout, avec les doigts : du poisson dans de l'huile, froid, qui a le goût de la boîte. Vous regagnez 2 points d'Endurance. Le Forestier, dans l'embrasure, ne vous regarde pas manger. « Ça sent l'huile jusqu'à la rivière. Mange vite. » Il regarde la crête par-dessus votre tête, et vous mangez plus vite.",
       "choices": [
         {
           "kind": "aller",
@@ -428,7 +428,7 @@
       ]
     },
     "c14-14": {
-      "text": "Vous défaites le bandage et le serrez sur ce qui saigne encore. La gaze colle tout de suite. Vous regagnez 3 points d'Endurance. Dans la poussière devant la cabane, des traces de pattes partout, et une seule trace de bottes : les vôtres.",
+      "text": "Vous défaites le bandage et le serrez sur ce qui saigne encore. La gaze colle tout de suite, et vous nouez par-dessus avec les dents. Vous regagnez 3 points d'Endurance. Dans la poussière devant la cabane, il y a des traces de pattes partout, en cercles, et une seule ligne de bottes qui entre dans le cercle : la vôtre. Derrière vous, dans l'embrasure, le Forestier a vu le sang. « Elle le sentira ce soir, le sang. Pars avant qu'elle ait faim. »",
       "choices": [
         {
           "kind": "aller",
@@ -438,7 +438,7 @@
       ]
     },
     "c14-29": {
-      "text": "Vous videz l'anti-rad d'un trait. Un goût de craie et de métal, puis une chaleur qui descend dans les jambes. Vous perdez 5 rads. Le compteur se calme. Au-dessus de la cabane, le ciel a cette couleur de tôle qu'il prend avant le soir.",
+      "text": "L'anti-rad descend d'un trait. Un goût de craie et de métal, puis une chaleur qui gagne les jambes et y reste. Vous perdez 5 rads. Au-dessus de la cabane, le ciel prend cette couleur de tôle qu'il a avant le soir, et le Forestier, de la fenêtre, suit des yeux la fiole vide que vous jetez dans l'herbe. « La forêt ramasse tout, elle ramassera ça aussi. »",
       "choices": [
         {
           "kind": "aller",
@@ -448,7 +448,7 @@
       ]
     },
     "c14-10": {
-      "text": "La piste du ravin descend raide, entre des pins si rouges qu'ils semblent peints. Le compteur reprend dès les premiers mètres et ne lâche plus. Au fond, derrière les troncs, une lumière. Pas le jour : une lumière qui monte du sol, blanche, immobile. Les aiguilles craquent. Il y a cent mètres de descente, cent mètres de compteur.",
+      "text": "La piste du ravin descend raide, entre des pins si rouges qu'ils semblent peints au minium, et à votre ceinture le Geiger se remet à cliqueter dès les premiers mètres. Au fond, derrière les troncs, il y a une lumière qui n'est pas le jour : elle monte du sol, blanche, immobile, et les aiguilles qui craquent sous vos bottes en paraissent plus rouges. Il reste cent mètres de descente, à faire vite ou à faire couvert.",
       "choices": [
         {
           "kind": "aller",
@@ -467,7 +467,7 @@
       ]
     },
     "c14-33": {
-      "text": "La combinaison bourdonne contre vos oreilles, et le compteur, derrière la visière, hurle pour rien. Vous descendez en vous retenant aux troncs. L'écorce reste sur vos gants, rouge, comme de la poudre. Au fond du ravin, la lumière vient d'un trou dans la roche, entre deux racines grosses comme des cuisses.",
+      "text": "Dans la combinaison, vous n'entendez plus que votre souffle et le filtre, et vous descendez en vous retenant aux troncs, dont l'écorce reste sur vos gants en poudre rouge. Au fond du ravin, la lumière sort d'un trou dans la roche, entre deux racines grosses comme des cuisses.",
       "choices": [
         {
           "kind": "aller",
@@ -477,7 +477,7 @@
       ]
     },
     "c14-19": {
-      "text": "Vous dévalez, à moitié en glissant, les mains dans les aiguilles. Le compteur grimpe sans s'arrêter. Vous prenez 2 rads. En bas, vous crachez rouge : de la poussière d'écorce, seulement, vous l'espérez. La lumière vient d'un trou dans la roche, entre deux racines grosses comme des cuisses.",
+      "text": "La pente vous emporte plus qu'elle ne vous porte : vous dévalez à moitié en glissant, les mains dans les aiguilles, avec le cliquetis qui s'affole à la ceinture. Vous prenez 2 rads. En bas, vous crachez rouge, et vous décidez que c'est de la poussière d'écorce. Juste devant vous, la lumière sort d'une fente de la roche, et elle ne vacille pas.",
       "effects": [
         {
           "type": "stat",
@@ -494,7 +494,7 @@
       ]
     },
     "c14-8": {
-      "text": "L'entrée de la cave est basse, fermée par des lianes grises, épaisses comme des câbles. La lumière passe entre elles et tombe sur le sol en lames. Devant, un stalker assis contre la roche, mort depuis longtemps, les mains encore posées sur les lianes. Son sac est ouvert. Dedans, un Anti-rad intact et une photo que vous ne regardez pas. Vous prenez l'Anti-rad.",
+      "text": "L'entrée de la cave est basse, fermée par des lianes grises, épaisses comme des câbles de grue, et la lumière passe entre elles pour tomber sur le sol en lames. Devant, un stalker est assis contre la roche, mort depuis des mois, séché plutôt que pourri, les mains encore posées sur les lianes. Sa veste est une veste de la Liberté, verte, au brassard délavé. Son sac est ouvert à côté de lui. Dedans, un Anti-rad intact dans son étui, et une photo retournée que vous laissez retournée. Vous prenez l'Anti-rad et vous refermez le sac, pour rien, par habitude.",
       "effects": [
         {
           "type": "item",
@@ -521,7 +521,7 @@
       ]
     },
     "c14-26": {
-      "text": "Les lianes ne bougent pas. Elles sont sèches et tendues, et elles ne sentent pas la plante : elles sentent le fil de fer. Derrière, la lumière blanche, et un bruit d'eau, régulier, comme un robinet qu'on aurait laissé couler depuis vingt ans. Le mort, à côté, a les paumes ouvertes. Il a essayé avec les mains.",
+      "text": "Les lianes ne cèdent pas d'un millimètre. Elles sont sèches, tendues, et elles ne sentent pas la plante : elles sentent le fil de fer. Derrière, la lumière blanche, et un bruit d'eau régulier, pareil à un robinet qu'on aurait laissé couler depuis vingt ans. Le mort, à côté, a les paumes ouvertes vers le haut, rayées de coupures nettes. Il a essayé avec les mains, et la cave l'a gardé devant la porte.",
       "choices": [
         {
           "kind": "agir",
@@ -540,7 +540,7 @@
       ]
     },
     "c14-40": {
-      "text": "Vous empoignez la liane du milieu à deux mains et tirez en arrière de tout votre poids. Elle cède d'un centimètre, puis se tend comme une corde d'arc. Il y a des fibres dedans qui coupent comme du verre. Il faut tirer d'un coup, au bon endroit. Testez votre Habileté.",
+      "text": "Vous empoignez la liane du milieu à deux mains et tirez en arrière de tout votre poids. Elle cède d'un centimètre, puis se tend comme une corde d'arc, et vous sentez sous les paumes les fibres qui courent dedans, fines, tranchantes comme du verre. Il faut tirer d'un coup, au bon endroit, et ne pas lâcher. Testez votre Habileté.",
       "test": {
         "type": "stat",
         "stat": "habilete",
@@ -550,7 +550,7 @@
       }
     },
     "c14-3": {
-      "text": "La liane claque et vous ouvre les paumes. Vous lâchez, vous jurez, vous reprenez. Le sang rend les fibres glissantes, ce qui aide. Vous perdez 3 points d'Endurance. À la fin, il y a un trou assez large pour un homme, et vos mains laissent des traces sur la roche en passant.",
+      "text": "La liane claque et vous ouvre les paumes. Vous lâchez, vous jurez, vous reprenez, et le sang rend les fibres glissantes, ce qui aide. Vous perdez 3 points d'Endurance. À la fin, il y a un trou assez large pour un homme, et vos mains laissent sur la roche, en passant, deux marques que le mort à côté aurait pu faire.",
       "effects": [
         {
           "type": "stat",
@@ -567,7 +567,7 @@
       ]
     },
     "c14-16": {
-      "text": "Vous passez. Dedans, la lumière vient de l'eau. Une source sort de la roche dans une vasque de pierre et l'éclaire par en dessous, blanche, sans chaleur. Le plafond est bas, couvert de racines. L'air est tiède et sent le fer mouillé. Le compteur, ici, ne dit rien. Au fond, sur une pierre plate, quelque chose fait trembler l'air, comme un capot chaud.",
+      "text": "La liane cède, et les autres se rabattent à moitié derrière vous quand vous passez. Dedans, la lumière vient de l'eau : une source sort de la roche dans une vasque de pierre creusée à la main, et l'éclaire par en dessous, blanche, sans chaleur. Le plafond est bas, tressé de racines ; l'air est tiède et sent le fer mouillé. Votre dosimètre n'y trouve rien à compter. Au fond, sur une pierre plate, l'air ondule au-dessus d'un point précis, sans qu'on voie ce qui chauffe.",
       "choices": [
         {
           "kind": "agir",
@@ -612,7 +612,7 @@
       ]
     },
     "c14-38": {
-      "text": "L'eau est froide comme une lame. Vous buvez dans vos mains, puis à même la vasque, longtemps. Quand vous relevez la tête, la lumière a changé, ou vos yeux. Tout est net : chaque racine, chaque goutte. Votre Chance remonte à 10. La Zone vous laissera passer un peu plus loin, cette fois. Une fois.",
+      "text": "L'eau est froide comme une lame. Vous buvez dans vos mains, puis à même la vasque, jusqu'à en avoir mal aux dents. Quand vous relevez la tête, la lumière a changé, ou vos yeux : chaque racine du plafond est nette, chaque goutte sur la pierre a son ombre. Votre Chance remonte à 10. La Zone vous laissera passer un peu plus loin, cette fois, et la source, derrière vous, redevient de l'eau.",
       "effects": [
         {
           "type": "setStat",
@@ -658,7 +658,7 @@
       ]
     },
     "c14-24": {
-      "text": "Le Détecteur Ours crépite dès que vous l'approchez de la pierre plate, de plus en plus serré, puis d'un seul trait. L'air tremble sur un point. Vous tendez la main, vous fermez les doigts sur du vide, et le vide pèse. Le Cœur de l'Oasis. Il est tiède, et il bat, lentement, à contretemps du vôtre. Depuis la cave, les boulons tomberont du bon côté.",
+      "text": "Le Détecteur Ours s'agite dès que vous l'approchez de la pierre plate, ses bips de plus en plus serrés, puis d'un seul trait. L'air tremble sur un point. Vous tendez la main, vous fermez les doigts sur du vide, et le vide pèse. C'est le Cœur de l'Oasis : il est tiède, et il bat, lentement, à contretemps du vôtre, sans jamais le rattraper. Depuis la cave, les boulons tomberont du bon côté.",
       "effects": [
         {
           "type": "item",
@@ -690,7 +690,7 @@
         "alt": "Un Pseudo-géant assis sur un pont de béton au-dessus d'une rivière qui fume, l'antenne couchée sur la crête",
         "prompt": "Une rivière lente et brune qui fume dans le froid, sortant d'une forêt de pins rouges ; un pont de béton la traverse, et au milieu du pont, assis, une masse de muscle grise de la taille d'une voiture, un Pseudo-géant à la tête enfoncée dans les épaules, immobile. Au-delà, une crête nue monte vers une antenne couchée en travers du ciel. Vu depuis la lisière, de loin, derrière un tronc, la silhouette d'un stalker accroupi."
       },
-      "text": "La piste nord sort des pins sur une rivière lente, brune, qui fume dans le froid. Un pont de béton la traverse, et sur le pont, assis, quelque chose de la taille d'une voiture. Un Pseudo-géant. Il ne bouge pas. Il attend que le pont serve. Au-delà, la crête monte vers l'antenne couchée, et c'est là que ça commence : une pensée qui n'est pas la vôtre, posée dans votre tête comme une main.",
+      "text": "La piste du nord sort des pins sur une rivière lente, brune, qui fume dans le froid comme une soupe. Un pont de béton la traverse en deux arches, et sur le pont, assis au milieu de la chaussée, une masse grise de la taille d'une Volga : c'est un Pseudo-géant. Il ne vous attend pas, vous en particulier : il attend que le pont serve. Au-delà, la crête monte, nue, vers l'antenne couchée, et c'est là que ça commence, une pensée qui n'est pas la vôtre, posée dans votre tête comme une main sur une nuque. « Monte. » Vous ne l'avez pas pensée, vous l'avez entendue arriver.",
       "choices": [
         {
           "kind": "aller",
@@ -710,7 +710,7 @@
       ]
     },
     "c14-32": {
-      "text": "Il vous a entendu au premier pas sur le béton. Il se lève, et le pont tremble. Il frappe à casser des os, et les balles rentrent dans sa graisse sans ressortir. Derrière lui, de l'autre côté, la piste continue vers la crête. Il n'y a que lui entre vous et elle.",
+      "text": "Il vous a entendu au premier pas sur le béton. Il se lève, et le pont tremble sous une masse qui n'a pas fini de se déplier. Il frappe à casser des os, et les balles rentrent dans sa graisse sans ressortir, comme dans de l'argile. Derrière lui, la piste continue vers la crête, et il n'y a que lui entre vous et elle.",
       "combat": {
         "name": "Le Pseudo-géant",
         "habilete": 8,
@@ -724,7 +724,7 @@
       }
     },
     "c14-5": {
-      "text": "Vous reculez sur le pont et sautez dans la berge. Le Pseudo-géant ne suit pas : il se rassoit, le béton craque sous lui, et il recommence à attendre. Vous avez du sang dans la bouche, et une pensée qui n'est pas à vous vous dit de revenir. Vous ne revenez pas. Sous le pont, la rivière brune coule sans bruit.",
+      "text": "La berge vous reçoit dans la boue jusqu'aux genoux quand vous sautez du pont à reculons. Le Pseudo-géant ne suit pas : il se rassoit, le béton craque sous lui, et il recommence à attendre. Vous avez du sang dans la bouche, et une voix qui n'est pas à vous dit, très doucement : « Reviens sur le pont. » Vous ne revenez pas. Sous les arches, la rivière brune coule sans un pli.",
       "choices": [
         {
           "kind": "aller",
@@ -739,7 +739,7 @@
       ]
     },
     "c14-21": {
-      "text": "Sous le pont, la rivière est large de vingt mètres et pas plus profonde qu'une taille d'homme. Elle fume. Sur les galets de la rive, le compteur grimpe avant même que vous touchiez l'eau. Au-dessus, le Pseudo-géant ne regarde pas en bas. L'autre rive est là, une pente d'argile, et la crête.",
+      "text": "Sous le pont, la rivière est large de vingt mètres et pas plus profonde qu'une taille d'homme. Elle fume. Sur les galets de la rive, votre Geiger s'emballe avant même que vous touchiez l'eau, et ne se calme pas quand vous reculez d'un pas. Au-dessus, le Pseudo-géant ne regarde pas en bas. L'autre rive est là, une pente d'argile grise, et au-dessus la crête.",
       "choices": [
         {
           "kind": "aller",
@@ -758,7 +758,7 @@
       ]
     },
     "c14-36": {
-      "text": "L'eau vous arrive à la poitrine et pèse sur la combinaison comme une main. Le compteur hurle dans votre oreille, sans conséquence. Vous sortez sur l'argile de l'autre rive et l'eau brune coule de vous en fumant. Le Pseudo-géant, sur le pont, n'a pas tourné la tête. La crête est au-dessus. La pensée qui n'est pas la vôtre aussi.",
+      "text": "La rivière monte sur la combinaison jusqu'à la poitrine et pèse contre vous comme une main qui vous retient, mais rien ne passe le caoutchouc pendant que vous poussez contre le courant. Vous sortez sur l'argile de l'autre rive et l'eau brune coule de vous en fumant. Sur le pont, la masse grise n'a pas bougé, et la pensée étrangère vous a attendu sur la berge.",
       "choices": [
         {
           "kind": "aller",
@@ -768,7 +768,7 @@
       ]
     },
     "c14-28": {
-      "text": "L'eau vous arrive à la poitrine. Elle est tiède, ce qui est pire que froide. Le compteur hurle tout le long, et vous sentez l'eau sur la peau comme une brûlure lente. Vous prenez 4 rads. Vous sortez sur l'argile de l'autre rive, les vêtements qui fument. Le Pseudo-géant n'a pas tourné la tête. La crête est au-dessus.",
+      "text": "L'eau vous arrive à la poitrine. Elle est tiède, ce qui est pire que froide, et vous la sentez sur la peau comme une brûlure lente, qui prend son temps. Vous prenez 4 rads. Vous sortez sur l'argile en face, les vêtements fumants, sans un regard vers le pont. La crête est au-dessus de vous.",
       "effects": [
         {
           "type": "stat",
@@ -785,7 +785,7 @@
       ]
     },
     "c14-43": {
-      "text": "Vous êtes de l'autre côté. La piste monte vers la crête à travers les derniers pins, rouges jusqu'au sommet. En haut, l'antenne couchée barre tout le ciel. À mi-pente, un transformateur de béton, porte de fer entrouverte, et une bouche d'égout qui descend dans le noir sous la colline. Vous avez dix pensées, et trois ne sont pas à vous. Elles disent de monter. Elles disent que le Monolithe attend.",
+      "text": "De l'autre côté, la piste monte vers la crête à travers les derniers pins, rouges jusqu'au sommet, et en haut l'antenne couchée barre tout le ciel, avec ses haubans qui chantent dans le vent. À mi-pente, un transformateur de béton à la porte de fer entrouverte, et à côté une bouche d'égout dont l'échelle descend sous la colline. Vous avez dix pensées, et trois ne sont pas à vous. « Monte. Il attend. Il t'a vu marcher. » Elles ne disent pas qui. Le nom monte tout seul, avec la pente, et c'est le Monolithe.",
       "choices": [
         {
           "kind": "aller",

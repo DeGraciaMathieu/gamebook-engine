@@ -38,8 +38,8 @@
         "prompt": "Le départ d'un long viaduc de béton là où une rue de Pripyat s'arrête : un parapet bas, le tablier qui file sur deux cents mètres au-dessus d'une voie ferrée, au milieu un poste de garde en parpaings avec un brasero qui fume et deux silhouettes grises immobiles devant. Tout au bout, la cheminée de la Centrale sort de la brume comme un doigt, le remblai descendant vers la boue et les piles. Vue du héros de dos, au bord de la rue."
       },
       "text": [
-        "Le viaduc commence là où la rue s'arrête. Deux cents mètres de béton au-dessus de la voie ferrée, un parapet bas, et au milieu, un poste de garde en parpaings avec un brasero qui fume. Deux silhouettes grises devant. Elles ne bougent pas.",
-        "Au bout du pont, la cheminée de la Centrale sort de la brume comme un doigt. En contrebas, le remblai descend vers la boue et les piles."
+        "Le viaduc commence là où la rue s'arrête, au bout d'un trottoir défoncé où un panneau d'autobus rouillé indique encore la Centrale, et il file sur deux cents mètres de béton au-dessus de la voie ferrée, bordé d'un parapet qui ne vous monte pas plus haut que les genoux. Au milieu du tablier se tient un poste de garde en parpaings, avec un brasero qui fume et deux silhouettes grises plantées devant, l'arme en travers de la poitrine.",
+        "Plus loin, la cheminée de la Centrale sort de la brume, rayée de rouge et de blanc. Sur votre droite, le remblai descend en cailloux vers la boue et les piles du pont."
       ],
       "choices": [
         {
@@ -56,8 +56,8 @@
     },
     "c23-2": {
       "text": [
-        "Les blocs forment une chicane. Vous passez de l'un à l'autre, le dos contre le béton froid. À cinquante mètres, le poste : une meurtrière, un canon qui dépasse, le brasero.",
-        "Les deux gardes portent le masque. L'un d'eux parle, bas, sans s'arrêter. Une prière. L'autre regarde le pont, pas vous. Pas encore."
+        "Les blocs de béton forment une chicane, posés de travers sur le tablier avec des sacs de sable entre eux, et vous passez de l'un à l'autre le dos collé au ciment froid, les genoux pliés, le fusil serré contre la poitrine pour qu'il ne cogne pas les blocs. À cinquante mètres, le poste montre une meurtrière, le canon d'une mitrailleuse qui dépasse de la fente, et le brasero allumé dans un fût de deux cents litres.",
+        "Les deux gardes portent le masque à gaz, des verres ronds qui renvoient la lueur du feu. Le plus grand parle sans s'arrêter, d'une voix basse et régulière que le vent vous apporte par morceaux : « Il voit celui qui marche, il voit celui qui marche sur le pont, il voit. » L'autre surveille l'entrée du viaduc et la rue d'où vous venez, mais il n'a pas encore regardé le bloc derrière lequel vous êtes accroupi."
       ],
       "image": {
         "src": "images/c23-2.webp",
@@ -113,8 +113,8 @@
     },
     "c23-17": {
       "text": [
-        "Vous avancez à découvert, dans la tenue grise. Le garde qui priait se tait. Il vous regarde venir, les yeux blancs derrière le masque, et il dit la première moitié de la phrase, celle qu'ils disent tous avant de tirer. Le Monolithe voit.",
-        "Il attend la suite. Son doigt est sur la détente. Le brasero crache une étincelle."
+        "La combinaison grise a appartenu à un mort, et c'est dans cette peau-là que vous sortez de derrière les blocs pour avancer à découvert. Le grand garde s'interrompt au milieu de sa phrase. Il vous regarde venir à travers les verres ronds, les yeux blancs derrière, et quand vous n'êtes plus qu'à dix pas il reprend la prière au début, plus fort, en l'adressant au ciel par-dessus votre tête : « Il voit celui qui marche… »",
+        "Puis il attend la suite. Son index repose sur la détente du fusil, et entre vous deux le brasero lâche une étincelle qui meurt sur le béton."
       ],
       "choices": [
         {
@@ -139,7 +139,7 @@
       ]
     },
     "c23-9": {
-      "text": "Vous murmurez. Des mots qui ressemblent aux leurs, le même rythme, la tête basse. Le garde penche la tête. Derrière lui, l'autre a cessé de regarder le pont. Il y a ce silence où tout se décide, le vent dans les câbles, le brasero qui craque. Tentez votre Chance.",
+      "text": "Vous baissez la tête et vous murmurez ce qui vous vient, sur leur rythme à eux, trois temps et une reprise : « …nous voyons, et nous voyons, et nous voyons. » Le garde penche le masque sur le côté, à la façon d'un chien qui écoute. Derrière lui, l'autre a quitté la rue des yeux pour vous fixer. Le vent fait vibrer un câble de l'éclairage au-dessus du tablier pendant que le brasero craque. Tentez votre Chance.",
       "test": {
         "type": "luck",
         "success": "c23-22",
@@ -148,8 +148,8 @@
     },
     "c23-22": {
       "text": [
-        "Le garde hoche la tête. Il n'a pas compris, mais il a reconnu quelque chose, le ton, la soumission. Il s'écarte. L'autre ne tourne même pas la tête.",
-        "Vous passez entre eux, la barrière se lève, et le pont s'ouvre devant vous, long et vide. Vous ne regardez pas derrière. Au bout, la Centrale grossit à chaque pas."
+        "Le garde hoche la tête une fois. Ce n'étaient pas les bons mots, mais il a reconnu la voix basse et la nuque pliée, et il s'écarte d'un pas pour vous laisser la chicane, tandis que l'autre ne vous suit même pas du regard.",
+        "La barrière se lève dans un grincement de contrepoids. Derrière, le tablier s'étire jusqu'au bout sans une silhouette, et vous marchez sans tourner la tête pendant que la prière reprend dans votre dos, au mot exact où elle s'était arrêtée."
       ],
       "choices": [
         {
@@ -161,8 +161,8 @@
     },
     "c23-5": {
       "text": [
-        "Le garde relève son arme. Ce que vous avez dit n'était pas la suite. Il tire, vous vous jetez de côté, la balle fait sauter un éclat de parapet.",
-        "Le second reste au poste, son canon sur vous, mais c'est le premier qui vient. Il n'y a nulle part où aller sur un pont, sauf en avant ou par-dessus bord."
+        "Le garde relève son arme : ce que vous avez dit n'était pas la suite. Il tire, vous vous jetez de côté, et la balle arrache un éclat au parapet là où se trouvait votre épaule.",
+        "« Il voit celui qui ment, il voit, il voit. » Le second reste au poste derrière la mitrailleuse, mais c'est le premier qui vient sur vous en marchant, sans se presser, et sur un pont large de huit mètres il n'y a que deux directions, devant vous ou par-dessus le parapet."
       ],
       "combat": {
         "name": "Le garde du pont",
@@ -176,8 +176,8 @@
     },
     "c23-13": {
       "text": [
-        "Le garde tombe contre le parapet et n'en bouge plus. L'autre, au poste, parle dans sa radio sans vous quitter des yeux, puis il recule derrière les parpaings et tire deux fois, trop loin. Il ne vous suivra pas. Il a dit ce qu'il avait à dire.",
-        "Vous traversez dans une tenue qui ne trompe plus personne. Au bout du viaduc, la Centrale attend, et maintenant elle sait."
+        "Le garde tombe contre le parapet, une jambe repliée sous lui, et son masque cogne une fois le béton. Au poste, l'autre parle dans une radio sans vous quitter des yeux, puis il recule derrière les parpaings et tire deux balles qui passent loin sur votre gauche. Sa voix vous arrive par bribes, la même psalmodie tournée vers un autre destinataire : « Il en vient un. Recevez-le, nous vous l'envoyons. »",
+        "La tenue ne trompe plus personne sur ce pont, alors vous traversez au pas de course, courbé derrière le parapet, et au bout du viaduc la Centrale a déjà entendu votre signalement."
       ],
       "effects": [
         {
@@ -195,8 +195,8 @@
     },
     "c23-25": {
       "text": [
-        "Vous dites la fin. Les mots du palais, dans l'ordre, sans hésiter. Le garde baisse son arme. Il ne vous salue pas, il n'y a rien à saluer, vous êtes l'un d'eux. L'autre lève la barrière.",
-        "Vous passez. Sous le masque, votre souffle sent le caoutchouc. Le pont est long. Personne ne vous appelle. Au bout, la cheminée de la Centrale, et sous elle le béton du Sarcophage."
+        "« …et nous restons, et nous restons. » Vous dites la fin telle que vous l'avez entendue dans la salle de cinéma du palais, les mêmes mots dans le même ordre, sans hésiter sur le second « nous restons ». Le garde abaisse son fusil. Il ne vous salue pas, puisqu'entre eux on ne se salue pas, et c'est l'autre qui va lever la barrière en pesant de tout son poids sur le contrepoids.",
+        "Vous passez. Sous le masque, votre souffle sent le caoutchouc chaud et la sueur d'un autre homme, et les verres s'embuent un peu à chaque pas. Le tablier est long, deux cents mètres d'un béton fissuré où poussent des touffes d'herbe jaune, et vous ne vous retournez pas. Au bout, la cheminée rayée monte au-dessus du grand bâtiment, et sous elle le Sarcophage, gris et sans fenêtre."
       ],
       "choices": [
         {
@@ -208,8 +208,8 @@
     },
     "c23-11": {
       "text": [
-        "Vous posez le Vintorez sur le bloc. Le premier garde est dans la lunette, la prière lui fait bouger la tête. Le Vintorez ne fait pas de bruit, et ce qu'il touche ne se relève pas. Il tombe.",
-        "Le second se retourne vers le parapet, pas vers vous. Il cherche. Vous avez le temps d'un deuxième tir, pas plus. Testez votre Habileté."
+        "Vous couchez le Vintorez sur le bloc et vous calez la crosse contre votre joue. Le grand garde entre dans la lunette, la tête qui dodeline au rythme de sa prière, « il voit, il voit, il voit », et vous pressez la détente au milieu d'un mot. Le fusil ne fait qu'un claquement de livre qu'on referme, et le garde s'assoit contre le fût du brasero, le menton sur la poitrine, et la manche de sa combinaison se met à fumer contre le métal.",
+        "Le second se tourne vers le parapet, pas vers vous. Il cherche d'où c'est venu, et vous avez le temps d'un deuxième tir avant qu'il ne trouve. Testez votre Habileté."
       ],
       "test": {
         "type": "stat",
@@ -220,7 +220,7 @@
       }
     },
     "c23-20": {
-      "text": "Le second tombe à côté du premier. Rien n'a fait de bruit, pas même eux. Le brasero continue de fumer entre les deux corps. Vous rechargez, vous attendez, personne ne sort du poste. Sur le pont, le vent pousse une feuille de tôle qui racle le béton, et c'est tout.",
+      "text": "Le second garde tombe en travers du premier, et le brasero continue de fumer entre les deux corps. Vous rechargez, l'œil dans la lunette, mais la porte du poste ne s'ouvre pas.",
       "choices": [
         {
           "kind": "aller",
@@ -231,8 +231,8 @@
     },
     "c23-7": {
       "text": [
-        "Raté. La balle claque sur le parpaing et le second garde vous a vu. Il ne prie pas, il n'a plus le temps.",
-        "Il vient en tirant par courtes rafales, et vous entendez les balles entrer dans les blocs autour de vous, une à une, comme des coups de marteau. Il frappe fort, et de près."
+        "Raté : la balle claque sur un parpaing, et le second garde a vu d'où elle venait. Il ne prie plus.",
+        "Il avance vers vous en tirant par rafales de trois, et vous entendez les balles entrer dans les blocs autour de votre tête, l'une après l'autre, avec le bruit sourd d'un marteau sur un madrier. Il tire de près, il vise le visage, et ce qui vous touche ouvre la chair jusqu'à l'os."
       ],
       "combat": {
         "name": "Le second garde",
@@ -247,8 +247,8 @@
     },
     "c23-15": {
       "text": [
-        "La grenade roule sous la meurtrière. Vous comptez. Le souffle vous arrive dans la poitrine avant le bruit.",
-        "Quand la fumée se couche, le poste n'a plus de toit et les deux gardes sont sous les parpaings. Un bras dépasse, la main encore sur l'arme. Le brasero a roulé sur le pont et brûle seul. Toute la ville a entendu."
+        "La grenade roule sur le béton et s'arrête sous la meurtrière. Vous comptez jusqu'à trois, à plat ventre derrière le bloc, et le souffle vous arrive dans la poitrine avant le bruit.",
+        "Quand la fumée retombe, le poste n'a plus de toit et les deux gardes sont sous les parpaings ; d'un des tas sort un bras gris dont la main tient encore la crosse. Le fût du brasero a roulé jusqu'au parapet, où il brûle tout seul en semant ses braises, et l'écho de l'explosion revient trois fois des immeubles de Pripyat, assez fort pour que toute la ville l'entende."
       ],
       "choices": [
         {
@@ -260,8 +260,8 @@
     },
     "c23-3": {
       "text": [
-        "Vous tirez avant la fin de la prière. Le premier garde se plie, pas assez, il se relève derrière les sacs de sable et l'autre est déjà sur vous.",
-        "Ils tirent à deux, sans crier, sans un mot que vous ne connaissez pas. Les balles mordent le béton à hauteur de visage. Ici, c'est le poste entier qui est contre vous."
+        "Votre première balle part avant la fin de la prière. Le grand garde se plie en deux, pas assez, et se redresse derrière les sacs de sable pendant que l'autre arrive déjà sur votre flanc.",
+        "Ils tirent ensemble, sans un cri, la prière reprise à deux voix entre les rafales : « Il voit celui qui force, il voit. » Les balles mordent le béton à hauteur de visage. Vous vous battez contre le poste entier, la mitrailleuse, les sacs et les deux fusils, et il faudra tout faire taire avant de passer."
       ],
       "combat": {
         "name": "Le poste de garde",
@@ -276,8 +276,8 @@
     },
     "c23-19": {
       "text": [
-        "Le poste de garde est à vous. Il sent la poudre et le charbon. Sur la table, entre les cartouches, une radio chuinte. Une voix demande : Poste trois. Puis encore. Poste trois. Vous ne répondez pas.",
-        "Quelque part au bout du pont, dans le grand bâtiment, quelqu'un pose la radio et prend son fusil. Le viaduc devant vous est vide jusqu'à la Centrale."
+        "Le poste de garde est à vous. Dedans, il sent la poudre et le charbon de bois, et sur la table de camping, entre deux boîtes de cartouches et une bougie collée dans une assiette, une radio militaire R-159 chuinte sur sa fréquence. Une voix en sort, plate, qui ne s'adresse à aucun homme en particulier : « Poste trois. Nous n'entendons plus le poste trois. Nous écoutons, nous écoutons. » Puis elle recommence au même mot, à la même vitesse.",
+        "Vous ne répondez pas. Au bout du pont, dans le grand bâtiment, celui qui parle va finir par poser le combiné et prendre son fusil, et le viaduc qui s'étire devant vous ne cache plus rien jusqu'à la Centrale."
       ],
       "effects": [
         {
@@ -315,7 +315,7 @@
       ]
     },
     "c23-8": {
-      "text": "Vous videz la trousse, assis contre les parpaings, le dos aux morts. Les compresses, l'ampoule, tout. Vous regagnez 6 points d'Endurance. La radio continue d'appeler le poste trois. Vous la retournez face contre la table. Ça ne change rien à la voix.",
+      "text": "Vous videz la trousse assis contre les parpaings, le dos tourné aux morts : les compresses, la bande, l'ampoule de morphine que vous cassez entre deux doigts. Vous regagnez 6 points d'Endurance. La radio appelle toujours le poste trois, alors vous la retournez face contre la table, et la voix continue de sortir d'entre les planches, un peu plus sourde.",
       "choices": [
         {
           "kind": "aller",
@@ -326,8 +326,8 @@
     },
     "c23-24": {
       "text": [
-        "Vous traversez. Le vent passe sous le tablier et fait chanter quelque chose de métallique. Personne sur le pont. À l'autre bout, la barrière est baissée et la guérite est vide : la relève n'a pas attendu.",
-        "Sur le béton, une empreinte de botte dans la poussière, fraîche, qui va vers la Centrale. Ils savent. La cheminée est là, énorme, et sous elle le Sarcophage."
+        "Le long du parapet, le vent passe sous le tablier et fait chanter un hauban arraché qui bat contre une pile, et vous allez au pas rapide sans regarder en bas. À l'autre bout, la barrière est baissée et la guérite vide, sa porte ouverte sur une chaise renversée : la relève n'a pas attendu de savoir ce qui était arrivé au poste trois.",
+        "Dans la poussière du béton, une empreinte de botte toute fraîche part vers la Centrale. Celui qui l'a laissée marchait vite, les talons d'abord, et la cheminée qui grandissait à chaque pas vous domine maintenant de ses rayures rouges et blanches."
       ],
       "choices": [
         {
@@ -339,8 +339,8 @@
     },
     "c23-18": {
       "text": [
-        "Vous passez par-dessus le parapet. Le remblai vous reçoit mal : des pierres, des orties, un rouleau de barbelé qui vous retient par la manche.",
-        "En haut, ils ne descendent pas. Ils tirent deux fois dans le vide, puis ils reprennent la prière. Vous êtes sous le pont, dans l'ombre des piles, et la boue sent le fer chaud."
+        "Le parapet ne vous arrive qu'aux genoux, vous le passez d'une enjambée, et le remblai vous reçoit mal, en pierres, en orties, avec un rouleau de barbelé qui vous retient par la manche jusqu'à ce que le tissu cède.",
+        "En haut, ils ne descendent pas. Deux coups de feu partent dans le vide, puis la prière repart là où le tir l'avait coupée, « …celui qui marche, il voit », et vous voilà sous le pont, à l'abri des piles, dans une boue qui sent le fer chauffé."
       ],
       "choices": [
         {
@@ -352,8 +352,8 @@
     },
     "c23-14": {
       "text": [
-        "Le remblai descend en pente de cailloux vers la voie ferrée. Des rails rouges, des traverses pourries, et au-dessus, le tablier du viaduc qui bouche le ciel. Le détecteur crépite par à-coups.",
-        "Vous marchez sur la voie, courbé, entre les flaques d'eau noire. Devant vous, la première pile du pont monte du ballast comme une tour, avec une échelle de fer scellée dans le béton."
+        "Le remblai descend en pente de cailloux vers la voie ferrée : des rails rouges, des traverses qui s'effritent sous la botte, et au-dessus de vous le tablier du viaduc qui bouche le ciel sur toute sa largeur. Le détecteur crépite par à-coups.",
+        "Vous marchez sur la voie, courbé, entre des flaques d'eau noire où flottent des plaques d'huile, et la première pile du pont monte du ballast devant vous, haute de vingt mètres, avec une échelle de fer scellée dans son flanc."
       ],
       "choices": [
         {
@@ -375,8 +375,8 @@
         "prompt": "Le dessous d'un viaduc : une pile de béton brut piquée de mousse montant vers le tablier vingt mètres plus haut, une échelle de service en fer scellée dans le béton, au pied une cabane d'éclusier au toit crevé. La voie ferrée rouillée continue sous les arches dans une boue qui luit faiblement, des flaques d'eau noire entre les traverses. Lumière rasante sous le tablier qui bouche le ciel, le héros en petite silhouette au pied de l'échelle."
       },
       "text": [
-        "La pile du pont. Du béton brut, piqué de mousse, et l'échelle de service qui monte vers le dessous du tablier, vingt mètres plus haut. Au pied, une cabane d'éclusier au toit crevé. Vers l'est, la voie continue sous les arches, dans une boue qui luit.",
-        "En haut, assourdi par le béton, un pas qui va et vient. Le garde. Il ne regarde pas en bas."
+        "La pile est en béton brut, piquée de mousse, et l'échelle de service grimpe le long de sa face nord jusqu'aux poutres sous le tablier, vingt mètres plus haut. À son pied, une cabane d'éclusier en planches a perdu la moitié de son toit. Vers l'est, la voie continue sous les arches, dans une boue qui luit du vert d'un cadran de montre.",
+        "Au-dessus, assourdi par l'épaisseur du béton, un pas va et vient entre la guérite et le poste, et avec lui une voix qui psalmodie : « Nous restons, nous restons, nous restons. » Le garde regarde la rue ou le ciel, mais il ne se penche jamais sur le parapet."
       ],
       "choices": [
         {
@@ -419,8 +419,8 @@
     },
     "c23-21": {
       "text": [
-        "Les barreaux sont froids, puis ils ne le sont plus : à mi-hauteur, le fer est tiède, et le détecteur se met à crier. Vous montez sans regarder la boue.",
-        "Le dernier barreau manque. Il faut lâcher une main, attraper la poutre, et se hisser dans le noir sous le tablier. Testez votre Habileté."
+        "Les barreaux sont froids sous vos gants, puis à mi-hauteur le fer devient tiède, presque chaud, et la peau de vos poignets se met à picoter sous les manches. Vous montez sans regarder la boue verte en bas.",
+        "Le dernier barreau manque, scié net. Il faut lâcher une main, attraper la poutre et vous hisser à la force des bras dans l'ombre sous le tablier. Testez votre Habileté."
       ],
       "test": {
         "type": "stat",
@@ -432,8 +432,8 @@
     },
     "c23-10": {
       "text": [
-        "Vous êtes dessus. Allongé sur la poutre, la joue contre l'acier, avec au-dessus de vous, à travers les joints du tablier, un pas qui passe et repasse.",
-        "Vous rampez. Poutre après poutre, cinquante mètres, cent, la rouille vous entre dans les paumes. Le garde s'arrête une fois, juste au-dessus. Puis il repart. Vous arrivez à la dernière pile."
+        "Vous êtes dessus. Allongé sur la poutre, la joue contre l'acier, vous entendez à travers les joints du tablier le pas du garde qui passe et repasse, et la prière qui le suit.",
+        "Vous rampez de poutre en poutre, cinquante mètres, puis cent, et la rouille vous entre dans les paumes par plaques. À mi-chemin, le pas s'arrête juste à l'aplomb de votre nuque. Une pluie de poussière tombe des joints, et vous gardez la bouche fermée, la poussière dans les cils, jusqu'à ce que la botte reparte. Vous atteignez la dernière pile une demi-heure plus tard, les mains en sang."
       ],
       "choices": [
         {
@@ -445,8 +445,8 @@
     },
     "c23-16": {
       "text": [
-        "Vous ratez la poutre. La chute est courte et le sol est mou : la boue sous la pile, celle qui luit. Vous perdez 3 points d'Endurance. Le détecteur hurle le temps que vous en sortiez. Vous prenez 3 rads.",
-        "En haut, le pas s'est arrêté. Il reprend. Il n'a rien entendu, ou il s'en moque."
+        "Vous ratez la poutre. La chute est courte et le sol est mou : vous tombez dans la boue sous la pile, celle qui luit, et vous en avez jusqu'aux coudes avant d'avoir compris. Vous perdez 3 points d'Endurance. Le temps de vous en arracher, la boue a traversé vos gants et vos genoux. Vous prenez 3 rads.",
+        "En haut, le pas s'est arrêté net. Puis il reprend à la même cadence, parce que le garde n'a rien entendu, ou parce que ce qui se passe sous le pont ne regarde que le Monolithe."
       ],
       "effects": [
         {
@@ -475,8 +475,8 @@
     },
     "c23-4": {
       "text": [
-        "Sous les arches, la voie est sous l'eau. Vous marchez dedans. Elle est tiède, elle ne devrait pas l'être, et le détecteur ne se tait plus. Vous prenez 3 rads.",
-        "Une arche, deux, trois. Des carcasses de wagons sous la troisième, des os de chien dedans. Le pas, au-dessus, ne vous suit pas. Au bout, le remblai remonte vers l'autre rive."
+        "Sous les arches, la voie est noyée sur toute sa longueur et vous marchez dans l'eau jusqu'aux mollets. Elle est tiède, alors qu'elle ne devrait pas l'être en cette saison, et vos bottes y soulèvent des volutes de vase verte. Vous prenez 3 rads.",
+        "Vous comptez les arches, une, deux, trois. Sous la troisième gisent deux wagons de marchandises couchés sur le flanc, et dans le premier, entre les planches, des os de chien rongés jusqu'au blanc. Au-dessus, le pas du garde ne vous suit pas. Au sortir de la dernière arche, le remblai remonte vers l'autre rive."
       ],
       "effects": [
         {
@@ -495,8 +495,8 @@
     },
     "c23-23": {
       "text": [
-        "L'autre côté. Vous sortez de sous le pont par le remblai, derrière la guérite de l'extrémité. Elle est vide : le garde de ce bout est resté au milieu, près du brasero. Vous enjambez la barrière baissée.",
-        "Devant vous, la route descend vers le grand bâtiment, la cheminée, et le béton gris du Sarcophage. Personne ne sait que vous êtes là."
+        "Le remblai d'en face vous ramène au jour derrière la guérite de l'extrémité, qui est vide : son garde est resté au milieu du viaduc, près du brasero. Vous enjambez la barrière baissée en essuyant vos mains sur votre pantalon.",
+        "La route descend vers le grand bâtiment et le Sarcophage. Sur le pont, à deux cents mètres, la psalmodie n'a pas changé de mot depuis que vous êtes descendu sous les piles."
       ],
       "choices": [
         {
@@ -508,8 +508,8 @@
     },
     "c23-12": {
       "text": [
-        "La cabane sent le moisi et la pisse de rat. Sur le lit de fer, un stalker en combinaison verte, sec comme du bois. Ses mains sont noires jusqu'aux poignets : brûlées, pas par le feu. Il a monté l'échelle avant vous, et il est redescendu.",
-        "La boue sous le plancher vous chauffe les bottes. Vous prenez 2 rads. Sur le mur, gravé au couteau : ne touche pas les barreaux."
+        "La cabane sent le moisi et l'urine de rat. Sur un lit de fer sans matelas, un stalker en combinaison verte est couché sur le dos, sec comme du bois flotté, le masque remonté sur le front. Ses mains sont noires jusqu'aux poignets, et le feu n'y est pour rien : la peau a pris la couleur et le grain de la rouille, la même que celle des barreaux dehors. Il a monté l'échelle avant vous, il en est redescendu, et il est venu se coucher ici pour ne plus se relever.",
+        "Sous le plancher disjoint, la boue vous chauffe les semelles. Vous prenez 2 rads. Sur le mur au-dessus du lit, il a gravé au couteau, en lettres qui descendent de travers à mesure que la main le lâchait : « ne touche pas les barreaux »."
       ],
       "effects": [
         {
@@ -527,7 +527,7 @@
       ]
     },
     "c23-26": {
-      "text": "Vous videz la trousse, assis contre la pile, la tête sous le béton. Les compresses, l'ampoule, tout. Vous regagnez 6 points d'Endurance. Le pas, là-haut, continue d'aller et venir. Il ne sait pas que vous êtes dessous. Il ne saura pas.",
+      "text": "Assis au pied de la pile, la tête sous le béton, vous ouvrez la trousse et vous serrez la bande autour de votre avant-bras avec les dents. Vous regagnez 6 points d'Endurance. Là-haut, les bottes du garde passent sur les joints du tablier, à vingt mètres au-dessus d'un homme qu'elles ne cherchent pas.",
       "choices": [
         {
           "kind": "aller",

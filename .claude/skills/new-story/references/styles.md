@@ -17,21 +17,33 @@ La voix des livres de Steve Jackson et Ian Livingstone dans leur traduction fran
 - **Fins** : la formule « Votre aventure s'achève ici. », et pour la vraie victoire « Votre aventure s'achève ici, et vous l'avez remportée. »
 - **Personnages** : nommés et décrits, jamais moqués. Le mal est franc, le bien est rare et payant.
 
+Scène dialoguée dans cette voix :
+
+> L'aubergiste pose ses deux mains à plat sur le comptoir et vous dévisage un long moment avant de parler : « Une chambre, c'est 3 Pièces d'Or. Avec une porte qui ferme, c'est 5. » Vous lui demandez ce qui rôde dans les couloirs la nuit. Il hausse les épaules : « Rien que vous ne puissiez combattre, si vous avez une épée. Et si vous n'en avez pas, je vous conseille la porte qui ferme. »
+
 Exemple dans le dépôt : `stories/mille-portes/story.json`.
 
 ## Style « sobre »
 
 La voix par défaut des histoires littéraires ou graves (La Route, Lankhmar, un récit intime). À choisir quand le ton compte plus que la quête.
 
-- **Voix** : deuxième personne, présent, phrases courtes, ellipses, une image concrète par paragraphe. Pas d'explication de ce que le joueur peut déduire.
+- **Voix** : deuxième personne, présent, phrases de longueur variée (la courte frappe parce que la longue l'a précédée), ellipses rares et motivées, une image concrète par scène. Pas d'explication de ce que le joueur peut déduire. Le registre sobre n'est pas le registre haché : la section « Prose » de `writing.md` s'applique en entier.
 - **Règles dans le texte** : écrites en toutes lettres mais sans capitales et sans injonction : « Vous perdez 2 points d'Endurance. » « Il regagne 1 point de Souffle. » Un objet n'est jamais expliqué, il est montré.
 - **Choix** : jamais annoncés en prose, les boutons suffisent. Infinitif, 3 à 9 mots.
-- **Dialogues** : rares, parfois sans guillemets, intégrés au récit.
-- **Longueur** : 40 à 90 mots.
+- **Dialogues** : présents dès qu'un personnage parle, entre guillemets, à la voix de sa fiche ; le narrateur ne résume pas une réplique qu'il peut donner.
+- **Longueur** : 30 à 160 mots, variés dans un même chapitre ; une scène longue au moins par chapitre.
 - **Fins** : pas de formule, la dernière phrase porte le sens.
+
+Scène dialoguée dans cette voix :
+
+> Le Barman essuie le même verre depuis que vous êtes entré. « Qu'est-ce que tu as. » Vous posez les documents sur le zinc. Il finit le verre, le range, puis tire la liasse vers lui d'un doigt et la glisse sous le comptoir sans l'avoir ouverte. « Le X-18. Ça vaut un lit pour la nuit, et le repas. Le Guide, c'est autre chose : tu le mérites ou tu ne l'as pas. »
 
 Exemple dans le dépôt : `stories/la-cendre/story.json`.
 
 ## Style « picaresque »
 
 Variante du style sobre pour les cités de voleurs, les filous et les arnaques : phrases vives, ironie légère, personnages hauts en couleur et dialogues à répliques. Les règles restent sans capitales. Exemple : la première version de Mille-Portes, avant sa réécriture en style Défis Fantastiques.
+
+Scène dialoguée dans cette voix :
+
+> « Deux sous le passage, trois si vous êtes pressé, et vous avez l'air pressé », dit le gamin sans lâcher votre manche. Vous lui faites remarquer que le pont appartient à tout le monde. « Le pont, oui. Moi, je suis à louer. »

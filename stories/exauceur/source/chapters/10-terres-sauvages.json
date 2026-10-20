@@ -38,8 +38,8 @@
   "paragraphs": {
     "c10-1": {
       "text": [
-        "Le portail de tôle de Rostok grince et se referme dans votre dos. Devant vous, la route descend entre deux rangées d'entrepôts aux toits crevés. Plus loin, un pont de fer enjambe un fossé, et derrière, la plaine jusqu'à Yantar.",
-        "Le vent apporte une odeur de caoutchouc brûlé. Sur le mur, à côté du portail, quelqu'un a écrit à la craie : toits, tireurs, courir. Le détecteur se tait."
+        "Le portail de tôle de Rostok se referme dans votre dos, et la route descend devant vous entre deux rangées d'entrepôts aux toits crevés, jusqu'à un pont de fer jeté sur un fossé, puis, derrière, la plaine plate jusqu'à Yantar. Le vent remonte la pente avec un goût de caoutchouc brûlé.",
+        "À côté du portail, à hauteur d'yeux, trois mots à la craie sur le parpaing : « Toits. Tireurs. Courir. » La craie est fraîche, et celui qui l'a tenue n'a pas pris le temps de signer."
       ],
       "choices": [
         {
@@ -61,8 +61,8 @@
     },
     "c10-17": {
       "text": [
-        "La route est jonchée de boulons. Quelqu'un les a lancés avant vous et aucun n'a dépassé le poteau penché. Là, l'air tourne sur lui-même et soulève la poussière en spirale lente : un « Carrousel » posé en travers du goudron.",
-        "À gauche, les hangars laissent un passage entre deux murs, mais l'herbe y est rousse et le compteur grimpe dès que vous approchez."
+        "La route est semée de boulons, et aucun n'a dépassé le poteau penché, au milieu de la chaussée, là où l'air tourne sur lui-même et soulève la poussière en une spirale lente, à hauteur de genou : un « Carrousel », posé en travers du goudron depuis assez d'hivers pour que l'asphalte en soit poli.",
+        "Sur la gauche, les hangars laissent un passage entre deux murs de parpaing, mais l'herbe y est rousse, et le compteur se met à cliqueter dès que vous faites un pas de ce côté."
       ],
       "choices": [
         {
@@ -79,8 +79,8 @@
     },
     "c10-9": {
       "text": [
-        "Vous lancez un boulon. Il part de côté, monte, se met à tourner et ne retombe pas.",
-        "Vous marchez le long du mur, le dos à la brique, à trois pas de la spirale. La poussière vous tire par la manche. Le Carrousel respire, ralentit, reprend. Tentez votre Chance."
+        "Le boulon part de biais quand vous le lancez, monte, se met à tourner autour d'un centre que vous ne voyez pas, et ne retombe pas.",
+        "Vous longez le mur, le dos à la brique, à trois pas de la spirale, pendant que la poussière vous tire par la manche comme un enfant qui veut montrer un chien. Le Carrousel respire, ralentit, reprend. Tentez votre Chance."
       ],
       "test": {
         "type": "luck",
@@ -90,8 +90,8 @@
     },
     "c10-28": {
       "text": [
-        "Le Carrousel vous relâche. Vous passez le poteau penché et la poussière retombe derrière vous, en un cercle propre sur le goudron. Votre manche est déchirée, pas votre bras.",
-        "Devant, les entrepôts s'alignent jusqu'au pont. Une pie se pose sur un toit et repart aussitôt."
+        "Le Carrousel vous relâche. Vous passez le poteau penché, et la poussière retombe derrière vous en un cercle propre sur le goudron, avec, dedans, une manche de votre veste.",
+        "Devant, les entrepôts s'alignent jusqu'au pont."
       ],
       "choices": [
         {
@@ -103,8 +103,8 @@
     },
     "c10-14": {
       "text": [
-        "Le Carrousel vous attrape. Le sol disparaît, le mur tourne, vous êtes jeté contre la brique comme un sac. Vous perdez 3 points d'Endurance.",
-        "Quand la poussière retombe, vous êtes de l'autre côté du poteau, à plat ventre, l'oreille qui siffle. Votre sac a tenu."
+        "Le Carrousel vous attrape. Le sol s'en va, le mur tourne, et la brique vous reçoit de tout votre poids, l'épaule d'abord, la tempe ensuite. Vous perdez 3 points d'Endurance.",
+        "Quand la poussière retombe, vous êtes de l'autre côté du poteau, à plat ventre sur le goudron, l'oreille gauche qui siffle, et le sac, sous vous, a tenu."
       ],
       "effects": [
         {
@@ -123,8 +123,8 @@
     },
     "c10-33": {
       "text": [
-        "Entre les hangars, l'herbe rousse craque sous les bottes. Le compteur grimpe, puis grimpe encore. Vous prenez 2 rads.",
-        "Un bidon éventré fume sans feu. Vous passez vite, la manche sur la bouche, et ressortez sur la route derrière le poteau penché, là où le Carrousel ne vous voit plus."
+        "Un bidon éventré fume sans flamme entre les hangars, au milieu de l'herbe rousse qui craque sous les bottes, et le compteur s'emballe à chaque pas. Vous prenez 2 rads.",
+        "Vous passez vite, la manche sur la bouche, pour ressortir sur la route derrière le poteau, là où le Carrousel ne vous atteint plus."
       ],
       "effects": [
         {
@@ -143,8 +143,8 @@
     },
     "c10-22": {
       "text": [
-        "L'entrepôt le plus proche a perdu sa porte. Dedans, des étagères vides, des bâches, une odeur de gasoil et d'urine. Au fond, un escalier descend vers une cave. Une corde est tendue en travers, avec un mot accroché : occupé. Le mot a pris la pluie.",
-        "Par les fenêtres crevées, on voit le pont de fer. Sur les toits d'en face, rien ne bouge, ce qui ne veut rien dire."
+        "L'entrepôt le plus proche a perdu sa porte, et dedans il y a des étagères vides, des bâches, une odeur de gasoil et d'urine. Au fond, un escalier de béton descend vers une cave. Une corde est tendue en travers des marches, à hauteur de hanche, avec un carton accroché au milieu par un fil de fer : « Occupé. » L'encre a coulé sous la pluie, mais le mot se lit encore.",
+        "Par les fenêtres sans vitres, on voit le pont de fer et, de l'autre côté du fossé, les toits plats des entrepôts d'en face. Vous les regardez un moment. Aucun ne bouge, ce qui ne prouve pas grand-chose contre un homme couché derrière une lunette."
       ],
       "choices": [
         {
@@ -161,8 +161,8 @@
     },
     "c10-7": {
       "text": [
-        "Il fait noir à mi-escalier. Quelque chose respire en bas, vite, à travers un filtre.",
-        "Un Snork monte les marches à quatre pattes, le masque à gaz collé au visage, la bouche ouverte dessous. Il saute avant que vous ayez levé le pistolet. Il frappe à casser des os."
+        "Il fait noir à mi-escalier. En bas, on respire vite, à travers un filtre, et le bruit monte les marches avant la bête : un Snork, à quatre pattes, le masque à gaz incrusté dans la peau du visage, la bouche ouverte sous le caoutchouc.",
+        "Il saute avant que vous ayez levé le Makarov et cogne de tout son poids, les mains à la gorge."
       ],
       "combat": {
         "name": "Snork",
@@ -177,8 +177,8 @@
     },
     "c10-30": {
       "text": [
-        "Le Snork retombe sur les marches et ne bouge plus. En bas, la cave est sèche : un matelas, une bougie, un sac dont le propriétaire est resté quelque part dehors.",
-        "Dedans, une Conserve, un Anti-rad, et une Grenade F1 enveloppée dans une chaussette. Vous prenez tout. Le mot sur la corde n'était pas pour vous."
+        "Le Snork roule jusqu'au bas des marches et y reste. La cave est sèche : un matelas, une bougie plantée dans un goulot, un sac à dos vert dont le propriétaire est resté dehors, à un endroit que vous ne connaîtrez pas.",
+        "Dedans, une Conserve, un Anti-rad, et une Grenade F1 enveloppée dans une chaussette de laine. Vous prenez tout, et vous laissez la bougie. Le carton sur la corde n'avait pas été écrit pour vous ; il n'a pas servi non plus à celui qui l'a écrit."
       ],
       "effects": [
         {
@@ -228,8 +228,8 @@
     },
     "c10-12": {
       "text": [
-        "Vous ouvrez la conserve avec le couteau. Du poisson, froid, salé, et vous mangez assis sur le matelas d'un mort. Vous regagnez 2 points d'Endurance.",
-        "La bougie fume. En haut, le vent fait claquer une bâche contre la tôle, régulier, comme quelqu'un qui frappe pour entrer."
+        "Le couvercle cède sous la lame du couteau. Vous mangez le poisson froid, salé, assis sur le matelas d'un mort. Vous regagnez 2 points d'Endurance.",
+        "En haut, une bâche claque contre la tôle, trois fois, une pause, trois fois encore, et vous finissez la boîte en l'écoutant."
       ],
       "choices": [
         {
@@ -241,8 +241,8 @@
     },
     "c10-25": {
       "text": [
-        "Le fossé court le long de la route, deux mètres en contrebas, plein d'eau noire et de roseaux morts. Le compteur crépite dès les premiers pas. Vous prenez 3 rads.",
-        "Quelque part devant, une lueur orange palpite sous la vase, s'éteint, revient. À votre ceinture, le détecteur s'est mis à chanter."
+        "Le fossé court le long de la route, deux mètres en contrebas, plein d'eau noire et de roseaux morts qui penchent tous du même côté. La vase aspire les bottes, et le compteur monte d'un cran à chaque pas. Vous prenez 3 rads.",
+        "Plus loin devant, sous la surface, une lueur orange palpite, s'éteint, revient, à un rythme qui n'est pas celui de votre cœur. À votre ceinture, le détecteur s'est mis à chanter, une note haute, tenue, qu'il ne donne que pour un artefact."
       ],
       "effects": [
         {
@@ -270,8 +270,8 @@
     },
     "c10-3": {
       "text": [
-        "L'eau vous monte aux genoux. Elle est tiède. La lueur est là, sous dix centimètres de vase : une Boule de feu, qui pulse comme un cœur lent. Autour, l'eau fume.",
-        "Vous retirez un gant. Il y a une distance à partir de laquelle ça brûle, et personne ne la connaît avant. Tentez votre Chance."
+        "L'eau vous monte aux genoux, et elle est tiède. La lueur est là, sous dix centimètres de vase : une Boule de feu, grosse comme un poing, et autour d'elle l'eau fume en petites bulles qui crèvent sans bruit.",
+        "Vous retirez le gant droit. Il y a une distance à partir de laquelle ça brûle, et on ne la connaît qu'après. Tentez votre Chance."
       ],
       "test": {
         "type": "luck",
@@ -281,8 +281,8 @@
     },
     "c10-19": {
       "text": [
-        "Vos doigts se referment sur la Boule de feu et elle se laisse prendre. Chaude, pas plus qu'une pierre au soleil. Vous la glissez dans le bocal de plomb, au fond du sac, et le fossé redevient noir.",
-        "Le détecteur se tait. Huit cents, dirait le Barman, sans lever la tête."
+        "Vos doigts se referment sur la Boule de feu et elle se laisse prendre, chaude, pas plus qu'une pierre restée au soleil. Vous la glissez dans le bocal de plomb, au fond du sac, et le fossé redevient noir d'un coup.",
+        "Le détecteur retombe sur sa note basse. « Huit cents. » C'est ce que dirait le Barman, en rangeant un verre à l'envers sur la planche, sans lever la tête."
       ],
       "effects": [
         {
@@ -301,8 +301,8 @@
     },
     "c10-21": {
       "text": [
-        "La vase cède et la Boule de feu s'enfonce, et votre main avec. Ça brûle jusqu'à l'os. Vous vous jetez en arrière dans l'eau noire. Vous perdez 3 points d'Endurance.",
-        "Votre gant fume. La lueur est repartie plus loin, sous les roseaux, là où vous n'irez pas."
+        "La vase cède sous la Boule de feu, elle s'enfonce, et votre main avec. Ça brûle jusqu'à l'os. Vous vous jetez en arrière dans l'eau noire et vous y restez le temps que la douleur redescende du coude jusqu'au poignet. Vous perdez 3 points d'Endurance.",
+        "Votre gant fume. La lueur est repartie plus loin sous les roseaux, à un endroit où vous n'irez pas la chercher."
       ],
       "effects": [
         {
@@ -321,8 +321,8 @@
     },
     "c10-11": {
       "text": [
-        "Vous remontez la pente du fossé sur les mains. La route est là, et le pont de fer à cent mètres, ses poutres rouillées en croix au-dessus de l'eau noire.",
-        "Vos bottes dégouttent. Le compteur a cessé de crépiter, mais votre bouche a un goût de pièce de monnaie."
+        "Vous remontez la pente du fossé sur les mains et les genoux. La route est là, et le pont à cent mètres, ses poutres rouillées en croix au-dessus de l'eau.",
+        "Vos bottes dégouttent sur le goudron. Le compteur s'est calmé, mais votre bouche garde un goût de pièce de monnaie, et il ne part pas quand vous crachez."
       ],
       "choices": [
         {
@@ -355,8 +355,8 @@
     },
     "c10-27": {
       "text": [
-        "Vous mordez le bouchon et buvez l'anti-rad d'un trait. Amer, puis froid dans la poitrine. Vous perdez 5 rads.",
-        "Le goût de monnaie reste. Vous jetez la fiole dans le fossé ; elle flotte un instant sur l'eau noire avant de couler."
+        "Le bouchon cède entre vos dents. L'anti-rad passe d'un trait, avec un goût de craie et d'iode, et laisse un froid sous les côtes. Vous perdez 5 rads.",
+        "Le goût de monnaie reste, et la fiole, jetée dans le fossé, flotte le temps de se remplir avant de couler."
       ],
       "choices": [
         {
@@ -368,8 +368,8 @@
     },
     "c10-5": {
       "text": [
-        "Le pont de fer. Quarante mètres de poutres en croix sur le fossé d'eau noire, un tablier de planches à moitié mangé. De l'autre côté, la route monte vers un camion couché sur le flanc, loin, minuscule.",
-        "Sur les toits à droite, un reflet de lunette, deux fois. Vous êtes à l'ombre d'une pile de béton. Sur la pile, à hauteur d'homme, trois impacts groupés, encore clairs."
+        "Le pont de fer fait quarante mètres de poutres en croix au-dessus du fossé d'eau noire, avec un tablier de planches dont une sur trois manque. De l'autre côté, la route monte vers un camion couché sur le flanc, loin, blanc, pas plus gros qu'un ongle. Vous êtes à l'abri d'une pile de béton, et sur la pile, à hauteur de poitrine, trois impacts groupés dans un cercle de la taille d'une main, encore clairs dans le gris.",
+        "Sur les toits à droite, un reflet de lunette, deux fois, à deux endroits différents. Puis une voix, portée par un porte-voix ou par le vent : « Le pont est fermé, stalker. Repars par où tu es venu. » Elle ne crie pas, elle conseille, du ton qu'on prend pour indiquer la gare à un étranger."
       ],
       "image": {
         "src": "images/c10-5.webp",
@@ -410,8 +410,8 @@
     },
     "c10-20": {
       "text": [
-        "Vous partez en courant. Les planches sonnent creux, deux manquent, vous sautez. La première balle arrive avant le bruit et claque dans une poutre à hauteur de tête. La deuxième vous suit.",
-        "Il reste vingt mètres, et un coude à prendre derrière la pile d'en face. Testez votre Habileté."
+        "Les planches sonnent creux sous vos premières foulées, deux manquent d'affilée, vous sautez, et la première balle arrive avant son bruit, claque dans une poutre à hauteur de tête et vous laisse une poussière de rouille dans l'œil. La deuxième vous suit, un pas derrière.",
+        "Il reste vingt mètres, et un coude à prendre derrière la pile d'en face, où un homme qui tire de ce toit-là ne voit plus rien. Testez votre Habileté."
       ],
       "test": {
         "type": "stat",
@@ -423,8 +423,8 @@
     },
     "c10-31": {
       "text": [
-        "Vous passez. La troisième balle arrache une écharde de la dernière planche, et vous êtes derrière la pile de béton, à plat, le souffle en morceaux.",
-        "Les tireurs ne descendent pas de leurs toits : les mercenaires sont payés pour un endroit, pas pour vous. La route vers le camion s'enfonce dans un pli de terrain où ils ne voient plus."
+        "Vous passez. La troisième balle arrache une écharde à la dernière planche, et vous êtes derrière la pile de béton, à plat, le souffle en morceaux et de la rouille plein l'œil.",
+        "Là-haut, les lunettes restent où elles sont : un mercenaire est payé pour tenir un endroit, pas pour courir après un homme, et vous n'êtes plus dans l'endroit. Devant, la route vers le camion s'enfonce dans un pli de terrain qu'aucune lunette ne voit."
       ],
       "choices": [
         {
@@ -436,8 +436,8 @@
     },
     "c10-8": {
       "text": [
-        "La balle vous prend sous l'épaule, à la fin du pont, et vous finissez le trajet à quatre pattes. Vous perdez 3 points d'Endurance.",
-        "Derrière la pile, vous regardez : un trou net, la veste qui s'imbibe. Les tireurs ne descendent pas. Ils ont fait leur travail. Au-dessus, l'un d'eux allume une cigarette ; vous voyez la braise."
+        "La balle vous prend sous l'épaule, aux derniers mètres du pont, et vous finissez le trajet à quatre pattes sur les planches. Vous perdez 3 points d'Endurance.",
+        "Derrière la pile, vous ouvrez la veste : un trou net, rond, et le tissu autour qui boit. En haut, un des tireurs allume une cigarette, et le vent vous apporte la braise et sa voix, calme, qui parle à l'autre toit : « Touché. Il n'ira pas loin. » Vous appuyez la main sur le trou, et vous décidez qu'il se trompe."
       ],
       "effects": [
         {
@@ -477,8 +477,8 @@
     },
     "c10-24": {
       "text": [
-        "Vous serrez le bandage sous l'épaule, les dents sur l'extrémité, jusqu'à ce que le sang cesse de passer. Vous regagnez 3 points d'Endurance.",
-        "Le bras répond. Sur le toit, la braise de la cigarette monte et descend. Il a tout son temps. Pas vous."
+        "Un bout du bandage entre les dents, vous serrez l'autre sous l'épaule jusqu'à ce que le sang cesse de passer à travers la gaze. Vous regagnez 3 points d'Endurance.",
+        "Le bras répond. Sur le toit, la braise de la cigarette monte et descend, régulière, et l'homme qui la tient n'a pas bougé d'un mètre depuis que vous êtes tombé."
       ],
       "choices": [
         {
@@ -490,8 +490,8 @@
     },
     "c10-15": {
       "text": [
-        "Vous grimpez l'échelle de fer de l'entrepôt d'angle, l'AK-74 en bandoulière, et sortez sur le toit par la trappe. Le mercenaire est à dix mètres, à genoux derrière la cheminée, combinaison bleue et masque. Il se retourne.",
-        "Avec ça, on tire avant eux. Mais il a aussi quelque chose, et il frappe à casser des os."
+        "Vous grimpez l'échelle de fer de l'entrepôt d'angle, l'AK-74 en bandoulière, et vous sortez sur le toit par la trappe, dans le vent. Le mercenaire est à dix mètres, à genoux derrière la souche de cheminée, combinaison bleue, masque, et une radio qui grésille sur sa hanche : « Deux, tu as du mouvement sur ton toit. Deux ? » Il se retourne au moment où la radio finit sa phrase.",
+        "Avec ça, on tire avant eux. Lui aussi a de quoi tirer, et à dix mètres son fusil à lunette ne rate pas grand-chose."
       ],
       "combat": {
         "name": "Mercenaire",
@@ -506,8 +506,8 @@
     },
     "c10-34": {
       "text": [
-        "Le mercenaire s'affaisse contre la cheminée. Sur le toit d'en face, l'autre tireur se couche et ne se relève plus : il a compris. Dans la poche du mort, 80 roubles et une photo que vous ne regardez pas.",
-        "D'ici, on voit tout : le pont, le fossé, et le camion couché, avec autour des formes à quatre pattes qui tournent."
+        "Le mercenaire s'affaisse contre la cheminée, et la radio sur sa hanche continue sans lui : « Deux, réponds. Deux. » Sur le toit d'en face, l'autre tireur se couche derrière son parapet et ne se relève plus, parce qu'il a compté les coups et reconnu lesquels venaient d'un AK. Dans la poche de poitrine du mort, 80 roubles et une photo que vous retournez sans la regarder.",
+        "D'ici, on voit tout : le pont, le fossé, la route qui monte, et le camion couché avec, autour, quatre formes à quatre pattes qui tournent, patientes, comme des chiens autour d'une table."
       ],
       "effects": [
         {
@@ -526,8 +526,8 @@
     },
     "c10-4": {
       "text": [
-        "Vous attendez sous le tablier, les pieds dans l'eau noire, pendant que le jour s'en va. Le compteur crépite doucement. Vous prenez 2 rads.",
-        "Quand il fait assez noir pour que les lunettes ne servent plus, vous traversez sur les poutres, sous les planches, le fer froid contre la poitrine. Personne ne tire. En haut, quelqu'un tousse."
+        "Sous le tablier, les pieds dans l'eau noire, vous attendez que le jour s'en aille par le haut des toits. Le compteur ne cesse pas tout à fait. Vous prenez 2 rads.",
+        "Quand il fait assez sombre pour qu'une lunette ne serve plus à rien, vous traversez par-dessous, sur les poutres, le fer froid contre la poitrine et les planches à dix centimètres de la nuque. Aucun coup de feu ne part. En haut, un homme tousse, longuement, et crache dans le fossé à côté de vous."
       ],
       "effects": [
         {
@@ -551,8 +551,8 @@
         "prompt": "Un camion blanc d'institut scientifique couché sur le flanc dans un pli de terrain, roues en l'air, pare-brise fissuré. Autour, quatre Snorks à quatre pattes, masques à gaz collés au visage, l'un grimpé sur la cabine qui gratte le pare-brise. Herbe morte, chardons, ciel bas ; vue depuis le haut du pli, entre les chardons, le héros absent."
       },
       "text": [
-        "Le camion est couché dans le pli de terrain, blanc, un sigle d'institut sur la portière, les roues en l'air. À l'intérieur, on frappe contre la tôle.",
-        "Autour, quatre Snorks tournent à quatre pattes, masques collés au visage. L'un d'eux grimpe sur la cabine et gratte le pare-brise. Ils ne vous ont pas senti. Le vent vient d'eux."
+        "Le camion est couché dans le pli de terrain, blanc, un sigle d'institut sur la portière, les quatre roues en l'air, et de l'intérieur on frappe contre la tôle, trois coups, une pause, trois coups.",
+        "Autour, quatre Snorks tournent, les masques collés au visage, et l'un d'eux grimpe sur la cabine et gratte le pare-brise avec ses ongles, d'un bord à l'autre. Ils ne vous ont pas senti. Le vent vient d'eux, chargé d'une puanteur de chien mouillé et de caoutchouc."
       ],
       "choices": [
         {
@@ -585,8 +585,8 @@
     },
     "c10-29": {
       "text": [
-        "Vous tirez sur celui de la cabine. Il tombe, et les trois autres arrivent ensemble, en bonds, pas en courant. Dans le camion, on a cessé de frapper.",
-        "Vous reculez contre la roue avant. Ils frappent à casser des os, et ils ne s'arrêtent pas au premier sang."
+        "Celui de la cabine tombe à votre premier tir, et les trois autres arrivent ensemble, par bonds, pas en courant, chacun d'un côté. À l'intérieur du camion, les coups s'arrêtent.",
+        "Vous reculez jusqu'à la roue avant, le dos contre le pneu. Ils mordent, ils griffent, et ils ne s'arrêtent pas au premier sang."
       ],
       "combat": {
         "name": "Les Snorks",
@@ -601,8 +601,8 @@
     },
     "c10-10": {
       "text": [
-        "Le dernier Snork se traîne encore sur trois pattes et vous l'achevez au couteau. Silence.",
-        "Puis, dans le camion, un coup contre la tôle, hésitant, et une voix qui demande si c'est fini. Vous dites que oui. Vous ne savez pas si c'est vrai. Vos mains tremblent, mais c'est l'habitude."
+        "Le dernier Snork se traîne encore sur trois pattes, et vous l'achevez au couteau, parce qu'une balle de plus serait entendue des toits. Puis, dans le camion, un coup contre la tôle, hésitant, et une voix d'homme, étouffée : « C'est fini ? Dites-nous que c'est fini. Il y en avait combien ? »",
+        "Vous dites : « Quatre. C'est fini. » Vous n'avez pas compté les masques et vous ne savez pas si c'est vrai. Vos mains tremblent, mais elles tremblent toujours après, et ça ne vous empêche pas de ranger le couteau."
       ],
       "choices": [
         {
@@ -614,8 +614,8 @@
     },
     "c10-23": {
       "text": [
-        "Vous dégoupillez la grenade, comptez deux, et la lancez sous le camion. Les Snorks lèvent la tête ensemble. L'explosion soulève la poussière et le camion d'un demi-mètre.",
-        "Quand ça retombe, il reste deux masques dans l'herbe et un corps qui rampe, que vous achevez. Dans le camion, on a cessé de frapper. Puis ça recommence, plus fort."
+        "La goupille saute sous votre pouce. Vous comptez deux et lancez la grenade sous le camion, dans l'herbe entre les roues. Les Snorks lèvent la tête ensemble, les quatre masques tournés vers le même bruit. L'explosion soulève la poussière et le camion d'un demi-mètre, et quand tout retombe il reste deux masques dans l'herbe et un corps qui rampe vers vous sur les coudes, puis s'arrête de lui-même à deux mètres de vos bottes.",
+        "À l'intérieur, les coups ont cessé. Puis ça recommence, plus fort, et une voix avec : « Ne tirez pas, on est de Yantar, du bunker de Sakharov, ne tirez pas ! »"
       ],
       "choices": [
         {
@@ -627,8 +627,8 @@
     },
     "c10-2": {
       "text": [
-        "Trois hommes en combinaison orange sortent par le pare-brise, un quatrième reste dedans, la jambe prise sous le siège. Ils sont de Yantar, du bunker de Sakharov, et ils répètent ce nom comme un mot de passe.",
-        "Le camion peut rouler s'il est remis sur ses roues : il faut quatre dos et un cric. Ils vous regardent. Le plus vieux tient le cric."
+        "Trois hommes en combinaison orange sortent par le trou du pare-brise, un quatrième reste dedans, la jambe prise sous le siège, et le premier debout parle avant d'avoir fini de se relever. « Vous venez de Rostok ? Par le pont ? Ils tirent encore ? Nous, ils nous ont laissés passer, ils ont tiré dans les pneus et c'est tout, et après les Snorks sont venus, deux heures qu'on frappe. On est de Sakharov. Du bunker, à Yantar. Sakharov, vous connaissez ? » Les deux autres hochent la tête à chaque fois que le nom revient.",
+        "Le camion peut rouler, l'essieu est droit ; il faut le remettre sur ses roues, et pour ça quatre dos et un cric. Le plus vieux, un homme à lunettes dont la combinaison a été rapiécée au ruban adhésif, tient déjà le cric à deux mains. « Vous avez un dos ? Vous avez l'air d'en avoir un. »"
       ],
       "choices": [
         {
@@ -645,8 +645,8 @@
     },
     "c10-32": {
       "text": [
-        "Le camion retombe sur ses roues dans un bruit de ferraille qui s'entend jusqu'aux toits. Le moteur part à la troisième tentative. Le plus vieux vous met 100 roubles dans la main sans vous regarder, et dit que Sakharov saura.",
-        "Ils partent vers le nord à vingt à l'heure, le pare-brise cassé. La route de Yantar est devant vous, tracée dans leurs ornières."
+        "Le camion retombe sur ses roues dans un bruit de ferraille qui s'entend jusqu'aux toits, et vous restez une seconde à attendre la balle qui ne vient pas. Le moteur part à la troisième tentative, dans un nuage bleu. Le plus vieux vous met 100 roubles dans la main, des billets pliés en quatre et humides, sans vous regarder, les yeux sur le pare-brise cassé. « Sakharov saura. Je ne sais pas ce qu'il fera, il ne fait pas de sentiment, mais il saura, et chez lui ça compte. »",
+        "Ils partent vers le nord à vingt à l'heure, le blessé allongé sur les genoux des deux autres, et la route de Yantar est devant vous, tracée dans leurs ornières fraîches."
       ],
       "effects": [
         {
@@ -669,8 +669,8 @@
     },
     "c10-13": {
       "text": [
-        "Vous passez par le haut du pli, à plat ventre dans les chardons, et le camion reste en bas avec ses Snorks. On frappe encore contre la tôle quand vous atteignez la route. Puis plus.",
-        "Vous ne vous retournez pas. La Zone n'a pas besoin de vous pour finir ce qu'elle commence."
+        "À plat ventre dans les chardons, vous passez par le haut du pli, et le camion reste en bas avec ses Snorks. On frappe encore contre la tôle quand vous atteignez la route, puis une voix, assez forte pour monter jusqu'à vous : « Il y a quelqu'un ? J'ai entendu marcher. Il y a quelqu'un ? »",
+        "Vous gardez les yeux sur la route. Derrière, la voix pose sa question une troisième fois, plus bas, puis les coups contre la tôle reprennent, trois, une pause, trois."
       ],
       "choices": [
         {
@@ -682,8 +682,8 @@
     },
     "c10-26": {
       "text": [
-        "Vous lâchez le camion et vous courez. Les Snorks ne suivent pas : ils ont ce qu'ils veulent. Derrière vous, la tôle sonne encore, puis une portière cède.",
-        "Vous ne vous retournez pas. Sur la route, plus haut, le vent couvre tout, et c'est mieux."
+        "Dos au camion, vous courez. Les Snorks ne suivent pas : ils ont ce qu'ils voulaient, et vous n'en faisiez pas partie. Derrière vous, la tôle sonne encore, puis une portière cède, et une voix monte, plus haute que les autres : « Non, non, non, pas comme ça ! »",
+        "Vous ne vous retournez pas. Sur la route, plus haut, le vent couvre tout, et vous marchez vers lui."
       ],
       "choices": [
         {
@@ -700,8 +700,8 @@
         "prompt": "Une route qui monte vers le nord entre deux rangées de pylônes électriques couchés dans l'herbe morte. Derrière, loin, le pont de fer et les toits crevés des entrepôts ; devant, la plaine s'aplatit vers une tache grise d'usine chimique sous un ciel lourd, une brume basse qui ne bouge pas. Une silhouette de stalker de dos, sac au dos, au milieu de la route."
       },
       "text": [
-        "La route monte vers le nord entre deux rangées de pylônes couchés. Les Terres sauvages se referment derrière vous : le pont, les toits, le fossé où la lueur a dû repartir.",
-        "Devant, la plaine s'aplatit vers une tache grise, et l'air y prend une odeur de produit chimique, lourde, que le vent n'emporte pas. Yantar. Derrière, Rostok et son bar, une demi-journée."
+        "La route monte vers le nord entre deux rangées de pylônes couchés dans l'herbe, les câbles encore tendus entre eux à ras du sol, et les Terres sauvages se referment derrière vous : le pont, les toits, le fossé, le pli de terrain où le camion était.",
+        "Devant, la plaine s'aplatit vers une tache grise qui est l'usine de Yantar, et l'air y prend une odeur de produit chimique, lourde, que le vent n'emporte pas. Derrière, Rostok et son bar sont à une demi-journée de marche, avec le pont à retraverser dans l'autre sens."
       ],
       "choices": [
         {
@@ -739,8 +739,8 @@
     },
     "c10-6": {
       "text": [
-        "Vous buvez l'anti-rad au bord de la route, assis sur un pylône. Amer, puis froid. Vous perdez 5 rads.",
-        "Le compteur se calme. Au nord, la tache grise ne bouge pas, et quelque chose y marche, lentement, plusieurs choses, en ligne."
+        "Assis sur un pylône couché, au bord de la route, vous buvez l'anti-rad en trois gorgées, et le froid descend dans la poitrine avant l'amertume. Vous perdez 5 rads.",
+        "Le compteur ralentit. Au nord, la tache grise reste à sa place, mais sur la plaine, entre elle et vous, des silhouettes marchent en ligne, lentement, à la même vitesse, dans la même direction, et aucune ne se retourne."
       ],
       "choices": [
         {

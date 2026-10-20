@@ -40,7 +40,7 @@
   ],
   "paragraphs": {
     "c05-1": {
-      "text": "Le ravin s'ouvre sur du blanc. La brume remplit la Vallée sombre jusqu'au bord, et vous êtes au-dessus, sur une corniche d'argile où le Dépotoir finit de rouiller. En dessous, quelque chose bat : une musique lointaine, une basse qui tape. Des drapeaux verts montent et descendent dans le brouillard. Plus loin, un bâtiment noir, une cheminée. Le détecteur crépite une fois, puis se tait.",
+      "text": "Le ravin finit sur une corniche d'argile, et en dessous il n'y a plus que du blanc : la brume remplit la Vallée sombre à ras bord, et vous êtes posé dessus comme sur un toit. Derrière vous, les dernières carcasses du Dépotoir achèvent de rouiller dans l'herbe. Le détecteur crépite une fois dans votre poche, puis reprend son petit bruit de montre. Sous le blanc, une basse cogne dans un haut-parleur fatigué, et des drapeaux verts montent et descendent au bout de leurs perches, au gré d'un vent que vous ne sentez pas d'ici. Plus loin à l'est, une cheminée de brique dépasse de la nappe, noire, sans fumée, plantée droite dans la vallée.",
       "choices": [
         {
           "kind": "aller",
@@ -55,7 +55,7 @@
       ]
     },
     "c05-2": {
-      "text": "Vous remontez l'escalier du X-18 marche par marche, et l'air redevient respirable à mi-hauteur. La porte de fer. La halle. Le feu de palettes brûle encore dans la cour, mais la partie de cartes s'est déplacée, et personne ne regarde la porte dont on ne revient pas. Derrière la grille, le jour est gris comme de la cendre.",
+      "text": "L'escalier du X-18 remonte sur quarante marches de béton, et l'air redevient respirable vers la vingtième, à l'endroit où la rampe cesse d'être humide. Vous poussez la porte de fer avec l'épaule. La halle, la cour, le feu de palettes qui brûle encore dans son demi-bidon ; la partie de cartes s'est déplacée sur un autre capot, plus loin de la porte, et les joueurs vous tournent le dos avec application. Un seul lève les yeux, un gamin à casquette, qui vous regarde sortir de là avec la tête de quelqu'un qui voit un mort se rasseoir, et il baisse le nez sur ses cartes. Derrière la grille, le jour est gris de cendre.",
       "choices": [
         {
           "kind": "aller",
@@ -74,7 +74,7 @@
       ]
     },
     "c05-3": {
-      "text": "Borov est assis sur un fauteuil de dentiste, un gilet de chaînes d'or sur un blouson de cuir, le crâne rasé qui brille sous l'ampoule. Au cou, sur un cordon, une clef de fer longue comme une main. Borov sait ce que tu veux. Tout le monde veut la même chose. Borov la vend mille, et Borov ne discute pas. Il se tourne vers la fenêtre pour cracher. Le cordon pend dans son dos.",
+      "text": "Borov est assis dans un fauteuil de dentiste, au milieu d'un bureau où il ne reste qu'une ampoule nue et un calendrier de 2004. Gilet de chaînes d'or sur un blouson de cuir, crâne rasé qui luit sous l'ampoule, et au cou, sur un cordon de cuir usé jusqu'à la corde, une clef de fer longue comme une main. « Borov sait ce que tu veux. Tout le monde veut la même chose quand il monte ici. » Il fait tourner la clef entre deux doigts. « Tu as vu la clef ? Tout le monde la voit. Borov la porte depuis deux hivers, et Borov a encore son cou. » Vous demandez le prix. « Mille. Borov ne discute pas, et Borov ne fait pas crédit. » Il se tourne vers la fenêtre pour cracher par le carreau cassé, et le cordon pend dans son dos, à portée de main, pendant qu'il explique à la vitre ce qu'il fera de la vallée quand la Liberté aura fini de fumer ses herbes.",
       "choices": [
         {
           "kind": "payer",
@@ -128,7 +128,7 @@
       ]
     },
     "c05-4": {
-      "text": "La ferme de la Liberté : un corps de bâtiment éventré, des sacs de sable, un drapeau vert sur chaque poteau. Un gars en treillis dépareillé vous regarde monter, le fusil sur le ventre, un joint à la bouche. La musique vient de la grange. Il ne bouge pas. Chez nous, on entre avec quelque chose dans les mains, ou on n'entre pas.",
+      "text": "La ferme de la Liberté est un corps de bâtiment éventré par un obus d'avant la Zone, colmaté de sacs de sable, un drapeau vert au bout de chaque poteau de clôture. La musique sort de la grange, une basse et une voix qui chante faux en russe. Un gars en treillis dépareillé vous regarde monter la pente, assis sur un sac, le fusil posé sur le ventre et un joint à la bouche, et il ne se lève pas avant que vous soyez à trois pas. « Chez nous, on entre avec les mains pleines, ou on n'entre pas. » Il tire sur le joint, vous tend la fumée du bout des lèvres. « Une bouteille, ça fait des mains pleines. Deux bras qui savent tenir un fusil, ça fait aussi. »",
       "choices": [
         {
           "kind": "aller",
@@ -168,7 +168,7 @@
       ]
     },
     "c05-5": {
-      "text": "Vous tirez avant qu'il ait fini de se retourner. La balle lui prend l'épaule et le fauteuil bascule. Il se relève. Borov ne meurt pas comme ça. Son pistolet est déjà sorti, un gros calibre qui frappe à casser des os, et en bas la partie de cartes s'est arrêtée.",
+      "text": "Vous tirez avant qu'il ait fini de se retourner, et la balle lui prend l'épaule assez fort pour coucher le fauteuil de dentiste sur le côté. Il se relève avec le fauteuil. « Borov ne meurt pas comme ça. » Son pistolet est déjà sorti, un TT noir rayé jusqu'au métal, et en bas la partie de cartes vient de s'arrêter.",
       "combat": {
         "name": "Borov",
         "habilete": 7,
@@ -181,7 +181,7 @@
       }
     },
     "c05-6": {
-      "text": "Il vous sent. Le sol se soulève et vous retombez dessus, les dents dans la boue, l'air chassé des poumons. Vous perdez 3 points d'Endurance. Dans la brume, à cinq mètres, une forme se dresse qui n'a pas de haut. Vous vous relevez et vous courez. Testez votre Habileté.",
+      "text": "Il vous sent. Le sol se soulève sous vous et vous retombez dessus, les dents dans la boue, l'air chassé des poumons d'un coup. Vous perdez 3 points d'Endurance. À cinq mètres, dans le blanc, un dos se dresse, plus haut que les roseaux, sans rien qui ressemble à une tête, et l'eau de la rivière lui coule des flancs. Vous vous relevez sans ramasser ce que vous avez lâché et vous courez. Testez votre Habileté.",
       "effects": [
         {
           "type": "stat",
@@ -198,7 +198,7 @@
       }
     },
     "c05-7": {
-      "text": "La route de la vallée. Un asphalte d'avant, fendu, que la brume lèche des deux côtés. À l'ouest, sur la colline, la ferme et ses drapeaux verts, une basse qui tape dans un haut-parleur. Au fond, à l'est, l'usine noire, sa cheminée sans fumée. Entre les deux, un pont effondré sur la rivière, et sur la rive un pas qui fait trembler l'eau dans les ornières. La route de l'ouest monte vers Rostok.",
+      "text": "La route de la vallée est un asphalte d'avant, fendu en plaques, que la brume lèche des deux côtés sans jamais le recouvrir. À l'ouest, sur la colline, la ferme et ses drapeaux verts, et la basse qui tape dans le haut-parleur. À l'est, au fond, l'usine noire et sa cheminée de brique. Entre les deux, le pont effondré pend dans la rivière par ses ferrailles, et de la rive monte, de loin en loin, un pas assez lourd pour faire trembler l'eau dans les ornières. Vous attendez le pas suivant. Il vient. Tout à l'ouest, la route monte vers Rostok, et un panneau à moitié effacé promet encore vingt-deux kilomètres.",
       "image": {
         "src": "images/c05-7.webp",
         "alt": "La route de la vallée dans la brume, entre la ferme aux drapeaux et l'usine",
@@ -249,7 +249,7 @@
       ]
     },
     "c05-8": {
-      "text": "Vous longez le mur, derrière les camions sans roues, jusqu'au quai de chargement. Un bandit y pisse contre un pilier, le dos tourné, le fusil contre la jambe. Entre lui et la brèche de la clôture, dix mètres de gravier. Testez votre Habileté.",
+      "text": "Vous longez le mur derrière les camions sans roues jusqu'au quai de chargement. Un bandit y pisse contre un pilier, dos tourné, le fusil de chasse appuyé contre sa jambe, et il chantonne en pissant. Entre lui et la brèche de la clôture, dix mètres de gravier qui n'attendent qu'une semelle. Testez votre Habileté.",
       "test": {
         "type": "stat",
         "stat": "habilete",
@@ -259,7 +259,7 @@
       }
     },
     "c05-9": {
-      "text": "Le pont effondré, la nuit. Deux gars de la Liberté à gauche, vous à droite, une lampe posée sur une pierre. Vers trois heures, l'eau bouge. Ils sortent de la rivière par trois : des pseudo-chiens, hauts comme des veaux, l'échine hérissée. Celui de tête vous choisit. Il mord à casser des os.",
+      "text": "Le pont effondré, la nuit. Les deux gars de la Liberté s'appellent Sacha et le Plombier, et ils vous ont donné la droite parce que la gauche est à eux depuis trois semaines. Une lampe de poche est posée sur une pierre, tournée vers l'eau. « Ils sortent toujours vers trois heures », dit Sacha. « Avant, l'eau bouge. Tu verras l'eau bouger. » Le Plombier roule une cigarette qu'il ne fume pas. Vers trois heures, l'eau bouge. Ils sortent de la rivière par trois, des pseudo-chiens hauts comme des veaux, l'échine hérissée, et la lampe accroche leurs yeux l'un après l'autre. « Le tien, c'est celui de devant », dit le Plombier, et il tire sur le sien. Celui de tête vous choisit, et la lampe tombe de sa pierre.",
       "combat": {
         "name": "Pseudo-chien",
         "habilete": 6,
@@ -272,7 +272,7 @@
       }
     },
     "c05-10": {
-      "text": "L'usine. Une grille de fer, deux bandits assis sur des pneus, un chien mort devant eux qu'ils n'ont pas bougé. Blousons de cuir, masques de ski relevés sur le front. Celui de gauche se lève. Cent pour passer. Chez Borov, tout se paie, même la porte.",
+      "text": "L'usine commence par une grille de fer et deux bandits assis sur des pneus, blousons de cuir, masques de ski relevés sur le front, un chien mort devant eux qu'ils n'ont pas pris la peine de bouger. Celui de gauche se lève et s'étire. « Cent pour passer. » Vous regardez le chien. « Lui, il n'a pas payé. » L'autre rit sans lever la tête de son fusil. « Chez Borov, tout se paie, même la porte. Surtout la porte. »",
       "choices": [
         {
           "kind": "payer",
@@ -314,7 +314,7 @@
       ]
     },
     "c05-11": {
-      "text": "Ils viennent ensemble, bas, sans un son, et la boue vous tient les pieds. Vous sentez leur haleine de charogne avant leurs dents. Le premier saute à la gorge, le second attend que vous tombiez. Ils ont appris ça sur d'autres que vous, dans ce même ravin.",
+      "text": "Ils viennent ensemble, bas, sans un son, et la boue vous tient les pieds. Vous sentez leur haleine de charogne avant leurs dents. Le premier saute à la gorge, le second attend que vous tombiez, assis à deux pas, la tête penchée.",
       "combat": {
         "name": "Chiens aveugles",
         "habilete": 5,
@@ -323,7 +323,7 @@
       }
     },
     "c05-12": {
-      "text": "Le type aux cheveux longs crache dans le feu. Borov ? Il tient l'usine avec vingt gars et un gilet en or. Il vend tout : les balles, le passage, les gens. Il porte une clef au cou, une clef de fer, et il dit que c'est la clef de l'enfer. Sous l'usine, il y a un laboratoire. Ceux qui descendent, on ne les revoit pas. Borov n'est jamais descendu.",
+      "text": "Le type aux cheveux longs crache dans le feu et regarde le crachat grésiller avant de répondre. « Borov ? Il tient l'usine avec vingt gars et un gilet en or. Il vend tout, les balles, le passage, les gens, dans cet ordre. » Il repousse une bûche du talon. « Il porte une clef au cou. Une clef de fer, grosse comme ça. Il dit que c'est la clef de l'enfer, et pour une fois il ne ment pas. » Vous demandez ce qu'il y a sous l'usine. « Un laboratoire. Des escaliers. Ceux qui descendent, on ne les revoit pas, et Borov le sait mieux que quiconque : il n'est jamais descendu. » Il tend la main vers votre Conserve, se ravise, et reprend sa bouteille à la place. « Si tu veux la clef, tu l'achètes. Si tu la voles, ne reviens pas dormir ici. »",
       "choices": [
         {
           "kind": "aller",
@@ -333,7 +333,7 @@
       ]
     },
     "c05-13": {
-      "text": "Vous faites un pas. Le cordon pend, usé, à portée de main, et la lame est déjà dans votre paume. Il crache, longuement, et parle à la vitre de ce que Borov fera de la vallée. Dehors, un bandit rit. L'ampoule grésille au-dessus de vos têtes. Testez votre Habileté.",
+      "text": "Vous faites un pas vers la fenêtre. Le cordon pend dans son dos, à deux pas, et la lame du couteau est déjà dans votre paume, tournée vers le haut. Il crache, longuement, et parle à la vitre. « Borov va faire de cette vallée un pays. Avec des péages. » Dehors, un bandit rit d'autre chose. L'ampoule grésille au-dessus de vos têtes. Testez votre Habileté.",
       "test": {
         "type": "stat",
         "stat": "habilete",
@@ -343,7 +343,7 @@
       }
     },
     "c05-14": {
-      "text": "Le second chien ne se relève pas. Vous essuyez la lame sur son flanc. Les deux corps restent au milieu du chemin, comme tout ce qui tombe ici. Vous reprenez votre souffle, puis le chemin. L'asphalte apparaît sous la boue, fendu, et la brume se referme derrière vous.",
+      "text": "Le second chien ne se relève pas. Vous essuyez la lame sur son flanc, et les deux corps restent au milieu du chemin, à la place exacte où ils vous attendaient. Trente mètres plus bas, l'asphalte sort de la boue.",
       "choices": [
         {
           "kind": "aller",
@@ -353,7 +353,7 @@
       ]
     },
     "c05-15": {
-      "text": "Vous n'êtes pas assez rapide. Le sol vous rattrape : un coup, et vous volez, et l'asphalte vous reçoit dans le dos. Vous perdez 3 points d'Endurance. Il ne vient pas finir. Il reste à la lisière des roseaux, à souffler, puis repart vers l'eau. Vous rampez jusqu'au milieu de la route.",
+      "text": "Le sol vous rattrape avant la route : un coup dans le dos, et vous volez, et l'asphalte vous reçoit sur les omoplates avec un bruit de sac. Vous perdez 3 points d'Endurance. Il ne vient pas finir. Il reste à la lisière des roseaux, à souffler, un dos large comme un camion, qui penche de côté ce qui lui sert de tête, puis repart vers l'eau d'un pas qui fait sauter le gravier. Vous rampez jusqu'au milieu de la route et vous restez là, sur le dos, jusqu'à ce que le ciel cesse de tourner.",
       "effects": [
         {
           "type": "stat",
@@ -370,7 +370,7 @@
       ]
     },
     "c05-16": {
-      "text": "Le feu de la Liberté. On vous fait une place sans demander votre nom. Quelqu'un vous lance une Conserve ; elle est tiède, elle a vécu trop longtemps dans un sac. Un type aux cheveux longs vend ce qu'il a sur une couverture : des bouteilles, surtout. La musique s'est arrêtée, et dans le silence on entend la rivière, et le pas qui la traverse.",
+      "text": "Le feu de la Liberté brûle dans une jante de camion, et on vous fait une place sur une caisse sans demander votre nom. Quelqu'un vous lance une Conserve ; elle est tiède, elle a vécu trop d'étés dans un sac, et l'étiquette dit « Bœuf » en lettres qui s'effacent. Un type aux cheveux longs vend ce qu'il a sur une couverture de l'armée : des bouteilles, surtout, de la Vodka à l'étiquette bleue, quatre-vingts la bouteille, et un chargeur vide dont nul ne veut. « Tu viens du ravin ? », demande-t-il. « Alors tu as vu les chiens. » La musique s'est arrêtée dans la grange, et dans le creux qu'elle laisse on entend la rivière, et le pas qui la traverse.",
       "effects": [
         {
           "type": "item",
@@ -411,7 +411,7 @@
       ]
     },
     "c05-17": {
-      "text": "La Grenade F1 roule sous le fauteuil et vous êtes déjà dans l'escalier quand le bureau s'ouvre en deux. Le silence, après. Vous remontez dans la fumée : Borov est contre le mur, ce qu'il en reste, et le cordon a tenu. La Clef du X-18 est noircie, entière. Vous n'avez plus de grenade. En bas, personne ne monte.",
+      "text": "La Grenade F1 roule sous le fauteuil et vous êtes déjà dans l'escalier quand le bureau s'ouvre en deux au-dessus de vous. Après, les oreilles qui sifflent, et de la poussière de plâtre qui descend par la cage. Vous remontez dans la fumée. Borov est contre le mur, en deux morceaux qui ne se touchent plus, et le cordon a tenu au cou. La Clef du X-18 est noircie, entière, et vous la décrochez avec le couteau. Vous n'avez plus de grenade. En bas, les cartes sont restées sur le capot, et les joueurs sont partis sans elles.",
       "effects": [
         {
           "type": "flag",
@@ -437,7 +437,7 @@
       ]
     },
     "c05-18": {
-      "text": "Vous vous aplatissez dans la vase. Les pas s'arrêtent. Il renifle, un souffle qui fait trembler l'eau à côté de votre visage et couche les roseaux sur vous. L'odeur est celle d'une bête mouillée et de la terre retournée. Vous ne respirez plus. Tentez votre Chance.",
+      "text": "Vous vous aplatissez dans la vase, et les pas s'arrêtent. Il renifle, un souffle qui fait trembler l'eau à côté de votre visage et couche les roseaux sur votre dos. Ça sent la bête mouillée, la terre retournée, et sous le tout, le soufre de la rivière. Vous ne respirez plus. Tentez votre Chance.",
       "test": {
         "type": "luck",
         "success": "c05-41",
@@ -445,7 +445,7 @@
       }
     },
     "c05-19": {
-      "text": "Le fond du ravin est une rigole de boue rouge. Le compteur grimpe. Vous prenez 2 rads. Devant, deux chiens aveugles sont assis au milieu du chemin, les paupières cousues par la Zone, les naseaux ouverts vers vous. Ils ne grognent pas. Ils vous attendent.",
+      "text": "Le fond du ravin est une rigole de boue rouge où l'eau stagne par flaques, et le compteur grimpe dès la première. Vous prenez 2 rads. Devant, deux chiens aveugles sont assis au milieu du chemin, les yeux cousus au fil noir, et ils ne grognent pas. Ils tournent la tête en même temps que vous bougez.",
       "effects": [
         {
           "type": "stat",
@@ -476,7 +476,7 @@
       ]
     },
     "c05-20": {
-      "text": "Vous poussez la grille. Le premier a déjà son fusil de chasse levé, le second cherche le sien dans les pneus en jurant. Ça va vite, et personne dans la cour ne lève la tête. Le chien mort est entre vous, et vous vous battez par-dessus.",
+      "text": "Vous poussez la grille, et le premier a déjà son fusil de chasse levé pendant que le second cherche le sien dans les pneus en jurant. « Borov ! Un client ! » Ça va vite. Dans la cour, la partie continue. Le chien mort est entre vous trois, et vous vous battez par-dessus.",
       "combat": {
         "name": "Bandits de la grille",
         "habilete": 6,
@@ -485,7 +485,7 @@
       }
     },
     "c05-21": {
-      "text": "Sa main se referme sur votre poignet avant que la lame touche le cordon. Il ne crie pas. Borov n'a pas besoin de crier. Il vous jette contre le mur et sort de sa ceinture un pistolet plus gros que le vôtre. Il frappe à casser des os.",
+      "text": "Sa main se referme sur votre poignet avant que la lame touche le cordon. Il ne crie pas. « Borov n'a pas besoin de crier. » Il vous jette contre le mur d'une seule main, et de l'autre sort de sa ceinture un pistolet plus gros que le vôtre, un calibre qui frappe à casser des os.",
       "combat": {
         "name": "Borov",
         "habilete": 7,
@@ -498,7 +498,7 @@
       }
     },
     "c05-22": {
-      "text": "Vous vous asseyez sur la glissière, le dos à la brume. Le bandage sent le vieux désinfectant. Vous serrez, vous nouez. Vous regagnez 3 points d'Endurance. En bas, à l'usine, quelqu'un rit, un rire qui ne finit pas bien. Vous remettez la veste.",
+      "text": "Vous vous asseyez sur la glissière, le dos à la brume. Le Bandage sent le vieux désinfectant d'hôpital. Vous serrez, vous nouez, vous mordez le nœud. Vous regagnez 3 points d'Endurance. En bas, vers l'usine, un générateur tousse trois fois avant de partir, et vous remettez la veste pendant qu'il tourne rond.",
       "choices": [
         {
           "kind": "aller",
@@ -508,7 +508,7 @@
       ]
     },
     "c05-23": {
-      "text": "Le gravier crisse. Il se retourne en se reboutonnant, et son fusil de chasse monte en même temps. Il tire une fois, trop haut, et la chevrotine arrache un morceau de pilier. Il n'a pas le temps d'appeler les autres. Il n'en a que pour vous.",
+      "text": "Le gravier crisse sous votre botte. Il se retourne en se reboutonnant, et son fusil de chasse monte en même temps que sa braguette. « Hé ! » Il tire une fois, trop haut, et la chevrotine arrache un morceau de pilier au-dessus de votre tête. Il n'appelle pas les autres. Il veut celui-là pour lui.",
       "combat": {
         "name": "Bandit du quai",
         "habilete": 5,
@@ -517,7 +517,7 @@
       }
     },
     "c05-24": {
-      "text": "Vous lâchez le pont. Les deux gars de la Liberté vous regardent partir sans crier ; ils n'ont pas le temps. Derrière vous, un homme hurle, puis l'eau. Vous courez jusqu'à la route avec la brume dans la bouche. Vous ne remonterez pas à la ferme ce soir.",
+      "text": "Vous lâchez le pont. Sacha vous regarde partir, la bouche ouverte, et n'a pas le temps de crier parce que le deuxième chien est sur lui. Derrière vous, le Plombier hurle un nom, puis l'eau prend tout. Vous courez jusqu'à la route avec la brume dans la bouche, et à la ferme, ce soir, la sentinelle ne se lèvera pas pour vous.",
       "choices": [
         {
           "kind": "aller",
@@ -527,7 +527,7 @@
       ]
     },
     "c05-25": {
-      "text": "Borov vous reconnaît. Il se lève du fauteuil de dentiste avant que vous ayez atteint le haut de l'escalier, le gilet d'or qui cliquette. Le Dépotoir. Les gars de Borov. Borov n'oublie pas une tête. Il tire avant d'avoir fini sa phrase ; la balle vous ouvre le bras. Vous perdez 2 points d'Endurance. Son calibre frappe à casser des os.",
+      "text": "Borov vous reconnaît. Il se lève avant que vous ayez atteint le haut de l'escalier, et le gilet de chaînes cliquette sur le cuir. « Le Dépotoir. Les gars de Borov, dans le hangar. Borov n'oublie pas une tête, et la tienne, il l'a payée. » Il tire avant d'avoir fini sa phrase, et la balle vous ouvre le bras au-dessus du coude. Vous perdez 2 points d'Endurance. Il lui reste sept balles dans le TT, et il descend la première marche.",
       "effects": [
         {
           "type": "stat",
@@ -547,7 +547,7 @@
       }
     },
     "c05-26": {
-      "text": "Vous courez. La boue vous tire par les chevilles, la brume avale tout à cinq pas. Derrière vous, les pattes claquent dans l'eau, de plus en plus près, puis vous ne les entendez plus, et c'est pire. Tentez votre Chance.",
+      "text": "Vous courez. La boue vous tire par les chevilles, la brume avale tout à cinq pas, et derrière vous les pattes claquent dans l'eau, de plus en plus près, puis vous ne les entendez plus, seulement votre souffle et l'eau. Tentez votre Chance.",
       "test": {
         "type": "luck",
         "success": "c05-40",
@@ -555,7 +555,7 @@
       }
     },
     "c05-27": {
-      "text": "Vous courez vers la route, et le sol court avec vous : chaque pas qu'il fait vous jette en avant. Les roseaux vous fouettent le visage, l'eau gicle dans vos bottes. L'asphalte est là, quelque part devant, dans le blanc, et vous ne le voyez pas plus que lui. Testez votre Habileté.",
+      "text": "Vous courez vers la route, et le sol court avec vous : chaque pas qu'il fait vous jette en avant d'un demi-mètre. Les roseaux vous fouettent le visage, l'eau gicle dans vos bottes, et l'asphalte est devant, dans le blanc, aussi invisible que ce qui vous suit. Testez votre Habileté.",
       "test": {
         "type": "stat",
         "stat": "habilete",
@@ -565,7 +565,7 @@
       }
     },
     "c05-28": {
-      "text": "Borov tombe en travers du fauteuil et n'en parle plus. Vous tirez le cordon : la Clef du X-18 est chaude de sa peau. En bas, les bandits ont levé les yeux. Ils ne montent pas. Un homme qui a tué Borov, on le regarde partir, c'est tout. Le gilet d'or est faux. Vous le laissez.",
+      "text": "Borov tombe en travers du fauteuil et n'en parle plus. Vous tirez le cordon par-dessus sa tête : la Clef du X-18 est chaude de sa peau. En bas, les bandits ont levé les yeux vers la vitre, et pas un ne monte. Celui à la casquette se lève, ramasse ses gains sur le capot et se rassoit. Un homme qui a tué Borov, on le regarde partir. Vous soupesez le gilet d'or : du laiton, lourd comme du laiton. Vous le laissez sur lui.",
       "effects": [
         {
           "type": "flag",
@@ -591,7 +591,7 @@
       ]
     },
     "c05-29": {
-      "text": "Le premier vous prend le mollet. Vous tombez, vous frappez, la lame trouve quelque chose de mou. Il lâche. Le second hésite, et vous êtes déjà debout, en train de courir. Vous perdez 3 points d'Endurance. La jambe tient. La route est là, cent mètres plus loin, et les chiens restent avec leur blessé.",
+      "text": "Le premier vous prend le mollet. Vous tombez, vous frappez, et la lame trouve du mou sous le poil. Il lâche. Le second hésite, et vous êtes déjà debout, en train de courir. Vous perdez 3 points d'Endurance. La jambe tient. La route est là, cent mètres plus loin, et les chiens restent avec leur blessé, à le lécher ou à le finir.",
       "effects": [
         {
           "type": "stat",
@@ -608,7 +608,7 @@
       ]
     },
     "c05-30": {
-      "text": "Le chef de la ferme n'a pas de nom qu'on vous donne. Il vous jauge, la main sur une carte dessinée au feutre. Le pont. Ce qui vit dans la rivière monte chaque nuit par le pont et nous mange un homme par semaine. Tiens-le avec deux des miens jusqu'à l'aube. Après, la ferme est à toi comme à nous. Il ne sourit pas. Dehors, il commence à faire noir.",
+      "text": "Le chef de la ferme n'a pas de nom qu'on vous donne. Il vous jauge, debout près d'une carte dessinée au feutre sur une porte de placard, et il pose le doigt sur un trait bleu. « Le pont. Ce qui vit dans la rivière monte chaque nuit par le pont et nous mange un homme par semaine. » Il laisse le doigt sur le trait. « Tiens-le avec deux des miens jusqu'à l'aube. Après, la ferme est à toi comme à nous : le feu, la bouffe, le toit quand il pleut. » Vous demandez pourquoi pas lui. « Parce que c'est moi qui compte les hommes. » Il ne sourit pas, et derrière lui, par la fenêtre sans vitre, la brume commence à prendre la couleur du soir.",
       "choices": [
         {
           "kind": "parler",
@@ -628,7 +628,7 @@
         "alt": "La cour de l'usine de Borov dans la Vallée sombre, feu de palettes, bandits aux cartes et bureau éclairé",
         "prompt": "La cour d'une usine noire dans la brume : des camions sans roues, un feu de palettes, des hommes en blouson de cuir qui jouent aux cartes sur un capot sans lever les yeux. Au fond d'une halle ouverte, une porte de fer cadenassée au-dessus d'un escalier qui descend. À l'étage, derrière une vitre sale, un bureau éclairé où se devine un homme assis. Le stalker entre par la grille, de dos, en silhouette au premier plan."
       },
-      "text": "La cour de l'usine. Des camions sans roues, un feu de palettes, des hommes en cuir qui jouent aux cartes sur un capot et ne lèvent pas les yeux. Au fond de la halle, une porte de fer avec un escalier qui descend, et un cadenas gros comme un poing. Au-dessus, derrière une vitre sale, un bureau éclairé. Borov. Il vous a déjà vu.",
+      "text": "La cour de l'usine. Des camions sans roues, un feu de palettes dans un demi-bidon, des hommes en cuir qui jouent aux cartes sur un capot et ne lèvent pas les yeux, parce qu'ici on ne lève pas les yeux sur ce qui entre, on attend que ça monte. Au fond de la halle, une porte de fer au-dessus d'un escalier qui descend, et sur la porte un cadenas gros comme un poing. À l'étage, derrière une vitre sale, un bureau éclairé par une ampoule nue, et dans la lumière une tête rasée qui s'est déjà tournée vers vous.",
       "choices": [
         {
           "kind": "aller",
@@ -686,7 +686,7 @@
       ]
     },
     "c05-32": {
-      "text": "Personne ne vous a vu. Le gravier n'a pas parlé, le bandit a fini sans se retourner. Vous passez la brèche et la clôture se referme sur l'usine comme sur un rêve. La route de la vallée est là, en contrebas, et la brume la mange des deux côtés. Vous ne vous retournez pas.",
+      "text": "Le bandit n'a rien vu. Le gravier n'a pas parlé, et il a fini sans se retourner, en chantonnant toujours. Vous passez la brèche de la clôture, et derrière vous l'usine redevient une masse noire sans fenêtres. La route est en contrebas, et le panneau de Rostok dépasse du brouillard.",
       "choices": [
         {
           "kind": "aller",
@@ -701,7 +701,7 @@
       ]
     },
     "c05-33": {
-      "text": "Le coup claque dans la brume et le premier chien se plie en deux sans un bruit. Le second s'arrête, renifle le sang, et file dans le blanc. L'écho du Makarov roule longtemps dans la vallée. Quelque part, en bas, la musique s'arrête, puis reprend. Vous rechargez en marchant. La route est là, sous vos bottes, un asphalte fendu d'herbes.",
+      "text": "Le coup claque et le premier chien se plie en deux sur place. Le second s'arrête, renifle le sang, et file dans le blanc. L'écho du Makarov roule le long de la vallée pendant dix bonnes secondes, et en bas, à la ferme, la musique s'arrête, puis reprend. Vous rechargez en marchant. L'asphalte, fendu d'herbes, commence là où la boue s'arrête.",
       "choices": [
         {
           "kind": "aller",
@@ -711,7 +711,7 @@
       ]
     },
     "c05-34": {
-      "text": "Le cordon cède sans un bruit et la Clef du X-18 glisse dans votre poche. Borov parle encore à la vitre, de Borov, de ce que Borov va faire de la vallée. Vous redescendez l'escalier au pas de quelqu'un qui a payé. Il mettra une minute à toucher son cou. Une minute, dans cette usine, c'est assez.",
+      "text": "Le cordon cède sans un bruit et la Clef du X-18 glisse dans votre poche, encore chaude. Borov parle toujours à la vitre. « Borov mettra des péages. Un à la ferme, un au pont, un sur la route de Rostok. Et Borov prendra sa part sur chaque. » Vous redescendez l'escalier au pas de quelqu'un qui a payé. Il mettra une minute à toucher son cou. Une minute, dans cette usine, c'est le temps de traverser la cour.",
       "effects": [
         {
           "type": "item",
@@ -738,7 +738,7 @@
         "alt": "La rive de la Vallée sombre, le pont effondré dans la rivière et les roseaux couchés par une bête invisible",
         "prompt": "Une rive de roseaux morts au bord d'une rivière fumante dans une brume épaisse, un pont de béton effondré dont les ferrailles tordues pendent dans l'eau. Sur dix mètres de large, les roseaux sont couchés comme sous un poids énorme, et dans le brouillard se devine à peine une masse de la taille d'un camion, sans forme nette. Au premier plan, le stalker de dos, figé, le détecteur à la main. Ciel bas, eau qui tremble dans les ornières."
       },
-      "text": "La rive. Des roseaux morts, la rivière qui sent le soufre, le compteur qui grimpe. Vous prenez 3 rads. Le pont effondré pend dans l'eau par ses ferrailles. Alors le sol tape, une fois. Puis une autre, plus près. Dans la brume, quelque chose de la taille d'un camion respire, et vous ne le voyez pas. Les roseaux se couchent sur dix mètres de large.",
+      "text": "La rive. Des roseaux morts, la rivière qui sent le soufre, le compteur qui grimpe. Vous prenez 3 rads. Le pont effondré pend dans l'eau par ses ferrailles tordues, et une bâche bleue s'est prise dedans. Alors le sol tape, une fois. Puis une autre, plus près. Dans le brouillard, une masse de la taille d'un camion respire, et vous ne la voyez pas, mais les roseaux se couchent sur dix mètres de large, puis se relèvent.",
       "effects": [
         {
           "type": "stat",
@@ -760,7 +760,7 @@
       ]
     },
     "c05-36": {
-      "text": "Le garde tombe sur le quai et le fusil lui échappe. Dans la cour, personne n'a bougé : un coup de feu de plus. Vous passez la brèche de la clôture. La brume vous prend, et l'usine redevient une masse noire sans fenêtres, comme si vous n'y étiez jamais descendu.",
+      "text": "Le garde tombe sur le quai et son fusil part seul en glissant. Dans la cour, on relance les mises. Vous passez la brèche de la clôture, et le brouillard efface l'usine derrière vous, la lampe du quai avec.",
       "choices": [
         {
           "kind": "aller",
@@ -775,7 +775,7 @@
       ]
     },
     "c05-37": {
-      "text": "Il prend la Vodka, lit l'étiquette comme un passeport, la glisse dans sa poche. Entre. Vous n'avez plus rien à boire. La cour sent l'herbe brûlée et l'huile de fusil. Au centre, un feu dans un demi-bidon ; autour, dix hommes qui ne se ressemblent pas, tous avec le même brassard vert.",
+      "text": "Il prend la Vodka, lit l'étiquette comme un passeport, la retourne, la glisse dans la poche de son treillis. « Entre. » Vous n'avez plus rien à boire. La cour sent l'herbe brûlée et l'huile de fusil. Au centre, un feu dans une jante de camion ; autour, dix hommes qui ne se ressemblent pas, et le même brassard vert sur dix bras différents. L'un d'eux lève sa bouteille vers vous. « C'est la tienne ? Elle est bonne. »",
       "choices": [
         {
           "kind": "aller",
@@ -785,7 +785,7 @@
       ]
     },
     "c05-38": {
-      "text": "Vous êtes sur la route, et il n'y est pas. Les coups s'éloignent le long de la rive, vers l'usine, puis se perdent. Vos mains tremblent. La brume se referme sur la rivière comme si rien n'y vivait. Vous ne retournerez pas voir.",
+      "text": "L'asphalte est sous vos bottes, et il n'y est pas. Les coups s'éloignent le long de la rive, vers l'usine, puis se perdent dans le bruit de l'eau. Vos mains tremblent sur la crosse. Derrière vous, les roseaux se relèvent un à un.",
       "choices": [
         {
           "kind": "aller",
@@ -795,7 +795,7 @@
       ]
     },
     "c05-39": {
-      "text": "Borov compte deux fois, en mouillant son pouce. Vous payez 1 000 roubles. Puis il passe le cordon par-dessus sa tête et vous le jette. La Clef du X-18 est lourde, froide, elle sent le cuivre. Borov te souhaite bonne chance. Borov n'y croit pas. En bas, la porte de fer attend.",
+      "text": "Borov compte deux fois, en mouillant son pouce. Vous payez 1 000 roubles. Il passe le cordon par-dessus sa tête et vous le jette ; la Clef du X-18 est lourde, froide, et sent le cuivre. « Borov te souhaite bonne chance en bas. » Il touche son col, là où la clef pendait, et sa main ne trouve plus rien. « Borov n'y croit pas, à la chance. Mais Borov est poli. » En bas, la porte de fer attend derrière son cadenas, et en bas les joueurs annoncent leurs mises plus fort qu'il ne faut.",
       "effects": [
         {
           "type": "item",
@@ -817,7 +817,7 @@
       ]
     },
     "c05-40": {
-      "text": "Ils vous ont perdu. Le vent a tourné, la brume a fait le reste. Vous les entendez aboyer vers la colline, loin, dans la mauvaise direction. Vous marchez encore cent mètres sans respirer. Puis l'asphalte, sous la boue. La route de la vallée.",
+      "text": "Ils vous ont perdu. Le vent a tourné, le brouillard a fait le reste, et vous les entendez aboyer vers la colline, loin, dans la mauvaise direction. Vous marchez encore sans respirer, jusqu'à ce que la boue cède la place à des plaques de goudron.",
       "choices": [
         {
           "kind": "aller",
@@ -827,7 +827,7 @@
       ]
     },
     "c05-41": {
-      "text": "Il passe. Le sol tremble, s'éloigne, se tait. Vous restez couché jusqu'à ce que la rivière reprenne son bruit. Dans les roseaux, à côté de vous, un sac à dos et ce qu'il reste d'un stalker. Son PDA est mort. Dans la doublure, 150 roubles, roulés serrés. Vous les prenez. Il n'en a plus besoin.",
+      "text": "Il passe. Le sol tremble, s'éloigne, se calme. Vous restez couché jusqu'à ce que la rivière reprenne son bruit. Dans les roseaux, à côté de vous, un sac à dos et ce qu'il reste d'un stalker : une veste, une botte, un PDA mort dont l'écran est fendu. Dans la doublure de la veste, 150 roubles roulés serrés, encore secs. Vous les prenez, et vous laissez le PDA, parce qu'on ne lit pas ce qu'un mort écrivait pour un autre.",
       "effects": [
         {
           "type": "stat",
@@ -844,7 +844,7 @@
       ]
     },
     "c05-42": {
-      "text": "Devant l'usine, la route de la vallée remonte dans la brume. Les bandits de la grille vous regardent passer et ne disent rien. Le chien mort est toujours là. À l'ouest, les drapeaux verts ; plus loin, la route qui monte vers Rostok. Derrière vous, la cheminée sans fumée.",
+      "text": "Devant l'usine, la route remonte dans la brume. Le chien mort est toujours à sa place entre les pneus, et les mouches ont trouvé sa bouche. À l'ouest, les drapeaux verts ; plus loin, la montée vers Rostok. Derrière vous, la cheminée sans fumée vous regarde partir jusqu'à ce que la brume la referme.",
       "choices": [
         {
           "kind": "aller",
@@ -859,7 +859,7 @@
       ]
     },
     "c05-43": {
-      "text": "Le pseudo-chien s'effondre dans l'eau et le courant le prend. Les deux autres ont fini les leurs. L'aube vient, grise. À la ferme, on vous fait une place au feu sans rien dire, puis le chef pose une Vodka devant vous. Elle est à toi. Et la ferme aussi, tant que tu passes par ici.",
+      "text": "Le pseudo-chien s'effondre dans l'eau et le courant le prend. Sacha a fini le sien, le Plombier a fini le sien, et ils vous regardent, la lampe entre vous trois sur sa pierre. L'aube vient, grise, sans oiseaux. À la ferme, le chef pose une Vodka devant vous, debout, sans s'asseoir. « Elle est à toi. Et la ferme aussi, tant que tu passes par ici. » Il regarde le pont, en bas, où la brume recouvre déjà ce qui est resté dans l'eau. « La semaine prochaine, on recommence. Mais ce sera sans toi. »",
       "effects": [
         {
           "type": "flag",
@@ -885,7 +885,7 @@
       ]
     },
     "c05-44": {
-      "text": "Le second lâche son fusil avant de tomber. La grille est ouverte. Dans la cour, personne ne vient : ici, les coups de feu font partie du bruit. Vous enjambez le chien mort. Le compteur ne bouge pas. Le danger, ici, n'est pas dans l'air.",
+      "text": "Le second lâche son fusil avant de tomber. La grille est ouverte, et dans la halle on a tourné une carte de plus. Le compteur reste calme. Vous enjambez le chien mort, qui a commencé à sentir.",
       "choices": [
         {
           "kind": "aller",

@@ -31,9 +31,9 @@
         "prompt": "Une salle de laboratoire carrelée où sept hautes cuves de verre cylindriques sont alignées sous des néons. Dans chacune, une silhouette humaine indistincte, à peine visible à travers un liquide trouble et jaunâtre, suspendue dans une combinaison grise, des bulles montant le long du verre, des faisceaux de câbles sortant du sommet de la cuve vers le plafond. Au fond de la rangée, une huitième cuve ouverte et vide. Au premier plan, une silhouette de stalker de dos sur le seuil, minuscule devant les cuves. Hachures serrées, verre, reflets, lumière crue."
       },
       "text": [
-        "Sept cuves de verre, hautes comme des hommes, alignées sous les néons. Dedans, des corps nus flottent dans un liquide jaune, la nuque hérissée de câbles. Des bulles montent le long des visages. Ça sent le formol et le cuivre chaud.",
-        "Les voix sont déjà là. Sept, qui parlent ensemble, calmes, sans bouche. Entre. Nous t'attendions.",
-        "Au fond de la salle, une huitième cuve est ouverte, et le liquide y attend."
+        "La double porte vitrée se referme derrière vous sur un soupir de joint pneumatique, et vous êtes dans la salle des cuves. Elles sont sept, en verre épais cerclé d'acier, hautes comme des hommes, alignées sous une rangée de néons dont un seul clignote. Dans chacune flotte un corps nu, suspendu dans un liquide jaune, la nuque hérissée de câbles qui montent au plafond, et des bulles remontent le long des visages sans les faire ciller. Ça sent le formol et le cuivre chaud.",
+        "« Entrez. Nous vous attendions. Votre arrivée était prévue à quatorze minutes près. »",
+        "Elles parlent ensemble, sept voix posées l'une sur l'autre, sans bouche et sans souffle. Au fond de la rangée, une huitième cuve est ouverte, à moitié pleine."
       ],
       "choices": [
         {
@@ -59,9 +59,11 @@
     },
     "c30-14": {
       "text": [
-        "Elles racontent sans se presser. Un laboratoire sous le réacteur, en 2006. Sept chercheurs qui ont voulu réparer ce que les hommes avaient fait ici. Ils se sont branchés ensemble, ils ont cherché le champ qui lie les choses, ils l'ont trouvé. La Zone est ce qui a débordé.",
-        "Nous avons essayé de réparer. Ça n'a pas tenu. Depuis, nous gardons l'endroit.",
-        "Un ventilateur tourne dans le plafond, lent, à contretemps des voix."
+        "« Qu'est-ce que vous voulez ? » Elles répondent par le commencement, sans se presser, dans l'ordre où l'on rédige un compte rendu.",
+        "« Laboratoire souterrain, sous le réacteur, année 2006. Sept chercheurs. L'objectif était de corriger les conséquences de 1986. Nous nous sommes connectés les uns aux autres afin de mesurer le champ qui relie la matière et la pensée. Nous l'avons mesuré. Nous l'avons ensuite modifié. »",
+        "Une pause, de la durée exacte d'une respiration qu'aucun des corps ne prend.",
+        "« Ce qui s'étend aujourd'hui autour de la Centrale résulte de cette modification. La correction n'a pas tenu. Depuis, nous assurons la garde du site. Avant vous, deux cent dix-sept personnes sont entrées dans le périmètre avec l'intention d'atteindre cette salle. Quatre y sont parvenues. »",
+        "Au plafond, un ventilateur tourne à contretemps des voix, et l'une de ses pales, voilée, frotte à chaque tour contre la grille."
       ],
       "choices": [
         {
@@ -78,9 +80,9 @@
     },
     "c30-22": {
       "text": [
-        "Vous passez entre les cuves. Les corps ne vous suivent pas des yeux : ils n'ont plus de paupières. Un vieux, un jeune, une femme au crâne rasé. Les câbles sortent des nuques et montent vers une armoire grise qui ronfle.",
-        "Les voix vous accompagnent, à la même distance quoi que vous fassiez. Tu peux regarder. Ils ne dorment pas. Ils pensent.",
-        "Au bout de la rangée, la huitième cuve est ouverte."
+        "Les corps ne vous suivent pas des yeux quand vous passez entre les cuves sans répondre : ils n'ont plus de paupières. Un vieux à la barbe flottante, un jeune aux épaules de docker, une femme au crâne rasé dont les doigts touchent presque le verre. De chaque nuque sort un faisceau de câbles gainés de caoutchouc noir qui grimpe vers une armoire grise, au fond, dont le ronflement emplit la salle.",
+        "« Vous pouvez regarder. Nous ne dormons pas. Nous pensons, à raison de quarante opérations par seconde environ. »",
+        "Contre le verre, un doigt de la femme au crâne rasé a bougé, à moins que ce soit le liquide."
       ],
       "choices": [
         {
@@ -98,9 +100,9 @@
     "c30-8": {
       "text": [
         "Elles disent votre nom.",
-        "Pas un surnom de stalker, pas celui du PDA. Un prénom, un patronyme, une ville au sud. Vous ne les connaissez pas. Ils sonnent juste, comme une clef qui tourne dans une serrure qu'on n'a jamais vue.",
-        "Nous te l'avons pris quand tu es passé. Nous pouvons te le rendre.",
-        "Dans la cuve la plus proche, une bulle reste collée à la vitre et ne monte pas."
+        "Pas un surnom de stalker ni celui qui s'affiche sur votre PDA, mais un prénom, un patronyme et une ville au sud, au bord d'un fleuve, prononcés avec la netteté d'un appel dans une caserne. Vous ne les connaissez pas, et pourtant ils tombent juste, à la façon d'une clef qui tourne du premier coup dans une serrure que vous n'avez jamais vue.",
+        "« Nous vous l'avons retiré lors de votre passage précédent. Il est conservé. Sa restitution est possible. »",
+        "Dans la cuve la plus proche, une bulle reste collée à la vitre et refuse de monter."
       ],
       "choices": [
         {
@@ -117,9 +119,9 @@
     },
     "c30-3": {
       "text": [
-        "Tu es déjà venu. Une fois, par la grande salle, devant la pierre qui brille. Tu as souhaité. Nous avons exaucé à notre façon : nous avons gardé ce qu'il y avait dans ta tête et rendu le reste à la Zone.",
-        "Vous ne vous souvenez de rien avant le Cordon. Vous le saviez. Vous ne saviez pas que quelqu'un l'avait décidé.",
-        "Le liquide jaune clapote doucement dans la cuve ouverte, au bout de la salle."
+        "« Quand est-ce que je suis passé ? » Votre voix sonne trop fort contre le carrelage.",
+        "« Avant votre réveil au Cordon. Vous êtes entré par la grande salle et vous vous êtes tenu devant la pierre. Vous avez formulé un souhait. Nous l'avons exaucé selon nos procédures : nous avons conservé le contenu de votre mémoire et restitué le reste à l'extérieur. Vous étiez le soixante et onzième. »",
+        "Vous ne vous souvenez de rien d'avant le Cordon, ni d'une maison, ni d'un visage, ni de la route qui vous y a mené. Ça, vous le saviez depuis le premier jour. Ce que vous ignoriez, c'est que cela avait été décidé, ici, par des voix qui tiennent un registre."
       ],
       "choices": [
         {
@@ -136,10 +138,10 @@
     },
     "c30-27": {
       "text": [
-        "Nous avons besoin de bras.",
-        "Les corps dans les cuves ne bougent plus. Pour tenir la Zone, fermer ce qui s'ouvre, renvoyer ceux qui montent trop haut, il leur faut des mains dehors. Le Monolithe, ce sont leurs mains. Ceux qui arrivent jusqu'ici, ils les gardent ou ils les renvoient.",
-        "Et il faut une tête de plus ici. Une qui a marché jusqu'au bout. La cuve est prête depuis longtemps.",
-        "Un goutte-à-goutte compte les secondes au-dessus de vous."
+        "« Nous avons besoin de bras. »",
+        "La phrase arrive seule, après le reste, et elles la laissent un moment dans la salle avant de l'expliquer.",
+        "« Nos corps ne se déplacent plus depuis 2006. Il faut à l'extérieur des exécutants : pour maintenir ce que nous avons ouvert, refermer ce qui s'ouvre encore, renvoyer ceux qui montent trop haut. Les hommes que vous appelez le Monolithe remplissent cette fonction. Leur prière est notre consigne, répétée. »",
+        "« Il nous faut également une huitième tête. Une tête qui a parcouru le chemin entier. La cuve est prête depuis trois ans, deux mois et onze jours. »"
       ],
       "choices": [
         {
@@ -156,9 +158,9 @@
     },
     "c30-5": {
       "text": [
-        "La huitième cuve est ouverte comme une porte. Le liquide jaune arrive à mi-hauteur, tiède, avec une odeur de sel et de formol. Un faisceau de câbles pend au-dessus, les fiches propres, numérotées.",
-        "Les sept voix se taisent pour vous laisser regarder. C'est la première fois qu'elles se taisent.",
-        "Derrière vous, l'armoire grise ronfle. Au mur, une porte de fer sans poignée, et deux gardes immobiles en blouse qui ne vous regardent pas."
+        "La huitième cuve est ouverte comme une porte de four, sa paroi de verre basculée sur une charnière d'acier. Le liquide y arrive à mi-hauteur, tiède, et sent le sel et l'eau de batterie. Au-dessus pend un faisceau de câbles aux fiches propres, numérotées au feutre de 1 à 12, qui attendent une nuque.",
+        "Les voix se sont tues pour vous laisser regarder, le premier silence depuis la double porte, et vous entendez la pompe pousser le liquide contre le verre, à petits coups réguliers.",
+        "Derrière vous, l'armoire grise ronfle contre le mur du fond. Plus loin, une porte de fer sans poignée, et devant elle deux gardes en blouse blanche, masque à gaz sur le visage, fusil à la bretelle, qui regardent la rangée de cuves et jamais vous."
       ],
       "image": {
         "src": "images/c30-5.webp",
@@ -212,8 +214,9 @@
     },
     "c30-19": {
       "text": [
-        "Vous montez sur le rebord. Le liquide prend votre jambe jusqu'au genou, tiède comme un bain qu'on a laissé. Les câbles descendent vers vous d'eux-mêmes, lents, comme des bras qui savent où aller.",
-        "Les voix reviennent, une à une, pas ensemble cette fois. Elles disent merci. Elles disent qu'on ne sent rien. Elles disent que le premier jour est le plus long.",
+        "Vous enjambez le rebord. Le liquide prend votre jambe jusqu'au genou, tiède comme un bain qu'on a oublié de vider, et les câbles descendent vers vous, lents, attirés par la chaleur de votre cou.",
+        "Les voix reviennent une à une, distinctes cette fois, chacune avec son timbre.",
+        "« Merci. » « La procédure est indolore. » « D'après nos relevés, le premier jour est le plus long. »",
         "Votre autre pied est encore sur le carrelage."
       ],
       "choices": [
@@ -231,15 +234,15 @@
     },
     "c30-11": {
       "text": [
-        "Le liquide se referme sur vous. Une fiche trouve votre nuque et c'est froid, puis ce n'est plus rien. Les sept voix deviennent huit.",
-        "Vous entendez la Zone entière d'un coup : les chiens du Cordon, l'Émission qui monte au nord, un stalker qui lance un boulon dans le Dépotoir et le regarde tomber.",
-        "Vous aviez un vœu. Vous ne vous rappelez plus lequel. Vous n'en avez plus besoin."
+        "Le liquide se referme au-dessus de votre tête. Une fiche trouve votre nuque, froide, puis la froideur elle-même cesse d'être à vous, et les voix en comptent une huitième qui est la vôtre.",
+        "Vous entendez tout d'un coup, du Cordon jusqu'à la Centrale : les chiens aveugles qui fouillent les fossés, l'Émission qui se lève au nord, un stalker qui lance un boulon dans le Dépotoir et le regarde retomber dans l'herbe.",
+        "Vous étiez venu avec un vœu, et vous ne retrouvez plus lequel, parce que plus rien en vous ne demande à être exaucé."
       ]
     },
     "c30-25": {
       "text": [
-        "Vous approchez votre front de la vitre. Derrière, un homme d'une cinquantaine d'années, la bouche ouverte, les yeux ouverts, et dans les yeux il n'y a rien et il y a tout. Une étiquette jaunie est collée au bas de la cuve.",
-        "La voix la plus proche se détache des autres et vient vers vous, seule, à travers le verre. Elle veut regarder dedans aussi. Tentez votre Chance."
+        "La vitre est froide contre votre front, et votre haleine y dépose un rond de buée. Derrière, un homme d'une cinquantaine d'années flotte la bouche ouverte, les yeux ouverts, et ces yeux-là ne regardent ni vous ni la salle mais un point situé très loin derrière les deux. Une étiquette jaunie, tapée à la machine, est collée au bas de la cuve.",
+        "Une des voix se détache des autres et vient seule, à travers le verre, vers votre front. Elle veut regarder dedans, elle aussi. Tentez votre Chance."
       ],
       "test": {
         "type": "luck",
@@ -249,9 +252,9 @@
     },
     "c30-7": {
       "text": [
-        "Vous tenez. La voix glisse et repart avec les autres.",
-        "Sur l'étiquette, une date, 1986, une autre, 2006, un numéro à trois chiffres. Les sept cuves portent la même étiquette, aux numéros près. La huitième aussi. Sur la huitième, le numéro est écrit à la main, et l'encre est fraîche.",
-        "Vous reculez. La vitre garde la trace de votre front."
+        "Vous tenez bon, et la voix glisse sur vous avant de rejoindre les autres.",
+        "Sur l'étiquette, deux dates, 1986 et 2006, puis un numéro à trois chiffres. Vous longez la rangée : les sept cuves portent la même étiquette, aux numéros près, et la huitième aussi, sauf que sur celle-là le numéro a été écrit à la main, au stylo bille, d'une encre encore brillante.",
+        "Quand vous reculez, la vitre garde la trace grasse de votre front."
       ],
       "choices": [
         {
@@ -268,8 +271,9 @@
     },
     "c30-16": {
       "text": [
-        "La voix entre. Un instant vous voyez la salle depuis la cuve : un stalker penché sur une vitre, sale, un détecteur qui pend, et vous ne savez plus lequel des deux est vous. Puis votre nez saigne et ça vous ramène. Vous perdez 3 points d'Endurance.",
-        "Sur l'étiquette, 1986, 2006, un numéro. Vous n'avez pas la tête à lire le reste."
+        "La voix entre. Pendant une seconde, vous voyez la salle depuis l'intérieur de la cuve : un stalker penché sur la vitre, sale, un détecteur qui lui pend au cou, et vous ne savez plus lequel des deux vous êtes. Puis votre nez se met à saigner sur votre lèvre, et le goût du sang vous ramène de votre côté du verre. Vous perdez 3 points d'Endurance.",
+        "« Excusez-nous. L'erreur était de notre fait. »",
+        "Sur l'étiquette, vous lisez 1986, 2006, et un numéro que votre tête refuse de garder."
       ],
       "effects": [
         {
@@ -298,8 +302,9 @@
         "prompt": "Gros plan sur une armoire électrique soviétique en tôle grise cabossée, cadenas scié pendant, portes ouvertes : à l'intérieur, une rangée de gros disjoncteurs à poignée, sept usés et un huitième neuf, et tout en bas une grande poignée isolée. Des câbles épais comme des bras entrent par le haut depuis le plafond. Une main gantée de stalker s'approche de la grande poignée, bras vu de dos ; derrière, floues, deux silhouettes de gardes en blouse immobiles et le reflet des cuves."
       },
       "text": [
-        "L'armoire grise est plus vieille que le reste : de la tôle soviétique, un cadenas scié, des disjoncteurs à poignée gros comme des mains. Sept marqués, un huitième neuf, et en bas une grande poignée seule. Les câbles entrent par le haut, épais comme des bras. Un transformateur chauffe la tôle.",
-        "Les gardes ont tourné la tête. Les voix ont repris, un peu plus vite. Tu ne sais pas ce que tu fais. Ce n'est pas une menace. Ils disent ce qu'ils savent."
+        "L'armoire grise est plus vieille que le reste de la salle : de la tôle soviétique repeinte trois fois, un cadenas scié qui pend encore à son moraillon, et derrière les portes ouvertes une rangée de disjoncteurs à poignée, gros comme des mains. Sept sont usés jusqu'au métal, le huitième est neuf, et tout en bas une grande poignée seule commande le reste. Les câbles entrent par le haut, épais comme des bras, et un transformateur chauffe la tôle sous votre paume.",
+        "Les gardes ont tourné la tête vers vous. Les voix ont repris, un peu plus vite.",
+        "« Vous ignorez la fonction de cet équipement. Ce constat ne constitue pas une menace. »"
       ],
       "choices": [
         {
@@ -339,9 +344,10 @@
     },
     "c30-24": {
       "text": [
-        "Vous parlez du bloc de pierre peint du palais de la Culture, des hommes à genoux devant, des yeux blancs.",
-        "Les voix ne nient rien. Une pierre peinte, c'est ce qu'ils ont trouvé pour fixer les regards. Ce que les hommes prient, c'est une fréquence. Elle tient leur tête à notre place. Ceux qu'on ne peut pas garder ici, on les renvoie dehors avec ça dedans. Ils gardent bien.",
-        "Dans la cuve la plus proche, une main se ferme, lentement, puis s'ouvre."
+        "« Au palais de la Culture, il y avait un bloc de pierre peint. Des hommes à genoux devant, avec des yeux blancs. »",
+        "Elles ne nient rien. Elles répondent avec la même patience que pour le reste, en détachant les mots.",
+        "« Le bloc est un support. Il fallait un objet pour fixer les regards. Ce que ces hommes prient est une fréquence, émise depuis cette salle, qui occupe leur tête à notre place. Ceux que nous ne pouvons pas conserver ici, nous les renvoyons à l'extérieur avec cette fréquence. Ils assurent une garde satisfaisante. »",
+        "Dans la cuve la plus proche, une main se ferme lentement, puis se rouvre."
       ],
       "choices": [
         {
@@ -358,9 +364,12 @@
     },
     "c30-12": {
       "text": [
-        "Vous le dites à voix haute, pour l'entendre une fois avec vos oreilles. Strelok est venu trois fois. La troisième, il a envoyé quelqu'un devant lui, quelqu'un qui savait pour les cuves et devait les fermer. Ils l'ont pris à la porte, vidé, renvoyé au sud sans nom. C'est vous. Vous êtes remonté quand même, parce que le chemin était resté dans les jambes.",
-        "Les voix se taisent. Pas pour vous laisser regarder. Elles comptent.",
-        "Vous revoyez les yeux blancs du palais. Vous savez ce qu'elles feraient de vous dehors."
+        "Vous le dites à voix haute, parce que vous voulez l'entendre une fois avec vos oreilles et pas seulement dans votre tête.",
+        "« Strelok est venu trois fois. La troisième, il a envoyé quelqu'un devant lui, quelqu'un qui savait pour les cuves et qui devait les fermer. Vous l'avez pris à la porte. Vous l'avez vidé et renvoyé au sud sans nom. C'est moi. »",
+        "Vous êtes remonté quand même, parce que le chemin était resté dans vos jambes quand tout le reste avait quitté votre tête.",
+        "Cette fois, les voix ne s'arrêtent pas pour vous laisser regarder : elles calculent, et vous entendez sous leurs mots un défilement sec de chiffres.",
+        "« Hypothèse confirmée. Vous êtes le premier, sur deux cent dix-huit, à revenir en sachant. »",
+        "Vous revoyez les yeux blancs du palais de la Culture, et vous savez ce qu'elles feraient de vous au-dehors si vous leur en laissiez le temps."
       ],
       "choices": [
         {
@@ -377,9 +386,9 @@
     },
     "c30-20": {
       "text": [
-        "Votre main est sur la grande poignée, celle du bas, sous les huit autres. La tôle est chaude. Le transformateur vibre dans votre bras jusqu'à l'épaule.",
-        "Les sept voix entrent dans votre main. Pas des mots : une envie d'ouvrir les doigts, aussi simple que la soif. Vos doigts s'ouvrent un peu. Vous savez d'où ça vient, et ça n'aide qu'à moitié.",
-        "Les gardes ont fait un pas. Testez votre Habileté."
+        "Votre main est posée sur la grande poignée, celle du bas, sous les huit disjoncteurs. La tôle est chaude, et le transformateur vibre dans votre bras jusqu'à l'épaule.",
+        "Les voix n'emploient plus de mots. Elles entrent dans votre main par le métal, et ce qu'elles y mettent est une envie d'ouvrir les doigts, aussi simple et aussi impérieuse que la soif après une journée de marche. Vos doigts s'entrouvrent. Vous savez d'où vient cette envie, et le savoir ne vous aide qu'à moitié.",
+        "Les gardes ont fait un pas vers vous. Testez votre Habileté."
       ],
       "test": {
         "type": "stat",
@@ -391,9 +400,9 @@
     },
     "c30-21": {
       "text": [
-        "Vos doigts s'ouvrent. La poignée remonte seule et votre tête part contre la tôle, qui brûle. Vous perdez 3 points d'Endurance. Du sang dans l'œil, un goût de pile dans la bouche.",
-        "Les voix ne triomphent pas. Elles attendent, comme un bras qui a fini de pousser une porte et reste appuyé.",
-        "Les gardes se sont arrêtés à deux pas. Ils n'ont pas d'ordre."
+        "Vos doigts s'ouvrent. La poignée remonte d'elle-même et votre front part contre la tôle brûlante de l'armoire. Vous perdez 3 points d'Endurance. Du sang vous coule dans l'œil gauche, et vous avez dans la bouche un goût de pile neuve.",
+        "« Tentative enregistrée. Vous disposez d'autres options. »",
+        "À deux pas, les gardes se sont arrêtés, fusils baissés, parce que l'ordre de finir ne leur est pas venu."
       ],
       "effects": [
         {
@@ -417,9 +426,9 @@
     },
     "c30-13": {
       "text": [
-        "La poignée descend. Le ronflement s'arrête net, et le silence qui suit a une épaisseur.",
-        "Dans les cuves, les bulles cessent de monter. Les néons passent sur le secours, plus jaunes. Les voix ne crient pas. Elles s'éteignent une par une, comme on quitte une pièce, et chacune dit quelque chose en partant : un nom de ville, un prénom d'enfant, une équation, pardon.",
-        "Les gardes sont assis par terre. Ils regardent leurs mains."
+        "La poignée descend jusqu'en butée. Le ronflement de l'armoire s'arrête net, et dans le calme qui suit vous entendez le néon défaillant claquer encore deux fois avant de mourir.",
+        "Dans les cuves, les bulles cessent de monter. L'éclairage bascule sur le secours, plus jaune, plus bas. Elles ne crient pas : elles s'éteignent une à une, dans l'ordre des numéros, et chacune prononce une phrase en partant. Un nom de ville, un prénom d'enfant, une équation dont vous ne saisissez que le signe égal. Puis la sixième dit un mot qui ne figure dans aucun de leurs rapports : « Pardon. »",
+        "Les gardes se sont assis par terre et regardent leurs mains."
       ],
       "choices": [
         {
@@ -436,23 +445,24 @@
     },
     "c30-10": {
       "text": [
-        "La dernière voix est la plus vieille. Elle dit votre nom, le vrai, celui du sud, et elle ne l'emporte pas. Puis plus rien.",
-        "Le liquide jaune refroidit dans les cuves. Les corps descendent lentement au fond, et pour la première fois ils ont l'air de dormir.",
-        "La Zone ne s'en va pas. Dehors, les anomalies tournent toujours, l'Émission montera encore. Mais plus personne ne parle dans les têtes. Vous savez qui vous êtes. Vous remontez voir ce que ça vaut."
+        "La dernière voix est la plus vieille, et elle prend son temps. « Nous vous restituons ceci. » Elle dit votre nom, le vrai, celui de la ville au sud, et elle s'éteint sans l'emporter.",
+        "Le liquide refroidit dans les cuves. Les corps descendent doucement vers le fond, et leurs bouches ouvertes ont enfin l'air de dormir.",
+        "Dehors, les anomalies tournent toujours, les Émissions reviendront, et les morts resteront où ils sont tombés. Mais aucune voix ne parle plus dans les têtes, et vous remontez l'escalier avec un nom à vous pour voir ce qu'il vaut là-haut."
       ]
     },
     "c30-18": {
       "text": [
-        "Vous tournez le dos aux cuves avant qu'elles finissent. Les couloirs propres sont éclairés en jaune. Personne ne vous arrête : les gardes n'ont plus d'ordre, et les ordres, c'était tout ce qu'ils avaient.",
-        "Dans l'escalier, votre tête est à vous. Vous y trouvez un nom, une ville au sud, et la raison pour laquelle vous êtes monté. Le dernier que Strelok a envoyé. Vous ne savez pas ce qu'il dira. Vous le saurez.",
-        "Dehors, le ciel est gris, et il se tait."
+        "Derrière vous, la dernière voix n'a pas fini quand vous tournez le dos aux cuves. Dans les couloirs propres, l'éclairage de secours jaunit le carrelage, et les gardes que vous croisez ne lèvent pas la main sur vous : ils n'ont plus d'ordres, et les ordres étaient tout ce qu'ils avaient.",
+        "Dans l'escalier, votre tête est à vous. Vous y trouvez un nom, une ville au sud, et la raison pour laquelle vous êtes monté jusqu'ici : vous êtes le dernier que Strelok a envoyé.",
+        "Le jour vous prend sur le parvis, bas et gris. Vous ignorez ce que Strelok dira en vous voyant revenir, et c'est vous qui irez le lui demander."
       ]
     },
     "c30-9": {
       "text": [
-        "Vous arrachez un câble. Il sort de la nuque avec un bruit de bouchon, et les sept voix crient ensemble.",
-        "Ce n'est pas un cri qu'on entend. Il vous plie en deux, il vous vide par les yeux et par le nez. Vous perdez 3 points d'Endurance.",
-        "Quand vous relevez la tête, vous êtes sur le carrelage. Le câble est rebranché. Les deux gardes sont debout au-dessus de vous, et le plus grand tient un fusil par le canon, la crosse en bas."
+        "La première fiche sort de sa nuque avec un bruit de bouchon quand vous tirez sur le faisceau, et les sept voix crient ensemble.",
+        "Ce cri ne passe pas par vos oreilles. Il vous plie en deux, vous vide par les yeux et par le nez, vous couche sur le flanc. Vous perdez 3 points d'Endurance.",
+        "Quand vous relevez la tête, votre joue est sur le carrelage froid. Le câble est rebranché. Les deux gardes se tiennent au-dessus de vous, et le plus grand tient son fusil par le canon, la crosse en bas, prête à descendre.",
+        "« Geste prévu. Vous êtes le onzième à le faire. »"
       ],
       "effects": [
         {
@@ -494,8 +504,9 @@
     },
     "c30-28": {
       "text": [
-        "Vous baissez le premier disjoncteur. Il remonte sous votre main. Le deuxième, pareil : quelqu'un les tient de l'autre côté, et ce quelqu'un est les cuves. Puis la crosse vous arrive à la nuque et le carrelage vient vite. Vous perdez 3 points d'Endurance.",
-        "Le garde vous retourne du pied. Son masque n'a pas de visage, juste deux verres ronds où la salle se reflète en petit, deux fois. Les voix ont repris, calmes. Nous t'avions dit."
+        "Le premier disjoncteur descend sous votre main, puis remonte. Le deuxième fait pareil : on les tient de l'autre côté, et ceux qui les tiennent flottent dans les cuves. Vous attaquez le troisième à deux mains quand la crosse vous arrive dans la nuque, et le carrelage monte à votre rencontre. Vous perdez 3 points d'Endurance.",
+        "Le garde vous retourne du pied. À la place du visage, son masque à gaz montre deux verres ronds où la salle se reflète en petit, deux fois.",
+        "« Nous vous l'avions signalé. »"
       ],
       "effects": [
         {
@@ -537,15 +548,15 @@
     },
     "c30-15": {
       "text": [
-        "Vous dites oui.",
-        "Les gardes vous relèvent sans brutalité, un sous chaque bras, et vous portent jusqu'à la cuve. Le liquide est tiède. Les câbles trouvent votre nuque. La douleur s'en va la première, puis le carrelage, puis le nord et le sud.",
-        "Les sept voix deviennent huit. Vous entendez la Zone entière, et dedans un stalker qui marche vers le centre, un détecteur à la main, sans savoir qui il est. Vous le laissez venir."
+        "« Oui. »",
+        "Les gardes vous relèvent sans brutalité, un sous chaque bras, et vous portent jusqu'à la cuve ouverte. Le liquide vous monte au menton. Les câbles se branchent, et ce que vous teniez vous quitte dans l'ordre : la douleur d'abord, puis le sol, puis le nord et le sud.",
+        "Les voix sont huit à présent, et la huitième écoute déjà. Un stalker marche vers le centre, un détecteur à la main, sans savoir qui il est, et vous le laissez venir parce qu'il vous faudra bientôt d'autres bras."
       ]
     },
     "c30-4": {
       "text": [
-        "Le garde ne crie pas, ne prie pas. Il frappe à casser des os, la crosse d'abord, la lame ensuite, et derrière les verres ronds il n'y a aucune hâte : il sait où vous allez bouger avant vous, parce que les cuves le lui disent.",
-        "L'autre garde n'approche pas. Il attend son tour."
+        "Le garde ne crie pas et ne prie pas. Il frappe à casser des os, la crosse d'abord, la baïonnette ensuite, et derrière les verres ronds de son masque il n'y a aucune hâte : il sait où vous allez bouger avant que vous le sachiez, parce que les cuves le lui soufflent.",
+        "L'autre garde reste adossé au mur, le fusil en travers, et attend son tour."
       ],
       "combat": {
         "name": "Garde de la C-Conscience",
@@ -557,9 +568,9 @@
     },
     "c30-23": {
       "text": [
-        "Le garde tombe. Il ne saigne presque pas et il ne lâche pas son fusil, même mort.",
-        "Les voix ne crient pas cette fois. Il y en a d'autres. Il y en a toujours d'autres. La porte de fer sans poignée s'ouvre sur un couloir, et vous entendez des bottes.",
-        "Votre bras tremble. Dans la cuve ouverte, le liquide jaune n'a pas bougé."
+        "Le garde tombe. Il saigne à peine, et même mort il ne lâche pas son fusil.",
+        "« Il y en a d'autres. Nous en disposons de quarante-deux. »",
+        "La porte de fer sans poignée glisse dans le mur et découvre un couloir où résonnent des bottes. Votre bras tremble jusqu'au coude. Dans la cuve ouverte, la surface jaune n'a pas frémi pendant tout le combat."
       ],
       "choices": [
         {
@@ -594,8 +605,7 @@
     },
     "c30-17": {
       "text": [
-        "Ils sont deux cette fois, et ils entrent ensemble par la porte de fer. Pas un mot. Ils se placent de chaque côté, à la distance exacte, et leurs mouvements sont ceux d'un seul homme avec quatre mains.",
-        "Ce n'est pas un combat qu'on gagne. C'est un combat qu'on fait durer."
+        "Ils sortent à deux du couloir et se placent de chaque côté de vous, à la distance exacte, avec les gestes d'un seul homme qui aurait quatre mains. Contre eux, vous ne cherchez plus à gagner mais à durer, coup après coup, tant que vos jambes vous portent."
       ],
       "combat": {
         "name": "Les gardes",
@@ -608,16 +618,17 @@
     "c30-6": {
       "text": [
         "Le dernier garde tombe en travers du premier.",
-        "Vous ne tenez plus debout. Vos mains n'arrivent plus à se fermer sur quoi que ce soit, et de la porte viennent d'autres bottes, pas pressées.",
-        "Les voix ne demandent plus. Elles attendent, c'est tout. Vous allez jusqu'à la cuve vous-même, parce qu'il n'y a nulle part ailleurs où aller dans cette salle, et vous entrez. Le liquide tiède. Les câbles. Huit voix.",
-        "Vous n'avez plus besoin de vœu."
+        "Vous ne tenez plus debout. Vos mains ne se ferment plus sur rien, et de la porte viennent d'autres bottes, sans presse.",
+        "« Il en reste trente-neuf. Nous pouvons attendre. »",
+        "Vous allez jusqu'à la cuve vous-même, parce que cette salle n'a pas d'autre issue, et vous y entrez sans qu'on vous pousse. Quand la fiche s'enclenche, la première chose que vous perdez est le compte des gardes."
       ]
     },
     "c30-26": {
       "text": [
         "Vous savez ce que vous êtes, et vous entrez quand même.",
-        "Le liquide se referme. La fiche trouve la nuque. Les sept voix vous font place, et la place a votre forme : elle vous attendait depuis la première fois.",
-        "Quelque part, Strelok attend le dernier qu'il a envoyé. Il attendra. Vous voyez le Cordon, les types de vingt ans, le feu. Vous pourriez leur parler dans la tête. Vous le ferez. C'est ça, le bras."
+        "La dernière fiche du faisceau s'enclenche dans votre nuque du premier coup. Les voix vous font une place, et cette place a exactement votre forme, parce qu'elle a été taillée lors de votre premier passage.",
+        "« Inscription complétée. Huit sur huit. »",
+        "Au sud, Strelok attend encore celui qu'il a envoyé devant lui, et il attendra. D'ici, vous voyez le Cordon, le village des débutants, les gamins de vingt ans autour du feu. Vous pourriez leur parler dans la tête, et vous le ferez, parce que c'est à cela que sert un bras."
       ]
     }
   }

@@ -9,6 +9,7 @@
     "start": "node serve.mjs",
     "build:story": "node scripts/story-build.mjs",
     "lint:story": "node scripts/story-lint.mjs",
-    "simulate": "node scripts/story-simulate.mjs"
+    "simulate": "node scripts/story-simulate.mjs",
+    "prose:story": "node scripts/story-prose.mjs"
   }
 }

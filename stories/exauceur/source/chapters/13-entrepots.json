@@ -38,7 +38,7 @@
   ],
   "paragraphs": {
     "c13-1": {
-      "text": "La route du nord descend de Rostok entre deux rangées de pylônes. Devant vous, le village des Entrepôts militaires : des datchas de bois, des hangars de tôle, un château d'eau rouillé au-dessus des toits. Des coups de feu, au loin, espacés comme une horloge. Sur le bas-côté, un drapeau vert planté dans un tas de sable. Au bout de la route, un barrage. À gauche, les jardins et leurs clôtures couchées.",
+      "text": "La route du nord descend de Rostok entre deux rangées de pylônes dont les câbles pendent jusqu'à l'herbe. En bas, le village des Entrepôts militaires : des datchas de bois, trois hangars de tôle, et au-dessus des toits un château d'eau rouillé sur ses pieds de fer. Des coups de feu montent du côté des maisons, un toutes les dix secondes, sans jamais presser la cadence. Sur le bas-côté, un drapeau vert planté dans un tas de sable claque contre sa hampe. Au bout de la descente, des sacs empilés ferment le passage. À gauche, les jardins dévalent vers les premières datchas, entre des clôtures couchées.",
       "choices": [
         {
           "kind": "aller",
@@ -53,7 +53,7 @@
       ]
     },
     "c13-17": {
-      "text": "Deux hommes couchés derrière une mitrailleuse, un sac de sable, un drapeau vert percé. Celui qui parle a une cigarette éteinte au coin de la bouche. Il ne la rallume pas. D'où tu viens. Ce n'est pas une question. Derrière lui, dans la cour de l'ancienne ferme, on charge des caisses sur une civière qui a servi à autre chose.",
+      "text": "Au barrage, deux hommes sont couchés derrière une mitrailleuse PK, entre un mur de sacs de sable et un drapeau vert percé en trois endroits. Celui qui parle a une cigarette éteinte au coin de la bouche, et il ne la rallume pas. « D'où tu viens. » Ce n'est pas une question, et le canon de la PK reste sur votre ventre pendant que vous cherchez quoi répondre. Derrière lui, dans la cour de l'ancienne ferme, deux gars chargent des caisses de munitions sur une civière qui porte encore une tache en forme d'homme. Le sergent crache un brin de tabac dans le sable. « Je t'écoute. On a le temps, ici. Lui, là-haut, il en a encore plus que nous. »",
       "choices": [
         {
           "kind": "parler",
@@ -81,7 +81,7 @@
       ]
     },
     "c13-29": {
-      "text": "Il vous reconnaît avant que vous ayez fini. La Vallée. Il hoche la tête, fouille dans une caisse, vous lance deux chargeurs pleins et une poignée de cartouches en vrac. Avec ça, le sort hésite moins. Vous regagnez 1 point de Chance. Il montre le château d'eau du menton. Monolithe, là-haut, depuis trois jours. Il tire sur tout ce qui traverse la place. Et il y a un corps dans la datcha au toit crevé. Pas un des nôtres.",
+      "text": "Il vous reconnaît avant que vous ayez fini la phrase. « La Vallée. C'est toi qui as donné un coup de main à nos gars, là-bas. » Il hoche la tête, fouille dans une caisse ouverte à ses pieds et vous lance deux chargeurs pleins, puis une poignée de cartouches en vrac que vous rattrapez contre votre poitrine. Avec ça, le sort hésite moins. Vous regagnez 1 point de Chance. Il montre le château d'eau du menton, sans se redresser d'un centimètre. « Monolithe, là-haut, depuis trois jours. Il tire sur tout ce qui traverse la place, et il ne rate pas souvent. » La cigarette éteinte passe d'un coin de la bouche à l'autre. « Et il y a un corps dans la datcha au toit crevé. Pas un des nôtres. Si tu veux savoir qui, c'est toi qui iras voir. »",
       "effects": [
         {
           "type": "stat",
@@ -98,7 +98,7 @@
       ]
     },
     "c13-8": {
-      "text": "Le mot Devoir fait lever la mitrailleuse. On vous met à genoux dans la boue, le canon sur la nuque, le temps que quelqu'un aille chercher quelqu'un. Une heure. Votre détecteur, posé par terre, crépite tout seul. Vous prenez 2 rads. Puis le sergent revient, vous rend votre sac vidé puis rempli, et vous pousse vers la place. La base, non. Le village, si tu veux. Le Monolithe est sur le château d'eau.",
+      "text": "Le mot Devoir fait lever la mitrailleuse. On vous met à genoux dans la boue, le canon sur la nuque, le temps que quelqu'un aille chercher quelqu'un d'autre, et cela prend une heure que vous passez à compter les claquements du drapeau. Votre détecteur, posé devant vos genoux, crépite tout seul dans la flaque. Vous prenez 2 rads. Puis le sergent revient, vous rend votre sac vidé puis rempli n'importe comment, et vous relève par le col. « La base, non. Le village, si tu veux, c'est pas à nous. » Il remet la cigarette éteinte à sa place, au coin gauche. « Le Monolithe est sur le château d'eau. Si tu bosses pour le Devoir, tu peux aller lui demander de descendre. »",
       "effects": [
         {
           "type": "stat",
@@ -115,7 +115,7 @@
       ]
     },
     "c13-22": {
-      "text": "Le Bar. Il hausse une épaule, la cigarette bouge avec. Tout le monde vient du Bar. Il vous laisse passer sans vous fouiller, ce qui veut dire qu'il a mieux à faire. Reste à couvert sur la place. Il y en a un sur le château d'eau qui ne rate pas. Derrière lui, un homme sans jambes fume sur une civière et regarde le ciel.",
+      "text": "« Le Bar. » Il hausse une épaule, et la cigarette bouge avec. « Tout le monde vient du Bar. » Il vous laisse passer sans vous fouiller, ce qui veut dire qu'il a mieux à faire que de compter vos chargeurs. « Reste à couvert sur la place. Celui du château d'eau tire sur tout ce qui traverse, et il a trois jours de patience d'avance sur toi. » Derrière lui, un homme sans jambes fume sur une civière calée contre les sacs et regarde le ciel bas, d'où rien ne tombe encore. Il ne vous regarde pas passer.",
       "choices": [
         {
           "kind": "aller",
@@ -125,7 +125,7 @@
       ]
     },
     "c13-34": {
-      "text": "Les jardins sont des carrés d'orties entre des clôtures couchées. Des pommiers tordus, des pommes noires qui ne tombent pas. Le compteur grimpe dès le premier pas. Vous prenez 2 rads. Dans l'herbe, un homme de la Liberté est allongé sur le dos, les mains sur le ventre, comme s'il dormait. Vous passez entre deux datchas et la place s'ouvre devant vous.",
+      "text": "Les jardins sont des carrés d'orties entre des clôtures couchées, et les pommiers tordus y portent des pommes noires qui ne tombent pas. Dès le premier pas dans l'herbe, l'aiguille du dosimètre se couche vers la droite. Vous prenez 2 rads. Près d'un puits, un homme de la Liberté est allongé sur le dos, les mains croisées sur le ventre, son brassard vert remonté jusqu'au coude. Vous enjambez une brouette sans roue, passez entre deux datchas, et la place s'ouvre devant vous.",
       "effects": [
         {
           "type": "stat",
@@ -142,7 +142,7 @@
       ]
     },
     "c13-5": {
-      "text": "La place du village. Un poteau électrique au milieu, un bus sans roues, des datchas tout autour, volets clos ou arrachés. À l'ouest, le château d'eau sur ses pieds de fer. On voit le reflet d'une lunette tout en haut. À l'est, la route s'enfonce entre des panneaux à tête de mort. Au nord, la route de Rostok. Une datcha a le toit crevé, comme si quelque chose était tombé dessus.",
+      "text": "La place du village tient entre quatre datchas aux volets clos ou arrachés, avec au milieu un poteau électrique penché et un bus LAZ sans roues posé sur des parpaings. À l'ouest se dresse la cuve sur ses pieds de fer, et tout en haut un reflet de lunette suit ce qui bouge. À l'est, la route s'enfonce entre des panneaux de tôle à tête de mort, et celle de Rostok remonte au nord. L'une des datchas a le toit crevé, les tuiles en éventail dans l'herbe autour d'elle, les chevrons à nu sous la pluie.",
       "image": {
         "src": "images/c13-5.webp",
         "alt": "La place du village des Entrepôts militaires, entre les datchas, dominée par le château d'eau.",
@@ -233,7 +233,7 @@
       ]
     },
     "c13-25": {
-      "text": "Vous buvez l'Anti-rad assis dans le bus sans roues, à l'abri de la lunette. Goût de craie, puis le compteur qui ralentit, puis presque rien. Vous perdez 5 rads. Par la vitre cassée, le château d'eau n'a pas bougé. Le reflet de la lunette non plus.",
+      "text": "Le bus sans roues vous met à l'abri de la lunette, et c'est assis sur un siège dont la mousse sort par les fentes que vous buvez l'Anti-rad. Ça a un goût de craie, et les clics du compteur s'espacent jusqu'à n'en lâcher qu'un de loin en loin. Vous perdez 5 rads. Par la vitre cassée, la cuve d'eau n'a pas bougé, ni le reflet tout en haut.",
       "choices": [
         {
           "kind": "aller",
@@ -243,7 +243,7 @@
       ]
     },
     "c13-39": {
-      "text": "Vous videz la Trousse de soins sur un siège du bus sans roues : compresse, bande, la seringue dans la cuisse. Le corps se tait un moment. Vous regagnez 6 points d'Endurance. La boîte vide reste sur le siège, à côté d'un journal de 1986.",
+      "text": "Sur un siège du bus sans roues, vous videz la Trousse de soins : une compresse, une bande, et la seringue plantée dans la cuisse à travers le pantalon. La douleur recule d'un pas et reste là, à attendre son tour. Vous regagnez 6 points d'Endurance. La boîte vide reste sur le siège, à côté d'un numéro de la Pravda de 1986.",
       "choices": [
         {
           "kind": "aller",
@@ -253,7 +253,7 @@
       ]
     },
     "c13-12": {
-      "text": "Une feuille agrafée au poteau, détrempée. Un visage au crayon, le vôtre, en mieux. Dessous, un chiffre, et le nom de Borov. Mort de préférence. Vous n'avez pas le temps de l'arracher. Deux hommes sortent du bus sans roues, un fusil de chasse et une barre de fer. Ils attendaient que vous vous arrêtiez pour lire.",
+      "text": "Une feuille est agrafée au poteau, détrempée, gondolée par la pluie. Le visage au crayon est le vôtre, en mieux. Dessous, un chiffre à quatre zéros et le nom de Borov en lettres bâton, tracé par un homme qui lui doit encore ça, puis deux mots d'une autre main : mort de préférence. Vous n'avez pas le temps de l'arracher : deux hommes sortent du bus sans roues, l'un avec un fusil de chasse scié, l'autre avec une barre à mine, et ils attendaient que vous vous arrêtiez pour lire. « Ils paient mieux pour la tête que pour le reste », dit celui au fusil, et il épaule.",
       "combat": {
         "name": "Deux bandits",
         "habilete": 6,
@@ -266,7 +266,7 @@
       }
     },
     "c13-27": {
-      "text": "Les deux hommes restent sur la place. Le sniper ne tire pas sur les morts. Dans la poche du premier, 150 roubles pliés dans un papier gras ; dans celle du second, une photo de femme que vous laissez. Vous arrachez l'affiche et la pliez dans votre poche, sans savoir pourquoi.",
+      "text": "Les deux hommes restent sur la place, et le sniper ne gaspille pas une balle sur des morts. Dans la poche du premier, 150 roubles pliés dans un papier gras qui a enveloppé une saucisse ; dans celle du second, une photo de femme devant un immeuble, que vous remettez où elle était. Vous arrachez l'affiche, la pliez en quatre et la glissez dans votre poche, avec votre propre visage dedans.",
       "effects": [
         {
           "type": "stat",
@@ -283,7 +283,7 @@
       ]
     },
     "c13-19": {
-      "text": "La route de Rostok remonte entre les pylônes. Le barrage de la Liberté vous laisse sortir sans un mot ; sortir n'intéresse personne. Derrière vous, un coup de feu, un seul, depuis le village. Vous ne vous retournez pas. Devant, la cheminée de l'usine de Rostok, et sous elle, le Bar.",
+      "text": "La route de Rostok remonte entre les pylônes, et au barrage le sergent lève une main sans se retourner, pendant que la PK reste braquée sur la descente. Derrière vous, un coup de feu, un seul, depuis le village, et devant, la cheminée de l'usine de Rostok, avec le Bar dessous.",
       "choices": [
         {
           "kind": "aller",
@@ -293,7 +293,7 @@
       ]
     },
     "c13-3": {
-      "text": "Le château d'eau est à cent mètres, de l'autre côté d'un terrain nu. Une échelle de fer monte le long de la cuve. Derrière un hangar de tôle, vous reprenez votre souffle. Une balle a claqué dans le gravier à un pas de vous, pour dire bonjour. Le toit du hangar touche presque la passerelle de la cuve. Sur le terrain, trois corps de la Liberté, et un chien qui en mange un.",
+      "text": "La cuve est à cent mètres, de l'autre côté d'un terrain nu où l'herbe a été tondue par les balles. Une échelle de fer monte le long de la tour jusqu'à une passerelle à claire-voie. Derrière un hangar de tôle ondulée, vous reprenez votre souffle, parce qu'une balle vient de claquer dans le gravier à un pas de vous, pour dire bonjour. Le toit du hangar, en pente douce, touche presque la passerelle. Sur le terrain, trois corps de la Liberté sont couchés dans l'herbe courte, et un chien aveugle mange l'un d'eux, le museau enfoui dans le ventre, sans relever la tête aux coups de feu.",
       "choices": [
         {
           "kind": "aller",
@@ -317,7 +317,7 @@
       ]
     },
     "c13-31": {
-      "text": "Vous courez. Les trois corps passent sous vos pieds, le chien s'écarte. L'échelle est froide et chaque barreau sonne. Là-haut, il a cessé de viser la place : il vise l'échelle. Il tire sans se presser, et ce qu'il touche ne se relève pas. Vous montez quand même.",
+      "text": "Le terrain fait cent mètres et vous le traversez courbé en deux. Les trois corps passent sous vos pieds, le chien s'écarte en traînant sa part. L'échelle est froide, chaque barreau sonne sous vos semelles, et là-haut il a cessé de viser la place pour viser l'échelle, parce qu'il sait depuis trois jours qu'on finit toujours par la prendre. Il laisse passer de longues secondes entre deux balles. Un barreau explose sous votre main droite, et vous changez de prise pour continuer à monter, la joue contre le fer.",
       "combat": {
         "name": "Sniper du Monolithe",
         "habilete": 8,
@@ -330,7 +330,7 @@
       }
     },
     "c13-14": {
-      "text": "Le hangar a une gouttière qui tient. Vous grimpez, la tôle ploie sous vos genoux et chaque pas est un bruit. Le toit monte en pente douce jusqu'à la passerelle de la cuve, deux mètres de vide entre les deux. En bas, le chien lève la tête et vous regarde. Le sniper, lui, regarde la place. Testez votre Habileté.",
+      "text": "Le hangar a une gouttière qui tient encore à deux crochets. Vous grimpez, la tôle ploie sous vos genoux, et chaque pas fait un bruit de tambour qu'il faut bien qu'il entende. Le toit monte jusqu'à la passerelle de la cuve, avec deux mètres de vide entre les deux et dix mètres de gravier dessous. En bas, le chien lève la tête et vous regarde de ses paupières cousues. Le sniper, lui, regarde toujours la place. Testez votre Habileté.",
       "test": {
         "type": "stat",
         "stat": "habilete",
@@ -340,7 +340,7 @@
       }
     },
     "c13-24": {
-      "text": "Réussi. Vous retombez sur la passerelle sans un son. Il est couché derrière sa lunette, le masque relevé sur le front, une bouteille d'eau à portée de main. Il parle tout bas au Monolithe. Le Couteau fait le reste. Il ne se retourne même pas.",
+      "text": "Réussi. Vous retombez sur la passerelle sans qu'un boulon de la grille en vibre. Il est couché derrière sa lunette, le masque relevé sur le front, une bouteille d'eau Morchinska à portée de main, et il parle tout bas. « Il nous a donné des yeux pour ne plus voir. Nous ne voyons plus. Nous visons, et nous ne voyons plus. » Le Couteau fait le reste, et la prière s'arrête au milieu d'un mot, sans qu'il se soit retourné.",
       "choices": [
         {
           "kind": "agir",
@@ -350,7 +350,7 @@
       ]
     },
     "c13-9": {
-      "text": "Raté. La tôle cède sous votre pied, vous glissez jusqu'au bord et vous rattrapez d'une main à la gouttière, qui lâche. Vous tombez sur le gravier. Vous perdez 3 points d'Endurance. Là-haut, il a entendu. Il se retourne et tire sur l'échelle, la seule qui reste. Ce qu'il touche ne se relève pas.",
+      "text": "Raté. La tôle cède sous votre pied gauche, vous glissez jusqu'au bord et vous rattrapez d'une main à la gouttière, qui tient une seconde, puis lâche ses deux crochets. Vous tombez sur le gravier, l'épaule la première. Vous perdez 3 points d'Endurance. Là-haut, il a entendu le tambour. Il se retourne, change d'appui et vise l'échelle, la seule voie qui vous reste, pendant que le chien recule vers les corps sans vous lâcher des yeux.",
       "effects": [
         {
           "type": "stat",
@@ -370,7 +370,7 @@
       }
     },
     "c13-37": {
-      "text": "Vous videz un chargeur de l'AK-74 sur la plateforme. La tôle de la cuve chante, l'eau pisse par vingt trous. Il se plaque, il perd sa ligne. Avec ça, on tire avant eux. Vous traversez le terrain pendant qu'il cherche sa lunette et montez l'échelle en tirant d'une main. Il vous attend en haut, à genoux, la joue contre la crosse.",
+      "text": "Vous videz un chargeur de l'AK-74 sur la plateforme. La tôle de la cuve chante, l'eau pisse par vingt trous en rideaux fins, et il se plaque, il perd sa ligne. Vous traversez le terrain pendant qu'il cherche sa lunette dans la flaque, et vous montez l'échelle en tirant d'une main, trois balles à la fois, sans viser. Il vous attend en haut, à genoux dans l'eau, la joue contre la crosse, et sous le masque il a recommencé à prier.",
       "combat": {
         "name": "Sniper du Monolithe",
         "habilete": 7,
@@ -383,7 +383,7 @@
       }
     },
     "c13-2": {
-      "text": "Il est mort les yeux ouverts, et ils sont blancs. Le fusil est encore chaud : un Vintorez, lunette, silencieux, crosse entourée de ruban. Le Vintorez ne fait pas de bruit, et ce qu'il touche ne se relève pas. D'ici, on voit tout le village, et plus loin, au nord, une colonne grise qui descend des collines en priant. Ils seront là avant la nuit.",
+      "text": "Il est mort les yeux ouverts, et ils sont blancs jusqu'au bord. Le fusil est encore chaud : un Vintorez, lunette PSO, silencieux intégré, crosse entourée de ruban noir. Le Vintorez ne fait pas de bruit, et ce qu'il touche reste couché. D'ici, on voit tout le village, le bus, la datcha au toit crevé, les deux gars derrière leurs sacs au barrage, et plus loin au nord, sur la route qui sort des collines, une colonne grise qui descend en ligne, au pas, et dont le vent vous apporte par bouffées un chant tenu sur une seule note. Ils seront là avant la nuit.",
       "effects": [
         {
           "type": "item",
@@ -400,7 +400,7 @@
       ]
     },
     "c13-21": {
-      "text": "La datcha au toit crevé a un jardin de planches et de ronces. Entre le portail et la porte, l'air tremble au-dessus de l'allée comme au-dessus d'un capot chaud : un « Trampoline ». Vous lancez un boulon. Il monte, ne redescend pas. Derrière la maison, une fenêtre sans vitre, à hauteur d'épaule, avec des dents de verre.",
+      "text": "La datcha au toit crevé a un jardin de planches et de ronces, fermé par un portail de fer forgé qui ne tient plus qu'à un gond. Entre le portail et la porte, au-dessus de l'allée, des feuilles mortes tournent sur place à un mètre du sol, sans un souffle de vent : un « Trampoline ». Vous lancez un boulon, qui monte à hauteur d'homme et reste suspendu là, à tourner sur lui-même. Derrière la maison, une fenêtre sans vitre à hauteur d'épaule montre des dents de verre dans son cadre.",
       "choices": [
         {
           "kind": "aller",
@@ -415,7 +415,7 @@
       ]
     },
     "c13-33": {
-      "text": "Vous lancez un boulon, puis un autre. Le premier tombe, le second ne tombe pas. L'anomalie se déplace, lentement, comme une bête qui change de flanc dans son sommeil. Il faut passer entre deux de ses respirations, et personne ne sait combien elles durent. Tentez votre Chance.",
+      "text": "Le deuxième boulon tombe à plat sur les planches, à deux pas du portail. Le troisième, lancé un mètre plus loin, part vers le toit. L'anomalie se déplace, lentement, comme une bête qui change de flanc dans son sommeil, et il faut passer entre deux de ses respirations sans savoir combien elles durent. Tentez votre Chance.",
       "test": {
         "type": "luck",
         "success": "c13-11",
@@ -423,7 +423,7 @@
       }
     },
     "c13-11": {
-      "text": "Réussi. Vous passez au moment où l'allée redevient une allée. Derrière vous, le dernier boulon part vers le ciel et ne revient pas. La porte de la datcha est ouverte. Ça sent le bois mouillé et autre chose, de plus ancien.",
+      "text": "Réussi. Vous passez au moment où l'allée redevient une allée, et derrière vous le dernier boulon part vers le ciel gris et n'en revient pas. La porte de la datcha bâille sur un couloir dont l'humidité a gonflé le plancher. Ça sent le bois mouillé, et dessous, plus ancien, quelqu'un.",
       "choices": [
         {
           "kind": "aller",
@@ -433,7 +433,7 @@
       ]
     },
     "c13-26": {
-      "text": "Raté. Le sol vous lâche et le ciel vient d'en bas. Vous retombez sur la clôture, puis sur le dos, le souffle parti. Vous perdez 3 points d'Endurance. Vous rampez le reste de l'allée. La porte est ouverte. Ça sent le bois mouillé et autre chose, de plus ancien.",
+      "text": "Raté. Le sol vous lâche et le ciel vient d'en bas. Vous retombez sur la clôture, puis sur le dos entre les ronces, le souffle parti. Vous perdez 3 points d'Endurance. Le reste de l'allée, vous le faites à plat ventre, une planche après l'autre, et vous vous relevez sur le seuil en vous tenant au chambranle, des épines plein les cheveux. Le couloir, devant vous, est froid comme une cave et sent la même chose qu'elle, avec en plus une odeur que vous connaissez.",
       "effects": [
         {
           "type": "stat",
@@ -450,7 +450,7 @@
       ]
     },
     "c13-16": {
-      "text": "Vous passez par la fenêtre. Le verre vous ouvre la paume, proprement. Vous perdez 1 point d'Endurance. De l'autre côté, une cuisine : une table, une tasse, une radio ouverte en deux. Au plafond, le trou par lequel la pluie entre depuis des mois. Vous sucez votre main et poussez la porte de la pièce d'à côté.",
+      "text": "La fenêtre se laisse enjamber, mais le verre vous ouvre la paume au passage, proprement, de la base du pouce au poignet. Vous perdez 1 point d'Endurance. De l'autre côté, une cuisine : une table en formica, une tasse à fleurs, une radio VEF ouverte en deux. Au plafond, le trou par lequel la pluie entre depuis des mois a fait pourrir le plancher en cercle. Vous sucez votre main et poussez la porte de la pièce d'à côté.",
       "effects": [
         {
           "type": "stat",
@@ -472,7 +472,7 @@
         "alt": "Le corps de Fantôme assis contre le mur d'une datcha au toit crevé, un PDA dans la main",
         "prompt": "L'intérieur d'une datcha de bois au toit crevé, la lumière grise tombant par le trou sur un homme mort assis contre le mur, long manteau sur une combinaison, capuche baissée, un trou net dans la poitrine, la main droite tenant encore un PDA contre sa cuisse. Des planches, des feuilles mortes et des gravats au sol ; sur la planche d'en face, une entaille gravée, illisible. Cadrage serré, depuis la porte."
       },
-      "text": "Il est assis contre le mur, sous le trou du toit, un long manteau sur une combinaison, la capuche baissée. Un trou net dans la poitrine, pas de sortie. La pluie l'a lavé et séché cent fois. Sa main droite tient encore un PDA contre sa cuisse, comme on tient un livre qu'on a fini. Sur la planche d'en face, quelqu'un a gravé un nom : Fantôme.",
+      "text": "Il est assis contre le mur, sous le trou du toit, un long manteau sur une combinaison de stalker, la capuche baissée sur les épaules. Un trou net dans la poitrine, pas de sortie dans le dos. La pluie l'a lavé et séché cent fois, et la peau a pris la couleur des planches. Sa main droite tient encore un PDA contre sa cuisse, l'écran vers le sol, à la façon dont on garde un livre qu'on a fini. Sur la planche d'en face, à hauteur de ses yeux, un nom gravé au couteau : Fantôme.",
       "choices": [
         {
           "kind": "agir",
@@ -487,7 +487,7 @@
       ]
     },
     "c13-30": {
-      "text": "Ses doigts cèdent sans résister. Le PDA de Fantôme s'allume au premier contact, l'écran rayé, la batterie presque pleine. Dans sa besace, une Grenade F1 roulée dans une chaussette, et rien d'autre à manger. Vous prenez les deux. Il ne proteste pas.",
+      "text": "Ses doigts cèdent sans résister. Le PDA de Fantôme s'allume au premier contact, l'écran rayé en diagonale, la batterie presque pleine, et la date qu'il affiche a six semaines. Dans sa besace, une Grenade F1 roulée dans une chaussette de laine, et plus rien à manger. Vous prenez les deux. Il garde la même pose, la tête un peu penchée, et vous laisse faire.",
       "effects": [
         {
           "type": "item",
@@ -514,7 +514,7 @@
       ]
     },
     "c13-13": {
-      "text": "Un seul message, jamais envoyé. Strelok. Ils m'ont eu aux Entrepôts, je ne monterai pas. Le Décodeur est à l'hôtel Polissya, chambre 26, derrière le radiateur. Tu sais ce qu'il ouvre. Ne souhaite rien. Une lettre en guise de signature. Vous refermez le PDA. Dehors, la pluie reprend sur ce qui reste du toit.",
+      "text": "Un seul message, jamais envoyé. « 02.10. Strelok. Ils m'ont eu aux Entrepots, la jambe et le poumon, je ne monterai pas. Le Decodeur est au Polissya, chambre 26, dans la grille d'aeration. Tu sais ce qu'il ouvre. Ne souhaite rien. F. » Vous relisez la dernière ligne deux fois, sans qu'elle en dise davantage, puis vous refermez le PDA et le rangez contre votre poitrine. Dehors, la pluie reprend sur ce qui reste du toit, et tombe sur lui par le trou.",
       "choices": [
         {
           "kind": "aller",
@@ -524,7 +524,7 @@
       ]
     },
     "c13-4": {
-      "text": "La route de l'est sort du village entre deux hangars. Au dernier, la Liberté a dressé des sacs et une mitrailleuse qui regarde le nord. Ils sont quatre. Quand vous arrivez, la colonne grise sort des arbres : des hommes en combinaison, masque baissé, qui avancent en ligne et chantent. La mitrailleuse part. Deux d'entre eux tombent, les autres ne ralentissent pas. L'un vous a vu.",
+      "text": "La route de l'est sort du village entre deux hangars. Devant le dernier, la Liberté a dressé des sacs et une mitrailleuse qui regarde le nord, et ils sont quatre derrière, dont un gamin qui n'a pas vingt ans. Quand vous arrivez à leur hauteur, la colonne grise sort des arbres : des hommes en combinaison, masque baissé, qui avancent en ligne sans se baisser et chantent d'une seule voix. « Nous venons parce qu'il appelle. Il appelle parce que nous venons. » La mitrailleuse part. Deux d'entre eux tombent, les autres ne ralentissent pas, et le chant ne perd pas une syllabe. L'un d'eux a tourné la tête vers vous.",
       "choices": [
         {
           "kind": "agir",
@@ -555,7 +555,7 @@
       ]
     },
     "c13-20": {
-      "text": "Il vient vers vous en priant, le fusil à la hanche, sans se baisser. Les balles de la Liberté le frôlent et il ne cligne pas des yeux. Sous le masque, la voix ne s'arrête pas, régulière, comme une litanie apprise par cœur. Ils ne négocient pas. Ils prient avant de tirer. Il tire.",
+      "text": "Il vient vers vous en priant, le fusil à la hanche, sans plier les genoux ni allonger le pas, et les balles de la Liberté passent à côté de lui sans qu'il cligne des yeux. Sous le masque, la voix ne s'arrête pas. « Il voit, et nous marchons. Nous marchons, et il voit. » À dix pas, il épaule sans cesser de prier.",
       "combat": {
         "name": "Soldat du Monolithe",
         "habilete": 7,
@@ -568,7 +568,7 @@
       }
     },
     "c13-35": {
-      "text": "Vous dégoupillez, comptez deux, lancez. La Grenade F1 roule entre les jambes du premier et le chant s'arrête net. Quand la fumée se couche, il reste trois corps en travers de la route et un masque qui a roulé jusqu'à vos pieds. La mitrailleuse achève le reste. Vous n'avez plus de grenade.",
+      "text": "Vous dégoupillez, comptez deux, lancez. La Grenade F1 roule entre les jambes du premier et le chant s'arrête net, au milieu d'un mot. Quand la fumée se couche, il reste trois corps en travers de la route et un masque qui a roulé jusqu'à vos pieds, la visière vers vous. La mitrailleuse achève ceux qui marchent encore. Vous n'avez plus de grenade, et le gamin, derrière ses sacs, vous fait un signe de tête qui vaut un merci.",
       "choices": [
         {
           "kind": "aller",
@@ -578,7 +578,7 @@
       ]
     },
     "c13-10": {
-      "text": "Le silence revient par morceaux. Les hommes de la Liberté rechargent sans parler. Sur la route, les morts du Monolithe ont les yeux ouverts et blancs, et des visages de gens ordinaires. L'un porte une alliance. Plus loin, la route continue vers l'est entre des panneaux rouges à tête de mort, jusqu'aux premiers pins, qui sont rouges aussi.",
+      "text": "Le bruit retombe par morceaux. Derrière les sacs, on recharge, et le gamin répète « ils reviennent, ils reviennent toujours » sans s'adresser à qui que ce soit. Sur la route, les morts du Monolithe ont les yeux ouverts et blancs, et des visages de gens ordinaires : un bouc, une coupure de rasage, une alliance à la main gauche de celui qui a roulé dans le fossé. Plus loin, la route continue vers l'est entre des panneaux rouges à tête de mort, jusqu'aux premiers pins, qui sont rouges aussi.",
       "choices": [
         {
           "kind": "aller",
@@ -588,7 +588,7 @@
       ]
     },
     "c13-28": {
-      "text": "Vous rampez dans le fossé, le visage dans une eau qui n'a plus de couleur. Au-dessus, les balles passent dans les deux sens et le chant ne s'arrête pas. Le compteur grimpe. Vous prenez 3 rads. Cent mètres plus loin, le fossé rejoint la route de l'est, derrière les panneaux rouges. Derrière vous, la mitrailleuse se tait, et vous ne saurez jamais pourquoi.",
+      "text": "Le fossé longe la route, assez profond pour un homme à plat ventre. Vous y rampez, le visage dans une eau qui n'a plus de couleur, et les balles passent au-dessus dans les deux sens pendant que le chant continue, régulier, à hauteur de route. Contre votre hanche, le compteur s'affole. Vous prenez 3 rads. Cent mètres plus loin, le fossé rejoint le bitume derrière les panneaux rouges, et vous vous relevez avec la vase jusqu'aux coudes. Derrière vous, la mitrailleuse cesse de tirer, et vous ne retournez pas voir pourquoi.",
       "effects": [
         {
           "type": "stat",
@@ -626,7 +626,7 @@
       ]
     },
     "c13-38": {
-      "text": "Vous buvez l'Anti-rad assis dans le fossé, le dos aux panneaux rouges. Le goût de craie, puis le compteur qui ralentit, puis presque rien. Vous perdez 5 rads. Vous jetez le flacon dans l'eau sans couleur, où il flotte un moment, puis non.",
+      "text": "Le dos aux panneaux rouges, les bottes dans l'eau du fossé, vous débouchez l'Anti-rad avec les dents et le videz d'un trait. Il brûle un peu la gorge en descendant, et le compteur se calme dans votre poche. Vous perdez 5 rads. Le flacon vide flotte un moment sur l'eau sans couleur, puis se couche et coule.",
       "choices": [
         {
           "kind": "aller",
@@ -641,7 +641,7 @@
         "alt": "La route de l'est barrée de chevaux de frise et de panneaux à tête de mort devant le champ de mines",
         "prompt": "Une route de campagne barrée par des chevaux de frise rouillés et des panneaux de tôle à tête de mort et éclair, rongés de rouille. Au-delà, un champ d'herbe haute où des traces de pas font un chemin interrompu, un soulier abandonné seul au milieu ; au fond, la lisière de pins aux aiguilles rouges sous un ciel bas. La silhouette d'un stalker de dos, arrêté devant les panneaux, un boulon à la main."
       },
-      "text": "La route de l'est est barrée de chevaux de frise et de panneaux : un crâne, un éclair, un mot en russe que la rouille a mangé. Au-delà, un champ d'herbe haute jusqu'aux pins rouges, et dedans, des traces, de pas et d'autre chose. Un soulier au milieu, seul. Les mines ne crépitent pas ; le détecteur ne sert à rien ici.",
+      "text": "La route de l'est est barrée de chevaux de frise et de panneaux de tôle : un crâne, un éclair, un mot en russe que la rouille a mangé jusqu'à la moitié. Au-delà s'étend un champ d'herbe haute jusqu'aux pins rouges, traversé de traces de pas qui vont droit, s'interrompent, reprennent. Au milieu, un soulier est resté seul, la semelle vers le ciel. Le détecteur ne sent pas les mines ; ici, il n'est qu'un poids dans la poche.",
       "choices": [
         {
           "kind": "aller",
@@ -665,7 +665,7 @@
       ]
     },
     "c13-23": {
-      "text": "Sur la Carte des champs de mines, l'officier d'Agroprom a tracé un couloir au crayon rouge, deux mètres de large, en zigzag, avec des repères : la borne, le pommier mort, le soulier. Vous suivez le crayon pas à pas. Le soulier est bien là. De l'autre côté, la route reprend et les pins commencent. Vous ne vous retournez pas sur l'herbe.",
+      "text": "Sur la Carte des champs de mines, l'officier d'Agroprom a tracé un couloir au crayon rouge, deux mètres de large, en zigzag, avec trois repères notés d'une écriture serrée : la borne kilométrique, le pommier mort, le soulier. Vous suivez le crayon pas à pas, en posant chaque pied là où l'herbe est déjà couchée. Le soulier est bien là, à l'endroit prévu. De l'autre côté, le bitume reprend et les pins commencent, et vous ne vous retournez pas sur l'herbe qui s'est refermée derrière vous.",
       "choices": [
         {
           "kind": "aller",
@@ -675,7 +675,7 @@
       ]
     },
     "c13-15": {
-      "text": "Vous mettez vos pieds dans les traces. Elles vont tout droit, puis s'arrêtent, puis reprennent plus loin, sans qu'on sache pourquoi. Entre les deux, l'herbe est intacte, haute, et elle bouge à peine dans le vent. Vous regardez le soulier et vous choisissez un pas. Tentez votre Chance.",
+      "text": "Les traces sont plus courtes que vos pas, et vous raccourcissez les vôtres pour poser chaque pied dedans. Elles vont tout droit, puis s'arrêtent, puis reprennent trois mètres plus loin, et entre les deux l'herbe est intacte, haute, et bouge à peine dans le vent. Vous regardez le soulier, puis la lisière, puis le soulier encore, et vous choisissez un pas. Tentez votre Chance.",
       "test": {
         "type": "luck",
         "success": "c13-32",
@@ -683,7 +683,7 @@
       }
     },
     "c13-32": {
-      "text": "Réussi. L'herbe ne dit rien. Vous traversez les vingt derniers mètres sans respirer et touchez le bitume de l'autre côté comme on touche un mur après une course. Derrière vous, le soulier est toujours au milieu du champ. Devant, les pins rouges.",
+      "text": "Réussi. L'herbe ne dit rien sous vos semelles. Vous traversez les vingt derniers mètres sans respirer et touchez le bitume de l'autre côté des deux mains, à plat, avant de vous relever. Derrière vous, le soulier attend toujours au milieu du champ, à l'envers. Devant, la route s'enfonce sous les premiers pins rouges.",
       "choices": [
         {
           "kind": "aller",
@@ -693,7 +693,7 @@
       ]
     },
     "c13-18": {
-      "text": "Raté. Un clic sous le pied, puis la terre monte. Vous vous réveillez trois mètres plus loin, le visage dans l'herbe, un sifflement dans la tête, la jambe droite mouillée. Vous perdez 3 points d'Endurance. Vous rampez le reste du champ sur les coudes, dans votre propre trace. Le bitume, enfin. Les pins rouges.",
+      "text": "Raté. Un clic sous le pied, puis la terre monte. Vous vous réveillez trois mètres plus loin, le visage dans l'herbe, un sifflement dans la tête, la jambe droite mouillée du genou à la botte. Vous perdez 3 points d'Endurance. Vous rampez le reste du champ sur les coudes, dans votre propre trace, en comptant chaque mètre à voix haute pour ne pas écouter la jambe. Quand vos paumes touchent enfin le bitume, les pins rouges commencent à dix pas.",
       "effects": [
         {
           "type": "stat",
@@ -731,7 +731,7 @@
       ]
     },
     "c13-36": {
-      "text": "Vous videz la Trousse de soins sur le bitume : compresse, garrot, la seringue dans la cuisse. La jambe cesse de couler. Vous regagnez 6 points d'Endurance. Vous laissez la boîte vide au bord du champ, à côté du panneau à tête de mort, pour le suivant.",
+      "text": "Assis sur le bitume, vous ouvrez la Trousse de soins avec des doigts qui tremblent : un garrot au-dessus du genou, une compresse tassée dans la plaie, la seringue dans la cuisse valide. La jambe cesse de couler. Vous regagnez 6 points d'Endurance. Vous laissez la boîte vide au bord du champ, calée contre le pied du panneau à tête de mort, pour celui qui passera après vous avec moins de chance.",
       "choices": [
         {
           "kind": "aller",

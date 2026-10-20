@@ -37,7 +37,7 @@
         "alt": "Le hall d'un hôpital abandonné, brancards renversés, une porte battante ouverte sur un escalier noir.",
         "prompt": "Le hall d'accueil d'un hôpital soviétique abandonné : brancards renversés, comptoir sous la poussière, tableau des services aux lettres tombées, un sol jonché de gravats. Au fond, une porte battante entrouverte sur un escalier qui descend dans le noir complet, un courant d'air froid que suggèrent des feuilles mortes soulevées. Lumière grise tombant des fenêtres brisées, sans personnage."
       },
-      "text": "Le hall de l'hôpital. Des brancards renversés, un comptoir d'accueil sous la poussière, un tableau des services dont les lettres sont tombées. Au fond, derrière une porte battante, un escalier descend vers le sous-sol. Il fait noir dès la troisième marche. Un courant d'air monte de là, froid, qui sent le carrelage mouillé et l'éther. Quelque chose goutte, en bas, à intervalles réguliers.",
+      "text": "Le hall de l'hôpital sent encore l'éther, vingt ans après. Des brancards renversés barrent le passage jusqu'au comptoir d'accueil, où la poussière a pris l'épaisseur d'un feutre, et sur le tableau des services il ne reste que des trous de vis et trois lettres de plastique blanc, un R, un O et un A, que les pillards n'ont pas jugées dignes d'être emportées. Au fond, une porte battante bouge encore d'un centimètre à chaque courant d'air. Derrière, l'escalier du sous-sol descend entre deux murs de faïence, et la lumière grise des fenêtres s'arrête net à la troisième marche, coupée au couteau. L'air qui monte de là est froid, chargé de carrelage mouillé, et en bas une goutte tombe dans de l'eau, une toutes les quatre secondes, vous avez compté.",
       "choices": [
         {
           "kind": "aller",
@@ -61,7 +61,7 @@
       ]
     },
     "c21-2": {
-      "text": "La porte d'acier porte la même tôle que le couloir : ZONE CONTAMINÉE, et dessous, à la peinture, un trèfle noir sur fond jaune. Elle n'est pas verrouillée. Quand vous la tirez, un souffle sort, tiède, avec un goût de métal sur la langue. Le détecteur crépite. Une odeur d'ammoniaque et de quelque chose de brûlé. À l'intérieur, pas un bruit.",
+      "text": "La Sangsue est morte, étendue dans l'eau au pied de la porte d'acier, et vous enjambez ce qu'il en reste. Le battant porte la même tôle que le couloir, « ZONE CONTAMINÉE », et sous les lettres quelqu'un a peint à la main un trèfle noir sur fond jaune, sans pochoir, en débordant. Il n'est pas verrouillé. Quand vous le tirez, un souffle tiède sort de la salle et vous laisse sur la langue un goût de pièce de monnaie. Le détecteur crépite. Ça sent l'ammoniaque et le câble brûlé, et le grincement des gonds se perd au fond de la salle sans rien déranger.",
       "choices": [
         {
           "kind": "agir",
@@ -85,7 +85,7 @@
       ]
     },
     "c21-3": {
-      "text": "La Sangsue apparaît en sautant : un corps gris, une bouche qui s'ouvre en quatre, des bras trop longs. Elle disparaît entre deux coups et revient d'ailleurs. Chaque fois qu'elle touche, elle emporte quelque chose de vous. Il n'y a pas de mur où s'adosser : seulement les tables d'acier, la double porte, et le couloir derrière.",
+      "text": "La Sangsue apparaît d'un bond : un corps gris, une bouche qui s'ouvre en quatre, des bras trop longs qui finissent en griffes. Elle disparaît entre deux coups et revient par un autre côté, toujours là où vous ne regardez pas, et chaque fois qu'elle touche elle emporte un peu de votre sang. Aucun mur où vous adosser, seulement les tables d'acier, la double porte et le couloir derrière elle.",
       "combat": {
         "name": "Sangsue",
         "habilete": 6,
@@ -98,7 +98,7 @@
       }
     },
     "c21-4": {
-      "text": "Le couloir central du sous-sol. Du carrelage vert jusqu'à hauteur d'épaule, des conduites le long du plafond, deux centimètres d'eau sur le sol. Des portes des deux côtés. À gauche, une double porte à hublot et le mot MORGUE au pochoir. Tout droit, le couloir continue vers des câbles et un panneau militaire. L'escalier est derrière vous. Le goutte-à-goutte vient de partout à la fois.",
+      "text": "Le couloir central du sous-sol court sur une quarantaine de mètres, carrelé de vert jusqu'à l'épaule et peint au-dessus d'un jaune que l'humidité a fait cloquer. Des conduites de fonte suivent le plafond, et l'eau qu'elles perdent tient sur le sol une nappe de deux centimètres où vos pas laissent des ronds qui mettent du temps à s'effacer. Des portes s'ouvrent des deux côtés, la plupart sur des placards à balais. À gauche, une double porte à hublot porte un mot au pochoir, « MORGUE », dont le M a coulé jusqu'au sol. Tout droit, le couloir se resserre vers des câbles gainés de noir et une tôle militaire boulonnée au mur. L'escalier est dans votre dos, avec sa dernière marche hors de l'eau, la seule place sèche du sous-sol. La goutte, ici, ne vient plus d'un seul endroit.",
       "image": {
         "src": "images/c21-4.webp",
         "alt": "Couloir de sous-sol d'hôpital carrelé et inondé, une double porte à hublot sur la gauche, le noir au fond",
@@ -165,7 +165,7 @@
       ]
     },
     "c21-5": {
-      "text": "La lame ripe. Elle entre dans votre paume, entre le pouce et l'index, et ressort rouge. Vous perdez 2 points d'Endurance. Le cadenas n'a pas bougé. Vous enveloppez la main dans un pan de chemise. Le sang goutte dans l'eau, s'y étale lentement, et vous regardez ça plus longtemps que nécessaire.",
+      "text": "La lame ripe sur l'anse et entre dans votre paume, entre le pouce et l'index, puis ressort rouge. Vous perdez 2 points d'Endurance. Le cadenas n'a pas bougé d'un millimètre. Vous enveloppez la main dans un pan de chemise que vous serrez avec les dents, et le sang goutte dans l'eau du sol, s'y étale en fleur brune, et vous le regardez faire plus que de raison.",
       "effects": [
         {
           "type": "stat",
@@ -192,7 +192,7 @@
       ]
     },
     "c21-6": {
-      "text": "La double porte s'ouvre sur un froid qui n'a pas de raison d'être là : le courant est coupé depuis vingt ans. Derrière le hublot, le noir est complet. Ça sent le formol et, dessous, autre chose, plus doux. Une roulette grince quelque part à l'intérieur, pas longtemps, comme si on venait de lâcher un chariot.",
+      "text": "La double porte s'ouvre sur un froid qui n'a rien à faire là, puisque le courant est coupé depuis vingt ans et que les compresseurs, derrière la cloison, sont mangés de rouille. Par le hublot, vous ne voyez que votre propre reflet. Ça sent le formol, et sous le formol une note plus douce, sucrée, que vous connaissez des fossés du Cordon. Une roulette grince à l'intérieur, trois tours, quatre, puis se bloque d'un coup, et une roulette ne se bloque pas toute seule.",
       "choices": [
         {
           "kind": "aller",
@@ -216,7 +216,7 @@
       ]
     },
     "c21-7": {
-      "text": "L'air vous brûle la gorge dès le seuil. Le compteur grimpe. Vous prenez 3 rads. Le laboratoire : des paillasses, une rangée de cuves vides aux parois jaunies, des blouses pendues qui ont gardé la forme des bras. Une armoire métallique, cadenassée, avec un pochoir militaire. Vous respirez par la manche. Ça ne change rien, mais vous le faites.",
+      "text": "L'air vous brûle la gorge dès le seuil et vous pique les yeux jusqu'aux larmes. Vous prenez 3 rads. Le laboratoire tient dans une pièce basse : des paillasses carrelées de blanc, une rangée de cuves vides dont le verre a jauni à hauteur de ce qu'elles contenaient, des blouses pendues à des patères qui ont gardé, raides de crasse, la forme des bras. Au fond, une armoire métallique au pochoir militaire est fermée par un cadenas. Vous respirez à travers la manche de la veste, qui ne filtre rien et que vous gardez quand même contre la bouche.",
       "effects": [
         {
           "type": "stat",
@@ -248,7 +248,7 @@
       ]
     },
     "c21-8": {
-      "text": "Vous tombez. Le dos, puis la nuque, puis le reste, sur l'angle des marches jusqu'en bas. Vous perdez 3 points d'Endurance. Vous restez un moment allongé dans l'eau froide, à écouter. Le goutte-à-goutte n'a pas changé de rythme. Rien d'autre ne bouge. Vous vous relevez. Devant vous, un couloir, que vous devinez plus que vous ne le voyez.",
+      "text": "Vous tombez, le dos d'abord, puis la nuque sur l'arête d'une marche, puis tout le reste jusqu'au palier, où l'eau vous reçoit à plat. Vous perdez 3 points d'Endurance. Allongé dans deux centimètres d'eau froide, vous attendez que le sous-sol réagisse au vacarme, une porte, un pas, et il ne vient que la goutte, au même rythme qu'avant. Vous vous relevez en vous tenant au mur. Devant vous s'ouvre un couloir que vous devinez au courant d'air plus qu'à la vue.",
       "effects": [
         {
           "type": "stat",
@@ -270,7 +270,7 @@
       ]
     },
     "c21-9": {
-      "text": "Dans le tiroir du chariot, sous des ciseaux et une scie à os, une Trousse de soins militaire, fermée, le sceau intact. Vous la glissez dans votre sac. Quelqu'un l'a posée là pour recoudre, ou pour se recoudre, et n'en a pas eu le temps. Le tiroir du dessous contient des étiquettes vierges et un stylo qui écrit encore.",
+      "text": "Vos doigts trouvent le tiroir du chariot et, sous une paire de ciseaux et une scie à os, une Trousse de soins militaire, fermée, le plomb du sceau intact. Vous la glissez dans votre sac. Quelqu'un l'avait posée là pour recoudre un autre, ou se recoudre lui-même, et n'en a pas eu le temps. Le tiroir du dessous contient un paquet d'étiquettes vierges et un stylo à bille dont vous éprouvez la pointe sur votre pouce, parce qu'il vous faut savoir s'il écrit encore, et il écrit.",
       "effects": [
         {
           "type": "item",
@@ -292,7 +292,7 @@
       ]
     },
     "c21-10": {
-      "text": "Le couloir se rétrécit. Les conduites descendent le long des murs, rejointes par des câbles militaires, neufs, fixés par des colliers. Un panneau de tôle : ZONE CONTAMINÉE, ACCÈS RÉGLEMENTÉ, et un numéro d'unité. L'eau est plus profonde ici, elle monte au-dessus de la cheville. Au fond, l'obscurité a une épaisseur différente, comme si le couloir s'arrêtait avant le mur.",
+      "text": "Le couloir se rétrécit jusqu'à ce que vos coudes frôlent la faïence. Les conduites descendent le long des murs, rejointes par des câbles militaires, neufs ceux-là, tenus par des colliers de nylon. Une tôle boulonnée à hauteur d'yeux annonce en lettres rouges : « ZONE CONTAMINÉE. ACCÈS RÉGLEMENTÉ. Unité 4012. » L'eau monte au-dessus de la cheville et pèse dans les bottes. Au fond, l'obscurité a une autre épaisseur, plus proche que le mur ne devrait l'être, et l'eau y bat en vagues courtes contre la faïence, sans un souffle d'air pour les lever.",
       "choices": [
         {
           "kind": "aller",
@@ -316,7 +316,7 @@
       ]
     },
     "c21-11": {
-      "text": "Vous serrez le bandage autour de ce qui saigne le plus. Le tissu boit tout de suite. Vous regagnez 3 points d'Endurance. Vous attendez que le battement dans vos oreilles ralentisse. Il ralentit. Dans le couloir, l'eau clapote, une fois, loin, comme si quelque chose y avait posé un pied. Puis plus rien.",
+      "text": "Le coton du Bandage boit avant que vous ayez fini le nœud, serré autour de l'entaille qui saigne le plus. Vous regagnez 3 points d'Endurance. Plus loin dans le couloir, l'eau clapote une fois, sous un pied posé avec précaution, et ne clapote plus.",
       "choices": [
         {
           "kind": "aller",
@@ -326,7 +326,7 @@
       ]
     },
     "c21-12": {
-      "text": "Le plateau tombe. L'acier sonne sur le carrelage, longtemps. Quelque chose d'invisible vous frappe à l'épaule avant la fin du bruit. Vous perdez 3 points d'Endurance. Vous reculez contre la table, le sang chaud sous la veste. La respiration n'est plus lente. Elle est tout près, et elle a une odeur.",
+      "text": "Le plateau tombe. L'acier sonne sur le carrelage et le bruit court dans le sous-sol, rebondit d'une cloison à l'autre, et avant qu'il se soit éteint un coup venu de l'air vide vous ouvre l'épaule. Vous perdez 3 points d'Endurance. Vous reculez contre la table, le sang chaud qui coule sous la veste jusqu'à la ceinture. La respiration a quitté son angle : elle est à un mètre de vous, rapide maintenant, et elle sent la viande oubliée au soleil.",
       "effects": [
         {
           "type": "stat",
@@ -348,7 +348,7 @@
       ]
     },
     "c21-13": {
-      "text": "L'anse cède. Sur l'étagère du haut, une caisse à six logements, un seul occupé : une Grenade F1. Vous la pesez dans la main, lourde, quadrillée, la goupille encore droite. Avec ça, on n'a pas besoin de voir pour toucher. Le reste de l'armoire : des chargeurs vides, un carnet de garde, un paquet de cigarettes dont il manque une.",
+      "text": "L'anse cède avec un claquement sec. Sur l'étagère du haut, une caisse à six logements n'en garde qu'un d'occupé : une Grenade F1. Vous la pesez dans la main, lourde, quadrillée, la goupille encore droite ; avec ça, on n'a pas besoin de voir pour toucher. Le reste de l'armoire ne vaut pas le détour, des chargeurs vides et un paquet de Belomorkanal entamé d'une seule cigarette, sauf le carnet de garde, dont la dernière ligne, tracée au crayon gras, dit : « Relève non venue. On descend les cuves demain. » La ligne d'après est vide, et toutes les autres jusqu'à la couverture.",
       "effects": [
         {
           "type": "item",
@@ -370,7 +370,7 @@
       ]
     },
     "c21-14": {
-      "text": "Vous descendez, une main sur le mur. Le carrelage sue. Les marches sont inégales et certaines manquent, vous le sentez à la pointe du pied avant d'y poser le poids. Le bruit de l'eau se rapproche. L'odeur d'éther aussi. À mi-chemin, votre semelle glisse sur quelque chose de mou qui n'est pas de la boue. Tentez votre Chance.",
+      "text": "Vous descendez une main sur la faïence, qui sue sous la paume à la manière d'une vitre de cuisine en hiver. Les marches sont inégales et certaines manquent : vous le sentez à la pointe de la botte avant d'y mettre le poids, et vous comptez à mi-voix pour garder le fil. « Sept. Huit. Neuf. » La goutte des quatre secondes se rapproche, l'éther avec elle. À la onzième marche, votre semelle part sur une matière molle et grasse qui n'est pas de la boue, et votre main ne trouve plus le mur. Tentez votre Chance.",
       "test": {
         "type": "luck",
         "success": "c21-4",
@@ -378,7 +378,7 @@
       }
     },
     "c21-15": {
-      "text": "Vous avez tiré là où l'eau s'est fendue. Un cri, pas humain, et l'eau qui gicle en reculant. Vous ne l'avez pas tuée. Elle est quelque part devant, et elle sait où vous êtes maintenant. Entre vous, dix mètres d'eau noire et une porte d'acier dont vous devinez le cadre à la poussière de lumière qui passe dessous.",
+      "text": "Un cri répond au coup de feu, aigu, un cri de porc qu'on saigne, et une gerbe d'eau recule là où la surface s'était fendue. Vous l'avez touchée sans la tuer. Elle est devant, à une distance que vous ne savez plus estimer, et maintenant elle connaît votre place. Entre vous s'étendent dix mètres d'eau noire et une porte d'acier dont vous devinez le cadre à la poussière de lumière qui filtre dessous.",
       "choices": [
         {
           "kind": "attaquer",
@@ -409,7 +409,7 @@
       ]
     },
     "c21-16": {
-      "text": "Vos mains trouvent le chariot sans rien renverser. Des manches d'instruments, le bord d'un tiroir. La respiration, à droite, n'a pas changé. Vous vous tenez immobile dans le noir, le pouls dans la gorge, entre une chose qui dort et un tiroir que vous ne pouvez pas voir.",
+      "text": "Vos mains trouvent le chariot sans rien renverser : des manches d'instruments, froids, rangés par taille, et sous eux le bord d'un tiroir. À droite, la respiration n'a pas changé de rythme. Vous restez immobile, le pouls dans la gorge, entre une bête qui dort et un tiroir que vous n'avez pas encore ouvert.",
       "choices": [
         {
           "kind": "agir",
@@ -434,7 +434,7 @@
       ]
     },
     "c21-17": {
-      "text": "La Sangsue devient visible une seconde à chaque bond : grise, le crâne long, la bouche ouverte en quatre pétales. Puis l'eau se referme sur rien. On ne la voit qu'au moment où elle frappe, et elle frappe à vous arracher le bras. Derrière elle, la porte d'acier. Derrière vous, le couloir central.",
+      "text": "Au coup de feu, la Sangsue bondit, et pendant le bond elle prend chair une seconde : grise, le crâne étiré vers l'arrière, des griffes au bout de bras qui traînent dans l'eau. Puis l'eau se referme sur un creux. Elle ne se montre qu'en frappant, et chacun de ses coups vous déporte d'un pas. Derrière elle, la porte d'acier ; derrière vous, le couloir central et l'escalier, si vos jambes vous y portent.",
       "combat": {
         "name": "Sangsue",
         "habilete": 7,
@@ -447,7 +447,7 @@
       }
     },
     "c21-18": {
-      "text": "Le tiroir glisse sur ses rails sans un bruit. Un homme en combinaison grise, les yeux ouverts, blancs. Un masque du Monolithe est posé sur sa poitrine, replié. L'étiquette au gros orteil porte une date de l'an dernier et une mention au crayon : sujet 11, conforme. Vous refermez. Les deux tiroirs voisins portent des étiquettes identiques, sans la mention.",
+      "text": "Le tiroir sort sur ses rails sans un grincement, huilé de frais. Un homme y est couché en combinaison grise, les yeux ouverts et blancs, son masque du Monolithe replié sur la poitrine sous ses mains croisées. L'étiquette nouée à son gros orteil porte une date de l'an dernier et, au crayon, d'une écriture de bureau : « Sujet 11. Conforme. » Vous repoussez le tiroir. Les deux voisins portent des étiquettes de la même écriture, avec la même date, et plus rien après le numéro.",
       "choices": [
         {
           "kind": "aller",
@@ -457,7 +457,7 @@
       ]
     },
     "c21-19": {
-      "text": "Le faisceau s'arrête sur une porte d'acier, dix mètres plus loin. Entre vous et elle, l'air tremble. Une silhouette debout, découpée dans l'eau et le carrelage, qui respire. Ses pieds font deux creux dans la surface. Elle tourne ce qui doit être sa tête vers la lumière, lentement, comme on se réveille.",
+      "text": "Le faisceau glisse sur l'eau et s'arrête sur une porte d'acier, dix mètres plus loin. Entre elle et vous, la surface de l'eau est creusée de deux cuvettes de la taille d'un pied, et au-dessus il n'y a rien qu'un frémissement, celui de l'air sur une route en été, sauf que l'eau est glacée. Le frémissement se tourne vers la lumière, lentement, et les deux cuvettes changent de forme quand il pivote sur ses talons.",
       "choices": [
         {
           "kind": "attaquer",
@@ -488,7 +488,7 @@
       ]
     },
     "c21-20": {
-      "text": "Les paillasses sont couvertes de verrerie cassée et de cahiers gonflés par l'eau. Un seul reste lisible, sous une cloche de verre : des colonnes de numéros, des dates de l'an dernier, et un mot répété en face de chaque numéro, conforme, conforme, non conforme. Le dernier numéro est le 11. Au fond du cahier, un schéma à main levée : une cuve, un corps dedans, des fils.",
+      "text": "Les paillasses sont couvertes de verrerie cassée et de cahiers que l'eau a gonflés jusqu'à l'épaisseur d'un annuaire. Un seul reste lisible, à l'abri d'une cloche de verre qu'on a posée dessus à dessein, et vous soulevez la cloche avec précaution. Des colonnes de numéros, une date de l'an dernier en tête de chaque page, et en face de chaque numéro un mot recopié par la même main appliquée : « conforme », « conforme », « non conforme », « conforme ». Les numéros s'arrêtent au 11. Sur la dernière page, un schéma à main levée, au stylo bleu : une cuve, un corps dedans, recroquevillé, des fils qui partent de sa tête et remontent hors du cadre, vers une forme que l'auteur n'a pas su dessiner et qu'il a fini par hachurer jusqu'à trouer le papier.",
       "choices": [
         {
           "kind": "agir",
@@ -508,7 +508,7 @@
       ]
     },
     "c21-21": {
-      "text": "Vous entrez les mains devant vous. Acier froid : une table. Une rigole sous les doigts, poisseuse. Vous contournez. Un bruit de respiration, quelque part sur votre droite, lente, trop lente pour un homme. Vous avancez vers l'autre côté, un pas, puis un autre, au milieu d'objets que vous ne voyez pas. Tentez votre Chance.",
+      "text": "Vous entrez les mains en avant. Elles rencontrent d'abord l'acier d'une table, froid à faire mal, puis une rigole où les doigts collent à un dépôt sec qui s'écaille sous l'ongle. Vous contournez la table par le bord. Sur votre droite, à hauteur de genou, une respiration monte et descend, deux fois plus lente que la vôtre, trop lente pour un homme. Vous gagnez l'autre côté un pas après l'autre, au milieu d'objets que vous effleurez sans les voir et dont chacun peut tomber. Tentez votre Chance.",
       "test": {
         "type": "luck",
         "success": "c21-16",
@@ -516,7 +516,7 @@
       }
     },
     "c21-22": {
-      "text": "Le masque sent le caoutchouc et la vieille sueur. À travers les verres, le laboratoire : des paillasses, une rangée de cuves vides aux parois jaunies, des blouses pendues qui ont gardé la forme des bras. Une armoire métallique, fermée par un cadenas, avec un pochoir militaire. Ce que vous respirez est filtré. Ce que vous voyez, non.",
+      "text": "Le Masque à gaz sent le caoutchouc et la sueur d'un autre. Par les verres, que votre souffle embue à chaque expiration, le laboratoire apparaît par morceaux, à mesure que la buée se retire : une hotte dont la vitre est fêlée en étoile, des cuves alignées sous un palan, une paillasse où traîne un plateau de pipettes. Au fond, contre le mur, une armoire métallique au pochoir militaire est fermée d'un cadenas. Votre souffle, que le caoutchouc vous renvoie dans les oreilles, couvre tout le reste, et vous devez retenir l'air pour entendre si la salle est vide.",
       "choices": [
         {
           "kind": "agir",
@@ -541,7 +541,7 @@
       ]
     },
     "c21-23": {
-      "text": "Vous vous adossez au carrelage, hors de l'eau, sur la dernière marche de l'escalier. Vous videz la trousse : compresses, agrafes, une seringue que vous plantez sans regarder. Vous regagnez 6 points d'Endurance. Le goutte-à-goutte continue. Vous laissez la boîte vide sur la marche, à côté d'une autre, plus ancienne, que quelqu'un a laissée là avant vous.",
+      "text": "Sur la dernière marche de l'escalier, la seule qui soit au sec, vous videz la Trousse de soins : compresses, agrafes, une seringue dont vous ne lisez pas l'étiquette avant de la planter dans la cuisse. Vous regagnez 6 points d'Endurance. La chaleur monte dans la jambe, puis dans le ventre. Quand vous reposez la boîte vide, votre main en rencontre une autre, du même vert, posée là avant vous par un stalker qui a eu la même idée et qui n'est jamais revenu la ramasser.",
       "choices": [
         {
           "kind": "aller",
@@ -551,7 +551,7 @@
       ]
     },
     "c21-24": {
-      "text": "Vous éteignez la lampe. Vous avez compté les pas : six jusqu'au chariot. Vous les faites dans le noir, en posant le pied dans l'eau sans la fendre. La respiration dans l'angle ne change pas. Au quatrième pas, un plateau d'instruments bascule sous votre coude. Vous le rattrapez, ou non. Tentez votre Chance.",
+      "text": "Vous éteignez la lampe torche. Six pas jusqu'au chariot, comptés tout à l'heure à la lumière, et vous les refaites à l'aveugle en posant chaque botte à plat dans l'eau, pour ne pas la fendre. Dans l'angle, les épaules qu'on voit à travers montent et descendent à la même cadence. Un, deux, trois. Au quatrième, votre coude heurte un plateau d'instruments posé en équilibre sur le bord de la table, et vous le sentez basculer avant de l'entendre. Tentez votre Chance.",
       "test": {
         "type": "luck",
         "success": "c21-9",
@@ -559,7 +559,7 @@
       }
     },
     "c21-25": {
-      "text": "Le cadenas est gros, rouillé à moitié, le genre qu'on ouvre d'un coup ou pas du tout. Vous glissez la lame du couteau dans l'anse et faites levier. Le métal gémit. Dans l'armoire, quelque chose roule contre la tôle. Il faut forcer sans faire sauter la lame, et sans tout faire tomber. Testez votre Habileté.",
+      "text": "Le cadenas est gros, à moitié rongé de rouille, de ceux qui cèdent d'un coup ou pas du tout. Vous glissez la lame du couteau dans l'anse et faites levier contre la tôle. Le métal gémit. À l'intérieur de l'armoire, un objet lourd roule et vient buter contre la porte, et vous retenez votre geste le temps qu'il s'immobilise. Il faut forcer sans casser la lame et sans tout faire tomber. Testez votre Habileté.",
       "test": {
         "type": "stat",
         "stat": "habilete",
@@ -569,7 +569,7 @@
       }
     },
     "c21-26": {
-      "text": "Elle tombe et reste visible. Un corps gris, nu, le crâne allongé, les tentacules de la bouche qui se recroquevillent. Vous attendez qu'elle cesse de bouger. Elle cesse. La morgue est à vous, pour ce que ça vaut : deux tables d'acier, un mur de tiroirs froids, un chariot d'instruments contre la table de droite.",
+      "text": "Elle tombe en travers de la rigole et reste visible, cette fois. Le corps est nu, d'un gris de cire, et les tentacules de sa bouche se replient un à un, de plus en plus lentement. Vous attendez qu'ils cessent de remuer, et ils cessent. La morgue vous appartient, pour ce qu'elle vaut : deux tables d'acier, un mur de tiroirs froids, le chariot d'instruments contre la table de droite.",
       "choices": [
         {
           "kind": "agir",
@@ -594,7 +594,7 @@
       ]
     },
     "c21-27": {
-      "text": "Elle est sur vous avant le coup de feu. Une griffe ouvre votre bras de l'épaule au coude. Vous perdez 3 points d'Endurance. Elle recule dans l'eau, invisible, et revient d'un autre côté. On ne la voit qu'au moment où elle frappe, et c'est déjà trop tard. Il faut tirer à l'oreille, et vite.",
+      "text": "Elle est sur vous avant le coup de feu. Une griffe vous ouvre le bras de l'épaule au coude, à travers la manche, d'un seul trait. Vous perdez 3 points d'Endurance. Elle recule dans l'eau, s'efface et revient par l'autre flanc ; vous tirez au clapotis, au souffle, sans jamais voir plus qu'une épaule grise à l'instant du choc.",
       "effects": [
         {
           "type": "stat",
@@ -614,7 +614,7 @@
       }
     },
     "c21-28": {
-      "text": "Vous dégoupillez la Grenade F1 et la lancez dans l'eau, devant la silhouette. Vous plongez. L'explosion remplit le couloir et vous rend sourd. Quand l'eau retombe, la Sangsue est allongée contre la porte d'acier, visible, en deux morceaux qui ne bougent plus. Vous n'avez plus de grenade. Vos oreilles sifflent. La porte a tenu.",
+      "text": "Goupille arrachée, la Grenade F1 part à plat sur l'eau et s'arrête juste devant la silhouette pendant que vous plongez derrière la conduite. L'explosion remplit le couloir d'un seul bloc, soulève l'eau jusqu'au plafond et vous laisse sourd, la bouche pleine de rouille. Quand la pluie retombe, la Sangsue est couchée contre la porte d'acier, visible, en deux morceaux qui ne remuent plus. Vous n'avez plus de grenade, vos oreilles sifflent sur une note unique, et la porte, elle, a tenu.",
       "choices": [
         {
           "kind": "aller",
@@ -634,7 +634,7 @@
         "alt": "Une morgue éclairée à la torche, tables d'acier, tiroirs froids, et dans l'angle une silhouette translucide accroupie.",
         "prompt": "Une morgue de sous-sol vue à la lumière d'une torche : deux tables d'acier avec leur rigole, un mur de tiroirs frigorifiques dont trois sont ouverts, un chariot d'instruments contre la table de droite, du carrelage vert et de l'eau au sol. Dans l'angle près des tiroirs, l'air tremble et dessine une silhouette d'homme accroupie, presque transparente, à travers laquelle on voit le carrelage : une Sangsue. Le faisceau vient de la porte, le héros reste hors champ."
       },
-      "text": "Le faisceau balaie la salle. Deux tables d'acier, une rigole, un mur de tiroirs froids dont trois sont ouverts. Un chariot d'instruments contre la table de droite. Dans l'angle, près des tiroirs, l'air tremble. Une silhouette d'homme, accroupie, à travers laquelle on voit le carrelage. Elle respire. Elle ne vous a pas encore senti.",
+      "text": "Le faisceau de la lampe torche entre avant vous et fait le tour de la salle. Deux tables d'acier avec leur rigole, un mur de tiroirs froids dont trois sont ouverts et vides, et contre la table de droite le chariot d'instruments dont vous avez entendu la roulette, à six pas de la porte. Dans l'angle, près des tiroirs, le carrelage ondule, et il vous faut un moment pour voir que c'est l'air qui tremble devant lui : une silhouette d'homme accroupie, à travers laquelle on distingue les joints de faïence, et dont les épaules montent et descendent au rythme d'un dormeur. Elle ne vous a pas encore senti, ou bien elle attend que vous approchiez.",
       "choices": [
         {
           "kind": "attaquer",
@@ -654,7 +654,7 @@
       ]
     },
     "c21-30": {
-      "text": "Vous avancez dans le noir, le dos à la conduite. L'eau se fend devant vous, une fois, et ce n'est pas vous. Vous vous immobilisez. Quelque chose respire entre la porte et vous, et se déplace sans bruit, sauf celui de l'eau. Il faut tirer avant qu'elle ne soit sur vous, à l'oreille, sans voir. Testez votre Habileté.",
+      "text": "L'épaule contre la conduite, l'eau aux chevilles, vous avancez sans lumière. Devant vous, la surface se fend une fois, avec un bruit de rame, alors que vous n'avez pas bougé. Vous vous figez. Une respiration occupe l'espace entre la porte et vous, et elle se déplace sans autre bruit que celui de l'eau qu'elle écarte, de gauche à droite, puis plus près. Il faudra tirer à l'oreille, avant qu'elle soit sur vous. Testez votre Habileté.",
       "test": {
         "type": "stat",
         "stat": "habilete",

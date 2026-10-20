@@ -8,6 +8,19 @@ Ces règles valent pour tous les styles. La voix, la longueur et les formules d�
 - Le texte d'un choix est une action à l'infinitif, 3 à 9 mots, sans révéler l'issue : « Forcer la grille », pas « Forcer la grille (danger) ». Un coût chiffré s'indique entre parenthèses : « Payer le passeur (3 pièces d'or) ». Chaque choix porte son `kind` (format.md) : il suit le verbe, « Revenir » est `aller`, « Fouiller » est `agir`, « Tirer sur » est `attaquer`.
 - Jamais de « rendez-vous au 12 » : les boutons portent les renvois. Annoncer les options en prose (« si vous possédez une dague, vous pouvez… ») est une affaire de style, autorisé en Défis Fantastiques, proscrit en sobre.
 
+## Prose
+
+La prose générée tend vers des vignettes de même taille, au rythme haché, sans parole. `node scripts/story-prose.mjs stories/<id>` mesure ce qui suit et avertit au-delà des seuils ; un avertissement se justifie dans le rapport, il ne se contourne pas.
+
+- **Diapason d'abord** : si la bible en a un (section « Diapason »), c'est lui qu'on imite, avant toute règle de cette section.
+- **Longueurs variées** : dans un même chapitre, de 30 à 160 mots. Au moins une scène longue (120 mots ou plus : une conversation, une traversée, une fouille qui tourne mal) et des transitions de deux phrases. Le script avertit quand 80 % des paragraphes d'un chapitre tiennent dans une fourchette de moins de 30 mots.
+- **Rythme alterné** : au moins une phrase longue, à subordonnées, par paragraphe, à côté des courtes. Trois phrases de trois mots d'affilée sont un effet, pas une voix.
+- **La chute courte** (dernière phrase de quatre mots au plus : « Ils vous attendent. ») dans un paragraphe sur cinq au plus. Jamais de phrase nominale en clôture (« Le silence. »).
+- **Du discours direct** dès qu'un personnage est présent : guillemets « », réplique entière, la voix de sa fiche dans la bible. « Il dit que » résume ; une réplique montre. Un paragraphe sur six au moins porte une réplique, hors chapitres sans personnage.
+- **Des scènes, pas des vignettes** : une conversation ou une poursuite court sur trois à cinq paragraphes qui se suivent, et chaque paragraphe reprend un détail du précédent (un objet posé, une phrase laissée en suspens). Un paragraphe a le droit de n'être que du dialogue, ou qu'un geste.
+- **Le concret nommé** plutôt que l'atmosphère : la marque sur la conserve, le modèle du camion, la matière du mur, le nombre de marches. « Quelque chose », « quelque part », « une sorte de » signalent une image qu'on n'a pas faite.
+- **Liste noire** : `prose-blacklist.txt`, chaque expression tolérée une fois pour cinquante paragraphes. Toute tournure propre à l'histoire qui revient dans cinq paragraphes d'un chapitre (« le compteur grimpe ») est à varier, sauf refrain déclaré dans la bible.
+
 ## Ce que le texte doit dire pour que le moteur le montre
 - Un objet gagné ou perdu est nommé dans le texte avec le nom exact du catalogue, ou au moins son premier mot : « une clef rouillée », « votre potion de vigueur ». Sinon le surlignage tombe en résumé sous le texte.
 - Une variation chiffrée s'écrit en toutes lettres avec l'unité : « Vous perdez 3 points d'Endurance », « vous trouvez 5 pièces d'or ». Majuscule au label ; les capitales du style Défis Fantastiques (« points d'ENDURANCE », « Pièces d'Or ») sont reconnues aussi.

@@ -20,9 +20,13 @@ Les lancers de dés sont animés, avec un son synthétisé (Web Audio, sans fich
 node scripts/story-lint.mjs stories/demo/story.json                 # validation, atteignabilité, orphelins, couverture des mécaniques
 node scripts/story-simulate.mjs stories/demo/story.json --runs 3000  # parties jouées au hasard : fins, létalité, combats
 node scripts/story-simulate.mjs stories/demo/story.json --strategy prudent
+node scripts/story-prose.mjs stories/exauceur                           # prose : longueurs, rythme, dialogue, liste noire, tournures répétées, par chapitre
+node scripts/story-prose.mjs --diff avant.json apres.json               # échoue si autre chose que les textes a changé
 ```
 
-Avec Claude Code, `/new-story <thème>` écrit une histoire complète en passant par ces contrôles, dans le style demandé (Défis Fantastiques, sobre ou picaresque, voir `.claude/skills/new-story/references/styles.md`), `/new-long-story <thème>` écrit une histoire de 500 à 1000 paragraphes en chapitres rédigés par des sous-agents, `/story-lint <id>` diagnostique une histoire existante, `/extend-story <id> <ajout>` greffe une branche. Les skills sont dans `.claude/skills/`.
+`story-prose.mjs` mesure la prose et avertit au-delà de seuils (longueurs uniformes, chutes courtes, absence de discours direct, expressions de `.claude/skills/new-story/references/prose-blacklist.txt`, tournures répétées d'un paragraphe à l'autre). Les seuils sont dans `scripts/lib/story-prose.mjs` ; un avertissement se justifie, il ne bloque rien. `--chapter <fichier>` mesure un chapitre seul.
+
+Avec Claude Code, `/new-story <thème>` écrit une histoire complète en passant par ces contrôles, dans le style demandé (Défis Fantastiques, sobre ou picaresque, voir `.claude/skills/new-story/references/styles.md`), `/new-long-story <thème>` écrit une histoire de 500 à 1000 paragraphes en chapitres rédigés par des sous-agents, `/story-lint <id>` diagnostique une histoire existante, `/extend-story <id> <ajout>` greffe une branche, `/polish-story stories/<id>` réécrit la prose d'une histoire existante sans toucher à sa mécanique. Les skills sont dans `.claude/skills/`.
 
 ## Histoire en chapitres
 

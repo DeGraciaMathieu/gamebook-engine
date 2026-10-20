@@ -45,7 +45,7 @@
   ],
   "paragraphs": {
     "c18-1": {
-      "text": "La route descend du Radar entre deux rangées de pins morts. Au bord, un panneau de béton, le nom de la ville en lettres blanches, une moitié tombée dans l'herbe. Derrière, les immeubles. Seize étages, pas une vitre, et au-dessus des toits, la grande roue, arrêtée depuis vingt ans. Le vent apporte une odeur de poussière froide. Sur un toit, quelque chose bouge. Le Monolithe tient la ville. On avance de porche en porche, ou pas du tout.",
+      "text": "La route descend du Radar entre deux rangées de pins morts dont l'écorce pèle en lanières grises, et au dernier virage un panneau de béton annonce la ville en lettres blanches, la moitié des lettres couchées dans l'herbe. Derrière commencent les barres d'immeubles, seize étages de fenêtres sans vitres, et au-dessus des toits la grande roue, arrêtée avec ses nacelles jaunes depuis vingt ans. Le vent apporte de la poussière froide et un grincement de métal. Sur le toit le plus proche, une lunette renvoie le jour une seconde, puis s'éteint. Le Monolithe tient Pripyat jusqu'aux antennes, et ici on avance de porche en porche, ou bien on reste assis contre le panneau.",
       "image": {
         "src": "images/c18-1.webp",
         "alt": "Le panneau de Pripyat au bord de la route, les immeubles sans vitres et la grande roue au loin",
@@ -65,7 +65,7 @@
       ]
     },
     "c18-2": {
-      "text": "Le tunnel du Guide finit ici : une cave de Pripyat, l'eau jusqu'aux chevilles, des bocaux sur des étagères, un escalier de béton qui monte vers un rectangle de jour gris. Vous êtes passé sous la crête et sous leurs lignes. Au-dessus, des pas. Lents, égaux. Quelqu'un fait les cent pas dans le hall, le dos à vous, le visage vers le sud.",
+      "text": "Le tunnel du Guide finit dans une cave de Pripyat, l'eau jusqu'aux chevilles, des bocaux de cornichons noircis alignés sur des étagères en planches, et un escalier de béton qui monte vers un rectangle de jour gris. Vous êtes passé sous la crête et sous leurs lignes ; sur la carte, au crayon, le Guide a écrit « Cave. Hall. Cour. Place. » et n'a rien ajouté. Au-dessus, des pas lents et égaux vont et viennent sur le carrelage du hall. Une voix les accompagne, assourdie par un masque : « Nous gardons le sud. Le sud vient à nous. Nous gardons. » Elle tourne le dos à l'escalier.",
       "choices": [
         {
           "kind": "aller",
@@ -80,7 +80,7 @@
       ]
     },
     "c18-3": {
-      "text": "Vous ressortez sur la place. Rien n'a bougé : la grande roue, les nacelles, le vent. Sur les toits, les mêmes silhouettes grises, tournées vers le sud. Une nacelle grince, plus haut, plus loin, comme si la roue avait fait un cran. Vous ne l'avez pas vue tourner. Vous ne la verrez jamais tourner.",
+      "text": "Sur la place, rien n'a bougé : les nacelles, le vent, les silhouettes grises sur les toits, les canons tournés vers la route du Radar. Une nacelle grince plus haut qu'avant, à croire que la roue a avancé d'un cran pendant que vous étiez à l'intérieur.",
       "choices": [
         {
           "kind": "aller",
@@ -90,7 +90,7 @@
       ]
     },
     "c18-4": {
-      "text": "Vous retombez de l'autre côté, les deux pieds dans le plâtre. Rien ne bouge dans l'immeuble. Un pigeon décolle quelque part au-dessus, c'est tout. La porte ouverte donne sur un couloir, un portemanteau, un imperméable d'enfant encore pendu à sa patère, et au fond, la lumière d'une cuisine.",
+      "text": "Les deux pieds retombent dans le plâtre de l'autre côté, et un pigeon s'envole par la cage d'escalier en claquant des ailes. La porte entrebâillée donne sur un couloir étroit où un imperméable d'enfant, jaune, pend encore à sa patère, et au fond sur la lumière grise d'une cuisine.",
       "choices": [
         {
           "kind": "aller",
@@ -100,7 +100,7 @@
       ]
     },
     "c18-5": {
-      "text": "Le dernier tombe en arrière contre le mur et glisse jusqu'au sol. Il prie encore, plus bas, puis plus du tout. Trois corps gris sous le porche, l'odeur de cordite et de sang chaud. Vous ne ramassez rien : leurs chargeurs sont vides, ils tiraient avec ce qui restait. Dehors, la rue est vide. La place, la grande roue, l'hôtel au fond.",
+      "text": "Le dernier tombe à la renverse contre le mur et glisse jusqu'au sol en priant encore, de plus en plus bas : « Nous restons… nous… » Trois corps gris gisent sous le porche dans une odeur de cordite et de sang chaud. Vous ne ramassez rien, puisque leurs chargeurs sont vides et qu'ils tiraient avec leurs dernières cartouches. Dehors, la rue est déserte jusqu'à l'esplanade, où l'hôtel attend au fond.",
       "choices": [
         {
           "kind": "aller",
@@ -110,7 +110,7 @@
       ]
     },
     "c18-6": {
-      "text": "La balle vous prend dans la cuisse, au ras du porche. Vous tombez à l'intérieur, dans l'odeur de pisse et de plâtre. Vous perdez 3 points d'Endurance. Ça saigne, mais ça tient. Vous passez de pièce en pièce, de cage d'escalier en cage d'escalier, jusqu'à l'immeuble qui donne sur la place. Dans la rue, des silhouettes grises marchent au milieu de l'asphalte, le fusil bas.",
+      "text": "La balle vous prend dans la cuisse au ras du porche, et vous tombez à l'intérieur sur un sol qui sent la pisse et le plâtre mouillé. Vous perdez 3 points d'Endurance. La ceinture serrée en garrot tient, le sang aussi, à peu près. De cage d'escalier en cage d'escalier, par les paliers et les caves, vous gagnez le dernier immeuble avant la place, et derrière la porte vitrée dont il ne reste que le cadre vous entendez une prière à trois voix avant de voir ceux qui la disent.",
       "effects": [
         {
           "type": "stat",
@@ -127,7 +127,7 @@
       ]
     },
     "c18-7": {
-      "text": "Vous dévalez l'escalier de la cave, une balle dans le béton au-dessus de votre tête, une autre qui déchire la manche et la peau dessous. Elle ne descend pas. Elle reste en haut, le fusil braqué sur le noir, et elle prie. Vous suivez l'eau jusqu'au fond de la cave, là où un soupirail cassé laisse passer une lame de jour.",
+      "text": "Le combat rompu, vous dévalez l'escalier de la cave pendant qu'une balle éclate dans le béton au-dessus de votre tête et qu'une autre déchire la manche avec la peau dessous. La sentinelle ne descend pas. Elle reste en haut des marches, le canon pointé sur l'eau noire, et sa prière reprend au mot exact où le tir l'avait coupée : « …voyez celui-ci, voyez. » Vous suivez l'eau jusqu'au fond, où un soupirail cassé laisse entrer une lame de jour.",
       "choices": [
         {
           "kind": "aller",
@@ -137,7 +137,7 @@
       ]
     },
     "c18-8": {
-      "text": "Vous reculez dans le noir, le dos contre les boîtes aux lettres. Ils entrent sous le porche. Le premier s'arrête devant la trace de vos bottes dans le plâtre. Il la regarde longtemps. Il respire dans le masque, un bruit de soufflet. Le mot qu'ils répètent, vous l'entendez maintenant, tout près, et vous ne le comprenez toujours pas. Tentez votre Chance.",
+      "text": "Dans l'ombre du porche, le dos contre les boîtes aux lettres en fer, vous ne bougez plus. Ils entrent. Le premier s'arrête devant la trace de vos semelles dans le plâtre et la regarde sans se pencher, le temps de trois respirations qui passent dans son masque avec un bruit de soufflet de forge. « À vous, à vous, il est passé, il est à vous. » Vous entendez enfin leurs mots, à deux mètres, et vous ignorez toujours à qui ils s'adressent. Tentez votre Chance.",
       "test": {
         "type": "luck",
         "success": "c18-30",
@@ -145,7 +145,7 @@
       }
     },
     "c18-9": {
-      "text": "Vous vous collez dans un porche et vous attendez le reflet. Il est sur le toit du seize étages, à gauche, derrière la rambarde. Le Vintorez ne fait pas de bruit. Lui non plus. Chaque fois qu'il tire, le béton saute à côté de votre visage, et chaque balle qui passe cogne comme un marteau. Ce n'est pas un duel, c'est une patience.",
+      "text": "Collé dans l'angle d'un porche, vous attendez le reflet de sa lunette. Il est sur le toit du seize étages, à gauche, derrière la rambarde rouillée. Le Vintorez tousse à peine et lui ne fait pas plus de bruit, mais chacune de ses balles arrache au béton, contre votre joue, un éclat gros comme une pièce, et celle qui vous trouvera cognera comme un marteau. Celui des deux qui se montrera le premier aura perdu, et il a plus de patience que vous.",
       "combat": {
         "name": "Tireur du Monolithe",
         "habilete": 7,
@@ -158,7 +158,7 @@
       }
     },
     "c18-10": {
-      "text": "Vous ouvrez la conserve et vous mangez froid, avec les doigts. Du poisson, du sel, de l'huile. Vous regagnez 2 points d'Endurance. Sur le mur d'en face, un enfant a dessiné une maison et un soleil à la craie, et la craie a tenu vingt ans. Vous léchez la boîte. Vous la posez contre le mur, sous le soleil.",
+      "text": "La conserve cède au troisième coup de couteau, et vous mangez froid, avec les doigts : du maquereau, du sel, une huile jaune. Vous regagnez 2 points d'Endurance. Sur le mur d'en face, un enfant a dessiné à la craie une maison et un soleil à rayons, et la craie a tenu vingt ans sous l'auvent. Vous léchez le couvercle, puis vous posez la boîte vide contre le mur, juste sous le soleil.",
       "choices": [
         {
           "kind": "agir",
@@ -173,7 +173,7 @@
       ]
     },
     "c18-11": {
-      "text": "Vous posez un pied, puis l'autre. Le sol est couvert de verre et de plâtre, chaque pas est un choix. La sentinelle respire dans son masque, un bruit de soufflet, régulier. Deux mètres. La porte de la cour est là, ouverte sur l'herbe. Un morceau de verre sous la semelle, vous sentez qu'il va craquer. Testez votre Habileté.",
+      "text": "Le carrelage du hall est couvert de verre pilé et de plâtre tombé du plafond, et chaque pas vous coûte le temps d'écouter le précédent. La sentinelle respire dans son masque au rythme de sa prière, deux mots par souffle. Il reste deux mètres jusqu'à la porte ouverte sur la cour. Sous votre semelle, un éclat de vitre épais comme un ongle commence à céder. Testez votre Habileté.",
       "test": {
         "type": "stat",
         "stat": "habilete",
@@ -183,7 +183,7 @@
       }
     },
     "c18-12": {
-      "text": "Vous courez dans l'herbe. Le compteur passe du crépitement au cri. Un goût de clou dans la bouche, les tempes qui battent. Vous prenez 2 rads. Au bout de l'herbe, le dos d'un immeuble, puis la place : la grande roue, l'hôtel, le palais. Vous crachez contre le mur. C'est noir.",
+      "text": "L'herbe haute vous fouette les cuisses sur trente mètres, au pas de course, et le compteur passe du crépitement à une seule note aiguë qui ne redescend plus. Un goût de clou rouillé envahit la bouche, les tempes cognent, et quand vous atteignez enfin le mur d'en face vous crachez contre le crépi une salive noire. Vous prenez 2 rads. Le passage entre les deux immeubles débouche sur les dalles, au pied des nacelles.",
       "effects": [
         {
           "type": "stat",
@@ -200,7 +200,7 @@
       ]
     },
     "c18-13": {
-      "text": "Par la fenêtre, toute la place, et les toits. Vous les comptez : six tireurs, un par toit, tous tournés vers le sud. Ils ne regardent ni la place ni les portes. Le Monolithe garde la ville contre ce qui vient du sud. Au nord, l'avenue vers le pont est vide : rien ne garde la sortie. On ne garde pas une porte dont personne ne revient.",
+      "text": "Par la fenêtre de la cuisine, vous avez toute la place sous les yeux, et les toits qui l'entourent. Vous comptez les tireurs : six, un par toit, et chacun a le canon pointé vers la route du Radar, sans un regard pour les dalles ni pour les portes. Ils gardent la ville contre ce qui arrive du sud. Au nord, l'avenue qui mène au pont est vide d'un bout à l'autre, sans une silhouette pour la tenir.",
       "choices": [
         {
           "kind": "aller",
@@ -215,7 +215,7 @@
         "alt": "La place de Pripyat sous la grande roue arrêtée, l'hôtel et le palais, des tireurs sur les toits",
         "prompt": "Une grande place de ville morte envahie de bouleaux, dominée par une grande roue arrêtée aux nacelles pendantes. Autour, un hôtel de huit étages sans vitres, un palais à colonnes, l'avenue vers le nord entre les immeubles. Sur les toits, de petites silhouettes grises immobiles, fusils tournés vers le sud. Ciel bas, poussière froide. Le héros en silhouette dans l'ombre d'un porche, de dos."
       },
-      "text": "La place. La grande roue au-dessus, ses nacelles jaunes qui grincent, une par une, quand le vent passe. Autour : l'hôtel Polissya, huit étages, son nom en lettres creuses sur le toit ; le palais de la Culture et ses colonnes ; plus loin l'hôpital, la piscine. Au nord, entre les immeubles, l'avenue qui mène au pont de la Centrale. Sur les toits, le Monolithe. Ils regardent. Ils ne tirent pas sur la place. Pas encore.",
+      "text": "La grande roue domine la place, et ses nacelles jaunes grincent l'une après l'autre chaque fois que le vent remonte de la rivière. Des bouleaux ont percé les dalles jusqu'aux marches des bâtiments. En face, l'hôtel Polissya dresse ses huit étages, son nom en lettres de tôle creuses sur le toit ; à gauche, les colonnes du palais de la Culture ; plus loin, le bloc de l'hôpital et le toit plat de la piscine. Au nord, entre deux immeubles, l'avenue file vers le pont de la Centrale. Sur chaque toit se tient une silhouette grise, fusil à l'épaule, le masque tourné au loin, par-dessus la ville. Jusqu'ici, ils ont tiré sur les avenues et jamais sur ces dalles.",
       "choices": [
         {
           "kind": "aller",
@@ -265,7 +265,7 @@
       ]
     },
     "c18-15": {
-      "text": "Vous courez. Trente mètres de jour entre deux porches, le sac qui bat dans le dos, les balles qui arrivent après leur bruit. Un porche. Vous comptez jusqu'à trois. Trente mètres encore. Les tireurs vous attendent au prochain, ils ont compris le rythme. Il faut casser le rythme, partir avant le trois, ou après. Testez votre Habileté.",
+      "text": "Trente mètres de jour séparent deux porches, et vous les courez le sac battant les reins, les balles arrivant avant leur bruit, puis un porche, où vous comptez jusqu'à trois avant de repartir. Au troisième, le crépi saute à l'endroit précis où vous alliez entrer : ils ont compris le rythme et vous attendent au suivant. Il faut le casser, partir sur deux ou sur quatre, ne jamais repartir deux fois pareil. Testez votre Habileté.",
       "test": {
         "type": "stat",
         "stat": "habilete",
@@ -275,7 +275,7 @@
       }
     },
     "c18-16": {
-      "text": "Vous buvez l'anti-rad d'un trait. Le goût de craie, puis la nausée, puis le calme. Le compteur redescend, cran par cran, comme une respiration qui se pose. Vous perdez 5 rads. Dans la boîte aux lettres derrière vous, une enveloppe jamais ouverte, le timbre encore collé. Vous la laissez.",
+      "text": "L'anti-rad a un goût de craie. Vous le buvez d'un trait, puis viennent la nausée et un calme lent qui remonte depuis les genoux, pendant que l'aiguille du compteur redescend cran par cran. Vous perdez 5 rads. Par terre traîne une enveloppe jamais ouverte, avec son timbre à quatre kopecks, adressée à un troisième étage de l'immeuble, et vous ne la ramassez pas.",
       "choices": [
         {
           "kind": "agir",
@@ -290,7 +290,7 @@
       ]
     },
     "c18-17": {
-      "text": "Il lève le fusil avant d'avoir fini de tourner la tête. Le premier coup passe dans les boîtes aux lettres. Les deux autres entrent en tirant, sans crier, leur mot dans la bouche. Ils tirent à casser des os. Dans le porche, il n'y a nulle part où reculer, sauf l'escalier dans votre dos.",
+      "text": "Il lève le fusil avant d'avoir fini de tourner la tête, et le premier coup crève trois boîtes aux lettres à la fois. Ses compagnons entrent en tirant, sans crier, la prière toujours dans la bouche : « Prenez-le, prenez-le, il vient à vous. » Leurs balles frappent à casser des os, et dans ce porche étroit il n'y a nulle part où reculer, sauf l'escalier dans votre dos.",
       "combat": {
         "name": "Patrouille du Monolithe",
         "habilete": 6,
@@ -303,7 +303,7 @@
       }
     },
     "c18-18": {
-      "text": "Les caves de Pripyat communiquent, le Guide l'avait dessiné en marge de sa carte. Vous suivez l'eau d'un immeuble à l'autre, dans le noir et l'odeur de vase, sous les pas du Monolithe. Vous sortez par un soupirail au pied du remblai. Le viaduc est au-dessus de vous, et la Centrale au bout. Personne ne vous a vu arriver.",
+      "text": "Les caves de Pripyat communiquent entre elles ; le Guide l'a noté en marge de sa carte, d'une écriture serrée : « Caves. Eau. Remblai. Pont. » Vous suivez l'eau d'immeuble en immeuble à travers des murs percés au burin, dans une puanteur de vase, pendant qu'au-dessus de vous les bottes du Monolithe battent les trottoirs. Vous sortez par un soupirail au pied du remblai. Le viaduc passe au-dessus de votre tête, la Centrale vous attend au bout, et aucun des tireurs n'a vu d'où vous venez.",
       "choices": [
         {
           "kind": "aller",
@@ -313,7 +313,7 @@
       ]
     },
     "c18-19": {
-      "text": "Le verre craque. Elle se retourne d'un bloc, le fusil déjà levé, et le premier coup passe dans le mur à côté de votre oreille. Elle ne crie pas, elle prie. Dans le hall, il n'y a que vous et elle, et la porte de la cour dans son dos, et l'escalier de la cave dans le vôtre.",
+      "text": "Le verre craque sous la botte. La sentinelle se retourne d'un bloc, le fusil déjà levé, et sa première balle s'enfonce dans le mur à la hauteur de votre oreille, dans un nuage de plâtre. « Nous gardons, nous gardons, vous qui écoutez, voyez celui-ci. » Elle prie en tirant. Elle est seule, mince sous la toile grise, et dans ce hall il n'y a qu'elle et vous, la porte de la cour derrière elle, l'escalier de la cave derrière vous.",
       "combat": {
         "name": "Sentinelle du Monolithe",
         "habilete": 6,
@@ -325,7 +325,7 @@
       }
     },
     "c18-20": {
-      "text": "La combinaison siffle à chaque pas, le filtre avale l'air de la cour et rend un goût de caoutchouc. Le compteur grimpe, grimpe, et ne vous touche pas. Vous traversez entre les balançoires sans vous presser. Au bout de l'herbe, le dos d'un immeuble, puis la place : la grande roue, l'hôtel, le palais.",
+      "text": "La combinaison siffle à chaque pas et le filtre rend un air qui a le goût du caoutchouc chaud. Dehors, le compteur peut hurler, ses rads restent de l'autre côté de la toile. Vous traversez entre les balançoires sans vous presser, en marchant dans les traces d'un sanglier passé avant vous, et au bout de l'herbe le dos d'un immeuble vous conduit jusqu'aux dalles du carrefour.",
       "choices": [
         {
           "kind": "aller",
@@ -335,7 +335,7 @@
       ]
     },
     "c18-21": {
-      "text": "L'immeuble d'en face, neuf étages, la cage d'escalier ouverte sur la place. Ça sent le plâtre mouillé et le pigeon. Au deuxième, quatre marches manquent : le vide, et en bas, le béton. Sur le palier d'en face, une porte ouverte, et derrière la porte, une cuisine. Il faut sauter. Testez votre Habileté.",
+      "text": "L'immeuble d'en face a neuf étages et une cage d'escalier ouverte sur la place, qui sent le plâtre mouillé et la fiente de pigeon. Au deuxième, quatre marches manquent : un trou d'un mètre et demi, et en bas le béton du rez-de-chaussée. Sur le palier opposé, une porte entrebâillée laisse voir le coin d'une cuisine. Il faut sauter. Testez votre Habileté.",
       "test": {
         "type": "stat",
         "stat": "habilete",
@@ -345,7 +345,7 @@
       }
     },
     "c18-22": {
-      "text": "Vous montez l'escalier quatre à quatre, une balle dans le dos du sac, une autre qui brûle la hanche. Au troisième, un appartement sans porte, un balcon, le balcon voisin. Vous sautez. Ils ne suivent pas : ils ne montent pas, ils restent dans la rue à prier vers l'escalier. Vous redescendez par l'autre cage. La place est là, la grande roue au-dessus.",
+      "text": "L'escalier vous sauve : quatre à quatre jusqu'au troisième, une balle dans le sac, une autre qui vous brûle la hanche au passage. Là, un appartement sans porte, un balcon, et le balcon voisin à un mètre : vous sautez. Ils ne suivent pas. Ils restent en bas, au pied des marches, à prier en direction des étages, pendant que vous redescendez par l'autre cage jusqu'au carrefour.",
       "choices": [
         {
           "kind": "aller",
@@ -355,7 +355,7 @@
       ]
     },
     "c18-23": {
-      "text": "Un seul coup. La balle vous prend l'épaule et vous fait pivoter. Vous perdez 3 points d'Endurance. Ensuite, plus rien : les canons se lèvent, un par un. Un avertissement, pas une exécution. Vous arrivez au pied du remblai en tenant l'épaule. Le viaduc commence, et le poste de garde, et la Centrale au-dessus, sa cheminée dans le ciel bas.",
+      "text": "Un seul coup part. La balle vous prend l'épaule et vous fait pivoter sur place. Vous perdez 3 points d'Endurance. Il n'y a pas de second tir. Là-haut, la radio répond enfin, et la voix porte jusqu'à la chaussée : « Il marche. Laissez-le marcher. Il vient à vous. » Vous descendez vers le remblai en tenant votre épaule, le sang tiède jusqu'au coude, et le viaduc commence sous vos semelles.",
       "effects": [
         {
           "type": "stat",
@@ -372,7 +372,7 @@
       ]
     },
     "c18-24": {
-      "text": "Trois hommes du Monolithe, combinaisons grises, masques, le fusil en travers. Ils marchent à pas égaux, comme on marche dans une église. L'un parle, les deux autres répondent, les mêmes mots, chaque fois. Ils viennent vers votre porche. Dans dix pas, ils verront la trace de vos bottes dans le plâtre.",
+      "text": "Trois hommes du Monolithe, combinaisons grises, masques à gaz à filtre rond, les fusils en travers de la poitrine. Ils marchent à pas comptés, alignés, avec la lenteur d'une procession qui sait où elle va. Celui de tête parle et ses deux compagnons lui répondent, toujours les mêmes mots, sur le même ton : « Nous sommes à vous. — À vous, à vous. — Nous ne dormons pas. — Nous ne dormons pas. » Ils ne lèvent les yeux ni vers les fenêtres ni vers les toits, seulement vers la chaussée devant leurs bottes, et c'est la chaussée qui les amène à votre porche. Dans dix pas, ils verront dans la poussière de plâtre la trace fraîche de vos semelles.",
       "choices": [
         {
           "kind": "aller",
@@ -396,7 +396,7 @@
       ]
     },
     "c18-25": {
-      "text": "Vous roulez le bandage serré sur ce qui saigne. Le tissu boit, puis tient. Vous regagnez 3 points d'Endurance. Le vélo d'enfant, contre le mur, a encore ses roulettes. Quelqu'un l'a rangé là, un soir, pour le lendemain. Vous jetez le papier du bandage dans la boîte aux lettres.",
+      "text": "Le bandage, roulé serré sur la plaie qui saigne encore, boit avant de tenir. Vous regagnez 3 points d'Endurance. Le vélo d'enfant, contre le mur, a toujours ses deux roulettes ; quelqu'un l'a rangé là un soir d'avril pour le reprendre le lendemain.",
       "choices": [
         {
           "kind": "agir",
@@ -411,7 +411,7 @@
       ]
     },
     "c18-26": {
-      "text": "Vous marchez au milieu de l'avenue. Vous ne courez pas, il n'y a plus de porche. Sur les toits, les tireurs vous suivent au canon, un, puis l'autre, comme on se passe un relais. L'un d'eux parle dans sa radio. Il attend une réponse. Le vent apporte le bourdonnement de la Centrale, ou c'est votre sang. Tentez votre Chance.",
+      "text": "Au milieu de l'avenue, il n'y a plus de porche où courir, alors vous marchez à pas réguliers. Là-haut, les canons vous suivent l'un après l'autre et se passent votre silhouette de tireur en tireur. L'un d'eux parle dans sa radio, d'une voix qui porte jusqu'à la chaussée : « Il marche vers vous. Nous le laissons marcher vers vous. Dites-nous. » Il attend la réponse. Le vent apporte le bourdonnement du réacteur, à moins que ce ne soit votre sang. Tentez votre Chance.",
       "test": {
         "type": "luck",
         "success": "c18-34",
@@ -419,7 +419,7 @@
       }
     },
     "c18-27": {
-      "text": "L'avenue est large comme un fleuve, l'asphalte crevé par les bouleaux. Un coup de feu claque, puis l'écho entre les façades. Le crépi explose à un mètre de votre tête. Ils sont sur les toits, deux au moins, et ils ont le temps. Les porches sont à trente mètres les uns des autres. Entre deux, il n'y a rien que le jour.",
+      "text": "L'avenue est large comme un fleuve, l'asphalte soulevé par des bouleaux qui ont poussé dans les fissures. Un coup de feu claque, son écho court entre les façades, et le crépi explose à un mètre de votre tête en vous jetant du sable dans les yeux. Ils sont deux au moins, perchés au-dessus des seizièmes étages avec des fusils à lunette et tout le temps du monde. Les porches s'ouvrent tous les trente mètres le long des immeubles, et entre deux porches il y a le jour, plat, sans un poteau pour s'y abriter.",
       "choices": [
         {
           "kind": "attaquer",
@@ -438,7 +438,7 @@
       ]
     },
     "c18-28": {
-      "text": "Elle n'a pas bougé. Vous êtes dehors, dans la rue derrière elle, le dos au mur tiède. Elle regarde toujours le sud. Vous longez les façades jusqu'au coin. La place : la grande roue au-dessus des toits, l'hôtel en face, le palais à gauche, et sur les toits, les tireurs, qui regardent tous ailleurs que vers vous.",
+      "text": "La sentinelle n'a pas tourné la tête. Vous êtes dehors, le dos contre un crépi encore tiède du peu de soleil, et vous longez les façades jusqu'au coin, où la place s'ouvre sous les nacelles jaunes et où les tireurs perchés regardent tous ailleurs.",
       "choices": [
         {
           "kind": "aller",
@@ -448,7 +448,7 @@
       ]
     },
     "c18-29": {
-      "text": "Une cuisine. La toile cirée, les chaises, un calendrier arrêté au mois d'avril. Dans le placard, une conserve que personne n'a ouverte. Dans la salle de bain, derrière le miroir, un bandage dans son papier. Vous prenez la Conserve et le Bandage. Sur le frigo, une photo : deux adultes, une fille, la grande roue derrière eux, encore neuve.",
+      "text": "Une cuisine de six mètres carrés : la toile cirée à carreaux rouges, deux chaises, un calendrier de l'usine arrêté au mois d'avril 1986, et sur la cuisinière une casserole dont le contenu a séché en croûte noire. Dans le placard du bas, derrière des sachets de sarrasin éventrés par les rats, une conserve que nul n'a ouverte. Dans la salle de bain, derrière le miroir de l'armoire à pharmacie, un bandage encore dans son papier. Vous prenez la Conserve et le Bandage. Sur la porte du frigo, retenue par un aimant en forme de poisson, une photo montre deux adultes et une fille de sept ou huit ans, en manteaux, devant la grande roue toute neuve, peinte de frais pour le premier mai, et qui n'a jamais tourné.",
       "effects": [
         {
           "type": "item",
@@ -475,7 +475,7 @@
       ]
     },
     "c18-30": {
-      "text": "Il relève la tête et repart. Les deux autres le suivent, à pas égaux, sans avoir regardé le noir. Leur prière s'éloigne vers le sud. Vous attendez que la rue soit vide. Sous le porche, quelqu'un a gravé une date dans le plâtre, et un prénom. Vous sortez. La place, la grande roue, l'hôtel au fond.",
+      "text": "Il relève la tête et repart, et ses compagnons le suivent du même pas sans avoir regardé l'ombre où vous êtes. Leur prière s'éloigne vers le haut de l'avenue. Dans le plâtre du porche, quelqu'un a gravé « Oksana, 26.04 », et vous attendez que la rue soit vide avant de sortir vers la place.",
       "choices": [
         {
           "kind": "aller",
@@ -485,7 +485,7 @@
       ]
     },
     "c18-31": {
-      "text": "La cave débouche dans une cour par un soupirail cassé. L'herbe, les balançoires, un landau sur le flanc. Le détecteur crépite dès que vous sortez la tête, et ne s'arrête plus. De l'autre côté de la cour, entre deux immeubles, la place et la grande roue. Trente mètres d'herbe, et personne ne tire sur l'herbe.",
+      "text": "La cave débouche dans une cour par un soupirail cassé. Un landau bleu est couché sur le flanc dans l'herbe haute, et le détecteur crépite dès que vous sortez la tête, sans plus s'arrêter, parce que la terre de ces cours a bu tout ce que les toits ont reçu en avril. De l'autre côté, entre deux immeubles, la roue dépasse. Trente mètres d'herbe vous en séparent, sans un tireur aux fenêtres pour les surveiller.",
       "choices": [
         {
           "kind": "aller",
@@ -504,7 +504,7 @@
       ]
     },
     "c18-32": {
-      "text": "Vous ouvrez le boîtier du détecteur avec l'ongle et vous changez les piles. Il crépite une fois, pour dire qu'il est là. Il crépitera avant vous, de nouveau. Vous gardez les piles mortes dans la poche, par habitude, comme si quelqu'un allait les reprendre. Sous le porche, le vent a cessé.",
+      "text": "Le boîtier du détecteur s'ouvre à l'ongle du pouce. Vous changez les piles ; il émet un seul clic pour dire qu'il vit, et désormais il préviendra de nouveau avant que vous ne posiez le pied dans une anomalie. Les piles mortes vont au fond de la poche, à côté des boulons, par une vieille habitude du Cordon.",
       "choices": [
         {
           "kind": "agir",
@@ -519,7 +519,7 @@
       ]
     },
     "c18-33": {
-      "text": "Les cours intérieures. Derrière les immeubles, l'herbe monte à la hanche, et dans l'herbe, des balançoires, un bac à sable, une voiture sans roues. Le détecteur crépite dès les premiers pas, puis ne s'arrête plus. Les cours sont le chemin le plus sûr de Pripyat. C'est pour ça que personne n'y tire. C'est pour ça que tout y est encore.",
+      "text": "Derrière les immeubles, l'herbe monte à la hanche et cache à moitié des balançoires, un bac à sable, une Moskvitch posée sur ses moyeux. L'aiguille du compteur se couche à droite dès les premiers pas et y reste. Ces cours sont le chemin le plus abrité de Pripyat, et c'est justement pour ça que le Monolithe n'y poste aucun tireur : la terre fait le travail à leur place, et tout ce qui s'y trouvait en 1986 s'y trouve encore, jusqu'au seau rouge oublié sur le rebord du bac.",
       "choices": [
         {
           "kind": "aller",
@@ -538,7 +538,7 @@
       ]
     },
     "c18-34": {
-      "text": "Personne ne tire. Les canons vous suivent jusqu'au bout de l'avenue, puis se lèvent, un par un. Ceux qui vont au pont, on les laisse aller. Le Monolithe sait où mène le pont. Au pied du remblai, le viaduc commence, et le poste de garde, et la Centrale au-dessus, sa cheminée dans le ciel bas.",
+      "text": "Aucun coup ne part. La radio grésille là-haut une phrase que vous n'entendez pas, et les canons cessent de vous suivre au dernier immeuble, l'un après l'autre, sans hâte. Au pied du remblai commence le viaduc, avec son poste de garde aux vitres crevées, et au-dessus la cheminée rayée de la Centrale se découpe dans le ciel bas.",
       "choices": [
         {
           "kind": "aller",
@@ -548,7 +548,7 @@
       ]
     },
     "c18-35": {
-      "text": "Vous tirez le premier. Le premier tombe sur les genoux et finit son mot avant de tomber tout à fait. Les deux autres ne cherchent même pas l'abri, ils viennent, en tirant à chaque pas, et chaque balle qui passe emporte un morceau du porche. Ils tirent à casser des os. Ils ne reculent pas. Ce n'est pas dans leur prière.",
+      "text": "Votre balle part la première. L'homme de tête tombe à genoux et finit son verset avant de s'abattre face contre l'asphalte : « …nous ne dormons pas. » Ses compagnons ne cherchent pas d'abri, ils viennent sur vous en tirant à chaque pas, et chaque balle qui passe arrache un morceau d'angle au porche. Ces deux-là frappent fort et marchent sur vous du même pas compté que sur la chaussée.",
       "combat": {
         "name": "Patrouille du Monolithe",
         "habilete": 6,
@@ -561,7 +561,7 @@
       }
     },
     "c18-36": {
-      "text": "Un porche sans porte, à l'angle de la place. Des boîtes aux lettres, un vélo d'enfant, le silence. Vous posez le sac. D'ici, on voit la place sans être vu des toits. Le plâtre sent le froid. C'est le seul endroit de Pripyat où l'on peut s'asseoir, et vous vous asseyez.",
+      "text": "Un porche sans porte, à l'angle de la place, avec une rangée de boîtes aux lettres en fer et un vélo d'enfant appuyé contre le mur. D'ici on voit les dalles et l'entrée de l'hôtel sans être vu des tireurs, parce que l'auvent de béton cache le ciel. Vous posez le sac. Le plâtre est froid sous la main, et c'est le seul endroit de Pripyat où vous vous asseyez sans surveiller vos arrières.",
       "choices": [
         {
           "kind": "agir",
@@ -676,7 +676,7 @@
       ]
     },
     "c18-37": {
-      "text": "Le pied glisse sur le béton de l'autre côté. Vous rattrapez la rampe, le genou cogne l'arête de la marche, et vous restez pendu un moment au-dessus du vide. Vous perdez 3 points d'Endurance. Vous vous hissez. La porte ouverte donne sur un couloir, un portemanteau, un imperméable d'enfant encore pendu à sa patère.",
+      "text": "Le pied glisse sur l'arête du palier. Vous rattrapez la rampe, le genou cogne le béton, et vous restez pendu au-dessus du trou le temps de sentir vos épaules céder, pendant que le plâtre arraché tombe un étage plus bas sans bruit. Vous perdez 3 points d'Endurance. Hissé sur le palier, vous restez à plat ventre devant la porte entrebâillée, à écouter si la chute a fait monter quelqu'un dans l'escalier.",
       "effects": [
         {
           "type": "stat",
@@ -693,7 +693,7 @@
       ]
     },
     "c18-38": {
-      "text": "Le tireur bascule par-dessus la rambarde et tombe seize étages sans un cri. Le second ne tire plus. Vous l'entendez prier, là-haut, une voix plate qui répète le même mot. Vous repartez le long des façades. Au bout de l'avenue, la place s'ouvre, et devant la place, des silhouettes grises marchent au milieu de la rue, le fusil bas.",
+      "text": "Le tireur bascule par-dessus la rambarde et tombe les seize étages sans crier, avec son fusil qui tourne plus lentement que lui. L'autre ne tire plus. Vous l'entendez prier là-haut, d'une voix plate qui reprend au mot où la chute l'a coupée : « …vous qui l'avez reçu, recevez-le, nous restons. » Vous repartez le long des façades. Au bout de l'avenue, la place s'ouvre, et devant elle trois silhouettes grises marchent au milieu de la chaussée.",
       "choices": [
         {
           "kind": "aller",
@@ -703,7 +703,7 @@
       ]
     },
     "c18-39": {
-      "text": "Le hall, la lumière par la porte sans battant. Une sentinelle du Monolithe, debout, le fusil contre l'épaule, face à la rue. Elle ne bouge pas. Elle regarde le sud, comme tous les autres, parce que c'est du sud que viennent ceux qu'on tue. Derrière elle, à quatre mètres, la porte de la cour et la rue qui mène à la place.",
+      "text": "Le hall reçoit le jour par une porte sans battant, et dans ce jour se tient la sentinelle, combinaison grise, fusil contre l'épaule, le masque tourné vers la rue d'où viennent ceux qu'on tue. Elle répète à mi-voix ses trois phrases, toujours dans le même ordre. Derrière elle, à quatre mètres, une seconde porte reste ouverte sur une cour, et au-delà une ruelle mène au carrefour de la roue.",
       "choices": [
         {
           "kind": "aller",
@@ -723,7 +723,7 @@
         "alt": "L'avenue vide vers le nord, et au bout la cheminée de la Centrale au-dessus du viaduc",
         "prompt": "Une avenue large comme un fleuve, asphalte crevé de bouleaux, bordée d'immeubles aux fenêtres vides. Au bout, entre les façades, la cheminée mince de la Centrale et la masse du Sarcophage, et sous elle le viaduc. Ciel lourd. Le héros de dos, seul au milieu de la chaussée, petit, marchant vers le nord."
       },
-      "text": "L'avenue vers le nord. Entre les immeubles, au bout, la cheminée de la Centrale, et sous elle, le viaduc. Chaque pas vers là-bas en est un de moins vers le sud. Ceux qui prennent le pont ne reviennent pas à Pripyat : pas l'hôtel, pas la place, pas le porche. Ce que vous n'avez pas trouvé ici restera ici.",
+      "text": "L'avenue file vers le nord entre les immeubles, et tout au bout, au-dessus du viaduc, se dresse la cheminée rayée de la Centrale. Chaque pas vers elle vous éloigne de la route du Radar. Ceux qui prennent le pont ne reviennent pas dans Pripyat, ni à l'hôtel, ni au porche, ni sous la roue, et ce que vous n'avez pas trouvé dans ces immeubles y restera.",
       "choices": [
         {
           "kind": "aller",
@@ -747,7 +747,7 @@
       ]
     },
     "c18-41": {
-      "text": "Pas une balle ne vous touche. Vous partez sur le deux, vous arrivez au porche quand le crépi saute à l'endroit où vous étiez. Encore un, encore un. Le dernier porche donne sur la place. Vous vous adossez au mur, les poumons en feu. Dans la rue, devant vous, des silhouettes grises marchent au milieu de l'asphalte, le fusil bas.",
+      "text": "Aucune balle ne vous touche. Vous partez sur deux, puis sur quatre, puis sans compter, et chaque fois le crépi saute derrière vous dans le porche que vous venez de quitter. Le dernier donne sur le carrefour ; vous vous adossez au mur, les poumons en feu, et au milieu de la chaussée trois silhouettes grises approchent, le fusil bas, sans avoir remarqué le sable qui retombe encore derrière vous.",
       "choices": [
         {
           "kind": "agir",
@@ -757,7 +757,7 @@
       ]
     },
     "c18-42": {
-      "text": "Vous videz la trousse de soins : la seringue dans la cuisse, la compresse, l'agrafe sur ce qui bâille. Les mains tremblent moins. Vous regagnez 6 points d'Endurance. La trousse vide, vous la laissez sur la boîte aux lettres, pour le prochain, s'il y en a un. Il n'y en aura pas.",
+      "text": "La seringue dans la cuisse d'abord, puis la compresse, puis deux agrafes sur la plaie qui bâille : vous videz la trousse de soins jusqu'au fond. Vous regagnez 6 points d'Endurance. Les mains tremblent moins. La trousse vide, jetée par-dessus la rampe, rebondit deux étages plus bas dans la cage d'escalier.",
       "choices": [
         {
           "kind": "agir",
@@ -772,7 +772,7 @@
       ]
     },
     "c18-43": {
-      "text": "Vous sortez dans la rue. Ils s'arrêtent. Le premier vous regarde, et il n'y a rien derrière ses yeux : depuis que le Brûleur s'est tu, plus personne ne leur parle. Il cherche le mot qu'il répétait, il ne le trouve pas. Les deux autres regardent le ciel. Vous passez entre eux. L'un pose la main sur votre manche, puis la retire. Derrière, la place et la grande roue.",
+      "text": "Ils s'arrêtent net quand vous sortez dans la rue. Le premier vous regarde à travers les verres du masque, et derrière ses yeux il n'y a plus rien : depuis que le Brûleur s'est tu, aucune voix ne leur parle. « Nous sommes… nous sommes à… » Il cherche la suite et ne la trouve pas. Ses compagnons ont levé la tête vers le ciel bas, pareils à des chiens qui ont perdu une piste. Vous passez entre eux. L'un pose la main sur votre manche, la garde une seconde, puis la retire, et vous continuez jusqu'au carrefour.",
       "choices": [
         {
           "kind": "aller",
@@ -782,7 +782,7 @@
       ]
     },
     "c18-44": {
-      "text": "Elle tombe sans lâcher le fusil. Son masque s'est fendu ; dessous, un visage de vingt ans, les yeux blancs. Vous l'écoutez finir. Personne ne vient : les coups de feu, ici, ne surprennent personne. Vous sortez par la porte de la cour. La rue, le coin, et la place : la grande roue, l'hôtel en face, le palais à gauche.",
+      "text": "Elle tombe sans lâcher le fusil. Son masque s'est fendu en travers, et dessous il y a un visage de vingt ans, des taches de son, des yeux tout blancs qui regardent encore la rue. « Nous restons, nous restons, nous… » Vous attendez qu'elle finisse, mais elle ne finit pas. Les coups de feu ne font venir personne à Pripyat ; vous sortez par la porte de derrière, longez la ruelle jusqu'au coin, et la place s'ouvre devant vous, l'hôtel en face, le palais à gauche.",
       "choices": [
         {
           "kind": "aller",
@@ -792,7 +792,7 @@
       ]
     },
     "c18-45": {
-      "text": "Troisième étage, une porte qui tient encore. Un lit d'enfant, un piano sans couvercle, de la poussière sur tout. Vous poussez l'armoire contre la porte et vous dormez tout habillé, le fusil sous la main. Dehors, la grande roue grince toute la nuit. Personne ne monte. Vous regagnez 8 points d'Endurance.",
+      "text": "Au troisième étage, une porte tient encore sur ses gonds. Derrière, une chambre d'enfant : un lit à barreaux, un piano droit sans couvercle dont les marteaux ont gonflé d'humidité, de la poussière sur tout. Vous poussez l'armoire contre la porte, vous vous couchez tout habillé sur le parquet, le fusil sous la main, et vous dormez par morceaux pendant que la grande roue grince toute la nuit, une nacelle après l'autre. Aucun pas dans l'escalier. Au matin, la lumière entre grise par la fenêtre sans vitre. Vous regagnez 8 points d'Endurance.",
       "effects": [
         {
           "type": "stat",

@@ -35,7 +35,7 @@
   ],
   "paragraphs": {
     "c27-1": {
-      "text": "Le béton vous prend à la gorge. Les couloirs du Sarcophage sont peints en orange, une peinture épaisse coulée à la hâte, qui cloque sous vos doigts comme une peau. Le compteur ne crépite plus : il siffle, continu. Vous êtes entré. Devant vous, le couloir principal file vers une lueur rouge. Sur la gauche, un escalier de service monte dans le noir, et quelqu'un y chante, bas, une seule note.",
+      "text": "Les couloirs du bas débouchent dans le Sarcophage par une porte coupe-feu dont le battant a fondu contre son cadre, et vous passez de biais, l'épaule d'abord, dans un corridor peint en orange. La peinture a été coulée épaisse, à la hâte, par des hommes qui ne devaient pas rester plus de quatre minutes, et elle cloque sous vos doigts. Le compteur ne crépite plus : il siffle d'un seul trait. Devant vous, le couloir principal file droit vers une clarté rouge. Sur la gauche, un escalier de service monte sans une ampoule, et une voix basse y chante « reçois-le, reçois-le » sans jamais changer de note, à la manière d'une pompe qu'on aurait oublié d'arrêter.",
       "effects": [
         {
           "type": "flag",
@@ -56,7 +56,7 @@
       ]
     },
     "c27-2": {
-      "text": "La passerelle du haut débouche sous la voûte du Sarcophage. En bas, loin, le béton coulé a figé en vagues grises, et une lueur rouge monte d'un trou au centre. Vous êtes entré. Le vent est resté dehors ; ici, l'air est chaud, immobile, il sent le fer brûlé. Une échelle de fer descend le long du mur. La passerelle, elle, continue vers une cabine vitrée pleine de cadrans.",
+      "text": "La passerelle des toits finit sous la voûte, sur une plateforme de caillebotis qui vibre à chaque pas. Le vent est resté dehors avec les snipers ; ici l'air est chaud, épais, il a le goût du fer qu'on a chauffé à blanc. Très bas, le béton coulé s'est figé en vagues grises, et du centre de ces vagues monte une lueur couleur de braise, d'un trou rond que vous ne voyez pas encore en entier. Une échelle de fer descend le long du mur, scellée de loin en loin. La passerelle, elle, continue sur trente mètres jusqu'à une cabine vitrée où des cadrans renvoient la braise d'en bas.",
       "effects": [
         {
           "type": "flag",
@@ -77,7 +77,7 @@
       ]
     },
     "c27-19": {
-      "text": "Le couloir principal se termine sur une flaque. Noire, luisante, large comme une chambre, elle a coulé d'une fissure du plafond et s'est figée en cœur de lave. Du corium. Le compteur hurle d'un seul trait. Au-delà, la lueur rouge, et le son d'une goutte qui tombe dans un puits. Une gaine technique s'ouvre dans le mur à hauteur d'épaule, étroite, tiède.",
+      "text": "Le couloir principal finit sur une flaque. Elle a coulé d'une fissure du plafond et s'est figée là, noire et luisante, large comme une chambre d'hôtel, avec des plis de lave refroidie et des bulles crevées à sa surface : du corium, le cœur du réacteur qui a cherché la terre et s'est arrêté dans un couloir. Le compteur hurle sans reprendre souffle. Au-delà, le rouge baisse et monte, et une goutte tombe à intervalles réguliers dans un vide qui ne la rend pas. À hauteur d'épaule, dans le mur de gauche, une gaine technique s'ouvre, carrée, tiède au toucher.",
       "choices": [
         {
           "kind": "aller",
@@ -113,7 +113,7 @@
       ]
     },
     "c27-7": {
-      "text": "Vous traversez. Huit pas sur la croûte noire, qui tient. Le compteur ne reprend pas son souffle. Vous prenez 4 rads. De l'autre côté, le couloir s'élargit et le sol descend, et vous voyez enfin d'où vient la lueur : un puits, au centre du béton, rouge comme une forge.",
+      "text": "Huit pas sur la croûte noire, qui craque comme du verre pilé sans céder, et vous voilà de l'autre côté, le souffle court, le dosimètre toujours sur le même cri. Vous prenez 4 rads. Plus loin, le sol descend en pente douce et vous voyez enfin d'où vient la rougeur : un puits, au centre du béton, dont le bord luit d'un rouge de forge.",
       "effects": [
         {
           "type": "stat",
@@ -130,7 +130,7 @@
       ]
     },
     "c27-23": {
-      "text": "Vous videz l'Anti-rad, amer, qui descend froid. Vous perdez 5 rads. Puis vous traversez, huit pas sur la croûte noire. Le compteur hurle quand même. Vous prenez 4 rads. De l'autre côté, le couloir descend vers une lueur rouge, et vous entendez une goutte tomber, loin, dans quelque chose de vide.",
+      "text": "Vous videz l'Anti-rad d'un trait, un liquide amer qui descend froid et vous laisse la langue en carton. Vous perdez 5 rads. La croûte noire tient sous vos bottes, mais le dosimètre grince d'un bout à l'autre de la traversée : aucun flacon n'impressionne le corium. Vous prenez 4 rads. De l'autre côté, le couloir s'incline vers la lueur du fond.",
       "effects": [
         {
           "type": "stat",
@@ -147,7 +147,7 @@
       ]
     },
     "c27-11": {
-      "text": "La gaine est faite pour des câbles, pas pour un homme. Vous y entrez sur les coudes. Le métal est tiède, puis chaud. À mi-chemin, la tôle du fond a rouillé en dentelle et bombe sous votre poids, au-dessus du corium. Il faut passer vite et léger. Testez votre Habileté.",
+      "text": "La gaine a été faite pour des câbles de quarante millimètres, pas pour un homme avec un sac, et vous y entrez sur les coudes, le fusil traîné derrière vous par la sangle. Le métal est tiède à l'entrée, puis chaud, puis il vous brûle à travers les manches. À mi-chemin, la tôle du fond a rouillé en dentelle, et par les trous, sous vos coudes, vous voyez luire le corium un mètre plus bas. Elle bombe sous votre poids. Il faut passer vite et léger, sans appuyer deux fois au même endroit. Testez votre Habileté.",
       "test": {
         "type": "stat",
         "stat": "habilete",
@@ -157,7 +157,7 @@
       }
     },
     "c27-30": {
-      "text": "La tôle tient. Vous sortez de la gaine de l'autre côté de la flaque, les genoux brûlés par le métal, le compteur presque calme. Le couloir descend vers une lueur rouge. Au fond, un puits, et autour du puits, un silence de cathédrale.",
+      "text": "La tôle tient, et vous sortez de la gaine de l'autre côté de la flaque, les genoux brûlés à travers le pantalon, le compteur presque calme. Le couloir descend ensuite vers un puits rond, au fond, où l'air rouge ne bouge plus.",
       "choices": [
         {
           "kind": "aller",
@@ -167,7 +167,7 @@
       ]
     },
     "c27-15": {
-      "text": "La tôle cède. Vous tombez d'un mètre sur le bord de la flaque, l'épaule la première, et la croûte noire craque sous votre main comme du sucre. Vous perdez 3 points d'Endurance. Vous roulez hors de la flaque, vous rampez, le compteur n'a pas eu le temps de compter. Le couloir descend vers une lueur rouge.",
+      "text": "La tôle cède sous vos coudes. Vous tombez d'un mètre sur le bord de la flaque, l'épaule la première, et la croûte noire craque sous votre main comme un sucre qu'on écrase. Vous perdez 3 points d'Endurance. Vous roulez sur le béton, vous rampez sans regarder derrière, et quand vous vous relevez enfin, le gant gauche fume à l'endroit où il a touché le corium. Vous l'arrachez et le laissez là, retourné, les doigts en l'air. Le couloir continue de descendre vers la rougeur d'un puits.",
       "effects": [
         {
           "type": "stat",
@@ -184,7 +184,7 @@
       ]
     },
     "c27-26": {
-      "text": "L'escalier de service tourne deux fois et débouche sur un palier. Deux monolithiens sont là, à genoux, le front contre le mur orange, le fusil posé en travers des cuisses. Celui de gauche chante sa note. Celui de droite respire par un masque fendu. Derrière eux, un couloir mène au centre du Sarcophage. Ils n'ont pas tourné la tête. Pas encore.",
+      "text": "L'escalier de service tourne deux fois sur lui-même et débouche sur un palier éclairé par une baladeuse grillagée qui pend à son fil. Deux monolithiens y sont à genoux, le front contre le mur orange, le fusil posé en travers des cuisses comme la barre d'un prie-Dieu. Celui de gauche chante, les lèvres collées à la peinture : « Nous sommes venus, nous avons entendu, nous restons, nous sommes venus. » Celui de droite porte un masque fendu du menton à l'œil, et il respire au travers avec un sifflement mouillé, régulier, que vous entendez par-dessus le chant. Derrière eux, une porte ouverte donne sur un couloir qui va vers le centre. Ni l'un ni l'autre n'a tourné la tête, mais le sifflement a ralenti quand votre botte a touché la dernière marche.",
       "choices": [
         {
           "kind": "agir",
@@ -217,7 +217,7 @@
       ]
     },
     "c27-9": {
-      "text": "Vous faites le signe que vous avez vu au palais de la Culture : la main sur la poitrine, puis vers le sol. Dans la Tenue du Monolithe, vous n'êtes qu'un frère de plus qui va prier au centre. Celui de gauche ouvre les yeux, blancs, vous regarde, reprend sa note. Vous passez entre eux. Le couloir s'ouvre sur un puits rouge.",
+      "text": "Vous faites le signe que vous avez vu au palais de la Culture, la main ouverte sur la poitrine, puis tournée vers le sol, et dans la Tenue du Monolithe, avec sa laine grise qui vous gratte le cou, vous n'êtes qu'un frère de plus qui descend prier au centre. Celui de gauche ouvre les yeux. Ils sont blancs, sans pupille, et ils restent sur vous le temps d'une respiration avant que la prière reprenne au mot exact où elle s'était arrêtée : « …entendu, nous restons. » Vous passez entre les deux fusils, et au bout du couloir le béton s'ouvre sur un puits qui luit.",
       "choices": [
         {
           "kind": "aller",
@@ -227,7 +227,7 @@
       ]
     },
     "c27-21": {
-      "text": "Vous longez le mur, à pas comptés, dans le dos des deux hommes. La peinture orange colle à votre épaule. Un gravillon roule sous votre semelle. Le chant ne s'arrête pas, mais le masque fendu a cessé de respirer. Tentez votre Chance.",
+      "text": "Vous longez le mur à pas comptés, dans le dos des deux hommes, si près que la peinture orange colle à votre épaule et s'en détache avec un bruit de ruban adhésif. À mi-chemin de la porte, un gravillon roule sous votre semelle et tinte contre une marche. Le chant continue sur sa note, mais derrière le masque fendu le sifflement s'est arrêté net. Tentez votre Chance.",
       "test": {
         "type": "luck",
         "success": "c27-33",
@@ -235,7 +235,7 @@
       }
     },
     "c27-33": {
-      "text": "Il recommence à respirer. Le gravillon n'a rien dit. Vous passez la porte du palier sans un regard derrière vous, et vous ne respirez vous-même qu'au bout de vingt mètres, quand le couloir s'élargit sur une lueur rouge et le bord d'un puits.",
+      "text": "Le sifflement reprend, mouillé, régulier, et le gravillon finit sa course contre la plinthe. Vous passez la porte sans vous retourner et ne relâchez votre souffle qu'au bord du puits, vingt mètres plus loin, là où le béton rougit sous les bottes.",
       "choices": [
         {
           "kind": "aller",
@@ -245,7 +245,7 @@
       ]
     },
     "c27-5": {
-      "text": "Le masque fendu se retourne. Les yeux blancs trouvent les vôtres et le fusil se lève sans hâte, comme une chose qu'on a faite mille fois. Son frère continue de chanter, le front contre le mur. Il ne reste que les deux pas qui vous séparent, et l'odeur de laine mouillée de la Tenue.",
+      "text": "Le masque fendu se retourne. Les yeux blancs trouvent les vôtres par la fente du caoutchouc, et le fusil se lève sans hâte, du geste d'un homme qui a fait ça mille fois et n'y pense plus. Son frère est resté le front au mur ; il chante pour deux, maintenant : « Reçois-le. Nous ne sommes que ses mains. Reçois-le. » Deux pas vous séparent du canon, et la combinaison grise du monolithien sent la laine mouillée et la cire de bougie.",
       "combat": {
         "name": "Le monolithien au masque fendu",
         "habilete": 7,
@@ -257,7 +257,7 @@
       }
     },
     "c27-17": {
-      "text": "Il tombe contre le mur et y reste, le front sur la peinture, comme s'il priait encore. L'autre n'a pas cessé de chanter ; il n'a pas ouvert les yeux. Vous ne le touchez pas. Vous passez la porte du palier. Le couloir descend vers une lueur rouge et un bruit de goutte dans le vide.",
+      "text": "Il tombe contre le mur et y reste, le front sur la peinture, à genoux, dans la position exacte où vous l'avez trouvé. L'autre n'a pas ouvert les yeux. Sa prière a sauté un mot pendant les coups de feu, et elle reprend à ce mot-là, posément : « …celui qui marche. Il voit celui qui marche. » Vous ne le touchez pas. Vous passez la porte du palier, et le couloir derrière descend vers la rougeur du puits.",
       "choices": [
         {
           "kind": "aller",
@@ -267,7 +267,7 @@
       ]
     },
     "c27-28": {
-      "text": "L'échelle de fer est scellée au béton par des pattes qui ont fondu. Vous descendez. À mi-hauteur, une patte lâche et l'échelle se décolle du mur d'une largeur de main, puis d'une autre. En bas, le béton figé en vagues. Il reste dix mètres. Tentez votre Chance.",
+      "text": "L'échelle de fer est scellée au béton par des pattes que la chaleur a fondues à moitié, et elle bouge dès que vous y mettez le poids. Vous descendez quand même, barreau par barreau, le fusil dans le dos. À mi-hauteur, une patte lâche avec un claquement sec, et l'échelle se décolle du mur d'une largeur de main, puis d'une autre, en grinçant sur ses derniers scellements. Sous vous, il reste dix mètres de vide et le béton figé en vagues. Tentez votre Chance.",
       "test": {
         "type": "luck",
         "success": "c27-12",
@@ -275,7 +275,7 @@
       }
     },
     "c27-12": {
-      "text": "L'échelle tient. Les derniers barreaux sont chauds ; vous sautez le dernier mètre sur le béton gris, qui sonne creux. La lueur rouge vient d'un puits au centre, large comme une maison, et quelque chose tombe dedans, goutte à goutte, depuis le plafond.",
+      "text": "L'échelle tient sur ses deux dernières pattes, et vous sautez le dernier mètre sur un béton gris qui sonne creux sous les bottes. Au centre de la salle, le rouge monte d'un puits rond, large comme une place de village.",
       "choices": [
         {
           "kind": "aller",
@@ -285,7 +285,7 @@
       ]
     },
     "c27-24": {
-      "text": "L'échelle s'arrache. Vous tombez avec elle, quatre mètres, et c'est le fer qui touche le béton avant vous, puis vous. Vous perdez 3 points d'Endurance. Vous restez un moment sur le dos, le compteur dans l'oreille. Au-dessus, la voûte. Au centre, une lueur rouge qui monte d'un puits.",
+      "text": "L'échelle s'arrache du mur. Vous tombez avec elle sur quatre mètres, et c'est le fer qui frappe le béton le premier, dans un fracas qui roule sous la voûte, puis vous, à plat dos sur les barreaux. Vous perdez 3 points d'Endurance. Vous restez étendu le temps que vos poumons se rappellent leur travail, le compteur collé à l'oreille qui grince sans arrêt. Au-dessus, la passerelle se balance encore. Au centre de la salle, un puits rond jette sa rougeur contre la voûte.",
       "effects": [
         {
           "type": "stat",
@@ -302,7 +302,7 @@
       ]
     },
     "c27-8": {
-      "text": "La cabine vitrée est une salle de contrôle, la jumelle de celle du réacteur. Cadrans à zéro, aiguilles tombées, un fauteuil tourné vers la vitre. Sur le pupitre, une tasse pleine de poussière. Un monolithien est assis par terre sous le pupitre, le fusil entre les genoux : il dort, ou il prie, ou il est mort. Un escalier de métal descend vers le centre.",
+      "text": "La cabine vitrée est une salle de contrôle, la jumelle de celle du réacteur : mêmes pupitres vert-de-gris, mêmes cadrans ronds gradués en röntgens, toutes les aiguilles couchées sur le zéro. Un fauteuil à roulettes est tourné vers la vitre, et sur le pupitre une tasse émaillée s'est remplie de poussière jusqu'au bord. Sous le pupitre, assis par terre, un monolithien tient son fusil entre ses genoux, la tête penchée sur la crosse. Il dort, il prie, ou il est mort depuis l'automne, et sa poitrine ne vous apprend rien. Au fond de la cabine, un escalier de métal descend vers le centre.",
       "choices": [
         {
           "kind": "agir",
@@ -326,7 +326,7 @@
       ]
     },
     "c27-31": {
-      "text": "Vous connaissez ces cadrans. Dans la salle du réacteur, derrière le même panneau, il y avait un placard à fusibles. Ici, le panneau pivote sur un gond huilé, sans bruit, et donne sur un couloir court, propre, et une porte d'acier avec un clavier à douze touches. Le monolithien n'a pas bougé. Une lampe verte veille au-dessus du clavier.",
+      "text": "Ces cadrans, vous les avez déjà vus, en bas, dans la salle de contrôle du réacteur, et derrière le même panneau de tôle il y avait un placard à fusibles. Ici, le panneau pivote sur un gond qu'on a huilé récemment, sans un grincement, et s'ouvre sur un couloir court, propre, éclairé au néon. Au bout, une porte d'acier porte un clavier à douze touches et une lampe verte allumée. Derrière vous, sous le pupitre, le monolithien a gardé la tête sur sa crosse.",
       "choices": [
         {
           "kind": "aller",
@@ -336,7 +336,7 @@
       ]
     },
     "c27-14": {
-      "text": "Vous ouvrez les tiroirs du pupitre. Des fiches, un cadenas, rien. Au troisième tiroir, le monolithien se lève. Il n'était ni mort ni endormi. Il n'a pas de masque, sa bouche remue sur une prière et ses yeux blancs ne clignent pas. Il lève le fusil comme on lève un cierge.",
+      "text": "Vous ouvrez les tiroirs du pupitre un par un. Le premier contient des fiches de relevé jaunies, datées d'avril 1986 ; le deuxième, un cadenas sans clef et un crayon rongé. Au troisième, qui coince, le monolithien se lève. Il n'était ni mort ni endormi. Il n'a pas de masque, et sa bouche remue sur une prière que vous entendez enfin, maintenant qu'il est debout : « Reçois-le, reçois-le, nous ne sommes rien, reçois-le. » Ses yeux blancs ne clignent pas. Il lève le fusil à deux mains devant lui, avec la lenteur d'un homme qui porte un cierge en procession.",
       "combat": {
         "name": "Le monolithien sans masque",
         "habilete": 6,
@@ -348,7 +348,7 @@
       }
     },
     "c27-3": {
-      "text": "Il glisse sous le pupitre, à l'endroit même où il attendait, et la prière s'arrête au milieu d'un mot. Dans la cabine, plus rien ne bouge que la poussière. Rien dans les tiroirs qui vaille. L'escalier de métal descend vers le centre, où une lueur rouge bat lentement, comme un cœur.",
+      "text": "Il glisse sous le pupitre à l'endroit même où il attendait, et sa prière s'arrête au milieu d'un mot qu'il ne finira pas. Dans la cabine, la poussière qu'il a soulevée retombe en tournant dans le reflet rouge de la vitre. Le troisième tiroir, une fois forcé, ne contient qu'un rouleau de ruban encreur. L'escalier de métal descend vers le centre et sa lueur rouge.",
       "choices": [
         {
           "kind": "aller",
@@ -358,7 +358,7 @@
       ]
     },
     "c27-4": {
-      "text": "Le puits occupe le centre du Sarcophage. Un trou rond dans le béton coulé, large comme une maison, qui descend dans une lumière rouge sans fond. Les gouttes du plafond n'arrivent jamais en bas. Trois chemins partent du bord. Un couloir, au fond, où luit une lumière blanche, avec un chant à plusieurs voix. Un couloir d'où vient un ronronnement de ventilateurs. Et une galerie basse qui fait le tour du puits.",
+      "text": "Le puits occupe le centre du Sarcophage : un trou rond dans le béton coulé, large comme une maison, dont les parois descendent en gradins fondus vers un rouge qu'aucun regard n'atteint. Les gouttes qui tombent de la voûte n'arrivent jamais en bas ; vous en suivez une des yeux, puis elle n'est plus là. Trois chemins partent du bord. Au fond, un couloir ouvert sur une blancheur crue, d'où vient un chant à plusieurs voix sur une note unique. À droite, un couloir qui ronronne de ventilateurs, et l'air qui en sort est froid. À vos pieds, une galerie basse fait le tour du puits.",
       "image": {
         "src": "images/c27-4.webp",
         "alt": "Le puits central du Sarcophage, un trou rond dans le béton coulé, éclairé d'une lueur montant du fond.",
@@ -383,7 +383,7 @@
       ]
     },
     "c27-20": {
-      "text": "La galerie fait le tour du puits à hauteur de genou ; il faut la suivre courbé. À mi-tour, une alcôve. Un stalker est assis là, la combinaison ouverte, un carnet sur les cuisses. Mort depuis longtemps, sec, la bouche ouverte sur le puits. Sur la dernière page du carnet, une ligne : « Ne demande pas. C'est elle qui demande. » Son sac est vide.",
+      "text": "La galerie fait le tour du puits à hauteur de genou, et il faut la suivre plié en deux, une main sur le béton tiède. À mi-tour s'ouvre une alcôve. Un stalker y est assis, la combinaison ouverte jusqu'au ventre, un carnet à spirale sur les cuisses ; la peau a séché sur ses os, et sa bouche ouverte regarde le puits depuis des années. Sur la dernière page du carnet, d'une écriture qui descend en travers des lignes : « Ne demande rien. C'est elle qui demande. » Son sac est ouvert à côté de lui, vide, retourné par un autre avant vous.",
       "choices": [
         {
           "kind": "agir",
@@ -414,7 +414,7 @@
       ]
     },
     "c27-13": {
-      "text": "Vous vous asseyez à côté du mort, dos au béton, et vous videz la Trousse de soins : la compresse sur l'épaule, l'ampoule dans la cuisse. Vous regagnez 6 points d'Endurance. Le mort regarde le puits. Vous aussi, un moment. La lumière rouge ne bouge pas, et pourtant elle respire. Vous vous relevez.",
+      "text": "Vous vous asseyez à côté du mort, dos au béton, et vous videz la Trousse de soins sur vos genoux : la compresse sur l'épaule, la bande serrée au poignet, l'ampoule plantée dans la cuisse à travers le tissu. Vous regagnez 6 points d'Endurance. Le mort regarde le puits et vous le regardez avec lui, le temps que la chaleur de l'ampoule monte dans la jambe. Le rouge d'en bas reste fixe, et pourtant vous jureriez qu'il respire. Vous refermez son carnet avant de vous relever.",
       "choices": [
         {
           "kind": "aller",
@@ -429,7 +429,7 @@
         "alt": "Quatre monolithiens à genoux devant une arche de lumière blanche, un gardien debout dans le couloir orange.",
         "prompt": "Long couloir rectiligne du Sarcophage aux murs de peinture orange cloquée, vu depuis l'ombre d'un contrefort. Au bout, une arche d'où déborde une lumière blanche aveuglante ; devant elle, quatre fidèles du Monolithe à genoux, de dos, en capuches et masques, et un cinquième debout, fusil en travers, qui regarde vers nous. Forts contrastes entre l'orange sombre du béton et le blanc de l'arche."
       },
-      "text": "Le couloir vers la lumière blanche est droit, long, et le chant s'y fait net : quatre voix, une même note. Au bout, devant une arche, quatre monolithiens à genoux, dos à vous, face à la lumière. Un dernier gardien se tient debout, fusil en travers, et il regarde le couloir. Il vous a vu. Il attend de savoir ce que vous êtes.",
+      "text": "Le couloir du fond est droit sur soixante mètres, et le chant y devient net à mesure que vous avancez : quatre voix d'hommes sur une note, qui reprennent leur souffle chacune à son tour pour que la note ne casse jamais. « Nous sommes venus. Nous avons entendu. Nous sommes venus. » Au bout, devant une arche de béton nu d'où déborde la blancheur, quatre monolithiens sont à genoux, de dos. Un cinquième se tient debout, le fusil en travers de la poitrine, et il regarde le couloir. Il vous a vu. Il ne lève pas l'arme et ne crie pas ; il attend de savoir ce que vous êtes.",
       "choices": [
         {
           "kind": "agir",
@@ -462,7 +462,7 @@
       ]
     },
     "c27-25": {
-      "text": "La main sur la poitrine, puis vers le sol. Dans la Tenue du Monolithe, vous êtes un frère qui vient voir. Le gardien baisse le fusil et vous rend le signe. Les quatre ne tournent pas la tête. Vous passez entre eux et l'arche, et leur chant vous suit sous la voûte jusqu'à ce que la lumière blanche le couvre.",
+      "text": "Votre main se pose sur la poitrine, puis se tourne vers le sol. Dans la Tenue du Monolithe, la cagoule rabattue sur le front, vous avez leur silhouette, et le gardien baisse le fusil et vous rend le signe d'un geste plus lent que le vôtre. Les quatre ne tournent pas la tête. Vous passez entre leurs dos courbés et l'arche, si près que vos genoux frôlent leurs semelles, et leur chant vous suit sous la voûte jusqu'au moment où le bourdonnement de la pièce suivante le recouvre.",
       "choices": [
         {
           "kind": "aller",
@@ -472,7 +472,7 @@
       ]
     },
     "c27-16": {
-      "text": "Vous restez dans l'ombre d'un contrefort. Le gardien regarde le couloir, longtemps, puis la lumière l'appelle plus fort que vous : il se tourne vers l'arche, lentement, comme on se tourne vers un feu. Il faut traverser dans son dos, trente mètres, entre les quatre qui chantent. Tentez votre Chance.",
+      "text": "Vous restez dans l'ombre d'un contrefort, le dos contre le béton, à compter vos respirations. Le gardien fixe le couloir pendant plus de cent de ces respirations, puis la blancheur de l'arche l'appelle plus fort que vous : il se tourne vers elle avec la lenteur d'un homme qui tend les mains vers un poêle. Il reste trente mètres à faire dans son dos, entre les quatre qui chantent, sur un sol jonché de douilles. Tentez votre Chance.",
       "test": {
         "type": "luck",
         "success": "c27-32",
@@ -480,7 +480,7 @@
       }
     },
     "c27-32": {
-      "text": "Personne ne se retourne. Vous passez derrière le gardien, si près que vous sentez son odeur de laine mouillée, puis entre les quatre dos courbés. Leur note ne vacille pas. Sous l'arche, la lumière blanche est plus forte que le rouge du puits, et plus froide.",
+      "text": "Aucun d'eux ne se retourne. Vous passez derrière le gardien, si près que vous entendez craquer le cuir de ses bottes, puis entre les quatre dos courbés, et leur note ne vacille pas d'un quart de ton. Sous l'arche, la clarté qui vous accueille est plus forte que le rouge du puits, et plus froide, une lumière de néon de morgue qui ne chauffe rien.",
       "choices": [
         {
           "kind": "aller",
@@ -490,7 +490,7 @@
       ]
     },
     "c27-10": {
-      "text": "Le gardien tire le premier. Son fusil est un gros calibre qui frappe à casser des os, et les quatre, derrière lui, ne cessent pas de chanter. Il avance sur vous dans le couloir, à découvert, sans se baisser, comme si la lumière le protégeait. Peut-être qu'elle le protège.",
+      "text": "Le gardien tire le premier. Son fusil est un gros calibre à verrou, une arme de chasse à l'ours qui frappe à casser des os, et derrière lui les quatre continuent de chanter sans même hausser la voix. Il avance sur vous au milieu du couloir, à découvert, sans se baisser, en rechargeant à chaque pas, et sa bouche reprend la prière entre deux coups : « Il voit celui qui marche. Il n'a pas besoin de nous. Nous tirons quand même. » Il ne cherche aucun abri, parce que la lumière dans son dos lui en tient lieu.",
       "combat": {
         "name": "Le dernier gardien",
         "habilete": 8,
@@ -503,7 +503,7 @@
       }
     },
     "c27-34": {
-      "text": "Il tombe à genoux, puis sur le côté, et sa tête roule vers l'arche. Les quatre chantent encore. Pas un n'a bougé pour lui. Vous passez entre eux, l'arme braquée sur des nuques qui ne se retournent pas. Sous l'arche, la lumière blanche vous prend les yeux.",
+      "text": "Il tombe à genoux, puis sur le flanc, et sa tête roule vers l'arche, les yeux blancs ouverts sur la lumière. Les quatre chantent encore ; pas un n'a quitté sa place pour lui, pas un n'a tourné la tête au bruit des coups. Vous passez entre eux l'arme braquée sur des nuques qui restent courbées, des nuques rasées, griffées de cicatrices, et sous l'arche la blancheur vous prend les yeux au point que vous avancez trois pas à l'aveugle.",
       "choices": [
         {
           "kind": "aller",
@@ -513,7 +513,7 @@
       ]
     },
     "c27-22": {
-      "text": "Une antichambre. Le béton ici est nu, sans peinture, et la lumière blanche le rend presque tendre. Elle vient d'au-delà d'un seuil, au bout de la pièce, et elle bourdonne, bas, comme un transformateur. Elle écoute. Vous le savez sans savoir comment. Derrière vous, le chant, le puits rouge, et toute la Zone qui vous a laissé venir jusqu'ici.",
+      "text": "L'antichambre est de béton nu, sans peinture, et la clarté qui la baigne la rend presque tendre, comme du papier sous une lampe. Elle vient d'au-delà d'un seuil, au bout de la pièce, et elle bourdonne bas, à la façon d'un transformateur de quartier une nuit d'hiver. Vos pensées ralentissent à mesure que vous approchez, et se rangent l'une derrière l'autre sans que vous l'ayez décidé. Derrière vous restent le chant, le puits rouge, et toute la Zone que vous avez traversée pour arriver jusqu'à ce seuil.",
       "choices": [
         {
           "kind": "aller",
@@ -533,7 +533,7 @@
         "alt": "Une porte d'acier propre avec un clavier et une lampe verte, au fond d'un couloir de béton orange rouillé.",
         "prompt": "Au bout d'un couloir de béton coulé, peint d'un orange qui cloque et coule, une porte d'acier lisse et neuve, sans rouille, avec un petit clavier à douze touches sur le chambranle et une lampe unique allumée au-dessus. De la lumière froide filtre sous la porte ; de grands ventilateurs industriels grillagés bordent le couloir. Une silhouette de stalker de dos, au premier plan, le détecteur à la main."
       },
-      "text": "Le couloir des ventilateurs se termine sur une porte d'acier qui n'a rien à faire ici : propre, sans rouille, avec un clavier à douze touches et une lampe verte au-dessus. L'air qui passe sous la porte est frais, et il sent le formol. Les ventilateurs sont derrière. Quelqu'un entretient cette porte. Quelqu'un vit là-dessous depuis longtemps.",
+      "text": "Le couloir des ventilateurs se termine sur une porte d'acier qui n'a rien à faire ici : propre, lisse, sans une tache de rouille, avec un clavier à douze touches sur le chambranle et une lampe verte au-dessus. Les grands ventilateurs grillagés tournent dans les murs de part et d'autre, et l'air qui passe sous la porte est frais, filtré, chargé de formol comme un couloir d'hôpital. Les gonds luisent de graisse fraîche, et sur le seuil la poussière orange qui couvre tout le couloir s'arrête net, balayée.",
       "choices": [
         {
           "kind": "agir",
@@ -557,7 +557,7 @@
       ]
     },
     "c27-27": {
-      "text": "Le Décodeur se clipse sur le clavier. Ses chiffres courent, s'arrêtent un à un, et la lampe verte clignote deux fois. Un verrou glisse dans l'acier avec un bruit de bouteille qu'on débouche. La porte s'ouvre sur un couloir aux néons, blanc, propre, où vos bottes laissent des traces noires. L'air est froid. Derrière vous, le Sarcophage se referme sur son puits.",
+      "text": "Le Décodeur se clipse sur le clavier avec un déclic. Ses chiffres courent sur le petit écran, s'arrêtent un à un, six fois, et la lampe verte clignote deux fois avant de rester fixe. Un verrou glisse dans l'épaisseur de l'acier avec le bruit d'une bouteille qu'on débouche. La porte s'ouvre sur un couloir aux néons, blanc, propre, où vos bottes laissent des traces noires de cendre et de corium. L'air y est froid. Derrière vous, le Sarcophage garde son puits et son chant, et la porte se referme seule sur eux.",
       "choices": [
         {
           "kind": "aller",
@@ -567,7 +567,7 @@
       ]
     },
     "c27-29": {
-      "text": "Vous tapez six chiffres. La lampe verte passe au rouge et le clavier vous mord : une décharge remonte le bras jusqu'à la mâchoire. Vous perdez 3 points d'Endurance. Puis la lampe redevient verte, patiente. Aucune alarme. Ce qui est derrière la porte n'a pas besoin d'alarme ; ça sait déjà que vous êtes là.",
+      "text": "Vous tapez six chiffres au hasard. La lampe verte passe au rouge et le clavier vous mord : une décharge remonte du bout des doigts jusqu'à la mâchoire et vous plaque les dents l'une contre l'autre. Vous perdez 3 points d'Endurance. Puis la lampe redevient verte, patiente. Aucune sirène ne se déclenche, aucun pas ne vient de l'autre côté, parce que ce qui vit derrière cette porte n'a pas besoin d'alarme pour savoir que vous êtes là.",
       "effects": [
         {
           "type": "stat",

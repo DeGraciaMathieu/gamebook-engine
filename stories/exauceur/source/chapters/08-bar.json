@@ -63,7 +63,7 @@
         "alt": "Cour d'usine à Rostok, un canon antiaérien et un escalier qui descend sous l'usine",
         "prompt": "La cour d'une usine soviétique : hangars de tôle, rails envahis d'herbe qui ne mènent nulle part, un canon antiaérien braqué vers le nord, deux patrouilleurs en silhouette. Au fond, un escalier de béton descend sous l'usine vers une porte de fer, une ampoule allumée au-dessus. Ciel bas, poussière, vue depuis le portail d'entrée, le héros absent."
       },
-      "text": "Rostok commence par un mur. Des hangars de tôle, des rails qui ne mènent plus nulle part, un canon braqué sur le nord. Les hommes du Devoir patrouillent en gris et rouge, et personne ne vous regarde plus de deux secondes. Au fond de la cour, un escalier de béton descend sous l'usine. Sur la porte, à la peinture blanche : 100 Rads. Ça sent la saucisse et le chlore avant même d'avoir poussé le battant.",
+      "text": "Rostok commence par un portail de tôle ondulée et un mur de parpaings que le Devoir a rehaussé de sacs de sable. Derrière, des hangars, des rails qui s'arrêtent dans l'herbe, et un canon antiaérien ZU-23 dont les deux tubes pointent vers le nord, servi par des hommes en gris et rouge qui ne vous accordent pas deux secondes. Au fond de la cour, un escalier de béton descend sous l'usine jusqu'à une porte de fer, et au-dessus de la porte une ampoule éclaire trois mots à la peinture blanche : Bar 100 Rads. Ça sent la saucisse et le chlore avant que vous ayez posé la main sur le battant.",
       "choices": [
         {
           "kind": "aller",
@@ -87,7 +87,7 @@
       ]
     },
     "c08-2": {
-      "text": "Vous remontez de la fosse. L'escalier de fer vibre encore des cris d'en bas, et vos oreilles sifflent dans le silence relatif de la cave. Les parieurs se rassoient en comptant leurs billets. Le Barman vous regarde une seconde de plus que d'habitude. La salle est la même qu'avant : le poêle, le vieux dans son coin, les portes vers le nord, l'ouest et le sud.",
+      "text": "Vous remontez de la fosse, l'escalier de fer vibrant encore des cris d'en bas, et vos oreilles sifflent dans une cave qui vous paraît muette. Les parieurs se rassoient en comptant leurs billets. Le Barman vous regarde une seconde de plus que d'habitude, et il ne dit rien du sang sur votre col.",
       "image": {
         "src": "images/c08-2.webp",
         "alt": "La cave voûtée du Bar : un comptoir de zinc sous des ampoules nues, des tables de ferraille, un poêle, et au fond une grille ouverte sur un escalier de fer qui descend.",
@@ -107,7 +107,7 @@
       ]
     },
     "c08-3": {
-      "text": "Vous revenez par la porte des Terres sauvages, le vent dans le dos. Les deux hommes du Devoir comptent un de plus, et c'est vous. La cave vous reprend avec son odeur de saucisse et de chlore, comme si vous n'étiez jamais parti. Le Barman essuie un verre. Il ne demande pas d'où vous venez. Il le sait à la poussière sur vos bottes.",
+      "text": "Vous revenez par la porte des Terres sauvages, le vent dans le dos, et les deux sentinelles en comptent un de plus. Le Barman essuie un verre. Il ne demande pas d'où vous venez : la poussière sur vos bottes le lui dit.",
       "choices": [
         {
           "kind": "aller",
@@ -122,7 +122,7 @@
       ]
     },
     "c08-4": {
-      "text": "Vous redescendez de la route du nord, par la cour, entre les pylônes. Le canon antiaérien n'a pas bougé. En bas, la cave est pleine comme à chaque tombée du jour : ceux qui rentrent, ceux qui ne partiront pas. Vous posez le sac contre le comptoir. La radio grésille la même chanson que l'autre fois. Elle n'en connaît peut-être qu'une.",
+      "text": "Vous redescendez du nord par la cour, entre les pylônes, et le canon antiaérien n'a pas bougé d'un degré. En bas, la cave est pleine comme à chaque tombée du jour, ceux qui rentrent et ceux qui ne partiront pas. La radio grésille la même chanson que l'autre fois ; elle n'en connaît peut-être qu'une.",
       "choices": [
         {
           "kind": "aller",
@@ -137,7 +137,7 @@
       ]
     },
     "c08-5": {
-      "text": "Vous n'êtes pas parti. La route du sud vous a ramené, les barbelés sont restés derrière, et le Bar vous accueille sans un mot, parce qu'il a déjà vu ça. Le Barman pousse un verre vers vous sans qu'on le lui ait demandé. Le vieux, dans son coin, a peut-être souri. Vous ne le saurez pas.",
+      "text": "Vous n'êtes pas parti. Le chemin du sud vous a ramené, les barbelés sont restés derrière, et le Bar vous reprend sans commentaire. Le Barman pousse un verre vers vous, et vous ne l'aviez pas demandé. « Ça arrive. » Le vieux, dans son coin, a peut-être souri.",
       "choices": [
         {
           "kind": "aller",
@@ -152,7 +152,7 @@
       ]
     },
     "c08-6": {
-      "text": "Vous passez. L'air se referme derrière vous avec un bruit de drap secoué. Sous l'échelle, le mort est un stalker du mois dernier, le visage dans le gravier. Dans sa poche de poitrine, un Bandage encore sous plastique. Vous le prenez, et vous ne retournez pas sa tête. Il ne vous aurait rien dit de plus. Vous revenez par le même chemin, boulon par boulon.",
+      "text": "Vous passez. L'air se referme derrière vous avec un bruit de drap secoué. Sous l'échelle, le mort est un stalker du mois dernier, le visage dans le gravier, une main encore refermée sur la bretelle de son sac. Dans sa poche de poitrine, un Bandage encore sous plastique. Vous le prenez sans retourner sa tête, et vous revenez par le même chemin, boulon par boulon.",
       "effects": [
         {
           "type": "item",
@@ -169,7 +169,7 @@
       ]
     },
     "c08-7": {
-      "text": "Il prend la Clé USB de Strelok, la retourne entre ses doigts et la repose devant vous. C'est son écriture, dessus. Il sort un papier plié en huit, le déplie sur la table, trace un trait au crayon à l'ouest de l'antenne. Tunnel de service. Sous la crête. Il pousse la Carte du Guide vers vous. Trois sont passés par là. Deux sont revenus.",
+      "text": "Il prend la Clé USB de Strelok, la retourne entre ses doigts et la repose devant vous sans l'avoir branchée à quoi que ce soit : c'est l'écriture sur l'étiquette qu'il regardait. « Son écriture. » Il sort de sa veste un papier plié en huit, le déplie entre vous, trace au crayon un trait à l'ouest de l'antenne, et compte sur ses doigts en suivant le trait. « Forêt rouge. Crête. Tunnel de service. Pripyat. » Il pousse la Carte du Guide vers vous. « Trois sont passés là. Deux revenus. » Il ne dit pas lequel des trois était lui.",
       "effects": [
         {
           "type": "item",
@@ -186,7 +186,7 @@
       ]
     },
     "c08-8": {
-      "text": "Vous passez sous son bras et une crosse vous rattrape dans les côtes. Vous traversez la cave plié en deux, jusqu'au mur du fond, là où le Barman a déjà levé le fusil. Ça suffit. Le sergent crache par terre et retourne s'asseoir. Vous restez un moment contre la pierre froide, à compter vos côtes. Elles y sont toutes. Pas toutes à leur place.",
+      "text": "Vous passez sous son bras et une crosse vous rattrape dans les côtes. Vous traversez la cave plié en deux jusqu'au mur du fond, là où le Barman a déjà levé le fusil à hauteur de la salle. « Ça suffit. » Le sergent crache par terre et retourne s'asseoir, les jointures rouges. Vous restez contre la pierre froide à compter vos côtes, et elles y sont toutes, pas toutes à leur place.",
       "choices": [
         {
           "kind": "agir",
@@ -196,7 +196,7 @@
       ]
     },
     "c08-9": {
-      "text": "La chaise grince. Il attend. Ses yeux sont clairs, délavés, de la couleur d'un ciel au-dessus du Dépotoir. Il ne pose pas de question : c'est vous qui êtes venu. Le poêle craque. Vous avez l'impression qu'il connaît déjà la fin de ce que vous n'avez pas encore dit.",
+      "text": "La chaise grince. Il attend. Ses yeux sont clairs, délavés, de la couleur du ciel au-dessus du Dépotoir, et il ne pose pas de question, parce que c'est vous qui avez traversé la salle. Le poêle craque derrière vous. Ses mains restent à plat sur la table, et le verre d'eau devant lui n'a toujours pas de trace de lèvres.",
       "choices": [
         {
           "kind": "parler",
@@ -253,7 +253,7 @@
       ]
     },
     "c08-10": {
-      "text": "Vous ouvrez la conserve au couteau. Du poisson, ou quelque chose qui l'a été. Vous mangez froid, à la lame. Vous regagnez 2 points d'Endurance. La boîte vide rejoint le tas près du poêle. Un chien qui n'est pas aveugle, pour une fois, vient lécher ce qui reste et repart sans vous avoir demandé la permission.",
+      "text": "Vous ouvrez la conserve au couteau. Du poisson, ou ce qui en a été. Vous mangez froid, à la lame. Vous regagnez 2 points d'Endurance. La boîte vide rejoint le tas près du poêle, et un chien qui a ses deux yeux, pour une fois, vient lécher ce qui reste puis repart sans vous avoir demandé la permission.",
       "choices": [
         {
           "kind": "agir",
@@ -268,7 +268,7 @@
       ]
     },
     "c08-11": {
-      "text": "Trois hommes en gris et rouge se lèvent quand vous passez la porte. Le plus grand a un pansement frais sur l'arcade, et la radio du poste a parlé avant vous. Le Barman ne bouge pas, mais sa main est descendue sous le comptoir. Toute la cave regarde ailleurs avec application. Le sergent vous barre l'escalier. On ne force pas un poste du Devoir pour venir boire chez nous ensuite.",
+      "text": "Trois hommes en gris et rouge se lèvent quand vous passez la porte, et le plus grand porte un pansement frais sur l'arcade que vous reconnaissez, parce que c'est vous qui l'avez ouverte au poste. La radio du Devoir a parlé avant vous. Le Barman n'a pas bougé, mais sa main droite est descendue sous le comptoir, et toute la cave baisse les yeux sur son verre. Le sergent vous barre le bas de l'escalier, les pouces dans le ceinturon. « Le poste. Vous. » Il attend que vous niiez, et vous ne niez pas. « On ne force pas un poste du Devoir pour venir boire chez nous ensuite. Dehors, ou à genoux. »",
       "choices": [
         {
           "kind": "aller",
@@ -301,7 +301,7 @@
       ]
     },
     "c08-12": {
-      "text": "Le Barman ouvre la chemise des Documents du X-18, lit deux pages sans bouger les lèvres, la referme. Elle disparaît sous le comptoir et il compte 1 000 roubles en billets fatigués, sans se presser. Ça, dit-il, ça vaut un nom. Il vous regarde pour la première fois. Le vieux, dans le coin. Dis-lui que c'est moi qui t'envoie. Il n'écoute pas tout le monde.",
+      "text": "Le Barman ouvre la chemise des Documents du X-18, lit deux pages sans bouger les lèvres, la referme, et la chemise glisse sous le comptoir d'un seul mouvement du poignet. Il range son verre à l'envers sur la planche, puis compte 1 000 roubles en billets fatigués, par liasses de dix, sans se presser. « La Vallée sombre te laisse sortir, maintenant. » Vous répondez que la Vallée sombre ne laisse plus sortir grand monde. Il hoche la tête. « Ça, ça vaut un nom. » Pour une fois, il vous regarde en face, et le verre reste sur la planche. « Le vieux, dans le coin. Dis-lui que c'est moi qui t'envoie. Il n'écoute pas tout le monde, et il ne t'écoutera pas deux fois. »",
       "effects": [
         {
           "type": "item",
@@ -332,7 +332,7 @@
       ]
     },
     "c08-13": {
-      "text": "La vodka brûle et ne sent rien. Vous perdez 2 rads et 1 point de Chance : ce qu'elle lave dans le corps, elle le prend ailleurs, dans la main qui lance le boulon. La bouteille vide roule sous la table. À côté, un stalker lève son verre sans vous regarder. Ici, on trinque avec les morts aussi bien qu'avec les vivants.",
+      "text": "La vodka brûle et ne sent rien. Vous perdez 2 rads et 1 point de Chance : ce qu'elle lave dans le corps, elle le reprend ailleurs, dans la main qui lance le boulon. La bouteille vide roule sous la table jusqu'au pied d'un stalker qui lève son verre vers vous sans vous regarder. « Aux absents. » Il ne précise pas lesquels, et vous ne demandez pas.",
       "choices": [
         {
           "kind": "agir",
@@ -347,7 +347,7 @@
       ]
     },
     "c08-14": {
-      "text": "Il n'écoute pas. Le premier coup arrive avant la fin de votre phrase, un revers de crosse qui vous ouvre la lèvre. Le Barman retire son fusil du comptoir : la règle de la maison vaut un essai, pas deux. Le sergent avance, les poings fermés, et la cave recule contre les murs. Il frappe à casser des os. Les deux autres font cercle, pas plus.",
+      "text": "Il n'écoute pas. Le premier coup arrive avant la fin de votre phrase, un revers de crosse qui vous ouvre la lèvre. Le Barman retire le fusil du zinc et le range sous le comptoir. « Un essai. Pas deux. » Le sergent avance, les poings fermés, et la cave recule contre les murs pour lui laisser la place. Il frappe à casser des os, et les deux autres font cercle sans entrer dedans.",
       "combat": {
         "name": "Sergent du Devoir",
         "habilete": 7,
@@ -360,7 +360,7 @@
       }
     },
     "c08-15": {
-      "text": "La cour de l'usine, entre les hangars. Le ciel est bas, de la couleur du béton. Le canon antiaérien du Devoir pointe vers le nord, servi par deux hommes qui fument sans parler. Au fond, un réservoir d'eau sur pilotis, et sous l'échelle, une forme allongée que personne ne ramasse. L'air tremble au-dessus des gravats, à mi-chemin, comme au-dessus d'un capot chaud.",
+      "text": "La cour de l'usine, entre les hangars. Le ciel est bas, de la couleur du béton. Le canon antiaérien pointe vers le nord, servi par deux hommes du Devoir qui fument sans se parler. Au fond, un réservoir d'eau sur pilotis, et sous l'échelle une forme allongée que ni eux ni les autres ne ramassent. À mi-chemin, l'air tremble au-dessus des gravats comme au-dessus du toit d'un camion en août.",
       "choices": [
         {
           "kind": "aller",
@@ -375,7 +375,7 @@
       ]
     },
     "c08-16": {
-      "text": "Agroprom, dit-il. La grille. La salle des pompes. Vous n'avez pas prononcé ces mots ; il les connaît. Le Contrôleur t'a laissé passer. C'est la cache de Strelok. Il parle par phrases de cinq mots. Trois fois monté, trois redescendu. Le Radar brûle les têtes. Il existe un autre chemin. Il regarde vos mains, puis votre sac. Montre-moi ce que tu sais.",
+      "text": "« Agroprom. » Vous n'avez pas fini votre phrase qu'il l'a dite pour vous. « La grille. La salle des pompes. » Vous n'avez décrit ni l'eau jusqu'aux genoux ni la cache, et il les nomme avant vous. « Le Contrôleur t'a laissé passer. » Il ouvre la main gauche sur la table et rabat les doigts l'un après l'autre. « Agroprom. Vallée sombre. Rostok. » Deux doigts restent levés. « Strelok est monté trois fois. Le Radar brûle les têtes. Un autre chemin existe. » Son regard descend vers le sac à vos pieds. « Montre-moi ce que tu as. »",
       "effects": [
         {
           "type": "flag",
@@ -396,7 +396,7 @@
       ]
     },
     "c08-17": {
-      "text": "La salle du Bar. Le comptoir sous les ampoules, le poêle, les tables de ferraille. Dans le coin, le vieux en veste grise n'a pas bougé. Au fond, une grille s'ouvre sur un escalier d'où montent des cris et une odeur de chien : l'Arène. La porte de gauche donne sur les Terres sauvages, la cour remonte vers la route du nord. Au sud, la route par où vous êtes venu. Tout le monde finit par passer ici. Personne ne reste.",
+      "text": "La salle du Bar tient dans un regard : le comptoir sous les ampoules, le poêle, six tables de ferraille, et dans le coin le vieux en veste grise qui n'a pas changé de position depuis que vous êtes entré. Au fond, une grille s'ouvre sur un escalier de fer d'où montent des cris et une odeur de chien : l'Arène. La porte de gauche mène aux Terres sauvages, la cour remonte vers les Entrepôts militaires, et derrière vous l'escalier rend à la route par laquelle on quitte la Zone. Entre les tables, le béton est creusé en sillons par les bottes de ceux qui sont passés avant vous.",
       "choices": [
         {
           "kind": "parler",
@@ -464,7 +464,7 @@
       ]
     },
     "c08-18": {
-      "text": "La porte de gauche donne sur un couloir de béton, puis sur une porte de tôle que deux hommes du Devoir tiennent fermée par habitude. Derrière, le vent. Les Terres sauvages : des entrepôts, des ponts de fer, et sur les toits, dit-on, des mercenaires qui ne manquent jamais ce qui court. La sentinelle vous regarde, hausse les épaules. On ne retient personne vers Yantar. On compte ceux qui reviennent.",
+      "text": "La porte de gauche donne sur un couloir de béton, puis sur une porte de tôle que deux hommes du Devoir tiennent fermée par habitude plus que par ordre. Derrière, le vent. La sentinelle vous regarde, hausse les épaules. « Vers Yantar, on ne retient pas. On compte ceux qui reviennent. »",
       "choices": [
         {
           "kind": "aller",
@@ -479,7 +479,7 @@
       ]
     },
     "c08-19": {
-      "text": "Le Barman gagne. Pas ici, dit-il, et le sergent recule d'un pas, puis d'un autre. Ses deux hommes se rassoient. Il vous laisse passer en vous frôlant l'épaule, assez fort pour que vous sentiez le canon de son fusil sous la veste. Ce n'est pas fini. C'est reporté. La radio reprend sa chanson. Vous allez jusqu'au comptoir sans vous retourner.",
+      "text": "Le Barman gagne. Il n'a rien ajouté : le canon scié a pivoté de deux doigts vers la table du sergent, et le sergent recule d'un pas, puis d'un autre, et ses deux hommes se rassoient devant leurs verres. Il vous laisse passer en vous frôlant l'épaule, assez fort pour que vous sentiez sous sa veste le canon court d'un pistolet. « Reporté. » La radio reprend sa chanson au couplet où elle l'avait laissée, et vous allez jusqu'au comptoir sans vous retourner.",
       "choices": [
         {
           "kind": "agir",
@@ -489,7 +489,7 @@
       ]
     },
     "c08-20": {
-      "text": "Vous choisissez une table contre le mur et posez le sac dessus. Le Bar est le seul endroit entre ici et le nord où l'on peut vider un sac sans qu'on vous tire dessus. Vous étalez ce que vous avez sur la ferraille rayée. Le Barman note tout de loin, par habitude, sans rien dire. Le poêle chauffe un côté de votre visage.",
+      "text": "Vous choisissez une table contre le mur et posez le sac dessus. Entre ici et le nord, le Bar est le seul endroit où l'on peut vider un sac sans qu'on vous tire dessus pour voir ce qu'il contient. Vous étalez ce que vous avez sur la tôle rayée, et le Barman note tout de loin, par habitude, le verre à la main. Le poêle chauffe un côté de votre visage.",
       "choices": [
         {
           "kind": "agir",
@@ -635,7 +635,7 @@
         "alt": "Un vieil homme en veste grise seul à sa table dans le coin sombre du Bar",
         "prompt": "Dans le coin le plus sombre de la cave voûtée du Bar, un vieil homme en veste grise assis dos au mur, mains posées à plat sur une table de ferraille, un verre d'eau intact devant lui. Autour de sa table, un cercle de vide ; plus loin, les tables occupées, le poêle, les ampoules nues. Au premier plan, de dos, un stalker qui traverse la salle vers lui."
       },
-      "text": "Vous traversez la salle. Le vieux ne lève pas la tête, mais il vous a vu avant que vous décidiez de venir. Veste grise, mains posées à plat sur la table, un verre d'eau qu'il n'a pas touché. Autour de lui, une table de vide : les stalkers laissent de la place à ceux qui reviennent du nord, comme on laisse de la place aux morts.",
+      "text": "Vous traversez la salle. Veste grise boutonnée jusqu'au col, mains posées à plat sur la ferraille, un verre d'eau intact, et il ne détourne pas les yeux pendant les douze pas qu'il vous faut pour arriver. Autour de lui, une table de vide de chaque côté : les stalkers laissent de la place à ceux qui reviennent du nord, la même qu'ils laissent aux morts.",
       "choices": [
         {
           "kind": "agir",
@@ -650,7 +650,7 @@
       ]
     },
     "c08-22": {
-      "text": "Trois stalkers autour du poêle, une guitare qui n'a plus que quatre cordes. Ils parlent de Yantar : des hommes qui marchent et marmonnent, des stalkers vidés, et un savant sous une bâche qui échange des combinaisons contre ce qu'on rapporte du lac. Un autre parle des Entrepôts, d'un sniper sur le château d'eau qui ne rate jamais. Personne ne parle du Radar. Ils regardent le coin du vieux, et se taisent.",
+      "text": "Trois stalkers autour du poêle, une guitare à quatre cordes. Ils parlent de Yantar. « Des types qui marchent et qui marmonnent. Tu leur tires dedans, ils marchent encore. » Le deuxième, le plus vieux, remonte son col. « Et le savant sous sa bâche, qui te prend tes artefacts contre une combinaison. Bonne affaire, si tu reviens. » Le troisième parle des Entrepôts, d'un sniper sur le château d'eau qui ne rate jamais. Du Radar, pas un mot ; ils regardent le coin du vieux, et la guitare reprend seule.",
       "choices": [
         {
           "kind": "payer",
@@ -678,7 +678,7 @@
       ]
     },
     "c08-23": {
-      "text": "La cave est basse, voûtée, éclairée par des ampoules nues. Des tables, un poêle, une radio qui grésille une chanson d'avant. Derrière le comptoir, un homme en tablier, des bras comme des cuisses, essuie un verre qui est déjà propre. Il ne vous demande pas votre nom. Qu'est-ce que tu as, qu'est-ce que tu veux. Dans le coin le plus sombre, un vieux en veste grise, dos au mur, ne boit rien.",
+      "text": "Dix-huit marches, et la cave vous prend : voûte basse, ampoules nues au bout de leur fil, des tables de ferraille, un poêle en fonte, une radio qui grésille une chanson d'avant la Zone. Derrière le comptoir de zinc, un homme en tablier, des bras comme des cuisses, essuie un verre qui est déjà propre et vous regarde descendre les trois dernières marches. « Qu'est-ce que tu as, qu'est-ce que tu veux. » Il ne demande pas votre nom. Dans le coin le plus sombre, dos au mur, un vieux en veste grise a devant lui un verre d'eau auquel il n'a pas touché, et quand vous le regardez, il vous regarde déjà.",
       "choices": [
         {
           "kind": "parler",
@@ -697,7 +697,7 @@
       ]
     },
     "c08-24": {
-      "text": "La route du sud. Par là, le poste du Devoir, puis le Dépotoir, puis le Cordon, puis les barbelés et un monde où les chiens ont des yeux. On y va avec assez de roubles, dit-on, et surtout on y va pour ne pas aller plus loin. Vous regardez vos mains. Elles ne tremblent pas encore. La porte du Bar, derrière vous, bat une fois dans le vent.",
+      "text": "Le chemin du sud. Par là, le poste du Devoir, puis le Dépotoir, puis le Cordon, puis les barbelés et un monde où les chiens ont des yeux. Il faut des roubles pour passer les barbelés, dit-on au comptoir, et on ne dit pas combien. Vous regardez vos mains, qui ne tremblent pas encore, et derrière vous la porte du Bar bat une fois dans le vent.",
       "choices": [
         {
           "kind": "aller",
@@ -712,7 +712,7 @@
       ]
     },
     "c08-25": {
-      "text": "Le Barman, dit-il. Alors tu as lu le X-18. Il parle par phrases de cinq mots. Strelok est monté trois fois. Trois fois il est redescendu. Le Radar brûle les têtes. Il y a un autre chemin. Il se tait, et vous comprenez que ce chemin, il le donne, il ne le vend pas. Il regarde vos mains, puis votre sac. Il attend une preuve que vous êtes du bon côté de l'histoire.",
+      "text": "« Le Barman. » Il boit une gorgée d'eau. « Alors tu as lu. » Entre deux phrases, il laisse le temps qu'il faut au poêle pour craquer. « Strelok est monté trois fois. Trois fois redescendu. » Il lève la main gauche et plie les doigts un à un. « Rostok. Entrepôts. Forêt rouge. Radar. » Le pouce reste droit. « Le Radar brûle les têtes. Un autre chemin existe. » Il ne parle pas de prix. Il regarde votre sac. « Montre ce que tu sais. »",
       "effects": [
         {
           "type": "flag",
@@ -733,7 +733,7 @@
       ]
     },
     "c08-26": {
-      "text": "Vous videz la trousse de soins : seringue, compresses, une pince, un comprimé blanc que vous avalez sans lire. Vous regagnez 6 points d'Endurance. Le corps se remet en place comme une porte qu'on referme. La boîte métallique, vide, fait un bon cendrier. Le Barman la prendra avant que vous soyez sorti.",
+      "text": "Vous videz la trousse de soins : seringue, compresses, une pince, un comprimé blanc que vous avalez sans lire la notice. Vous regagnez 6 points d'Endurance. Le corps se remet en place comme une porte qu'on referme sur ses gonds. La boîte métallique, vide, ferait un bon cendrier, et le Barman l'aura ramassée le temps que vous atteigniez la porte.",
       "choices": [
         {
           "kind": "agir",
@@ -748,7 +748,7 @@
       ]
     },
     "c08-27": {
-      "text": "Le sergent tombe contre le comptoir et n'y revient pas. Ses hommes le relèvent par les aisselles, sans un regard pour vous, et le traînent vers l'escalier. Le Barman range le fusil. Lui, dehors. Toi, tu paies ton verre comme les autres. Du sang sèche déjà sur le béton. La radio n'a pas cessé sa chanson. Personne ne vous regarde plus, et ce n'est pas du respect.",
+      "text": "Le sergent tombe contre le comptoir et n'en revient pas. Ses deux hommes le relèvent par les aisselles, sans un regard pour vous, et le traînent vers l'escalier, ses bottes raclant le béton. Le Barman range le fusil. « Lui, dehors. Toi, tu paies ton verre comme les autres. » Du sang sèche déjà au pied du comptoir. Il verse un verre, le pousse vers vous, et sa main reste ouverte sur le zinc, paume en l'air, jusqu'à ce que vous ayez payé. Dans la salle, les regards sont retournés aux verres, et on vous laisse au comptoir la largeur de deux tabourets.",
       "choices": [
         {
           "kind": "agir",
@@ -758,7 +758,7 @@
       ]
     },
     "c08-28": {
-      "text": "Vous lancez un boulon. Il part trop haut, tourne, retombe trois mètres plus loin qu'il n'aurait dû. Un « Trampoline », au milieu de la cour, invisible et patient. Le passage est quelque part entre les gravats et le mur, et les deux hommes du canon ne vous diront pas où. Ils ont déjà vu des types essayer. Tentez votre Chance.",
+      "text": "Vous lancez un boulon. Il part trop haut, tourne sur lui-même et retombe trois mètres plus loin qu'il n'aurait dû, dans un bruit de métal sur les gravats. Un « Trampoline » au milieu de la cour, à l'endroit exact où l'air tremblait. Le passage est entre les gravats et le mur, mais les deux hommes du canon ne vous diront pas où. « Vas-y, on regarde. » Ils ont déjà vu des types essayer. Tentez votre Chance.",
       "test": {
         "type": "luck",
         "success": "c08-6",
@@ -766,7 +766,7 @@
       }
     },
     "c08-29": {
-      "text": "Le Barman pose les deux mains sur le zinc. Derrière lui, des étagères : piles, anti-rad dans leurs blisters jaunes, vodka sans étiquette, trousses de soins de l'armée, bandages, conserves. Il achète ce qui brille et ce qui se lit. Il ne marchande pas, il annonce. Sa mémoire est un carnet qu'il n'a pas besoin d'ouvrir.",
+      "text": "Le Barman pose les deux mains sur le zinc, et derrière lui les étagères disent le reste : piles, anti-rad dans leurs blisters jaunes, vodka sans étiquette, trousses de soins de l'armée au sigle à moitié effacé, bandages, conserves. Il range un verre à l'envers sur la planche. « Les piles, quatre-vingts. L'anti-rad, cent cinquante. Je prends ce qui brille et ce qui se lit. » Il ne marchande pas, il annonce, et il n'a pas besoin de se retourner vers l'étagère pour savoir combien il lui reste de chaque.",
       "shop": {
         "currency": "roubles",
         "sell": [
@@ -833,7 +833,7 @@
       ]
     },
     "c08-30": {
-      "text": "Vous gardez les mains ouvertes, loin de la ceinture. Vous parlez bas : le nord, Strelok, rien qui les concerne. Le sergent écoute, ou fait semblant. Derrière lui, le Barman a sorti le fusil à canon scié et l'a posé sur le zinc, sans un mot. Tout dépend de ce qui pèse le plus, ce soir, l'orgueil du Devoir ou la règle de la maison. Tentez votre Chance.",
+      "text": "Vous gardez les mains ouvertes, loin de la ceinture, et vous parlez bas : le nord, Strelok, rien qui regarde le Devoir. Le sergent écoute, ou fait semblant, les yeux sur votre couteau. Derrière lui, le Barman a sorti un fusil à canon scié et l'a posé sur le zinc, à plat, le canon vers la salle. « Pas ici. » Deux mots. Le sergent a les yeux sur le canon scié, puis sur vous, puis sur le canon. Tentez votre Chance.",
       "test": {
         "type": "luck",
         "success": "c08-19",
@@ -841,7 +841,7 @@
       }
     },
     "c08-31": {
-      "text": "Arnie me l'a dit. Trois rounds, la Chimère comprise. Il regarde votre cou, là où la bête a dû passer près. Ceux qui tiennent, je les envoie. Les autres, je les laisse boire. Il déplie un papier usé, trace un trait au crayon à l'ouest de l'antenne, le replie et le pousse vers vous. La Carte du Guide. Tunnel sous la crête. Ne le dis à personne.",
+      "text": "« Arnie me l'a dit. » Il regarde votre cou, là où la Chimère est passée près. « Trois rounds. La bête aussi. » Il ramène de sous la table un papier usé aux pliures, le déplie, trace au crayon un trait à l'ouest de l'antenne. « Ceux qui tiennent, j'envoie. Les autres boivent. » Il replie le papier et le pousse vers vous : la Carte du Guide. « Tunnel sous la crête. Dis-le à personne. » Vous la rangez contre votre poitrine, là où le sang de l'Arène n'a pas encore séché.",
       "effects": [
         {
           "type": "item",
@@ -858,7 +858,7 @@
       ]
     },
     "c08-32": {
-      "text": "La grille du fond s'ouvre sur un escalier de fer. En bas, des cris, des paris, une odeur de chien mouillé et de sang qu'on a arrosé d'eau. Un homme en costume trop petit monte à votre rencontre, cigare éteint au coin de la bouche. Arnie. Trois rounds. Tu vis, tu touches. Il ne dit pas combien. Il ne dit pas contre quoi.",
+      "text": "La grille du fond s'ouvre sur un escalier de fer. En bas, des cris, des paris, une odeur de chien mouillé et de sang qu'on a arrosé au tuyau. Un homme en costume trop petit monte à votre rencontre, cigare éteint au coin de la bouche, et le fait rouler de l'autre côté avant de parler. « Arnie. Trois rounds. Tu vis, tu touches. » Il ne dit pas combien. Il ne dit pas contre quoi.",
       "choices": [
         {
           "kind": "aller",
@@ -873,7 +873,7 @@
       ]
     },
     "c08-33": {
-      "text": "Il ne parle pas. Vous attendez une minute, puis deux. Il boit une gorgée d'eau. Tu ne sais rien, dit-il enfin. Reviens quand tu sauras. Il regarde de nouveau le mur derrière vous, et la conversation est finie comme on ferme une porte. Vous vous levez. Le grincement de la chaise est le seul bruit que vous laissez.",
+      "text": "Il ne parle pas. Vous attendez une minute, puis deux, et il boit une gorgée d'eau en regardant le mur derrière votre épaule. « Tu ne sais rien. » Il repose le verre exactement dans son rond d'eau. « Reviens quand tu sauras. » Vous vous levez, et le grincement de la chaise est le seul bruit que vous laissez à cette table.",
       "choices": [
         {
           "kind": "aller",
@@ -883,7 +883,7 @@
       ]
     },
     "c08-34": {
-      "text": "Vous ouvrez le dos du Détecteur Ours, chassez les vieilles piles du pouce, glissez les neuves. Il revient à la vie avec un crépitement, puis se tait : il n'y a rien à trouver dans cette cave, et c'est ce qu'il dit. La batterie remonte à 60. L'aiguille tremble un peu, comme une main qui a eu froid.",
+      "text": "Vous ouvrez le dos du Détecteur Ours, chassez les vieilles piles du pouce et glissez les neuves. Il revient à la vie avec un crépitement, puis se calme : il n'y a rien à trouver dans cette cave, et il le dit à sa manière. La batterie remonte à 60. L'aiguille tremble sur le zéro, puis s'y tient.",
       "choices": [
         {
           "kind": "agir",
@@ -898,7 +898,7 @@
       ]
     },
     "c08-35": {
-      "text": "Les 200 roubles disparaissent dans une poche de la veste gris-rouge avant que vous ayez fini de les compter. Le sergent se rassoit, ses hommes aussi, et la cave reprend son souffle. Le Devoir a de la mémoire, mais il a aussi des comptes à tenir. Le Barman hausse une épaule : ici, tout s'achète, même la paix. Surtout la paix.",
+      "text": "Les 200 roubles disparaissent dans une poche de la veste gris-rouge pendant que vous les comptez encore. Le sergent se rassoit, ses hommes aussi, et la cave reprend son souffle avec un bruit de verres qu'on repose. Le Barman hausse une épaule derrière son comptoir. « Deux cents, la paix. Pour ce soir. » Il range le verre à l'envers sur la planche. Le sergent, à sa table, ne vous a pas quitté des yeux.",
       "choices": [
         {
           "kind": "agir",
@@ -908,7 +908,7 @@
       ]
     },
     "c08-36": {
-      "text": "La route du nord sort de Rostok entre deux rangées de pylônes. Des camions morts, des herbes hautes, des datchas au loin, et plus loin encore une colonne de fumée que personne ne commente. Les Entrepôts militaires. La Liberté y tient encore, paraît-il, et le Monolithe descend chaque nuit un peu plus bas. Vous serrez la bretelle du sac. Le détecteur se tait, pour l'instant.",
+      "text": "Entre deux rangées de pylônes, la piste des Entrepôts sort de Rostok vers le nord. Des camions morts, des herbes hautes, des datchas au loin, et plus loin encore une colonne de fumée que les sentinelles ne commentent pas. La Liberté y tient encore, paraît-il, et le Monolithe descend chaque nuit un peu plus bas. Vous serrez la bretelle du sac.",
       "choices": [
         {
           "kind": "aller",
@@ -923,7 +923,7 @@
       ]
     },
     "c08-37": {
-      "text": "Le Barman pose le verre. Agroprom. Kouznetsov a parlé de toi à la radio, il paraît que tu as tenu la cour. Il se baisse, remonte une Conserve et la pousse sur le zinc. Cadeau. Ne t'y habitue pas. La boîte est cabossée, l'étiquette a jauni, mais le métal ne sonne pas creux. Vous la glissez dans le sac.",
+      "text": "Le Barman pose le verre. « Agroprom. Kouznetsov a parlé de toi à la radio. Il paraît que tu as tenu la cour. » Il se baisse derrière le zinc, remonte une Conserve et la pousse vers vous du plat de la main, sans la lâcher tout de suite. « Cadeau. Ne t'y habitue pas. » La boîte est cabossée, l'étiquette a jauni jusqu'au brun, mais le métal ne sonne pas creux quand vous la cognez contre le comptoir, et vous la glissez dans le sac avant qu'il change d'avis.",
       "effects": [
         {
           "type": "item",
@@ -940,7 +940,7 @@
       ]
     },
     "c08-38": {
-      "text": "Le goût de l'anti-rad est celui du métal et de l'amande. Vous perdez 5 rads. Le compteur du détecteur se calme, sa petite aiguille revient vers la gauche, et la nausée qui vous suivait depuis la route s'assoit à côté de vous sans partir tout à fait. Le blister vide rejoint les autres sous la table. Personne ne balaie, ici.",
+      "text": "L'anti-rad a un goût de métal et d'amande. Vous perdez 5 rads. L'aiguille du détecteur revient vers la gauche, et la nausée qui vous suivait depuis la route s'assoit à côté de vous sans partir tout à fait. Le blister jaune vide rejoint les autres sous la table, où le pied du Barman les pousse une fois par semaine vers le poêle.",
       "choices": [
         {
           "kind": "agir",
@@ -955,7 +955,7 @@
       ]
     },
     "c08-39": {
-      "text": "La tournée délie ce qui restait noué. Les mercenaires tiennent les toits des Terres sauvages ; ils tirent sur ce qui court, moins sur ce qui rampe. Un camion de savants est resté en travers de la route, et ceux qui l'ont sorti ont eu un lit à Yantar. Aux Entrepôts, la Liberté manque de tout sauf de musique. Le plus jeune, à voix basse : au nord de la Forêt rouge, les pensées viennent de l'extérieur. Les 50 roubles sont partis. Ils en valaient la moitié.",
+      "text": "La tournée délie ce qui restait noué. « Les mercenaires tiennent les toits des Terres sauvages. Ils tirent sur ce qui court, moins sur ce qui rampe. » Le vieux de la guitare pose son verre. « Un camion de savants est resté en travers de la route. Ceux qui l'ont sorti ont eu un lit à Yantar. Les autres aussi, mais sous la bâche. » Un rire sec, et une bûche s'effondre dans le poêle. « Aux Entrepôts, la Liberté manque de tout sauf de musique. » Le plus jeune se penche vers vous, la voix baissée pour que le coin du vieux n'entende pas. « Au nord de la Forêt rouge, les pensées viennent de l'extérieur. Un copain est monté. Il est revenu, mais ce n'est plus lui qui marche dedans. » Les 50 roubles sont partis, et ils en valaient la moitié.",
       "choices": [
         {
           "kind": "aller",
@@ -965,7 +965,7 @@
       ]
     },
     "c08-40": {
-      "text": "Il parle en essuyant. Yantar : les savants de Sakharov sont enterrés sous une bâche de plomb et leurs camions ne rentrent pas tous. Les Entrepôts : la Liberté tient encore, le Monolithe descend du nord chaque nuit, un peu plus bas. Le Radar, il n'en dit rien ; il désigne le coin sombre du menton. Lui, il y est allé. Il ne parle qu'à ceux que je connais.",
+      "text": "Il parle en essuyant, sans lever les yeux. « Yantar, les savants de Sakharov sont sous une bâche de plomb et leurs camions ne rentrent pas tous. Les Entrepôts, la Liberté tient encore. Le Monolithe descend du nord chaque nuit, un peu plus bas. » Le Radar, il le saute, et son menton désigne le coin sombre où le vieux n'a pas bougé. « Lui, il y est allé. Il ne parle qu'à ceux que je connais. »",
       "choices": [
         {
           "kind": "aller",
@@ -980,7 +980,7 @@
       ]
     },
     "c08-41": {
-      "text": "Le couteau sort et la cave se tait. Le sergent sourit, pose son fusil sur une table : un seul à la fois, c'est la règle du Barman, et il compte la faire respecter avec ses poings et la crosse de son camarade. Il frappe à casser des os. Les deux autres font cercle, pas plus. Au premier sang sur le béton, personne ne viendra vous aider.",
+      "text": "Le couteau sort, et le bruit de la cave tombe d'un coup. Le sergent sourit, pose son fusil sur la table la plus proche et relève ses manches. « Un seul à la fois. Règle de la maison. » Il compte la faire respecter avec ses poings et la crosse de son camarade. Ses deux hommes tirent les tables du pied pour dégager le béton, et les stalkers reculent leurs chaises, verre en main, pour regarder.",
       "combat": {
         "name": "Sergent du Devoir",
         "habilete": 7,
@@ -993,7 +993,7 @@
       }
     },
     "c08-42": {
-      "text": "Il attend. Il n'a pas de hâte, il a tout le temps que la Zone lui a laissé. Sur la table, entre vous, il y a la place d'un objet. Le poêle craque. Les parieurs remontent de l'Arène en comptant leurs billets, et aucun ne s'approche de cette table. Ses yeux ne quittent pas vos mains.",
+      "text": "Il attend. Il n'a pas de hâte, et il regarde vos mains. Sur la table, entre vous, il y a la place d'un objet. Des parieurs remontent de l'Arène, et aucun ne s'approche à moins de deux tables.",
       "choices": [
         {
           "kind": "agir",
@@ -1041,7 +1041,7 @@
       ]
     },
     "c08-43": {
-      "text": "L'air vous attrape à mi-course. Le sol disparaît, puis revient, trop vite, et vous rencontrez le pilotis du réservoir avec l'épaule. Vous perdez 3 points d'Endurance. Les deux hommes du canon n'ont pas tourné la tête. Vous rampez hors de la cour en traînant un bras qui n'est pas cassé, pas tout à fait. Le mort sous l'échelle garde ses poches.",
+      "text": "L'air vous attrape à mi-course. Le sol disparaît, puis revient trop vite, et vous rencontrez le pilotis du réservoir avec l'épaule. Vous perdez 3 points d'Endurance. Les deux hommes du canon n'ont pas tourné la tête. Vous rampez hors de la cour en traînant un bras qui plie encore, et le mort sous l'échelle garde ses poches.",
       "effects": [
         {
           "type": "stat",
@@ -1058,7 +1058,7 @@
       ]
     },
     "c08-44": {
-      "text": "Vous défaites le bandage, serrez la plaie, nouez. Vous regagnez 3 points d'Endurance. Le tissu rougit, puis cesse de rougir. Vos mains ont appris à faire ça sans que vous les regardiez. Dans la Zone, c'est le genre de chose qu'on apprend avant son propre nom, et qu'on oublie après.",
+      "text": "Vous défaites le bandage, serrez la plaie, nouez. Vous regagnez 3 points d'Endurance. Le tissu rougit, puis cesse de rougir, et vos mains ont fait tout cela sans que vous les regardiez. Vous ne vous rappelez pas qui le leur a appris.",
       "choices": [
         {
           "kind": "agir",
@@ -1073,7 +1073,7 @@
       ]
     },
     "c08-45": {
-      "text": "Une couchette dans l'arrière-salle, derrière les fûts. Le drap sent la javel et le tabac. Le Barman éteint sans un mot. Vous dormez d'un sommeil sans fond, sans Zone, et quand vous rouvrez les yeux le poêle ronfle de l'autre côté de la cloison. Vous regagnez 8 points d'Endurance.",
+      "text": "Une couchette dans l'arrière-salle, derrière les fûts de gasoil du générateur. Le drap sent la javel et le tabac. Le Barman éteint l'ampoule de la cloison et tire le rideau. Vous dormez d'un sommeil sans fond et sans Zone, et quand vous rouvrez les yeux, le poêle ronfle de l'autre côté et quelqu'un rit au comptoir. Vous regagnez 8 points d'Endurance.",
       "effects": [
         {
           "type": "stat",

@@ -23,7 +23,9 @@ Si l'argument ne le dit pas, pose au plus quatre questions en un seul appel : st
 1. `stories/<id>/source/story.src.json` : le manifeste, c'est-à-dire tout sauf les paragraphes : `id`, `title`, `summary`, `art.style`, `hero` (caractéristiques avec `description`, réserve de points, ressources, horloges), `items` (le catalogue complet, 20 à 40 objets, chacun obtenu dans un chapitre et utile dans un autre), `modifiers` (au moins deux bonus et deux malus), `triggers` (toute seconde jauge en appelle un). `start`, `death` et les cibles des déclencheurs désignent des paragraphes préfixés (`c01-1`, `c01-mort`) qui existeront en phase 3.
 2. `stories/<id>/source/bible.md` suivant le gabarit de `bible.md` : pitch, style et ton avec phrases d'exemple, héros, lieux par région, personnages récurrents, glossaire, économie des objets et des drapeaux, modificateurs et déclencheurs en prose, actes et convergences, fins.
 
-Montre à l'utilisateur le pitch, la fiche du héros, le tableau des objets et la liste des fins ; demande validation.
+La bible porte une fiche de voix par personnage récurrent et une section « Diapason » : propose à l'utilisateur d'écrire lui-même ces deux ou trois paragraphes ; s'il décline, écris-les, de longueurs variées, marqués « provisoire ».
+
+Montre à l'utilisateur le pitch, la fiche du héros, le tableau des objets, la liste des fins et le diapason ; demande validation.
 
 ## Phase 2 : macro-squelette
 
@@ -54,13 +56,17 @@ Règles : les entrées d'un chapitre sont tout ce par quoi on peut y arriver de 
 
 Lance `node scripts/story-lint.mjs stories/<id>` : il doit répondre « Contrats cohérents » sans erreur. Montre le tableau et la sortie du lint ; demande validation. Si l'utilisateur ajuste, reprends le tableau complet et relance le lint.
 
-## Phase 3 : écriture par sous-agents
+## Phase 3 : écriture par sous-agents, en trois passes
 
-Suis la boucle de `references/chapter-prompt.md` : un sous-agent par chapitre, lancés par vagues de 4 à 6 (Agent, type `general-purpose`), chacun avec le prompt rempli (bible, contrat, résumés des chapitres voisins, style, taille) et l'obligation de rendre un chapitre dont `node scripts/story-lint.mjs --chapter <fichier>` sort sans erreur. Un sous-agent n'écrit que son fichier de chapitre ; il ne touche ni au manifeste, ni à la bible, ni aux autres chapitres.
+Suis `references/chapter-prompt.md` : chaque chapitre passe par trois sous-agents (Agent, type `general-purpose`), lancés par vagues de 4 à 6, une passe par vague et un acte à la fois :
 
-À chaque retour, relance toi-même le lint du chapitre. Un chapitre avec erreurs, ou un avertissement non justifié dans le rapport du sous-agent, repart au même sous-agent (SendMessage) avec la sortie du lint. Trois reprises au plus par chapitre ; au-delà, écris toi-même la correction.
+1. **Squelette** : structure, mécanique, illustrations, `kind` des choix, et un `text` réduit à une didascalie entre crochets. Contrôle : `node scripts/story-lint.mjs --chapter <fichier>` sans erreur (les avertissements de surlignage sont attendus), taille dans la fourchette.
+2. **Prose** : le sous-agent reçoit la bible (style, diapason, lieux, fiches de voix), son chapitre entier et les derniers paragraphes du chapitre précédent ; il ne change que les `text`. Avant de lancer, copie le fichier dans ton scratchpad. Contrôle : `node scripts/story-prose.mjs --diff <copie> <fichier>` passe, lint sans erreur ni avertissement de surlignage, aucune didascalie restante, `node scripts/story-prose.mjs --chapter <fichier>` avec chaque avertissement justifié.
+3. **Relecture** : le sous-agent reçoit la mesure du chapitre et le relit dans l'ordre de lecture pour retirer tics, répétitions et uniformité ; mêmes contrôles, mêmes limites.
 
-Quand tous les chapitres sont rendus, `node scripts/story-lint.mjs stories/<id>` doit passer sans erreur sur la fusion.
+Un chapitre refusé repart au même sous-agent (SendMessage) avec la sortie du contrôle. Une reprise par passe ; au-delà, corrige toi-même. Un `--diff` qui échoue : restaure la copie, relance.
+
+Quand tous les chapitres ont leurs trois passes, `node scripts/story-lint.mjs stories/<id>` doit passer sans erreur sur la fusion et `node scripts/story-prose.mjs stories/<id>` donne le tableau par chapitre.
 
 ## Phase 4 : fusion, contrôle, équilibrage
 
@@ -81,6 +87,7 @@ Un message court pour l'utilisateur :
 1. Pitch en deux lignes, style retenu, chemins (`source/`, `story.json`, `build-map.json`).
 2. Le graphe résumé : chapitres par acte, nombre de paragraphes, fins et leurs conditions, convergences.
 3. Les chiffres de simulation (les deux stratégies) dans un petit tableau, avec les chapitres les moins visités.
+3 bis. La ligne « Ensemble » de `story-prose.mjs` (longueurs, dialogue, chutes, liste noire) et les avertissements de prose laissés volontairement.
 4. Les choix de conception discutables, les avertissements laissés volontairement, les frictions rencontrées avec les scripts ou le prompt (à reporter dans `.planning/` si demandé).
 5. La commande pour jouer : `npm start` puis http://localhost:8080. Les illustrations se génèrent ensuite avec `story-illustrate.mjs` (celles du contrat, une à trois par chapitre).
 
@@ -89,7 +96,8 @@ Ne commite pas sans qu'on te le demande.
 ## Garde-fous
 
 - Le moteur ne se modifie pas pendant cette commande. Si une mécanique manque, note-la dans le rapport.
-- Les sous-agents reçoivent la bible et leur contrat, jamais l'histoire entière ni les autres chapitres.
+- Les sous-agents reçoivent la bible et leur contrat, jamais l'histoire entière ni les autres chapitres (la passe de prose reçoit en plus les derniers paragraphes du chapitre précédent).
+- Les passes de prose et de relecture ne changent que les `text` : `story-prose.mjs --diff` en fait foi.
 - Les identifiants de paragraphes sont `c<nn>-<n>` ; les objets et drapeaux viennent du manifeste et de la bible, un rédacteur n'en crée pas.
 - `story.json` et `build-map.json` sont générés et commités : on ne les édite jamais à la main, on rebuild.
 - Une à trois illustrations par chapitre, celles du contrat (`images`).

@@ -13,6 +13,10 @@ Cinq lignes : lieu, objectif du héros, antagoniste, enjeu en cas d'échec, twis
 ## Style et ton
 Le style retenu (`styles.md`) et le ton, en trois lignes, avec deux phrases d'exemple écrites dans cette voix.
 Les mots interdits ou obligatoires s'il y en a (vouvoiement, capitales des règles, unités).
+Les refrains voulus : les tournures qui ont le droit de revenir d'un chapitre à l'autre (une formule rituelle, un bruit signature), pour que `story-prose.mjs` ne les compte pas comme des tics sans qu'on le sache.
+
+## Diapason
+Deux ou trois paragraphes écrits par l'auteur dans la voix exacte de l'histoire, de longueurs différentes (une scène dialoguée, une transition, une action). Les rédacteurs les reçoivent tels quels et les imitent avant d'appliquer toute règle. Si l'auteur n'en écrit pas, l'orchestrateur en propose un et le marque « provisoire ».
 
 ## Héros
 Les caractéristiques avec leur `description`, la réserve de points, l'inventaire initial et pourquoi chaque objet initial servira.
@@ -23,8 +27,8 @@ Une entrée par région (un acte en compte 3 à 8), chacune en cinq lignes : nom
 Les chapitres se rattachent à une région ; deux chapitres d'une même région partagent ces lignes mot pour mot.
 
 ## Personnages
-Une entrée par personnage récurrent : nom, rôle, apparence en une phrase, manière de parler (une réplique d'exemple), ce qu'il veut, ce qu'il sait.
-Un personnage qui n'apparaît que dans un chapitre n'est pas ici : le rédacteur du chapitre l'invente.
+Une fiche de voix par personnage récurrent : nom, rôle, apparence en une phrase, ce qu'il veut, ce qu'il sait et tait. Puis sa voix : registre (tutoie ou vouvoie, phrases longues ou courtes, vocabulaire), trois répliques types, un tic verbal, ce qu'il ne dit jamais. Un rédacteur fait parler le personnage avec ces répliques comme modèle, jamais en les recopiant.
+Un personnage qui n'apparaît que dans un chapitre n'est pas ici : le rédacteur du chapitre l'invente, avec une voix.
 
 ## Glossaire
 Les noms propres et les termes du monde avec leur graphie exacte (majuscules, accents, article). Le rédacteur copie, il ne reformule pas.

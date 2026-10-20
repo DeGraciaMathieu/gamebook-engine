@@ -25,7 +25,7 @@
   ],
   "paragraphs": {
     "c15-1": {
-      "text": "La route du sud descend entre deux rangées de pylônes. Au bout, le poste militaire : une barrière rayée, un mirador, des barbelés qui luisent sous la pluie fine. Derrière, le monde d'avant, qui ressemble au même champ gris. Ici, il n'y a plus rien à trouver. Un camion bâché attend devant la barrière, moteur coupé. Personne n'en descend.",
+      "text": "La route du sud descend entre deux rangées de pylônes dont les câbles pendent, coupés, et au bout, là où elle s'aplatit, le poste militaire tient le passage : une barrière rayée de rouge, un mirador de planches, des barbelés qui luisent sous la pluie fine. Derrière, le monde d'avant, qui ressemble au même champ gris. Un camion bâché, un ZIL vert, attend moteur coupé devant la barrière. Depuis que vous l'avez aperçu, deux kilomètres plus haut, la bâche n'a pas bougé et aucune portière ne s'est ouverte.",
       "choices": [
         {
           "kind": "aller",
@@ -45,7 +45,7 @@
       ]
     },
     "c15-3": {
-      "text": "Vous êtes devant le poste, à cent mètres de la barrière. Le mirador vous a vu ; le projecteur reste éteint, il fait encore jour. À droite de la route, un fossé plein d'eau noire. À gauche, les toits d'un village vidé, trois maisons et une église sans croix. Les barbelés tirent une ligne droite jusqu'à l'horizon, dans les deux sens. Un soldat fume sur la barrière. Il ne vous regarde pas, il vous compte.",
+      "text": "Le mirador vous a vu à cent mètres de la barrière : le projecteur reste éteint, il fait encore jour, mais la silhouette derrière la rambarde s'est tournée vers vous et n'a plus changé d'angle. À droite de la route, un fossé plein d'eau noire. À gauche, les toits d'un village vidé, trois maisons et une église dont on a scié la croix. Les barbelés tirent une ligne droite jusqu'à l'horizon, dans les deux sens, et vous ne voyez pas de portail. Un soldat fume assis sur la barrière, le fusil en travers des genoux. Il ne vous regarde pas, il vous compte.",
       "image": {
         "src": "images/c15-3.webp",
         "alt": "Le poste militaire à la sortie de la Zone : barrière, mirador et barbelés sous la pluie",
@@ -79,7 +79,7 @@
       ]
     },
     "c15-11": {
-      "text": "Le soldat jette sa cigarette dans la flaque. Un lieutenant sort de la guérite, gilet ouvert, une liste à la main qu'il ne lit pas. Papiers. Vous n'en avez pas. Il le sait avant de demander. Il regarde votre sac, puis la route derrière vous, puis vous. Trois mille. Ce n'est pas une question. Le camion bâché, devant, a payé. Le chauffeur attend toujours qu'on lève la barrière.",
+      "text": "Le soldat jette sa cigarette dans la flaque et descend de la barrière. Un lieutenant sort de la guérite, gilet ouvert sur un pull de l'armée, une liste à la main qu'il ne lit pas. « Papiers. » Vous n'en avez pas, et il le savait avant de demander, puisqu'il regarde déjà votre sac, puis la route derrière vous, puis vous. Il replie la liste en deux. « Trois mille. » Ce n'est pas une question. Vous montrez le camion bâché du menton. Le lieutenant suit votre regard. « Lui, il a payé. Il attend que je finisse ma cigarette. » Il n'a pas de cigarette, et le chauffeur, derrière le pare-brise, a les deux mains sur le volant et ne quitte pas la barrière des yeux. Le lieutenant tape la liste contre sa cuisse, une fois, deux fois, à la cadence de la pluie sur la tôle de la guérite. « Trois mille. On ne fouille pas. On ne demande pas d'où ça vient. »",
       "choices": [
         {
           "kind": "payer",
@@ -117,10 +117,10 @@
         "alt": "La barrière du poste militaire levée, un stalker de dos passe entre les barbelés vers la route et les pylônes",
         "prompt": "La barrière rayée d'un poste militaire levée, une guérite avec des billets posés sur le capot, un lieutenant au gilet ouvert qui regarde ailleurs. Un stalker de dos, sac sur l'épaule, passe entre deux rangées de barbelés et s'engage sur la même route grise bordée de pylônes, sous une pluie fine. Loin devant, un bus à l'arrêt, des silhouettes assises derrière les vitres."
       },
-      "text": "Le lieutenant compte sans se presser. Vous laissez 3 000 roubles sur le capot de la guérite et la barrière se lève. Vous passez entre les barbelés avec vos artefacts dans le sac, votre pistolet, votre détecteur qui ne crépitera plus. Personne ne vous fouille. De l'autre côté, la même route, les mêmes pylônes. Un bus, plus loin, avec des gens dedans qui ne vous regardent pas. Vous ne savez toujours pas qui vous êtes. Vous rêverez de la Zone chaque nuit."
+      "text": "Le lieutenant compte sans se presser, en mouillant son pouce, et chaque billet qu'il pose sur le capot de la guérite se colle au métal sous la pluie. Vous laissez 3 000 roubles et la barrière se lève. « Ne revenez pas. Ils reviennent tous. » Vous passez entre les barbelés avec vos artefacts dans le sac, votre Makarov, votre détecteur qui n'aura plus rien à crépiter de ce côté. De l'autre côté, la même route, les mêmes pylônes, et plus loin un bus à l'arrêt, des gens assis derrière les vitres qui ne lèvent pas la tête pour vous. Vous ne savez toujours pas qui vous êtes, et vous rêverez de la Zone chaque nuit."
     },
     "c15-16": {
-      "text": "Vous dites que vous n'avez pas la somme. Le lieutenant rentre dans la guérite sans répondre. Le soldat sur la barrière épaule, sans hâte, comme on ramasse un outil. Le conscrit du mirador fait pareil. Il pleut sur l'acier. Vous reculez, les mains ouvertes. Quelqu'un tire. Tentez votre Chance.",
+      "text": "« Je n'ai pas la somme. » Le lieutenant rentre dans la guérite sans répondre, et la porte de tôle claque derrière lui. Le soldat épaule, sans hâte, à la façon dont on ramasse un outil ; le conscrit du mirador fait pareil, et vous entendez la pluie sur les deux canons avant d'entendre autre chose. Vous reculez, les mains ouvertes, un pas, puis deux. Quelqu'un tire. Tentez votre Chance.",
       "test": {
         "type": "luck",
         "success": "c15-5",
@@ -128,7 +128,7 @@
       }
     },
     "c15-5": {
-      "text": "La balle passe. Elle claque dans l'eau du fossé, à un mètre de votre botte. Le soldat rabaisse son arme ; c'était l'avertissement, et il n'y en aura pas deux. Vous remontez la route sans courir. Dans votre dos, la barrière reste baissée. Le camion bâché a toujours son moteur coupé. Vous avez compris le prix.",
+      "text": "La balle passe. Elle claque dans l'eau du fossé, à un mètre de votre botte, et la gerbe vous mouille jusqu'au genou. Le soldat rabaisse son arme et se rassoit sur la barrière ; c'était l'avertissement, et il n'y en aura pas de second. « La prochaine, c'est pour le sac. » Vous remontez la route sans courir, parce que courir, ici, se lit comme une réponse. Dans votre dos, la barrière reste baissée et le ZIL a toujours son moteur coupé. Le prix, vous l'avez entendu deux fois.",
       "choices": [
         {
           "kind": "aller",
@@ -143,7 +143,7 @@
       ]
     },
     "c15-13": {
-      "text": "La balle vous prend l'épaule. Vous perdez 3 points d'Endurance. Vous tombez dans le fossé, l'eau noire jusqu'à la bouche, et personne ne tire une seconde fois : on vous a touché, c'est tout ce qu'ils voulaient. Vous remontez par la berge, en rampant, loin de la barrière. Le sang est chaud sous la veste, le reste est froid.",
+      "text": "La balle vous prend l'épaule. Vous perdez 3 points d'Endurance. Vous tombez dans le fossé, l'eau noire jusqu'à la bouche, et le second coup ne vient pas, parce qu'ils vous ont touché et que c'était tout ce qu'ils voulaient de vous. Là-haut, quelqu'un rit dans la guérite, et une allumette craque. Vous remontez par la berge, en rampant, loin du poste, l'épaule gauche qui ne porte plus. Le sang est chaud sous la veste et le reste est froid.",
       "effects": [
         {
           "type": "stat",
@@ -165,7 +165,7 @@
       ]
     },
     "c15-9": {
-      "text": "Vous attendez dans l'eau jusqu'à ce que le projecteur s'allume. Il balaie la route, les barbelés, le village, revient. Trente secondes de noir entre deux passages. Vous les comptez dix fois. Un chien aboie derrière la barrière, puis se tait. Les grenouilles, elles, ne se taisent pas. Vos jambes ne sentent plus rien.",
+      "text": "Le projecteur s'allume à la nuit tombée, et vous êtes encore dans l'eau du fossé pour apprendre son rythme : il balaie la route, les barbelés, le village, revient, et laisse entre deux passages trente secondes d'obscurité que vous comptez dix fois pour être sûr. Un chien aboie derrière la barrière, deux fois, puis un homme lui parle et il arrête. Les grenouilles du fossé, elles, n'arrêtent pas. Depuis une heure, vos jambes ne sentent plus le froid.",
       "choices": [
         {
           "kind": "aller",
@@ -180,7 +180,7 @@
       ]
     },
     "c15-2": {
-      "text": "Le chien de garde vous trouve avant le projecteur. Il ne jappe pas : il arrive, bas, la chaîne cassée au cou, et vous prend le mollet. Un berger de l'armée, nourri, pas un chien aveugle de la Zone. Il mord pour tenir et il frappe à casser l'os. Pas de coup de feu, pas ici. Vous vous battez dans la boue, à bout de bras.",
+      "text": "Le chien de garde vous trouve avant le projecteur. Il ne jappe pas : il arrive bas, la chaîne cassée au cou, et vous prend le mollet avant que vous ayez sorti le couteau. Un berger de l'armée, nourri, brossé, pas un chien aveugle de la Zone ; il mord pour tenir et vous secoue de tout son poids. Vous ne tirez pas : à cette distance du mirador, un coup de feu ferait tourner le projecteur. Vous vous battez dans la boue, à bout de bras, sa gueule contre votre avant-bras.",
       "combat": {
         "name": "Chien de garde",
         "habilete": 6,
@@ -193,7 +193,7 @@
       }
     },
     "c15-17": {
-      "text": "Le chien ne bouge plus. Vous êtes contre les barbelés, trois rangs, bas, tendus comme des cordes. Le projecteur passe. Trente secondes. Il faut se glisser entre les fils sans les faire chanter : un seul tintement, et le mirador saura où regarder. Vos mains tremblent encore du combat. Testez votre Habileté.",
+      "text": "Le chien est mort, la chaîne enroulée autour de votre bras. Vous êtes contre les barbelés, trois rangs bas, tendus à vibrer sous le doigt, et le projecteur passe au-dessus de vous sans descendre ; il vous reste trente secondes avant son retour. Il faut se glisser entre les fils sans les faire chanter, parce qu'un seul tintement dira au mirador où regarder. Vos mains tremblent encore du combat. Testez votre Habileté.",
       "test": {
         "type": "stat",
         "stat": "habilete",
@@ -203,7 +203,7 @@
       }
     },
     "c15-6": {
-      "text": "Vous passez sans un bruit. Derrière le premier rang, dix mètres de boue. Puis une seconde clôture, plus haute, avec un panneau. Mines. Et derrière encore une troisième, un fossé, le mirador suivant, un blindé qui dort à l'angle. Ce n'est pas une frontière, c'est une épaisseur. Vous ne la traverserez pas en rampant. Vous revenez par le trou que vous avez fait, avant le retour du projecteur.",
+      "text": "Vous passez sans un bruit. Derrière le premier rang, dix mètres de boue retournée, puis une seconde clôture, plus haute, avec un panneau de tôle peint à la main : Mines. Et derrière encore une troisième, un fossé, le mirador suivant, un BTR qui dort à l'angle avec sa tourelle vers vous. Depuis la route, vous aviez vu une ligne ; de l'intérieur, c'est une épaisseur de deux cents mètres, et elle ne se traverse pas en rampant. Vous revenez par le trou que vous avez fait, avant le retour du projecteur, et vous remettez les fils en place derrière vous.",
       "choices": [
         {
           "kind": "aller",
@@ -218,7 +218,7 @@
       ]
     },
     "c15-12": {
-      "text": "Un fil chante. Le projecteur s'arrête sur vous, blanc, total. La mitrailleuse du mirador tire court, dans la boue, puis plus près. Vous perdez 3 points d'Endurance. Vous roulez dans le fossé, de l'eau dans le nez, des éclats de terre sur le dos. Ils ne descendent pas vous chercher. Ils savent que vous reviendrez par la route, comme les autres, avec de l'argent ou pas du tout.",
+      "text": "Un fil chante. Le projecteur s'arrête sur vous, blanc, total, et la mitrailleuse du mirador tire court, dans la boue, puis plus près. Vous perdez 3 points d'Endurance. Vous roulez dans le fossé, de l'eau dans le nez, des éclats de terre sur le dos, et vous restez sous la surface le temps que le faisceau se lasse. Ils ne descendent pas vous chercher. Là-haut, une voix rit, une autre lui dit de la fermer, et le projecteur reprend sa ronde , sans se presser, de la barrière au village.",
       "effects": [
         {
           "type": "stat",
@@ -240,7 +240,7 @@
       ]
     },
     "c15-14": {
-      "text": "Le village est à cinq cents mètres de la barrière, hors de portée du projecteur. Dans la troisième maison, la seule avec un toit, un homme fait du thé sur un réchaud. Il vous regarde comme s'il vous attendait, et c'est le cas : le Barman envoie, il reçoit. Il y a un collecteur sous les barbelés, dit-il. Il connaît les mines. Deux mille. Il ne négocie pas plus que le lieutenant, mais lui, au moins, sert le thé.",
+      "text": "Le village est à cinq cents mètres de la barrière, hors de portée du projecteur. Dans la troisième maison, la seule qui ait gardé son toit, un homme fait chauffer de l'eau sur un réchaud à essence, et il ne se lève pas quand vous poussez la porte. « Le Barman t'envoie. Assieds-toi, le thé est pour deux. » Il verse dans deux quarts d'aluminium, pousse le vôtre, et vous laisse boire une gorgée avant de parler du reste. « Il y a un collecteur sous l'église. Il passe sous les trois clôtures et ressort dans un champ. Les mines, je sais où elles sont, c'est moi qui ai regardé les poser. » Il souffle sur son thé. « Deux mille. Pas de discussion, pas de moitié maintenant et moitié après. » Il repose son quart sur le réchaud éteint et attend, les mains à plat sur les genoux.",
       "choices": [
         {
           "kind": "payer",
@@ -273,7 +273,7 @@
         "alt": "Le passeur à la lampe avance dans un collecteur de béton, l'eau jusqu'aux cuisses, sous l'église",
         "prompt": "L'intérieur d'un collecteur de béton sous une église, tunnel bas et rond aux parois suintantes, l'eau noire jusqu'aux cuisses. Devant, de dos, un homme en manteau avec une lampe à la main et un boulon dans l'autre, arrêté pour écouter ; derrière lui, la silhouette d'un stalker. Au fond, le faisceau de la lampe accroche une échelle de fer qui monte vers une plaque ronde."
       },
-      "text": "Il compte vos 2 000 roubles, éteint le réchaud. Le collecteur commence sous l'église : une bouche de béton, de l'eau jusqu'aux cuisses, une odeur de fer rouillé. Il marche devant avec une lampe et un boulon à la main, s'arrête, écoute, repart. Les parois tièdes disent que l'eau n'est pas propre. Vous prenez 2 rads. Il ne parle pas. Au bout, une échelle, et le bruit de la pluie.",
+      "text": "Il compte vos 2 000 roubles, billet par billet, puis éteint le réchaud. Le collecteur commence sous l'église, derrière l'autel : une bouche de béton, de l'eau jusqu'aux cuisses, un goût de fer rouillé qui monte dans la gorge. Il marche devant avec une lampe dans une main et un boulon dans l'autre, s'arrête, écoute, repart. « Ne touche pas aux parois. Elles sont tièdes, et l'eau qui les lèche ne l'est pas. » Vous prenez 2 rads. Il ne dit plus rien jusqu'au bout, où une échelle de fer monte vers une plaque ronde, et derrière la plaque, le bruit de la pluie.",
       "effects": [
         {
           "type": "stat",
@@ -290,10 +290,10 @@
       ]
     },
     "c15-10": {
-      "text": "Vous sortez dans un champ, de l'autre côté. Le passeur referme la plaque sous vos pieds et vous ne le reverrez pas. Les barbelés sont derrière vous, le mirador vous tourne le dos. Vous avez vos artefacts dans le sac et, devant, le monde d'avant, qui ressemble au même champ gris. Une route, un arrêt de bus, un horaire que la pluie a effacé. Vous ne savez toujours pas qui vous êtes. Vous rêverez de la Zone chaque nuit."
+      "text": "La plaque s'ouvre sur un champ de betteraves, de l'autre côté. Le passeur referme la plaque sous vos pieds, et le bruit de la fonte sur le béton est le dernier que vous entendrez de lui. Les barbelés sont derrière vous, le mirador vous tourne le dos, et vos artefacts pèsent dans le sac comme au départ du Bar. Une route, un arrêt de bus en béton, un horaire que la pluie a effacé jusqu'au nom de la ligne. Vous attendez le bus sous l'abri, sans nom à donner au chauffeur, et vous rêverez de la Zone chaque nuit."
     },
     "c15-8": {
-      "text": "Les bois sont des pins jeunes, serrés, plantés après. Ça sent la résine et autre chose, plus chaud. Devant vous, entre deux troncs, l'air tremble comme au-dessus d'un capot. Vous lancez un boulon. Il monte et ne redescend pas. Un « Trampoline », et rien qui dise où il finit. Le poste est à droite, derrière les arbres. Vous passez au plus près. Tentez votre Chance.",
+      "text": "Les bois sont des pins jeunes, serrés, plantés après l'accident, et ça sent la résine et une autre odeur, plus chaude, d'électricité. Devant vous, entre deux troncs, l'air tremble comme au-dessus d'un capot. Vous lancez un boulon. Il monte et ne redescend pas. Un « Trampoline », et rien dans les branches qui dise où il finit. Le poste est à droite, derrière les arbres, et le passage, s'il existe, longe l'anomalie au plus près. Tentez votre Chance.",
       "test": {
         "type": "luck",
         "success": "c15-18",
@@ -301,7 +301,7 @@
       }
     },
     "c15-18": {
-      "text": "L'anomalie vous laisse passer. Vous sentez seulement le sol se tendre sous vos semelles, comme une toile. Vous sortez des pins au-dessus du poste, sur la gauche, à l'abri du mirador. D'ici on voit tout : la barrière, la guérite, le fossé, le village sans croix, et derrière les barbelés une deuxième clôture, puis une troisième. Vous descendez vers la route.",
+      "text": "L'anomalie vous laisse passer. Le sol se tend seulement sous vos semelles et se relâcher dès que vous avez dépassé le second tronc. Vous sortez des pins au-dessus du poste, sur la gauche, à l'abri du mirador, et d'ici on voit tout : la barrière, la guérite, le fossé, le village sans croix, et derrière les barbelés une deuxième clôture, puis une troisième.",
       "choices": [
         {
           "kind": "aller",
@@ -316,7 +316,7 @@
       ]
     },
     "c15-15": {
-      "text": "Le sol vous jette. Vous retombez trois mètres plus loin, sur les racines, le souffle coupé, une épaule qui ne répond plus. Vous perdez 3 points d'Endurance. Les pins n'ont pas bougé. Au-dessus de vous, une botte pend à une branche, avec le pied dedans, depuis longtemps. Vous rampez jusqu'à la lisière. La route est là, et le poste au bout.",
+      "text": "Le sol vous jette. Vous retombez trois mètres plus loin, sur les racines, le souffle coupé, les côtes qui brûlent à chaque inspiration. Vous perdez 3 points d'Endurance. Les pins n'ont pas bougé, et au-dessus de vous une botte pend à une branche, avec le pied dedans, depuis assez de saisons pour que le cuir ait verdi. Vous rampez jusqu'à la lisière, et la route est là, avec le poste au bout.",
       "effects": [
         {
           "type": "stat",

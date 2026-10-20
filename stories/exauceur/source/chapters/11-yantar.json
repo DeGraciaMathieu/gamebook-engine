@@ -41,7 +41,7 @@
   ],
   "paragraphs": {
     "c11-1": {
-      "text": "Les Terres sauvages s'arrêtent à une clôture couchée. Derrière, le terrain descend vers un lac qui ne reflète rien. Une usine sur la rive gauche, cheminée, cuves. Sur la rive droite, une bosse de terre sous une bâche de plomb, une antenne : le bunker des scientifiques. Entre les deux, des silhouettes marchent dans l'herbe grise, lentement, sans but. Le compteur crépite quand le vent vient du lac.",
+      "text": "Les Terres sauvages finissent à une clôture de grillage couchée dans les orties. Derrière, le terrain descend en pente douce vers un lac qui ne reflète ni le ciel ni la cheminée penchée de l'usine, sur la rive gauche, et le détecteur crépite chaque fois que le vent vient de l'eau. Sur la rive droite, une butte de terre sous une bâche de plomb, une antenne qui tourne par à-coups : le bunker des scientifiques. Entre les deux, dans l'herbe grise, des silhouettes marchent, s'arrêtent, repartent, et aucune ne va nulle part.",
       "choices": [
         {
           "kind": "aller",
@@ -61,7 +61,7 @@
       ]
     },
     "c11-2": {
-      "text": "Vous poussez la porte de l'usine et le jour vous frappe. Après les couloirs du X-16, l'air de dehors a un goût de rouille et d'ammoniac. Le lac est à la même place. Le bunker aussi, sous sa bâche de plomb. Dans l'herbe entre les deux, les silhouettes sont là, debout ou couchées, vous ne savez pas encore.",
+      "text": "Vous poussez la porte de l'usine et le jour vous frappe en pleine figure, un jour gris, mais après les couloirs du X-16 il brûle. L'air de dehors a un goût de rouille et d'ammoniac que vous ne sentiez plus en arrivant. Le lac est à sa place, le bunker sous sa bâche, l'antenne qui tourne. Dans l'herbe entre les deux, les silhouettes sont là, et d'ici vous ne distinguez pas encore si elles sont debout ou couchées.",
       "choices": [
         {
           "kind": "aller",
@@ -85,7 +85,7 @@
       ]
     },
     "c11-3": {
-      "text": "Ce que ça veut dire, il le dit en comptant sur ses doigts. Un : l'émetteur d'ici n'est pas le seul. Deux : ils ont été construits avant 2006, par des gens qui avaient des moyens. Trois : quelqu'un lit dans les têtes, de loin, et ce quelqu'un est au nord. Il replie les feuilles et vous les rend. Garde-les. Ne les vends pas aux militaires. Les militaires, c'est eux.",
+      "text": "Il compte sur ses doigts, et chaque doigt est une question. « Un : vous croyez que l'émetteur d'ici est le seul ? Il y en a d'autres, le papier le dit, regardez la liste, trois sites, trois codes. Deux : la date, vous l'avez vue ? Avant 2006. Des gens avaient les moyens de construire ça avant la Zone, vous voyez ce que ça implique ? Trois : qui lit dans les têtes, de si loin, et pourquoi depuis le nord ? » Il replie les feuilles le long de leurs plis d'origine et vous les rend, la liasse serrée dans sa main un instant de trop. « Gardez-les. Vous ne comptiez pas les vendre aux militaires, j'espère ? Les militaires, c'est eux. Vous voyez qui je veux dire ? » Il retire ses lunettes, souffle sur un verre et le frotte contre sa manche pendant que vous rangez les Documents du X-16, et il attend une réponse que vous n'avez pas.",
       "choices": [
         {
           "kind": "aller",
@@ -95,7 +95,7 @@
       ]
     },
     "c11-4": {
-      "text": "La rive est une croûte grise qui craque sous les bottes. Le lac ne bouge pas. Des poissons blancs flottent le ventre en l'air depuis si longtemps qu'ils ne sentent plus rien. Une barque à demi coulée, le nom effacé. Le compteur grimpe dès que vous approchez de l'eau. Vous prenez 2 rads. Sur l'autre rive, l'usine fume sans feu.",
+      "text": "La rive est une croûte grise qui craque sous les bottes comme du pain rassis. Des poissons blancs flottent le ventre en l'air, et ils flottent depuis assez de semaines pour que les corbeaux eux-mêmes n'en veuillent plus. Une barque de tôle à demi coulée, le nom repeint puis effacé, un bidon vide dedans. Au bord de l'eau, l'aiguille du compteur passe dans le rouge et y reste. Vous prenez 2 rads. Sur l'autre rive, l'usine fume sans feu, une fumée jaune qui sort des cuves et retombe aussitôt.",
       "effects": [
         {
           "type": "stat",
@@ -143,7 +143,7 @@
       ]
     },
     "c11-5": {
-      "text": "Il prend l'Âme dans sa main et elle lui éclaire les lunettes par en dessous. Mes gens m'ont parlé du camion, dit-il. Des Terres sauvages. Ils ont dit un stalker, pas un nom. Il range l'artefact dans une boîte de plomb et pousse la Combinaison SEVA vers vous. Elle pèse ce qu'elle pèse. Il regarde déjà ailleurs.",
+      "text": "Il prend l'Âme entre deux doigts, et elle lui éclaire les lunettes par en dessous, d'un bleu qui n'existe pas dehors. « Mes gens m'ont parlé du camion. Les Terres sauvages, le camion renversé sous les ponts de fer, c'était vous ? Ils ont dit un stalker, pas de nom, vous n'en avez pas ou vous ne le donnez pas ? » Il range l'artefact dans une boîte de plomb grosse comme une boîte à sucre, la ferme, et décroche la Combinaison SEVA pour la pousser vers vous sur la table. « Vous savez la mettre ? Le filtre d'abord, la visière ensuite, jamais l'inverse, pourquoi est-ce qu'aucun de vous ne retient ça ? » Il garde le filtre dans la main, levé entre vous deux, jusqu'à ce que vous ayez répété l'ordre.",
       "effects": [
         {
           "type": "item",
@@ -165,7 +165,7 @@
       ]
     },
     "c11-6": {
-      "text": "Le Snork ne bouge plus. Sous le masque à gaz, un visage d'homme, jeune, les dents cassées. Il porte encore une plaque de soldat. Vous ne la lisez pas. Le hall est à vous, et l'escalier descend sous sa lampe rouge dans une odeur de câble chaud. Le ventilateur, en bas, tourne encore.",
+      "text": "Le Snork est mort. Sous le masque à gaz, un visage d'homme, jeune, les dents cassées sur le devant, et au cou une plaque de soldat à deux numéros, que vous retournez face contre terre sans la lire. Le hall est à vous. Au fond, l'escalier descend sous sa lampe rouge dans une odeur de câble chaud, et le ventilateur, en bas, tourne avec un cliquetis de pale faussée qui compte les secondes à votre place.",
       "choices": [
         {
           "kind": "agir",
@@ -206,7 +206,7 @@
         "alt": "La porte d'acier du bunker des scientifiques sous son auvent de plomb, Yantar en contrebas",
         "prompt": "Une porte d'acier encastrée dans une butte de terre, sous un auvent de plaques de plomb ; à côté, un interphone et une petite caméra tournée vers le spectateur, une antenne plantée au sommet de la butte. En contrebas, tout Yantar s'étale : les cuves et la cheminée penchée de l'usine chimique, le lac plat et gris, une route qui contourne le lac par une digue et monte au nord vers une ligne de pins sombres. Une silhouette de stalker, de dos, au bas de la pente."
       },
-      "text": "La porte du bunker est une plaque d'acier dans la terre, sous un auvent de plomb. Un interphone, une caméra qui bouge quand vous bougez. Le compteur se tait ici : on a bien choisi l'endroit. D'ici on voit tout Yantar : l'usine et ses cuves, le lac plat, la route qui monte au nord vers des pins qui ne sont plus verts.",
+      "text": "La porte du bunker est une plaque d'acier scellée dans la terre, sous un auvent de plomb où la pluie a laissé des traînées blanches. Un interphone, une caméra qui bouge quand vous bougez. Sur le cadran du compteur, l'aiguille retombe à zéro, et ce n'est pas par hasard qu'ils ont creusé ici. D'ici, Yantar tient dans un regard : l'usine et ses cuves, le lac plat, la digue, la route qui monte au nord vers des pins qui ont cessé d'être verts.",
       "choices": [
         {
           "kind": "agir",
@@ -264,7 +264,7 @@
       ]
     },
     "c11-8": {
-      "text": "Il n'y a pas de deuxième boulon. L'air vous attrape par le milieu et vous jette sur le talus, puis vous ramène, puis vous lâche. Vous perdez 3 points d'Endurance. Vous restez couché le temps de sentir si tout tient. Le lac n'a toujours pas une ride. Le bunker est là-haut, à dix mètres de gravier.",
+      "text": "Il n'y a pas de deuxième boulon. L'air vous attrape par le milieu du corps, vous jette sur le talus, vous ramène, vous lâche. Vous perdez 3 points d'Endurance. Vous restez couché le temps de sentir si les côtes tiennent, le nez dans une herbe qui sent le soufre, et pendant tout ce temps le lac, à deux mètres, ne fait pas une ride. Il reste dix mètres de gravier jusqu'au bunker, et vous les montez à quatre pattes.",
       "effects": [
         {
           "type": "stat",
@@ -302,7 +302,7 @@
       ]
     },
     "c11-9": {
-      "text": "Ils s'éloignent. Le groupe dérive vers le lac comme une chose qu'on a lâchée, et la bande d'herbe jusqu'au bunker se vide. Vous la traversez courbé, sans respirer. Derrière vous, un zombie s'arrête, se retourne, regarde l'endroit où vous étiez, puis repart.",
+      "text": "Ils s'éloignent. Le groupe dérive vers le lac comme un troupeau qu'on a cessé de garder, et la bande d'herbe jusqu'au bunker se vide devant vous. Vous la traversez courbé, en retenant votre souffle jusqu'au premier bloc de béton. Derrière, un zombie s'arrête, se retourne vers l'endroit où vous étiez, et repart.",
       "choices": [
         {
           "kind": "aller",
@@ -317,7 +317,7 @@
       ]
     },
     "c11-10": {
-      "text": "L'émetteur est éteint, et Sakharov le savait avant vous : ses écrans sont plats depuis des heures. Il sort d'une armoire un Casque psi, cuir et cuivre, des fils jusqu'à une boîte de ceinture. Avec ça, le Brûleur ne te prendra pas. Peut-être. Il vous pousse vers un lit de camp. Dors. Vous dormez quatre heures d'un bloc. Vous regagnez 4 points d'Endurance. Il vous doit quelque chose, et il le sait.",
+      "text": "L'émetteur est éteint, et Sakharov le savait avant que vous ouvriez la bouche : ses trois écrans sont plats depuis des heures. « Depuis quatorze heures dix, vous voulez voir la courbe ? Non ? Vous avez saigné du nez, là-bas, combien de temps, vous avez compté ? » Il ouvre une armoire de fer et en sort un Casque psi, cuir et cuivre, deux électrodes pour les tempes, des fils jusqu'à une boîte de ceinture grosse comme un paquet de Belomor. « Avec ça, le Brûleur ne vous prendra pas, ou pas tout de suite, et vous savez ce que vaut un pas tout de suite, dans mon métier ? » Il vous pousse vers un lit de camp, contre le mur où ronronne le groupe électrogène. « Dormez. Qui vous a dit de rester debout ? » Quatre heures d'un bloc. Vous regagnez 4 points d'Endurance. Quand vous rouvrez les yeux, il vous tient le poignet, les lèvres qui bougent sur les chiffres, et ne le lâche qu'à soixante.",
       "effects": [
         {
           "type": "item",
@@ -348,7 +348,7 @@
         "alt": "Une dizaine de zombies en combinaisons de stalkers marchent dans l'herbe grise entre l'usine et le bunker",
         "prompt": "Une bande d'herbe grise au bord d'un lac mort, entre une usine chimique à gauche et une butte sous bâche de plomb à droite. Une dizaine de zombies en combinaisons et casques de stalkers avancent lentement, voûtés, fusils tenus comme des pelles, la bouche entrouverte ; le premier tourne la tête vers le spectateur et lève son arme sans viser. Des blocs de béton dans l'herbe, un ciel bas. Vu de derrière un bloc de béton, au ras du sol."
       },
-      "text": "Ils sont une dizaine entre l'usine et le bunker. Combinaisons de stalkers, casques, fusils tenus comme des pelles. Ils marchent, s'arrêtent, repartent. Le premier vous voit. Il tourne la tête comme on tourne une page, puis lève son arme sans viser. Les autres suivent, lentement. Ils marmonnent tous la même chose, et vous n'entendez pas quoi.",
+      "text": "Ils sont une dizaine entre l'usine et le bunker. Combinaisons de stalkers, casques, cagoules, des fusils tenus par le canon comme des pelles, et l'un d'eux porte encore un sac à dos avec la gamelle qui pend. Ils avancent par saccades, trois pas, une halte, trois pas. Le premier vous voit, pivote la tête d'un bloc, sans bouger les épaules, et lève son arme sans viser ; les autres suivent, lentement, à la vitesse de l'herbe sous le vent. Ils marmonnent tous la même phrase, et de là où vous êtes, vous n'en attrapez qu'un mot sur trois.",
       "choices": [
         {
           "kind": "aller",
@@ -368,7 +368,7 @@
       ]
     },
     "c11-12": {
-      "text": "Une marche sonne. Il est sur vous avant le second bruit, tombé d'une cuve, masque à gaz, mains nues, et il frappe à casser des os. Vous perdez 3 points d'Endurance. Vous roulez, vous vous relevez. Il est déjà accroupi, prêt à sauter encore. La porte est loin ; il vous rattrapera une fois, pas deux.",
+      "text": "Une marche sonne sous votre botte. Il est sur vous avant le second bruit, tombé d'une cuve, masque à gaz, mains nues aux ongles noirs, et son poing vous prend à l'épaule. Vous perdez 3 points d'Endurance. Vous roulez sur le béton, vous vous relevez contre la rampe. Il est déjà accroupi à trois mètres, le tuyau du masque qui bat contre sa poitrine, prêt à sauter encore. Derrière vous, jusqu'à la porte, il reste vingt mètres de béton nu à courir avec lui dans le dos.",
       "effects": [
         {
           "type": "stat",
@@ -388,7 +388,7 @@
       }
     },
     "c11-13": {
-      "text": "Le professeur Sakharov ne tient pas en place. Lunettes épaisses, blouse sous la combinaison, il parle en marchant entre trois écrans et une table couverte de pièces de détecteurs. Alors, dehors ? Combien ? Ils marchent encore ? Ne réponds pas, je sais. Sur un crochet, une combinaison lourde, la visière rayée. Il voit que vous la regardez. Tout le monde la regarde.",
+      "text": "Le professeur Sakharov ne tient pas en place. Lunettes épaisses, blouse blanche sous une combinaison orange ouverte jusqu'à la taille, il parle en marchant entre trois écrans et une table couverte de détecteurs démontés, des Ours, un Veles, des cartes nues. « Alors, dehors ? Combien ? Ils marchent encore, vous les avez comptés ? Vous venez du sud, par Rostok ? Combien de rads, à peu près, vous avez un compteur, montrez. Non, ne répondez pas, je lis. » Il vous prend le détecteur des mains, le retourne, le rend. Sur un crochet, près de la porte, pend une combinaison lourde à visière rayée, avec des plaques cousues dans la doublure. Il voit que vous la regardez, et il essuie ses lunettes avec un pan de blouse avant de parler. « Tout le monde la regarde. Qu'est-ce que vous avez pour moi, vous ? »",
       "choices": [
         {
           "kind": "parler",
@@ -446,7 +446,7 @@
       ]
     },
     "c11-14": {
-      "text": "Le PDA contient quarante messages pour quelqu'un qui s'appelle Olia. Le dernier date de trois mois : je rentre dimanche. Dans la doublure du gilet, des billets pliés, humides. Vous trouvez 120 roubles. Les autres corps n'ont rien qu'un stalker n'ait déjà pris.",
+      "text": "Le PDA contient quarante-deux messages pour quelqu'un qui s'appelle Olia, aucun envoyé, et le dernier date de trois mois : « Je rentre dimanche. Garde la soupe. » Dans la doublure du gilet, des billets pliés en quatre, humides, qui sentent le lac. Vous trouvez 120 roubles. Les autres corps n'ont rien qu'un stalker n'ait déjà pris avant vous, et vous n'êtes ni le premier à les fouiller, ni le dernier.",
       "effects": [
         {
           "type": "stat",
@@ -489,7 +489,7 @@
       ]
     },
     "c11-15": {
-      "text": "L'usine chimique est une boîte de brique et de cuves rouillées, avec une cheminée qui penche. La porte principale est entrouverte sur du noir. L'ammoniac pique les yeux à vingt mètres. Au-dessus de la porte, à la peinture : X-16, une flèche vers le bas, un mot effacé. Dans l'herbe derrière vous, debout ou couchés, les zombies tiennent la bande entre ici et le bunker.",
+      "text": "L'usine chimique est une boîte de brique et de cuves rouillées, avec une cheminée qui penche sur le lac depuis assez d'années pour qu'un bouleau ait poussé dans la fissure. La porte principale, un battant de tôle, est entrouverte sur du noir. L'ammoniac pique les yeux à vingt mètres. Au-dessus de la porte, à la peinture blanche délavée : X-16, une flèche vers le bas, un mot que quelqu'un a gratté. Dans l'herbe derrière vous, les zombies tiennent toujours la bande entre ici et le bunker, et de la porte la bande d'herbe n'est qu'un ruban gris où l'on ne compte pas les têtes.",
       "choices": [
         {
           "kind": "aller",
@@ -518,7 +518,7 @@
       ]
     },
     "c11-16": {
-      "text": "Vous videz l'anti-rad d'un trait, le goût de fer au fond. Le compteur ralentit, hésite, se calme. Vous perdez 5 rads. Les poissons morts vous regardent avec leurs yeux de lait. Le lac n'a pas bougé pendant tout ce temps, pas une ride.",
+      "text": "L'anti-rad descend d'un trait et laisse au fond de la gorge un goût de clou rouillé. Vous perdez 5 rads. L'aiguille du compteur recule par petits sauts, hésite, se cale un cran plus bas. Les poissons morts vous regardent de leurs yeux de lait, et une mouche, la seule que vous ayez vue de la journée, se pose sur le bord de la barque et repart aussitôt.",
       "choices": [
         {
           "kind": "aller",
@@ -533,7 +533,7 @@
       ]
     },
     "c11-17": {
-      "text": "Ils ne s'écartent pas. Une main vous prend la nuque, froide, une main de noyé. Vous perdez 2 points d'Endurance. Le zombie vous regarde de très près et répète : la pierre, la pierre. Vous le repoussez. Les autres ferment le cercle, lentement. Ils sont lents. On peut encore courir.",
+      "text": "Ils ne s'écartent pas. Une main vous prend la nuque, froide, une main de noyé, et elle serre sans colère. Vous perdez 2 points d'Endurance. Le zombie vous regarde de très près, l'œil blanc, l'haleine de cave, et répète : « La pierre. La pierre. Au centre. » Vous le repoussez d'un coup d'épaule ; il recule d'un pas et revient. Les autres ferment le cercle sans se presser, et entre deux épaules, du côté du lac, il reste un trou assez large pour un homme qui court.",
       "effects": [
         {
           "type": "stat",
@@ -553,7 +553,7 @@
       }
     },
     "c11-18": {
-      "text": "La route du nord contourne le lac par une digue, puis monte entre des pylônes vers des pins qui ont la couleur de la rouille. Le vent vient de là-haut et apporte la poussière de la crête : le compteur crépite sans s'arrêter. Derrière vous, Yantar, son lac, son usine, ses marcheurs. Personne ne vous regarde partir.",
+      "text": "La route du nord contourne le lac par une digue de pierre, puis monte entre des pylônes vers des pins qui ont la couleur de la rouille. Le vent vient de là-haut et apporte la poussière de la crête, une poussière fine qui se dépose sur les manches, et le compteur prend un cran à chaque rafale. Derrière vous, Yantar : le lac, l'usine, ses marcheurs. Aucun d'eux ne vous regarde partir.",
       "choices": [
         {
           "kind": "agir",
@@ -577,7 +577,7 @@
       ]
     },
     "c11-19": {
-      "text": "Il regarde l'Âme sans la toucher. Elle est belle. Elle vaut ce qu'elle vaut au Bar, pas ici. Il remet la combinaison sur son crochet. Deux mille, dit-il. On ne négocie pas avec quelqu'un qu'on ne connaît pas. Il se rassoit devant ses écrans et vous n'existez plus pendant quelques secondes.",
+      "text": "Il regarde l'Âme sans la toucher, et elle fait sur ses verres deux petits ronds bleus. « Elle est belle, n'est-ce pas ? Vous l'avez trouvée où, le X-18, la Vallée ? Elle vaut ce qu'elle vaut au Bar, pas ici. Vous me prenez pour le Barman, avec un comptoir et une ardoise ? » Il remet la combinaison sur son crochet. « Deux mille. On ne négocie pas avec quelqu'un qu'on ne connaît pas, vous feriez autrement, vous ? » Il se rassoit devant ses écrans, et pendant quelques secondes vous n'existez plus.",
       "choices": [
         {
           "kind": "aller",
@@ -587,7 +587,7 @@
       ]
     },
     "c11-20": {
-      "text": "Vous videz la trousse de soins, assis dans l'herbe, le dos au béton. Les compresses sentent l'alcool, la bande colle mal. Vous regagnez 6 points d'Endurance. Au loin, sur la bâche de plomb, l'antenne du bunker tourne d'un quart de tour, s'arrête, repart.",
+      "text": "Assis dans l'herbe, le dos au béton, vous videz la trousse de soins sur vos genoux. Les compresses sentent l'alcool à 90, la bande colle mal sur la sueur. Vous regagnez 6 points d'Endurance. Au loin, sur la bâche de plomb, l'antenne du bunker tourne d'un quart de tour, s'arrête, repart, et vous vous demandez qui elle cherche.",
       "choices": [
         {
           "kind": "aller",
@@ -602,7 +602,7 @@
       ]
     },
     "c11-21": {
-      "text": "Vous avancez au bord du hall, là où le sol est propre, sans verre. La respiration est quelque part à gauche, derrière une cuve. Elle s'arrête quand vous vous arrêtez. L'escalier est à quinze mètres. Les dernières marches de fer sonnent au moindre poids. Testez votre Habileté.",
+      "text": "Vous avancez au bord du hall, là où le sol est propre, sans verre. La respiration est à gauche, derrière une cuve, et elle s'arrête quand vous vous arrêtez. L'escalier est à quinze mètres, les dernières marches en fer ajouré, de celles qui sonnent au moindre poids. Testez votre Habileté.",
       "test": {
         "type": "stat",
         "stat": "habilete",
@@ -612,7 +612,7 @@
       }
     },
     "c11-22": {
-      "text": "Le deuxième boulon tombe du bon côté. L'anomalie est à gauche, collée au talus ; vous passez à droite, les bottes dans l'eau morte, et l'air se referme derrière vous avec un bruit de drap. Le bunker est là, dix mètres au-dessus, sa bâche de plomb luisante d'une pluie ancienne.",
+      "text": "Le deuxième boulon tombe du bon côté. L'anomalie est à gauche, collée au talus ; vous passez à droite, les bottes dans l'eau morte jusqu'à la cheville, et l'air se referme derrière vous avec un bruit de drap qu'on secoue. Le bunker est dix mètres au-dessus, sous son plomb luisant d'une pluie ancienne.",
       "choices": [
         {
           "kind": "aller",
@@ -622,7 +622,7 @@
       ]
     },
     "c11-23": {
-      "text": "Ils sont couchés. Tous. L'émetteur s'est tu et ils sont tombés là où ils marchaient, dans l'herbe, la bouche ouverte, les mains encore à demi fermées sur des fusils. L'un d'eux respire, lentement, comme un dormeur. Vous enjambez les corps. Personne ne marmonne plus à Yantar, et le silence est pire.",
+      "text": "Dans l'herbe, plus une silhouette ne tient debout. L'émetteur s'est tu et ils sont tombés là où ils marchaient, dans l'herbe, la bouche ouverte, les mains encore à demi fermées sur des fusils qu'ils ne tenaient déjà plus. L'un d'eux respire, lentement, comme un dormeur après la fièvre. Vous enjambez les corps, et à chaque pas vous attendez le marmonnement, la pierre, la pierre, qui ne vient pas ; la bande d'herbe est muette d'un bout à l'autre, et vous aviez fini par tenir à ce bruit.",
       "choices": [
         {
           "kind": "aller",
@@ -637,7 +637,7 @@
       ]
     },
     "c11-24": {
-      "text": "Les Documents du X-16 sont encore humides. Sakharov les étale sous la lampe et lit avec les lèvres. Des schémas, des courbes, des listes de noms barrés. Il lit vite, puis plus lentement, puis il s'arrête sur une page et la tourne vers le mur, comme s'il ne voulait pas qu'elle le voie.",
+      "text": "Les Documents du X-16 sont encore humides. Sakharov les étale sous la lampe de bureau et lit avec les lèvres, des schémas, des courbes, des listes de noms barrés à la règle. « Où avez-vous pris ça, la salle de contrôle, l'armoire grise ? Vous avez vu le tableau, les voyants, ils étaient rouges ou verts ? » Il lit vite, puis plus lentement, puis il s'arrête sur une page et la tourne contre le mur, du côté où il n'y a pas d'écran. Sur celle-là, il ne pose aucune question.",
       "choices": [
         {
           "kind": "parler",
@@ -656,7 +656,7 @@
       ]
     },
     "c11-25": {
-      "text": "Vous marchez la bouche fermée, ce qui ne sert à rien. La poussière de la crête passe par tout. Le compteur grimpe jusqu'aux pins et ne redescend pas. Vous prenez 3 rads. Les premiers troncs sont rouges jusqu'au sol, et le silence commence là, net, comme une porte.",
+      "text": "Vous marchez la bouche fermée, ce qui ne sert à rien. La poussière de la crête passe par le col, par les manches, par les lacets. Jusqu'aux pins, l'aiguille du compteur reste collée en butée. Vous prenez 3 rads. Les premiers troncs sont rouges jusqu'au sol, et le vent s'arrête à leur hauteur, net, comme devant une porte fermée.",
       "effects": [
         {
           "type": "stat",
@@ -694,7 +694,7 @@
       ]
     },
     "c11-26": {
-      "text": "Ils sont tombés. Le dernier est encore à genoux, la tête ouverte, et il continue de parler. Vous vous penchez. La pierre, dit-il. Elle donne. Puis plus rien. Vous essuyez le couteau sur son gilet. Dans la poche, un PDA qui clignote encore.",
+      "text": "Le dernier est encore à genoux quand les autres sont à terre, la tête ouverte, et il parle. Vous vous penchez. « La pierre. Elle donne. Elle donne tout. » Le mot suivant ne sort pas, et sa bouche reste ouverte sur sa forme. Vous essuyez le couteau sur son gilet. Dans la poche de poitrine, un PDA qui clignote encore, en vert, à la cadence d'un cœur.",
       "choices": [
         {
           "kind": "agir",
@@ -735,7 +735,7 @@
       ]
     },
     "c11-27": {
-      "text": "Vous l'attendez au milieu du hall, là où il y a de la place. Il vient par-dessus une cuve, masque à gaz, tuyau arraché qui pend, ce qu'il reste d'un uniforme. Il frappe à casser des os. Chaque saut en finit un et en prépare un autre. Vous pouvez encore reculer vers la porte ; il vous rattrapera une fois, pas deux.",
+      "text": "Vous l'attendez au milieu du hall, là où il y a de la place pour reculer. Il vient par-dessus une cuve, masque à gaz au tuyau arraché, ce qu'il reste d'un uniforme de l'armée, les bottes encore lacées, et il frappe à casser des os. Chaque saut en finit un et en prépare un autre. Vous pouvez encore reculer vers la porte ; il vous rattrapera une fois, pas deux.",
       "combat": {
         "name": "Snork",
         "habilete": 6,
@@ -748,7 +748,7 @@
       }
     },
     "c11-28": {
-      "text": "Il décroche la combinaison et la pose sur la table comme un corps. La SEVA. Plomb dans la doublure, filtre fermé, avec ça tu marches dans ce que tu veux. Deux mille. Il dit le chiffre sans vous regarder. Ou une Âme, mais je ne prends pas n'importe quelle Âme, et je ne la prends pas de n'importe qui.",
+      "text": "Il décroche la combinaison et la pose sur la table comme un corps qu'on allonge. « La SEVA. Plomb dans la doublure, filtre fermé, visière triple, avec ça vous marchez dans ce que vous voulez, vous avez une idée de ce qu'il y a au nord ? » Il dit le chiffre sans vous regarder, en époussetant une épaulette. « Deux mille. Ou une Âme, mais je ne prends pas n'importe quelle Âme, et je ne la prends pas de n'importe qui, c'est clair, ça ? »",
       "choices": [
         {
           "kind": "agir",
@@ -806,7 +806,7 @@
       ]
     },
     "c11-29": {
-      "text": "Une conduite de béton sort du flanc de l'usine et crache dans le lac un filet jaune qui ne se mélange pas à l'eau. Le compteur ne grimpe pas, il crie. Vous prenez 2 rads. Vous passez au-dessus de la conduite sur une planche posée là par quelqu'un qui est passé avant vous et n'a pas laissé d'autre trace.",
+      "text": "Une conduite de béton sort du flanc de l'usine et crache dans le lac un filet jaune qui ne se mélange pas à l'eau. Le compteur s'affole dès que vous posez le pied sur la berge. Vous prenez 2 rads. Vous passez au-dessus de la conduite sur une planche de coffrage posée là par un homme qui est venu avant vous et qui n'a laissé que ça.",
       "effects": [
         {
           "type": "stat",
@@ -828,7 +828,7 @@
       ]
     },
     "c11-30": {
-      "text": "Vous allez au plus court. Ils sont lents, ils tirent au hasard, mais ils ne tombent pas quand ils devraient. Vous frappez à la tête. Ce qui coule n'a pas la couleur du sang. Derrière vous, on peut toujours courir : ils ne suivent pas plus vite qu'un homme qui marche.",
+      "text": "Le plus court passe au milieu d'eux, et vous le prenez. Ils sont lents, ils tirent au hasard, une balle dans l'herbe, une dans le ciel, mais ils ne tombent pas quand ils devraient tomber. Vous frappez à la tête, à travers la cagoule. Ce qui coule n'a pas la couleur du sang. Derrière vous, la route reste ouverte : ils ne suivent pas plus vite qu'un homme qui marche.",
       "combat": {
         "name": "Les zombies",
         "habilete": 5,
@@ -841,7 +841,7 @@
       }
     },
     "c11-31": {
-      "text": "Vous dites : une cuve. Des cerveaux dedans. La Zone, c'est eux. Sakharov enlève ses lunettes, et sans elles il a l'air d'un vieillard. Il ne demande pas d'où vous le tenez. Alors tu sais, dit-il. Je le savais aussi, sur le papier. Il vous rend les Documents du X-16 un à un. Ne le dis à personne. Ils recrutent ceux qui savent.",
+      "text": "« Une cuve. Des cerveaux dedans, branchés les uns aux autres. La Zone, c'est eux. » Sakharov enlève ses lunettes, et sans elles il a l'air d'un vieillard qu'on a réveillé. Il ne demande pas d'où vous le tenez. « Alors vous savez. Depuis quand ? Je le savais aussi, sur le papier, sur des bons de commande, des listes de pièces, vous croyez qu'on lit ça et qu'on dort ? » Il vous rend les Documents du X-16 feuille par feuille, en les lissant du plat de la main. « Ne le dites à personne. Ils recrutent ceux qui savent, vous pensiez quoi, qu'ils les tuaient ? »",
       "choices": [
         {
           "kind": "aller",
@@ -851,7 +851,7 @@
       ]
     },
     "c11-32": {
-      "text": "Dans la Combinaison SEVA, le monde devient un bruit de filtre et un rond de visière. Le compteur grimpe dehors et ne grimpe pas dedans. Vous montez la route sans courir. Les pylônes passent. Les premiers pins ont des aiguilles rouges jusqu'au sol, et sous eux la poussière est blanche comme de la farine.",
+      "text": "Dans la Combinaison SEVA, le monde se réduit à un bruit de filtre et à un rond de visière. Dehors, le compteur s'emballe ; dedans, vous n'en entendez qu'un cliquetis lointain à travers la doublure. Vous montez la route sans courir, parce qu'on ne court pas avec vingt kilos de plomb sur le dos. Les pylônes passent un à un. Les premiers pins ont des aiguilles rouges jusqu'au sol, et sous eux la poussière est blanche comme de la farine.",
       "choices": [
         {
           "kind": "aller",
@@ -861,7 +861,7 @@
       ]
     },
     "c11-33": {
-      "text": "Vous comptez 2 000 roubles sur la table, en billets qui sentent la Zone. Il ne recompte pas. Il tire la Combinaison SEVA vers vous et retourne à ses écrans avant que vous l'ayez soulevée. Elle pèse comme un homme. Dedans, il fait aussitôt plus chaud et plus silencieux.",
+      "text": "Les 2 000 roubles s'empilent sur la table, en billets qui sentent le fond de sac et la Zone. Il ne recompte pas. « Vous les avez gagnés où, l'Arène ? Non, ne me dites pas, pourquoi est-ce que je voudrais le savoir ? » Il tire la Combinaison SEVA vers vous et il a déjà la tête dans un tiroir avant que vous l'ayez soulevée. Le plomb tire surtout aux épaules. Dedans, il fait aussitôt plus chaud, et le bunker, derrière la visière, devient un aquarium.",
       "effects": [
         {
           "type": "stat",
@@ -883,7 +883,7 @@
       ]
     },
     "c11-34": {
-      "text": "À l'intérieur, les cuves sont ouvertes et vides, des escaliers de fer montent à rien. Au fond du hall, derrière une grille repliée, un escalier descend sous une lampe rouge qui marche encore. Entre vous et lui, quelque chose respire. Un souffle dans un masque, régulier, puis une course de pattes sur le béton, puis plus rien. Un Snork. Ils sautent.",
+      "text": "À l'intérieur, les cuves sont ouvertes et vides, des escaliers de fer montent vers des passerelles qui n'existent plus. Au fond du hall, derrière une grille repliée en accordéon, un escalier descend sous une lampe rouge qui marche encore. Entre vous et lui, on respire. Un souffle dans un masque, régulier, puis une course de pattes sur le béton, puis le souffle de nouveau, plus près : un Snork, qui chasse par bonds et ne se montre qu'au dernier.",
       "choices": [
         {
           "kind": "aller",
@@ -903,7 +903,7 @@
       ]
     },
     "c11-35": {
-      "text": "Vous courez. Ils ne courent pas. Derrière un réservoir de l'usine, vous reprenez votre souffle. Dans l'herbe, le groupe se disperse déjà, chacun à sa marche, chacun à sa phrase. L'un d'eux a tourné vers vous et ne vous a pas trouvé. Il continue vers le lac.",
+      "text": "Ils ne courent pas, eux. Derrière un réservoir de l'usine, vous reprenez votre souffle, les mains sur les genoux, et quand vous relevez la tête, le groupe se disperse déjà dans l'herbe, chacun à sa marche, chacun à sa phrase. Un seul est resté planté à l'endroit où vous étiez, le fusil levé vers le ciel, et il le garde levé quand les autres sont déjà au bord de l'eau.",
       "choices": [
         {
           "kind": "aller",
@@ -923,7 +923,7 @@
       ]
     },
     "c11-36": {
-      "text": "Il baisse la voix, ce qui chez lui veut dire parler à hauteur normale. Sous l'usine, un laboratoire. X-16. Un émetteur. Ce que tu as vu dehors, c'est lui qui le fabrique : des stalkers qui ont trop écouté. Il faut l'éteindre. Trois étages, une salle, une commande. Je ne peux pas y aller. Toi, peut-être. Il tape du doigt sur la table. Le casque, après.",
+      "text": "Il baisse la voix, ce qui chez lui revient à parler à hauteur d'homme. « Sous l'usine, un laboratoire. Le X-16, vous avez vu le nom sur la porte ? Un émetteur. Ce que vous avez vu dehors, c'est lui qui le fabrique : des stalkers qui ont trop écouté, vous avez senti vos tempes, en passant ? » Il pose ses lunettes sur la table, et sans elles il ne vous regarde plus, il regarde l'endroit où vous êtes. « Il faut l'éteindre. Trois étages, une salle, une commande, un levier, qu'est-ce qu'il y a de compliqué là-dedans ? Je ne peux pas y aller, avec mon cœur, vous me voyez dans les escaliers ? Vous, peut-être. » Il tape du doigt sur la table, deux fois. « Le casque, après. Vous ne croyiez pas que je vous le donnerais avant ? »",
       "choices": [
         {
           "kind": "parler",
@@ -943,7 +943,7 @@
       ]
     },
     "c11-37": {
-      "text": "Vous videz la trousse de soins sur une marche, sous la lampe rouge. Les bandes tiennent mal à cause de la sueur, mais elles tiennent. Vous regagnez 6 points d'Endurance. Dans le hall, le corps du Snork fait une tache plus noire dans le noir. En bas, le ventilateur tourne.",
+      "text": "Une marche de fer vous sert de banc et la lampe rouge d'éclairage : vous videz la trousse de soins, désinfectez ce que le Snork a ouvert, serrez une bande sur l'avant-bras avec les dents. Vous regagnez 6 points d'Endurance. Dans le hall, le corps du Snork n'est plus qu'une masse un peu plus sombre que le béton, et en bas, le ventilateur compte toujours.",
       "choices": [
         {
           "kind": "aller",
@@ -958,7 +958,7 @@
       ]
     },
     "c11-38": {
-      "text": "Vous vous accroupissez derrière un bloc de béton. Ils passent à trois mètres. Un morceau de leur marmonnement vous arrive : au centre, la pierre, au centre. Ils ne regardent rien. Si le vent tourne, s'ils vous sentent, ils tourneront avec lui. Tentez votre Chance.",
+      "text": "Vous vous accroupissez derrière un bloc de béton. Ils passent à trois mètres, et un morceau de leur marmonnement vous arrive, usé comme une prière apprise trop tôt : « Au centre. La pierre. Au centre. » Ils ne regardent rien. Mais si le vent tourne, s'ils vous sentent, ils tourneront avec lui. Tentez votre Chance.",
       "test": {
         "type": "luck",
         "success": "c11-9",
@@ -966,7 +966,7 @@
       }
     },
     "c11-39": {
-      "text": "La rive se resserre entre l'eau et un talus. Devant vous, l'herbe est couchée en rond, comme sous un poids qu'on ne voit pas : un « Trampoline ». Le détecteur n'en dit rien, ce n'est pas son travail. Vous lancez un boulon. Il part de travers, vers le lac, et vous ne le voyez pas retomber. Tentez votre Chance.",
+      "text": "La rive se resserre entre l'eau et un talus de scories. Devant vous, l'herbe est couchée en rond, comme sous un poids qu'on ne voit pas : un « Trampoline ». Le détecteur n'en dit rien, ce n'est pas son travail. Vous lancez un boulon. Il part de travers, vers le lac, et vous ne le voyez pas retomber. Tentez votre Chance.",
       "test": {
         "type": "luck",
         "success": "c11-22",
@@ -974,7 +974,7 @@
       }
     },
     "c11-40": {
-      "text": "Vous videz l'anti-rad sous le premier pin, dos au tronc rouge. Le goût de fer, puis le compteur qui se calme. Vous perdez 5 rads. Au-dessus de vous, les aiguilles ne bougent pas. Il n'y a pas de vent dans la forêt ; il s'est arrêté avec le reste.",
+      "text": "Sous le premier pin, dos au tronc rouge, vous dévissez l'anti-rad et le buvez en trois gorgées tièdes. Vous perdez 5 rads. Au-dessus de vous, les aiguilles pendent, immobiles ; il n'y a pas de vent dans la forêt, il s'est arrêté à la lisière avec le reste.",
       "choices": [
         {
           "kind": "aller",
@@ -984,7 +984,7 @@
       ]
     },
     "c11-41": {
-      "text": "L'interphone grésille longtemps avant qu'une voix vienne, vite, trop près du micro. Qui ? D'où ? Montre tes mains. Montre ton sac. Tu as un détecteur, lequel ? Non, ne réponds pas. La caméra descend sur vous, remonte. Les verrous jouent l'un après l'autre, quatre, cinq. La porte s'ouvre sur un escalier qui sent le chlore et le café.",
+      "text": "L'interphone grésille une bonne minute avant qu'une voix arrive, vite, trop près du micro. « Qui ? D'où ? Montrez vos mains. Montrez le sac. Vous avez un détecteur, lequel, un Ours ? Laissez, la caméra me le dira, à quoi elle servirait sinon ? » La caméra descend sur vous, remonte, s'arrête sur votre ceinture. Les verrous jouent l'un après l'autre, quatre, cinq, et la porte s'ouvre sur un escalier de vingt marches qui sent le chlore et le café.",
       "choices": [
         {
           "kind": "aller",
@@ -994,7 +994,7 @@
       ]
     },
     "c11-42": {
-      "text": "Il ne vous a pas entendu. Vous êtes sur l'escalier, sous la lampe rouge, et la respiration dans le masque continue derrière la cuve, patiente, sans vous. Les marches descendent dans une odeur de câble chaud. Quelque part en bas, un ventilateur tourne encore.",
+      "text": "Il ne vous a pas entendu. Vous êtes sur l'escalier, sous la lampe rouge, et la respiration dans le masque continue derrière la cuve, patiente, sans vous. Les marches de fer descendent vers un palier où une porte blindée est restée entrouverte de la largeur d'une main, et l'air qui en sort est tiède, sec, chargé d'ozone.",
       "choices": [
         {
           "kind": "aller",
@@ -1009,7 +1009,7 @@
       ]
     },
     "c11-43": {
-      "text": "Sakharov ne vous laisse pas entrer, mais il laisse la porte entrebâillée et une couverture passe par la fente. Vous dormez contre l'acier, sous le plomb, et pour une fois le compteur ne dit rien de toute la nuit. Au matin, les zombies marchent toujours au bord du lac, au même endroit. Vous regagnez 8 points d'Endurance.",
+      "text": "Sakharov ne vous laisse pas entrer, mais il laisse la porte entrebâillée, et une couverture de l'armée passe par la fente avec sa voix. « Vous dormez dehors, vous avez vu l'heure ? Sous le plomb, pas plus loin, vous m'entendez ? » Vous dormez contre l'acier, et pour une fois rien ne vous réveille de toute la nuit. Au matin, au bord du lac, rien n'a changé de place. Vous regagnez 8 points d'Endurance.",
       "effects": [
         {
           "type": "stat",
