@@ -5,7 +5,7 @@ Ces règles valent pour tous les styles. La voix, la longueur et les formules d�
 ## Constantes
 - Deuxième personne, présent de l'indicatif. « Vous poussez la porte. »
 - Une image concrète par paragraphe (odeur, lumière, son, texture).
-- Le texte d'un choix est une action à l'infinitif, 3 à 9 mots, sans révéler l'issue : « Forcer la grille », pas « Forcer la grille (danger) ». Un coût chiffré s'indique entre parenthèses : « Payer le passeur (3 pièces d'or) ».
+- Le texte d'un choix est une action à l'infinitif, 3 à 9 mots, sans révéler l'issue : « Forcer la grille », pas « Forcer la grille (danger) ». Un coût chiffré s'indique entre parenthèses : « Payer le passeur (3 pièces d'or) ». Chaque choix porte son `kind` (format.md) : il suit le verbe, « Revenir » est `aller`, « Fouiller » est `agir`, « Tirer sur » est `attaquer`.
 - Jamais de « rendez-vous au 12 » : les boutons portent les renvois. Annoncer les options en prose (« si vous possédez une dague, vous pouvez… ») est une affaire de style, autorisé en Défis Fantastiques, proscrit en sobre.
 
 ## Ce que le texte doit dire pour que le moteur le montre

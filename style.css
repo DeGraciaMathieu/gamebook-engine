@@ -71,6 +71,10 @@ body {
   content: "➤ ";
   color: var(--accent);
 }
+.btn-choice.choice-parler::before { content: "❝ "; }
+.btn-choice.choice-agir::before { content: "✦ "; }
+.btn-choice.choice-payer::before { content: "¤ "; }
+.btn-choice.choice-attaquer::before { content: "⚔ "; }
 .btn-choice.is-chosen {
   border-style: dashed;
   border-color: var(--line);

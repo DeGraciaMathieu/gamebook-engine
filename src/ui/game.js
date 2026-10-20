@@ -70,7 +70,7 @@ function renderActions(story, state, view, paragraph, { roll, fx, handlers }) {
   }
   return el('div', { class: 'choices' }, listChoices(story, state).map((choice) =>
     el('button', {
-      class: `btn btn-choice${hasChosen(story, state, choice) ? ' is-chosen' : ''}`,
+      class: `btn btn-choice${choice.kind ? ` choice-${choice.kind}` : ''}${hasChosen(story, state, choice) ? ' is-chosen' : ''}`,
       onClick: () => handlers.onChoose(choice),
     }, choice.text)));
 }

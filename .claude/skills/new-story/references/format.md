@@ -42,14 +42,16 @@ La référence complète est dans `README.md` à la racine. Cette fiche donne un
   "text": ["Alinéa 1.", "Alinéa 2."],
   "effects": [{ "type": "stat", "stat": "endurance", "delta": -2 }],
   "choices": [
-    { "text": "Ouvrir avec la clef", "to": "8", "if": { "type": "item", "item": "clef" } },
-    { "text": "Payer le passeur (3 pièces d'or)", "to": "9",
+    { "text": "Ouvrir avec la clef", "to": "8", "kind": "agir", "if": { "type": "item", "item": "clef" } },
+    { "text": "Payer le passeur (3 pièces d'or)", "to": "9", "kind": "payer",
       "if": { "type": "stat", "stat": "or", "op": ">=", "value": 3 },
       "effects": [{ "type": "stat", "stat": "or", "delta": -3 }] },
-    { "text": "Rebrousser chemin", "to": "6" }
+    { "text": "Rebrousser chemin", "to": "6", "kind": "aller" }
   ]
 }
 ```
+
+`kind` : le genre du choix, qui choisit son glyphe : `aller` (se déplacer, sortir, revenir), `parler` (dialogue, écouter quelqu'un), `agir` (fouiller, ouvrir, utiliser, boire, se reposer), `payer` (acheter, louer, miser), `attaquer` (engager le combat, tirer, lancer une grenade). Toujours le renseigner.
 
 ## Combat
 

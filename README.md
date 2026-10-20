@@ -140,14 +140,14 @@ Une histoire invalide (cible manquante, objet inconnu…) est refusée au charge
   "text": "Un seul paragraphe, ou un tableau de chaînes pour plusieurs.",
   "effects": [ { "type": "stat", "stat": "endurance", "delta": -2 } ],
   "choices": [
-    { "text": "Ouvrir la porte", "to": "8", "if": { "type": "item", "item": "clef" }, "effects": [] }
+    { "text": "Ouvrir la porte", "to": "8", "kind": "agir", "if": { "type": "item", "item": "clef" }, "effects": [] }
   ]
 }
 ```
 
 Un paragraphe contient `text`, des `effects` optionnels appliqués à l'arrivée, puis **un seul** parmi :
 
-- `choices` : liste de choix. Un choix dont la condition `if` échoue est masqué.
+- `choices` : liste de choix. Un choix dont la condition `if` échoue est masqué. `kind` (optionnel) choisit le glyphe devant le choix : `aller` (se déplacer), `parler` (dialogue), `agir` (fouiller, utiliser, se reposer), `payer` (acheter, louer, miser), `attaquer` (engager le combat) ; sans `kind`, la flèche par défaut.
 - `combat` : `{ "name", "habilete", "endurance", "win": "<id>", "flee": { "to": "<id>" } }`. `flee` est optionnel ; fuir coûte les dégâts de l'adversaire. Options : `stat` pour jouer le duel sur une autre caractéristique du héros (`"endurance"` pour une course, `"volonte"` pour une joute), `damage` (2 par défaut) et `armor` (0 par défaut) pour l'adversaire.
 - `test` : `{ "type": "luck", "success": "<id>", "failure": "<id>" }` (réussite si 2d6 ≤ chance, puis chance −1) ou `{ "type": "stat", "stat": "habilete", "dice": "2d6", "success", "failure" }` (réussite si jet ≤ caractéristique).
 

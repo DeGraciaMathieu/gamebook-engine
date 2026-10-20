@@ -31,6 +31,7 @@ Contraintes :
 - [25 à 50] paragraphes, identifiants « c[nn]-1 » à « c[nn]-N » dans un ordre mélangé (pas dans l'ordre de lecture).
 - Un carrefour (paragraphe rejoint par 2 chemins, 2 choix ou plus) et une boucle optionnelle qui y ramène.
 - Les mécaniques demandées par le brief ; au minimum un combat et un test. Repères d'équilibrage dans format.md, corrigés pour un grand graphe : sur 150 actions, l'attrition s'additionne. Adversaires courants 6 à 8 d'habileté, dégâts 2 (3 pour un boss, un par chapitre au plus), pièges 2 à 3 points d'Endurance, un lieu de repos par carrefour de hub (une fois par visite, ou payant).
+- Chaque choix porte son `kind` (`aller`, `parler`, `agir`, `payer`, `attaquer`, voir format.md).
 - Jamais de choix masqué sans alternative visible. Un paragraphe sans choix, combat ni test est une fin : seulement celles que le contrat prévoit.
 - Style « [style] », ton [ton], deuxième personne, présent. Les objets portent le nom exact du catalogue, les variations sont chiffrées avec leur unité, les tests sont annoncés, les cibles d'un test ou d'un combat disent le résultat dès la première phrase.
 

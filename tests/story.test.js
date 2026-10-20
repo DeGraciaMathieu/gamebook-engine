@@ -122,3 +122,10 @@ test('la difficulté se déclare parmi douce, standard et rude', () => {
   const errors = validateStory({ ...makeStory({ '1': { text: 'Fin' } }), difficulty: 'extrême' });
   assert.ok(errors.some((error) => error.includes('difficulty')));
 });
+
+test('le genre d\'un choix se déclare parmi aller, parler, agir, payer et attaquer', () => {
+  const choice = (kind) => ({ '1': { text: 'Carrefour', choices: [{ text: 'Revenir', to: '2', kind }] }, '2': { text: 'Fin' } });
+  assert.deepEqual(validateStory(makeStory(choice('aller'))), []);
+  const errors = validateStory(makeStory(choice('danser')));
+  assert.ok(errors.some((error) => error.includes('kind')));
+});

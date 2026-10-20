@@ -1,4 +1,5 @@
 export const DIFFICULTIES = ['douce', 'standard', 'rude'];
+export const CHOICE_KINDS = ['aller', 'parler', 'agir', 'payer', 'attaquer'];
 
 export function getParagraph(story, id) {
   const paragraph = story.paragraphs[id];
@@ -104,6 +105,7 @@ export function validateStory(story) {
     for (const [index, choice] of (paragraph.choices ?? []).entries()) {
       const choiceWhere = `${where}, choix ${index + 1}`;
       if (!choice.text) errors.push(`${choiceWhere} : texte manquant`);
+      if (choice.kind !== undefined && !CHOICE_KINDS.includes(choice.kind)) errors.push(`${choiceWhere} : kind attendu parmi ${CHOICE_KINDS.join(', ')}`);
       checkTarget(choice.to, choiceWhere);
       checkCondition(choice.if, choiceWhere);
       checkEffects(choice.effects, choiceWhere);
