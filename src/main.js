@@ -2,6 +2,7 @@ import { loadStory } from './engine/story.js';
 import { createGame, describeCreation, choose, resolveTest, describeTest, fightRound, fleeCombat, buyItem, sellItem } from './engine/game.js';
 import { saveGame, loadGame, clearGame } from './storage.js';
 import { isMuted, toggleMuted, vibrate, playDiceRattle, playHit, playWounded, playSuccess, playFailure } from './feedback.js';
+import { startAmbience, stopAmbience } from './ambience.js';
 import { replaceContent } from './ui/dom.js';
 import { keepRollingDiceAlive } from './ui/dice.js';
 import { renderHome } from './ui/home.js';
@@ -208,6 +209,7 @@ function openGame(story, state) {
   ui.screen = 'game';
   ui.story = story;
   ui.menuOpen = false;
+  startAmbience(story.ambience);
   update(state);
 }
 
@@ -223,6 +225,7 @@ function update(state) {
 }
 
 function quitToHome() {
+  stopAmbience();
   ui.rollId += 1;
   ui.roll = null;
   ui.screen = 'home';
