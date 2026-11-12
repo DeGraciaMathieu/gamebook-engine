@@ -1,7 +1,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
-import { validateStory, isEnding } from '../src/engine/story.js';
+import { validateStory, isEnding, youtubeVideoId } from '../src/engine/story.js';
 import { makeStory } from './helpers.js';
 
 const demo = JSON.parse(readFileSync(new URL('../stories/demo/story.json', import.meta.url), 'utf8'));
@@ -121,6 +121,13 @@ test('la difficulté se déclare parmi douce, standard et rude', () => {
   assert.deepEqual(validateStory({ ...makeStory({ '1': { text: 'Fin' } }), difficulty: 'rude' }), []);
   const errors = validateStory({ ...makeStory({ '1': { text: 'Fin' } }), difficulty: 'extrême' });
   assert.ok(errors.some((error) => error.includes('difficulty')));
+});
+
+test('l\'ambiance sonore se déclare par une URL de vidéo YouTube', () => {
+  assert.deepEqual(validateStory({ ...makeStory({ '1': { text: 'Fin' } }), ambience: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ' }), []);
+  assert.equal(youtubeVideoId('https://youtu.be/dQw4w9WgXcQ?t=42'), 'dQw4w9WgXcQ');
+  const errors = validateStory({ ...makeStory({ '1': { text: 'Fin' } }), ambience: 'https://example.com/pluie.mp3' });
+  assert.ok(errors.some((error) => error.includes('ambience')));
 });
 
 test('le genre d\'un choix se déclare parmi aller, parler, agir, payer et attaquer', () => {

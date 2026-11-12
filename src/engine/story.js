@@ -1,6 +1,12 @@
 export const DIFFICULTIES = ['douce', 'standard', 'rude'];
 export const CHOICE_KINDS = ['aller', 'parler', 'agir', 'payer', 'attaquer'];
 
+// Accepte youtube.com/watch?v=, youtu.be/ et youtube.com/embed/ ; renvoie null pour toute autre adresse.
+export function youtubeVideoId(url) {
+  const match = /^https:\/\/(?:www\.|m\.)?(?:youtube\.com\/(?:watch\?(?:.*&)?v=|embed\/)|youtu\.be\/)([\w-]{11})/.exec(url ?? '');
+  return match ? match[1] : null;
+}
+
 export function getParagraph(story, id) {
   const paragraph = story.paragraphs[id];
   if (!paragraph) {
@@ -60,6 +66,7 @@ export function validateStory(story) {
   if (!story.id) errors.push('Champ "id" manquant');
   if (!story.title) errors.push('Champ "title" manquant');
   if (story.difficulty !== undefined && !DIFFICULTIES.includes(story.difficulty)) errors.push(`difficulty : valeur attendue parmi ${DIFFICULTIES.join(', ')}`);
+  if (story.ambience !== undefined && !youtubeVideoId(story.ambience)) errors.push('ambience : URL de vidéo YouTube attendue');
   if (!story.start) errors.push('Champ "start" manquant');
   if (story.art !== undefined && typeof story.art?.style !== 'string') errors.push('art.style : chaîne attendue');
   else checkTarget(story.start, 'start');

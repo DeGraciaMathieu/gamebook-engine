@@ -108,6 +108,7 @@ Une histoire invalide (cible manquante, objet inconnu…) est refusée au charge
   "title": "Titre affiché",
   "summary": "Résumé affiché sur l'accueil.",
   "difficulty": "standard",
+  "ambience": "https://www.youtube.com/watch?v=XXXXXXXXXXX",
   "start": "1",
   "death": "mort",
   "hero": {
@@ -127,6 +128,7 @@ Une histoire invalide (cible manquante, objet inconnu…) est refusée au charge
 ```
 
 - `difficulty` (optionnel) : `douce`, `standard` ou `rude`, affiché sur l'accueil avec le nombre de paragraphes (cibles de létalité dans `.claude/skills/new-story/references/coverage.md`).
+- `ambience` (optionnel) : URL d'une vidéo YouTube lue en boucle, sans image, pendant la partie, avec un bouton lecture/pause en bas à droite. Le jeu doit être servi en HTTP (`serve.mjs`) : YouTube refuse l'intégration en `file://`.
 - `start` : paragraphe de départ. `death` (optionnel) : paragraphe affiché quand l'endurance tombe à 0.
 - `hero.stats` : chaque caractéristique a un `label`, une `description` optionnelle en quelques mots (affichée sur l'écran de création), et sa valeur de départ selon l'un des deux modèles ci-dessous. Les règles de combat utilisent `habilete` et `endurance`, le test de chance utilise `chance`. Une caractéristique ne dépasse jamais sa valeur de départ.
   - **Tirage aux dés** : `roll` (formule de dés) ou `value` (fixe). La partie commence directement.
